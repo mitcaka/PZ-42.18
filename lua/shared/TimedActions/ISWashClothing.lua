@@ -1,0 +1,242 @@
+require "TimedActions/ISBaseTimedAction"
+
+ISWashClothing = ISBaseTimedAction:derive("ISWashClothing");
+
+function ISWashClothing:isValid()
+	if self.sink:getFluidAmount() < ISWashClothing.GetRequiredWater(self.item) then
+		return false
+	end
+	-- A dirty bandage is converted into a different item.
+	if not isClient() and self.item:getContainer() ~= self.character:getInventory() then
+		return false
+	end
+	return true
+end
+
+function ISWashClothing:update()
+	self.item:setJobDelta(self:getJobDelta())
+	self.character:faceThisObjectAlt(self.sink)
+    self.character:setMetabolicTarget(Metabolics.HeavyDomestic);
+end
+
+function ISWashClothing:start()
+	self:setActionAnim("ScrubClothWithSoap")
+	self:setOverrideHandModels(getScriptManager():FindItem("Soap2"):getStaticModel(), getScriptManager():FindItem("DishCloth"):getStaticModel())
+	self.character:reportEvent("EventWashClothing");
+end
+
+function ISWashClothing:stopSound()
+	if self.sound and self.character:getEmitter():isPlaying(self.sound) then
+		self.character:stopOrTriggerSound(self.sound)
+	end
+end
+
+function ISWashClothing:stop()
+	self:stopSound()
+	self.item:setJobDelta(0.0)
+    ISBaseTimedAction.stop(self);
+end
+
+function ISWashClothing.GetSoapRemaining(soaps)
+	local total = 0
+    if soaps then
+        for i = 0, soaps:size() - 1 do
+            local soap = soaps:get(i)
+
+            if instanceof(soap, "DrainableComboItem") then
+                total = total + soap:getCurrentUses()
+            elseif soap:getFluidContainer() and soap:getFluidContainer():contains(Fluid.CleaningLiquid) then
+                total = total + (soap:getFluidContainer():getAmount() * 10)
+            end
+        end
+    end
+	return total
+end
+
+function ISWashClothing.GetRequiredSoap(item)
+	local total = 0
+	if instanceof(item, "Clothing") then
+		local coveredParts = BloodClothingType.getCoveredParts(item:getBloodClothingType())
+		if coveredParts then
+			for i=1,coveredParts:size() do
+				local part = coveredParts:get(i-1)
+				if item:getBlood(part) > 0 then
+					total = total + 1
+				end
+			end
+		end
+	else
+		if item:getBloodLevel() > 0 then
+			total = total + 1
+		end
+	end
+	return total
+end
+
+function ISWashClothing.GetRequiredWater(item)
+	local blood, dirt = 0, 0
+	if instanceof(item, "Clothing") then
+		local coveredParts = BloodClothingType.getCoveredParts(item:getBloodClothingType())
+		if coveredParts then
+			for i=1,coveredParts:size() do
+				local part = coveredParts:get(i-1)
+				blood = blood + item:getBlood(part)
+				dirt = dirt + item:getDirt(part)
+			end
+		end
+	else
+		blood = blood + item:getBloodLevel()
+	end
+	-- use 4 as a base amount
+	return Math.ceil(4 + (blood*3) + dirt)
+end
+
+function ISWashClothing:useSoap(item, part)
+	local blood = 0;
+	if part then
+		blood = item:getBlood(part);
+	else
+		blood = item:getBloodLevel();
+	end
+
+	if blood > 0 then
+        for i = 0, self.soaps:size() - 1 do
+            local soap = self.soaps:get(i)
+            if soap:hasComponent(ComponentType.FluidContainer) and soap:getFluidContainer():getAmount() > 0 then
+                local newAmount = soap:getFluidContainer():getAmount() - ZomboidGlobals.CleanStainCleaningFluidAmount
+                if newAmount <= 0.001 then
+                    soap:getFluidContainer():Empty()
+                else
+                    soap:getFluidContainer():adjustAmount(newAmount);
+                end
+                sendItemStats(soap)
+				return true;
+            elseif not soap:hasComponent(ComponentType.FluidContainer) and soap:getCurrentUses() > 0 then
+				soap:UseAndSync();
+				return true;
+			end
+		end
+	else
+		return true;
+	end
+	return false;
+end
+
+function ISWashClothing:complete()
+	local item = self.item;
+	local water = ISWashClothing.GetRequiredWater(item)
+    local isRemoved = false;
+	if instanceof(item, "Clothing") or instanceof(item, "InventoryContainer") then
+		local coveredParts = BloodClothingType.getCoveredParts(item:getBloodClothingType())
+		if coveredParts then
+			for j=0,coveredParts:size()-1 do
+				if self.noSoap == false then
+					self:useSoap(item, coveredParts:get(j));
+				end
+				item:setBlood(coveredParts:get(j), 0);
+				item:setDirt(coveredParts:get(j), 0);
+			end
+		end
+        if instanceof(item, "Clothing") then
+		    item:setWetness(100);
+            item:setDirtiness(0);
+        end
+	elseif item:getItemAfterCleaning() then
+	    isRemoved = true;
+		local newItemType = item:getItemAfterCleaning();
+		self.character:getInventory():Remove(item);
+		sendRemoveItemFromContainer(self.character:getInventory(), item);
+		local newItem = self.character:getInventory():AddItem(newItemType);
+        newItem:setFavorite(item:isFavorite())
+		sendAddItemToContainer(self.character:getInventory(), newItem);
+	else
+		self:useSoap(item, nil);
+	end
+
+	item:setBloodLevel(0);
+	-- if we haven't already removed item
+    if not isRemoved then
+        --sync Wetness, Dirtyness, BloodLevel
+        syncItemFields(self.character, item);
+	end
+	syncVisuals(self.character);
+	self.character:updateHandEquips();
+
+	if self.character:isPrimaryHandItem(item) then
+		self.character:setPrimaryHandItem(item);
+	end
+	if self.character:isSecondaryHandItem(item) then
+		self.character:setSecondaryHandItem(item);
+	end
+
+	self.sink:useFluid(water);
+
+	return true;
+end
+
+function ISWashClothing:perform()
+	self:stopSound()
+	self.item:setJobDelta(0.0)
+	
+	local obj = self.sink
+	if instanceof (obj, "Drainable") then
+		self.obj:setUsedDelta(self.startUsedDelta + (self.endUsedDelta - self.startUsedDelta) * self:getJobDelta());
+	end
+
+	self.character:resetModel();
+	triggerEvent("OnClothingUpdated", self.character);
+
+    -- needed to remove from queue / start next.
+	ISBaseTimedAction.perform(self);
+end
+
+function ISWashClothing:getDuration()
+	if self.character:isTimedActionInstant() then
+		return 1;
+	end
+
+	local maxTime = ((self.bloodAmount + self.dirtAmount) * 15);
+	if maxTime > 500 then
+		maxTime = 500;
+	end
+
+	if self.noSoap == true then
+		maxTime = maxTime * 5;
+	end
+
+	if maxTime > 800 then
+		maxTime = 800;
+	end
+
+	if maxTime < 100 then
+		maxTime = 100;
+	end
+
+	return self:adjustMaxTime(maxTime);
+end
+
+function ISWashClothing:animEvent(event, parameter)
+    if event == 'PlayWashSound' then
+        self:stopSound()
+        local bandages = { ["Base.BandageDirty"]=1, ["Base.DenimStripsDirty"]=1, ["Base.LeatherStripsDirty"]=1, ["Base.RippedSheetsDirty"]=1 }
+        if bandages[self.item:getFullType()] then
+            self.sound = self.character:playSound("FirstAidCleanRag")
+        else
+            self.sound = self.character:playSound("WashClothing")
+        end
+    end
+end
+
+function ISWashClothing:new(character, sink, item, bloodAmount, dirtAmount, noSoap)
+	local o = ISBaseTimedAction.new(self, character)
+	o.sink = sink;
+	o.item = item;
+	o.bloodAmount = bloodAmount;
+	o.dirtAmount = dirtAmount;
+    o.soaps = character:getInventory():getSoapList(nil, true)
+	o.noSoap = noSoap
+	o.forceProgressBar = true;
+	o.maxTime = o:getDuration();
+
+	return o;
+end

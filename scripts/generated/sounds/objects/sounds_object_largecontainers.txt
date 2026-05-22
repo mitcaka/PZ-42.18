@@ -1,0 +1,695 @@
+module Base
+{
+    sound OpenFridge
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/Fridge/Open,
+        }
+    }
+
+    sound CloseFridge
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/Fridge/Close,
+        }
+    }
+
+    sound BinPlasticCoverOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/BinPlasticCover/Open,
+        }
+    }
+
+    sound BinPlasticCoverClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/BinPlasticCover/Close,
+        }
+    }
+
+    sound BinPlasticCoverTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/BinPlasticCover/TransferItem,
+        }
+    }
+
+    sound BinPlasticTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/BinPlastic/TransferItem,
+        }
+    }
+
+    sound BinMetalCoverOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/BinMetalCover/Open,
+        }
+    }
+
+    sound BinMetalCoverClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/BinMetalCover/Close,
+        }
+    }
+
+    sound BinMetalCoverTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/BinMetalCover/TransferItem,
+        }
+    }
+
+    sound BinMetalTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/BinMetal/TransferItem,
+        }
+    }
+
+    sound BinDumpsterOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/BinDumpster/Open,
+        }
+    }
+
+    sound BinDumpsterClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/BinDumpster/Close,
+        }
+    }
+
+    sound BinDumpsterTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/BinDumpster/TransferItem,
+        }
+    }
+
+    sound OpenFridgeSliding
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/Fridge/OpenSliding,
+        }
+    }
+
+    sound CloseFridgeSliding
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/Fridge/CloseSliding,
+        }
+    }
+
+    sound PutItemInFridge
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/Fridge/TransferItem,
+        }
+    }
+
+    sound MicrowaveDoorOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/Microwave/DoorOpen,
+        }
+    }
+
+    sound MicrowaveDoorClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/Microwave/DoorClose,
+        }
+    }
+
+    sound MicrowaveTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/Microwave/TransferItem,
+        }
+    }
+
+    sound AntiqueOvenDoorOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/AntiqueOven/DoorOpen,
+        }
+    }
+
+    sound AntiqueOvenDoorClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/AntiqueOven/DoorClose,
+        }
+    }
+
+    sound AntiqueOvenTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/AntiqueOven/TransferItem,
+        }
+    }
+
+    sound BBQDoorOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/BBQ/DoorOpen,
+        }
+    }
+
+    sound BBQDoorClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/BBQ/DoorClose,
+        }
+    }
+
+    sound BBQTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/BBQ/TransferItem,
+        }
+    }
+
+    sound CardboardOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/Cardboard/Open,
+        }
+    }
+
+    sound CardboardClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/Cardboard/Close,
+        }
+    }
+
+    sound CardboardTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/Cardboard/TransferItem,
+        }
+    }
+
+    sound CardboardLargeOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/CardboardLarge/Open,
+        }
+    }
+
+    sound CardboardLargeClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/CardboardLarge/Close,
+        }
+    }
+
+    sound CardboardLargeTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/CardboardLarge/TransferItem,
+        }
+    }
+
+    sound ChestMetalOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/ChestMetal/Open,
+        }
+    }
+
+    sound ChestMetalClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/ChestMetal/Close,
+        }
+    }
+
+    sound ChestMetalTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/ChestMetal/TransferItem,
+        }
+    }
+
+    sound ClothesRackTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/ClothesRack/TransferItem,
+        }
+    }
+
+    sound CrateMetalOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/CrateMetal/Open,
+        }
+    }
+
+    sound CrateMetalClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/CrateMetal/Close,
+        }
+    }
+
+    sound CrateMetalTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/CrateMetal/TransferItem,
+        }
+    }
+
+    sound CrateWoodOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/CrateWood/Open,
+        }
+    }
+
+    sound CrateWoodClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/CrateWood/Close,
+        }
+    }
+
+    sound CrateWoodTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/CrateWood/TransferItem,
+        }
+    }
+
+    sound CrateMilitaryOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/CrateMilitary/Open,
+        }
+    }
+
+    sound CrateMilitaryClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/CrateMilitary/Close,
+        }
+    }
+
+    sound CrateMilitaryTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/CrateMilitary/TransferItem,
+        }
+    }
+
+    sound CratePlasticTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/CratePlastic/TransferItem,
+        }
+    }
+
+    sound FireplaceTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/Fireplace/TransferItem,
+        }
+    }
+
+    sound LockerMetalOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/LockerMetal/Open,
+        }
+    }
+
+    sound LockerMetalClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/LockerMetal/Close,
+        }
+    }
+
+    sound LockerMetalTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/LockerMetal/TransferItem,
+        }
+    }
+
+    sound LockerMetalLargeOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/LockerMetalLarge/Open,
+        }
+    }
+
+    sound LockerMetalLargeClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/LockerMetalLarge/Close,
+        }
+    }
+
+    sound LockerMetalLargeTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/LockerMetalLarge/TransferItem,
+        }
+    }
+
+    sound DrawerWoodOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DrawerWood/Open,
+        }
+    }
+
+    sound DrawerWoodClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DrawerWood/Close,
+        }
+    }
+
+    sound DrawerWoodTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DrawerWood/TransferItem,
+        }
+    }
+
+    sound DrawerMetalOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DrawerMetal/Open,
+        }
+    }
+
+    sound DrawerMetalClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DrawerMetal/Close,
+        }
+    }
+
+    sound DrawerMetalTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DrawerMetal/TransferItem,
+        }
+    }
+
+    sound DrawerWoodLargeOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DrawerWoodLarge/Open,
+        }
+    }
+
+    sound DrawerWoodLargeClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DrawerWoodLarge/Close,
+        }
+    }
+
+    sound DrawerWoodLargeTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DrawerWoodLarge/TransferItem,
+        }
+    }
+
+    sound DoorWoodMediumOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DoorWoodMedium/Open,
+        }
+    }
+
+    sound DoorWoodMediumClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DoorWoodMedium/Close,
+        }
+    }
+
+    sound DoorWoodMediumTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DoorWoodMedium/TransferItem,
+        }
+    }
+
+    sound DoorWoodSmallOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DoorWoodSmall/Open,
+        }
+    }
+
+    sound DoorWoodSmallClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DoorWoodSmall/Close,
+        }
+    }
+
+    sound DoorWoodSmallTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DoorWoodSmall/TransferItem,
+        }
+    }
+
+    sound MannequinTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/Mannequin/TransferItem,
+        }
+    }
+
+    sound ShelfGenericTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/ShelfGeneric/TransferItem,
+        }
+    }
+
+    sound ShelfMetalTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/ShelfMetal/TransferItem,
+        }
+    }
+
+    sound ShelfWoodTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/ShelfWood/TransferItem,
+        }
+    }
+
+    sound WardrobeWoodLargeOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/WardrobeWoodLarge/Open,
+        }
+    }
+
+    sound WardrobeWoodLargeClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/WardrobeWoodLarge/Close,
+        }
+    }
+
+    sound WardrobeWoodLargeTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/WardrobeWoodLarge/TransferItem,
+        }
+    }
+
+    sound DoorMetalSmallOpen
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DoorMetalSmall/Open,
+        }
+    }
+
+    sound DoorMetalSmallClose
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DoorMetalSmall/Close,
+        }
+    }
+
+    sound DoorMetalSmallTransferItem
+    {
+        category = Object,
+        clip
+        {
+            event = Object/LargeContainers/DoorMetalSmall/TransferItem,
+        }
+    }
+}

@@ -1,0 +1,148 @@
+module Base
+{
+    sound TrapperCarbineShoot
+    {
+        category = Item,
+        maxInstancesPerEmitter = 2,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/Shoot,
+            distanceMax = 1000,
+        }
+    }
+
+    sound TrapperCarbineInsertAmmo
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/InsertAmmo,
+        }
+    }
+
+    sound TrapperCarbineEjectAmmo
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/EjectAmmo,
+        }
+    }
+
+    sound TrapperCarbineInsertAmmoStart
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/InsertAmmoStart,
+        }
+    }
+
+    sound TrapperCarbineInsertAmmoStop
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/InsertAmmoStop,
+        }
+    }
+
+    sound TrapperCarbineEjectAmmoStart
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/EjectAmmoStart,
+        }
+    }
+
+    sound TrapperCarbineEjectAmmoStop
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/EjectAmmoStop,
+        }
+    }
+
+    sound TrapperCarbineRack
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/Rack,
+        }
+    }
+
+    sound TrapperCarbineJam
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/Jam,
+        }
+    }
+
+    sound TrapperCarbineBringToBear
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/BringToBear,
+        }
+    }
+
+    sound TrapperCarbineAimRelease
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/AimRelease,
+        }
+    }
+
+    sound TrapperCarbineEquip
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/Equip,
+        }
+    }
+
+    sound TrapperCarbineUnEquip
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/UnEquip,
+        }
+    }
+
+    sound TrapperCarbineBreak
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/Break,
+        }
+    }
+
+    sound TrapperCarbineDrop
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/Drop,
+        }
+    }
+
+    sound TrapperCarbineCartridgeFall
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/TrapperCarbine/CartridgeFall,
+        }
+    }
+}

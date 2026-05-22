@@ -1,0 +1,148 @@
+module Base
+{
+    sound JS14Shoot
+    {
+        category = Item,
+        maxInstancesPerEmitter = 2,
+        clip
+        {
+            event = Weapon/Firearm/JS14/Shoot,
+            distanceMax = 1000,
+        }
+    }
+
+    sound JS14InsertAmmo
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/InsertAmmo,
+        }
+    }
+
+    sound JS14EjectAmmo
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/EjectAmmo,
+        }
+    }
+
+    sound JS14InsertAmmoStart
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/InsertAmmoStart,
+        }
+    }
+
+    sound JS14InsertAmmoStop
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/InsertAmmoStop,
+        }
+    }
+
+    sound JS14EjectAmmoStart
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/EjectAmmoStart,
+        }
+    }
+
+    sound JS14EjectAmmoStop
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/EjectAmmoStop,
+        }
+    }
+
+    sound JS14Rack
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/Rack,
+        }
+    }
+
+    sound JS14Jam
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/Jam,
+        }
+    }
+
+    sound JS14BringToBear
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/BringToBear,
+        }
+    }
+
+    sound JS14AimRelease
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/AimRelease,
+        }
+    }
+
+    sound JS14Equip
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/Equip,
+        }
+    }
+
+    sound JS14UnEquip
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/UnEquip,
+        }
+    }
+
+    sound JS14Break
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/Break,
+        }
+    }
+
+    sound JS14Drop
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/Drop,
+        }
+    }
+
+    sound JS14CartridgeFall
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/JS14/CartridgeFall,
+        }
+    }
+}

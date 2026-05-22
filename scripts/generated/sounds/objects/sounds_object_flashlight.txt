@@ -1,0 +1,38 @@
+module Base
+{
+    sound FlashlightOn
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Flashlight/On,
+        }
+    }
+
+    sound FlashlightOff
+    {
+        category = Object,
+        clip
+        {
+            event = Object/Flashlight/Off,
+        }
+    }
+
+    sound FlashlightPenOn
+    {
+        category = Object,
+        clip
+        {
+            event = Object/FlashlightPen/On,
+        }
+    }
+
+    sound FlashlightPenOff
+    {
+        category = Object,
+        clip
+        {
+            event = Object/FlashlightPen/Off,
+        }
+    }
+}

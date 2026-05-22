@@ -1,0 +1,148 @@
+module Base
+{
+    sound L92Shoot
+    {
+        category = Item,
+        maxInstancesPerEmitter = 2,
+        clip
+        {
+            event = Weapon/Firearm/L92/Shoot,
+            distanceMax = 1000,
+        }
+    }
+
+    sound L92InsertAmmo
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/InsertAmmo,
+        }
+    }
+
+    sound L92EjectAmmo
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/EjectAmmo,
+        }
+    }
+
+    sound L92InsertAmmoStart
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/InsertAmmoStart,
+        }
+    }
+
+    sound L92InsertAmmoStop
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/InsertAmmoStop,
+        }
+    }
+
+    sound L92EjectAmmoStart
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/EjectAmmoStart,
+        }
+    }
+
+    sound L92EjectAmmoStop
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/EjectAmmoStop,
+        }
+    }
+
+    sound L92Rack
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/Rack,
+        }
+    }
+
+    sound L92Jam
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/Jam,
+        }
+    }
+
+    sound L92BringToBear
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/BringToBear,
+        }
+    }
+
+    sound L92AimRelease
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/AimRelease,
+        }
+    }
+
+    sound L92Equip
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/Equip,
+        }
+    }
+
+    sound L92UnEquip
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/UnEquip,
+        }
+    }
+
+    sound L92Break
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/Break,
+        }
+    }
+
+    sound L92Drop
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/Drop,
+        }
+    }
+
+    sound L92CartridgeFall
+    {
+        category = Item,
+        clip
+        {
+            event = Weapon/Firearm/L92/CartridgeFall,
+        }
+    }
+}
