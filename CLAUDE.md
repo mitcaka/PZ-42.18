@@ -61,22 +61,41 @@ end)
 
 ### Cách gắn role check vào recipe crafting
 
+**QUAN TRỌNG**: PZ 42 dùng `OnTest` / `OnCreate`, KHÔNG dùng `lua:` (syntax cũ đã bỏ).
+
+**Bước 1**: Viết function vào `RecipeCodeOnTest` table trong RP-Core (mod của mình):
 ```lua
--- Bước 1: Định nghĩa test function trong RP-Core/lua/server/CraftRecipeCode/
-function mechanicRecipeTest(param)
-    if param.shouldShowAll then return true end
+-- RP-Core/lua/server/CraftRecipeCode/RP_RecipeTests.lua
+RecipeCodeOnTest.mechanicOnly = function(item, player)
     if not isMultiplayer() then return true end
-    local player = param.player
     return player:getRole():hasCapability(Capability.UseMechanicsCheat)
 end
 
--- Bước 2: Gắn vào recipe script
--- recipe Armor_Vehicle_Front
--- {
---     ...
---     lua:mechanicRecipeTest,
--- }
+RecipeCodeOnTest.chefOnly = function(item, player)
+    if not isMultiplayer() then return true end
+    return player:getRole():getName() == "Chef"
+end
 ```
+
+**Bước 2**: Sửa file script `.txt` trong mod gốc (bắt buộc fork/xin phép):
+```
+craftRecipe RepairVehicleEngine
+{
+    OnTest = RecipeCodeOnTest.mechanicOnly,   ← thêm dòng này
+    timedAction = Mechanics,
+    ...
+}
+```
+
+**Phân chia công việc**:
+| Phần | Sửa ở đâu |
+|---|---|
+| `OnTest = ...` trong recipe | **Mod gốc** — bắt buộc fork, chỉ thêm 1 dòng |
+| Function `RecipeCodeOnTest.xxx` | **RP-Core** — toàn bộ logic phức tạp ở đây |
+| `OnCreate = ...` trong recipe | **Mod gốc** — nếu cần custom lúc tạo item |
+| Function `RecipeCodeOnCreate.xxx` | **RP-Core** |
+
+Khi mod gốc update: chỉ cherry-pick thay đổi mới vào fork, không cần merge lại logic.
 
 ---
 
@@ -250,9 +269,14 @@ Ví dụ: `"Police-Medic"` = capability của Police + Nurse.
 Luôn validate ở cả client lẫn server. Client check để ẩn/hiện UI,
 server check để ngăn cheat. Xem pattern trong `lua/server/ClientCommands.lua`.
 
-### Không sửa mod gốc
-Mọi thay đổi phải đi qua RP-Core bằng cách wrap/override function.
-Giữ nguyên mod workshop để dễ update.
+### Recipe script bắt buộc sửa trong mod gốc
+Engine đọc script `.txt` 1 lần lúc load — không có cơ chế inject `OnTest` từ bên ngoài.
+Chiến lược tối ưu: fork mod gốc chỉ để **thêm đúng 1 dòng** `OnTest = RecipeCodeOnTest.xxx,`,
+toàn bộ logic nằm trong RP-Core. Khi mod gốc update chỉ cherry-pick, không merge lại.
+
+### Không sửa logic vào mod gốc
+Chỉ thêm `OnTest`/`OnCreate` reference vào script. Mọi logic thực tế phải nằm trong
+RP-Core bằng cách viết vào `RecipeCodeOnTest` / `RecipeCodeOnCreate` table hoặc wrap/override function.
 
 ---
 
