@@ -1,0 +1,938 @@
+module Base
+{
+    /* CSR Material Bundles
+       Inspired by DJG Bound Materials by JD. Valentine / JasonDGian. */
+
+    craftRecipe CSR_BundlePlanks5
+    {
+        timedAction = Making,
+        time = 60,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundlePlanks5,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 5 [Base.Plank],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundPlanks5,
+        }
+    }
+
+    craftRecipe CSR_BundlePlanks10
+    {
+        timedAction = Making,
+        time = 80,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundlePlanks10,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 10 [Base.Plank],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundPlanks10,
+        }
+    }
+
+    craftRecipe CSR_BundlePlanks20
+    {
+        timedAction = Making,
+        time = 120,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundlePlanks20,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 20 [Base.Plank],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundPlanks20,
+        }
+    }
+
+    craftRecipe CSR_UnbundlePlanks5
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundlePlanks5,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundPlanks5] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 5 Base.Plank,
+        }
+    }
+
+    craftRecipe CSR_UnbundlePlanks10
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundlePlanks10,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundPlanks10] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 10 Base.Plank,
+        }
+    }
+
+    craftRecipe CSR_UnbundlePlanks20
+    {
+        timedAction = Making,
+        time = 80,
+        OnCreate = CSR_MaterialBundles.onUnbundlePlanks20,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundPlanks20] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.Plank,
+        }
+    }
+
+    craftRecipe CSR_BundleSheetMetal5
+    {
+        timedAction = Making,
+        time = 60,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleSheetMetal5,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 5 [Base.SheetMetal],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundSheetMetal5,
+        }
+    }
+
+    craftRecipe CSR_BundleSheetMetal10
+    {
+        timedAction = Making,
+        time = 80,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleSheetMetal10,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 10 [Base.SheetMetal],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundSheetMetal10,
+        }
+    }
+
+    craftRecipe CSR_BundleSheetMetal20
+    {
+        timedAction = Making,
+        time = 120,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleSheetMetal20,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 20 [Base.SheetMetal],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundSheetMetal20,
+        }
+    }
+
+    craftRecipe CSR_UnbundleSheetMetal5
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundleSheetMetal5,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundSheetMetal5] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 5 Base.SheetMetal,
+        }
+    }
+
+    craftRecipe CSR_UnbundleSheetMetal10
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundleSheetMetal10,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundSheetMetal10] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 10 Base.SheetMetal,
+        }
+    }
+
+    craftRecipe CSR_UnbundleSheetMetal20
+    {
+        timedAction = Making,
+        time = 80,
+        OnCreate = CSR_MaterialBundles.onUnbundleSheetMetal20,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundSheetMetal20] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.SheetMetal,
+        }
+    }
+
+    craftRecipe CSR_BundleSmallSheetMetal5
+    {
+        timedAction = Making,
+        time = 60,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleSmallSheetMetal5,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 5 [Base.SmallSheetMetal],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundSmallSheetMetal5,
+        }
+    }
+
+    craftRecipe CSR_BundleSmallSheetMetal10
+    {
+        timedAction = Making,
+        time = 80,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleSmallSheetMetal10,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 10 [Base.SmallSheetMetal],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundSmallSheetMetal10,
+        }
+    }
+
+    craftRecipe CSR_BundleSmallSheetMetal20
+    {
+        timedAction = Making,
+        time = 120,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleSmallSheetMetal20,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 20 [Base.SmallSheetMetal],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundSmallSheetMetal20,
+        }
+    }
+
+    craftRecipe CSR_UnbundleSmallSheetMetal5
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundleSmallSheetMetal5,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundSmallSheetMetal5] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 5 Base.SmallSheetMetal,
+        }
+    }
+
+    craftRecipe CSR_UnbundleSmallSheetMetal10
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundleSmallSheetMetal10,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundSmallSheetMetal10] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 10 Base.SmallSheetMetal,
+        }
+    }
+
+    craftRecipe CSR_UnbundleSmallSheetMetal20
+    {
+        timedAction = Making,
+        time = 80,
+        OnCreate = CSR_MaterialBundles.onUnbundleSmallSheetMetal20,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundSmallSheetMetal20] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.SmallSheetMetal,
+        }
+    }
+
+    craftRecipe CSR_BundleLeadPipes5
+    {
+        timedAction = Making,
+        time = 60,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleLeadPipes5,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 5 [Base.LeadPipe],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundLeadPipes5,
+        }
+    }
+
+    craftRecipe CSR_BundleLeadPipes10
+    {
+        timedAction = Making,
+        time = 80,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleLeadPipes10,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 10 [Base.LeadPipe],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundLeadPipes10,
+        }
+    }
+
+    craftRecipe CSR_BundleLeadPipes20
+    {
+        timedAction = Making,
+        time = 120,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleLeadPipes20,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 20 [Base.LeadPipe],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundLeadPipes20,
+        }
+    }
+
+    craftRecipe CSR_UnbundleLeadPipes5
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundleLeadPipes5,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundLeadPipes5] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 5 Base.LeadPipe,
+        }
+    }
+
+    craftRecipe CSR_UnbundleLeadPipes10
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundleLeadPipes10,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundLeadPipes10] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 10 Base.LeadPipe,
+        }
+    }
+
+    craftRecipe CSR_UnbundleLeadPipes20
+    {
+        timedAction = Making,
+        time = 80,
+        OnCreate = CSR_MaterialBundles.onUnbundleLeadPipes20,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundLeadPipes20] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.LeadPipe,
+        }
+    }
+
+    craftRecipe CSR_BundleMetalPipes5
+    {
+        timedAction = Making,
+        time = 60,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleMetalPipes5,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 5 [Base.MetalPipe],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundMetalPipes5,
+        }
+    }
+
+    craftRecipe CSR_BundleMetalPipes10
+    {
+        timedAction = Making,
+        time = 80,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleMetalPipes10,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 10 [Base.MetalPipe],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundMetalPipes10,
+        }
+    }
+
+    craftRecipe CSR_BundleMetalPipes20
+    {
+        timedAction = Making,
+        time = 120,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleMetalPipes20,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 20 [Base.MetalPipe],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundMetalPipes20,
+        }
+    }
+
+    craftRecipe CSR_UnbundleMetalPipes5
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundleMetalPipes5,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundMetalPipes5] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 5 Base.MetalPipe,
+        }
+    }
+
+    craftRecipe CSR_UnbundleMetalPipes10
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundleMetalPipes10,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundMetalPipes10] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 10 Base.MetalPipe,
+        }
+    }
+
+    craftRecipe CSR_UnbundleMetalPipes20
+    {
+        timedAction = Making,
+        time = 80,
+        OnCreate = CSR_MaterialBundles.onUnbundleMetalPipes20,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundMetalPipes20] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.MetalPipe,
+        }
+    }
+
+    craftRecipe CSR_BundleMetalBars5
+    {
+        timedAction = Making,
+        time = 60,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleMetalBars5,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 5 [Base.MetalBar],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundMetalBars5,
+        }
+    }
+
+    craftRecipe CSR_BundleMetalBars10
+    {
+        timedAction = Making,
+        time = 80,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleMetalBars10,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 10 [Base.MetalBar],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundMetalBars10,
+        }
+    }
+
+    craftRecipe CSR_BundleMetalBars20
+    {
+        timedAction = Making,
+        time = 120,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleMetalBars20,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 20 [Base.MetalBar],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundMetalBars20,
+        }
+    }
+
+    craftRecipe CSR_UnbundleMetalBars5
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundleMetalBars5,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundMetalBars5] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 5 Base.MetalBar,
+        }
+    }
+
+    craftRecipe CSR_UnbundleMetalBars10
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundleMetalBars10,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundMetalBars10] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 10 Base.MetalBar,
+        }
+    }
+
+    craftRecipe CSR_UnbundleMetalBars20
+    {
+        timedAction = Making,
+        time = 80,
+        OnCreate = CSR_MaterialBundles.onUnbundleMetalBars20,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundMetalBars20] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.MetalBar,
+        }
+    }
+
+    craftRecipe CSR_BundleTreeBranches5
+    {
+        timedAction = Making,
+        time = 60,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleTreeBranches5,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 5 [Base.TreeBranch2],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundTreeBranches5,
+        }
+    }
+
+    craftRecipe CSR_BundleTreeBranches10
+    {
+        timedAction = Making,
+        time = 80,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleTreeBranches10,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 10 [Base.TreeBranch2],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundTreeBranches10,
+        }
+    }
+
+    craftRecipe CSR_BundleTreeBranches20
+    {
+        timedAction = Making,
+        time = 120,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleTreeBranches20,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 20 [Base.TreeBranch2],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundTreeBranches20,
+        }
+    }
+
+    craftRecipe CSR_UnbundleTreeBranches5
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundleTreeBranches5,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundTreeBranches5] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 5 Base.TreeBranch2,
+        }
+    }
+
+    craftRecipe CSR_UnbundleTreeBranches10
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundleTreeBranches10,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundTreeBranches10] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 10 Base.TreeBranch2,
+        }
+    }
+
+    craftRecipe CSR_UnbundleTreeBranches20
+    {
+        timedAction = Making,
+        time = 80,
+        OnCreate = CSR_MaterialBundles.onUnbundleTreeBranches20,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundTreeBranches20] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.TreeBranch2,
+        }
+    }
+
+    craftRecipe CSR_BundleWoodenSticks5
+    {
+        timedAction = Making,
+        time = 60,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleWoodenSticks5,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 5 [Base.WoodenStick2],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundWoodenSticks5,
+        }
+    }
+
+    craftRecipe CSR_BundleWoodenSticks10
+    {
+        timedAction = Making,
+        time = 80,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleWoodenSticks10,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 10 [Base.WoodenStick2],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundWoodenSticks10,
+        }
+    }
+
+    craftRecipe CSR_BundleWoodenSticks20
+    {
+        timedAction = Making,
+        time = 120,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleWoodenSticks20,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMaterials,
+        inputs
+        {
+            item 20 [Base.WoodenStick2],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BoundWoodenSticks20,
+        }
+    }
+
+    craftRecipe CSR_UnbundleWoodenSticks5
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundleWoodenSticks5,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundWoodenSticks5] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 5 Base.WoodenStick2,
+        }
+    }
+
+    craftRecipe CSR_UnbundleWoodenSticks10
+    {
+        timedAction = Making,
+        time = 60,
+        OnCreate = CSR_MaterialBundles.onUnbundleWoodenSticks10,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundWoodenSticks10] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 10 Base.WoodenStick2,
+        }
+    }
+
+    craftRecipe CSR_UnbundleWoodenSticks20
+    {
+        timedAction = Making,
+        time = 80,
+        OnCreate = CSR_MaterialBundles.onUnbundleWoodenSticks20,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_BoundWoodenSticks20] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.WoodenStick2,
+        }
+    }
+
+    craftRecipe CSR_BundleMixedConstruction
+    {
+        timedAction = Making,
+        time = 120,
+        OnTest = CSR_MaterialBundles.onTestEnabled,
+        OnCreate = CSR_MaterialBundles.onBundleMixedConstruction,
+        Tags = InHandCraft;CanBeDoneFromFloor,
+        category = CommonSenseReborn,
+        Tooltip = Tooltip_CSR_BundleMixedConstruction,
+        inputs
+        {
+            item 5 [Base.Plank],
+            item 2 [Base.MetalPipe],
+            item 2 [Base.MetalBar],
+            item 2 [Base.SheetMetal],
+            item 4 [Base.SmallSheetMetal],
+            item 1 [Base.Rope;Base.SheetRope],
+        }
+        outputs
+        {
+            item 1 Base.CSR_MixedConstructionBundle,
+        }
+    }
+
+    craftRecipe CSR_UnbundleMixedConstruction
+    {
+        timedAction = Making,
+        time = 80,
+        OnCreate = CSR_MaterialBundles.onUnbundleMixedConstruction,
+        Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = CommonSenseReborn,
+        inputs
+        {
+            item 1 [Base.CSR_MixedConstructionBundle] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 5 Base.Plank,
+            item 2 Base.MetalPipe,
+            item 2 Base.MetalBar,
+            item 2 Base.SheetMetal,
+            item 4 Base.SmallSheetMetal,
+        }
+    }
+}

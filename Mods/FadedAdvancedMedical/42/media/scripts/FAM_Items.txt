@@ -1,0 +1,674 @@
+module FAM
+{
+    model MM_PillsCommercialPainkillers
+    {
+        mesh = WorldItems/PainKillers,
+        texture = WorldItems/MM_PillsCommercialPainkillers,
+        scale = 0.4,
+    }
+
+    item PillsCommercialPainkillers
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        UseDelta = 0.1,
+        UseWhileEquipped = false,
+        Icon = PillsCommercialPainkillers,
+        Tooltip = Tooltip_FAM_PillsCommercialPainkillers,
+        StaticModel = PillBottle,
+        WorldStaticModel = MM_PillsCommercialPainkillers,
+        Medical = true,
+        Tags = base:consumable,
+    }
+
+    model MM_PillsPrescriptionPainkillers
+    {
+        mesh = WorldItems/PainKillers,
+        texture = WorldItems/MM_PillsPrescriptionPainkillers,
+        scale = 0.4,
+    }
+
+    item PillsPrescriptionPainkillers
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        UseDelta = 0.1,
+        UseWhileEquipped = false,
+        Icon = PillsPrescriptionPainkillers,
+        Tooltip = Tooltip_FAM_PillsPrescriptionPainkillers,
+        StaticModel = PillBottle,
+        WorldStaticModel = MM_PillsPrescriptionPainkillers,
+        Medical = true,
+        Tags = base:consumable,
+    }
+
+    model MM_PillsCaffeine
+    {
+        mesh = WorldItems/PainKillers,
+        texture = WorldItems/MM_PillsCaffeine,
+        scale = 0.4,
+    }
+
+    item PillsCaffeine
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        UseDelta = 0.1,
+        UseWhileEquipped = false,
+        Icon = PillsCaffeine,
+        Tooltip = Tooltip_FAM_PillsCaffeine,
+        StaticModel = CaffeinePills,
+        WorldStaticModel = MM_PillsCaffeine,
+        Medical = true,
+        Tags = base:consumable,
+    }
+
+    model MM_PillsCommercialAntibiotic
+    {
+        mesh = WorldItems/Antibiotics,
+        texture = WorldItems/MM_PillsCommercialAntibiotic,
+        scale = 0.6,
+    }
+
+    item PillsCommercialAntibiotic
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        UseDelta = 1.0,
+        UseWhileEquipped = false,
+        Icon = PillsCommercialAntibiotic,
+        Tooltip = Tooltip_FAM_PillsCommercialAntibiotic,
+        StaticModel = PillBottle,
+        WorldStaticModel = MM_PillsCommercialAntibiotic,
+        Medical = true,
+        Tags = base:consumable,
+    }
+
+    model MM_PillsAntiPoisoning
+    {
+        mesh = WorldItems/PainKillers,
+        texture = WorldItems/MM_PillsAntiPoisoning,
+        scale = 0.4,
+    }
+
+    item PillsAntiPoisoning
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        UseDelta = 0.1,
+        UseWhileEquipped = false,
+        Icon = PillsAntiPoisoning,
+        Tooltip = Tooltip_FAM_PillsAntiPoisoning,
+        StaticModel = PillBottle,
+        WorldStaticModel = MM_PillsAntiPoisoning,
+        Medical = true,
+        Tags = base:consumable,
+    }
+
+    model MM_PillsCommercialSedative
+    {
+        mesh = WorldItems/PainKillers,
+        texture = WorldItems/MM_PillsCommercialSedative,
+        scale = 0.4,
+    }
+
+    item PillsCommercialSedative
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        UseDelta = 0.1,
+        UseWhileEquipped = false,
+        Icon = PillsCommercialSedative,
+        Tooltip = Tooltip_FAM_PillsCommercialSedative,
+        StaticModel = PillBottle,
+        WorldStaticModel = MM_PillsCommercialSedative,
+        Medical = true,
+        Tags = base:consumable,
+    }
+
+    item PillsPharmacyPrescription
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        UseDelta = 0.1,
+        UseWhileEquipped = false,
+        Icon = PillsPharmacyPrescription,
+        Tooltip = Tooltip_FAM_PillsPharmacyPrescription,
+        StaticModel = PillBottle,
+        WorldStaticModel = PainKillers_Ground,
+        Medical = true,
+        Tags = base:consumable,
+    }
+
+    model MM_Syrette
+    {
+        mesh = WorldItems/MM_Syrette,
+        texture = WorldItems/MM_Syrette,
+        scale = 0.001,
+    }
+
+    item SyretteHighGradePainkillers
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        Weight = 0.05,
+        HungerChange = 0,
+        StressChange = 10,
+        EatType = EatSmall,
+        CustomContextMenu = Inject,
+        OnEat = OnEat_FAM_SyretteHighGradePainkillers,
+        Icon = SyretteHighGradePainkillers,
+        Tooltip = Tooltip_FAM_SyretteHighGradePainkillers,
+        WorldStaticModel = MM_Syrette,
+        Medical = true,
+    }
+
+    item SyretteAdrenalin
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        Weight = 0.05,
+        HungerChange = 0,
+        StressChange = 10,
+        EatType = EatSmall,
+        CustomContextMenu = Inject,
+        OnEat = OnEat_FAM_SyretteAdrenalin,
+        Icon = SyretteAdrenalin,
+        Tooltip = Tooltip_FAM_SyretteAdrenalin,
+        WorldStaticModel = MM_Syrette,
+        Medical = true,
+    }
+
+    item SyrettePrescriptionAntibiotic
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        Weight = 0.05,
+        HungerChange = 0,
+        StressChange = 10,
+        EatType = EatSmall,
+        CustomContextMenu = Inject,
+        OnEat = OnEat_FAM_SyrettePrescriptionAntibiotic,
+        Icon = SyrettePrescriptionAntibiotic,
+        Tooltip = Tooltip_FAM_SyrettePrescriptionAntibiotic,
+        WorldStaticModel = MM_Syrette,
+        Medical = true,
+    }
+
+    item SyrettePrescriptionSedatives
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        Weight = 0.05,
+        HungerChange = 0,
+        StressChange = 10,
+        EatType = EatSmall,
+        CustomContextMenu = Inject,
+        OnEat = OnEat_FAM_SyrettePrescriptionSedatives,
+        Icon = SyrettePrescriptionSedatives,
+        Tooltip = Tooltip_FAM_SyrettePrescriptionSedatives,
+        WorldStaticModel = MM_Syrette,
+        Medical = true,
+    }
+
+    model MM_BottleFluMedication
+    {
+        mesh = WorldItems/Bottle,
+        texture = WorldItems/MM_BottleFluMedication,
+        scale = 0.3,
+    }
+
+    item BottleFluMedication
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        Weight = 0.1,
+        HungerChange = 0,
+        EatType = Popcan,
+        CustomContextMenu = Drink,
+        OnEat = OnEat_FAM_BottleFluMedication,
+        Icon = BottleFluMedication,
+        Tooltip = Tooltip_FAM_BottleFluMedication,
+        WorldStaticModel = MM_BottleFluMedication,
+        Medical = true,
+    }
+
+    model MM_PowderPackFluMedication
+    {
+        mesh = WorldItems/ColdPack,
+        texture = WorldItems/MM_PowderPackFluMedication,
+        scale = 0.15,
+    }
+
+    item PowderPackFluMedication
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = PowderPackFluMedication,
+        Tooltip = Tooltip_FAM_PowderPackFluMedication,
+        WorldStaticModel = MM_PowderPackFluMedication,
+        Medical = true,
+    }
+
+    item HotDrinkFluMedicationMug
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        Weight = 0.5,
+        Icon = MugFulll,
+        EatType = Popcan,
+        PourType = Mug,
+        GoodHot = true,
+        IsCookable = true,
+        ReplaceOnUse = Base.Mugl,
+        MinutesToCook = 5,
+        MinutesToBurn = 15,
+        ThirstChange = -20.0,
+        UnhappyChange = -10,
+        CustomContextMenu = Drink,
+        OnEat = OnEat_FAM_HotDrinkFluMedication,
+        CustomEatSound = DrinkingFromMug,
+        StaticModel = Mug,
+        WorldStaticModel = Mug,
+        Medical = true,
+    }
+
+    item HotDrinkFluMedicationMugRed
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        Weight = 0.5,
+        Icon = MugRedFull,
+        EatType = Popcan,
+        PourType = Mug,
+        GoodHot = true,
+        IsCookable = true,
+        ReplaceOnUse = Base.Mugl,
+        MinutesToCook = 5,
+        MinutesToBurn = 15,
+        ThirstChange = -20.0,
+        UnhappyChange = -10,
+        CustomContextMenu = Drink,
+        OnEat = OnEat_FAM_HotDrinkFluMedication,
+        CustomEatSound = DrinkingFromMug,
+        StaticModel = MugRed,
+        WorldStaticModel = MugRed,
+        Medical = true,
+    }
+
+    item HotDrinkFluMedicationMugWhite
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        Weight = 0.5,
+        Icon = MugWhite_Full,
+        EatType = Popcan,
+        PourType = Mug,
+        GoodHot = true,
+        IsCookable = true,
+        ReplaceOnUse = Base.MugWhite,
+        MinutesToCook = 5,
+        MinutesToBurn = 15,
+        ThirstChange = -20.0,
+        UnhappyChange = -10,
+        CustomContextMenu = Drink,
+        OnEat = OnEat_FAM_HotDrinkFluMedication,
+        CustomEatSound = DrinkingFromMug,
+        StaticModel = MugWhite,
+        WorldStaticModel = MugWhite,
+        Medical = true,
+    }
+
+    item HotDrinkFluMedicationMugSpiffo
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        Weight = 0.5,
+        Icon = MugSpiffoFull,
+        EatType = Popcan,
+        PourType = Mug,
+        GoodHot = true,
+        IsCookable = true,
+        ReplaceOnUse = Base.MugSpiffo,
+        MinutesToCook = 5,
+        MinutesToBurn = 15,
+        ThirstChange = -20.0,
+        UnhappyChange = -10,
+        CustomContextMenu = Drink,
+        OnEat = OnEat_FAM_HotDrinkFluMedication,
+        CustomEatSound = DrinkingFromMug,
+        StaticModel = MugSpiffo,
+        WorldStaticModel = MugSpiffo,
+        Medical = true,
+    }
+
+    model MM_SealedBandage
+    {
+        mesh = WorldItems/MM_SealedBandage,
+        texture = WorldItems/MM_SealedBandage,
+        scale = 0.002,
+    }
+
+    item SealedBandage
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.11,
+        Icon = SealedBandage,
+        SurvivalGear = true,
+        WorldStaticModel = MM_SealedBandage,
+        Medical = true,
+    }
+
+    model MM_BurnTreatment
+    {
+        mesh = WorldItems/HairGel,
+        texture = WorldItems/MM_BurnTreatment,
+        scale = 0.4,
+    }
+
+    item BurnTreatment
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:drainable,
+        Weight = 0.2,
+        UseDelta = 0.1,
+        Icon = BurnTreatment,
+        Tooltip = Tooltip_FAM_BurnTreatment,
+        WorldStaticModel = MM_BurnTreatment,
+        Medical = true,
+        Tags = base:consumable,
+    }
+
+    model MM_PowderPackHemostatic
+    {
+        mesh = WorldItems/ColdPack,
+        texture = WorldItems/MM_PowderPackHemostatic,
+        scale = 0.15,
+    }
+
+    item PowderPackHemostatic
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = PowderPackHemostatic,
+        Tooltip = Tooltip_FAM_PowderPackHemostatic,
+        WorldStaticModel = MM_PowderPackHemostatic,
+        Medical = true,
+    }
+
+    model MM_Tourniquet
+    {
+        mesh = WorldItems/String,
+        texture = WorldItems/MM_Tourniquet,
+        scale = 0.7,
+    }
+
+    item Tourniquet
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = Tourniquet,
+        Tooltip = Tooltip_FAM_Tourniquet,
+        WorldStaticModel = MM_Tourniquet,
+        Medical = true,
+    }
+
+    model MM_BottleCoughSyrup
+    {
+        mesh = WorldItems/Bottle,
+        texture = WorldItems/MM_BottleCoughSyrup,
+        scale = 0.2,
+    }
+
+    item BottleCoughSyrup
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        Weight = 0.1,
+        HungerChange = 0,
+        EatType = Popcan,
+        CustomContextMenu = Drink,
+        OnEat = OnEat_FAM_BottleCoughSyrup,
+        Icon = BottleCoughSyrup,
+        Tooltip = Tooltip_FAM_BottleCoughSyrup,
+        WorldStaticModel = MM_BottleCoughSyrup,
+        Medical = true,
+    }
+
+    model MM_NasalSpray
+    {
+        mesh = WorldItems/MM_NasalSpray,
+        texture = WorldItems/MM_NasalSpray,
+        scale = 0.001,
+    }
+
+    item NasalSpray
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:food,
+        Weight = 0.1,
+        HungerChange = 0,
+        EatType = Sniff,
+        CustomContextMenu = Sniff,
+        OnEat = OnEat_FAM_NasalSpray,
+        Icon = NasalSpray,
+        Tooltip = Tooltip_FAM_NasalSpray,
+        WorldStaticModel = MM_NasalSpray,
+        Medical = true,
+    }
+
+    item StumpCareKit
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.4,
+        Icon = FirstAidKit,
+        Tooltip = Tooltip_FAM_StumpCareKit,
+        Medical = true,
+    }
+
+    item AntisepticWashKit
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.25,
+        Icon = FirstAidKit,
+        Tooltip = Tooltip_FAM_AntisepticWashKit,
+        Medical = true,
+    }
+
+    item IVKit
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.2,
+        Icon = FAMIVKit,
+        Tooltip = Tooltip_FAM_IVKit,
+        Medical = true,
+    }
+
+    model FAM_SalineBag_Ground
+    {
+        mesh = WorldItems/MM_SealedBandage,
+        texture = WorldItems/FAM_SalineBag,
+        scale = 0.002,
+    }
+
+    item SalineBag
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = FAMSalineBag,
+        Tooltip = Tooltip_FAM_SalineBag,
+        WorldStaticModel = FAM_SalineBag_Ground,
+        Medical = true,
+    }
+
+    model FAM_FieldBloodPack_Ground
+    {
+        mesh = WorldItems/MM_SealedBandage,
+        texture = WorldItems/FAM_FieldBloodPack,
+        scale = 0.002,
+    }
+
+    item FieldBloodPack
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.6,
+        Icon = FAMFieldBloodPack,
+        Tooltip = Tooltip_FAM_FieldBloodPack,
+        WorldStaticModel = FAM_FieldBloodPack_Ground,
+        Medical = true,
+    }
+
+    item EpinephrineInjector
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = FAMEpinephrineInjector,
+        Tooltip = Tooltip_FAM_EpinephrineInjector,
+        Medical = true,
+    }
+
+    item FieldMedicalJournal
+    {
+        DisplayCategory = Literature,
+        ItemType = base:normal,
+        Weight = 0.4,
+        Icon = Book,
+        Tooltip = Tooltip_FAM_FieldMedicalJournal,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        Medical = true,
+    }
+
+    item PathologySample
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 0.05,
+        Icon = MMSyrette,
+        Tooltip = Tooltip_FAM_PathologySample,
+        WorldStaticModel = MM_Syrette,
+        Medical = true,
+    }
+
+    item ProtocolTrainingToken
+    {
+        DisplayCategory = Hidden,
+        ItemType = base:normal,
+        Weight = 0,
+        Icon = Magazine,
+        hidden = true,
+    }
+
+    item BasicArmProsthesis
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 2.5,
+        Icon = ArmProsthetic,
+        Tooltip = Tooltip_FAM_BasicArmProsthesis,
+        Medical = true,
+    }
+
+    item HookArmProsthesis
+    {
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+        Weight = 2.2,
+        Icon = ArmProsthetic,
+        Tooltip = Tooltip_FAM_HookArmProsthesis,
+        Medical = true,
+    }
+
+    item FieldTraumaManual
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.3,
+        Icon = Magazine,
+        NumberOfPages = 24,
+        LearnedRecipes = FAM_MakeTourniquet;FAM_MakeBurnGel,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+    }
+
+    item EmergencyPharmacologyNotes
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.2,
+        Icon = Magazine,
+        NumberOfPages = 18,
+        LearnedRecipes = FAM_MakeHotDrinkFluMedication;FAM_MakeHemostaticPack,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+    }
+
+    item SanitationFieldManual
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.25,
+        Icon = Magazine,
+        NumberOfPages = 20,
+        Tooltip = Tooltip_FAM_SanitationFieldManual,
+        LearnedRecipes = FAM_SanitationProtocol;FAM_MakeAntisepticWashKit,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+    }
+
+    item SurgicalAmputationManual
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.35,
+        Icon = Magazine,
+        NumberOfPages = 32,
+        Tooltip = Tooltip_FAM_SurgicalAmputationManual,
+        LearnedRecipes = FAM_FieldAmputationProtocol;FAM_StumpCareProtocol,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+    }
+
+    item ProstheticFittingGuide
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.25,
+        Icon = Magazine,
+        NumberOfPages = 20,
+        Tooltip = Tooltip_FAM_ProstheticFittingGuide,
+        LearnedRecipes = FAM_ProstheticFittingProtocol;FAM_StumpCareProtocol,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+    }
+
+    item VascularAccessGuide
+    {
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Weight = 0.25,
+        Icon = FAMVascularAccessGuide,
+        NumberOfPages = 22,
+        Tooltip = Tooltip_FAM_VascularAccessGuide,
+        LearnedRecipes = FAM_IVFluidProtocol;FAM_BloodSupportProtocol;FAM_EpinephrineProtocol,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+    }
+}

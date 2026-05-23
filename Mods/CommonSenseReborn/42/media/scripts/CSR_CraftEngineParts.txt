@@ -1,0 +1,44 @@
+module CommonSenseReborn
+{
+    imports
+    {
+        Base
+    }
+
+    /* ── Craftable Engine Parts (CSR) ────────────────────────────────────────
+       Single combined recipe gated on Mechanics 3 + MetalWelding 3 +
+       Electricity 3 + Maintenance 3. Auto-learned once all four are met.
+       Output: 2 Engine Parts.
+       ──────────────────────────────────────────────────────────────────── */
+    craftRecipe CSR_CraftEngineParts
+    {
+        timedAction = Welding,
+        time = 360,
+        needToBeLearn = true,
+        SkillRequired = Mechanics:3;MetalWelding:3;Electricity:3;Maintenance:3,
+        AutoLearnAll = Mechanics:3;MetalWelding:3;Electricity:3;Maintenance:3,
+        tags = AnySurfaceCraft,
+        category = CommonSenseReborn,
+        xpAward = Mechanics:15;MetalWelding:15;Electricity:10,
+        inputs
+        {
+            item 1 tags[WeldingMask] mode:keep,
+            item 1 tags[Hammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight],
+            item 1 tags[Wrench] mode:keep flags[MayDegradeLight],
+            item 4 [Base.BlowTorch],
+            item 3 [Base.WeldingRods],
+            item 1 [Base.DuctTape],
+            item 1 [Base.ScrapMetal],
+            item 2 [Base.MetalPipe],
+            item 1 [Base.SheetMetal],
+            item 1 [Base.ElectricWire],
+            item 1 [Base.ElectronicsScrap],
+            item 8 [Base.Screws],
+        }
+        outputs
+        {
+            item 2 Base.EngineParts,
+        }
+    }
+}

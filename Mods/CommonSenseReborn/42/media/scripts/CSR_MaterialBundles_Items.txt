@@ -1,0 +1,280 @@
+module Base
+{
+    /* CSR Material Bundles
+       Inspired by DJG Bound Materials by JD. Valentine / JasonDGian. */
+
+    item CSR_BoundPlanks5
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Planks (x5),
+        Icon = CSR_BoundPlanks,
+        Weight = 7.5,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundlePlanks5,
+    }
+
+    item CSR_BoundPlanks10
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Planks (x10),
+        Icon = CSR_BoundPlanks,
+        Weight = 15,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundlePlanks10,
+    }
+
+    item CSR_BoundPlanks20
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Planks (x20),
+        Icon = CSR_BoundPlanks,
+        Weight = 25,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundlePlanks20,
+    }
+
+    item CSR_BoundSheetMetal5
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Sheet Metal (x5),
+        Icon = CSR_BoundMetalSheets,
+        Weight = 4.5,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleSheetMetal5,
+    }
+
+    item CSR_BoundSheetMetal10
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Sheet Metal (x10),
+        Icon = CSR_BoundMetalSheets,
+        Weight = 9,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleSheetMetal10,
+    }
+
+    item CSR_BoundSheetMetal20
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Sheet Metal (x20),
+        Icon = CSR_BoundMetalSheets,
+        Weight = 18,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleSheetMetal20,
+    }
+
+    item CSR_BoundSmallSheetMetal5
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Small Sheet Metal (x5),
+        Icon = CSR_BoundSmallMetalSheets,
+        Weight = 1.2,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleSmallSheetMetal5,
+    }
+
+    item CSR_BoundSmallSheetMetal10
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Small Sheet Metal (x10),
+        Icon = CSR_BoundSmallMetalSheets,
+        Weight = 2.4,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleSmallSheetMetal10,
+    }
+
+    item CSR_BoundSmallSheetMetal20
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Small Sheet Metal (x20),
+        Icon = CSR_BoundSmallMetalSheets,
+        Weight = 4.8,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleSmallSheetMetal20,
+    }
+
+    item CSR_BoundLeadPipes5
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Lead Pipes (x5),
+        Icon = CSR_BoundLeadPipes,
+        Weight = 4.5,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleLeadPipes5,
+    }
+
+    item CSR_BoundLeadPipes10
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Lead Pipes (x10),
+        Icon = CSR_BoundLeadPipes,
+        Weight = 9,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleLeadPipes10,
+    }
+
+    item CSR_BoundLeadPipes20
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Lead Pipes (x20),
+        Icon = CSR_BoundLeadPipes,
+        Weight = 18,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleLeadPipes20,
+    }
+
+    item CSR_BoundMetalPipes5
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Metal Pipes (x5),
+        Icon = CSR_BoundMetalPipes,
+        Weight = 4.5,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleMetalPipes5,
+    }
+
+    item CSR_BoundMetalPipes10
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Metal Pipes (x10),
+        Icon = CSR_BoundMetalPipes,
+        Weight = 9,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleMetalPipes10,
+    }
+
+    item CSR_BoundMetalPipes20
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Metal Pipes (x20),
+        Icon = CSR_BoundMetalPipes,
+        Weight = 18,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleMetalPipes20,
+    }
+
+    item CSR_BoundMetalBars5
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Metal Bars (x5),
+        Icon = CSR_BoundMetalBars,
+        Weight = 4.5,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleMetalBars5,
+    }
+
+    item CSR_BoundMetalBars10
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Metal Bars (x10),
+        Icon = CSR_BoundMetalBars,
+        Weight = 9,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleMetalBars10,
+    }
+
+    item CSR_BoundMetalBars20
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Metal Bars (x20),
+        Icon = CSR_BoundMetalBars,
+        Weight = 18,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleMetalBars20,
+    }
+
+    item CSR_BoundTreeBranches5
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Tree Branches (x5),
+        Icon = CSR_BoundTreeBranches,
+        Weight = 4.5,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleTreeBranches5,
+    }
+
+    item CSR_BoundTreeBranches10
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Tree Branches (x10),
+        Icon = CSR_BoundTreeBranches,
+        Weight = 9,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleTreeBranches10,
+    }
+
+    item CSR_BoundTreeBranches20
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Tree Branches (x20),
+        Icon = CSR_BoundTreeBranches,
+        Weight = 18,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleTreeBranches20,
+    }
+
+    item CSR_BoundWoodenSticks5
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Wooden Rods (x5),
+        Icon = CSR_BoundSturdyStick,
+        Weight = 4,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleWoodenSticks5,
+    }
+
+    item CSR_BoundWoodenSticks10
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Wooden Rods (x10),
+        Icon = CSR_BoundSturdyStick,
+        Weight = 8,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleWoodenSticks10,
+    }
+
+    item CSR_BoundWoodenSticks20
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Bound Wooden Rods (x20),
+        Icon = CSR_BoundSturdyStick,
+        Weight = 16,
+        Tooltip = Tooltip_CSR_MaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleWoodenSticks20,
+    }
+
+    item CSR_MixedConstructionBundle
+    {
+        DisplayCategory = Material,
+        ItemType = base:normal,
+        DisplayName = Mixed Construction Bundle,
+        Icon = CSR_MixedMaterialBundle,
+        Weight = 15,
+        Tooltip = Tooltip_CSR_MixedMaterialBundle,
+        DoubleClickRecipe = CSR_UnbundleMixedConstruction,
+    }
+}

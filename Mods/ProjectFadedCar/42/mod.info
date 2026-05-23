@@ -1,0 +1,11 @@
+name=Project Faded Car
+id=ProjectFadedCar
+description=Independent B42.18 vehicle maintenance, dashboard, The Shop service, engine swap, and wreck restoration systems built with vanilla assets and CSR-friendly UI behavior.
+poster=poster.png
+icon=icon.png
+modversion=0.1.0
+versionMin=42.18
+versionMax=42.99
+author=Faded
+category=vehicles
+incompatible=\ProjectSummerCar

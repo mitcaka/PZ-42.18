@@ -1,0 +1,22 @@
+{
+    "ContextMenu_Inject": "주사",
+    "ContextMenu_FAM_Triage": "FAM 분류",
+    "ContextMenu_FAM_OpenTriage": "분류 모니터 열기",
+    "ContextMenu_FAM_MedicalCheck": "FAM 의료 확인",
+    "ContextMenu_FAM_ApplyBurnGel": "화상 젤 바르기",
+    "ContextMenu_FAM_ApplyHemostatic": "지혈 분말 사용",
+    "ContextMenu_FAM_ApplyTourniquet": "지혈대 적용",
+    "ContextMenu_FAM_SanitizeExposure": "노출 부위 소독",
+    "ContextMenu_FAM_ApplyStumpCare": "절단단 처치 적용",
+    "ContextMenu_FAM_StartIVFluids": "정맥 수액 시작",
+    "ContextMenu_FAM_AdministerBloodPack": "혈액 팩 투여",
+    "ContextMenu_FAM_AdministerEpinephrine": "에피네프린 투여",
+    "ContextMenu_FAM_FieldAmputation": "현장 절단",
+    "ContextMenu_FAM_FitProsthetic": "의수 장착",
+    "ContextMenu_FAM_RemoveProsthetic": "의수 제거",
+    "ContextMenu_FAM_Pathology": "FAM 병리",
+    "ContextMenu_FAM_StudyCorpse": "시체 조사",
+    "ContextMenu_FAM_CollectPathologySample": "병리 샘플 채취",
+    "ContextMenu_FAM_ClinicalAutopsy": "임상 부검",
+    "ContextMenu_FAM_OpenPathologyBoard": "병리 기록판 열기"
+}

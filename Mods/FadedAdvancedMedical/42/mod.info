@@ -1,0 +1,7 @@
+name=Faded's Advanced Medical
+id=FadedAdvancedMedical
+author=Faded
+description=FAM rebuild for Build 42.18: expanded first aid, FAM-owned medical conditions, field amputation, prosthetics, CSR-aware antibody support, and a green-glow triage interface.
+poster=poster.png
+versionMin=42.0
+category=gameplay,items,ui

@@ -1,0 +1,124 @@
+================================================================================
+COMMON SENSE REBORN -- LICENSE & COPYRIGHT NOTICE
+================================================================================
+
+(c) 2025-2026 Faded. All rights reserved.
+
+This file is intentionally bundled inside the mod package as a legal notice.
+If you are reading this, you have a copy of Common Sense Reborn (CSR) on disk.
+The presence of this file does not grant any rights beyond personal play use.
+
+--------------------------------------------------------------------------------
+1. NATURE OF THIS RELEASE
+--------------------------------------------------------------------------------
+
+Common Sense Reborn is distributed as a PLAYABLE MOD for The Indie Stone's
+"Project Zomboid". It is NOT released under any open-source, permissive,
+copyleft, Creative Commons, or "free to fork" license.
+
+The Lua source code, item scripts, recipes, sandbox configuration files,
+translation JSON, original art, animations, sounds, models, texture packs,
+and any other original content authored by Faded for this mod remain the
+exclusive intellectual property of Faded.
+
+Subscribing to or downloading this mod grants you a personal,
+non-exclusive, non-transferable, revocable licence solely to PLAY the mod
+in The Indie Stone's "Project Zomboid". No other rights -- express or
+implied, by estoppel or otherwise -- are granted. The author may revoke
+this licence at any time for breach of the terms below.
+
+--------------------------------------------------------------------------------
+2. PERMITTED USES (no permission required)
+--------------------------------------------------------------------------------
+
+  * Use the mod in your own singleplayer save.
+  * Run the mod on any public or private multiplayer server.
+  * Stream, record, and publish gameplay footage of CSR (monetised or not).
+  * Reference the public-facing feature list as inspiration when designing
+    your own ORIGINAL work.
+
+--------------------------------------------------------------------------------
+3. PROHIBITED USES (require prior written permission)
+--------------------------------------------------------------------------------
+
+Without explicit written consent from the author, you MAY NOT:
+
+  * Reuse, copy, port, translate, fork, or repackage any portion of the
+    code, scripts, recipes, sandbox entries, translations, or original
+    assets into another mod -- public or private, free or paid.
+  * Re-upload Common Sense Reborn (in whole or in part) to the Steam
+    Workshop, GitHub, GitLab, Nexus Mods, ModDB, or any other public or
+    private distribution platform.
+  * Bundle CSR or any of its files inside another mod's distribution.
+  * Decompile, deobfuscate, or extract bundled binary assets for the
+    purpose of redistribution.
+  * Include CSR's source files, in whole or in part, in any
+    machine-learning training corpus, fine-tuning dataset, or AI model
+    weights.
+  * Sell, sublicense, or commercialise CSR or any of its derivatives.
+
+--------------------------------------------------------------------------------
+4. THIRD-PARTY CONTENT
+--------------------------------------------------------------------------------
+
+CSR contains a small amount of third-party content used with explicit
+written permission from its respective author(s). That content remains the
+property of its original author and is included only under the terms of
+that prior permission. The most notable example is the material bundles
+feature, adapted with permission from JD. Valentine / JasonDGian's
+"DJG Bound Materials".
+
+CSR's corpse-flesh icon is adapted from An77777777's "Butcher Corpses"
+reference material as provided for the last-resort harvest pass.
+
+If you are an asset author and believe content of yours appears in CSR
+without proper permission, please contact the author immediately via the
+official Discord and the issue will be resolved.
+
+--------------------------------------------------------------------------------
+5. NO WARRANTY
+--------------------------------------------------------------------------------
+
+CSR is provided "as is", without warranty of any kind, express or implied,
+including but not limited to the implied warranties of merchantability,
+fitness for a particular purpose, and non-infringement. The author shall
+not be liable for any damages, save corruption, lost progression, server
+downtime, or other claims arising from the use of this mod, even if
+advised of the possibility of such damages.
+
+--------------------------------------------------------------------------------
+6. ENFORCEMENT
+--------------------------------------------------------------------------------
+
+Unauthorised re-uploads, ports, asset rips, or derivative distributions
+will be reported to the hosting platform under DMCA (17 U.S.C. § 512) or
+the platform's equivalent intellectual-property policy (Steam Workshop IP
+report, GitHub DMCA, Nexus Mods asset removal, ModDB content takedown,
+etc.).
+
+This notice constitutes formal written assertion of copyright ownership
+and an instruction not to copy. Continued infringement after notice may
+result in additional legal action, including injunctive relief and
+recovery of damages and costs where permitted by applicable law.
+
+Silence is not consent. Lack of immediate enforcement against any
+particular infringer does not constitute waiver of any rights against
+that or any other infringer.
+
+--------------------------------------------------------------------------------
+7. CONTACT
+--------------------------------------------------------------------------------
+
+For port requests, collaboration, translation contributions, takedown
+notices, or any licensing inquiry:
+
+  Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=3698958906
+  Discord:        https://discord.gg/yZ9xMv3em
+  Ko-fi:          https://ko-fi.com/fadedone
+
+Silence is not consent. If you do not receive a written reply granting
+specific permission, the answer is no.
+
+================================================================================
+END OF LICENSE
+================================================================================

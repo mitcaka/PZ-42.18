@@ -1,0 +1,78 @@
+module Base
+{
+    /* CSR Bink's No Stinks: Pooper Scooper
+       A craftable shovel-class tool dedicated to scooping animal dung in a
+       radius. Mechanically a vanilla Shovel clone with the same Dig anim
+       and digplow / takedung tags, plus a CSR-only marker tag the inventory
+       context menu uses to surface the radius-scoop option. */
+
+    item CSR_BinksScooper
+    {
+        DisplayCategory = GardeningWeapon,
+        ItemType = base:weapon,
+        Weight = 2.0,
+        Icon = Shovel,
+        AttachmentType = Shovel,
+        BaseSpeed = 0.8,
+        BreakSound = ShovelBreak,
+        Categories = base:blunt,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 10,
+        CritDmgMultiplier = 2.0,
+        CriticalChance = 40.0,
+        DamageCategory = Slash,
+        DamageMakeHole = true,
+        DoorDamage = 10,
+        DoorHitSound = ShovelHit,
+        DropSound = ShovelDrop,
+        HitAngleMod = -30.0,
+        HitFloorSound = ShovelHit,
+        HitSound = ShovelHit,
+        IdleAnim = Idle_Weapon2,
+        KnockBackOnNoDeath = true,
+        KnockdownMod = 2.0,
+        MaxDamage = 1.9,
+        MaxHitcount = 3,
+        MaxRange = 1.6,
+        MetalValue = 70.0,
+        MinAngle = 0.85,
+        MinDamage = 0.8,
+        MinRange = 0.61,
+        MinimumSwingtime = 2.1,
+        PushBackMod = 0.5,
+        RunAnim = Run_Weapon2,
+        SubCategory = Swinging,
+        SwingAmountBeforeImpact = 0.02,
+        SwingAnim = Bat,
+        SwingSound = ShovelSwing,
+        Swingtime = 2.1,
+        TreeDamage = 1,
+        TwoHandWeapon = true,
+        WeaponLength = 0.55,
+        WeaponSprite = Shovel,
+        Tags = base:clearashes;base:diggrave;base:digplow;base:takedirt;base:takedung;base:hastoolhead;base:killanimal;base:repairwithglue;base:repairwithtape;base:hasmetal;CSRBinksScooper;base:showcondition,
+        DigType = Shovel,
+        HeadCondition = 10,
+        HeadConditionLowerChanceMultiplier = 1.0,
+    }
+
+    /* Recipe: 1 Shovel + 1 DuctTape + 1 Plank -> 1 Bink's Pooper Scooper */
+    craftRecipe CSR_CraftBinksScooper
+    {
+        timedAction = Making,
+        category = CommonSenseReborn,
+        time = 80,
+        Tags = InHandCraft;CanBeDoneInDark,
+
+        inputs
+        {
+            item 1 [Base.Shovel] flags[InheritCondition;AllowDestroyedItem],
+            item 1 [Base.DuctTape],
+            item 1 [Base.Plank],
+        }
+        outputs
+        {
+            item 1 Base.CSR_BinksScooper,
+        }
+    }
+}

@@ -1,0 +1,49 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_FireHydrant
+        {
+            LuaWindowClass = ISEntityTabWindow,
+            DisplayName = Standpipe,
+            Icon = Item_WaterDrop,
+        }
+    }
+
+    entity CSRStandpipeWater
+    {
+        component UiConfig
+        {
+            xuiSkin = default,
+            entityStyle = ES_FireHydrant,
+            uiEnabled = true,
+        }
+        component FluidContainer
+        {
+            ContainerName = CSRStandpipeWater,
+            Capacity = 12000.0,
+            InputLocked = true,
+            HiddenAmount = false,
+            InitialPercentMin = 0.25,
+            InitialPercentMax = 1.0,
+            Fluids
+            {
+                fluid = Water:1.0,
+            }
+            whitelist
+            {
+                fluid = Water,
+            }
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = street_decoration_01_12,
+                }
+            }
+        }
+    }
+}

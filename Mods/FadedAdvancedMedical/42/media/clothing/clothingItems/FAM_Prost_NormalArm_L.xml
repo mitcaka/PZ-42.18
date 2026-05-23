@@ -1,0 +1,10 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<clothingItem>
+  <m_MaleModel>Prosthesis\normalArm_L_M</m_MaleModel>
+  <m_FemaleModel>Prosthesis\normalArm_L_F</m_FemaleModel>
+  <m_GUID>21f9b66d-87f7-4690-8412-206ac4b9440a</m_GUID>
+
+  <m_Static>false</m_Static>
+  <m_AllowRandomTint>false</m_AllowRandomTint>
+  <textureChoices>Prosthesis\normalArm</textureChoices>
+</clothingItem>

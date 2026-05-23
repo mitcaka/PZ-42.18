@@ -1,0 +1,53 @@
+module Base
+{
+    model CSR_AntibodySyringe_Empty
+    {
+        mesh = WorldItems/CSR_AntibodySyringe_Empty,
+        texture = WorldItems/CSR_AntibodySyringe_Empty,
+        scale = 0.15,
+    }
+
+    model CSR_ImmuneBloodSyringe
+    {
+        mesh = WorldItems/CSR_ImmuneBloodSyringe,
+        texture = WorldItems/CSR_ImmuneBloodSyringe,
+        scale = 0.15,
+    }
+
+    model CSR_ImmuneBloodSyringe_Hand
+    {
+        mesh = CSR_ImmuneBloodSyringe_Hand,
+        texture = WorldItems/CSR_ImmuneBloodSyringe,
+
+        attachment Bip01_Prop1
+        {
+            offset = 0.0133 0.0119 -0.0150,
+            rotate = 3.8564 -18.6404 177.5765,
+            scale = 0.1200,
+        }
+    }
+
+    item CSR_AntibodySyringeEmpty
+    {
+        DisplayCategory = FirstAid,
+        DisplayName = Sterile Syringe,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = CSR_AntibodySyringeEmpty,
+        StaticModel = CSR_AntibodySyringe_Empty,
+        WorldStaticModel = CSR_AntibodySyringe_Empty,
+        Tooltip = Tooltip_CSR_AntibodySyringeEmpty,
+    }
+
+    item CSR_ImmuneBloodSyringe
+    {
+        DisplayCategory = FirstAid,
+        DisplayName = Immune Blood Syringe,
+        ItemType = base:normal,
+        Weight = 0.2,
+        Icon = CSR_ImmuneBloodSyringe,
+        StaticModel = CSR_ImmuneBloodSyringe_Hand,
+        WorldStaticModel = CSR_ImmuneBloodSyringe,
+        Tooltip = Tooltip_CSR_ImmuneBloodSyringe,
+    }
+}

@@ -1,0 +1,11 @@
+name=Common Sense Reborn
+id=CommonSenseReborn
+description=Build 42 QoL mega-mod. 100+ features across food, tools, entry, repair, weapons, vehicles, loot, HUD, and more. 120+ sandbox options. SP + MP. No dependencies.
+version=1.8.37
+author=Common Sense Reborn Team
+poster=poster.png
+pack=csr_groundmarking
+pack=csr_bath_water_A
+pack=csr_bath_water_B
+pack=PowerNodeTiles
+tiledef=CSRPowerNodes 9044

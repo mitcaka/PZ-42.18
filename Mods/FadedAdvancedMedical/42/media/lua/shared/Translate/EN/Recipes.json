@@ -1,0 +1,17 @@
+{
+    "FAM_OpenSealedBandage": "Open Sealed Bandage",
+    "FAM_CreateFieldMedicalJournal": "Create FAM Field Medical Journal",
+    "FAM_MakeHotDrinkFluMedication": "Prepare Hot Flu Medication",
+    "FAM_MakeTourniquet": "Make Emergency Tourniquet",
+    "FAM_MakeBurnGel": "Mix Burn Gel",
+    "FAM_MakeHemostaticPack": "Pack Hemostatic Powder",
+    "FAM_MakeAntisepticWashKit": "Assemble Antiseptic Wash Kit",
+    "FAM_AssembleIVKit": "Assemble IV Start Kit",
+    "FAM_SanitationProtocol": "FAM Sanitation Protocol",
+    "FAM_FieldAmputationProtocol": "FAM Field Amputation Protocol",
+    "FAM_StumpCareProtocol": "FAM Stump Care Protocol",
+    "FAM_ProstheticFittingProtocol": "FAM Prosthetic Fitting Protocol",
+    "FAM_IVFluidProtocol": "FAM IV Fluid Protocol",
+    "FAM_BloodSupportProtocol": "FAM Blood Support Protocol",
+    "FAM_EpinephrineProtocol": "FAM Epinephrine Protocol"
+}

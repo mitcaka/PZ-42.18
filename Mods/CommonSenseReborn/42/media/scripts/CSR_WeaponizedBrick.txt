@@ -1,0 +1,79 @@
+module Base
+{
+    model CSR_WeaponizedBrick
+    {
+        mesh = weapons/1handed/CSR_WeaponizedBrick,
+        texture = weapons/1handed/CSR_WeaponizedBrick,
+        scale = 0.5,
+
+        attachments world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+
+    item CSR_WeaponizedBrick
+    {
+        DisplayCategory = WeaponImprovised,
+        ItemType = base:weapon,
+        DisplayName = Weaponized Brick,
+        Weight = 0.8,
+        Icon = CSR_WeaponizedBrick,
+        AttachmentType = Hammer,
+        BaseSpeed = 1.0,
+        BreakSound = BallPeenHammerBreak,
+        Categories = base:smallblunt,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax = 6,
+        CritDmgMultiplier = 2.0,
+        CriticalChance = 35.0,
+        DoorDamage = 8,
+        DoorHitSound = BallPeenHammerHit,
+        DropSound = BallPeenHammerDrop,
+        HitFloorSound = BallPeenHammerHit,
+        HitSound = BallPeenHammerHit,
+        IdleAnim = Idle_Weapon2,
+        KnockBackOnNoDeath = true,
+        KnockdownMod = 1.0,
+        MaxDamage = 1.1,
+        MaxHitcount = 1,
+        MaxRange = 1.05,
+        MinAngle = 0.65,
+        MinDamage = 0.55,
+        MinRange = 0.61,
+        MinimumSwingtime = 2.4,
+        PushBackMod = 0.4,
+        RunAnim = Run_Weapon2,
+        SplatBloodOnNoDeath = true,
+        SplatNumber = 1,
+        SubCategory = Swinging,
+        SwingAmountBeforeImpact = 0.02,
+        SwingAnim = Bat,
+        SwingSound = BallPeenHammerSwing,
+        Swingtime = 2.4,
+        TreeDamage = 0,
+        WeaponLength = 0.22,
+        WeaponSprite = CSR_WeaponizedBrick,
+        WorldStaticModel = CSR_WeaponizedBrick,
+        Tags = base:repairwithtape;base:repairwithglue;base:showcondition,
+    }
+
+    craftRecipe CSR_WeaponizeBrick
+    {
+        timedAction = Making,
+        category = CommonSenseReborn,
+        time = 25,
+        Tags = InHandCraft;CanBeDoneInDark,
+
+        inputs
+        {
+            item 1 [Base.ClayBrick] mode:destroy,
+            item 1 [Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips],
+        }
+        outputs
+        {
+            item 1 Base.CSR_WeaponizedBrick,
+        }
+    }
+}

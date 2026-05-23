@@ -1,0 +1,422 @@
+module Base
+{
+    model CSR_Glowstick
+    {
+        mesh = weapons/1handed/CSR_Glowstick,
+        texture = weapons/1handed/CSR_Glowstick,
+        scale = 0.5,
+
+        attachments world
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+
+    model CSR_SignalPistol
+    {
+        mesh = CSR_SignalPistol,
+        texture = CSR_SignalPistol,
+
+        attachment muzzle
+        {
+            offset = 0.0000 0.2400 -0.0350,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+
+    model CSR_SignalFlareRound
+    {
+        mesh = CSR_SignalFlareRound,
+        texture = CSR_SignalPistol,
+    }
+
+    model CSR_HandFlare
+    {
+        mesh = CSR_HandFlare,
+        texture = CSR_HandFlare,
+    }
+
+    item CSR_GlowstickRed
+    {
+        DisplayCategory = LightSource,
+        ItemType = base:normal,
+        DisplayName = Signal Glow Stick (Red),
+        Weight = 0.3,
+        Icon = CSR_GlowstickRed,
+        Tooltip = Tooltip_CSR_Glowstick,
+        WorldStaticModel = CSR_Glowstick,
+        Tags = base:hasmetal;base:miscelectronic,
+    }
+
+    item CSR_GlowstickGreen
+    {
+        DisplayCategory = LightSource,
+        ItemType = base:normal,
+        DisplayName = Signal Glow Stick (Green),
+        Weight = 0.3,
+        Icon = CSR_GlowstickGreen,
+        Tooltip = Tooltip_CSR_Glowstick,
+        WorldStaticModel = CSR_Glowstick,
+        Tags = base:hasmetal;base:miscelectronic,
+    }
+
+    item CSR_GlowstickBlue
+    {
+        DisplayCategory = LightSource,
+        ItemType = base:normal,
+        DisplayName = Signal Glow Stick (Blue),
+        Weight = 0.3,
+        Icon = CSR_GlowstickBlue,
+        Tooltip = Tooltip_CSR_Glowstick,
+        WorldStaticModel = CSR_Glowstick,
+        Tags = base:hasmetal;base:miscelectronic,
+    }
+
+    item CSR_GlowstickWhite
+    {
+        DisplayCategory = LightSource,
+        ItemType = base:normal,
+        DisplayName = Signal Glow Stick (White),
+        Weight = 0.3,
+        Icon = CSR_GlowstickWhite,
+        Tooltip = Tooltip_CSR_Glowstick,
+        WorldStaticModel = CSR_Glowstick,
+        Tags = base:hasmetal;base:miscelectronic,
+    }
+
+    item CSR_GlowstickYellow
+    {
+        DisplayCategory = LightSource,
+        ItemType = base:normal,
+        DisplayName = Signal Glow Stick (Yellow),
+        Weight = 0.3,
+        Icon = CSR_GlowstickYellow,
+        Tooltip = Tooltip_CSR_Glowstick,
+        WorldStaticModel = CSR_Glowstick,
+        Tags = base:hasmetal;base:miscelectronic,
+    }
+
+    item CSR_GlowstickPurple
+    {
+        DisplayCategory = LightSource,
+        ItemType = base:normal,
+        DisplayName = Signal Glow Stick (Purple),
+        Weight = 0.3,
+        Icon = CSR_GlowstickPurple,
+        Tooltip = Tooltip_CSR_Glowstick,
+        WorldStaticModel = CSR_Glowstick,
+        Tags = base:hasmetal;base:miscelectronic,
+    }
+
+    item CSR_SignalPistol
+    {
+        DisplayCategory = Weapon,
+        ItemType = base:weapon,
+        DisplayName = Signal Flare Gun,
+        Weight = 1.1,
+        Icon = CSR_SignalPistol,
+        AimingPerkCritModifier = 6,
+        AimingPerkHitChanceModifier = 4,
+        AimingPerkMinAngleModifier = 0.05,
+        AimingPerkRangeModifier = 0,
+        Aimingtime = 10,
+        AmmoBox = Base.CSR_SignalFlareRoundBox,
+        AmmoType = Base.CSR_SignalFlareRound,
+        AttachmentType = Holster,
+        BreakSound = M9Break,
+        BringToBearSound = M9BringToBear,
+        ClickSound = M9Jam,
+        ClipSize = 1,
+        ConditionLowerChanceOneIn = 80,
+        ConditionMax = 10,
+        CritDmgMultiplier = 2.0,
+        CriticalChance = 10.0,
+        DoorDamage = 2,
+        DropSound = M9Drop,
+        EjectAmmoSound = M9EjectAmmo,
+        EjectAmmoStartSound = M9EjectAmmoStart,
+        EjectAmmoStopSound = M9EjectAmmoStop,
+        EquipSound = M9Equip,
+        HaveChamber = false,
+        HitChance = 55,
+        HitSound = BulletImpact,
+        ImpactSound = null,
+        InsertAmmoSound = M9InsertAmmo,
+        InsertAmmoStartSound = M9InsertAmmoStart,
+        InsertAmmoStopSound = M9InsertAmmoStop,
+        IsAimedFirearm = true,
+        JamGunChance = 0,
+        KnockBackOnNoDeath = true,
+        KnockdownMod = 1.0,
+        ManuallyRemoveSpentRounds = true,
+        MaxAmmo = 1,
+        MaxDamage = 0.7,
+        MaxHitcount = 1,
+        MaxRange = 18.0,
+        MinSightRange = 2,
+        MaxSightRange = 6.0,
+        MetalValue = 24.0,
+        MinAngle = 0.95,
+        MinDamage = 0.25,
+        MinRange = 0.61,
+        MinimumSwingtime = 0.5,
+        MultipleHitConditionAffected = false,
+        MuzzleFlashModelKey = muzzle_flash_handgun,
+        NPCSoundBoost = 1.5,
+        Projectilecount = 1,
+        PushBackMod = 0.3,
+        Ranged = true,
+        RecoilDelay = 18,
+        Reloadtime = 20,
+        RunAnim = Run_Weapon2,
+        ShellFallSound = M9CartridgeFall,
+        SoundGain = 1.5,
+        SoundRadius = 60,
+        SoundVolume = 30,
+        StopPower = 4.0,
+        SubCategory = Firearm,
+        SwingAmountBeforeImpact = 0.0,
+        SwingAnim = Handgun,
+        SwingSound = M9Shoot,
+        Swingtime = 0.5,
+        ToHitModifier = 1.5,
+        Tooltip = Tooltip_CSR_SignalPistol,
+        UnequipSound = M9UnEquip,
+        UseEndurance = false,
+        WeaponReloadType = revolver,
+        WeaponSprite = CSR_SignalPistol,
+        WorldStaticModel = CSR_SignalPistol,
+        Tags = base:hasmetal;base:firearm,
+    }
+
+    item CSR_SignalFlareRound
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        DisplayName = Signal Flare Round,
+        Weight = 0.03,
+        Icon = CSR_SignalFlareRound,
+        count = 5,
+        MetalValue = 1.0,
+        WorldStaticModel = CSR_SignalFlareRound,
+        Tags = base:ammo,
+    }
+
+    item CSR_SignalFlareRoundBox
+    {
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        DisplayName = Box of Signal Flare Rounds,
+        Weight = 0.35,
+        Icon = CSR_SignalFlareRoundBox,
+        MetalValue = 20.0,
+        PlaceMultipleSound = BoxOfRoundsPlaceAll,
+        PlaceOneSound = BoxOfRoundsPlaceOne,
+        WorldStaticModel = BoxOfShotGunShells,
+        DoubleClickRecipe = CSR_OpenSignalFlareRoundBox,
+    }
+
+    item CSR_HandFlareRed
+    {
+        DisplayCategory = LightSource,
+        ItemType = base:normal,
+        DisplayName = Signal Flare (Red),
+        Weight = 0.3,
+        Icon = CSR_HandFlareRed,
+        Tooltip = Tooltip_CSR_HandFlare,
+        WorldStaticModel = CSR_HandFlare,
+    }
+
+    item CSR_HandFlareGreen
+    {
+        DisplayCategory = LightSource,
+        ItemType = base:normal,
+        DisplayName = Signal Flare (Green),
+        Weight = 0.3,
+        Icon = CSR_HandFlareGreen,
+        Tooltip = Tooltip_CSR_HandFlare,
+        WorldStaticModel = CSR_HandFlare,
+    }
+
+    item CSR_HandFlareBlue
+    {
+        DisplayCategory = LightSource,
+        ItemType = base:normal,
+        DisplayName = Signal Flare (Blue),
+        Weight = 0.3,
+        Icon = CSR_HandFlareBlue,
+        Tooltip = Tooltip_CSR_HandFlare,
+        WorldStaticModel = CSR_HandFlare,
+    }
+
+    item CSR_HandFlareWhite
+    {
+        DisplayCategory = LightSource,
+        ItemType = base:normal,
+        DisplayName = Signal Flare (White),
+        Weight = 0.3,
+        Icon = CSR_HandFlareWhite,
+        Tooltip = Tooltip_CSR_HandFlare,
+        WorldStaticModel = CSR_HandFlare,
+    }
+
+    craftRecipe CSR_CraftGlowstickRed
+    {
+        timedAction = Making,
+        category = CommonSenseReborn,
+        time = 150,
+        SkillRequired = Electricity:2,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep,
+            item 1 [Base.LightBulbRed;Base.LightBulb] mode:destroy,
+            item 1 [Base.ElectronicsScrap] mode:destroy,
+            item 1 [Base.ElectricWire] mode:destroy,
+            item 1 [Base.Aluminum] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.CSR_GlowstickRed,
+        }
+    }
+
+    craftRecipe CSR_CraftGlowstickGreen
+    {
+        timedAction = Making,
+        category = CommonSenseReborn,
+        time = 150,
+        SkillRequired = Electricity:2,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep,
+            item 1 [Base.LightBulbGreen;Base.LightBulb] mode:destroy,
+            item 1 [Base.ElectronicsScrap] mode:destroy,
+            item 1 [Base.ElectricWire] mode:destroy,
+            item 1 [Base.Aluminum] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.CSR_GlowstickGreen,
+        }
+    }
+
+    craftRecipe CSR_CraftGlowstickBlue
+    {
+        timedAction = Making,
+        category = CommonSenseReborn,
+        time = 150,
+        SkillRequired = Electricity:2,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep,
+            item 1 [Base.LightBulbCyan;Base.LightBulbBlue;Base.LightBulb] mode:destroy,
+            item 1 [Base.ElectronicsScrap] mode:destroy,
+            item 1 [Base.ElectricWire] mode:destroy,
+            item 1 [Base.Aluminum] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.CSR_GlowstickBlue,
+        }
+    }
+
+    craftRecipe CSR_CraftGlowstickWhite
+    {
+        timedAction = Making,
+        category = CommonSenseReborn,
+        time = 150,
+        SkillRequired = Electricity:2,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep,
+            item 1 [Base.LightBulb] mode:destroy,
+            item 1 [Base.ElectronicsScrap] mode:destroy,
+            item 1 [Base.ElectricWire] mode:destroy,
+            item 1 [Base.Aluminum] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.CSR_GlowstickWhite,
+        }
+    }
+
+    craftRecipe CSR_CraftGlowstickYellow
+    {
+        timedAction = Making,
+        category = CommonSenseReborn,
+        time = 150,
+        SkillRequired = Electricity:2,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep,
+            item 1 [Base.LightBulbYellow;Base.LightBulb] mode:destroy,
+            item 1 [Base.ElectronicsScrap] mode:destroy,
+            item 1 [Base.ElectricWire] mode:destroy,
+            item 1 [Base.Aluminum] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.CSR_GlowstickYellow,
+        }
+    }
+
+    craftRecipe CSR_CraftGlowstickPurple
+    {
+        timedAction = Making,
+        category = CommonSenseReborn,
+        time = 150,
+        SkillRequired = Electricity:2,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep,
+            item 1 [Base.LightBulbPurple;Base.LightBulb] mode:destroy,
+            item 1 [Base.ElectronicsScrap] mode:destroy,
+            item 1 [Base.ElectricWire] mode:destroy,
+            item 1 [Base.Aluminum] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.CSR_GlowstickPurple,
+        }
+    }
+
+    craftRecipe CSR_OpenSignalFlareRoundBox
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.CSR_SignalFlareRoundBox] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.CSR_SignalFlareRound,
+        }
+    }
+
+    craftRecipe CSR_PackSignalFlareRoundBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 20 [Base.CSR_SignalFlareRound] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.CSR_SignalFlareRoundBox,
+        }
+    }
+}

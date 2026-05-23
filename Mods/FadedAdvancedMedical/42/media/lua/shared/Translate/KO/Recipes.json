@@ -1,0 +1,17 @@
+{
+    "FAM_OpenSealedBandage": "밀봉 붕대 열기",
+    "FAM_CreateFieldMedicalJournal": "FAM 현장 의료 일지 만들기",
+    "FAM_MakeHotDrinkFluMedication": "뜨거운 감기약 준비",
+    "FAM_MakeTourniquet": "응급 지혈대 만들기",
+    "FAM_MakeBurnGel": "화상 젤 혼합",
+    "FAM_MakeHemostaticPack": "지혈 분말 포장",
+    "FAM_MakeAntisepticWashKit": "소독 세척 키트 조립",
+    "FAM_AssembleIVKit": "정맥주사 시작 키트 조립",
+    "FAM_SanitationProtocol": "FAM 위생 프로토콜",
+    "FAM_FieldAmputationProtocol": "FAM 현장 절단 프로토콜",
+    "FAM_StumpCareProtocol": "FAM 절단단 처치 프로토콜",
+    "FAM_ProstheticFittingProtocol": "FAM 의수 장착 프로토콜",
+    "FAM_IVFluidProtocol": "FAM 정맥 수액 프로토콜",
+    "FAM_BloodSupportProtocol": "FAM 혈액 지원 프로토콜",
+    "FAM_EpinephrineProtocol": "FAM 에피네프린 프로토콜"
+}

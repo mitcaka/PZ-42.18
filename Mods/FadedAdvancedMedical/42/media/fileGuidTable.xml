@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+    <files>
+        <path>media/clothing/clothingItems/FAM_Amputation_ForeArm_L.xml</path>
+        <guid>fbde11f4-bee5-4cd7-8ca1-6c6629c842a0</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/FAM_Amputation_ForeArm_R.xml</path>
+        <guid>684d59ee-f98f-4e68-8def-44ec2bee8f9e</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/FAM_Amputation_Hand_L.xml</path>
+        <guid>8c51cba8-a2eb-4034-a1da-f640c808cb47</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/FAM_Amputation_Hand_R.xml</path>
+        <guid>6573eb05-b0b2-4367-8718-17db03ba28c0</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/FAM_Amputation_UpperArm_L.xml</path>
+        <guid>39088e31-0bc3-40a3-85ea-385704c0a514</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/FAM_Amputation_UpperArm_R.xml</path>
+        <guid>70843040-cd3b-4044-b9b2-ee12af132f25</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/FAM_Prost_HookArm_L.xml</path>
+        <guid>de5683aa-0e67-4ce6-8296-9c78da24b7f6</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/FAM_Prost_HookArm_R.xml</path>
+        <guid>74ff2d64-9d34-4d19-a921-8093b2e16168</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/FAM_Prost_NormalArm_L.xml</path>
+        <guid>21f9b66d-87f7-4690-8412-206ac4b9440a</guid>
+    </files>
+    <files>
+        <path>media/clothing/clothingItems/FAM_Prost_NormalArm_R.xml</path>
+        <guid>ee65788a-c5d2-4ca6-8e14-c530eee5b5d2</guid>
+    </files>
+</fileGuidTable>

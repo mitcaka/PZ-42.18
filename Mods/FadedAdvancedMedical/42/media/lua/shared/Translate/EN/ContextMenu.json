@@ -1,0 +1,22 @@
+{
+    "ContextMenu_Inject": "Inject",
+    "ContextMenu_FAM_Triage": "FAM Triage",
+    "ContextMenu_FAM_OpenTriage": "Open Triage Monitor",
+    "ContextMenu_FAM_MedicalCheck": "FAM Medical Check",
+    "ContextMenu_FAM_ApplyBurnGel": "Apply Burn Gel",
+    "ContextMenu_FAM_ApplyHemostatic": "Apply Hemostatic Powder",
+    "ContextMenu_FAM_ApplyTourniquet": "Apply Tourniquet",
+    "ContextMenu_FAM_SanitizeExposure": "Sanitize Exposure",
+    "ContextMenu_FAM_ApplyStumpCare": "Apply Stump Care",
+    "ContextMenu_FAM_StartIVFluids": "Start IV Fluids",
+    "ContextMenu_FAM_AdministerBloodPack": "Administer Blood Pack",
+    "ContextMenu_FAM_AdministerEpinephrine": "Administer Epinephrine",
+    "ContextMenu_FAM_FieldAmputation": "Field Amputation",
+    "ContextMenu_FAM_FitProsthetic": "Fit Prosthetic",
+    "ContextMenu_FAM_RemoveProsthetic": "Remove Prosthetic",
+    "ContextMenu_FAM_Pathology": "FAM Pathology",
+    "ContextMenu_FAM_StudyCorpse": "Study Corpse",
+    "ContextMenu_FAM_CollectPathologySample": "Collect Pathology Sample",
+    "ContextMenu_FAM_ClinicalAutopsy": "Clinical Autopsy",
+    "ContextMenu_FAM_OpenPathologyBoard": "Open Pathology Board"
+}

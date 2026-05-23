@@ -1,0 +1,277 @@
+module FAM
+{
+    craftRecipe FAM_OpenSealedBandage
+    {
+        timedAction = Making,
+        time = 20,
+        Tags = InHandCraft;Health,
+        category = Medical,
+        inputs
+        {
+            item 1 [FAM.SealedBandage],
+        }
+        outputs
+        {
+            item 1 Base.AlcoholBandage,
+        }
+    }
+
+    craftRecipe FAM_CreateFieldMedicalJournal
+    {
+        timedAction = Making,
+        time = 60,
+        Tags = InHandCraft;Health,
+        category = Medical,
+        inputs
+        {
+            item 1 [Base.Notebook] mode:destroy flags[AllowFavorite],
+            item 1 [Base.Pen;Base.Pencil;Base.RedPen;Base.BluePen] mode:keep flags[AllowFavorite],
+        }
+        outputs
+        {
+            item 1 FAM.FieldMedicalJournal,
+        }
+    }
+
+    craftRecipe FAM_MakeHotDrinkFluMedication
+    {
+        timedAction = Making,
+        time = 50,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = Medical,
+        AutoLearnAny = Doctor:4,
+        inputs
+        {
+            item 1 [FAM.PowderPackFluMedication],
+            item 1 [Base.Mugl;Base.MugWhite;Base.MugSpiffo] mode:destroy flags[AllowFavorite],
+            item 1 [*] mode:keep,
+            -fluid 0.5 categories[Water] mode:mixture,
+        }
+        outputs
+        {
+            item 1 FAM.HotDrinkFluMedicationMug,
+        }
+    }
+
+    craftRecipe FAM_MakeTourniquet
+    {
+        timedAction = Making,
+        time = 90,
+        NeedToBeLearn = true,
+        Tags = InHandCraft;Health,
+        category = Medical,
+        AutoLearnAny = Doctor:3,
+        SkillRequired = Doctor:2,
+        inputs
+        {
+            item 1 [Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips] flags[AllowFavorite],
+            item 1 [Base.Twine;Base.Thread;Base.Belt2] mode:destroy flags[AllowFavorite],
+        }
+        outputs
+        {
+            item 1 FAM.Tourniquet,
+        }
+    }
+
+    craftRecipe FAM_MakeBurnGel
+    {
+        timedAction = MixingMortarPestle,
+        time = 80,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = Medical,
+        AutoLearnAny = Doctor:2,
+        SkillRequired = Doctor:1,
+        inputs
+        {
+            item 1 [Base.PlantainCataplasm;Base.ComfreyCataplasm] mode:destroy,
+            item 1 [Base.AlcoholWipes;Base.Disinfectant] mode:destroy flags[AllowFavorite],
+        }
+        outputs
+        {
+            item 1 FAM.BurnTreatment,
+        }
+    }
+
+    craftRecipe FAM_MakeHemostaticPack
+    {
+        timedAction = MixingMortarPestle,
+        time = 120,
+        NeedToBeLearn = true,
+        Tags = AnySurfaceCraft;Health,
+        category = Medical,
+        AutoLearnAny = Doctor:5,
+        SkillRequired = Doctor:3,
+        inputs
+        {
+            item 1 [Base.Bandage;Base.AlcoholBandage] flags[AllowFavorite],
+            item 1 [Base.CottonBalls;Base.AlcoholedCottonBalls] mode:destroy flags[AllowFavorite],
+            item 1 [Base.PillsVitamins;FAM.PillsCommercialPainkillers] mode:destroy,
+        }
+        outputs
+        {
+            item 1 FAM.PowderPackHemostatic,
+        }
+    }
+
+    craftRecipe FAM_MakeAntisepticWashKit
+    {
+        timedAction = Making,
+        time = 70,
+        NeedToBeLearn = true,
+        Tags = InHandCraft;Health,
+        category = Medical,
+        AutoLearnAny = Doctor:4,
+        SkillRequired = Doctor:2,
+        inputs
+        {
+            item 1 [Base.AlcoholWipes;Base.Disinfectant] mode:destroy flags[AllowFavorite],
+            item 1 [Base.Bandage;Base.AlcoholBandage;Base.RippedSheets] mode:destroy flags[AllowFavorite],
+        }
+        outputs
+        {
+            item 1 FAM.AntisepticWashKit,
+        }
+    }
+
+    craftRecipe FAM_AssembleIVKit
+    {
+        timedAction = Making,
+        time = 90,
+        NeedToBeLearn = true,
+        Tags = InHandCraft;Health,
+        category = Medical,
+        AutoLearnAny = Doctor:5,
+        SkillRequired = Doctor:3,
+        inputs
+        {
+            item 1 [Base.AlcoholWipes;Base.Disinfectant] mode:destroy flags[AllowFavorite],
+            item 1 [Base.Bandage;Base.AlcoholBandage;Base.RippedSheets] mode:destroy flags[AllowFavorite],
+            item 1 [Base.SutureNeedle;Base.Needle] mode:destroy flags[AllowFavorite],
+        }
+        outputs
+        {
+            item 1 FAM.IVKit,
+        }
+    }
+
+    craftRecipe FAM_SanitationProtocol
+    {
+        timedAction = Making,
+        time = 1,
+        NeedToBeLearn = true,
+        Tags = Health,
+        category = Medical,
+        inputs
+        {
+            item 1 [FAM.ProtocolTrainingToken] mode:destroy,
+        }
+        outputs
+        {
+            item 1 FAM.ProtocolTrainingToken,
+        }
+    }
+
+    craftRecipe FAM_FieldAmputationProtocol
+    {
+        timedAction = Making,
+        time = 1,
+        NeedToBeLearn = true,
+        Tags = Health,
+        category = Medical,
+        inputs
+        {
+            item 1 [FAM.ProtocolTrainingToken] mode:destroy,
+        }
+        outputs
+        {
+            item 1 FAM.ProtocolTrainingToken,
+        }
+    }
+
+    craftRecipe FAM_StumpCareProtocol
+    {
+        timedAction = Making,
+        time = 1,
+        NeedToBeLearn = true,
+        Tags = Health,
+        category = Medical,
+        inputs
+        {
+            item 1 [FAM.ProtocolTrainingToken] mode:destroy,
+        }
+        outputs
+        {
+            item 1 FAM.ProtocolTrainingToken,
+        }
+    }
+
+    craftRecipe FAM_ProstheticFittingProtocol
+    {
+        timedAction = Making,
+        time = 1,
+        NeedToBeLearn = true,
+        Tags = Health,
+        category = Medical,
+        inputs
+        {
+            item 1 [FAM.ProtocolTrainingToken] mode:destroy,
+        }
+        outputs
+        {
+            item 1 FAM.ProtocolTrainingToken,
+        }
+    }
+
+    craftRecipe FAM_IVFluidProtocol
+    {
+        timedAction = Making,
+        time = 1,
+        NeedToBeLearn = true,
+        Tags = Health,
+        category = Medical,
+        inputs
+        {
+            item 1 [FAM.ProtocolTrainingToken] mode:destroy,
+        }
+        outputs
+        {
+            item 1 FAM.ProtocolTrainingToken,
+        }
+    }
+
+    craftRecipe FAM_BloodSupportProtocol
+    {
+        timedAction = Making,
+        time = 1,
+        NeedToBeLearn = true,
+        Tags = Health,
+        category = Medical,
+        inputs
+        {
+            item 1 [FAM.ProtocolTrainingToken] mode:destroy,
+        }
+        outputs
+        {
+            item 1 FAM.ProtocolTrainingToken,
+        }
+    }
+
+    craftRecipe FAM_EpinephrineProtocol
+    {
+        timedAction = Making,
+        time = 1,
+        NeedToBeLearn = true,
+        Tags = Health,
+        category = Medical,
+        inputs
+        {
+            item 1 [FAM.ProtocolTrainingToken] mode:destroy,
+        }
+        outputs
+        {
+            item 1 FAM.ProtocolTrainingToken,
+        }
+    }
+}

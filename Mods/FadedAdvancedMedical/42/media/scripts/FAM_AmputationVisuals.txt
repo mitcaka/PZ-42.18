@@ -1,0 +1,167 @@
+module FAM
+{
+    imports
+    {
+        Base
+    }
+
+    item FAM_Amputation_Hand_R
+    {
+        DisplayCategory = Hidden,
+        ItemType = base:clothing,
+        hidden = true,
+        ClothingItem = FAM_Amputation_Hand_R,
+        BodyLocation = fam:Arm_R,
+        Weight = 0,
+        CombatSpeedModifier = 0.9,
+        BloodLocation = Hands;LowerArms,
+        Insulation = 1.0,
+        WindResistance = 1.0,
+        WaterResistance = 1.0,
+        CanHaveHoles = false,
+    }
+
+    item FAM_Amputation_ForeArm_R
+    {
+        DisplayCategory = Hidden,
+        ItemType = base:clothing,
+        hidden = true,
+        ClothingItem = FAM_Amputation_ForeArm_R,
+        BodyLocation = fam:Arm_R,
+        Weight = 0,
+        CombatSpeedModifier = 0.8,
+        BloodLocation = UpperArms;LowerArms,
+        Insulation = 1.0,
+        WindResistance = 1.0,
+        WaterResistance = 1.0,
+        CanHaveHoles = false,
+    }
+
+    item FAM_Amputation_UpperArm_R
+    {
+        DisplayCategory = Hidden,
+        ItemType = base:clothing,
+        hidden = true,
+        ClothingItem = FAM_Amputation_UpperArm_R,
+        BodyLocation = fam:Arm_R,
+        Weight = 0,
+        CombatSpeedModifier = 0.7,
+        BloodLocation = UpperArms;UpperBody,
+        Insulation = 1.0,
+        WindResistance = 1.0,
+        WaterResistance = 1.0,
+        CanHaveHoles = false,
+    }
+
+    item FAM_Amputation_Hand_L
+    {
+        DisplayCategory = Hidden,
+        ItemType = base:clothing,
+        hidden = true,
+        ClothingItem = FAM_Amputation_Hand_L,
+        BodyLocation = fam:Arm_L,
+        Weight = 0,
+        CombatSpeedModifier = 0.9,
+        BloodLocation = Hands;LowerArms,
+        Insulation = 1.0,
+        WindResistance = 1.0,
+        WaterResistance = 1.0,
+        CanHaveHoles = false,
+    }
+
+    item FAM_Amputation_ForeArm_L
+    {
+        DisplayCategory = Hidden,
+        ItemType = base:clothing,
+        hidden = true,
+        ClothingItem = FAM_Amputation_ForeArm_L,
+        BodyLocation = fam:Arm_L,
+        Weight = 0,
+        CombatSpeedModifier = 0.8,
+        BloodLocation = UpperArms;LowerArms,
+        Insulation = 1.0,
+        WindResistance = 1.0,
+        WaterResistance = 1.0,
+        CanHaveHoles = false,
+    }
+
+    item FAM_Amputation_UpperArm_L
+    {
+        DisplayCategory = Hidden,
+        ItemType = base:clothing,
+        hidden = true,
+        ClothingItem = FAM_Amputation_UpperArm_L,
+        BodyLocation = fam:Arm_L,
+        Weight = 0,
+        CombatSpeedModifier = 0.7,
+        BloodLocation = UpperArms;UpperBody,
+        Insulation = 1.0,
+        WindResistance = 1.0,
+        WaterResistance = 1.0,
+        CanHaveHoles = false,
+    }
+
+    item FAM_Prosthetic_Normal_L
+    {
+        DisplayCategory = Hidden,
+        ItemType = base:clothing,
+        hidden = true,
+        ClothingItem = FAM_Prost_NormalArm_L,
+        BodyLocation = fam:ArmProst_L,
+        Weight = 0,
+        CombatSpeedModifier = 1.1,
+        BloodLocation = UpperArms;UpperBody,
+        Insulation = 1.0,
+        WindResistance = 1.0,
+        WaterResistance = 1.0,
+        CanHaveHoles = false,
+    }
+
+    item FAM_Prosthetic_Normal_R
+    {
+        DisplayCategory = Hidden,
+        ItemType = base:clothing,
+        hidden = true,
+        ClothingItem = FAM_Prost_NormalArm_R,
+        BodyLocation = fam:ArmProst_R,
+        Weight = 0,
+        CombatSpeedModifier = 1.1,
+        BloodLocation = UpperArms;UpperBody,
+        Insulation = 1.0,
+        WindResistance = 1.0,
+        WaterResistance = 1.0,
+        CanHaveHoles = false,
+    }
+
+    item FAM_Prosthetic_Hook_L
+    {
+        DisplayCategory = Hidden,
+        ItemType = base:clothing,
+        hidden = true,
+        ClothingItem = FAM_Prost_HookArm_L,
+        BodyLocation = fam:ArmProst_L,
+        Weight = 0,
+        CombatSpeedModifier = 1.05,
+        BloodLocation = UpperArms;UpperBody,
+        Insulation = 1.0,
+        WindResistance = 1.0,
+        WaterResistance = 1.0,
+        CanHaveHoles = false,
+    }
+
+    item FAM_Prosthetic_Hook_R
+    {
+        DisplayCategory = Hidden,
+        ItemType = base:clothing,
+        hidden = true,
+        ClothingItem = FAM_Prost_HookArm_R,
+        BodyLocation = fam:ArmProst_R,
+        Weight = 0,
+        CombatSpeedModifier = 1.05,
+        BloodLocation = UpperArms;UpperBody,
+        Insulation = 1.0,
+        WindResistance = 1.0,
+        WaterResistance = 1.0,
+        CanHaveHoles = false,
+    }
+}

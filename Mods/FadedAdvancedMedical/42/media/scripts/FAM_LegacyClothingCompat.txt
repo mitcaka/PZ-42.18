@@ -1,0 +1,44 @@
+module base
+{
+    item TannedLeather_Jacket_O
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Weight = 2.0,
+        Icon = Jacket_Hide,
+        BiteDefense = 10,
+        BloodLocation = Jacket,
+        BodyLocation = base:jacket,
+        ClothingItem = Jacket_Hide,
+        CombatSpeedModifier = 0.97,
+        FabricType = Leather,
+        Insulation = 0.4,
+        NeckProtectionModifier = 0.5,
+        RunSpeedModifier = 0.95,
+        ScratchDefense = 20,
+        WaterResistance = 0.4,
+        WindResistance = 0.6,
+        WorldStaticModel = JacketCoat_Ground,
+        Tags = base:ripclothingleather,
+        Researchablerecipes = SewHideCoat;SewHideJacket;SewHideHoodie;SewHideRobe;SewFurredHideCoat;SewFurredHideJacket,
+    }
+
+    item TannedLeather_Skirt_Mesh_HW
+    {
+        DisplayCategory = Clothing,
+        ItemType = base:clothing,
+        Icon = SkirtLong_Hide,
+        BloodLocation = Trousers,
+        BodyLocation = base:longskirt,
+        ClothingItem = Skirt_Normal_Hide,
+        FabricType = Leather,
+        Insulation = 0.25,
+        RunSpeedModifier = 0.93,
+        ScratchDefense = 10,
+        WaterResistance = 0.35,
+        WindResistance = 0.1,
+        WorldStaticModel = Skirt_Mid_Ground,
+        Tags = base:ripclothingleather;base:noragdoll,
+        Researchablerecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers;SewHidePants,
+    }
+}

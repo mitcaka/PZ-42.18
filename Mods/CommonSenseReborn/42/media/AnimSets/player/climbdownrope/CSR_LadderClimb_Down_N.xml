@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+	<m_Name>CSR_LadderClimb_Down_N</m_Name>
+	<m_AnimName>CSR_LadClmb</m_AnimName>
+	<m_Looped>true</m_Looped>
+	<m_UpperOnly>false</m_UpperOnly>
+	<m_EarlyBlendOut>false</m_EarlyBlendOut>
+	<m_Priority>6</m_Priority>
+	<m_BlendTime>0.20</m_BlendTime>
+	<m_SpeedScale>2.00</m_SpeedScale>
+	<m_Conditions>
+		<m_Name>ClimbLadder</m_Name>
+		<m_Type>BOOL</m_Type>
+		<m_Value>true</m_Value>
+	</m_Conditions>
+	<m_Conditions>
+		<m_Name>CSR_LadderDirection</m_Name>
+		<m_Type>STRING</m_Type>
+		<m_Value>N</m_Value>
+	</m_Conditions>
+</animNode>

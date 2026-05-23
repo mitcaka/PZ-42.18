@@ -1,0 +1,15 @@
+module base
+{
+    sound FAM_Amputation
+    {
+        category = Player,
+        loop = true,
+        is3D = true,
+        clip
+        {
+            file = media/sound/FAM_Amputation.ogg,
+            distanceMax = 3,
+            volume = 1.0,
+        }
+    }
+}
