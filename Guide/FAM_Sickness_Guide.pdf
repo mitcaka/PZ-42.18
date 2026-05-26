@@ -1,0 +1,174 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 3901 >>
+stream
+BT /F1 14 Tf 1 0 0 1 54 742 Tm (FAM Sickness and Pandemic Guide) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 720 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 707 Tm (Faded's Advanced Medical - Build 42.18 rebuild notes. Generated May 21, 2026 from the) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 694 Tm (current mod Lua.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 681 Tm () Tj ET
+BT /F1 14 Tf 1 0 0 1 54 668 Tm (1. What the sickness number means) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 646 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 633 Tm (FAM does not treat sickness as one single disease. The displayed sickness signal is the) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 620 Tm (highest of body sickness, food sickness, and the related character sickness stats.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 607 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 594 Tm (Temperature is tracked separately as deviation from 37.0 C. Fever and hypothermia both raise) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 581 Tm (the temperature-risk bar.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 568 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 555 Tm (Cold is also separate. It comes from cold strength, catch-a-cold state, cold moodles, and) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 542 Tm (low body temperature exposure.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 529 Tm () Tj ET
+BT /F1 14 Tf 1 0 0 1 54 516 Tm (2. Where sickness comes from) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 494 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 481 Tm (Corpse exposure: nearby corpses and dragging bodies raise Corpse Exposure and then Pathogen) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 468 Tm (Load. Sanitation greatly reduces this pressure, and both values decay when you get away from) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 455 Tm (corpses.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 442 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 429 Tm (Wounds: infected wounds, dirty open wounds, deep wounds, burns, embedded glass or bullets,) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 416 Tm (exhausted tourniquets, and gangrene raise local infection, sepsis, shock, or amputation) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 403 Tm (risk.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 390 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 377 Tm (Pandemic diseases: FAM can create influenza-like illness, gastroenteritis, bacterial wound) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 364 Tm (fever, pneumonia-like illness, and Hollow Veil, the corpse-borne disease.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 351 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 338 Tm (Knox infection is separate. FAM can warn about Knox patterns, but FAM antibiotics do not) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 325 Tm (cure Knox infection.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 312 Tm () Tj ET
+BT /F1 14 Tf 1 0 0 1 54 299 Tm (3. What players should look for) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 277 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 264 Tm (Chart tab: Temperature, Cold, Corpse Exposure, Pathogen Load, Sepsis Risk, Shock Risk,) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 251 Tm (Disease, Blood Reserve, and Clinical Summary are the main lines.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 238 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 225 Tm (Patient Visual: the pulse panel changes to a poison-style state when poison, food sickness,) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 212 Tm (or sickness is high enough.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 199 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 186 Tm (Pandemic tab: active cases show disease name, load, contagion, quarantine time, and) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 173 Tm (treatment time.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 160 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 147 Tm (Hollow Veil can also cause blur and temporary deafness halos when its load is high enough.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 134 Tm () Tj ET
+BT /F1 14 Tf 1 0 0 1 54 121 Tm (4. Treatments and what they actually do) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 99 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 86 Tm (Sanitation is the broad anti-exposure treatment. It reduces corpse exposure, pathogen load,) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 73 Tm (local infection, sepsis, and sickness; if a pandemic disease is active it also reduces) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 4237 >>
+stream
+BT /F1 10 Tf 1 0 0 1 54 742 Tm (pandemic load using the disease sanitation multiplier.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 729 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 716 Tm (Antibiotic pills reduce fake infection, gangrene, sepsis, and susceptible pandemic load.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 703 Tm (They also add poison load. The antibiotic syrette is stronger, but also adds poison and) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 690 Tm (fatigue.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 677 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 664 Tm (Flu medication reduces cold strength and helps pandemic diseases that respond to flu) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 651 Tm (support. It also adds fatigue and poison.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 638 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 625 Tm (IV fluids, blood packs, and epinephrine are support tools. They help shock, blood loss,) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 612 Tm (fatigue, and collapse risk, but they do not cure the disease by themselves.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 599 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 586 Tm (Stump care and wound care reduce local wound pressure. Field amputation is for critical limb) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 573 Tm (cases such as critical gangrene or long-standing critical bullet trauma, not for ordinary) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 560 Tm (fever.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 547 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 534 Tm (Quarantine reduces spread and slowly helps load. Treat Case applies a treatment window and) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 521 Tm (reduces pandemic load, but it requires clinical access.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 508 Tm () Tj ET
+BT /F1 14 Tf 1 0 0 1 54 495 Tm (5. Why someone can die after antibiotics) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 473 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 460 Tm (Antibiotics are not an instant save. If the patient is already in severe Knox infection,) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 447 Tm (sepsis, shock, blood loss, poison, or untreated trauma, the next game update can still kill) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 434 Tm (them.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 421 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 408 Tm (Commercial antibiotics add poison while reducing infection pressure. Giving them to a) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 395 Tm (critical patient without stabilizing bleeding, blood reserve, shock, and exposure can make) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 382 Tm (the UI look like the antibiotic caused the death even though the fatal condition was already) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 369 Tm (active.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 356 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 343 Tm (If the screen shows Knox suspected or zombie fever, treat it as a separate lethal process.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 330 Tm (FAM antibiotics are not a Knox cure.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 317 Tm () Tj ET
+BT /F1 14 Tf 1 0 0 1 54 304 Tm (6. Quick triage flow) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 282 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 269 Tm (1. Inspect or Refresh the patient and read Clinical Summary first.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 256 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 243 Tm (2. If fever or sickness is high, check Disease, Pandemic Load, Corpse Exposure, Pathogen) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 230 Tm (Load, Local Infection, Sepsis Risk, Shock Risk, Blood Reserve, and Knox.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 217 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 204 Tm (3. Move the patient away from corpses. Sanitize if Corpse Exposure, Pathogen Load, or dirty) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 191 Tm (open wounds are present.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 178 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 165 Tm (4. Stop bleeding first. Use hemostatic, tourniquet, IV fluids, or blood packs before chasing) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 152 Tm (disease labels on an unstable patient.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 139 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 126 Tm (5. Use antibiotics for bacterial wound fever, pneumonia-like disease, sepsis pressure,) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 113 Tm (gangrene, or infected wounds. Use flu support for cold/influenza-like cases.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 100 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 87 Tm (6. Quarantine active pandemic cases and recheck every in-game hour.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 74 Tm () Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 1694 >>
+stream
+BT /F1 14 Tf 1 0 0 1 54 742 Tm (7. Useful thresholds from the current build) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 720 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 707 Tm (Corpse Exposure suspect: 25. Corpse-virus roll can begin around Exposure 62 and Pathogen 38) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 694 Tm (when the patient is not sanitized or immune.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 681 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 668 Tm (Pathogen elevated: 20. Pathogen critical: 70.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 655 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 642 Tm (Local infection suspect: 18. Confirmed: 40. Critical: 75.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 629 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 616 Tm (Sepsis suspect: 25. Critical: 70.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 603 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 590 Tm (Gangrene suspect: 30. Confirmed: 60. Critical: 85.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 577 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 564 Tm (Bullet critical timing: 60 in-game hours. This can contribute to amputation indication.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 551 Tm () Tj ET
+BT /F1 14 Tf 1 0 0 1 54 538 Tm (8. Current UI notes) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 516 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 503 Tm (The triage panel now requests a server-side patient snapshot keyed to the viewer and viewed) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 490 Tm (patient. This is meant to make the inspector see the same FAM vitals the patient sees.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 477 Tm () Tj ET
+BT /F1 10 Tf 1 0 0 1 54 464 Tm (Protocol manuals exist in the medical book pools and now also have low-weight fallback) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 451 Tm (entries in broader book and magazine pools.) Tj ET
+BT /F1 10 Tf 1 0 0 1 54 438 Tm () Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000004150 00000 n 
+0000004276 00000 n 
+0000008565 00000 n 
+0000008691 00000 n 
+0000010437 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+10563
+%%EOF
