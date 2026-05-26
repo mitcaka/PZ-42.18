@@ -618,30 +618,71 @@ end
 -- change, or persistent on a stale-save flashlight from a removed
 -- mod), Java throws "locationId is null" and aborts the UI tick.
 --
--- We sidecar-stash any entry whose location is null *before*
--- delegating to vanilla update, then restore it afterward. Vanilla
--- never iterates that slot this frame, so no NPE is thrown at all
--- (no pcall hiding, no PZ error-handler interference). The item
--- stays in its slot the entire time; on the next frame after the
--- model rebuilds, the location is non-null and vanilla processes
--- it normally.
+-- We normalize valid entries back to their slot target before vanilla
+-- sees them. If the target itself is unresolved, we sidecar-stash that
+-- entry for the frame, then restore it afterward. Vanilla never gets a
+-- nil model target, so no NPE is thrown at all (no pcall hiding, no PZ
+-- error-handler interference).
 -- =============================================================
 local function patchHotbarUpdateForNullAttachGuard()
     if not ISHotbar or not ISHotbar.update or ISHotbar.__csr_null_attach_guard then return end
     ISHotbar.__csr_null_attach_guard = true
 
     local origUpdate = ISHotbar.update
+
+    local function getResolvedAttachTarget(hotbar, slot, item)
+        if not hotbar or not slot or not item then return nil end
+        local slotDef = slot.def
+        if not slotDef or not slotDef.attachments then return nil end
+        if not item.getAttachmentType then return nil end
+
+        local attachmentType = item:getAttachmentType()
+        if not attachmentType then return nil end
+
+        local target = slotDef.attachments[attachmentType]
+        if slotDef.name == "Back" and hotbar.replacements and hotbar.replacements[attachmentType] then
+            target = hotbar.replacements[attachmentType]
+        end
+        return target
+    end
+
+    local function shouldDeferFromVanillaUpdate(hotbar, item)
+        if not hotbar or not item then return false end
+        if not hotbar.chr or not hotbar.chr.getInventory then return false end
+        if not item.getAttachedSlot then return false end
+
+        local inventory = hotbar.chr:getInventory()
+        if inventory and inventory.contains and not inventory:contains(item) then
+            return false
+        end
+        if item.isBroken and item:isBroken() then
+            return false
+        end
+
+        local attachedSlot = item:getAttachedSlot()
+        local slot = attachedSlot and hotbar.availableSlot and hotbar.availableSlot[attachedSlot] or nil
+        if not slot then return false end
+        if hotbar.canBeAttached and not hotbar:canBeAttached(slot, item) then return false end
+
+        local target = getResolvedAttachTarget(hotbar, slot, item)
+        if target == "null" then
+            return false
+        end
+        if target == nil or target == "" then
+            return true
+        end
+
+        if item.getAttachedToModel and item:getAttachedToModel() == nil and item.setAttachedToModel then
+            item:setAttachedToModel(target)
+        end
+        return false
+    end
+
     function ISHotbar:update()
         local stash = nil
         if self.attachedItems then
             for i, item in pairs(self.attachedItems) do
-                local skip = false
-                if not item or item.getAttachedToModel == nil then
-                    skip = true
-                elseif item:getAttachedToModel() == nil then
-                    skip = true
-                end
-                if skip then
+                if shouldDeferFromVanillaUpdate(self, item) then
                     if not stash then stash = {} end
                     stash[i] = item
                 end

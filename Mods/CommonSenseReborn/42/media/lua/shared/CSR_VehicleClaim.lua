@@ -635,7 +635,9 @@ end
 
 function CSR_VehicleClaim.getMaxClaims()
     local sb = SandboxVars and SandboxVars.CommonSenseReborn or {}
-    return sb.MaxVehicleClaims or 3
+    local max = tonumber(sb.MaxVehicleClaims) or 3
+    if max < 1 then max = 1 end
+    return math.floor(max)
 end
 
 return CSR_VehicleClaim

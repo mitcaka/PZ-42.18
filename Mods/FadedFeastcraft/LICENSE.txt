@@ -1,0 +1,20 @@
+Faded's Feastcraft Copyright Notice
+
+Copyright (c) 2026 Faded / Faded's Feastcraft. All rights reserved.
+
+Faded's Feastcraft is a playable mod for Project Zomboid. Subscribing,
+downloading, or installing grants permission to play the mod only.
+
+Original Faded's Feastcraft code, UI, recipes, descriptions, packaging,
+branding, and original assets may not be copied, reuploaded, repackaged,
+sold, mirrored, forked, ported, translated, included in another mod, or
+redistributed on Steam Workshop, GitHub, Nexus, Discord, server packs, or
+any other platform without written permission.
+
+Project Zomboid is owned by The Indie Stone. Third-party food-library,
+reference, or compatibility content remains the property of its respective
+authors and is included only where permission, compatibility use, or source
+credit applies. This notice does not claim ownership of third-party work.
+
+This mod is provided as-is, without warranty. Unauthorized uploads,
+monetized mirrors, asset rips, or derivative redistributions may be reported.

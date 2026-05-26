@@ -1,0 +1,9 @@
+name=FFC
+id=FadedFeastcraft
+description=Faded's Feastcraft: a Build 42 food command center with in-house cooking, recipe requirements, pantry scanning, preservation, nutrition, station auto-cook, and MP-safe server validation.
+poster=poster.png
+version=0.1.0
+modversion=0.1.0
+author=FFC / Common Sense Reborn Ecosystem
+pzversion=42
+versionMin=42.18.0

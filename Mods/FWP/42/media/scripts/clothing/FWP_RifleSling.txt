@@ -1,0 +1,85 @@
+module Base
+{
+    item FWP_RifleSling
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        Weight = 0.01,
+        Type = Clothing,
+        DisplayName = Faded Rifle Sling,
+        BodyLocation = fwp:FWPSling,
+        ClothingItem = FWPSlingA,
+        AttachmentsProvided = FWPSling,
+        Icon = slingAky,
+        Cosmetic = TRUE,
+        ChanceToFall = 0,
+        ClothingItemExtra = FWP_RifleSling_Alt;FWP_RifleSling_Alt2;FWP_RifleSling_Back,
+        ClothingItemExtraOption = FWPSlingStyle2;FWPSlingStyle3;FWPSlingStyle4,
+        ClothingExtraSubmenu = FWPSlingStyle1,
+        WorldStaticModel = FWPSlingFlat,
+    }
+
+    item FWP_RifleSling_Alt
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        Weight = 0.01,
+        Type = Clothing,
+        DisplayName = Faded Rifle Sling,
+        BodyLocation = fwp:FWPSling,
+        ClothingItem = FWPSlingAalt,
+        AttachmentsProvided = FWPSlingAlt,
+        Icon = slingAky-1,
+        Cosmetic = TRUE,
+        ChanceToFall = 0,
+        ClothingItemExtra = FWP_RifleSling;FWP_RifleSling_Alt2;FWP_RifleSling_Back,
+        ClothingItemExtraOption = FWPSlingStyle1;FWPSlingStyle3;FWPSlingStyle4,
+        ClothingExtraSubmenu = FWPSlingStyle2,
+        WorldStaticModel = FWPSlingFlat,
+    }
+
+    item FWP_RifleSling_Alt2
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        Weight = 0.01,
+        Type = Clothing,
+        DisplayName = Faded Rifle Sling,
+        BodyLocation = fwp:FWPSling,
+        ClothingItem = FWPSlingAalt2,
+        AttachmentsProvided = FWPSlingAlt2,
+        Icon = slingAky-2,
+        Cosmetic = TRUE,
+        ChanceToFall = 0,
+        ClothingItemExtra = FWP_RifleSling;FWP_RifleSling_Alt;FWP_RifleSling_Back,
+        ClothingItemExtraOption = FWPSlingStyle1;FWPSlingStyle2;FWPSlingStyle4,
+        ClothingExtraSubmenu = FWPSlingStyle3,
+        WorldStaticModel = FWPSlingFlat,
+    }
+
+    item FWP_RifleSling_Back
+    {
+        DisplayCategory = Accessory,
+        ItemType = base:clothing,
+        Weight = 0.01,
+        Type = Clothing,
+        DisplayName = Faded Rifle Sling,
+        BodyLocation = fwp:FWPSling,
+        ClothingItem = FWPSlingAalt3,
+        AttachmentsProvided = FWPSlingBack,
+        Icon = slingAky-3,
+        Cosmetic = TRUE,
+        ChanceToFall = 0,
+        ClothingItemExtra = FWP_RifleSling;FWP_RifleSling_Alt;FWP_RifleSling_Alt2,
+        ClothingItemExtraOption = FWPSlingStyle1;FWPSlingStyle2;FWPSlingStyle3,
+        ClothingExtraSubmenu = FWPSlingStyle4,
+        WorldStaticModel = FWPSlingFlat,
+    }
+
+    model FWPSlingFlat
+    {
+        mesh = WorldItems/Clothing/Sling_Flat,
+        texture = Clothes/Sling/SlingTexture,
+        scale = 0.4000,
+    }
+}

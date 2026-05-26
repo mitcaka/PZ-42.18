@@ -1,0 +1,68 @@
+module Ted
+{
+    craftRecipe OpenTedCannedFoodWithKnifeOrSharpStoneFlake
+    {
+        time = 80,
+        timedAction = OpenTinCanWithKnife,
+        OnCreate = RecipeCodeOnCreate.openCan,
+        Tooltip = Tooltip_Recipe_OpenCanWithKnife,
+        Tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+        inputs
+        {
+            item 1 tags[base:sharpknife] mode:keep flags[MayDegrade;IsNotDull],
+            
+            item 1 [Ted.CannedCabbageRolls;Ted.CannedSausages;Ted.CannedRavioli;Ted.CannedCurry;Ted.CannedKimchi;Ted.CannedFeijoada;Ted.CannedSpam;Ted.PremiumDogFood;Ted.PremiumCatFood;Ted.CannedChickenPate;Ted.CannedDuckPate] mode:destroy mappers[tedFoodType] flags[Prop2;DontPutBack],
+        }
+        outputs
+        {
+            item 1 mapper:tedFoodType,
+        }
+        itemMapper tedFoodType
+        {
+            Ted.CannedCabbageRollsOpen = Ted.CannedCabbageRolls,
+            Ted.CannedSausagesOpen = Ted.CannedSausages,
+            Ted.CannedRavioliOpen = Ted.CannedRavioli,
+            Ted.CannedCurryOpen = Ted.CannedCurry,
+            Ted.CannedKimchiOpen = Ted.CannedKimchi,
+            Ted.CannedFeijoadaOpen = Ted.CannedFeijoada,
+            Ted.CannedSpamOpen = Ted.CannedSpam,
+	    Ted.PremiumDogFoodOpen = Ted.PremiumDogFood,
+	    Ted.PremiumCatFoodOpen = Ted.PremiumCatFood,
+            Ted.CannedChickenPateOpen = Ted.CannedChickenPate,
+            Ted.CannedDuckPateOpen = Ted.CannedDuckPate,
+        }
+    }
+
+    craftRecipe OpenTedCannedFood
+    {
+        timedAction = OpenTinCan,
+        time = 100,
+        OnCreate = RecipeCodeOnCreate.openAndEat,
+        Tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+        inputs
+        {
+            item 1 tags[base:canopener] mode:keep flags[MayDegradeLight],
+            item 1 [Ted.CannedCabbageRolls;Ted.CannedSausages;Ted.CannedRavioli;Ted.CannedCurry;Ted.CannedKimchi;Ted.CannedFeijoada;Ted.CannedSpam;Ted.PremiumDogFood;Ted.PremiumCatFood;Ted.CannedChickenPate;Ted.CannedDuckPate] mode:destroy mappers[tedCanSorts] flags[Prop2;DontPutBack],
+        }
+        outputs
+        {
+            item 1 mapper:tedCanSorts,
+        }
+        itemMapper tedCanSorts
+        {
+            Ted.CannedCabbageRollsOpen = Ted.CannedCabbageRolls,
+            Ted.CannedSausagesOpen = Ted.CannedSausages,
+            Ted.CannedRavioliOpen = Ted.CannedRavioli,
+            Ted.CannedCurryOpen = Ted.CannedCurry,
+            Ted.CannedKimchiOpen = Ted.CannedKimchi,
+            Ted.CannedFeijoadaOpen = Ted.CannedFeijoada,
+            Ted.CannedSpamOpen = Ted.CannedSpam,
+	    Ted.PremiumDogFoodOpen = Ted.PremiumDogFood,
+	    Ted.PremiumCatFoodOpen = Ted.PremiumCatFood,
+            Ted.CannedChickenPateOpen = Ted.CannedChickenPate,
+            Ted.CannedDuckPateOpen = Ted.CannedDuckPate,
+        }
+    }
+}

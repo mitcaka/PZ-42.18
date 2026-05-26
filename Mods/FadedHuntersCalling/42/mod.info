@@ -1,0 +1,10 @@
+name=Faded's Hunters Calling
+id=FadedHuntersCalling
+author=Faded
+modversion=1.0.0
+pzversion=42
+versionMin=42.18.0
+description=A clean-room hunter, trapper and bushcraft platform with a leather-and-amber Hunter Hub GUI. Live-capture trapping, field dressing, meat drying, hide curing, timed scent lures, animal tracking (yellow outline), trap board, and server QoL.
+poster=poster.png
+icon=icon.png
+tags=Build 42;Hunting;Trapping;Bushcraft;Items;Interface;Misc;Multiplayer;QoL

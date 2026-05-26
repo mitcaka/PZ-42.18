@@ -1,4 +1,6 @@
 {
+    "IGUI_CSR_LoginProtectionStarted":  "Login protection active for %1 seconds.",
+    "IGUI_CSR_LoginProtectionEnded":  "Login protection ended.",
     "IGUI_Hotbar_Back2":  "背部 2",
     "IGUI_CSR_Guide_Title":  "Common Sense Reborn - 指南",
     "IGUI_CSR_InfRes_Survived":  "你的身体正在抗御感染...",

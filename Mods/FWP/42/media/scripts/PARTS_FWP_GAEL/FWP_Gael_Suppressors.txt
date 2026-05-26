@@ -1,0 +1,526 @@
+module Base
+{
+
+item FWP_Gael_Osprey_Silencer
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Osprey Silencer,
+        Icon = Osprey_Silencer,
+        PartType = Canon,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -5,
+        MaxSightRange = 4,
+        MinSightRange = 3,
+        Tags = silencers;GunParts,
+        MountOn = Base.American180;Base.AMT1911;Base.AMT1911_Long;Base.APS;Base.APS_Fold;Base.AR7;Base.AUG9;Base.AUG9_Grip;Base.Automag;Base.B93R;Base.Benjamin_M397;Base.Bersa85F;Base.Bizon2_01_Fold;Base.Bizon2_01_Stock;Base.BodyGuard380;Base.BT380_Fold;Base.BT380_Stock;Base.BT9_Fold;Base.BT9_Stock;Base.Buckmark;Base.Buckmark_Carbine;Base.Buckmark_Long;Base.Calico_22LR;Base.Calico_M900_Fold;Base.Calico_M900_Stock;Base.Calico_M950_Pistol;Base.CMR_30;Base.CMR_30_Fold;Base.Colt_Commander;Base.Colt_Kimber;Base.Colt_Navy_1851;Base.Colt_Service38;Base.Colt_Service45;Base.Colt1903;Base.Colt1911;Base.CP33;Base.Cricket_22;Base.CZ_2075;Base.CZ_75_Compact;Base.CZ_75_Czechmate;Base.CZ_75_P01;Base.CZ_75_Shadow;Base.CZ_75_SP01;Base.CZ_75_SP01_SS;Base.CZ_75b;Base.CZ75;Base.CZ97B;Base.DEagle;Base.DEagle_Long;Base.EAA_Witness_45;Base.EAA_Witness_9;Base.EAA_Witness_Long_45;Base.EAA_Witness_Long_9;Base.EVO_Fold;Base.EVO_Stock;Base.FN_57;Base.FN_57_MK2;Base.FN_P90;Base.FN_PS90;Base.G17;Base.G18;Base.G21;Base.G34;Base.G42;Base.G43;Base.GP100_2;Base.GP100_2_357;Base.GP100_4;Base.GP100_4_357;Base.GP100_6;Base.GP100_6_357;Base.HiPoint;Base.HiPoint_Carbine;Base.HK_MK23;Base.HK_USP;Base.HK4_22;Base.HK4_380;Base.Jatimatic;Base.Jatimatic_Grip;Base.Jatimatic_Stock;Base.Jatimatic_Stock_Grip;Base.Judge_410g;Base.Judge_45LC;Base.Judge513_410g;Base.Judge513_45LC;Base.Judge513_Long_410g;Base.Judge513_Long_45LC;Base.JW3_TTI_MPX;Base.K5;Base.K6S;Base.K6S_357;Base.KG9;Base.KRISS_Fold;Base.KRISS_Stock;Base.KRISS22_MK11_Fold;Base.KRISS22_MK11_Stock;Base.KRISS9_Fold;Base.KRISS9_MLOK_Fold;Base.KRISS9_MLOK_Stock;Base.KRISS9_Stock;Base.LCP380;Base.Luger;Base.Luger_Carbine;Base.Luger_WW1;Base.M1911_Carbine;Base.M1936;Base.M1Carbine;Base.M29_44;Base.M29_44Carbine;Base.M2Carbine;Base.M2Hyde;Base.M39;Base.M4506;Base.M5238;Base.M5906;Base.M635;Base.M635S;Base.M9;Base.M9A3;Base.MAC10_Fold;Base.MAC10_Stock;Base.Makarov;Base.Makarov380;Base.Marlin_1894;Base.Marlin_1894_357;Base.Marlin_M70;Base.Marlin_M70_A26;Base.MK22;Base.Model50;Base.Model55_Fold;Base.Model55_Stock;Base.MP45;Base.MP5_Fixed;Base.MP5_Fold;Base.MP5_Stock;Base.MP7;Base.MP7_Grip;Base.MP7_Stock;Base.MP7_Stock_Grip;Base.MP9;Base.MPA57DMG;Base.MPA57DMG_Carbine;Base.MPA57DMG_Carbine_Fold;Base.NEF_Handi_357;Base.NEF_Handi_357_Sawed;Base.NEF_Handi_38;Base.NEF_Handi_38_Sawed;Base.NEF_Handi_410;Base.NEF_Handi_410_Sawed;Base.NEF_Handi_45LC;Base.NEF_Handi_45LC_Sawed;Base.P220;Base.P226;Base.P239;Base.PARA1911;Base.Pistol;Base.Pistol2;Base.Pistol3;Base.PPK;Base.PULP_1911;Base.Revolver;Base.Revolver_357;Base.Revolver_Long;Base.Revolver_Long_357;Base.Revolver_Short;Base.Revolver_Short_357;Base.Rhino_200DS;Base.Rhino_200DS_357;Base.Rhino_40DS;Base.Rhino_40DS_357;Base.Rhino_60DS;Base.Rhino_60DS_357;Base.RPD_92FS;Base.Ruger_1022;Base.Ruger_MK4;Base.Ruger_MK4_2245;Base.Ruger_PCC;Base.Ruger_PCC_M;Base.Ruger_PCC_R;Base.RWS_M34;Base.STAR_BM;Base.STAR_Z45_Fixed;Base.STAR_Z45_Fold;Base.STAR_Z45_Stock;Base.Sten;Base.Sten_MK2;Base.SUB2000;Base.SW_327;Base.SW_327_357;Base.SW_M500;Base.Taurus856;Base.Thompson;Base.Thompson_1928;Base.TXS_804_410g;Base.TXS_804_45LC;Base.UmarexSS;Base.UMP45_Fold;Base.UMP45_Stock;Base.UMP9_Fold;Base.UMP9_Stock;Base.UZI;Base.UZI_Fold;Base.UZI_Micro;Base.UZI_Micro_Fold;Base.UZI_Wood;Base.VP70;Base.VP70_Stock;Base.Vz61_Fixed;Base.Vz61_Fold;Base.Vz61_Stock;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XD4;Base.XD9;Base.ZIP22,
+        Tooltip = Tooltip_Suppressor_Pistol,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 5,
+        ConditionMax = 50,
+        StaticModel = FWP_Gael_Osprey_Silencer,
+        WorldStaticModel = FWP_Gael_Osprey_Silencer,
+    }
+model FWP_Gael_Osprey_Silencer
+    {
+                mesh = Canon/Silencers|Osprey_Silencer,
+                texture = GunTexture/Osprey_tex,
+                cullFace = None,
+    }
+
+item FWP_Gael_TMP_Silencer
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = TMP Silencer,
+        Icon = TMP_Silencer,
+        PartType = Canon,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = 2,
+        MaxSightRange = 2,
+        MinSightRange = 3,
+        Tags = silencers;GunParts,
+        MountOn = Base.American180;Base.AMT1911;Base.AMT1911_Long;Base.APS;Base.APS_Fold;Base.AR7;Base.AUG9;Base.AUG9_Grip;Base.Automag;Base.B93R;Base.Benjamin_M397;Base.Bersa85F;Base.Bizon2_01_Fold;Base.Bizon2_01_Stock;Base.BodyGuard380;Base.BT380_Fold;Base.BT380_Stock;Base.BT9_Fold;Base.BT9_Stock;Base.Buckmark;Base.Buckmark_Carbine;Base.Buckmark_Long;Base.Calico_22LR;Base.Calico_M900_Fold;Base.Calico_M900_Stock;Base.Calico_M950_Pistol;Base.CMR_30;Base.CMR_30_Fold;Base.Colt_Commander;Base.Colt_Kimber;Base.Colt_Navy_1851;Base.Colt_Service38;Base.Colt_Service45;Base.Colt1903;Base.Colt1911;Base.CP33;Base.Cricket_22;Base.CZ_2075;Base.CZ_75_Compact;Base.CZ_75_Czechmate;Base.CZ_75_P01;Base.CZ_75_Shadow;Base.CZ_75_SP01;Base.CZ_75_SP01_SS;Base.CZ_75b;Base.CZ75;Base.CZ97B;Base.DEagle;Base.DEagle_Long;Base.EAA_Witness_45;Base.EAA_Witness_9;Base.EAA_Witness_Long_45;Base.EAA_Witness_Long_9;Base.EVO_Fold;Base.EVO_Stock;Base.FN_57;Base.FN_57_MK2;Base.FN_P90;Base.FN_PS90;Base.G17;Base.G18;Base.G21;Base.G34;Base.G42;Base.G43;Base.GP100_2;Base.GP100_2_357;Base.GP100_4;Base.GP100_4_357;Base.GP100_6;Base.GP100_6_357;Base.HiPoint;Base.HiPoint_Carbine;Base.HK_MK23;Base.HK_USP;Base.HK4_22;Base.HK4_380;Base.Jatimatic;Base.Jatimatic_Grip;Base.Jatimatic_Stock;Base.Jatimatic_Stock_Grip;Base.Judge_410g;Base.Judge_45LC;Base.Judge513_410g;Base.Judge513_45LC;Base.Judge513_Long_410g;Base.Judge513_Long_45LC;Base.JW3_TTI_MPX;Base.K5;Base.K6S;Base.K6S_357;Base.KG9;Base.KRISS_Fold;Base.KRISS_Stock;Base.KRISS22_MK11_Fold;Base.KRISS22_MK11_Stock;Base.KRISS9_Fold;Base.KRISS9_MLOK_Fold;Base.KRISS9_MLOK_Stock;Base.KRISS9_Stock;Base.LCP380;Base.Luger;Base.Luger_Carbine;Base.Luger_WW1;Base.M1911_Carbine;Base.M1936;Base.M1Carbine;Base.M29_44;Base.M29_44Carbine;Base.M2Carbine;Base.M2Hyde;Base.M39;Base.M4506;Base.M5238;Base.M5906;Base.M635;Base.M635S;Base.M9;Base.M9A3;Base.MAC10_Fold;Base.MAC10_Stock;Base.Makarov;Base.Makarov380;Base.Marlin_1894;Base.Marlin_1894_357;Base.Marlin_M70;Base.Marlin_M70_A26;Base.MK22;Base.Model50;Base.Model55_Fold;Base.Model55_Stock;Base.MP45;Base.MP5_Fixed;Base.MP5_Fold;Base.MP5_Stock;Base.MP7;Base.MP7_Grip;Base.MP7_Stock;Base.MP7_Stock_Grip;Base.MP9;Base.MPA57DMG;Base.MPA57DMG_Carbine;Base.MPA57DMG_Carbine_Fold;Base.NEF_Handi_357;Base.NEF_Handi_357_Sawed;Base.NEF_Handi_38;Base.NEF_Handi_38_Sawed;Base.NEF_Handi_410;Base.NEF_Handi_410_Sawed;Base.NEF_Handi_45LC;Base.NEF_Handi_45LC_Sawed;Base.P220;Base.P226;Base.P239;Base.PARA1911;Base.Pistol;Base.Pistol2;Base.Pistol3;Base.PPK;Base.PULP_1911;Base.Revolver;Base.Revolver_357;Base.Revolver_Long;Base.Revolver_Long_357;Base.Revolver_Short;Base.Revolver_Short_357;Base.Rhino_200DS;Base.Rhino_200DS_357;Base.Rhino_40DS;Base.Rhino_40DS_357;Base.Rhino_60DS;Base.Rhino_60DS_357;Base.RPD_92FS;Base.Ruger_1022;Base.Ruger_MK4;Base.Ruger_MK4_2245;Base.Ruger_PCC;Base.Ruger_PCC_M;Base.Ruger_PCC_R;Base.RWS_M34;Base.STAR_BM;Base.STAR_Z45_Fixed;Base.STAR_Z45_Fold;Base.STAR_Z45_Stock;Base.Sten;Base.Sten_MK2;Base.SUB2000;Base.SW_327;Base.SW_327_357;Base.SW_M500;Base.Taurus856;Base.Thompson;Base.Thompson_1928;Base.TXS_804_410g;Base.TXS_804_45LC;Base.UmarexSS;Base.UMP45_Fold;Base.UMP45_Stock;Base.UMP9_Fold;Base.UMP9_Stock;Base.UZI;Base.UZI_Fold;Base.UZI_Micro;Base.UZI_Micro_Fold;Base.UZI_Wood;Base.VP70;Base.VP70_Stock;Base.Vz61_Fixed;Base.Vz61_Fold;Base.Vz61_Stock;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XD4;Base.XD9;Base.ZIP22,
+        Tooltip = Tooltip_Suppressor_Pistol,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 4,
+        ConditionMax = 45,
+        StaticModel = FWP_Gael_TMP_Silencer,
+        WorldStaticModel = FWP_Gael_TMP_Silencer,
+    }
+model FWP_Gael_TMP_Silencer
+    {
+                mesh = Canon/Silencers|TMP_Silencer,
+                texture = GunTexture/TMP_supp_tex,
+                cullFace = None,
+    }
+
+item FWP_Gael_SMG_Silencer
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = SMG Silencer,
+        Icon = SMG_Silencer,
+        PartType = Canon,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -5,
+        MaxSightRange = 0,
+        MinSightRange = 3,
+        Tags = silencers;GunParts,
+        MountOn = Base.American180;Base.AMT1911;Base.AMT1911_Long;Base.APS;Base.APS_Fold;Base.AR7;Base.AUG9;Base.AUG9_Grip;Base.Automag;Base.B93R;Base.Benjamin_M397;Base.Bersa85F;Base.Bizon2_01_Fold;Base.Bizon2_01_Stock;Base.BodyGuard380;Base.BT380_Fold;Base.BT380_Stock;Base.BT9_Fold;Base.BT9_Stock;Base.Buckmark;Base.Buckmark_Carbine;Base.Buckmark_Long;Base.Calico_22LR;Base.Calico_M900_Fold;Base.Calico_M900_Stock;Base.Calico_M950_Pistol;Base.CMR_30;Base.CMR_30_Fold;Base.Colt_Commander;Base.Colt_Kimber;Base.Colt_Navy_1851;Base.Colt_Service38;Base.Colt_Service45;Base.Colt1903;Base.Colt1911;Base.CP33;Base.Cricket_22;Base.CZ_2075;Base.CZ_75_Compact;Base.CZ_75_Czechmate;Base.CZ_75_P01;Base.CZ_75_Shadow;Base.CZ_75_SP01;Base.CZ_75_SP01_SS;Base.CZ_75b;Base.CZ75;Base.CZ97B;Base.DEagle;Base.DEagle_Long;Base.EAA_Witness_45;Base.EAA_Witness_9;Base.EAA_Witness_Long_45;Base.EAA_Witness_Long_9;Base.EVO_Fold;Base.EVO_Stock;Base.FN_57;Base.FN_57_MK2;Base.FN_P90;Base.FN_PS90;Base.G17;Base.G18;Base.G21;Base.G34;Base.G42;Base.G43;Base.GP100_2;Base.GP100_2_357;Base.GP100_4;Base.GP100_4_357;Base.GP100_6;Base.GP100_6_357;Base.HiPoint;Base.HiPoint_Carbine;Base.HK_MK23;Base.HK_USP;Base.HK4_22;Base.HK4_380;Base.Jatimatic;Base.Jatimatic_Grip;Base.Jatimatic_Stock;Base.Jatimatic_Stock_Grip;Base.Judge_410g;Base.Judge_45LC;Base.Judge513_410g;Base.Judge513_45LC;Base.Judge513_Long_410g;Base.Judge513_Long_45LC;Base.JW3_TTI_MPX;Base.K5;Base.K6S;Base.K6S_357;Base.KG9;Base.KRISS_Fold;Base.KRISS_Stock;Base.KRISS22_MK11_Fold;Base.KRISS22_MK11_Stock;Base.KRISS9_Fold;Base.KRISS9_MLOK_Fold;Base.KRISS9_MLOK_Stock;Base.KRISS9_Stock;Base.LCP380;Base.Luger;Base.Luger_Carbine;Base.Luger_WW1;Base.M1911_Carbine;Base.M1936;Base.M1Carbine;Base.M29_44;Base.M29_44Carbine;Base.M2Carbine;Base.M2Hyde;Base.M39;Base.M4506;Base.M5238;Base.M5906;Base.M635;Base.M635S;Base.M9;Base.M9A3;Base.MAC10_Fold;Base.MAC10_Stock;Base.Makarov;Base.Makarov380;Base.Marlin_1894;Base.Marlin_1894_357;Base.Marlin_M70;Base.Marlin_M70_A26;Base.MK22;Base.Model50;Base.Model55_Fold;Base.Model55_Stock;Base.MP45;Base.MP5_Fixed;Base.MP5_Fold;Base.MP5_Stock;Base.MP7;Base.MP7_Grip;Base.MP7_Stock;Base.MP7_Stock_Grip;Base.MP9;Base.MPA57DMG;Base.MPA57DMG_Carbine;Base.MPA57DMG_Carbine_Fold;Base.NEF_Handi_357;Base.NEF_Handi_357_Sawed;Base.NEF_Handi_38;Base.NEF_Handi_38_Sawed;Base.NEF_Handi_410;Base.NEF_Handi_410_Sawed;Base.NEF_Handi_45LC;Base.NEF_Handi_45LC_Sawed;Base.P220;Base.P226;Base.P239;Base.PARA1911;Base.Pistol;Base.Pistol2;Base.Pistol3;Base.PPK;Base.PULP_1911;Base.Revolver;Base.Revolver_357;Base.Revolver_Long;Base.Revolver_Long_357;Base.Revolver_Short;Base.Revolver_Short_357;Base.Rhino_200DS;Base.Rhino_200DS_357;Base.Rhino_40DS;Base.Rhino_40DS_357;Base.Rhino_60DS;Base.Rhino_60DS_357;Base.RPD_92FS;Base.Ruger_1022;Base.Ruger_MK4;Base.Ruger_MK4_2245;Base.Ruger_PCC;Base.Ruger_PCC_M;Base.Ruger_PCC_R;Base.RWS_M34;Base.STAR_BM;Base.STAR_Z45_Fixed;Base.STAR_Z45_Fold;Base.STAR_Z45_Stock;Base.Sten;Base.Sten_MK2;Base.SUB2000;Base.SW_327;Base.SW_327_357;Base.SW_M500;Base.Taurus856;Base.Thompson;Base.Thompson_1928;Base.TXS_804_410g;Base.TXS_804_45LC;Base.UmarexSS;Base.UMP45_Fold;Base.UMP45_Stock;Base.UMP9_Fold;Base.UMP9_Stock;Base.UZI;Base.UZI_Fold;Base.UZI_Micro;Base.UZI_Micro_Fold;Base.UZI_Wood;Base.VP70;Base.VP70_Stock;Base.Vz61_Fixed;Base.Vz61_Fold;Base.Vz61_Stock;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XD4;Base.XD9;Base.ZIP22,
+        Tooltip = Tooltip_Suppressor_Pistol,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 5,
+        ConditionMax = 100,
+        StaticModel = FWP_Gael_SMG_Silencer,
+        WorldStaticModel = FWP_Gael_SMG_Silencer,
+    }
+model FWP_Gael_SMG_Silencer
+    {
+                mesh = Canon/Silencers|SMG_Silencer,
+                texture = GunTexture/SMG_Silencer_Tex,
+                cullFace = None,
+    }
+
+item FWP_Gael_NST_Silencer
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = NST Silencer,
+        Icon = NST_Silencer,
+        PartType = Canon,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = -2,
+        MaxSightRange = 5.0,
+        MinSightRange = 3,
+        Tags = silencers;GunParts,
+        MountOn = Base.AAC_Honey;Base.AAC_Honey_Fold;Base.ADAR;Base.AK103;Base.AK12;Base.AK12_Fold;Base.AK12_New;Base.AK308;Base.AK47;Base.AK5C;Base.AK5C_Fold;Base.AK74;Base.AK74_Alpha;Base.AK74_Alpha_Fold;Base.AK74_Custom;Base.AKM;Base.AKM_Custom;Base.AKM_Gold;Base.AKMS_Fold;Base.AKMS_Stock;Base.AKS74;Base.AKS74_Fold;Base.AKS74U;Base.AKS74U_Fold;Base.AN94;Base.AR18;Base.AR18_Fold;Base.AR57_PDW;Base.AR57_PDW_Fold;Base.AR57_PDW_Long;Base.AssaultRifle;Base.AssaultRifle2;Base.AUG;Base.AUG_A3;Base.AUG_A3_Grip;Base.AUG_Grip;Base.BAR;Base.BAR_Monitor;Base.Bush_AR15_MOE;Base.Bush_XM15;Base.Bush_XM15_Custom;Base.CAR15_Survival;Base.CAR15SMG;Base.Carbon15_97;Base.ColtM16;Base.DR_200;Base.F2000;Base.FAL;Base.FAL_PARA_Fold;Base.FAL_PARA_Stock;Base.FAMAS;Base.FAMAS_Felin;Base.FAMAS_G2;Base.FN_FNC;Base.FN_FNC_Fold;Base.G11K3;Base.G21LMG;Base.G28;Base.G3;Base.G33;Base.G36;Base.G36_Fold;Base.G36C;Base.G36C_Fold;Base.G36KV;Base.G36KV_Fold;Base.Galil;Base.Galil_Fold;Base.Galil_Sniper;Base.Galil_Sniper_Fold;Base.H416;Base.HuntingRifle;Base.K1_1;Base.K1_1_Fold;Base.K1_Fold;Base.K1_Stock;Base.K11;Base.K12;Base.K14;Base.K1A_DEV;Base.K1A_DEV_Fold;Base.K1DEV;Base.K2_1;Base.K2_203;Base.K2_ADVK2;Base.K2_C1;Base.K2_Grunt;Base.K2C1_PH;Base.K3LMG;Base.L22;Base.L85;Base.L85A2;Base.L86;Base.L96;Base.LVOA_C;Base.M1;Base.M14;Base.M14EBR;Base.M16A1;Base.M16A2;Base.M16A3;Base.M16Tape;Base.M16Wood;Base.M1903;Base.M240;Base.M249;Base.M249E3;Base.M249E3_Fold;Base.M4;Base.M40;Base.M40A1;Base.M40A2;Base.M40A3;Base.M41A_PULSE_Fold;Base.M41A_PULSE_Stock;Base.M46_Mauser;Base.M4A1;Base.M60;Base.M723;Base.M85_Fold;Base.M85_Stock;Base.MAS36;Base.MAS44;Base.MAS49;Base.MCX_Socom;Base.MCX_Spear;Base.MCX_Virtus;Base.MCX_VirtusPatrol;Base.MD65_Fold;Base.MD65_Stock;Base.MG42;Base.MINI14;Base.MINI14_Fold;Base.MINI14_Stock;Base.MINI14_T;Base.MK18;Base.MK43;Base.MK47;Base.Mosin;Base.MosinObrez_Pistol;Base.MSG90;Base.OTS_03_SVU;Base.Ots14_1A_01;Base.Ots14_1A_02;Base.Ots14_4A;Base.Ots14_4A_01;Base.Ots14_4A_GL;Base.PKM;Base.PSG1;Base.QBZ_95;Base.RPD;Base.RPK16;Base.RPK74;Base.Ruger_No1_3006;Base.Ruger_No1_308;Base.Ruger_No1_4570;Base.Sako85;Base.Savage12;Base.SCAR_B;Base.SCAR20;Base.SCARH;Base.SCARL;Base.SCARSC_Fold;Base.SCARSC_Stock;Base.Shrike;Base.SKS;Base.SKS_A26;Base.SKS_Bayo;Base.SKS_PARA;Base.SKS_PARA_Bayo;Base.SKS30;Base.SKS30_A26;Base.SKS30_Bayo;Base.SKS30_PARA;Base.SKS30_PARA_Bayo;Base.SV_98;Base.SVD;Base.SVDK;Base.Tavor;Base.Thompson_Center_3006;Base.Thompson_Center_308;Base.Thompson_Center_4570;Base.TR1_UltraLight;Base.Type20;Base.Type38;Base.Type64;Base.Type89;Base.Type89_Fold;Base.Type99;Base.VarmintRifle;Base.Viper;Base.Vz58;Base.Vz58_Fold;Base.Vz58_Mini_Fold;Base.Vz58_Mini_Stock;Base.Vz58_Stock;Base.WA2000;Base.WA2000_Bipod;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XM117;Base.XM8;Base.XM8Compact_Pistol;Base.XM8LMG,
+        Tooltip = Tooltip_Suppressor_Rifle,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 5,
+        ConditionMax = 55,
+        StaticModel = FWP_Gael_NST_Silencer,
+        WorldStaticModel = FWP_Gael_NST_Silencer,
+    }
+model FWP_Gael_NST_Silencer
+    {
+        		mesh = Canon/Silencers|NST_Silencer,
+        		texture = GunTexture/NST_sup_tex,
+        		cullFace = None,
+    
+        		attachment muzzle
+    	{
+    		offset = 0.0 0.402 0.027,
+    		rotate = -90.0 0.0 -180.0,
+    	}
+    }
+
+item FWP_Gael_PBS1_Silencer
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = PBS-1 Silencer,
+        Icon = PBS1_Silencer,
+        PartType = Canon,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+        AimingTimeModifier = -2,
+        MaxSightRange = 5.0,
+        MinSightRange = 3,
+        Tags = silencers;GunParts,
+        MountOn = Base.AAC_Honey;Base.AAC_Honey_Fold;Base.ADAR;Base.AK103;Base.AK12;Base.AK12_Fold;Base.AK12_New;Base.AK308;Base.AK47;Base.AK5C;Base.AK5C_Fold;Base.AK74;Base.AK74_Alpha;Base.AK74_Alpha_Fold;Base.AK74_Custom;Base.AKM;Base.AKM_Custom;Base.AKM_Gold;Base.AKMS_Fold;Base.AKMS_Stock;Base.AKS74;Base.AKS74_Fold;Base.AKS74U;Base.AKS74U_Fold;Base.AN94;Base.AR18;Base.AR18_Fold;Base.AR57_PDW;Base.AR57_PDW_Fold;Base.AR57_PDW_Long;Base.AssaultRifle;Base.AssaultRifle2;Base.AUG;Base.AUG_A3;Base.AUG_A3_Grip;Base.AUG_Grip;Base.BAR;Base.BAR_Monitor;Base.Bush_AR15_MOE;Base.Bush_XM15;Base.Bush_XM15_Custom;Base.CAR15_Survival;Base.CAR15SMG;Base.Carbon15_97;Base.ColtM16;Base.DR_200;Base.F2000;Base.FAL;Base.FAL_PARA_Fold;Base.FAL_PARA_Stock;Base.FAMAS;Base.FAMAS_Felin;Base.FAMAS_G2;Base.FN_FNC;Base.FN_FNC_Fold;Base.G11K3;Base.G21LMG;Base.G28;Base.G3;Base.G33;Base.G36;Base.G36_Fold;Base.G36C;Base.G36C_Fold;Base.G36KV;Base.G36KV_Fold;Base.Galil;Base.Galil_Fold;Base.Galil_Sniper;Base.Galil_Sniper_Fold;Base.H416;Base.HuntingRifle;Base.K1_1;Base.K1_1_Fold;Base.K1_Fold;Base.K1_Stock;Base.K11;Base.K12;Base.K14;Base.K1A_DEV;Base.K1A_DEV_Fold;Base.K1DEV;Base.K2_1;Base.K2_203;Base.K2_ADVK2;Base.K2_C1;Base.K2_Grunt;Base.K2C1_PH;Base.K3LMG;Base.L22;Base.L85;Base.L85A2;Base.L86;Base.L96;Base.LVOA_C;Base.M1;Base.M14;Base.M14EBR;Base.M16A1;Base.M16A2;Base.M16A3;Base.M16Tape;Base.M16Wood;Base.M1903;Base.M240;Base.M249;Base.M249E3;Base.M249E3_Fold;Base.M4;Base.M40;Base.M40A1;Base.M40A2;Base.M40A3;Base.M41A_PULSE_Fold;Base.M41A_PULSE_Stock;Base.M46_Mauser;Base.M4A1;Base.M60;Base.M723;Base.M85_Fold;Base.M85_Stock;Base.MAS36;Base.MAS44;Base.MAS49;Base.MCX_Socom;Base.MCX_Spear;Base.MCX_Virtus;Base.MCX_VirtusPatrol;Base.MD65_Fold;Base.MD65_Stock;Base.MG42;Base.MINI14;Base.MINI14_Fold;Base.MINI14_Stock;Base.MINI14_T;Base.MK18;Base.MK43;Base.MK47;Base.Mosin;Base.MosinObrez_Pistol;Base.MSG90;Base.OTS_03_SVU;Base.Ots14_1A_01;Base.Ots14_1A_02;Base.Ots14_4A;Base.Ots14_4A_01;Base.Ots14_4A_GL;Base.PKM;Base.PSG1;Base.QBZ_95;Base.RPD;Base.RPK16;Base.RPK74;Base.Ruger_No1_3006;Base.Ruger_No1_308;Base.Ruger_No1_4570;Base.Sako85;Base.Savage12;Base.SCAR_B;Base.SCAR20;Base.SCARH;Base.SCARL;Base.SCARSC_Fold;Base.SCARSC_Stock;Base.Shrike;Base.SKS;Base.SKS_A26;Base.SKS_Bayo;Base.SKS_PARA;Base.SKS_PARA_Bayo;Base.SKS30;Base.SKS30_A26;Base.SKS30_Bayo;Base.SKS30_PARA;Base.SKS30_PARA_Bayo;Base.SV_98;Base.SVD;Base.SVDK;Base.Tavor;Base.Thompson_Center_3006;Base.Thompson_Center_308;Base.Thompson_Center_4570;Base.TR1_UltraLight;Base.Type20;Base.Type38;Base.Type64;Base.Type89;Base.Type89_Fold;Base.Type99;Base.VarmintRifle;Base.Viper;Base.Vz58;Base.Vz58_Fold;Base.Vz58_Mini_Fold;Base.Vz58_Mini_Stock;Base.Vz58_Stock;Base.WA2000;Base.WA2000_Bipod;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XM117;Base.XM8;Base.XM8Compact_Pistol;Base.XM8LMG,
+        Tooltip = Tooltip_Suppressor_Rifle,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 5,
+        ConditionMax = 55,
+        StaticModel = FWP_Gael_PBS1_Silencer,
+        WorldStaticModel = FWP_Gael_PBS1_Silencer,
+    }
+model FWP_Gael_PBS1_Silencer
+    {
+                mesh = Canon/Silencers|PBS1_Silencer,
+                texture = GunTexture/PBS1_tex,
+                cullFace = None,
+    }
+
+item FWP_Gael_PBS4_Silencer
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = PBS-4 Silencer,
+        Icon = PBS4_Silencer,
+        PartType = Canon,
+        Weight = 0.4,
+        WeightModifier = 0.4,
+        AimingTimeModifier = 5,
+        MaxSightRange = 5.0,
+        MinSightRange = 3,
+        Tags = silencers;GunParts,
+        MountOn = Base.AAC_Honey;Base.AAC_Honey_Fold;Base.ADAR;Base.AK103;Base.AK12;Base.AK12_Fold;Base.AK12_New;Base.AK308;Base.AK47;Base.AK5C;Base.AK5C_Fold;Base.AK74;Base.AK74_Alpha;Base.AK74_Alpha_Fold;Base.AK74_Custom;Base.AKM;Base.AKM_Custom;Base.AKM_Gold;Base.AKMS_Fold;Base.AKMS_Stock;Base.AKS74;Base.AKS74_Fold;Base.AKS74U;Base.AKS74U_Fold;Base.AN94;Base.AR18;Base.AR18_Fold;Base.AR57_PDW;Base.AR57_PDW_Fold;Base.AR57_PDW_Long;Base.AssaultRifle;Base.AssaultRifle2;Base.AUG;Base.AUG_A3;Base.AUG_A3_Grip;Base.AUG_Grip;Base.BAR;Base.BAR_Monitor;Base.Bush_AR15_MOE;Base.Bush_XM15;Base.Bush_XM15_Custom;Base.CAR15_Survival;Base.CAR15SMG;Base.Carbon15_97;Base.ColtM16;Base.DR_200;Base.F2000;Base.FAL;Base.FAL_PARA_Fold;Base.FAL_PARA_Stock;Base.FAMAS;Base.FAMAS_Felin;Base.FAMAS_G2;Base.FN_FNC;Base.FN_FNC_Fold;Base.G11K3;Base.G21LMG;Base.G28;Base.G3;Base.G33;Base.G36;Base.G36_Fold;Base.G36C;Base.G36C_Fold;Base.G36KV;Base.G36KV_Fold;Base.Galil;Base.Galil_Fold;Base.Galil_Sniper;Base.Galil_Sniper_Fold;Base.H416;Base.HuntingRifle;Base.K1_1;Base.K1_1_Fold;Base.K1_Fold;Base.K1_Stock;Base.K11;Base.K12;Base.K14;Base.K1A_DEV;Base.K1A_DEV_Fold;Base.K1DEV;Base.K2_1;Base.K2_203;Base.K2_ADVK2;Base.K2_C1;Base.K2_Grunt;Base.K2C1_PH;Base.K3LMG;Base.L22;Base.L85;Base.L85A2;Base.L86;Base.L96;Base.LVOA_C;Base.M1;Base.M14;Base.M14EBR;Base.M16A1;Base.M16A2;Base.M16A3;Base.M16Tape;Base.M16Wood;Base.M1903;Base.M240;Base.M249;Base.M249E3;Base.M249E3_Fold;Base.M4;Base.M40;Base.M40A1;Base.M40A2;Base.M40A3;Base.M41A_PULSE_Fold;Base.M41A_PULSE_Stock;Base.M46_Mauser;Base.M4A1;Base.M60;Base.M723;Base.M85_Fold;Base.M85_Stock;Base.MAS36;Base.MAS44;Base.MAS49;Base.MCX_Socom;Base.MCX_Spear;Base.MCX_Virtus;Base.MCX_VirtusPatrol;Base.MD65_Fold;Base.MD65_Stock;Base.MG42;Base.MINI14;Base.MINI14_Fold;Base.MINI14_Stock;Base.MINI14_T;Base.MK18;Base.MK43;Base.MK47;Base.Mosin;Base.MosinObrez_Pistol;Base.MSG90;Base.OTS_03_SVU;Base.Ots14_1A_01;Base.Ots14_1A_02;Base.Ots14_4A;Base.Ots14_4A_01;Base.Ots14_4A_GL;Base.PKM;Base.PSG1;Base.QBZ_95;Base.RPD;Base.RPK16;Base.RPK74;Base.Ruger_No1_3006;Base.Ruger_No1_308;Base.Ruger_No1_4570;Base.Sako85;Base.Savage12;Base.SCAR_B;Base.SCAR20;Base.SCARH;Base.SCARL;Base.SCARSC_Fold;Base.SCARSC_Stock;Base.Shrike;Base.SKS;Base.SKS_A26;Base.SKS_Bayo;Base.SKS_PARA;Base.SKS_PARA_Bayo;Base.SKS30;Base.SKS30_A26;Base.SKS30_Bayo;Base.SKS30_PARA;Base.SKS30_PARA_Bayo;Base.SV_98;Base.SVD;Base.SVDK;Base.Tavor;Base.Thompson_Center_3006;Base.Thompson_Center_308;Base.Thompson_Center_4570;Base.TR1_UltraLight;Base.Type20;Base.Type38;Base.Type64;Base.Type89;Base.Type89_Fold;Base.Type99;Base.VarmintRifle;Base.Viper;Base.Vz58;Base.Vz58_Fold;Base.Vz58_Mini_Fold;Base.Vz58_Mini_Stock;Base.Vz58_Stock;Base.WA2000;Base.WA2000_Bipod;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XM117;Base.XM8;Base.XM8Compact_Pistol;Base.XM8LMG,
+        Tooltip = Tooltip_Suppressor_Rifle,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 22.0,
+        ConditionMax = 55,
+        StaticModel = FWP_Gael_PBS4_Silencer,
+        WorldStaticModel = FWP_Gael_PBS4_Silencer,
+    }
+model FWP_Gael_PBS4_Silencer
+    {
+                mesh = Canon/Silencers|PBS4_Silencer,
+                texture = GunTexture/PBS4_tex,
+                cullFace = None,
+    }
+
+item FWP_Gael_Dtkp_Silencer
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = DTKP Silencer,
+        Icon = Dtkp_Silencer,
+        PartType = Canon,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = 8,
+        MaxSightRange = 5.0,
+        MinSightRange = 3,
+        Tags = silencers;GunParts,
+        MountOn = Base.AAC_Honey;Base.AAC_Honey_Fold;Base.ADAR;Base.AK103;Base.AK12;Base.AK12_Fold;Base.AK12_New;Base.AK308;Base.AK47;Base.AK5C;Base.AK5C_Fold;Base.AK74;Base.AK74_Alpha;Base.AK74_Alpha_Fold;Base.AK74_Custom;Base.AKM;Base.AKM_Custom;Base.AKM_Gold;Base.AKMS_Fold;Base.AKMS_Stock;Base.AKS74;Base.AKS74_Fold;Base.AKS74U;Base.AKS74U_Fold;Base.AN94;Base.AR18;Base.AR18_Fold;Base.AR57_PDW;Base.AR57_PDW_Fold;Base.AR57_PDW_Long;Base.AssaultRifle;Base.AssaultRifle2;Base.AUG;Base.AUG_A3;Base.AUG_A3_Grip;Base.AUG_Grip;Base.BAR;Base.BAR_Monitor;Base.Bush_AR15_MOE;Base.Bush_XM15;Base.Bush_XM15_Custom;Base.CAR15_Survival;Base.CAR15SMG;Base.Carbon15_97;Base.ColtM16;Base.DR_200;Base.F2000;Base.FAL;Base.FAL_PARA_Fold;Base.FAL_PARA_Stock;Base.FAMAS;Base.FAMAS_Felin;Base.FAMAS_G2;Base.FN_FNC;Base.FN_FNC_Fold;Base.G11K3;Base.G21LMG;Base.G28;Base.G3;Base.G33;Base.G36;Base.G36_Fold;Base.G36C;Base.G36C_Fold;Base.G36KV;Base.G36KV_Fold;Base.Galil;Base.Galil_Fold;Base.Galil_Sniper;Base.Galil_Sniper_Fold;Base.H416;Base.HuntingRifle;Base.K1_1;Base.K1_1_Fold;Base.K1_Fold;Base.K1_Stock;Base.K11;Base.K12;Base.K14;Base.K1A_DEV;Base.K1A_DEV_Fold;Base.K1DEV;Base.K2_1;Base.K2_203;Base.K2_ADVK2;Base.K2_C1;Base.K2_Grunt;Base.K2C1_PH;Base.K3LMG;Base.L22;Base.L85;Base.L85A2;Base.L86;Base.L96;Base.LVOA_C;Base.M1;Base.M14;Base.M14EBR;Base.M16A1;Base.M16A2;Base.M16A3;Base.M16Tape;Base.M16Wood;Base.M1903;Base.M240;Base.M249;Base.M249E3;Base.M249E3_Fold;Base.M4;Base.M40;Base.M40A1;Base.M40A2;Base.M40A3;Base.M41A_PULSE_Fold;Base.M41A_PULSE_Stock;Base.M46_Mauser;Base.M4A1;Base.M60;Base.M723;Base.M85_Fold;Base.M85_Stock;Base.MAS36;Base.MAS44;Base.MAS49;Base.MCX_Socom;Base.MCX_Spear;Base.MCX_Virtus;Base.MCX_VirtusPatrol;Base.MD65_Fold;Base.MD65_Stock;Base.MG42;Base.MINI14;Base.MINI14_Fold;Base.MINI14_Stock;Base.MINI14_T;Base.MK18;Base.MK43;Base.MK47;Base.Mosin;Base.MosinObrez_Pistol;Base.MSG90;Base.OTS_03_SVU;Base.Ots14_1A_01;Base.Ots14_1A_02;Base.Ots14_4A;Base.Ots14_4A_01;Base.Ots14_4A_GL;Base.PKM;Base.PSG1;Base.QBZ_95;Base.RPD;Base.RPK16;Base.RPK74;Base.Ruger_No1_3006;Base.Ruger_No1_308;Base.Ruger_No1_4570;Base.Sako85;Base.Savage12;Base.SCAR_B;Base.SCAR20;Base.SCARH;Base.SCARL;Base.SCARSC_Fold;Base.SCARSC_Stock;Base.Shrike;Base.SKS;Base.SKS_A26;Base.SKS_Bayo;Base.SKS_PARA;Base.SKS_PARA_Bayo;Base.SKS30;Base.SKS30_A26;Base.SKS30_Bayo;Base.SKS30_PARA;Base.SKS30_PARA_Bayo;Base.SV_98;Base.SVD;Base.SVDK;Base.Tavor;Base.Thompson_Center_3006;Base.Thompson_Center_308;Base.Thompson_Center_4570;Base.TR1_UltraLight;Base.Type20;Base.Type38;Base.Type64;Base.Type89;Base.Type89_Fold;Base.Type99;Base.VarmintRifle;Base.Viper;Base.Vz58;Base.Vz58_Fold;Base.Vz58_Mini_Fold;Base.Vz58_Mini_Stock;Base.Vz58_Stock;Base.WA2000;Base.WA2000_Bipod;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XM117;Base.XM8;Base.XM8Compact_Pistol;Base.XM8LMG,
+        Tooltip = Tooltip_Suppressor_Rifle,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 22.0,
+        ConditionMax = 60,
+        StaticModel = FWP_Gael_Dtkp_Silencer,
+        WorldStaticModel = FWP_Gael_Dtkp_Silencer,
+    }
+model FWP_Gael_Dtkp_Silencer
+    {
+                mesh = Canon/Silencers|Dtkp_Silencer,
+                texture = GunTexture/Dtkp_tex,
+                cullFace = None,
+    }
+
+item FWP_Gael_Dtkp_Hexagon_Silencer
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = DTKP Hexagon Silencer,
+        Icon = Dtkp_Hexagon_Silencer,
+        PartType = Canon,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = 7,
+        MaxSightRange = 5.0,
+        MinSightRange = 3,
+        Tags = silencers;GunParts,
+        MountOn = Base.AAC_Honey;Base.AAC_Honey_Fold;Base.ADAR;Base.AK103;Base.AK12;Base.AK12_Fold;Base.AK12_New;Base.AK308;Base.AK47;Base.AK5C;Base.AK5C_Fold;Base.AK74;Base.AK74_Alpha;Base.AK74_Alpha_Fold;Base.AK74_Custom;Base.AKM;Base.AKM_Custom;Base.AKM_Gold;Base.AKMS_Fold;Base.AKMS_Stock;Base.AKS74;Base.AKS74_Fold;Base.AKS74U;Base.AKS74U_Fold;Base.AN94;Base.AR18;Base.AR18_Fold;Base.AR57_PDW;Base.AR57_PDW_Fold;Base.AR57_PDW_Long;Base.AssaultRifle;Base.AssaultRifle2;Base.AUG;Base.AUG_A3;Base.AUG_A3_Grip;Base.AUG_Grip;Base.BAR;Base.BAR_Monitor;Base.Bush_AR15_MOE;Base.Bush_XM15;Base.Bush_XM15_Custom;Base.CAR15_Survival;Base.CAR15SMG;Base.Carbon15_97;Base.ColtM16;Base.DR_200;Base.F2000;Base.FAL;Base.FAL_PARA_Fold;Base.FAL_PARA_Stock;Base.FAMAS;Base.FAMAS_Felin;Base.FAMAS_G2;Base.FN_FNC;Base.FN_FNC_Fold;Base.G11K3;Base.G21LMG;Base.G28;Base.G3;Base.G33;Base.G36;Base.G36_Fold;Base.G36C;Base.G36C_Fold;Base.G36KV;Base.G36KV_Fold;Base.Galil;Base.Galil_Fold;Base.Galil_Sniper;Base.Galil_Sniper_Fold;Base.H416;Base.HuntingRifle;Base.K1_1;Base.K1_1_Fold;Base.K1_Fold;Base.K1_Stock;Base.K11;Base.K12;Base.K14;Base.K1A_DEV;Base.K1A_DEV_Fold;Base.K1DEV;Base.K2_1;Base.K2_203;Base.K2_ADVK2;Base.K2_C1;Base.K2_Grunt;Base.K2C1_PH;Base.K3LMG;Base.L22;Base.L85;Base.L85A2;Base.L86;Base.L96;Base.LVOA_C;Base.M1;Base.M14;Base.M14EBR;Base.M16A1;Base.M16A2;Base.M16A3;Base.M16Tape;Base.M16Wood;Base.M1903;Base.M240;Base.M249;Base.M249E3;Base.M249E3_Fold;Base.M4;Base.M40;Base.M40A1;Base.M40A2;Base.M40A3;Base.M41A_PULSE_Fold;Base.M41A_PULSE_Stock;Base.M46_Mauser;Base.M4A1;Base.M60;Base.M723;Base.M85_Fold;Base.M85_Stock;Base.MAS36;Base.MAS44;Base.MAS49;Base.MCX_Socom;Base.MCX_Spear;Base.MCX_Virtus;Base.MCX_VirtusPatrol;Base.MD65_Fold;Base.MD65_Stock;Base.MG42;Base.MINI14;Base.MINI14_Fold;Base.MINI14_Stock;Base.MINI14_T;Base.MK18;Base.MK43;Base.MK47;Base.Mosin;Base.MosinObrez_Pistol;Base.MSG90;Base.OTS_03_SVU;Base.Ots14_1A_01;Base.Ots14_1A_02;Base.Ots14_4A;Base.Ots14_4A_01;Base.Ots14_4A_GL;Base.PKM;Base.PSG1;Base.QBZ_95;Base.RPD;Base.RPK16;Base.RPK74;Base.Ruger_No1_3006;Base.Ruger_No1_308;Base.Ruger_No1_4570;Base.Sako85;Base.Savage12;Base.SCAR_B;Base.SCAR20;Base.SCARH;Base.SCARL;Base.SCARSC_Fold;Base.SCARSC_Stock;Base.Shrike;Base.SKS;Base.SKS_A26;Base.SKS_Bayo;Base.SKS_PARA;Base.SKS_PARA_Bayo;Base.SKS30;Base.SKS30_A26;Base.SKS30_Bayo;Base.SKS30_PARA;Base.SKS30_PARA_Bayo;Base.SV_98;Base.SVD;Base.SVDK;Base.Tavor;Base.Thompson_Center_3006;Base.Thompson_Center_308;Base.Thompson_Center_4570;Base.TR1_UltraLight;Base.Type20;Base.Type38;Base.Type64;Base.Type89;Base.Type89_Fold;Base.Type99;Base.VarmintRifle;Base.Viper;Base.Vz58;Base.Vz58_Fold;Base.Vz58_Mini_Fold;Base.Vz58_Mini_Stock;Base.Vz58_Stock;Base.WA2000;Base.WA2000_Bipod;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XM117;Base.XM8;Base.XM8Compact_Pistol;Base.XM8LMG,
+        Tooltip = Tooltip_Suppressor_Rifle,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 22.0,
+        ConditionMax = 50,
+        StaticModel = FWP_Gael_Dtkp_Hexagon_Silencer,
+        WorldStaticModel = FWP_Gael_Dtkp_Hexagon_Silencer,
+    }
+model FWP_Gael_Dtkp_Hexagon_Silencer
+    {
+        		mesh = Canon/Silencers|Dtkp_Hexagon_Silencer,
+        		texture = GunTexture/Hexagon_DTKP_tex,
+        		cullFace = None,
+    }
+
+item FWP_Gael_TGP_Silencer
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = TGP Silencer,
+        Icon = TGP_Silencer,
+        PartType = Canon,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = 5,
+        MaxSightRange = 2,
+        MinSightRange = 1,
+        Tags = silencers;GunParts,
+        MountOn = Base.AAC_Honey;Base.AAC_Honey_Fold;Base.ADAR;Base.AK103;Base.AK12;Base.AK12_Fold;Base.AK12_New;Base.AK308;Base.AK47;Base.AK5C;Base.AK5C_Fold;Base.AK74;Base.AK74_Alpha;Base.AK74_Alpha_Fold;Base.AK74_Custom;Base.AKM;Base.AKM_Custom;Base.AKM_Gold;Base.AKMS_Fold;Base.AKMS_Stock;Base.AKS74;Base.AKS74_Fold;Base.AKS74U;Base.AKS74U_Fold;Base.AN94;Base.AR18;Base.AR18_Fold;Base.AR57_PDW;Base.AR57_PDW_Fold;Base.AR57_PDW_Long;Base.AssaultRifle;Base.AssaultRifle2;Base.AUG;Base.AUG_A3;Base.AUG_A3_Grip;Base.AUG_Grip;Base.BAR;Base.BAR_Monitor;Base.Bush_AR15_MOE;Base.Bush_XM15;Base.Bush_XM15_Custom;Base.CAR15_Survival;Base.CAR15SMG;Base.Carbon15_97;Base.ColtM16;Base.DR_200;Base.F2000;Base.FAL;Base.FAL_PARA_Fold;Base.FAL_PARA_Stock;Base.FAMAS;Base.FAMAS_Felin;Base.FAMAS_G2;Base.FN_FNC;Base.FN_FNC_Fold;Base.G11K3;Base.G21LMG;Base.G28;Base.G3;Base.G33;Base.G36;Base.G36_Fold;Base.G36C;Base.G36C_Fold;Base.G36KV;Base.G36KV_Fold;Base.Galil;Base.Galil_Fold;Base.Galil_Sniper;Base.Galil_Sniper_Fold;Base.H416;Base.HuntingRifle;Base.K1_1;Base.K1_1_Fold;Base.K1_Fold;Base.K1_Stock;Base.K11;Base.K12;Base.K14;Base.K1A_DEV;Base.K1A_DEV_Fold;Base.K1DEV;Base.K2_1;Base.K2_203;Base.K2_ADVK2;Base.K2_C1;Base.K2_Grunt;Base.K2C1_PH;Base.K3LMG;Base.L22;Base.L85;Base.L85A2;Base.L86;Base.L96;Base.LVOA_C;Base.M1;Base.M14;Base.M14EBR;Base.M16A1;Base.M16A2;Base.M16A3;Base.M16Tape;Base.M16Wood;Base.M1903;Base.M240;Base.M249;Base.M249E3;Base.M249E3_Fold;Base.M4;Base.M40;Base.M40A1;Base.M40A2;Base.M40A3;Base.M41A_PULSE_Fold;Base.M41A_PULSE_Stock;Base.M46_Mauser;Base.M4A1;Base.M60;Base.M723;Base.M85_Fold;Base.M85_Stock;Base.MAS36;Base.MAS44;Base.MAS49;Base.MCX_Socom;Base.MCX_Spear;Base.MCX_Virtus;Base.MCX_VirtusPatrol;Base.MD65_Fold;Base.MD65_Stock;Base.MG42;Base.MINI14;Base.MINI14_Fold;Base.MINI14_Stock;Base.MINI14_T;Base.MK18;Base.MK43;Base.MK47;Base.Mosin;Base.MosinObrez_Pistol;Base.MSG90;Base.OTS_03_SVU;Base.Ots14_1A_01;Base.Ots14_1A_02;Base.Ots14_4A;Base.Ots14_4A_01;Base.Ots14_4A_GL;Base.PKM;Base.PSG1;Base.QBZ_95;Base.RPD;Base.RPK16;Base.RPK74;Base.Ruger_No1_3006;Base.Ruger_No1_308;Base.Ruger_No1_4570;Base.Sako85;Base.Savage12;Base.SCAR_B;Base.SCAR20;Base.SCARH;Base.SCARL;Base.SCARSC_Fold;Base.SCARSC_Stock;Base.Shrike;Base.SKS;Base.SKS_A26;Base.SKS_Bayo;Base.SKS_PARA;Base.SKS_PARA_Bayo;Base.SKS30;Base.SKS30_A26;Base.SKS30_Bayo;Base.SKS30_PARA;Base.SKS30_PARA_Bayo;Base.SV_98;Base.SVD;Base.SVDK;Base.Tavor;Base.Thompson_Center_3006;Base.Thompson_Center_308;Base.Thompson_Center_4570;Base.TR1_UltraLight;Base.Type20;Base.Type38;Base.Type64;Base.Type89;Base.Type89_Fold;Base.Type99;Base.VarmintRifle;Base.Viper;Base.Vz58;Base.Vz58_Fold;Base.Vz58_Mini_Fold;Base.Vz58_Mini_Stock;Base.Vz58_Stock;Base.WA2000;Base.WA2000_Bipod;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XM117;Base.XM8;Base.XM8Compact_Pistol;Base.XM8LMG,
+        Tooltip = Tooltip_Suppressor_Rifle,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 4,
+        ConditionMax = 60,
+        StaticModel = FWP_Gael_TGP_Silencer,
+        WorldStaticModel = FWP_Gael_TGP_Silencer,
+    }
+model FWP_Gael_TGP_Silencer
+    {
+                mesh = Canon/Silencers|TGP_Silencer,
+                texture = GunTexture/TGP_Tex,
+                cullFace = None,
+    }
+
+item FWP_Gael_Hexagon_12G_Suppressor
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Hexagon 12G Suppressor,
+        Icon = Hexagon_12G_Suppressor,
+        PartType = Canon,
+        Weight = 0.4,
+        WeightModifier = 0.4,
+        AimingTimeModifier = 10,
+        MaxSightRange = 5.0,
+        MinSightRange = 3,
+        Tags = silencers;GunParts,
+        MountOn = Base.10855_Silver;Base.A400;Base.AA12;Base.AUTO_5;Base.CAWS;Base.Coachgun;Base.Coachgun_Pistol;Base.Coachgun_Sawed;Base.Colt1855;Base.DAO12;Base.DAO12_Fold;Base.DoubleBarrelShotgun;Base.DoubleBarrelShotgunSawnoff;Base.DT11;Base.DT11_Pistol;Base.DT11_Sawed;Base.Ithaca_M37;Base.KS23;Base.KS23_S_Pistol;Base.KSG;Base.KSG25;Base.M1014;Base.M1014_Fold;Base.M1014_Stock;Base.M1014_Wick;Base.M1208;Base.M1212;Base.M1216;Base.M1887;Base.M1887_Sawed;Base.M1897;Base.M870;Base.M870_Breaching_Pistol;Base.M870_CQB;Base.M870_CQB_Fold;Base.M870_Express;Base.M870_MCS;Base.M870_Police;Base.M870_Wingmaster;Base.Moss500_20;Base.MP133;Base.MP133S_Pistol;Base.Origin;Base.R11_87;Base.ROYAL_SXS;Base.Saiga12;Base.Saiga12_Long;Base.Saiga12_Tromix;Base.Shorty_Pistol;Base.Shotgun;Base.ShotgunSawnoff;Base.SIX12;Base.SPAS_15;Base.SPAS12_Fixed;Base.SPAS12_Fold;Base.SPAS12_Stock;Base.Terminator;Base.Terminator_Fold;Base.TOZ106;Base.TOZ106_Fold;Base.TOZ194_Pistol;Base.Triple_Crown;Base.TXS_804_410g;Base.TXS_804_45LC;Base.USAS_12;Base.UTS15;Base.VIPER_G2;Base.VM_68,
+        Tooltip = Tooltip_Suppressor_Shotgun,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 22.0,
+        ConditionMax = 50,
+        StaticModel = FWP_Gael_Hexagon_12G_Suppressor,
+        WorldStaticModel = FWP_Gael_Hexagon_12G_Suppressor,
+    }
+model FWP_Gael_Hexagon_12G_Suppressor
+    {
+        		mesh = Canon/Silencers|Hexagon_12G_Suppressor,
+        		texture = GunTexture/hexagon_12g_tex,
+        		cullFace = None,
+    
+        		attachment muzzle
+    	{
+    		offset = 0.0 0.402 0.027,
+    		rotate = -90.0 0.0 -180.0,
+    	}
+    }
+
+item FWP_Gael_Salvo_12G_Suppressor
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Salvo 12G Suppressor,
+        Icon = Salvo_12G_Suppressor,
+        PartType = Canon,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+        AimingTimeModifier = 9,
+        MaxSightRange = 5.0,
+        MinSightRange = 3,
+        Tags = silencers;GunParts,
+        MountOn = Base.10855_Silver;Base.A400;Base.AA12;Base.AUTO_5;Base.CAWS;Base.Coachgun;Base.Coachgun_Pistol;Base.Coachgun_Sawed;Base.Colt1855;Base.DAO12;Base.DAO12_Fold;Base.DoubleBarrelShotgun;Base.DoubleBarrelShotgunSawnoff;Base.DT11;Base.DT11_Pistol;Base.DT11_Sawed;Base.Ithaca_M37;Base.KS23;Base.KS23_S_Pistol;Base.KSG;Base.KSG25;Base.M1014;Base.M1014_Fold;Base.M1014_Stock;Base.M1014_Wick;Base.M1208;Base.M1212;Base.M1216;Base.M1887;Base.M1887_Sawed;Base.M1897;Base.M870;Base.M870_Breaching_Pistol;Base.M870_CQB;Base.M870_CQB_Fold;Base.M870_Express;Base.M870_MCS;Base.M870_Police;Base.M870_Wingmaster;Base.Moss500_20;Base.MP133;Base.MP133S_Pistol;Base.Origin;Base.R11_87;Base.ROYAL_SXS;Base.Saiga12;Base.Saiga12_Long;Base.Saiga12_Tromix;Base.Shorty_Pistol;Base.Shotgun;Base.ShotgunSawnoff;Base.SIX12;Base.SPAS_15;Base.SPAS12_Fixed;Base.SPAS12_Fold;Base.SPAS12_Stock;Base.Terminator;Base.Terminator_Fold;Base.TOZ106;Base.TOZ106_Fold;Base.TOZ194_Pistol;Base.Triple_Crown;Base.TXS_804_410g;Base.TXS_804_45LC;Base.USAS_12;Base.UTS15;Base.VIPER_G2;Base.VM_68,
+        Tooltip = Tooltip_Suppressor_Shotgun,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 22.0,
+        ConditionMax = 100,
+        StaticModel = FWP_Gael_Salvo_12G_Suppressor,
+        WorldStaticModel = FWP_Gael_Salvo_12G_Suppressor,
+    }
+model FWP_Gael_Salvo_12G_Suppressor
+    {
+        		mesh = Canon/Silencers|Salvo_12G_Suppressor,
+        		texture = GunTexture/salvo12g_tex,
+        		cullFace = None,
+    }
+
+item FWP_Gael_OilFilter_Silencer
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Oil Filter Silencer,
+        Icon = OilFilter_Silencer,
+        PartType = Canon,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = 7,
+        MaxSightRange = 5.0,
+        MinSightRange = 3,
+        Tags = silencers;GunParts,
+        MountOn = Base.AAC_Honey;Base.AAC_Honey_Fold;Base.ADAR;Base.AK103;Base.AK12;Base.AK12_Fold;Base.AK12_New;Base.AK308;Base.AK47;Base.AK5C;Base.AK5C_Fold;Base.AK74;Base.AK74_Alpha;Base.AK74_Alpha_Fold;Base.AK74_Custom;Base.AKM;Base.AKM_Custom;Base.AKM_Gold;Base.AKMS_Fold;Base.AKMS_Stock;Base.AKS74;Base.AKS74_Fold;Base.AKS74U;Base.AKS74U_Fold;Base.American180;Base.AMT1911;Base.AMT1911_Long;Base.AN94;Base.APS;Base.APS_Fold;Base.AR18;Base.AR18_Fold;Base.AR57_PDW;Base.AR57_PDW_Fold;Base.AR57_PDW_Long;Base.AR7;Base.Ash;Base.AssaultRifle;Base.AssaultRifle2;Base.AUG;Base.AUG_A3;Base.AUG_A3_Grip;Base.AUG_Grip;Base.AUG9;Base.AUG9_Grip;Base.Auto_Cocker;Base.Automag;Base.B93R;Base.BAR;Base.BAR_Monitor;Base.Benjamin_M397;Base.Bersa85F;Base.BFG50;Base.Bizon2_01_Fold;Base.Bizon2_01_Stock;Base.BOAR;Base.BodyGuard380;Base.BT380_Fold;Base.BT380_Stock;Base.BT9_Fold;Base.BT9_Stock;Base.Buckmark;Base.Buckmark_Carbine;Base.Buckmark_Long;Base.Bush_AR15_MOE;Base.Bush_XM15;Base.Bush_XM15_Custom;Base.Calico_22LR;Base.Calico_M900_Fold;Base.Calico_M900_Stock;Base.Calico_M950_Pistol;Base.CAR15_Survival;Base.CAR15SMG;Base.Carbon15_97;Base.CheyTac50;Base.CheyTac50_Bipod;Base.CheyTac50_Fold;Base.CheyTac50_Fold_Bipod;Base.CMR_30;Base.CMR_30_Fold;Base.Colt_Commander;Base.Colt_Kimber;Base.Colt_Navy_1851;Base.Colt_Service38;Base.Colt_Service45;Base.Colt1903;Base.Colt1911;Base.ColtM16;Base.CP33;Base.Cricket_22;Base.CZ_2075;Base.CZ_75_Compact;Base.CZ_75_Czechmate;Base.CZ_75_P01;Base.CZ_75_Shadow;Base.CZ_75_SP01;Base.CZ_75_SP01_SS;Base.CZ_75b;Base.CZ75;Base.CZ97B;Base.DEagle;Base.DEagle_Long;Base.DR_200;Base.EAA_Witness_45;Base.EAA_Witness_9;Base.EAA_Witness_Long_45;Base.EAA_Witness_Long_9;Base.EDM96;Base.EVO_Fold;Base.EVO_Stock;Base.F2000;Base.FAL;Base.FAL_PARA_Fold;Base.FAL_PARA_Stock;Base.FAMAS;Base.FAMAS_Felin;Base.FAMAS_G2;Base.FN_57;Base.FN_57_MK2;Base.FN_FNC;Base.FN_FNC_Fold;Base.FN_P90;Base.FN_PS90;Base.G11K3;Base.G17;Base.G18;Base.G21;Base.G21LMG;Base.G28;Base.G3;Base.G33;Base.G34;Base.G36;Base.G36_Fold;Base.G36C;Base.G36C_Fold;Base.G36KV;Base.G36KV_Fold;Base.G42;Base.G43;Base.Galil;Base.Galil_Fold;Base.Galil_Sniper;Base.Galil_Sniper_Fold;Base.Gepard_M6;Base.GP100_2;Base.GP100_2_357;Base.GP100_4;Base.GP100_4_357;Base.GP100_6;Base.GP100_6_357;Base.H416;Base.Harris50;Base.HiPoint;Base.HiPoint_Carbine;Base.HK_MK23;Base.HK_USP;Base.HK4_22;Base.HK4_380;Base.HuntingRifle;Base.Jatimatic;Base.Jatimatic_Grip;Base.Jatimatic_Stock;Base.Jatimatic_Stock_Grip;Base.Judge_410g;Base.Judge_45LC;Base.Judge513_410g;Base.Judge513_45LC;Base.Judge513_Long_410g;Base.Judge513_Long_45LC;Base.JW3_TTI_MPX;Base.K1_1;Base.K1_1_Fold;Base.K1_Fold;Base.K1_Stock;Base.K11;Base.K12;Base.K14;Base.K1A_DEV;Base.K1A_DEV_Fold;Base.K1DEV;Base.K2_1;Base.K2_203;Base.K2_ADVK2;Base.K2_C1;Base.K2_Grunt;Base.K2C1_PH;Base.K3LMG;Base.K5;Base.K6S;Base.K6S_357;Base.KG9;Base.KRISS_Fold;Base.KRISS_Stock;Base.KRISS22_MK11_Fold;Base.KRISS22_MK11_Stock;Base.KRISS9_Fold;Base.KRISS9_MLOK_Fold;Base.KRISS9_MLOK_Stock;Base.KRISS9_Stock;Base.L22;Base.L85;Base.L85A2;Base.L86;Base.L96;Base.LCP380;Base.Luger;Base.Luger_Carbine;Base.Luger_WW1;Base.LVOA_C;Base.M1;Base.M14;Base.M14EBR;Base.M16A1;Base.M16A2;Base.M16A3;Base.M16Tape;Base.M16Wood;Base.M1903;Base.M1911_Carbine;Base.M1936;Base.M1Carbine;Base.M240;Base.M249;Base.M249E3;Base.M249E3_Fold;Base.M29_44;Base.M29_44Carbine;Base.M2Carbine;Base.M2Hyde;Base.M39;Base.M4;Base.M40;Base.M40A1;Base.M40A2;Base.M40A3;Base.M41A_PULSE_Fold;Base.M41A_PULSE_Stock;Base.M4506;Base.M46_Mauser;Base.M4A1;Base.M5238;Base.M5906;Base.M60;Base.M635;Base.M635S;Base.M723;Base.M82;Base.M85_Fold;Base.M85_Stock;Base.M9;Base.M9A3;Base.MAC10_Fold;Base.MAC10_Stock;Base.Makarov;Base.Makarov380;Base.Marlin_1894;Base.Marlin_1894_357;Base.Marlin_M70;Base.Marlin_M70_A26;Base.MAS36;Base.MAS44;Base.MAS49;Base.MCX_Socom;Base.MCX_Spear;Base.MCX_Virtus;Base.MCX_VirtusPatrol;Base.MD65_Fold;Base.MD65_Stock;Base.MG42;Base.MINI14;Base.MINI14_Fold;Base.MINI14_Stock;Base.MINI14_T;Base.MK18;Base.MK22;Base.MK43;Base.MK47;Base.Model50;Base.Model55_Fold;Base.Model55_Stock;Base.Mosin;Base.MosinObrez_Pistol;Base.MP45;Base.MP5_Fixed;Base.MP5_Fold;Base.MP5_Stock;Base.MP7;Base.MP7_Grip;Base.MP7_Stock;Base.MP7_Stock_Grip;Base.MP9;Base.MPA57DMG;Base.MPA57DMG_Carbine;Base.MPA57DMG_Carbine_Fold;Base.MSG90;Base.NEF_Handi_357;Base.NEF_Handi_357_Sawed;Base.NEF_Handi_38;Base.NEF_Handi_38_Sawed;Base.NEF_Handi_410;Base.NEF_Handi_410_Sawed;Base.NEF_Handi_45LC;Base.NEF_Handi_45LC_Sawed;Base.OSV_96;Base.OTS_03_SVU;Base.Ots14_1A_01;Base.Ots14_1A_02;Base.Ots14_4A;Base.Ots14_4A_01;Base.Ots14_4A_03;Base.Ots14_4A_GL;Base.P220;Base.P226;Base.P239;Base.PARA1911;Base.Pistol;Base.Pistol2;Base.Pistol3;Base.PKM;Base.PPK;Base.PSG1;Base.PULP_1911;Base.QBZ_95;Base.Revolver;Base.Revolver_357;Base.Revolver_Long;Base.Revolver_Long_357;Base.Revolver_Short;Base.Revolver_Short_357;Base.Rhino_200DS;Base.Rhino_200DS_357;Base.Rhino_40DS;Base.Rhino_40DS_357;Base.Rhino_60DS;Base.Rhino_60DS_357;Base.RPD;Base.RPD_92FS;Base.RPK16;Base.RPK74;Base.Ruger_1022;Base.Ruger_MK4;Base.Ruger_MK4_2245;Base.Ruger_No1_3006;Base.Ruger_No1_308;Base.Ruger_No1_4570;Base.Ruger_PCC;Base.Ruger_PCC_M;Base.Ruger_PCC_R;Base.RWS_M34;Base.Sako85;Base.Savage12;Base.SCAR_B;Base.SCAR20;Base.SCARH;Base.SCARL;Base.SCARSC_Fold;Base.SCARSC_Stock;Base.Shrike;Base.SKS;Base.SKS_A26;Base.SKS_Bayo;Base.SKS_PARA;Base.SKS_PARA_Bayo;Base.SKS30;Base.SKS30_A26;Base.SKS30_Bayo;Base.SKS30_PARA;Base.SKS30_PARA_Bayo;Base.STAR_BM;Base.STAR_Z45_Fixed;Base.STAR_Z45_Fold;Base.STAR_Z45_Stock;Base.Sten;Base.Sten_MK2;Base.SUB2000;Base.SV_98;Base.SVD;Base.SVDK;Base.SW_327;Base.SW_327_357;Base.SW_M500;Base.TAC50;Base.Taurus856;Base.Tavor;Base.Thompson;Base.Thompson_1928;Base.Thompson_Center_3006;Base.Thompson_Center_308;Base.Thompson_Center_4570;Base.Tippmann_SL68;Base.TR1_UltraLight;Base.Type20;Base.Type38;Base.Type64;Base.Type89;Base.Type89_Fold;Base.Type99;Base.UmarexSS;Base.UMP45_Fold;Base.UMP45_Stock;Base.UMP9_Fold;Base.UMP9_Stock;Base.UZI;Base.UZI_Fold;Base.UZI_Micro;Base.UZI_Micro_Fold;Base.UZI_Wood;Base.VarmintRifle;Base.Viper;Base.VM_68;Base.VP70;Base.VP70_Stock;Base.Vz58;Base.Vz58_Fold;Base.Vz58_Mini_Fold;Base.Vz58_Mini_Stock;Base.Vz58_Stock;Base.Vz61_Fixed;Base.Vz61_Fold;Base.Vz61_Stock;Base.WA2000;Base.WA2000_Bipod;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XD4;Base.XD9;Base.XM117;Base.XM8;Base.XM8Compact_Pistol;Base.XM8LMG;Base.ZIP22,
+        Tooltip = Tooltip_Suppressor_Oil,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 5,
+        ConditionMax = 20,
+        StaticModel = FWP_Gael_OilFilter_Silencer,
+        WorldStaticModel = FWP_Gael_OilFilter_Silencer,
+    }
+model FWP_Gael_OilFilter_Silencer
+    {
+                mesh = Canon/Silencers|OilFilter_Silencer,
+                texture = GunTexture/OilFilter_Silencer_tex,
+                cullFace = None,
+    }
+
+item FWP_Gael_SodaCan_Silencer
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Soda Can Silencer,
+        Icon = SodaCan_Silencer,
+        PartType = Canon,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = 12,
+        MaxSightRange = 0,
+        MinSightRange = 3,
+        Tags = silencers;GunParts,
+        MountOn = Base.AAC_Honey;Base.AAC_Honey_Fold;Base.ADAR;Base.AK103;Base.AK12;Base.AK12_Fold;Base.AK12_New;Base.AK308;Base.AK47;Base.AK5C;Base.AK5C_Fold;Base.AK74;Base.AK74_Alpha;Base.AK74_Alpha_Fold;Base.AK74_Custom;Base.AKM;Base.AKM_Custom;Base.AKM_Gold;Base.AKMS_Fold;Base.AKMS_Stock;Base.AKS74;Base.AKS74_Fold;Base.AKS74U;Base.AKS74U_Fold;Base.American180;Base.AMT1911;Base.AMT1911_Long;Base.AN94;Base.APS;Base.APS_Fold;Base.AR18;Base.AR18_Fold;Base.AR57_PDW;Base.AR57_PDW_Fold;Base.AR57_PDW_Long;Base.AR7;Base.Ash;Base.AssaultRifle;Base.AssaultRifle2;Base.AUG;Base.AUG_A3;Base.AUG_A3_Grip;Base.AUG_Grip;Base.AUG9;Base.AUG9_Grip;Base.Auto_Cocker;Base.Automag;Base.B93R;Base.BAR;Base.BAR_Monitor;Base.Benjamin_M397;Base.Bersa85F;Base.BFG50;Base.Bizon2_01_Fold;Base.Bizon2_01_Stock;Base.BOAR;Base.BodyGuard380;Base.BT380_Fold;Base.BT380_Stock;Base.BT9_Fold;Base.BT9_Stock;Base.Buckmark;Base.Buckmark_Carbine;Base.Buckmark_Long;Base.Bush_AR15_MOE;Base.Bush_XM15;Base.Bush_XM15_Custom;Base.Calico_22LR;Base.Calico_M900_Fold;Base.Calico_M900_Stock;Base.Calico_M950_Pistol;Base.CAR15_Survival;Base.CAR15SMG;Base.Carbon15_97;Base.CheyTac50;Base.CheyTac50_Bipod;Base.CheyTac50_Fold;Base.CheyTac50_Fold_Bipod;Base.CMR_30;Base.CMR_30_Fold;Base.Colt_Commander;Base.Colt_Kimber;Base.Colt_Navy_1851;Base.Colt_Service38;Base.Colt_Service45;Base.Colt1903;Base.Colt1911;Base.ColtM16;Base.CP33;Base.Cricket_22;Base.CZ_2075;Base.CZ_75_Compact;Base.CZ_75_Czechmate;Base.CZ_75_P01;Base.CZ_75_Shadow;Base.CZ_75_SP01;Base.CZ_75_SP01_SS;Base.CZ_75b;Base.CZ75;Base.CZ97B;Base.DEagle;Base.DEagle_Long;Base.DR_200;Base.EAA_Witness_45;Base.EAA_Witness_9;Base.EAA_Witness_Long_45;Base.EAA_Witness_Long_9;Base.EDM96;Base.EVO_Fold;Base.EVO_Stock;Base.F2000;Base.FAL;Base.FAL_PARA_Fold;Base.FAL_PARA_Stock;Base.FAMAS;Base.FAMAS_Felin;Base.FAMAS_G2;Base.FN_57;Base.FN_57_MK2;Base.FN_FNC;Base.FN_FNC_Fold;Base.FN_P90;Base.FN_PS90;Base.G11K3;Base.G17;Base.G18;Base.G21;Base.G21LMG;Base.G28;Base.G3;Base.G33;Base.G34;Base.G36;Base.G36_Fold;Base.G36C;Base.G36C_Fold;Base.G36KV;Base.G36KV_Fold;Base.G42;Base.G43;Base.Galil;Base.Galil_Fold;Base.Galil_Sniper;Base.Galil_Sniper_Fold;Base.Gepard_M6;Base.GP100_2;Base.GP100_2_357;Base.GP100_4;Base.GP100_4_357;Base.GP100_6;Base.GP100_6_357;Base.H416;Base.Harris50;Base.HiPoint;Base.HiPoint_Carbine;Base.HK_MK23;Base.HK_USP;Base.HK4_22;Base.HK4_380;Base.HuntingRifle;Base.Jatimatic;Base.Jatimatic_Grip;Base.Jatimatic_Stock;Base.Jatimatic_Stock_Grip;Base.Judge_410g;Base.Judge_45LC;Base.Judge513_410g;Base.Judge513_45LC;Base.Judge513_Long_410g;Base.Judge513_Long_45LC;Base.JW3_TTI_MPX;Base.K1_1;Base.K1_1_Fold;Base.K1_Fold;Base.K1_Stock;Base.K11;Base.K12;Base.K14;Base.K1A_DEV;Base.K1A_DEV_Fold;Base.K1DEV;Base.K2_1;Base.K2_203;Base.K2_ADVK2;Base.K2_C1;Base.K2_Grunt;Base.K2C1_PH;Base.K3LMG;Base.K5;Base.K6S;Base.K6S_357;Base.KG9;Base.KRISS_Fold;Base.KRISS_Stock;Base.KRISS22_MK11_Fold;Base.KRISS22_MK11_Stock;Base.KRISS9_Fold;Base.KRISS9_MLOK_Fold;Base.KRISS9_MLOK_Stock;Base.KRISS9_Stock;Base.L22;Base.L85;Base.L85A2;Base.L86;Base.L96;Base.LCP380;Base.Luger;Base.Luger_Carbine;Base.Luger_WW1;Base.LVOA_C;Base.M1;Base.M14;Base.M14EBR;Base.M16A1;Base.M16A2;Base.M16A3;Base.M16Tape;Base.M16Wood;Base.M1903;Base.M1911_Carbine;Base.M1936;Base.M1Carbine;Base.M240;Base.M249;Base.M249E3;Base.M249E3_Fold;Base.M29_44;Base.M29_44Carbine;Base.M2Carbine;Base.M2Hyde;Base.M39;Base.M4;Base.M40;Base.M40A1;Base.M40A2;Base.M40A3;Base.M41A_PULSE_Fold;Base.M41A_PULSE_Stock;Base.M4506;Base.M46_Mauser;Base.M4A1;Base.M5238;Base.M5906;Base.M60;Base.M635;Base.M635S;Base.M723;Base.M82;Base.M85_Fold;Base.M85_Stock;Base.M9;Base.M9A3;Base.MAC10_Fold;Base.MAC10_Stock;Base.Makarov;Base.Makarov380;Base.Marlin_1894;Base.Marlin_1894_357;Base.Marlin_M70;Base.Marlin_M70_A26;Base.MAS36;Base.MAS44;Base.MAS49;Base.MCX_Socom;Base.MCX_Spear;Base.MCX_Virtus;Base.MCX_VirtusPatrol;Base.MD65_Fold;Base.MD65_Stock;Base.MG42;Base.MINI14;Base.MINI14_Fold;Base.MINI14_Stock;Base.MINI14_T;Base.MK18;Base.MK22;Base.MK43;Base.MK47;Base.Model50;Base.Model55_Fold;Base.Model55_Stock;Base.Mosin;Base.MosinObrez_Pistol;Base.MP45;Base.MP5_Fixed;Base.MP5_Fold;Base.MP5_Stock;Base.MP7;Base.MP7_Grip;Base.MP7_Stock;Base.MP7_Stock_Grip;Base.MP9;Base.MPA57DMG;Base.MPA57DMG_Carbine;Base.MPA57DMG_Carbine_Fold;Base.MSG90;Base.NEF_Handi_357;Base.NEF_Handi_357_Sawed;Base.NEF_Handi_38;Base.NEF_Handi_38_Sawed;Base.NEF_Handi_410;Base.NEF_Handi_410_Sawed;Base.NEF_Handi_45LC;Base.NEF_Handi_45LC_Sawed;Base.OSV_96;Base.OTS_03_SVU;Base.Ots14_1A_01;Base.Ots14_1A_02;Base.Ots14_4A;Base.Ots14_4A_01;Base.Ots14_4A_03;Base.Ots14_4A_GL;Base.P220;Base.P226;Base.P239;Base.PARA1911;Base.Pistol;Base.Pistol2;Base.Pistol3;Base.PKM;Base.PPK;Base.PSG1;Base.PULP_1911;Base.QBZ_95;Base.Revolver;Base.Revolver_357;Base.Revolver_Long;Base.Revolver_Long_357;Base.Revolver_Short;Base.Revolver_Short_357;Base.Rhino_200DS;Base.Rhino_200DS_357;Base.Rhino_40DS;Base.Rhino_40DS_357;Base.Rhino_60DS;Base.Rhino_60DS_357;Base.RPD;Base.RPD_92FS;Base.RPK16;Base.RPK74;Base.Ruger_1022;Base.Ruger_MK4;Base.Ruger_MK4_2245;Base.Ruger_No1_3006;Base.Ruger_No1_308;Base.Ruger_No1_4570;Base.Ruger_PCC;Base.Ruger_PCC_M;Base.Ruger_PCC_R;Base.RWS_M34;Base.Sako85;Base.Savage12;Base.SCAR_B;Base.SCAR20;Base.SCARH;Base.SCARL;Base.SCARSC_Fold;Base.SCARSC_Stock;Base.Shrike;Base.SKS;Base.SKS_A26;Base.SKS_Bayo;Base.SKS_PARA;Base.SKS_PARA_Bayo;Base.SKS30;Base.SKS30_A26;Base.SKS30_Bayo;Base.SKS30_PARA;Base.SKS30_PARA_Bayo;Base.STAR_BM;Base.STAR_Z45_Fixed;Base.STAR_Z45_Fold;Base.STAR_Z45_Stock;Base.Sten;Base.Sten_MK2;Base.SUB2000;Base.SV_98;Base.SVD;Base.SVDK;Base.SW_327;Base.SW_327_357;Base.SW_M500;Base.TAC50;Base.Taurus856;Base.Tavor;Base.Thompson;Base.Thompson_1928;Base.Thompson_Center_3006;Base.Thompson_Center_308;Base.Thompson_Center_4570;Base.Tippmann_SL68;Base.TR1_UltraLight;Base.Type20;Base.Type38;Base.Type64;Base.Type89;Base.Type89_Fold;Base.Type99;Base.UmarexSS;Base.UMP45_Fold;Base.UMP45_Stock;Base.UMP9_Fold;Base.UMP9_Stock;Base.UZI;Base.UZI_Fold;Base.UZI_Micro;Base.UZI_Micro_Fold;Base.UZI_Wood;Base.VarmintRifle;Base.Viper;Base.VM_68;Base.VP70;Base.VP70_Stock;Base.Vz58;Base.Vz58_Fold;Base.Vz58_Mini_Fold;Base.Vz58_Mini_Stock;Base.Vz58_Stock;Base.Vz61_Fixed;Base.Vz61_Fold;Base.Vz61_Stock;Base.WA2000;Base.WA2000_Bipod;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XD4;Base.XD9;Base.XM117;Base.XM8;Base.XM8Compact_Pistol;Base.XM8LMG;Base.ZIP22,
+        Tooltip = Tooltip_Suppressor_Bottle,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 2,
+        ConditionMax = 15,
+        StaticModel = FWP_Gael_SodaCan_Silencer,
+        WorldStaticModel = FWP_Gael_SodaCan_Silencer,
+    }
+model FWP_Gael_SodaCan_Silencer
+    {
+                mesh = Canon/Silencers|SodaCan_Silencer,
+                texture = GunTexture/SodaCan_Silencer_tex,
+                cullFace = None,
+    }
+
+item FWP_Gael_SprayCan_Silencer
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Spray Can Silencer,
+        Icon = SprayCan_Silencer,
+        PartType = Canon,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = 7,
+        MaxSightRange = 1,
+        MinSightRange = 1,
+        Tags = silencers;GunParts,
+        MountOn = Base.AAC_Honey;Base.AAC_Honey_Fold;Base.ADAR;Base.AK103;Base.AK12;Base.AK12_Fold;Base.AK12_New;Base.AK308;Base.AK47;Base.AK5C;Base.AK5C_Fold;Base.AK74;Base.AK74_Alpha;Base.AK74_Alpha_Fold;Base.AK74_Custom;Base.AKM;Base.AKM_Custom;Base.AKM_Gold;Base.AKMS_Fold;Base.AKMS_Stock;Base.AKS74;Base.AKS74_Fold;Base.AKS74U;Base.AKS74U_Fold;Base.American180;Base.AMT1911;Base.AMT1911_Long;Base.AN94;Base.APS;Base.APS_Fold;Base.AR18;Base.AR18_Fold;Base.AR57_PDW;Base.AR57_PDW_Fold;Base.AR57_PDW_Long;Base.AR7;Base.Ash;Base.AssaultRifle;Base.AssaultRifle2;Base.AUG;Base.AUG_A3;Base.AUG_A3_Grip;Base.AUG_Grip;Base.AUG9;Base.AUG9_Grip;Base.Auto_Cocker;Base.Automag;Base.B93R;Base.BAR;Base.BAR_Monitor;Base.Benjamin_M397;Base.Bersa85F;Base.BFG50;Base.Bizon2_01_Fold;Base.Bizon2_01_Stock;Base.BOAR;Base.BodyGuard380;Base.BT380_Fold;Base.BT380_Stock;Base.BT9_Fold;Base.BT9_Stock;Base.Buckmark;Base.Buckmark_Carbine;Base.Buckmark_Long;Base.Bush_AR15_MOE;Base.Bush_XM15;Base.Bush_XM15_Custom;Base.Calico_22LR;Base.Calico_M900_Fold;Base.Calico_M900_Stock;Base.Calico_M950_Pistol;Base.CAR15_Survival;Base.CAR15SMG;Base.Carbon15_97;Base.CheyTac50;Base.CheyTac50_Bipod;Base.CheyTac50_Fold;Base.CheyTac50_Fold_Bipod;Base.CMR_30;Base.CMR_30_Fold;Base.Colt_Commander;Base.Colt_Kimber;Base.Colt_Navy_1851;Base.Colt_Service38;Base.Colt_Service45;Base.Colt1903;Base.Colt1911;Base.ColtM16;Base.CP33;Base.Cricket_22;Base.CZ_2075;Base.CZ_75_Compact;Base.CZ_75_Czechmate;Base.CZ_75_P01;Base.CZ_75_Shadow;Base.CZ_75_SP01;Base.CZ_75_SP01_SS;Base.CZ_75b;Base.CZ75;Base.CZ97B;Base.DEagle;Base.DEagle_Long;Base.DR_200;Base.EAA_Witness_45;Base.EAA_Witness_9;Base.EAA_Witness_Long_45;Base.EAA_Witness_Long_9;Base.EDM96;Base.EVO_Fold;Base.EVO_Stock;Base.F2000;Base.FAL;Base.FAL_PARA_Fold;Base.FAL_PARA_Stock;Base.FAMAS;Base.FAMAS_Felin;Base.FAMAS_G2;Base.FN_57;Base.FN_57_MK2;Base.FN_FNC;Base.FN_FNC_Fold;Base.FN_P90;Base.FN_PS90;Base.G11K3;Base.G17;Base.G18;Base.G21;Base.G21LMG;Base.G28;Base.G3;Base.G33;Base.G34;Base.G36;Base.G36_Fold;Base.G36C;Base.G36C_Fold;Base.G36KV;Base.G36KV_Fold;Base.G42;Base.G43;Base.Galil;Base.Galil_Fold;Base.Galil_Sniper;Base.Galil_Sniper_Fold;Base.Gepard_M6;Base.GP100_2;Base.GP100_2_357;Base.GP100_4;Base.GP100_4_357;Base.GP100_6;Base.GP100_6_357;Base.H416;Base.Harris50;Base.HiPoint;Base.HiPoint_Carbine;Base.HK_MK23;Base.HK_USP;Base.HK4_22;Base.HK4_380;Base.HuntingRifle;Base.Jatimatic;Base.Jatimatic_Grip;Base.Jatimatic_Stock;Base.Jatimatic_Stock_Grip;Base.Judge_410g;Base.Judge_45LC;Base.Judge513_410g;Base.Judge513_45LC;Base.Judge513_Long_410g;Base.Judge513_Long_45LC;Base.JW3_TTI_MPX;Base.K1_1;Base.K1_1_Fold;Base.K1_Fold;Base.K1_Stock;Base.K11;Base.K12;Base.K14;Base.K1A_DEV;Base.K1A_DEV_Fold;Base.K1DEV;Base.K2_1;Base.K2_203;Base.K2_ADVK2;Base.K2_C1;Base.K2_Grunt;Base.K2C1_PH;Base.K3LMG;Base.K5;Base.K6S;Base.K6S_357;Base.KG9;Base.KRISS_Fold;Base.KRISS_Stock;Base.KRISS22_MK11_Fold;Base.KRISS22_MK11_Stock;Base.KRISS9_Fold;Base.KRISS9_MLOK_Fold;Base.KRISS9_MLOK_Stock;Base.KRISS9_Stock;Base.L22;Base.L85;Base.L85A2;Base.L86;Base.L96;Base.LCP380;Base.Luger;Base.Luger_Carbine;Base.Luger_WW1;Base.LVOA_C;Base.M1;Base.M14;Base.M14EBR;Base.M16A1;Base.M16A2;Base.M16A3;Base.M16Tape;Base.M16Wood;Base.M1903;Base.M1911_Carbine;Base.M1936;Base.M1Carbine;Base.M240;Base.M249;Base.M249E3;Base.M249E3_Fold;Base.M29_44;Base.M29_44Carbine;Base.M2Carbine;Base.M2Hyde;Base.M39;Base.M4;Base.M40;Base.M40A1;Base.M40A2;Base.M40A3;Base.M41A_PULSE_Fold;Base.M41A_PULSE_Stock;Base.M4506;Base.M46_Mauser;Base.M4A1;Base.M5238;Base.M5906;Base.M60;Base.M635;Base.M635S;Base.M723;Base.M82;Base.M85_Fold;Base.M85_Stock;Base.M9;Base.M9A3;Base.MAC10_Fold;Base.MAC10_Stock;Base.Makarov;Base.Makarov380;Base.Marlin_1894;Base.Marlin_1894_357;Base.Marlin_M70;Base.Marlin_M70_A26;Base.MAS36;Base.MAS44;Base.MAS49;Base.MCX_Socom;Base.MCX_Spear;Base.MCX_Virtus;Base.MCX_VirtusPatrol;Base.MD65_Fold;Base.MD65_Stock;Base.MG42;Base.MINI14;Base.MINI14_Fold;Base.MINI14_Stock;Base.MINI14_T;Base.MK18;Base.MK22;Base.MK43;Base.MK47;Base.Model50;Base.Model55_Fold;Base.Model55_Stock;Base.Mosin;Base.MosinObrez_Pistol;Base.MP45;Base.MP5_Fixed;Base.MP5_Fold;Base.MP5_Stock;Base.MP7;Base.MP7_Grip;Base.MP7_Stock;Base.MP7_Stock_Grip;Base.MP9;Base.MPA57DMG;Base.MPA57DMG_Carbine;Base.MPA57DMG_Carbine_Fold;Base.MSG90;Base.NEF_Handi_357;Base.NEF_Handi_357_Sawed;Base.NEF_Handi_38;Base.NEF_Handi_38_Sawed;Base.NEF_Handi_410;Base.NEF_Handi_410_Sawed;Base.NEF_Handi_45LC;Base.NEF_Handi_45LC_Sawed;Base.OSV_96;Base.OTS_03_SVU;Base.Ots14_1A_01;Base.Ots14_1A_02;Base.Ots14_4A;Base.Ots14_4A_01;Base.Ots14_4A_03;Base.Ots14_4A_GL;Base.P220;Base.P226;Base.P239;Base.PARA1911;Base.Pistol;Base.Pistol2;Base.Pistol3;Base.PKM;Base.PPK;Base.PSG1;Base.PULP_1911;Base.QBZ_95;Base.Revolver;Base.Revolver_357;Base.Revolver_Long;Base.Revolver_Long_357;Base.Revolver_Short;Base.Revolver_Short_357;Base.Rhino_200DS;Base.Rhino_200DS_357;Base.Rhino_40DS;Base.Rhino_40DS_357;Base.Rhino_60DS;Base.Rhino_60DS_357;Base.RPD;Base.RPD_92FS;Base.RPK16;Base.RPK74;Base.Ruger_1022;Base.Ruger_MK4;Base.Ruger_MK4_2245;Base.Ruger_No1_3006;Base.Ruger_No1_308;Base.Ruger_No1_4570;Base.Ruger_PCC;Base.Ruger_PCC_M;Base.Ruger_PCC_R;Base.RWS_M34;Base.Sako85;Base.Savage12;Base.SCAR_B;Base.SCAR20;Base.SCARH;Base.SCARL;Base.SCARSC_Fold;Base.SCARSC_Stock;Base.Shrike;Base.SKS;Base.SKS_A26;Base.SKS_Bayo;Base.SKS_PARA;Base.SKS_PARA_Bayo;Base.SKS30;Base.SKS30_A26;Base.SKS30_Bayo;Base.SKS30_PARA;Base.SKS30_PARA_Bayo;Base.STAR_BM;Base.STAR_Z45_Fixed;Base.STAR_Z45_Fold;Base.STAR_Z45_Stock;Base.Sten;Base.Sten_MK2;Base.SUB2000;Base.SV_98;Base.SVD;Base.SVDK;Base.SW_327;Base.SW_327_357;Base.SW_M500;Base.TAC50;Base.Taurus856;Base.Tavor;Base.Thompson;Base.Thompson_1928;Base.Thompson_Center_3006;Base.Thompson_Center_308;Base.Thompson_Center_4570;Base.Tippmann_SL68;Base.TR1_UltraLight;Base.Type20;Base.Type38;Base.Type64;Base.Type89;Base.Type89_Fold;Base.Type99;Base.UmarexSS;Base.UMP45_Fold;Base.UMP45_Stock;Base.UMP9_Fold;Base.UMP9_Stock;Base.UZI;Base.UZI_Fold;Base.UZI_Micro;Base.UZI_Micro_Fold;Base.UZI_Wood;Base.VarmintRifle;Base.Viper;Base.VM_68;Base.VP70;Base.VP70_Stock;Base.Vz58;Base.Vz58_Fold;Base.Vz58_Mini_Fold;Base.Vz58_Mini_Stock;Base.Vz58_Stock;Base.Vz61_Fixed;Base.Vz61_Fold;Base.Vz61_Stock;Base.WA2000;Base.WA2000_Bipod;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XD4;Base.XD9;Base.XM117;Base.XM8;Base.XM8Compact_Pistol;Base.XM8LMG;Base.ZIP22,
+        Tooltip = Tooltip_Suppressor_Bottle,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 2,
+        ConditionMax = 20,
+        StaticModel = FWP_Gael_SprayCan_Silencer,
+        WorldStaticModel = FWP_Gael_SprayCan_Silencer,
+    }
+model FWP_Gael_SprayCan_Silencer
+    {
+                mesh = Canon/Silencers|SprayCan_Silencer,
+                texture = GunTexture/SprayCan_Silencer_tex,
+                cullFace = None,
+    }
+
+item FWP_Gael_Scrap_Silencer
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Scrap Silencer,
+        Icon = Scrap_Silencer,
+        PartType = Canon,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+        AimingTimeModifier = 10,
+        MaxSightRange = 5.0,
+        MinSightRange = 3,
+        Tags = silencers;GunParts,
+        MountOn = Base.AAC_Honey;Base.AAC_Honey_Fold;Base.ADAR;Base.AK103;Base.AK12;Base.AK12_Fold;Base.AK12_New;Base.AK308;Base.AK47;Base.AK5C;Base.AK5C_Fold;Base.AK74;Base.AK74_Alpha;Base.AK74_Alpha_Fold;Base.AK74_Custom;Base.AKM;Base.AKM_Custom;Base.AKM_Gold;Base.AKMS_Fold;Base.AKMS_Stock;Base.AKS74;Base.AKS74_Fold;Base.AKS74U;Base.AKS74U_Fold;Base.American180;Base.AMT1911;Base.AMT1911_Long;Base.AN94;Base.APS;Base.APS_Fold;Base.AR18;Base.AR18_Fold;Base.AR57_PDW;Base.AR57_PDW_Fold;Base.AR57_PDW_Long;Base.AR7;Base.Ash;Base.AssaultRifle;Base.AssaultRifle2;Base.AUG;Base.AUG_A3;Base.AUG_A3_Grip;Base.AUG_Grip;Base.AUG9;Base.AUG9_Grip;Base.Auto_Cocker;Base.Automag;Base.B93R;Base.BAR;Base.BAR_Monitor;Base.Benjamin_M397;Base.Bersa85F;Base.BFG50;Base.Bizon2_01_Fold;Base.Bizon2_01_Stock;Base.BOAR;Base.BodyGuard380;Base.BT380_Fold;Base.BT380_Stock;Base.BT9_Fold;Base.BT9_Stock;Base.Buckmark;Base.Buckmark_Carbine;Base.Buckmark_Long;Base.Bush_AR15_MOE;Base.Bush_XM15;Base.Bush_XM15_Custom;Base.Calico_22LR;Base.Calico_M900_Fold;Base.Calico_M900_Stock;Base.Calico_M950_Pistol;Base.CAR15_Survival;Base.CAR15SMG;Base.Carbon15_97;Base.CheyTac50;Base.CheyTac50_Bipod;Base.CheyTac50_Fold;Base.CheyTac50_Fold_Bipod;Base.CMR_30;Base.CMR_30_Fold;Base.Colt_Commander;Base.Colt_Kimber;Base.Colt_Navy_1851;Base.Colt_Service38;Base.Colt_Service45;Base.Colt1903;Base.Colt1911;Base.ColtM16;Base.CP33;Base.Cricket_22;Base.CZ_2075;Base.CZ_75_Compact;Base.CZ_75_Czechmate;Base.CZ_75_P01;Base.CZ_75_Shadow;Base.CZ_75_SP01;Base.CZ_75_SP01_SS;Base.CZ_75b;Base.CZ75;Base.CZ97B;Base.DEagle;Base.DEagle_Long;Base.DR_200;Base.EAA_Witness_45;Base.EAA_Witness_9;Base.EAA_Witness_Long_45;Base.EAA_Witness_Long_9;Base.EDM96;Base.EVO_Fold;Base.EVO_Stock;Base.F2000;Base.FAL;Base.FAL_PARA_Fold;Base.FAL_PARA_Stock;Base.FAMAS;Base.FAMAS_Felin;Base.FAMAS_G2;Base.FN_57;Base.FN_57_MK2;Base.FN_FNC;Base.FN_FNC_Fold;Base.FN_P90;Base.FN_PS90;Base.G11K3;Base.G17;Base.G18;Base.G21;Base.G21LMG;Base.G28;Base.G3;Base.G33;Base.G34;Base.G36;Base.G36_Fold;Base.G36C;Base.G36C_Fold;Base.G36KV;Base.G36KV_Fold;Base.G42;Base.G43;Base.Galil;Base.Galil_Fold;Base.Galil_Sniper;Base.Galil_Sniper_Fold;Base.Gepard_M6;Base.GP100_2;Base.GP100_2_357;Base.GP100_4;Base.GP100_4_357;Base.GP100_6;Base.GP100_6_357;Base.H416;Base.Harris50;Base.HiPoint;Base.HiPoint_Carbine;Base.HK_MK23;Base.HK_USP;Base.HK4_22;Base.HK4_380;Base.HuntingRifle;Base.Jatimatic;Base.Jatimatic_Grip;Base.Jatimatic_Stock;Base.Jatimatic_Stock_Grip;Base.Judge_410g;Base.Judge_45LC;Base.Judge513_410g;Base.Judge513_45LC;Base.Judge513_Long_410g;Base.Judge513_Long_45LC;Base.JW3_TTI_MPX;Base.K1_1;Base.K1_1_Fold;Base.K1_Fold;Base.K1_Stock;Base.K11;Base.K12;Base.K14;Base.K1A_DEV;Base.K1A_DEV_Fold;Base.K1DEV;Base.K2_1;Base.K2_203;Base.K2_ADVK2;Base.K2_C1;Base.K2_Grunt;Base.K2C1_PH;Base.K3LMG;Base.K5;Base.K6S;Base.K6S_357;Base.KG9;Base.KRISS_Fold;Base.KRISS_Stock;Base.KRISS22_MK11_Fold;Base.KRISS22_MK11_Stock;Base.KRISS9_Fold;Base.KRISS9_MLOK_Fold;Base.KRISS9_MLOK_Stock;Base.KRISS9_Stock;Base.L22;Base.L85;Base.L85A2;Base.L86;Base.L96;Base.LCP380;Base.Luger;Base.Luger_Carbine;Base.Luger_WW1;Base.LVOA_C;Base.M1;Base.M14;Base.M14EBR;Base.M16A1;Base.M16A2;Base.M16A3;Base.M16Tape;Base.M16Wood;Base.M1903;Base.M1911_Carbine;Base.M1936;Base.M1Carbine;Base.M240;Base.M249;Base.M249E3;Base.M249E3_Fold;Base.M29_44;Base.M29_44Carbine;Base.M2Carbine;Base.M2Hyde;Base.M39;Base.M4;Base.M40;Base.M40A1;Base.M40A2;Base.M40A3;Base.M41A_PULSE_Fold;Base.M41A_PULSE_Stock;Base.M4506;Base.M46_Mauser;Base.M4A1;Base.M5238;Base.M5906;Base.M60;Base.M635;Base.M635S;Base.M723;Base.M82;Base.M85_Fold;Base.M85_Stock;Base.M9;Base.M9A3;Base.MAC10_Fold;Base.MAC10_Stock;Base.Makarov;Base.Makarov380;Base.Marlin_1894;Base.Marlin_1894_357;Base.Marlin_M70;Base.Marlin_M70_A26;Base.MAS36;Base.MAS44;Base.MAS49;Base.MCX_Socom;Base.MCX_Spear;Base.MCX_Virtus;Base.MCX_VirtusPatrol;Base.MD65_Fold;Base.MD65_Stock;Base.MG42;Base.MINI14;Base.MINI14_Fold;Base.MINI14_Stock;Base.MINI14_T;Base.MK18;Base.MK22;Base.MK43;Base.MK47;Base.Model50;Base.Model55_Fold;Base.Model55_Stock;Base.Mosin;Base.MosinObrez_Pistol;Base.MP45;Base.MP5_Fixed;Base.MP5_Fold;Base.MP5_Stock;Base.MP7;Base.MP7_Grip;Base.MP7_Stock;Base.MP7_Stock_Grip;Base.MP9;Base.MPA57DMG;Base.MPA57DMG_Carbine;Base.MPA57DMG_Carbine_Fold;Base.MSG90;Base.NEF_Handi_357;Base.NEF_Handi_357_Sawed;Base.NEF_Handi_38;Base.NEF_Handi_38_Sawed;Base.NEF_Handi_410;Base.NEF_Handi_410_Sawed;Base.NEF_Handi_45LC;Base.NEF_Handi_45LC_Sawed;Base.OSV_96;Base.OTS_03_SVU;Base.Ots14_1A_01;Base.Ots14_1A_02;Base.Ots14_4A;Base.Ots14_4A_01;Base.Ots14_4A_03;Base.Ots14_4A_GL;Base.P220;Base.P226;Base.P239;Base.PARA1911;Base.Pistol;Base.Pistol2;Base.Pistol3;Base.PKM;Base.PPK;Base.PSG1;Base.PULP_1911;Base.QBZ_95;Base.Revolver;Base.Revolver_357;Base.Revolver_Long;Base.Revolver_Long_357;Base.Revolver_Short;Base.Revolver_Short_357;Base.Rhino_200DS;Base.Rhino_200DS_357;Base.Rhino_40DS;Base.Rhino_40DS_357;Base.Rhino_60DS;Base.Rhino_60DS_357;Base.RPD;Base.RPD_92FS;Base.RPK16;Base.RPK74;Base.Ruger_1022;Base.Ruger_MK4;Base.Ruger_MK4_2245;Base.Ruger_No1_3006;Base.Ruger_No1_308;Base.Ruger_No1_4570;Base.Ruger_PCC;Base.Ruger_PCC_M;Base.Ruger_PCC_R;Base.RWS_M34;Base.Sako85;Base.Savage12;Base.SCAR_B;Base.SCAR20;Base.SCARH;Base.SCARL;Base.SCARSC_Fold;Base.SCARSC_Stock;Base.Shrike;Base.SKS;Base.SKS_A26;Base.SKS_Bayo;Base.SKS_PARA;Base.SKS_PARA_Bayo;Base.SKS30;Base.SKS30_A26;Base.SKS30_Bayo;Base.SKS30_PARA;Base.SKS30_PARA_Bayo;Base.STAR_BM;Base.STAR_Z45_Fixed;Base.STAR_Z45_Fold;Base.STAR_Z45_Stock;Base.Sten;Base.Sten_MK2;Base.SUB2000;Base.SV_98;Base.SVD;Base.SVDK;Base.SW_327;Base.SW_327_357;Base.SW_M500;Base.TAC50;Base.Taurus856;Base.Tavor;Base.Thompson;Base.Thompson_1928;Base.Thompson_Center_3006;Base.Thompson_Center_308;Base.Thompson_Center_4570;Base.Tippmann_SL68;Base.TR1_UltraLight;Base.Type20;Base.Type38;Base.Type64;Base.Type89;Base.Type89_Fold;Base.Type99;Base.UmarexSS;Base.UMP45_Fold;Base.UMP45_Stock;Base.UMP9_Fold;Base.UMP9_Stock;Base.UZI;Base.UZI_Fold;Base.UZI_Micro;Base.UZI_Micro_Fold;Base.UZI_Wood;Base.VarmintRifle;Base.Viper;Base.VM_68;Base.VP70;Base.VP70_Stock;Base.Vz58;Base.Vz58_Fold;Base.Vz58_Mini_Fold;Base.Vz58_Mini_Stock;Base.Vz58_Stock;Base.Vz61_Fixed;Base.Vz61_Fold;Base.Vz61_Stock;Base.WA2000;Base.WA2000_Bipod;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XD4;Base.XD9;Base.XM117;Base.XM8;Base.XM8Compact_Pistol;Base.XM8LMG;Base.ZIP22,
+        Tooltip = Tooltip_Suppressor_Oil,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 22.0,
+        ConditionMax = 20,
+        StaticModel = FWP_Gael_Scrap_Silencer,
+        WorldStaticModel = FWP_Gael_Scrap_Silencer,
+    }
+model FWP_Gael_Scrap_Silencer
+    {
+        		mesh = Canon/Silencers|Scrap_Silencer,
+        		texture = GunTexture/ScrapRevolver_Tex,
+        		cullFace = None,
+    }
+
+item FWP_Gael_scrap_pipe_suppressor
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Scrap Pipe Suppressor,
+        Icon = scrap_pipe_suppressor,
+        PartType = Canon,
+        Weight = 0.4,
+        WeightModifier = 0.4,
+        AimingTimeModifier = 10,
+        MaxSightRange = 5.0,
+        MinSightRange = 3,
+        Tags = silencers;GunParts,
+        MountOn = Base.AAC_Honey;Base.AAC_Honey_Fold;Base.ADAR;Base.AK103;Base.AK12;Base.AK12_Fold;Base.AK12_New;Base.AK308;Base.AK47;Base.AK5C;Base.AK5C_Fold;Base.AK74;Base.AK74_Alpha;Base.AK74_Alpha_Fold;Base.AK74_Custom;Base.AKM;Base.AKM_Custom;Base.AKM_Gold;Base.AKMS_Fold;Base.AKMS_Stock;Base.AKS74;Base.AKS74_Fold;Base.AKS74U;Base.AKS74U_Fold;Base.American180;Base.AMT1911;Base.AMT1911_Long;Base.AN94;Base.APS;Base.APS_Fold;Base.AR18;Base.AR18_Fold;Base.AR57_PDW;Base.AR57_PDW_Fold;Base.AR57_PDW_Long;Base.AR7;Base.Ash;Base.AssaultRifle;Base.AssaultRifle2;Base.AUG;Base.AUG_A3;Base.AUG_A3_Grip;Base.AUG_Grip;Base.AUG9;Base.AUG9_Grip;Base.Auto_Cocker;Base.Automag;Base.B93R;Base.BAR;Base.BAR_Monitor;Base.Benjamin_M397;Base.Bersa85F;Base.BFG50;Base.Bizon2_01_Fold;Base.Bizon2_01_Stock;Base.BOAR;Base.BodyGuard380;Base.BT380_Fold;Base.BT380_Stock;Base.BT9_Fold;Base.BT9_Stock;Base.Buckmark;Base.Buckmark_Carbine;Base.Buckmark_Long;Base.Bush_AR15_MOE;Base.Bush_XM15;Base.Bush_XM15_Custom;Base.Calico_22LR;Base.Calico_M900_Fold;Base.Calico_M900_Stock;Base.Calico_M950_Pistol;Base.CAR15_Survival;Base.CAR15SMG;Base.Carbon15_97;Base.CheyTac50;Base.CheyTac50_Bipod;Base.CheyTac50_Fold;Base.CheyTac50_Fold_Bipod;Base.CMR_30;Base.CMR_30_Fold;Base.Colt_Commander;Base.Colt_Kimber;Base.Colt_Navy_1851;Base.Colt_Service38;Base.Colt_Service45;Base.Colt1903;Base.Colt1911;Base.ColtM16;Base.CP33;Base.Cricket_22;Base.CZ_2075;Base.CZ_75_Compact;Base.CZ_75_Czechmate;Base.CZ_75_P01;Base.CZ_75_Shadow;Base.CZ_75_SP01;Base.CZ_75_SP01_SS;Base.CZ_75b;Base.CZ75;Base.CZ97B;Base.DEagle;Base.DEagle_Long;Base.DR_200;Base.EAA_Witness_45;Base.EAA_Witness_9;Base.EAA_Witness_Long_45;Base.EAA_Witness_Long_9;Base.EDM96;Base.EVO_Fold;Base.EVO_Stock;Base.F2000;Base.FAL;Base.FAL_PARA_Fold;Base.FAL_PARA_Stock;Base.FAMAS;Base.FAMAS_Felin;Base.FAMAS_G2;Base.FN_57;Base.FN_57_MK2;Base.FN_FNC;Base.FN_FNC_Fold;Base.FN_P90;Base.FN_PS90;Base.G11K3;Base.G17;Base.G18;Base.G21;Base.G21LMG;Base.G28;Base.G3;Base.G33;Base.G34;Base.G36;Base.G36_Fold;Base.G36C;Base.G36C_Fold;Base.G36KV;Base.G36KV_Fold;Base.G42;Base.G43;Base.Galil;Base.Galil_Fold;Base.Galil_Sniper;Base.Galil_Sniper_Fold;Base.Gepard_M6;Base.GP100_2;Base.GP100_2_357;Base.GP100_4;Base.GP100_4_357;Base.GP100_6;Base.GP100_6_357;Base.H416;Base.Harris50;Base.HiPoint;Base.HiPoint_Carbine;Base.HK_MK23;Base.HK_USP;Base.HK4_22;Base.HK4_380;Base.HuntingRifle;Base.Jatimatic;Base.Jatimatic_Grip;Base.Jatimatic_Stock;Base.Jatimatic_Stock_Grip;Base.Judge_410g;Base.Judge_45LC;Base.Judge513_410g;Base.Judge513_45LC;Base.Judge513_Long_410g;Base.Judge513_Long_45LC;Base.JW3_TTI_MPX;Base.K1_1;Base.K1_1_Fold;Base.K1_Fold;Base.K1_Stock;Base.K11;Base.K12;Base.K14;Base.K1A_DEV;Base.K1A_DEV_Fold;Base.K1DEV;Base.K2_1;Base.K2_203;Base.K2_ADVK2;Base.K2_C1;Base.K2_Grunt;Base.K2C1_PH;Base.K3LMG;Base.K5;Base.K6S;Base.K6S_357;Base.KG9;Base.KRISS_Fold;Base.KRISS_Stock;Base.KRISS22_MK11_Fold;Base.KRISS22_MK11_Stock;Base.KRISS9_Fold;Base.KRISS9_MLOK_Fold;Base.KRISS9_MLOK_Stock;Base.KRISS9_Stock;Base.L22;Base.L85;Base.L85A2;Base.L86;Base.L96;Base.LCP380;Base.Luger;Base.Luger_Carbine;Base.Luger_WW1;Base.LVOA_C;Base.M1;Base.M14;Base.M14EBR;Base.M16A1;Base.M16A2;Base.M16A3;Base.M16Tape;Base.M16Wood;Base.M1903;Base.M1911_Carbine;Base.M1936;Base.M1Carbine;Base.M240;Base.M249;Base.M249E3;Base.M249E3_Fold;Base.M29_44;Base.M29_44Carbine;Base.M2Carbine;Base.M2Hyde;Base.M39;Base.M4;Base.M40;Base.M40A1;Base.M40A2;Base.M40A3;Base.M41A_PULSE_Fold;Base.M41A_PULSE_Stock;Base.M4506;Base.M46_Mauser;Base.M4A1;Base.M5238;Base.M5906;Base.M60;Base.M635;Base.M635S;Base.M723;Base.M82;Base.M85_Fold;Base.M85_Stock;Base.M9;Base.M9A3;Base.MAC10_Fold;Base.MAC10_Stock;Base.Makarov;Base.Makarov380;Base.Marlin_1894;Base.Marlin_1894_357;Base.Marlin_M70;Base.Marlin_M70_A26;Base.MAS36;Base.MAS44;Base.MAS49;Base.MCX_Socom;Base.MCX_Spear;Base.MCX_Virtus;Base.MCX_VirtusPatrol;Base.MD65_Fold;Base.MD65_Stock;Base.MG42;Base.MINI14;Base.MINI14_Fold;Base.MINI14_Stock;Base.MINI14_T;Base.MK18;Base.MK22;Base.MK43;Base.MK47;Base.Model50;Base.Model55_Fold;Base.Model55_Stock;Base.Mosin;Base.MosinObrez_Pistol;Base.MP45;Base.MP5_Fixed;Base.MP5_Fold;Base.MP5_Stock;Base.MP7;Base.MP7_Grip;Base.MP7_Stock;Base.MP7_Stock_Grip;Base.MP9;Base.MPA57DMG;Base.MPA57DMG_Carbine;Base.MPA57DMG_Carbine_Fold;Base.MSG90;Base.NEF_Handi_357;Base.NEF_Handi_357_Sawed;Base.NEF_Handi_38;Base.NEF_Handi_38_Sawed;Base.NEF_Handi_410;Base.NEF_Handi_410_Sawed;Base.NEF_Handi_45LC;Base.NEF_Handi_45LC_Sawed;Base.OSV_96;Base.OTS_03_SVU;Base.Ots14_1A_01;Base.Ots14_1A_02;Base.Ots14_4A;Base.Ots14_4A_01;Base.Ots14_4A_03;Base.Ots14_4A_GL;Base.P220;Base.P226;Base.P239;Base.PARA1911;Base.Pistol;Base.Pistol2;Base.Pistol3;Base.PKM;Base.PPK;Base.PSG1;Base.PULP_1911;Base.QBZ_95;Base.Revolver;Base.Revolver_357;Base.Revolver_Long;Base.Revolver_Long_357;Base.Revolver_Short;Base.Revolver_Short_357;Base.Rhino_200DS;Base.Rhino_200DS_357;Base.Rhino_40DS;Base.Rhino_40DS_357;Base.Rhino_60DS;Base.Rhino_60DS_357;Base.RPD;Base.RPD_92FS;Base.RPK16;Base.RPK74;Base.Ruger_1022;Base.Ruger_MK4;Base.Ruger_MK4_2245;Base.Ruger_No1_3006;Base.Ruger_No1_308;Base.Ruger_No1_4570;Base.Ruger_PCC;Base.Ruger_PCC_M;Base.Ruger_PCC_R;Base.RWS_M34;Base.Sako85;Base.Savage12;Base.SCAR_B;Base.SCAR20;Base.SCARH;Base.SCARL;Base.SCARSC_Fold;Base.SCARSC_Stock;Base.Shrike;Base.SKS;Base.SKS_A26;Base.SKS_Bayo;Base.SKS_PARA;Base.SKS_PARA_Bayo;Base.SKS30;Base.SKS30_A26;Base.SKS30_Bayo;Base.SKS30_PARA;Base.SKS30_PARA_Bayo;Base.STAR_BM;Base.STAR_Z45_Fixed;Base.STAR_Z45_Fold;Base.STAR_Z45_Stock;Base.Sten;Base.Sten_MK2;Base.SUB2000;Base.SV_98;Base.SVD;Base.SVDK;Base.SW_327;Base.SW_327_357;Base.SW_M500;Base.TAC50;Base.Taurus856;Base.Tavor;Base.Thompson;Base.Thompson_1928;Base.Thompson_Center_3006;Base.Thompson_Center_308;Base.Thompson_Center_4570;Base.Tippmann_SL68;Base.TR1_UltraLight;Base.Type20;Base.Type38;Base.Type64;Base.Type89;Base.Type89_Fold;Base.Type99;Base.UmarexSS;Base.UMP45_Fold;Base.UMP45_Stock;Base.UMP9_Fold;Base.UMP9_Stock;Base.UZI;Base.UZI_Fold;Base.UZI_Micro;Base.UZI_Micro_Fold;Base.UZI_Wood;Base.VarmintRifle;Base.Viper;Base.VM_68;Base.VP70;Base.VP70_Stock;Base.Vz58;Base.Vz58_Fold;Base.Vz58_Mini_Fold;Base.Vz58_Mini_Stock;Base.Vz58_Stock;Base.Vz61_Fixed;Base.Vz61_Fold;Base.Vz61_Stock;Base.WA2000;Base.WA2000_Bipod;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XD4;Base.XD9;Base.XM117;Base.XM8;Base.XM8Compact_Pistol;Base.XM8LMG;Base.ZIP22,
+        Tooltip = Tooltip_Suppressor_Oil,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 10,
+        ConditionMax = 25,
+        StaticModel = FWP_Gael_scrap_pipe_suppressor,
+        WorldStaticModel = FWP_Gael_scrap_pipe_suppressor,
+    }
+model FWP_Gael_scrap_pipe_suppressor
+    {
+                mesh = Canon/Silencers|scrap_pipe_suppressor,
+                texture = GunTexture/scrap_pipe_suppressor_tex,
+                cullFace = None,
+    }
+
+item FWP_Gael_WaterBottle_ductaped
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayName = Duct-Taped Water Bottle Suppressor,
+        Icon = WaterBottle_ductaped,
+        PartType = Canon,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = 7,
+        MaxSightRange = 1,
+        MinSightRange = 1,
+        Tags = silencers;GunParts,
+        MountOn = Base.AAC_Honey;Base.AAC_Honey_Fold;Base.ADAR;Base.AK103;Base.AK12;Base.AK12_Fold;Base.AK12_New;Base.AK308;Base.AK47;Base.AK5C;Base.AK5C_Fold;Base.AK74;Base.AK74_Alpha;Base.AK74_Alpha_Fold;Base.AK74_Custom;Base.AKM;Base.AKM_Custom;Base.AKM_Gold;Base.AKMS_Fold;Base.AKMS_Stock;Base.AKS74;Base.AKS74_Fold;Base.AKS74U;Base.AKS74U_Fold;Base.American180;Base.AMT1911;Base.AMT1911_Long;Base.AN94;Base.APS;Base.APS_Fold;Base.AR18;Base.AR18_Fold;Base.AR57_PDW;Base.AR57_PDW_Fold;Base.AR57_PDW_Long;Base.AR7;Base.Ash;Base.AssaultRifle;Base.AssaultRifle2;Base.AUG;Base.AUG_A3;Base.AUG_A3_Grip;Base.AUG_Grip;Base.AUG9;Base.AUG9_Grip;Base.Auto_Cocker;Base.Automag;Base.B93R;Base.BAR;Base.BAR_Monitor;Base.Benjamin_M397;Base.Bersa85F;Base.BFG50;Base.Bizon2_01_Fold;Base.Bizon2_01_Stock;Base.BOAR;Base.BodyGuard380;Base.BT380_Fold;Base.BT380_Stock;Base.BT9_Fold;Base.BT9_Stock;Base.Buckmark;Base.Buckmark_Carbine;Base.Buckmark_Long;Base.Bush_AR15_MOE;Base.Bush_XM15;Base.Bush_XM15_Custom;Base.Calico_22LR;Base.Calico_M900_Fold;Base.Calico_M900_Stock;Base.Calico_M950_Pistol;Base.CAR15_Survival;Base.CAR15SMG;Base.Carbon15_97;Base.CheyTac50;Base.CheyTac50_Bipod;Base.CheyTac50_Fold;Base.CheyTac50_Fold_Bipod;Base.CMR_30;Base.CMR_30_Fold;Base.Colt_Commander;Base.Colt_Kimber;Base.Colt_Navy_1851;Base.Colt_Service38;Base.Colt_Service45;Base.Colt1903;Base.Colt1911;Base.ColtM16;Base.CP33;Base.Cricket_22;Base.CZ_2075;Base.CZ_75_Compact;Base.CZ_75_Czechmate;Base.CZ_75_P01;Base.CZ_75_Shadow;Base.CZ_75_SP01;Base.CZ_75_SP01_SS;Base.CZ_75b;Base.CZ75;Base.CZ97B;Base.DEagle;Base.DEagle_Long;Base.DR_200;Base.EAA_Witness_45;Base.EAA_Witness_9;Base.EAA_Witness_Long_45;Base.EAA_Witness_Long_9;Base.EDM96;Base.EVO_Fold;Base.EVO_Stock;Base.F2000;Base.FAL;Base.FAL_PARA_Fold;Base.FAL_PARA_Stock;Base.FAMAS;Base.FAMAS_Felin;Base.FAMAS_G2;Base.FN_57;Base.FN_57_MK2;Base.FN_FNC;Base.FN_FNC_Fold;Base.FN_P90;Base.FN_PS90;Base.G11K3;Base.G17;Base.G18;Base.G21;Base.G21LMG;Base.G28;Base.G3;Base.G33;Base.G34;Base.G36;Base.G36_Fold;Base.G36C;Base.G36C_Fold;Base.G36KV;Base.G36KV_Fold;Base.G42;Base.G43;Base.Galil;Base.Galil_Fold;Base.Galil_Sniper;Base.Galil_Sniper_Fold;Base.Gepard_M6;Base.GP100_2;Base.GP100_2_357;Base.GP100_4;Base.GP100_4_357;Base.GP100_6;Base.GP100_6_357;Base.H416;Base.Harris50;Base.HiPoint;Base.HiPoint_Carbine;Base.HK_MK23;Base.HK_USP;Base.HK4_22;Base.HK4_380;Base.HuntingRifle;Base.Jatimatic;Base.Jatimatic_Grip;Base.Jatimatic_Stock;Base.Jatimatic_Stock_Grip;Base.Judge_410g;Base.Judge_45LC;Base.Judge513_410g;Base.Judge513_45LC;Base.Judge513_Long_410g;Base.Judge513_Long_45LC;Base.JW3_TTI_MPX;Base.K1_1;Base.K1_1_Fold;Base.K1_Fold;Base.K1_Stock;Base.K11;Base.K12;Base.K14;Base.K1A_DEV;Base.K1A_DEV_Fold;Base.K1DEV;Base.K2_1;Base.K2_203;Base.K2_ADVK2;Base.K2_C1;Base.K2_Grunt;Base.K2C1_PH;Base.K3LMG;Base.K5;Base.K6S;Base.K6S_357;Base.KG9;Base.KRISS_Fold;Base.KRISS_Stock;Base.KRISS22_MK11_Fold;Base.KRISS22_MK11_Stock;Base.KRISS9_Fold;Base.KRISS9_MLOK_Fold;Base.KRISS9_MLOK_Stock;Base.KRISS9_Stock;Base.L22;Base.L85;Base.L85A2;Base.L86;Base.L96;Base.LCP380;Base.Luger;Base.Luger_Carbine;Base.Luger_WW1;Base.LVOA_C;Base.M1;Base.M14;Base.M14EBR;Base.M16A1;Base.M16A2;Base.M16A3;Base.M16Tape;Base.M16Wood;Base.M1903;Base.M1911_Carbine;Base.M1936;Base.M1Carbine;Base.M240;Base.M249;Base.M249E3;Base.M249E3_Fold;Base.M29_44;Base.M29_44Carbine;Base.M2Carbine;Base.M2Hyde;Base.M39;Base.M4;Base.M40;Base.M40A1;Base.M40A2;Base.M40A3;Base.M41A_PULSE_Fold;Base.M41A_PULSE_Stock;Base.M4506;Base.M46_Mauser;Base.M4A1;Base.M5238;Base.M5906;Base.M60;Base.M635;Base.M635S;Base.M723;Base.M82;Base.M85_Fold;Base.M85_Stock;Base.M9;Base.M9A3;Base.MAC10_Fold;Base.MAC10_Stock;Base.Makarov;Base.Makarov380;Base.Marlin_1894;Base.Marlin_1894_357;Base.Marlin_M70;Base.Marlin_M70_A26;Base.MAS36;Base.MAS44;Base.MAS49;Base.MCX_Socom;Base.MCX_Spear;Base.MCX_Virtus;Base.MCX_VirtusPatrol;Base.MD65_Fold;Base.MD65_Stock;Base.MG42;Base.MINI14;Base.MINI14_Fold;Base.MINI14_Stock;Base.MINI14_T;Base.MK18;Base.MK22;Base.MK43;Base.MK47;Base.Model50;Base.Model55_Fold;Base.Model55_Stock;Base.Mosin;Base.MosinObrez_Pistol;Base.MP45;Base.MP5_Fixed;Base.MP5_Fold;Base.MP5_Stock;Base.MP7;Base.MP7_Grip;Base.MP7_Stock;Base.MP7_Stock_Grip;Base.MP9;Base.MPA57DMG;Base.MPA57DMG_Carbine;Base.MPA57DMG_Carbine_Fold;Base.MSG90;Base.NEF_Handi_357;Base.NEF_Handi_357_Sawed;Base.NEF_Handi_38;Base.NEF_Handi_38_Sawed;Base.NEF_Handi_410;Base.NEF_Handi_410_Sawed;Base.NEF_Handi_45LC;Base.NEF_Handi_45LC_Sawed;Base.OSV_96;Base.OTS_03_SVU;Base.Ots14_1A_01;Base.Ots14_1A_02;Base.Ots14_4A;Base.Ots14_4A_01;Base.Ots14_4A_03;Base.Ots14_4A_GL;Base.P220;Base.P226;Base.P239;Base.PARA1911;Base.Pistol;Base.Pistol2;Base.Pistol3;Base.PKM;Base.PPK;Base.PSG1;Base.PULP_1911;Base.QBZ_95;Base.Revolver;Base.Revolver_357;Base.Revolver_Long;Base.Revolver_Long_357;Base.Revolver_Short;Base.Revolver_Short_357;Base.Rhino_200DS;Base.Rhino_200DS_357;Base.Rhino_40DS;Base.Rhino_40DS_357;Base.Rhino_60DS;Base.Rhino_60DS_357;Base.RPD;Base.RPD_92FS;Base.RPK16;Base.RPK74;Base.Ruger_1022;Base.Ruger_MK4;Base.Ruger_MK4_2245;Base.Ruger_No1_3006;Base.Ruger_No1_308;Base.Ruger_No1_4570;Base.Ruger_PCC;Base.Ruger_PCC_M;Base.Ruger_PCC_R;Base.RWS_M34;Base.Sako85;Base.Savage12;Base.SCAR_B;Base.SCAR20;Base.SCARH;Base.SCARL;Base.SCARSC_Fold;Base.SCARSC_Stock;Base.Shrike;Base.SKS;Base.SKS_A26;Base.SKS_Bayo;Base.SKS_PARA;Base.SKS_PARA_Bayo;Base.SKS30;Base.SKS30_A26;Base.SKS30_Bayo;Base.SKS30_PARA;Base.SKS30_PARA_Bayo;Base.STAR_BM;Base.STAR_Z45_Fixed;Base.STAR_Z45_Fold;Base.STAR_Z45_Stock;Base.Sten;Base.Sten_MK2;Base.SUB2000;Base.SV_98;Base.SVD;Base.SVDK;Base.SW_327;Base.SW_327_357;Base.SW_M500;Base.TAC50;Base.Taurus856;Base.Tavor;Base.Thompson;Base.Thompson_1928;Base.Thompson_Center_3006;Base.Thompson_Center_308;Base.Thompson_Center_4570;Base.Tippmann_SL68;Base.TR1_UltraLight;Base.Type20;Base.Type38;Base.Type64;Base.Type89;Base.Type89_Fold;Base.Type99;Base.UmarexSS;Base.UMP45_Fold;Base.UMP45_Stock;Base.UMP9_Fold;Base.UMP9_Stock;Base.UZI;Base.UZI_Fold;Base.UZI_Micro;Base.UZI_Micro_Fold;Base.UZI_Wood;Base.VarmintRifle;Base.Viper;Base.VM_68;Base.VP70;Base.VP70_Stock;Base.Vz58;Base.Vz58_Fold;Base.Vz58_Mini_Fold;Base.Vz58_Mini_Stock;Base.Vz58_Stock;Base.Vz61_Fixed;Base.Vz61_Fold;Base.Vz61_Stock;Base.WA2000;Base.WA2000_Bipod;Base.Win_1894;Base.Win_1895;Base.Winchester1866;Base.Winchester1873;Base.Winchester1903;Base.XD4;Base.XD9;Base.XM117;Base.XM8;Base.XM8Compact_Pistol;Base.XM8LMG;Base.ZIP22,
+        Tooltip = Tooltip_Suppressor_Bottle,
+        CanAttach = ItemCodeOnTest.hasScrewdriver,
+        CanDetach = ItemCodeOnTest.hasScrewdriver,
+        MetalValue = 1,
+        ConditionMax = 10,
+        StaticModel = FWP_Gael_WaterBottle_ductaped,
+        WorldStaticModel = FWP_Gael_WaterBottle_ductaped,
+    }
+model FWP_Gael_WaterBottle_ductaped
+    {
+            mesh = Canon/Silencers|WaterBottle_ductaped,
+            texture = GunTexture/WaterBottle_ductaped,
+            cullFace = None,
+    }
+
+}

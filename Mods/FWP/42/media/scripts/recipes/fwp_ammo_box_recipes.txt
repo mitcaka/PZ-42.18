@@ -1,0 +1,1026 @@
+module Base
+{
+    craftRecipe FWP_Open_PB68Bag
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.PB68Bag] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 500 Base.PB68,
+        }
+    }
+
+    craftRecipe FWP_Place_PB68Bag
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 500 [Base.PB68] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.PB68Bag,
+        }
+    }
+
+    craftRecipe FWP_Open_BB177Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.BB177Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 500 Base.BB177,
+        }
+    }
+
+    craftRecipe FWP_Place_BB177Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 500 [Base.BB177] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.BB177Box,
+        }
+    }
+
+    craftRecipe FWP_Open_CO2_Cartridge_Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.CO2_Cartridge_Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 15 Base.CO2_Cartridge,
+        }
+    }
+
+    craftRecipe FWP_Place_CO2_Cartridge_Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 15 [Base.CO2_Cartridge] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.CO2_Cartridge_Box,
+        }
+    }
+
+    craftRecipe FWP_Open_Bullets22Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.Bullets22Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 100 Base.Bullets22,
+        }
+    }
+
+    craftRecipe FWP_Place_Bullets22Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 100 [Base.Bullets22] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.Bullets22Box,
+        }
+    }
+
+    craftRecipe FWP_Open_Bullets57Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.Bullets57Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 50 Base.Bullets57,
+        }
+    }
+
+    craftRecipe FWP_Place_Bullets57Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 50 [Base.Bullets57] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.Bullets57Box,
+        }
+    }
+
+    craftRecipe FWP_Open_Bullets380Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.Bullets380Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 50 Base.Bullets380,
+        }
+    }
+
+    craftRecipe FWP_Place_Bullets380Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 50 [Base.Bullets380] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.Bullets380Box,
+        }
+    }
+
+    craftRecipe FWP_Open_Bullets9mmBox
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.Bullets9mmBox] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 50 Base.Bullets9mm,
+        }
+    }
+
+    craftRecipe FWP_Place_Bullets9mmBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 50 [Base.Bullets9mm] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.Bullets9mmBox,
+        }
+    }
+
+    craftRecipe FWP_Open_Bullets38Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.Bullets38Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 50 Base.Bullets38,
+        }
+    }
+
+    craftRecipe FWP_Place_Bullets38Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 50 [Base.Bullets38] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.Bullets38Box,
+        }
+    }
+
+    craftRecipe FWP_Open_Bullets357Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.Bullets357Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 50 Base.Bullets357,
+        }
+    }
+
+    craftRecipe FWP_Place_Bullets357Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 50 [Base.Bullets357] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.Bullets357Box,
+        }
+    }
+
+    craftRecipe FWP_Open_Bullets45Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.Bullets45Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 50 Base.Bullets45,
+        }
+    }
+
+    craftRecipe FWP_Place_Bullets45Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 50 [Base.Bullets45] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.Bullets45Box,
+        }
+    }
+
+    craftRecipe FWP_Open_Bullets45LCBox
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.Bullets45LCBox] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 50 Base.Bullets45LC,
+        }
+    }
+
+    craftRecipe FWP_Place_Bullets45LCBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 50 [Base.Bullets45LC] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.Bullets45LCBox,
+        }
+    }
+
+    craftRecipe FWP_Open_Bullets44Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.Bullets44Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 50 Base.Bullets44,
+        }
+    }
+
+    craftRecipe FWP_Place_Bullets44Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 50 [Base.Bullets44] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.Bullets44Box,
+        }
+    }
+
+    craftRecipe FWP_Open_Bullets4570Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.Bullets4570Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.Bullets4570,
+        }
+    }
+
+    craftRecipe FWP_Place_Bullets4570Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 20 [Base.Bullets4570] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.Bullets4570Box,
+        }
+    }
+
+    craftRecipe FWP_Open_Bullets50MAGBox
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.Bullets50MAGBox] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.Bullets50MAG,
+        }
+    }
+
+    craftRecipe FWP_Place_Bullets50MAGBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 20 [Base.Bullets50MAG] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.Bullets50MAGBox,
+        }
+    }
+
+    craftRecipe FWP_Open_410gShotgunShellsBox
+    {
+        timedAction = OpenShellsBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.410gShotgunShellsBox] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 25 Base.410gShotgunShells,
+        }
+    }
+
+    craftRecipe FWP_Place_410gShotgunShellsBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 25 [Base.410gShotgunShells] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.410gShotgunShellsBox,
+        }
+    }
+
+    craftRecipe FWP_Open_20gShotgunShellsBox
+    {
+        timedAction = OpenShellsBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.20gShotgunShellsBox] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 25 Base.20gShotgunShells,
+        }
+    }
+
+    craftRecipe FWP_Place_20gShotgunShellsBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 25 [Base.20gShotgunShells] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.20gShotgunShellsBox,
+        }
+    }
+
+    craftRecipe FWP_Open_ShotgunShellsBox
+    {
+        timedAction = OpenShellsBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.ShotgunShellsBox] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 25 Base.ShotgunShells,
+        }
+    }
+
+    craftRecipe FWP_Place_ShotgunShellsBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 25 [Base.ShotgunShells] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.ShotgunShellsBox,
+        }
+    }
+
+    craftRecipe FWP_Open_FWP_12gIncendiaryShellsBox
+    {
+        timedAction = OpenShellsBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.FWP_12gIncendiaryShellsBox] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 10 Base.FWP_12gIncendiaryShells,
+        }
+    }
+
+    craftRecipe FWP_Place_FWP_12gIncendiaryShellsBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 10 [Base.FWP_12gIncendiaryShells] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.FWP_12gIncendiaryShellsBox,
+        }
+    }
+
+    craftRecipe FWP_Open_10gShotgunShellsBox
+    {
+        timedAction = OpenShellsBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.10gShotgunShellsBox] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 25 Base.10gShotgunShells,
+        }
+    }
+
+    craftRecipe FWP_Place_10gShotgunShellsBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 25 [Base.10gShotgunShells] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.10gShotgunShellsBox,
+        }
+    }
+
+    craftRecipe FWP_Open_4gShotgunShellsBox
+    {
+        timedAction = OpenShellsBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.4gShotgunShellsBox] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 10 Base.4gShotgunShells,
+        }
+    }
+
+    craftRecipe FWP_Place_4gShotgunShellsBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 10 [Base.4gShotgunShells] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.4gShotgunShellsBox,
+        }
+    }
+
+    craftRecipe FWP_Open_223Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.223Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.223Bullets,
+        }
+    }
+
+    craftRecipe FWP_Place_223Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 20 [Base.223Bullets] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.223Box,
+        }
+    }
+
+    craftRecipe FWP_Open_556Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.556Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.556Bullets,
+        }
+    }
+
+    craftRecipe FWP_Place_556Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 20 [Base.556Bullets] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.556Box,
+        }
+    }
+
+    craftRecipe FWP_Open_545x39Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.545x39Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.545x39Bullets,
+        }
+    }
+
+    craftRecipe FWP_Place_545x39Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 20 [Base.545x39Bullets] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.545x39Box,
+        }
+    }
+
+    craftRecipe FWP_Open_762x39Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.762x39Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.762x39Bullets,
+        }
+    }
+
+    craftRecipe FWP_Place_762x39Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 20 [Base.762x39Bullets] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.762x39Box,
+        }
+    }
+
+    craftRecipe FWP_Open_308Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.308Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.308Bullets,
+        }
+    }
+
+    craftRecipe FWP_Place_308Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 20 [Base.308Bullets] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.308Box,
+        }
+    }
+
+    craftRecipe FWP_Open_762x51Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.762x51Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.762x51Bullets,
+        }
+    }
+
+    craftRecipe FWP_Place_762x51Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 20 [Base.762x51Bullets] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.762x51Box,
+        }
+    }
+
+    craftRecipe FWP_Open_762x54rBox
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.762x54rBox] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.762x54rBullets,
+        }
+    }
+
+    craftRecipe FWP_Place_762x54rBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 20 [Base.762x54rBullets] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.762x54rBox,
+        }
+    }
+
+    craftRecipe FWP_Open_3006Box
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.3006Box] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 20 Base.3006Bullets,
+        }
+    }
+
+    craftRecipe FWP_Place_3006Box
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 20 [Base.3006Bullets] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.3006Box,
+        }
+    }
+
+    craftRecipe FWP_Open_50BMGBox
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.50BMGBox] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 10 Base.50BMGBullets,
+        }
+    }
+
+    craftRecipe FWP_Place_50BMGBox
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 10 [Base.50BMGBullets] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.50BMGBox,
+        }
+    }
+
+    craftRecipe FWP_Open_Arrow_Fiberglass_Pack
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.Arrow_Fiberglass_Pack] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 10 Base.Arrow_Fiberglass,
+        }
+    }
+
+    craftRecipe FWP_Place_Arrow_Fiberglass_Pack
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 10 [Base.Arrow_Fiberglass] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.Arrow_Fiberglass_Pack,
+        }
+    }
+
+    craftRecipe FWP_Open_Bolt_Bear_Pack
+    {
+        timedAction = OpenAmmoBox,
+        time = 15,
+        category = Packing,
+        recipeGroup = OpenBox,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Base.Bolt_Bear_Pack] flags[Prop2;AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 10 Base.Bolt_Bear,
+        }
+    }
+
+    craftRecipe FWP_Place_Bolt_Bear_Pack
+    {
+        timedAction = PlaceAmmoInBox,
+        time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 10 [Base.Bolt_Bear] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 1 Base.Bolt_Bear_Pack,
+        }
+    }
+
+}

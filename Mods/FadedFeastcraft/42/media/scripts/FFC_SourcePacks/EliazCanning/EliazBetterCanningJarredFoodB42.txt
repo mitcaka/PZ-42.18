@@ -1,0 +1,1057 @@
+module Base
+{
+
+	craftRecipe MakeCannedBellPeppers
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [12:Base.BellPepper] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfBellPeppers,
+		}
+	}
+
+	craftRecipe OpenCannedBellPeppers
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfBellPeppers] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 12 Base.BellPepper,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfBellPeppers
+	{
+		DisplayName = Can of Bell Peppers,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodBellPeppers_Ground,
+		Tags = HasMetal,
+	}
+
+
+
+	craftRecipe MakeCannedBroccolis
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [11:Base.Broccoli] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfBroccolis,
+		}
+	}
+
+	craftRecipe OpenCannedBroccolis
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfBroccolis] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 11 Base.Broccoli,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfBroccolis
+	{
+		DisplayName = Can of Broccolis,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarGreen,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodBroccoli_Ground,
+		Tags = HasMetal,
+	}
+	
+	
+	
+	craftRecipe MakeCannedCabbages
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [8:Base.Cabbage] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfCabbages,
+		}
+	}
+
+	craftRecipe OpenCannedCabbages
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfCabbages] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 8 Base.Cabbage,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfCabbages
+	{
+		DisplayName = Can of Cabbages,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarGreen,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodCabbage_Ground,
+		Tags = HasMetal,
+	}
+	
+	
+	
+	craftRecipe MakeCannedCarrots
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [12:Base.Carrots] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfCarrots,
+		}
+	}
+
+	craftRecipe OpenCannedCarrots
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfCarrots] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 12 Base.Carrots,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfCarrots
+	{
+		DisplayName = Can of Carrots,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodCarrots_Ground,
+		Tags = HasMetal,
+	}
+	
+	
+	
+	craftRecipe MakeCannedEggplants
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [6:Base.Eggplant] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfEggplants,
+		}
+	}
+
+	craftRecipe OpenCannedEggplants
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfEggplants] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 6 Base.Eggplant,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfEggplants
+	{
+		DisplayName = Can of Eggplants,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JamPurple,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodEggplants_Ground,
+		Tags = HasMetal,
+	}
+	
+	
+	
+	craftRecipe MakeCannedLeeks
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [8:Base.Leek] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfLeeks,
+		}
+	}
+
+	craftRecipe OpenCannedLeeks
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfLeeks] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 8 Base.Leek,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfLeeks
+	{
+		DisplayName = Can of Leeks,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarWhite,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodLeeks_Ground,
+		Tags = HasMetal,
+	}
+	
+	
+	
+	craftRecipe MakeCannedPotatoes
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [5:Base.Potato] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfPotatoes,
+		}
+	}
+
+	craftRecipe OpenCannedPotatoes
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfPotatoes] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 5 Base.Potato,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfPotatoes
+	{
+		DisplayName = Can of Potatoes,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarWhite,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodPotatoes_Ground,
+		Tags = HasMetal,
+	}
+	
+	
+	
+	craftRecipe MakeCannedRadishes
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [33:Base.RedRadish] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfRadishes,
+		}
+	}
+
+	craftRecipe OpenCannedRadishes
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfRadishes] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 33 Base.RedRadish,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfRadishes
+	{
+		DisplayName = Can of Radishes,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodRadish_Ground,
+		Tags = HasMetal,
+	}
+
+
+
+	craftRecipe MakeCannedTomatoes
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [8:Base.Tomato] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfTomatoes,
+		}
+	}
+
+	craftRecipe OpenCannedTomatoes
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfTomatoes] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 8 Base.Tomato,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfTomatoes
+	{
+		DisplayName = Can of Tomatoes,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodTomatoes_Ground,
+		Tags = HasMetal,
+	}
+
+
+
+	craftRecipe MakeCannedCauliflowers
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [11:Base.Cauliflower] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfCauliflowers,
+		}
+	}
+
+	craftRecipe OpenCannedCauliflowers
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfCauliflowers] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 11 Base.Cauliflower,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfCauliflowers
+	{
+		DisplayName = Can of Cauliflowers,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarWhite,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodPotatoes_Ground,
+		Tags = HasMetal,
+	}
+
+
+
+	craftRecipe MakeCannedCorns
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [7:Base.Corn] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfCorns,
+		}
+	}
+
+	craftRecipe OpenCannedCorns
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfCorns] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 7 Base.Corn,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfCorns
+	{
+		DisplayName = Can of Corns,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodPotatoes_Ground,
+		Tags = HasMetal,
+	}
+
+
+
+	craftRecipe MakeCannedCucumbers
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [10:Base.Cucumber] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfCucumbers,
+		}
+	}
+
+	craftRecipe OpenCannedCucumbers
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfCucumbers] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 10 Base.Cucumber,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfCucumbers
+	{
+		DisplayName = Can of Cucumbers,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarGreen,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodBroccoli_Ground,
+		Tags = HasMetal,
+	}
+
+
+
+	craftRecipe MakeCannedKales
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [12:Base.Kale] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfKales,
+		}
+	}
+
+	craftRecipe OpenCannedKales
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfKales] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 12 Base.Kale,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfKales
+	{
+		DisplayName = Can of Kales,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarGreen,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodBroccoli_Ground,
+		Tags = HasMetal,
+	}
+
+
+
+	craftRecipe MakeCannedSpinaches
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [10:Base.Spinach] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfSpinaches,
+		}
+	}
+
+	craftRecipe OpenCannedSpinaches
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfSpinaches] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 10 Base.Spinach,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfSpinaches
+	{
+		DisplayName = Can of Spinaches,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarGreen,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodBroccoli_Ground,
+		Tags = HasMetal,
+	}
+
+
+
+	craftRecipe MakeCannedSweetPotatoes
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [5:Base.SweetPotato] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfSweetPotatoes,
+		}
+	}
+
+	craftRecipe OpenCannedSweetPotatoes
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfSweetPotatoes] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 5 Base.SweetPotato,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfSweetPotatoes
+	{
+		DisplayName = Can of Sweet Potatoes,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarWhite,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodPotatoes_Ground,
+		Tags = HasMetal,
+	}
+
+
+
+	craftRecipe MakeCannedTurnips
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [5:Base.Turnip] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfTurnips,
+		}
+	}
+
+	craftRecipe OpenCannedTurnips
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfTurnips] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 5 Base.Turnip,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfTurnips
+	{
+		DisplayName = Can of Turnips,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodRadish_Ground,
+		Tags = HasMetal,
+	}
+
+
+
+	craftRecipe MakeCannedZucchinis
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [10:Base.Zucchini] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfZucchinis,
+		}
+	}
+
+	craftRecipe OpenCannedZucchinis
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfZucchinis] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 10 Base.Zucchini,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfZucchinis
+	{
+		DisplayName = Can of Zucchinis,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarGreen,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodBroccoli_Ground,
+		Tags = HasMetal,
+	}
+
+
+
+	craftRecipe MakeCannedOnions
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [20:Base.Onion] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfOnions,
+		}
+	}
+
+	craftRecipe OpenCannedOnions
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfOnions] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 20 Base.Onion,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfOnions
+	{
+		DisplayName = Can of Onions,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarWhite,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodPotatoes_Ground,
+		Tags = HasMetal,
+	}
+
+
+
+	craftRecipe MakeCannedSoybeans
+	{
+        timedAction = Making,
+		Time = 100,
+		Tags = InHandCraft;Cooking,
+        category = Better Canning MOD,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy,
+			item 1 [20:Base.Soybeans] flags[InheritFoodAge] mode:destroy,
+			item 1.0 [Base.Salt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CanOfSoybeans,
+		}
+	}
+
+	craftRecipe OpenCannedSoybeans
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Better Canning MOD,
+		inputs
+		{
+			item 1 [Base.CanOfSoybeans] flags[InheritFoodAge],			
+		}
+		outputs
+		{
+			item 20 Base.Soybeans,
+			item 1 Base.EmptyJar,
+		}
+	}
+
+	item CanOfSoybeans
+	{
+		DisplayName = Can of Soybeans,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarWhite,
+		DaysFresh = 60,
+		DaysTotallyRotten = 90,
+		WorldStaticModel = JarFoodPotatoes_Ground,
+		Tags = HasMetal,
+	}
+
+}
+
+
+
+
+
+
+
+
+
+

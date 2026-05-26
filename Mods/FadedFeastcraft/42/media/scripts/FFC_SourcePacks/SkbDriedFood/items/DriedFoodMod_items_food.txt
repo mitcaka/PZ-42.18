@@ -1,0 +1,77 @@
+module DriedFoodMod
+{
+  imports
+  {
+    Base
+  }
+
+  item FDriedFoodCan
+  {
+    DisplayName	= Dried Food Can,
+    DisplayCategory = Food,
+    Weight = 0.3,
+    ItemType = base:normal,
+    Icon = FDriedFoodCan,
+    WorldStaticModel = FDriedFoodCan_Ground,
+  }
+
+  item FDriedSteak
+  {
+    DisplayName = Dried Steak,
+    DisplayCategory = Food,
+    ItemType = base:food,
+    Weight = 0.1,
+    Icon = FDriedSteak,
+    HungerChange = -30,
+    ThirstChange = 33,
+    UnhappyChange = 25,
+    BoredomChange =	20,
+    Calories = 220,
+    Carbohydrates = 0,
+    Lipids = 9.35,
+    Proteins = 31.62,
+    WorldStaticModel = FDriedSteak_Ground,
+    CustomEatSound = EatingCrispy,
+    Tooltip = Tooltip_DriedFood,
+  }
+
+  item FDriedChicken
+  {
+    DisplayName = Dried Chicken,
+    DisplayCategory = Food,
+    ItemType = base:food,
+    Weight = 0.1,
+    Icon = FDriedChicken,
+    HungerChange = -27,
+    ThirstChange = 30,
+    UnhappyChange = 25,
+    BoredomChange =	20,
+    Calories = 150,
+    Carbohydrates = 0,
+    Lipids = 9,
+    Proteins = 18,
+    WorldStaticModel = FDriedChicken_Ground,
+    CustomEatSound = EatingCrispy,
+    Tooltip = Tooltip_DriedFood,
+  }
+
+  item FDriedPorkChop
+  {
+    DisplayName = Dried Pork Chop,
+    DisplayCategory = Food,
+    ItemType = base:food,
+    Weight = 0.1,
+    Icon = FDriedPorkChop,
+    HungerChange = -27,
+    ThirstChange = 30,
+    UnhappyChange = 25,
+    BoredomChange =	20,
+    Calories = 150,
+    Carbohydrates = 0,
+    Lipids = 9,
+    Proteins = 18,
+    WorldStaticModel = FDriedPorkChop_Ground,
+    CustomEatSound = EatingCrispy,
+    Tooltip = Tooltip_DriedFood,
+  }
+}

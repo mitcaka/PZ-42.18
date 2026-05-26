@@ -1,0 +1,378 @@
+module Base
+{
+
+/*	==================================================
+	==	(A26) SPARTAN SPEAR				==
+	==================================================	*/
+	item Spartan_Spear
+	{
+
+	DisplayName			=	Spartan Spear	,
+	Icon				=	Spartan_Spear	,
+	WeaponSprite			=	Spartan_Spear	,
+	Type				=	Weapon		,
+	ItemType = base:weapon,
+	Categories			=	Spear			,
+	DisplayCategory			=	Weapon		,
+	SubCategory			=	Spear			,
+	TwoHandWeapon			=	TRUE			,
+	Tags				=	FishingSpear	,
+	AttachmentType			=	Shovel		,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange			=	0.98	,
+	MaxRange			=	1.48	,
+	MinDamage			=	1.3	,
+	MaxDamage			=	1.8	,
+	CriticalChance			=	35	,
+	CritDmgMultiplier		=	10	,
+	MinAngle			=	0.8	,
+	SwingTime			=	2	,
+	MinimumSwingTime		=	2	,
+	SwingAmountBeforeImpact		=	0.02	,
+	ConditionMax			=	12	,
+	ConditionLowerChanceOneIn	=	16	,
+	Weight				=	2.4	,
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount			=	2	,
+	SplatNumber			=	1	,
+	PushBackMod			=	0.3	,
+	KnockdownMod			=	0	,
+	KnockBackOnNoDeath		=	FALSE	,
+	SplatBloodOnNoDeath		=	FALSE	,
+	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	TreeDamage			=	0	,
+	DoorDamage			=	5	,
+	/* ============ ANIMATION & SOUND ============ */
+	SwingAnim			=	Spear	,
+	RunAnim				=	Run_Weapon2,
+	IdleAnim			=	Idle_Weapon2,
+	BreakSound			=	SpearCraftedBreak,
+	HitFloorSound			=	SpearCraftedHit,
+	ImpactSound			=	SpearCraftedHit,
+	DoorHitSound			=	SpearCraftedHit,
+	HitSound			=	SpearCraftedHit,
+	SwingSound			=	SpearCraftedSwing,
+	/* =========== TRANSFORM VARIABLES =========== */
+	WideGrip			=	Base.Spartan_Spear_Thrown,
+	CloseGrip			=	Base.Spartan_Spear_Thrust,
+	Tooltip				=	Tooltip_Thrown,
+ 	}
+
+	item Spartan_Spear_Thrust
+	{
+
+	DisplayName			=	Spartan Spear		,
+	Icon				=	Spartan_Spear		,
+	WeaponSprite			=	Spartan_Spear_Thrust	,
+	Type				=	Weapon			,
+	ItemType = base:weapon,
+	Categories			=	Spear				,
+	DisplayCategory			=	Weapon			,
+	SubCategory			=	Spear				,
+	TwoHandWeapon			=	FALSE				,
+	Tags				=	FishingSpear		,
+	AttachmentType			=	Shovel			,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange			=	0.98	,
+	MaxRange			=	1.38	,
+	MinDamage			=	1.3	,
+	MaxDamage			=	1.8	,
+	CriticalChance			=	35	,
+	CritDmgMultiplier		=	10	,
+	MinAngle			=	0.8	,
+	SwingTime			=	2	,
+	MinimumSwingTime		=	2	,
+	SwingAmountBeforeImpact		=	0.02	,
+	ConditionMax			=	12	,
+	ConditionLowerChanceOneIn	=	14	,
+	Weight				=	2.4	,
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount			=	2	,
+	SplatNumber			=	1	,
+	PushBackMod			=	0.3	,
+	KnockdownMod			=	0	,
+	KnockBackOnNoDeath		=	FALSE	,
+	SplatBloodOnNoDeath		=	FALSE	,
+	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	TreeDamage			=	0	,
+	DoorDamage			=	5	,
+	/* ============ ANIMATION & SOUND ============ */
+	SwingAnim			=	Stab	,
+	RunAnim				=	Run_Weapon2,
+	IdleAnim			=	Idle_Weapon2,
+	BreakSound			=	SpearCraftedBreak,
+	HitFloorSound			=	SpearCraftedHit,
+	ImpactSound			=	SpearCraftedHit,
+	DoorHitSound			=	SpearCraftedHit,
+	HitSound			=	SpearCraftedHit,
+	SwingSound			=	SpearCraftedSwing,
+	/* =========== TRANSFORM VARIABLES =========== */
+	WideGrip			=	Base.Spartan_Spear_Thrown,
+	SpearGrip			=	Base.Spartan_Spear,
+	Tooltip				=	Tooltip_Thrown,
+ 	}
+
+	item	Spartan_Spear_Thrown	{
+				
+	DisplayName                 	=	Spartan_Spear (Thrown)	,
+	Icon                        	=	Spartan_Spear_Thrown	,
+	WeaponSprite                	=	Spartan_Spear_Thrown	,
+	Type                        	=	Weapon			,
+	ItemType = base:weapon,
+	Categories			=	Spear				,
+	SubCategory                 	=	Spear				,
+	Tags				=	Thrown;Spear		,
+	AttachmentType			=	Racket			,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	7	,
+	MinDamage                   	=	0.7	,	/* HALF SWING DAMAGE */
+	MaxDamage                   	=	0.9	,	/* HALF SWING DAMAGE */
+	CriticalChance              	=	20	,	/* HALF SWING CRIT */
+	AimingPerkCritModifier      	=	2	,
+	CritDmgMultiplier		=	5	,
+	MinAngle                     	=	0.8	,
+/*	HitAngleMod			=	-30	,	*/
+	ConditionMax                	=	12	,	
+	ConditionLowerChanceOneIn   	=	12	,	/* SAME SHITTY WEAR AS SWING */
+	SwingTime                   	=	0.2	,
+	MinimumSwingTime            	=	0.2	,
+	SwingAmountBeforeImpact     	=	1.0	,
+	EnduranceMod			=	0.5	,
+	WeaponLength			=	6.5	,	/* MAX RANGE + 0.5 */
+	Weight                      	=	2.4	,
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount                 	=	1	,	
+	PushBackMod			=	0.3	,	/* LIKE NINJA STAR */
+	KnockDownMod			=	0	,
+	KnockBackOnNoDeath          	=	FALSE	,
+	SplatNumber                 	=	1	,	
+	SplatBloodOnNoDeath         	=	FALSE	,	
+	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	DoorDamage                  	=	2	,	
+	TreeDamage                  	=	0	,	
+	/* ============ ANIMATION & SOUND ============ */
+	RunAnim                     	=	Run_Weapon2,
+	SwingAnim			=	Bat,
+	BreakSound			=	SpearCraftedBreak,
+	HitFloorSound			=	SpearCraftedHit,
+	ImpactSound			=	SpearCraftedHit,
+	DoorHitSound			=	SpearCraftedHit,
+	HitSound			=	SpearCraftedHit,
+	SwingSound			=	SpearCraftedSwing,
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpearGrip			=	Base.Spartan_Spear,
+	CloseGrip			=	Base.Spartan_Spear_Thrust,
+	Tooltip				=	Tooltip_Thrown,
+	UseSelf                     	=	TRUE,	
+	}
+
+	model Spartan_Spear
+	{
+		mesh = weapons/2handed/Spartan_Spear,
+		texture = weapons/2handed/Spartan_Spear,
+		scale = 0.95,
+	}
+	model Spartan_Spear_Thrust
+	{
+		mesh = weapons/2handed/Spartan_Spear_Thrust,
+		texture = weapons/2handed/Spartan_Spear,
+		scale = 0.95,
+	}
+	model Spartan_Spear_Thrown
+	{
+		mesh = weapons/2handed/Spartan_Spear_Thrown,
+		texture = weapons/2handed/Spartan_Spear,
+		scale = 0.95,
+	}
+
+
+
+/*	==================================================
+	==	(Britas) VALKYRIE SPEAR			==
+	==================================================	*/
+	item Val_Spear
+	{
+
+	DisplayName			=	Valkyrie's Suzaku Spear	,
+	Icon				=	Val_Spear	,
+	WeaponSprite			=	Val_Spear	,
+	Type				=	Weapon		,
+	ItemType = base:weapon,
+	Categories			=	Spear		,
+	DisplayCategory			=	Weapon		,
+	SubCategory			=	Spear		,
+	TwoHandWeapon			=	TRUE		,
+	Tags				=	FishingSpear	,
+	AttachmentType			=	Shovel		,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange			=	0.88	,
+	MaxRange			=	1.38	,
+	MinDamage			=	1.3	,
+	MaxDamage			=	1.8	,
+	CriticalChance			=	35	,
+	CritDmgMultiplier		=	10	,
+	MinAngle			=	0.8	,
+	SwingTime			=	2	,
+	MinimumSwingTime		=	2	,
+	SwingAmountBeforeImpact		=	0.02	,
+	ConditionMax			=	12	,
+	ConditionLowerChanceOneIn	=	16	,
+	Weight				=	2.7	,
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount			=	2	,
+	SplatNumber			=	1	,
+	PushBackMod			=	0.3	,
+	KnockdownMod			=	0	,
+	KnockBackOnNoDeath		=	FALSE	,
+	SplatBloodOnNoDeath		=	FALSE	,
+	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	TreeDamage			=	0	,
+	DoorDamage			=	5	,
+	/* ============ ANIMATION & SOUND ============ */
+	SwingAnim			=	Spear	,
+	RunAnim				=	Run_Weapon2,
+	IdleAnim			=	Idle_Weapon2,
+	BreakSound			=	SpearCraftedBreak,
+	HitFloorSound			=	SpearCraftedHit,
+	ImpactSound			=	SpearCraftedHit,
+	DoorHitSound			=	SpearCraftedHit,
+	HitSound			=	SpearCraftedHit,
+	SwingSound			=	SpearCraftedSwing,
+	/* =========== TRANSFORM VARIABLES =========== */
+	WideGrip			=	Base.Val_Spear_Thrown,
+	CloseGrip			=	Base.Val_Spear_Thrust,
+	Tooltip				=	Tooltip_Thrown,
+ 	}
+
+	item Val_Spear_Thrust
+	{
+
+	DisplayName			=	Valkyrie's Suzaku Spear	,
+	Icon				=	Val_Spear		,
+	WeaponSprite			=	Val_Spear_Thrust	,
+	Type				=	Weapon			,
+	ItemType = base:weapon,
+	Categories			=	Spear			,
+	DisplayCategory			=	Weapon			,
+	SubCategory			=	Spear			,
+	TwoHandWeapon			=	FALSE			,
+	Tags				=	FishingSpear		,
+	AttachmentType			=	Shovel			,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange			=	0.88	,
+	MaxRange			=	1.28	,
+	MinDamage			=	1.3	,
+	MaxDamage			=	1.8	,
+	CriticalChance			=	35	,
+	CritDmgMultiplier		=	10	,
+	MinAngle			=	0.8	,
+	SwingTime			=	2	,
+	MinimumSwingTime		=	2	,
+	SwingAmountBeforeImpact		=	0.02	,
+	ConditionMax			=	12	,
+	ConditionLowerChanceOneIn	=	14	,
+	Weight				=	2.7	,
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount			=	2	,
+	SplatNumber			=	1	,
+	PushBackMod			=	0.3	,
+	KnockdownMod			=	0	,
+	KnockBackOnNoDeath		=	FALSE	,
+	SplatBloodOnNoDeath		=	FALSE	,
+	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	TreeDamage			=	0	,
+	DoorDamage			=	5	,
+	/* ============ ANIMATION & SOUND ============ */
+	SwingAnim			=	Stab	,
+	RunAnim				=	Run_Weapon2,
+	IdleAnim			=	Idle_Weapon2,
+	BreakSound			=	SpearCraftedBreak,
+	HitFloorSound			=	SpearCraftedHit,
+	ImpactSound			=	SpearCraftedHit,
+	DoorHitSound			=	SpearCraftedHit,
+	HitSound			=	SpearCraftedHit,
+	SwingSound			=	SpearCraftedSwing,
+	/* =========== TRANSFORM VARIABLES =========== */
+	WideGrip			=	Base.Val_Spear_Thrown,
+	SpearGrip			=	Base.Val_Spear,
+	Tooltip				=	Tooltip_Thrown,
+ 	}
+
+	item	Val_Spear_Thrown	{
+				
+	DisplayName                 	=	Valkyrie's Suzaku Spear (Thrown),
+	Icon                        	=	Val_Spear_Thrown	,
+	WeaponSprite                	=	Val_Spear_Thrown	,
+	Type                        	=	Weapon			,
+	ItemType = base:weapon,
+	Categories			=	Spear			,
+	SubCategory                 	=	Spear			,
+	Tags				=	Thrown;Spear		,
+	AttachmentType			=	Racket			,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	9	,	/* GOES FARTHER */
+	MinDamage                   	=	0.7	,	/* HALF SWING DAMAGE */
+	MaxDamage                   	=	0.9	,	/* HALF SWING DAMAGE */
+	CriticalChance              	=	20	,	/* HALF SWING CRIT */
+	AimingPerkCritModifier      	=	2	,
+	CritDmgMultiplier		=	5	,
+	MinAngle                     	=	0.8	,
+/*	HitAngleMod			=	-30	,	*/
+	ConditionMax                	=	12	,	
+	ConditionLowerChanceOneIn   	=	12	,	/* SAME SHITTY WEAR AS SWING */
+	SwingTime                   	=	0.2	,
+	MinimumSwingTime            	=	0.2	,
+	SwingAmountBeforeImpact     	=	1.0	,
+	EnduranceMod			=	0.5	,
+	WeaponLength			=	6.5	,	/* MAX RANGE + 0.5 */
+	Weight                      	=	2.7	,
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount                 	=	1	,	
+	PushBackMod			=	0.3	,	/* LIKE NINJA STAR */
+	KnockDownMod			=	0	,
+	KnockBackOnNoDeath          	=	FALSE	,
+	SplatNumber                 	=	1	,	
+	SplatBloodOnNoDeath         	=	FALSE	,	
+	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	DoorDamage                  	=	2	,	
+	TreeDamage                  	=	0	,	
+	/* ============ ANIMATION & SOUND ============ */
+	RunAnim                     	=	Run_Weapon2,
+	SwingAnim			=	Bat,
+	BreakSound			=	SpearCraftedBreak,
+	HitFloorSound			=	SpearCraftedHit,
+	ImpactSound			=	SpearCraftedHit,
+	DoorHitSound			=	SpearCraftedHit,
+	HitSound			=	SpearCraftedHit,
+	SwingSound			=	SpearCraftedSwing,
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpearGrip			=	Base.Val_Spear,
+	CloseGrip			=	Base.Val_Spear_Thrust,
+	Tooltip				=	Tooltip_Thrown,
+	UseSelf                     	=	TRUE,	
+	}
+
+	model Val_Spear
+	{
+		mesh = weapons/2handed/Val_Spear,
+		texture = weapons/2handed/Val_Spear,
+	}
+	model Val_Spear_Thrust
+	{
+		mesh = weapons/2handed/Val_Spear_Thrust,
+		texture = weapons/2handed/Val_Spear,
+	}
+	model Val_Spear_Thrown
+	{
+		mesh = weapons/2handed/Val_Spear_Thrown,
+		texture = weapons/2handed/Val_Spear,
+	}
+}

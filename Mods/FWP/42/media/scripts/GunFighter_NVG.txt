@@ -1,0 +1,83 @@
+module Base
+{
+	item NV_Control
+	{
+		Type = Clothing,
+		ItemType = base:clothing,
+		DisplayName = NV-Control,
+		DisplayCategory = WeaponPart,
+		ClothingItem = NV_Control,
+		BodyLocation = fwp:NV_Eyes,
+		Icon = NV_Control,
+		Weight	=	0,
+		CanHaveHoles = false,
+		Tags = NVITEM
+	}
+
+	item NV_Control_NL
+	{
+		Type = Clothing,
+		ItemType = base:clothing,
+		DisplayName = NV-Control,
+		DisplayCategory = WeaponPart,
+		ClothingItem = NV_Control_NL,
+			ClothingItemExtra = NV_Control_LB;NV_Control_IR;NV_Control_XR,
+			ClothingItemExtraOption = LB;IR;XR,
+			clothingExtraSubmenu = NL,
+		BodyLocation = fwp:NV_Eyes,
+		Icon = NV_Control_NL,
+		Weight	=	0,
+		CanHaveHoles = false,
+		Tags = NVITEM
+	}
+	item NV_Control_LB
+	{
+		Type = Clothing,
+		ItemType = base:clothing,
+		DisplayName = NV-Control,
+		DisplayCategory = WeaponPart,
+		ClothingItem = NV_Control_LB,
+			ClothingItemExtra = NV_Control_NL;NV_Control_IR;NV_Control_XR,
+			ClothingItemExtraOption = NL;IR;XR,
+			clothingExtraSubmenu = LB,
+		BodyLocation = fwp:NV_Eyes,
+		Icon = NV_Control_LB,
+		Weight	=	0,
+		CanHaveHoles = false,
+		Tags = NVITEM
+	}
+	item NV_Control_IR
+	{
+		Type = Clothing,
+		ItemType = base:clothing,
+		DisplayName = NV-Control,
+		DisplayCategory = WeaponPart,
+		ClothingItem = NV_Control_IR,
+			ClothingItemExtra = NV_Control_NL;NV_Control_LB;NV_Control_XR,
+			ClothingItemExtraOption = NL;LB;XR,
+			clothingExtraSubmenu = IR,
+		BodyLocation = fwp:NV_Eyes,
+		Icon = NV_Control_IR,
+		Weight	=	0,
+		CanHaveHoles = false,
+		Tags = NVITEM
+	}
+	item NV_Control_XR
+	{
+		Type = Clothing,
+		ItemType = base:clothing,
+		DisplayName = NV-Control,
+		DisplayCategory = WeaponPart,
+		ClothingItem = NV_Control_XR,
+			ClothingItemExtra = NV_Control_NL;NV_Control_LB;NV_Control_IR,
+			ClothingItemExtraOption = NL;LB;IR,
+			clothingExtraSubmenu = XR,
+		BodyLocation = fwp:NV_Eyes,
+		Icon = NV_Control_XR,
+		Weight	=	0,
+		CanHaveHoles = false,
+		Tags = NVITEM
+	}
+
+
+}

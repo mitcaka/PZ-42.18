@@ -1,0 +1,140 @@
+module AdvancedDrying42
+{
+    item SaltedMeat
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = SaltedMeat,
+        FoodType = Meat,
+
+        Weight = 0.1,
+        HungerChange = -1,
+        Calories = 1,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 1,
+
+        IsCookable = TRUE,
+        DangerousUncooked = TRUE,
+        MinutesToCook = 60,
+        MinutesToBurn = 120,
+        DaysFresh = 15,
+        DaysTotallyRotten = 30,
+
+        CantBeFrozen = TRUE,
+        EvolvedRecipe = Soup:1;Stew:1;Pie:1;Stir fry:1;Rice:1;Pasta:1;Sandwich:1;Burger:1,
+    }
+
+    item DriedMeat
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = DriedMeat,
+        FoodType = Meat,
+
+        Weight = 0.1,
+        HungerChange = -1,
+        ThirstChange = 12,
+        DaysFresh = 240,
+        DaysTotallyRotten = 365,
+        Calories = 1,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 1,
+
+        CantBeFrozen = TRUE,
+        EvolvedRecipe = Soup:1;Stew:1;Pie:1;Stir fry:1;Rice:1;Pasta:1;Sandwich:1;Burger:1,
+    }
+
+    item SaltedFish
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = SaltedFish,
+        FoodType = Fish,
+
+        Weight = 0.1,
+        HungerChange = -1,
+        Calories = 1,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 1,
+
+        IsCookable = TRUE,
+        DangerousUncooked = TRUE,
+        MinutesToCook = 60,
+        MinutesToBurn = 120,
+        DaysFresh = 15,
+        DaysTotallyRotten = 30,
+
+        CantBeFrozen = TRUE,
+        EvolvedRecipe = Soup:1;Stew:1;Pie:1;Stir fry:1;Rice:1;Pasta:1,
+    }
+
+    item DriedFish
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = DriedFish,
+        FoodType = Fish,
+
+        Weight = 0.1,
+        HungerChange = -1,
+        ThirstChange = 12,
+        DaysFresh = 240,
+        DaysTotallyRotten = 365,
+        Calories = 1,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 1,
+
+        CantBeFrozen = TRUE,
+        EvolvedRecipe = Soup:1;Stew:1;Pie:1;Stir fry:1;Rice:1;Pasta:1,
+    }
+
+    item SaltedFishFillet
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = SaltedFishFillet,
+        FoodType = Fish,
+
+        Weight = 0.1,
+        HungerChange = -1,
+        Calories = 1,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 1,
+
+        IsCookable = TRUE,
+        DangerousUncooked = TRUE,
+        MinutesToCook = 60,
+        MinutesToBurn = 120,
+        DaysFresh = 15,
+        DaysTotallyRotten = 30,
+
+        CantBeFrozen = TRUE,
+        EvolvedRecipe = Soup:1;Stew:1;Pie:1;Stir fry:1;Rice:1;Pasta:1,
+    }
+
+    item DriedFishFillet
+    {
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = DriedFishFillet,
+        FoodType = Fish,
+
+        Weight = 0.1,
+        HungerChange = -1,
+        ThirstChange = 12,
+        DaysFresh = 240,
+        DaysTotallyRotten = 365,
+        Calories = 1,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 1,
+
+        CantBeFrozen = TRUE,
+        EvolvedRecipe = Soup:1;Stew:1;Pie:1;Stir fry:1;Rice:1;Pasta:1,
+    }
+}

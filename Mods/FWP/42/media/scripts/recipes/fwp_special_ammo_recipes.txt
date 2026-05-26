@@ -1,0 +1,194 @@
+module Base
+{
+    craftRecipe FWP_Make_Arrow_Head
+    {
+        timedAction = Making,
+        Time = 100,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPArchery,
+        xpAward = Blacksmith:3,
+        ToolTip = Tooltip_Recipe_FWP_Make_Arrow_Head,
+        inputs
+        {
+            item 1 [Base.ScrapMetal],
+            item 1 tags[base:hammer;base:ballpeenhammer] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 3 Base.Arrow_Head,
+        }
+    }
+
+    craftRecipe FWP_Make_Arrow_Fletching
+    {
+        timedAction = Making,
+        Time = 100,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPArchery,
+        xpAward = Tailoring:1,
+        ToolTip = Tooltip_Recipe_FWP_Make_Arrow_Fletching,
+        inputs
+        {
+            item 1 tags[base:feather],
+            item 1 tags[base:scissors;base:sharpknife] mode:keep flags[MayDegradeLight;IsNotDull;Prop1],
+        }
+        outputs
+        {
+            item 3 Base.Arrow_Fletching,
+        }
+    }
+
+    craftRecipe FWP_Make_Fiberglass_Shafts
+    {
+        timedAction = Making,
+        Time = 100,
+        Tags = AnySurfaceCraft,
+        NeedToBeLearn = False,
+        category = FWPArchery,
+        xpAward = Woodwork:2,
+        ToolTip = Tooltip_Recipe_FWP_Make_Fiberglass_Shafts,
+        inputs
+        {
+            item 1 [Base.FishingRod;Base.FishingRodBreak] flags[Prop1],
+            item 1 tags[base:saw] mode:keep flags[MayDegradeLight;Prop2],
+        }
+        outputs
+        {
+            item 3 Base.Shaft_Fiberglass,
+        }
+    }
+
+    craftRecipe FWP_Make_Carbon_Bolt_Shafts
+    {
+        timedAction = Making,
+        Time = 100,
+        Tags = AnySurfaceCraft,
+        NeedToBeLearn = False,
+        category = FWPArchery,
+        xpAward = Woodwork:2,
+        ToolTip = Tooltip_Recipe_FWP_Make_Carbon_Bolt_Shafts,
+        inputs
+        {
+            item 1 [Base.FishingRod;Base.FishingRodBreak] flags[Prop1],
+            item 1 tags[base:saw] mode:keep flags[MayDegradeLight;Prop2],
+        }
+        outputs
+        {
+            item 6 Base.Shaft_Carbon,
+        }
+    }
+
+    craftRecipe FWP_Craft_Arrow_Fiberglass
+    {
+        timedAction = Making,
+        Time = 100,
+        Tags = InHandCraft,
+        NeedToBeLearn = True,
+        category = FWPArchery,
+        SkillRequired = Woodwork:2,
+        xpAward = Woodwork:3,
+        ToolTip = Tooltip_Recipe_FWP_Craft_Arrow_Fiberglass,
+        inputs
+        {
+            item 1 [Base.Arrow_Head],
+            item 1 [Base.Shaft_Fiberglass],
+            item 3 [Base.Arrow_Fletching],
+            item 1 [Base.Glue],
+        }
+        outputs
+        {
+            item 1 Base.Arrow_Fiberglass,
+        }
+    }
+
+    craftRecipe FWP_Craft_Bolt_Bear
+    {
+        timedAction = Making,
+        Time = 100,
+        Tags = InHandCraft,
+        NeedToBeLearn = True,
+        category = FWPArchery,
+        SkillRequired = Woodwork:3,
+        xpAward = Woodwork:4,
+        ToolTip = Tooltip_Recipe_FWP_Craft_Bolt_Bear,
+        inputs
+        {
+            item 1 [Base.Arrow_Head],
+            item 1 [Base.Shaft_Carbon],
+            item 3 [Base.Arrow_Fletching],
+            item 1 [Base.Glue],
+        }
+        outputs
+        {
+            item 1 Base.Bolt_Bear,
+        }
+    }
+
+    craftRecipe FWP_Recover_Arrow_Components
+    {
+        timedAction = Making,
+        Time = 50,
+        Tags = InHandCraft,
+        NeedToBeLearn = True,
+        category = FWPArchery,
+        OnCreate = RecipeCodeOnCreate.FWPRecoverArcheryComponents,
+        ToolTip = Tooltip_Recipe_FWP_Recover_Arrow_Components,
+        inputs
+        {
+            item 1 [Base.Arrow_Fiberglass;Base.Arrow_Fiberglass_Broken] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.Arrow_Fletching,
+        }
+    }
+
+    craftRecipe FWP_Recover_Bolt_Components
+    {
+        timedAction = Making,
+        Time = 50,
+        Tags = InHandCraft,
+        NeedToBeLearn = True,
+        category = FWPArchery,
+        OnCreate = RecipeCodeOnCreate.FWPRecoverArcheryComponents,
+        ToolTip = Tooltip_Recipe_FWP_Recover_Bolt_Components,
+        inputs
+        {
+            item 1 [Base.Bolt_Bear;Base.Bolt_Bear_Broken] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.Arrow_Fletching,
+        }
+    }
+
+    craftRecipe FWP_Make_HERocket
+    {
+        timedAction = MakingHammer_Surface,
+        Time = 600,
+        Tags = AdvancedForge,
+        NeedToBeLearn = False,
+        category = FWPLaunchers,
+        SkillRequired = Blacksmith:9,
+        xpAward = Blacksmith:100,
+        ToolTip = Tooltip_Recipe_FWP_Make_HERocket,
+        inputs
+        {
+            item 1 [Base.40HERound],
+            item 1 [Base.GunPowder] mode:destroy,
+            item 1 [Base.MetalPipe],
+            item 2 [Base.ScrapMetal],
+            item 1 [Base.ElectronicsScrap],
+            item 1 tags[base:ballpeenhammer] mode:keep flags[Prop1],
+            item 1 tags[base:tongs;base:metalworkingpliers] mode:keep flags[Prop2],
+            item 1 tags[base:metalworkingpunch] mode:keep,
+            item 1 tags[base:charcoal],
+        }
+        outputs
+        {
+            item 1 Base.HERocket,
+        }
+    }
+}

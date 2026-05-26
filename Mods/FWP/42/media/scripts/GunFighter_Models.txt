@@ -1,0 +1,1369 @@
+/******************** ATTACHMENT MODELS **********************
+	EXPERIMENTAL STUFF
+**************************************************************/
+
+module Base
+{
+	model Standard_Mag_556MiniCan
+	{
+		mesh = AmmoCan50,
+		texture = AmmoCan50,
+	}
+	model Standard_PB_Hopper
+	{
+		mesh = weapons/parts/Standard_PB_Hopper,
+		texture = weapons/firearm/VM_68,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Large_PB_Hopper
+	{
+		mesh = weapons/parts/Large_PB_Hopper,
+		texture = weapons/parts/Grey,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model W_PB68_Bag
+	{
+		mesh = WorldItems/Pillow,
+		texture = WorldItems/W_PB68_Bag,
+		scale = 0.2,
+	}
+	model Standard_PB_Can
+	{
+		mesh = weapons/parts/Standard_Mag_M2A1,
+		texture = weapons/parts/Grey,
+	}
+
+	model Standard_Mag_Rocket
+	{
+		mesh = weapons/parts/Standard_Mag_Rocket,
+		texture = weapons/firearm/RPG_7,
+	}
+
+	model AR57_Brass_Catch
+	{
+		mesh = weapons/parts/Standard_Mag_556,
+		texture = weapons/parts/Standard_Mag_556,
+	}
+	model Standard_Mag_UmarexSS
+	{
+		mesh = weapons/parts/Standard_Mag_UmarexSS,
+		texture = weapons/parts/Grey,
+	}
+	model Standard_Mag_CZ
+	{
+		mesh = weapons/parts/Standard_Mag_CZ,
+		texture = weapons/parts/Standard_Mag_CZ,
+	}
+
+
+	/*******************************
+		CUSTOM CZ UPGRADES
+	********************************/
+	model LinearComp_Noveske
+	{
+		mesh = weapons/parts/LinearComp_Noveske,
+		texture = weapons/parts/LinearComp_Noveske,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Compensator_CZ
+	{
+		mesh = weapons/parts/Compensator_CZ,
+		texture = weapons/parts/Compensator_CZ,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Mount_CZ
+	{
+		mesh = weapons/parts/Mount_CZ,
+		texture = weapons/parts/Mount_CZ,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+
+
+
+	/*******************************
+		CUSTOM PISTOL GRIPS
+	********************************/
+	model Grip1911_G10_Blue
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_G10_Blue,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Grip1911_G10_Green
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_G10_Green,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Grip1911_G10_Red
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_G10_Red,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Grip1911_G10_Pink
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_G10_Pink,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Grip1911_G10_Brown
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_G10_Brown,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Grip1911_G10_Black
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_G10_Black,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Grip1911_Alloy_Black
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_Alloy_Black,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Grip1911_Alloy_Silver
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_Alloy_Silver,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Grip1911_Alloy_Blue
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_Alloy_Blue,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Grip1911_Alloy_Red
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_Alloy_Red,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Grip1911_Wood
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_Wood,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Grip1911_Punisher
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_Punisher,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Grip1911_Spartan
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_Spartan,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Grip1911_Ivory
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_Ivory,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Grip1911_Carbon
+	{
+		mesh = weapons/parts/Grip1911,
+		texture = weapons/parts/Grip1911_Carbon,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+
+	model GripCZ_G10_Blue
+	{
+		mesh = weapons/parts/GripCZ,
+		texture = weapons/parts/GripCZ_G10_Blue,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model GripCZ_G10_Green
+	{
+		mesh = weapons/parts/GripCZ,
+		texture = weapons/parts/GripCZ_G10_Green,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model GripCZ_G10_Red
+	{
+		mesh = weapons/parts/GripCZ,
+		texture = weapons/parts/GripCZ_G10_Red,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model GripCZ_G10_Pink
+	{
+		mesh = weapons/parts/GripCZ,
+		texture = weapons/parts/GripCZ_G10_Pink,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model GripCZ_G10_Brown
+	{
+		mesh = weapons/parts/GripCZ,
+		texture = weapons/parts/GripCZ_G10_Brown,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model GripCZ_G10_Black
+	{
+		mesh = weapons/parts/GripCZ,
+		texture = weapons/parts/GripCZ_G10_Black,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model GripCZ_Alloy_Black
+	{
+		mesh = weapons/parts/GripCZ,
+		texture = weapons/parts/GripCZ_Alloy_Black,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model GripCZ_Alloy_Silver
+	{
+		mesh = weapons/parts/GripCZ,
+		texture = weapons/parts/GripCZ_Alloy_Silver,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model GripCZ_Alloy_Blue
+	{
+		mesh = weapons/parts/GripCZ,
+		texture = weapons/parts/GripCZ_Alloy_Blue,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model GripCZ_Alloy_Red
+	{
+		mesh = weapons/parts/GripCZ,
+		texture = weapons/parts/GripCZ_Alloy_Red,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model GripCZ_Wood
+	{
+		mesh = weapons/parts/GripCZ,
+		texture = weapons/parts/GripCZ_Wood,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model GripCZ_Punisher
+	{
+		mesh = weapons/parts/GripCZ,
+		texture = weapons/parts/GripCZ_Punisher,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model GripCZ_Ivory
+	{
+		mesh = weapons/parts/GripCZ,
+		texture = weapons/parts/GripCZ_Ivory,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model GripCZ_Carbon
+	{
+		mesh = weapons/parts/GripCZ,
+		texture = weapons/parts/GripCZ_Carbon,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+
+	model GripCZ_C_G10_Blue
+	{
+		mesh = weapons/parts/GripCZ_C,
+		texture = weapons/parts/GripCZ_G10_Blue,
+	}
+	model GripCZ_C_G10_Green
+	{
+		mesh = weapons/parts/GripCZ_C,
+		texture = weapons/parts/GripCZ_G10_Green,
+	}
+	model GripCZ_C_G10_Red
+	{
+		mesh = weapons/parts/GripCZ_C,
+		texture = weapons/parts/GripCZ_G10_Red,
+	}
+	model GripCZ_C_G10_Pink
+	{
+		mesh = weapons/parts/GripCZ_C,
+		texture = weapons/parts/GripCZ_G10_Pink,
+	}
+	model GripCZ_C_G10_Brown
+	{
+		mesh = weapons/parts/GripCZ_C,
+		texture = weapons/parts/GripCZ_G10_Brown,
+	}
+	model GripCZ_C_G10_Black
+	{
+		mesh = weapons/parts/GripCZ_C,
+		texture = weapons/parts/GripCZ_G10_Black,
+	}
+	model GripCZ_C_Alloy_Black
+	{
+		mesh = weapons/parts/GripCZ_C,
+		texture = weapons/parts/GripCZ_Alloy_Black,
+	}
+	model GripCZ_C_Alloy_Silver
+	{
+		mesh = weapons/parts/GripCZ_C,
+		texture = weapons/parts/GripCZ_Alloy_Silver,
+	}
+	model GripCZ_C_Alloy_Blue
+	{
+		mesh = weapons/parts/GripCZ_C,
+		texture = weapons/parts/GripCZ_Alloy_Blue,
+	}
+	model GripCZ_C_Alloy_Red
+	{
+		mesh = weapons/parts/GripCZ_C,
+		texture = weapons/parts/GripCZ_Alloy_Red,
+	}
+	model GripCZ_C_Wood
+	{
+		mesh = weapons/parts/GripCZ_C,
+		texture = weapons/parts/GripCZ_Wood,
+	}
+	model GripCZ_C_Punisher
+	{
+		mesh = weapons/parts/GripCZ_C,
+		texture = weapons/parts/GripCZ_Punisher,
+	}
+	model GripCZ_C_Ivory
+	{
+		mesh = weapons/parts/GripCZ_C,
+		texture = weapons/parts/GripCZ_Ivory,
+	}
+	model GripCZ_C_Carbon
+	{
+		mesh = weapons/parts/GripCZ_C,
+		texture = weapons/parts/GripCZ_Carbon,
+	}
+
+	model Grip92F_G10_Blue
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_G10_Blue,
+	}
+	model Grip92F_G10_Green
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_G10_Green,
+	}
+	model Grip92F_G10_Red
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_G10_Red,
+	}
+	model Grip92F_G10_Pink
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_G10_Pink,
+	}
+	model Grip92F_G10_Brown
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_G10_Brown,
+	}
+	model Grip92F_G10_Black
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_G10_Black,
+	}
+	model Grip92F_Alloy_Black
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_Alloy_Black,
+	}
+	model Grip92F_Alloy_Silver
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_Alloy_Silver,
+	}
+	model Grip92F_Alloy_Blue
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_Alloy_Blue,
+	}
+	model Grip92F_Alloy_Red
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_Alloy_Red,
+	}
+	model Grip92F_Wood
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_Wood,
+	}
+	model Grip92F_Punisher
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_Punisher,
+	}
+	model Grip92F_Spartan
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_Spartan,
+	}
+	model Grip92F_Ivory
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_Ivory,
+	}
+	model Grip92F_Carbon
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_Carbon,
+	}
+	model Grip92F_RPD
+	{
+		mesh = weapons/parts/Grip92F,
+		texture = weapons/parts/Grip92F_RPD,
+	}
+
+	model GripM9_G10_Blue
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_G10_Blue,
+	}
+	model GripM9_G10_Green
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_G10_Green,
+	}
+	model GripM9_G10_Red
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_G10_Red,
+	}
+	model GripM9_G10_Pink
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_G10_Pink,
+	}
+	model GripM9_G10_Brown
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_G10_Brown,
+	}
+	model GripM9_G10_Black
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_G10_Black,
+	}
+	model GripM9_Alloy_Black
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_Alloy_Black,
+	}
+	model GripM9_Alloy_Silver
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_Alloy_Silver,
+	}
+	model GripM9_Alloy_Blue
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_Alloy_Blue,
+	}
+	model GripM9_Alloy_Red
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_Alloy_Red,
+	}
+	model GripM9_Wood
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_Wood,
+	}
+	model GripM9_Punisher
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_Punisher,
+	}
+	model GripM9_Spartan
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_Spartan,
+	}
+	model GripM9_Ivory
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_Ivory,
+	}
+	model GripM9_Carbon
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_Carbon,
+	}
+	model GripM9_RPD
+	{
+		mesh = weapons/parts/GripM9,
+		texture = weapons/parts/Grip92F_RPD,
+	}
+
+	/*******************************
+		RELOADING ITEMS
+	********************************/
+	model Spent_LR_Brass
+	{
+		mesh = Worlditems/Spent_LR_Brass,
+		texture = Worlditems/Brass,
+	}
+	model Spent_P_Brass
+	{
+		mesh = Worlditems/Spent_P_Brass,
+		texture = Worlditems/Brass,
+	}
+	model Spent_PM_Brass
+	{
+		mesh = Worlditems/Spent_PM_Brass,
+		texture = Worlditems/Brass,
+	}
+	model Spent_PL_Brass
+	{
+		mesh = Worlditems/Spent_PL_Brass,
+		texture = Worlditems/Brass,
+	}
+	model Spent_R_Brass
+	{
+		mesh = Worlditems/Spent_R_Brass,
+		texture = Worlditems/Brass,
+	}
+	model Spent_RL_Brass
+	{
+		mesh = Worlditems/Spent_RL_Brass,
+		texture = Worlditems/Brass,
+	}
+	model Spent_BMG_Brass
+	{
+		mesh = Worlditems/Spent_BMG_Brass,
+		texture = Worlditems/Brass,
+	}
+	model Spent_410_Hull
+	{
+		mesh = Worlditems/Spent_410_Hull,
+		texture = Worlditems/Green,
+	}
+	model Spent_20_Hull
+	{
+		mesh = Worlditems/Spent_20_Hull,
+		texture = Worlditems/Blue,
+	}
+	model Spent_12_Hull
+	{
+		mesh = Worlditems/Spent_12_Hull,
+		texture = Worlditems/Red,
+	}
+	model Spent_10_Hull
+	{
+		mesh = Worlditems/Spent_10_Hull,
+		texture = Worlditems/Orange,
+	}
+	model Spent_4_Hull
+	{
+		mesh = Worlditems/Spent_4_Hull,
+		texture = Worlditems/Green,
+	}
+
+
+	model Lyman_TMag
+	{
+		mesh = Worlditems/Lyman_TMag,
+		texture = weapons/firearm/Lyman_TMag,
+	}
+
+
+	model W_Projectiles_Pack
+	{
+		mesh = WorldItems/W_Project_Pack,
+		texture = Worlditems/W_Project_Pack,
+		scale = 0.01,
+	}
+	model W_Primer_Pack_1
+	{
+		mesh = WorldItems/W_Primer_Pack,
+		texture = Worlditems/W_Primer_Pack_1,
+		scale = 0.01,
+	}
+	model W_Primer_Pack_2
+	{
+		mesh = WorldItems/W_Primer_Pack,
+		texture = Worlditems/W_Primer_Pack_2,
+		scale = 0.01,
+	}
+	model W_Primer_Pack_3
+	{
+		mesh = WorldItems/W_Primer_Pack,
+		texture = Worlditems/W_Primer_Pack_3,
+		scale = 0.01,
+	}
+	model W_Projectiles
+	{
+		mesh = WorldItems/W_Project,
+		texture = Worlditems/W_Project,
+		scale = 0.01,
+	}
+	model W_Primer
+	{
+		mesh = WorldItems/W_Primer,
+		texture = Worlditems/W_Primer,
+		scale = 0.01,
+	}
+
+	model W_Brass_Bag
+	{
+		mesh = WorldItems/Pillow,
+		texture = WorldItems/W_Brass_Bag,
+		scale = 0.15,
+	}
+	model W_Hull_Bag
+	{
+		mesh = WorldItems/Pillow,
+		texture = WorldItems/W_Hull_Bag,
+		scale = 0.2,
+	}
+	model W_Jar_Marbles
+	{
+		mesh = WorldItems/JarFood,
+		texture = WorldItems/W_Jar_Marbles,
+		scale = 0.4,
+	}
+	model W_BB177_Box
+	{
+		mesh = WorldItems/JarFood,
+		texture = WorldItems/W_BB177_Box,
+		scale = 0.3,
+	}
+	model Lyman49th_Manual_Ground
+	{
+		mesh = WorldItems/Magazine,
+		texture = WorldItems/Lyman49th_Manual,
+		scale = 0.4,
+	}
+	model BeLikeWater_Book_Ground
+	{
+		mesh = WorldItems/Magazine,
+		texture = WorldItems/BeLikeWater_Book,
+		scale = 0.4,
+	}
+	model FirstBlood_Book_Ground
+	{
+		mesh = WorldItems/Magazine,
+		texture = WorldItems/FirstBlood_Book,
+		scale = 0.4,
+	}
+	model BoyScout_Book_Ground
+	{
+		mesh = WorldItems/Magazine,
+		texture = WorldItems/BoyScout_Book,
+		scale = 0.4,
+	}
+	model Stoner_Book_Ground
+	{
+		mesh = WorldItems/Magazine,
+		texture = WorldItems/Stoner_Book,
+		scale = 0.4,
+	}
+	model Kalashnikov_Book_Ground
+	{
+		mesh = WorldItems/Magazine,
+		texture = WorldItems/Kalashnikov_Book,
+		scale = 0.4,
+	}
+	model HecklerKoch_Book_Ground
+	{
+		mesh = WorldItems/Magazine,
+		texture = WorldItems/HecklerKoch_Book,
+		scale = 0.4,
+	}
+	model FNHerstal_Book_Ground
+	{
+		mesh = WorldItems/Magazine,
+		texture = WorldItems/FNHerstal_Book,
+		scale = 0.4,
+	}
+
+	/*******************************
+		ARCHERY PROJECTILES
+	********************************/
+	model Arrow
+	{
+		mesh = WorldItems/Arrow,
+		texture = WorldItems/W_Arrow,
+		scale = 1,
+	}
+	model W_Arrow
+	{
+		mesh = WorldItems/W_Arrow,
+		texture = WorldItems/W_Arrow,
+		scale = 1,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model W_Arrow_Pack
+	{
+		mesh = WorldItems/W_Arrow_Pack,
+		texture = WorldItems/W_Arrow_Pack,
+		scale = 1,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model W_Arrow_Broken
+	{
+		mesh = WorldItems/W_Arrow_Broken,
+		texture = WorldItems/W_Arrow,
+		scale = 1,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model Bolt
+	{
+		mesh = WorldItems/Bolt,
+		texture = WorldItems/W_Bolt,
+		scale = 1,
+	}
+	model W_Bolt
+	{
+		mesh = WorldItems/W_Bolt,
+		texture = WorldItems/W_Bolt,
+		scale = 1,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model W_Bolt_Pack
+	{
+		mesh = WorldItems/W_Bolt_Pack,
+		texture = WorldItems/W_Bolt_Pack,
+		scale = 1,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model W_Bolt_Broken
+	{
+		mesh = WorldItems/W_Bolt_Broken,
+		texture = WorldItems/W_Bolt,
+		scale = 1,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+
+	/*************************************
+		FIREARM COMMON MAGAZINES
+	**************************************/
+	model W_Standard_Mag_22
+	{
+		mesh = WorldItems/W_Standard_Mag_22,
+		texture = weapons/parts/Grey,
+	}
+	model W_Extended_Mag_22
+	{
+		mesh = WorldItems/W_Extended_Mag_22,
+		texture = weapons/parts/Grey,
+	}
+	model W_Standard_Mag_DS
+	{
+		mesh = WorldItems/W_Standard_Mag_DS,
+		texture = weapons/parts/Grey,
+	}
+	model W_Extended_Mag_DS
+	{
+		mesh = WorldItems/W_Extended_Mag_DS,
+		texture = weapons/parts/Grey,
+	}
+
+	model W_Standard_Mag_9x39
+	{
+		mesh = WorldItems/W_Standard_Mag_9x39,
+		texture = Weapons/firearm/VSS,
+	}
+	model W_Extended_Mag_9x39
+	{
+		mesh = WorldItems/W_Extended_Mag_9x39,
+		texture = Weapons/firearm/ASVAL,
+	}
+	model W_Standard_Mag_M1Carbine
+	{
+		mesh = WorldItems/W_Standard_Mag_M1Carbine,
+		texture = Weapons/parts/Grey,
+	}
+	model W_Extended_Mag_M1Carbine
+	{
+		mesh = WorldItems/W_Extended_Mag_M1Carbine,
+		texture = Weapons/parts/Grey,
+	}
+	model W_Standard_Mag_223
+	{
+		mesh = WorldItems/W_Standard_Mag_223,
+		texture = weapons/parts/Grey,
+	}
+	model W_Extended_Mag_223
+	{
+		mesh = WorldItems/W_Extended_Mag_223,
+		texture = weapons/parts/Grey,
+	}
+	model W_Standard_Mag_556
+	{
+		mesh = WorldItems/W_Standard_Mag_556,
+		texture = weapons/parts/Standard_Mag_556,
+	}
+	model W_Standard_Mag_545
+	{
+		mesh = WorldItems/W_Standard_Mag_545,
+		texture = weapons/parts/545MAG,
+	}
+	model W_Standard_Mag_762
+	{
+		mesh = weapons/parts/Standard_Mag_762,
+		texture = weapons/parts/Standard_Mag_762,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+	model W_Standard_Mag_308
+	{
+		mesh = WorldItems/W_Standard_Mag_308,
+		texture = weapons/parts/Standard_Mag_FAL,
+	}
+	model W_Extended_Mag_308
+	{
+		mesh = WorldItems/W_Extended_Mag_308,
+		texture = weapons/parts/Standard_Mag_FAL,
+	}
+
+	model W_Standard_Mag_M82
+	{
+		mesh = weapons/parts/Standard_Mag_M82,
+		texture = weapons/parts/Standard_Mag_M82,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 90.0000,
+		}
+	}
+
+	model W_Standard_Mag_Saiga
+	{
+		mesh = WorldItems/W_Standard_Mag_Saiga,
+		texture = Weapons/parts/SaigaMAG,
+	}
+
+	/*************************************
+		FIREARM DRUM MAGAZINES
+	**************************************/
+	model W_Drum_Mag_22
+	{
+		mesh = WorldItems/W_Drum_Mag_22,
+		texture = weapons/parts/Drum_Mag_45,
+	}
+	model W_Drum_Mag_9
+	{
+		mesh = WorldItems/W_Drum_Mag_9,
+		texture = weapons/parts/Drum_Mag_9,
+	}
+	model W_Drum_Mag_45
+	{
+		mesh = WorldItems/W_Drum_Mag_45,
+		texture = weapons/parts/Drum_Mag_45,
+	}
+	model W_Drum_Mag_556
+	{
+		mesh = WorldItems/W_Drum_Mag_556,
+		texture = weapons/parts/Drum_Mag_556,
+	}
+	model W_Drum_Mag_545
+	{
+		mesh = WorldItems/W_Drum_Mag_545,
+		texture = weapons/firearm/AK308,
+	}
+	model W_Drum_Mag_762
+	{
+		mesh = WorldItems/W_Drum_Mag_762,
+		texture = weapons/parts/Drum_Mag_762,
+	}
+	model W_Drum_Mag_12
+	{
+		mesh = WorldItems/W_Drum_Mag_12,
+		texture = weapons/parts/Drum_Mag_12,
+	}
+
+
+	/*************************************
+		FIREARM MISC MAGAZINES
+	**************************************/
+	model W_Hunting_Mag_308
+	{
+		mesh = WorldItems/W_Hunting_Mag_308,
+		texture = weapons/parts/Grey,
+	}
+	model W_Standard_Mag_M1208
+	{
+		mesh = WorldItems/W_Standard_Mag_M1208,
+		texture = weapons/parts/Grey,
+	}
+	model W_Standard_Mag_M1212
+	{
+		mesh = WorldItems/W_Standard_Mag_M1212,
+		texture = weapons/parts/Grey,
+	}
+	model W_Standard_Mag_M1216
+	{
+		mesh = WorldItems/W_Standard_Mag_M1216,
+		texture = weapons/parts/Grey,
+	}
+	model W_Standard_Mag_SIX12
+	{
+		mesh = WorldItems/W_Standard_Mag_SIX12,
+		texture = weapons/parts/Grey,
+	}
+	model W_Standard_Mag_SKSFixed
+	{
+		mesh = WorldItems/W_Standard_Mag_SKSFixed,
+		texture = weapons/parts/Grey,
+	}
+	model W_Stripper_Clip
+	{
+		mesh = WorldItems/W_Stripper_Clip,
+		texture = Weapons/parts/Grey,
+		scale = 1.5,
+	}
+	model W_Speedloader
+	{
+		mesh = WorldItems/W_Speedloader,
+		texture = Weapons/parts/Grey,
+		scale = 1.5,
+	}
+	model W_Standard_Mag_M2A1
+	{
+		mesh = WorldItems/W_Standard_Mag_M2A1,
+		texture = weapons/parts/Grey,
+	}
+	model W_Standard_Mag_P90
+	{
+		mesh = WorldItems/W_Standard_Mag_P90,
+		texture = Weapons/firearm/FN_P90,
+	}
+	model W_Standard_PB_Hopper
+	{
+		mesh = WorldItems/W_Standard_PB_Hopper,
+		texture = Weapons/firearm/VM_68,
+	}
+	model W_Large_PB_Hopper
+	{
+		mesh = WorldItems/W_Large_PB_Hopper,
+		texture = Weapons/firearm/VM_68,
+	}
+	model W_Standard_Mag_UmarexSS
+	{
+		mesh = weapons/parts/Standard_Mag_UmarexSS,
+		texture = weapons/parts/Grey,
+	}
+	model WBox_CO2
+	{
+		mesh = WorldItems/box1,
+		texture = WorldItems/W_Box_CO2,
+		scale = 0.008,
+	}
+	model W_CO2_Cartridge
+	{
+		mesh = WorldItems/W_CO2_Cartridge,
+		texture = WorldItems/W_CO2_Cartridge,
+		scale = 0.8,
+	}
+
+	/*************************************
+		FIREARM MACHINEGUN MAGAZINES
+	**************************************/
+	model W_Standard_Mag_M60
+	{
+		mesh = WorldItems/W_Standard_Mag_M60,
+		texture = Weapons/parts/M60MAG,
+	}
+	model W_Standard_Mag_RPD
+	{
+		mesh = Weapons/parts/Standard_Mag_RPD,
+		texture = Weapons/parts/Mag_RPD,
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 90.0000 0.0000,
+		}
+	}
+	model W_Standard_Mag_PKM
+	{
+		mesh = WorldItems/W_Standard_Mag_PKM,
+		texture = Weapons/firearm/PKM,
+	}
+	model W_Standard_Mag_M249
+	{
+		mesh = WorldItems/W_Standard_Mag_M249,
+		texture = Weapons/parts/M249MAG,
+	}
+	model W_Standard_Mag_M240
+	{
+		mesh = WorldItems/W_Standard_Mag_M240,
+		texture = Weapons/parts/M240MAG,
+	}
+
+
+	/*************************************
+		TRIGGER GROUP / SWITCH
+	**************************************/
+	model TriggerGroup_AK
+	{
+		mesh = weapons/parts/TriggerGroup_AK,
+		texture = weapons/parts/TriggerGroup,
+	}
+	model TriggerGroup_AR
+	{
+		mesh = weapons/parts/TriggerGroup_AR,
+		texture = weapons/parts/TriggerGroup,
+	}
+	model TriggerGroup_HK
+	{
+		mesh = weapons/parts/TriggerGroup_HK,
+		texture = weapons/parts/TriggerGroup,
+	}
+	model TriggerGroup_FN
+	{
+		mesh = weapons/parts/TriggerGroup_FN,
+		texture = weapons/parts/TriggerGroup,
+	}
+	model Switch_Striker_Black
+	{
+		mesh = weapons/parts/Switch_Striker,
+		texture = weapons/parts/Switch_Striker_Black,
+	}
+	model Switch_Striker_Red
+	{
+		mesh = weapons/parts/Switch_Striker,
+		texture = weapons/parts/Switch_Striker_Red,
+	}
+	model Switch_Striker_Blue
+	{
+		mesh = weapons/parts/Switch_Striker,
+		texture = weapons/parts/Switch_Striker_Blue,
+	}
+	model Switch_Striker_Green
+	{
+		mesh = weapons/parts/Switch_Striker,
+		texture = weapons/parts/Switch_Striker_Green,
+	}
+
+
+	/*******************************
+		CARTRIDGES
+	********************************/
+	model	Bullets22
+	{
+		mesh = Worlditems/Bullets22,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	Bullets57
+	{
+		mesh = Worlditems/Bullets57,
+		texture = Worlditems/Bullets_B,
+		scale = 1.5,
+	}
+	model	Bullets380
+	{
+		mesh = Worlditems/Bullets380,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	Bullets9mm
+	{
+		mesh = Worlditems/Bullets9mm,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	Bullets38
+	{
+		mesh = Worlditems/Bullets38,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	Bullets357
+	{
+		mesh = Worlditems/Bullets357,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	Bullets45
+	{
+		mesh = Worlditems/Bullets45,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	Bullets45LC
+	{
+		mesh = Worlditems/Bullets45LC,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	Bullets44
+	{
+		mesh = Worlditems/Bullets44,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	Bullets4570
+	{
+		mesh = Worlditems/Bullets4570,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	Bullets50MAG
+	{
+		mesh = Worlditems/Bullets50MAG,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+
+	model	4gShotgunShells
+	{
+		mesh = Worlditems/4gShotgunShells,
+		texture = Worlditems/Bullets_D,
+		scale = 1.5,
+	}
+	model	10gShotgunShells
+	{
+		mesh = Worlditems/10gShotgunShells,
+		texture = Worlditems/Bullets_C,
+		scale = 1.5,
+	}
+	model	12gShotgunShells
+	{
+		mesh = Worlditems/12gShotgunShells,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	20gShotgunShells
+	{
+		mesh = Worlditems/20gShotgunShells,
+		texture = Worlditems/Bullets_B,
+		scale = 1.5,
+	}
+	model	410gShotgunShells
+	{
+		mesh = Worlditems/410gShotgunShells,
+		texture = Worlditems/Bullets_D,
+		scale = 1.5,
+	}
+
+/*	model	223Bullets
+	{
+		mesh = Worlditems/223Bullets,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}						*/
+	model	556Bullets
+	{
+		mesh = Worlditems/556Bullets,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	545x39Bullets
+	{
+		mesh = Worlditems/545x39Bullets,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	762x39Bullets
+	{
+		mesh = Worlditems/762x39Bullets,
+		texture = Worlditems/Bullets_B,
+		scale = 1.5,
+	}
+	model	308Bullets
+	{
+		mesh = Worlditems/308Bullets,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+/*	model	762x51Bullets
+	{
+		mesh = Worlditems/762x51Bullets,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}						*/
+	model	762x54rBullets
+	{
+		mesh = Worlditems/762x54rBullets,
+		texture = Worlditems/Bullets_B,
+		scale = 1.5,
+	}
+	model	3006Bullets
+	{
+		mesh = Worlditems/3006Bullets,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	50BMGBullets
+	{
+		mesh = Worlditems/50BMGBullets,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	40HERound
+	{
+		mesh = Worlditems/40Round,
+		texture = Worlditems/Bullets_A,
+		scale = 1.5,
+	}
+	model	40INCRound
+	{
+		mesh = Worlditems/40Round,
+		texture = Worlditems/Bullets_B,
+		scale = 1.5,
+	}
+
+
+}	

@@ -1,0 +1,409 @@
+module MR
+{
+
+    fluid nengliangyingliao	/* 末日工坊能量饮料 */
+    {
+        ColorReference  = white,
+        DisplayName     = Fluid_Container_nengliangyingliao,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange           = 4.2,
+            hungerChange            = 0.0,
+            stressChange            = 28.0,
+            thirstChange            = -196.0,
+            carbohydrates           = 10.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid yingjiH2O	/* 应急饮用水H2O */
+    {
+        ColorReference  = Gold,
+        DisplayName     = Fluid_Container_yingjiH2O,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -0.0,
+            HungerChange = -0.0,
+            StressChange = 0.0,
+            ThirstChange = -200.0,
+            UnhappyChange = -0.0,
+            Calories = 280.0,
+            Carbohydrates = 155.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid yedaoyezhi	/* 椰岛牌椰汁 */
+    {
+        ColorReference  = Gold,
+        DisplayName     = Fluid_Container_yedaoyezhi,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -0.0,
+            HungerChange = -0.0,
+            StressChange = -30.0,
+            ThirstChange = -75.0,
+            UnhappyChange = -30.0,
+            Calories = 10.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid yibianjingjiu	/* 蚁鞭劲酒 */
+    {
+        ColorReference  = Gold,
+        DisplayName     = Fluid_Container_yibianjingjiu,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -0.0,
+            HungerChange = -0.0,
+            StressChange = -30.0,
+            ThirstChange = -75.0,
+            UnhappyChange = -30.0,
+            Calories = 10.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            foodSicknessChange = -40,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid koufuye	/* 牛磺酸葡萄糖口服液 */
+    {
+        ColorReference  = Gold,
+        DisplayName     = Fluid_Container_koufuye,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -50.0,
+            HungerChange = -0.0,
+            StressChange = -0.0,
+            ThirstChange = -0.0,
+            UnhappyChange = -0.0,
+            Calories = 10.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            enduranceChange = +50.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid maomaoku	/* 毛毛裤牌提神可乐 */
+    {
+        ColorReference  = Gold,
+        DisplayName     = Fluid_Container_maomaoku,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -30.0,
+            HungerChange = -20.0,
+            StressChange = -0.0,
+            ThirstChange = -90.0,
+            UnhappyChange = -0.0,
+            Calories = 500.0,
+            Carbohydrates = 100.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid laodaIcedTea	/* 劳大冰红茶(原味) */
+    {
+        ColorReference  = Ginger,
+        DisplayName     = Fluid_Container_laodaIcedTea,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -25.0,
+            HungerChange = -20.0,
+            StressChange = -0.0,
+            ThirstChange = -100.0,
+            UnhappyChange = -20.0,
+            Calories = 260.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid laodagreentea	/* 劳大冰红茶(原味) */
+    {
+        ColorReference  = Ginger,
+        DisplayName     = Fluid_Container_laodagreentea,
+        Categories
+        {
+            Beverage,
+        }
+        Properties
+        {
+            fatigueChange = -25.0,
+            HungerChange = -20.0,
+            StressChange = -0.0,
+            ThirstChange = -100.0,
+            UnhappyChange = -20.0,
+            Calories = 260.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid QingdaoCraftBeer	/* 青岛精酿 */
+    {
+        ColorReference  = Gold,
+        DisplayName     = Fluid_Container_QingdaoCraftBeer,
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+        Properties
+        {
+            fatigueChange = -0.0,
+            HungerChange = -0.0,
+            StressChange = -0.0,
+            ThirstChange = -80.0,
+            UnhappyChange = -30.0,
+            Calories = 480.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.08,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid ShitaoBeer	/* 巧克力香蕉世涛啤酒 */
+    {
+        ColorReference  = Gold,
+        DisplayName     = Fluid_Container_ShitaoBeer,
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+        Properties
+        {
+            fatigueChange = -15.0,
+            HungerChange = -0.0,
+            StressChange = -0.0,
+            ThirstChange = -80.0,
+            UnhappyChange = -15.0,
+            Calories = 380.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.08,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid CoconutShitaoBeer	/* 北峰椰子奶油世涛啤酒 */
+    {
+        ColorReference  = Gold,
+        DisplayName     = Fluid_Container_CoconutShitaoBeer,
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+        Properties
+        {
+            fatigueChange = -15.0,
+            HungerChange = -0.0,
+            StressChange = -0.0,
+            ThirstChange = -80.0,
+            UnhappyChange = -15.0,
+            Calories = 380.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.08,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid LongjingBeer	/* 茉莉龙井啤酒 */
+    {
+        ColorReference  = green,
+        DisplayName     = Fluid_Container_LongjingBeer,
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+        Properties
+        {
+            fatigueChange = -15.0,
+            HungerChange = -0.0,
+            StressChange = -0.0,
+            ThirstChange = -80.0,
+            UnhappyChange = -15.0,
+            Calories = 380.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.08,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Lafite	/* 拉菲酒庄1982年干红 */
+    {
+        ColorReference  = green,
+        DisplayName     = Fluid_Container_Lafite,
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+        Properties
+        {
+            fatigueChange = -30.0,
+            HungerChange = -0.0,
+            StressChange = -0.0,
+            ThirstChange = -100.0,
+            UnhappyChange = -40.0,
+            Calories = 200.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.12,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+}

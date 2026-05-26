@@ -147,38 +147,17 @@ local PROPANE_TORCH_TAGS = {
 }
 local QUICK_REPAIR_TOOL_TYPES = {
     Hammer = true,
+    HammerForged = true,
+    BallPeenHammer = true,
+    BallPeenHammerForged = true,
+    ClubHammer = true,
     Screwdriver = true,
     Screwdriver_Old = true,
     Screwdriver_Improvised = true,
-    Pliers = true,
-    Wrench = true,
-    LugWrench = true,
-    Saw = true,
-    Crowbar = true,
-    PipeWrench = true,
-    Axe = true,
-    HandAxe = true,
-    WoodAxe = true,
-    PickAxe = true,
-    Shovel = true,
-    Shovel2 = true,
-    GardenSaw = true,
-    BoltCutters = true,
-    BlowTorch = true,
-    Scissors = true,
 }
 local QUICK_REPAIR_TOOL_TAGS = {
     "base:hammer", "hammer",
     "base:screwdriver", "screwdriver",
-    "base:saw", "saw",
-    "base:wrench", "wrench",
-    "base:lugwrench", "lugwrench",
-    "base:pipewrench", "pipewrench",
-    "base:axe", "axe",
-    "base:crowbar", "crowbar",
-    "base:hastoolhead", "hastoolhead",
-    "base:sharpknife", "sharpknife",
-    "base:scissors", "scissors",
 }
 
 local function itemHasAnyTag(item, tags)

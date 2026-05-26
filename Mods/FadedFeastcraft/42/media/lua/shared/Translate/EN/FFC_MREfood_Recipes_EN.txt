@@ -1,0 +1,78 @@
+Recipes_EN = {
+    Recipe_Open Boxed bayi cigarettes	 = "Open Boxed bayi cigarettes",
+    Recipe_Take bayiCigarette	 = "Take bayiCigarette",
+    Recipe_Add bayiCigarette	 = "Add bayiCigarette",
+    Recipe_UnpackbayiCigaretteCarton	 = "Unpack bayi CigaretteCarton",
+    Recipe_Pack bayi cigarettes into boxes	 = "Pack bayi cigarettes into boxes",
+    Recipe_Pack bayiCigarette Carton	 = "Pack bayiCigarette Carton",
+    Recipe_open emergency drinking water	 = "open emergency drinking water",
+    Recipe_open AirForce Chocolate	 = "open AirForce Chocolate",
+    Recipe_open Military energy pack	 = "open Military energy pack",
+    Recipe_open Old squadleader pack	 = "open Old squadleader pack",
+    Recipe_open Military reconnaissance pack	 = "open Military reconnaissance pack",
+    Recipe_open Setmenu1	 = "open Setmenu1",
+    Recipe_open Setmenu2	 = "open Setmenu2",
+    Recipe_open Setmenu3	 = "open Setmenu3",
+    Recipe_open Setmenu4	 = "open Setmenu4",
+    Recipe_open Setmenu5	 = "open Setmenu5",
+    Recipe_open armyprovisionsA	 = "open armyprovisionsA",
+    Recipe_open armyprovisionsB	 = "open armyprovisionsB",
+    Recipe_open Military grain	 = "open Military grain",
+
+    Recipe_open Glucose oralsolution	 = "open Glucose oralsolution",
+    Recipe_open box Energy drinks	 = "open box Energy drinks",
+    Recipe_open box Braised cannedbeef	 = "open box Braised cannedbeef",
+
+
+    Recipe_Open Boxed lucky strike	 = "Open box Lucky Strike cigarettes",
+    Recipe_Take lucky strike = "Take Lucky Strike cigarette",
+    Recipe_Add lucky strike = "Put Lucky Strike cigarettes into the box",
+    Recipe_Pack lucky strike into boxes = "Pack the Lucky Strike cigarettes into boxes",
+
+    Recipe_Open Boxed Camel cigarettes	 = "Open box Camel cigarettes",
+    Recipe_Take Camel cigarettes = "Take Camel cigarette",
+    Recipe_Add Camel cigarettes = "Put the camel cigarettes into the box",
+    Recipe_Pack Camel cigarettes into boxes = "Pack camel cigarettes into boxes",
+
+    Recipe_Open Boxed double happiness  = "Pack camel cigarettes into boxes",
+    Recipe_Take double happiness = "Take Hongshuangxi cigarette",
+    Recipe_Add double happiness = "Put the Hongshuangxi cigarettes into the box",
+    Recipe_Packdoublehappinessintoboxes = "Pack the Hongshuangxi cigarettes into boxes",
+    Recipe_Unpack double happiness Carton = "Open the canned Hongshuangxi cigarettes",
+    Recipe_Pack double happiness Carton = "Pack the reddouble happiness cigarette boxes into cans",
+
+    Recipe_Open Boxed Gaoxiba cigarettes = "Open box Cohiba cigars",
+    Recipe_Take Gaoxiba cigarettes = "Take Gaussie cigar",
+    Recipe_Add Gaoxiba cigarettes = "Put the Gaussch cigar into the box",
+    Recipe_Pack Gaoxiba cigarettes into boxes = "Pack the Gaussie cigars into boxes",
+
+    Recipe_Open Boxed yulan cigarettes = "Open box Yulanhua cigarettes",
+    Recipe_Take yulan cigarettes = "Take stick of Yulan tobacco",
+    Recipe_Add yulan cigarettes = "Put the magnolia flower tobacco into box",
+    Recipe_Pack yulan cigarettes into boxes = "Pack the magnolia flower tobacco into boxed format",
+
+    Recipe_open Portable first aidkit = "Open box of first aid kit",
+    Recipe_open Military first aidkit = "Open box of military first aid kits",
+
+    Recipe_OpenCannedFood = "Open Canned Food",
+    Recipe_OpenCannedFood use knife = "Use Knife to Open Canned Food",
+    Recipe_Open Box Of CannedFood = "Pack Canned Food into Box",
+    Recipe_open Lemonjam softpie = "Open Boxed Lemon Jam Soft Pie",
+    Recipe_open LBlueberry Cake CaramelPie = "Open Boxed Blueberry Caramel Cake Pie",
+
+    OpenBottleBeer = "Open Bottled Beer",
+    Open1982RedWine = "Open Lafite 1982 Red Wine",
+
+    Recipe_Stewed meat vegetables = "Make Meat and Vegetable Stew",
+    Recipe_make Braised beefstew = "Make Braised Beef Pot",
+
+    open BoxedShrimpDumplings = "Open Boxed Shrimp Dumplings",
+    open BoxedXiaoLongBao = "Open Boxed Xiao Long Bao",
+    open BoxedCrabWonton = "Open Boxed Crab Wonton",
+    open CompressedBiscuit bucket = "Open Compressed Biscuit Bucket",
+    open CompressedBiscuit = "Open Compressed Biscuit",
+
+    make Juicy Steamed Meatballs = "Make Juicy Steamed Meatballs",
+    make ChineseSteamed PorkRibs = "Make Chinese Steamed Pork Ribs",
+
+}

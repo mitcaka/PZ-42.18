@@ -1,0 +1,20 @@
+{
+    "IGUI_FWP_INSPECT_INSPECT_WEAPON":  "Prohl�dnout zbra�",
+    "IGUI_FWP_INSPECT_CONDITION":  "Stav",
+    "IGUI_FWP_INSPECT_PRISTINE":  "Nepou�it�",
+    "IGUI_FWP_INSPECT_USED":  "Pou�it�",
+    "IGUI_FWP_INSPECT_DAMAGED":  "Po�kozen�",
+    "IGUI_FWP_INSPECT_BADLY_DAMAGED":  "Velmi po�kozen�",
+    "IGUI_FWP_INSPECT_REPAIR_NONE":  "��dn� zn�mky opravy",
+    "IGUI_FWP_INSPECT_REPAIR_SLIGHTLY":  "M�rn� opraveno",
+    "IGUI_FWP_INSPECT_REPAIR_HEAVILY":  "Siln� opraveno",
+    "IGUI_FWP_INSPECT_ATTACHMENTS":  "Dopl�ky",
+    "IGUI_FWP_INSPECT_NONE":  "��dn�",
+    "IGUI_FWP_INSPECT_CANON":  "Hlave�",
+    "IGUI_FWP_INSPECT_CLIP":  "Z�sobn�k",
+    "IGUI_FWP_INSPECT_RECOIL_PAD":  "Botka",
+    "IGUI_FWP_INSPECT_SCOPE":  "Zam��ova�",
+    "IGUI_FWP_INSPECT_SLING":  "�emen",
+    "IGUI_FWP_INSPECT_STOCK":  "Pa�ba",
+    "IGUI_FWP_INSPECT_AMMO":  "Munice"
+}

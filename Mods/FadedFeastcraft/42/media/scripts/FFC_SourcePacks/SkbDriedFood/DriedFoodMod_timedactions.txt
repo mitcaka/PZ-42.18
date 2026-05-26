@@ -1,0 +1,43 @@
+module DriedFoodMod
+{
+  imports
+  {
+    Base
+  }
+
+  timedAction HydrateSteak
+  {
+    metabolics  = HeavyDomestic,
+    actionAnim  = Disassemble,
+    sound       = MakePlaster,
+    prop1       = Base.WaterBottle,
+    prop2       = Base.SteakBurnt,
+    muscleStrainFactor = 0.0133,
+    muscleStrainSkill = Strength,
+    muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+  }
+
+  timedAction HydrateChicken
+  {
+    metabolics  = HeavyDomestic,
+    actionAnim  = Disassemble,
+    sound       = MakePlaster,
+    prop1       = Base.WaterBottle,
+    prop2       = Base.ChickenBurnt,
+    muscleStrainFactor = 0.0133,
+    muscleStrainSkill = Strength,
+    muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+  }
+  
+  timedAction HydratePorkChop
+  {
+    metabolics  = HeavyDomestic,
+    actionAnim  = Disassemble,
+    sound       = MakePlaster,
+    prop1       = Base.WaterBottle,
+    prop2       = Base.PorkChopBurnt,
+    muscleStrainFactor = 0.0133,
+    muscleStrainSkill = Strength,
+    muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+  }
+}

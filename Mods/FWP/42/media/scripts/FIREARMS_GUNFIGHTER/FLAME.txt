@@ -1,0 +1,744 @@
+/*	LIQUID WEAPON AND LOADING SCRIPT by Arsenal[26]...
+
+	LightDistance		=	2,
+	Weight			=	0.1,
+	Type				=	Drainable,
+	UseWhileEquipped		=	TRUE,
+	TorchCone			=	FALSE,
+	LightStrength		=	0.4,
+	DisplayName			=	Lighter,
+	ActivatedItem		=	TRUE,
+	Icon				=	Lighter,
+	MetalValue 			=	1,
+	cantBeConsolided 		=	TRUE,
+	StaticModel 		=	Zippo,
+	ticksPerEquipUse 		=	110,
+*/
+
+module Base	{
+
+	item	FlareGun	{	
+				
+	DisplayName                 	=	Flare Gun,
+	Icon                        	=	FlareGun,
+	WeaponSprite                	=	FlareGun,
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,
+	IsAimedFirearm              	=	TRUE,
+	HaveChamber				=	FALSE,
+	WeaponReloadType            	=	FlareGun,
+	FireMode                    	=	Single,
+	AttachmentType              	=	Holster,
+	UseEndurance                	=	FALSE,	
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0	,
+	MaxRange                    	=	0	,
+	RangeFalloff                	=	TRUE,	
+	AimingPerkRangeModifier     	=	0	,
+	MinDamage                   	=	0	,
+	MaxDamage                   	=	0	,
+	CriticalChance              	=	0	,
+	HitChance                   	=	20	,
+	ToHitModifier               	=	1.5,	
+	AimingPerkHitChanceModifier 	=	0	,
+	MinAngle                     	=	0.920	,
+	AngleFalloff                	=	TRUE,	
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	5,	
+	ConditionLowerChanceOneIn   	=	10,	
+	MultipleHitConditionAffected	=	FALSE,	
+	JamGunChance                	=	0,	
+	AimingTime                  	=	12,
+	ReloadTime                  	=	50,	
+	SwingTime                   	=	1.0,
+	MinimumSwingTime            	=	1.0,
+	SwingAmountBeforeImpact     	=	0.05,	
+	RecoilDelay                 	=	0,
+	Weight                      	=	0.3,
+	OAL					=	0.5,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	fwp:flare,		/* MUST HAVE AMMOTYPE */
+	MaxAmmo                     	=	1,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	0,	
+	PiercingBullets             	=	FALSE,	
+	ShareDamage                 	=	TRUE,	
+	SplatSize                   	=	1,	
+	SplatNumber                 	=	1,	
+	SplatBloodOnNoDeath         	=	FALSE,	
+	PushBackMod                 	=	0,	
+	KnockBackOnNoDeath          	=	FALSE,	
+	KnockdownMod                	=	0,	
+	DoorDamage                  	=	10,	
+	TreeDamage                  	=	50,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Run_Weapon2,	
+	MetalValue                  	=	0,	
+	SoundVolume                 	=	10,	
+	SoundRadius                 	=	10,	
+	SoundGain                   	=	2,	
+	NPCSoundBoost               	=	1.5,	
+	SwingSound                  	=	Flame_Fire,
+	BringToBearSound			=	MagnumBringToBear,
+	HitSound            		=	BulletHitBody,
+	ClickSound         		=	DoubleBarrelShotgunJam,
+	BreakSound       			=	MagnumBreak,
+	EquipSound       			=	MagnumEquip,
+	UnequipSound     			=	MagumUnEquip,
+	InsertAmmoSound  			=	DoubleBarrelShotgunInsertAmmo,
+	EjectAmmoSound  			=	DoubleBarrelShotgunEjectAmmo,
+	InsertAmmoStartSound		=	DoubleBarrelShotgunInsertAmmoStart,
+	InsertAmmoStopSound		=	DoubleBarrelShotgunInsertAmmoStop,
+	EjectAmmoStartSound		=	DoubleBarrelShotgunEjectAmmoStart,
+	EjectAmmoStopSound		=	DoubleBarrelShotgunEjectAmmoStop,
+	RackSound        			=	null,
+	ImpactSound            		=	null,
+	/* =========== TRANSFORM VARIABLES =========== */
+	/* ============ GRENADE LAUNCHER ============= */
+	UseSelf                     	=	FALSE,	
+	PhysicsObject               	=	Base.Football,	
+	TriggerExplosionTimer       	=	35,	
+	FirePower                   	=	100,	
+	FireRange                   	=	1,
+	NoiseRange  			=	20,
+	NoiseDuration 			=	20,
+	/* =========== ATTACHMENT DATA ============ */			
+	}
+
+	model FlareGun
+	{
+		mesh = weapons/firearm/FlareGun,
+		texture = weapons/firearm/FlareGun,
+	}
+	model FlareGun_OPEN
+	{
+		mesh = weapons/firearm/FlareGun_OPEN,
+		texture = weapons/firearm/FlareGun,
+	}
+
+
+	item	WD_Flame	{	
+				
+	DisplayName                 	=	WD-40 Flame Thrower,
+	Icon                        	=	WD_Flame,
+	WeaponSprite                	=	WD_Flame,
+	StaticModel                 	=	WD_Flame,
+	WorldStaticModel            	=	WD_Flame,
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,
+	IsAimedFirearm              	=	TRUE,
+	HaveChamber			=	FALSE,
+	WeaponReloadType            	=	revolver,
+	FireMode                    	=	Auto,
+	FireModePossibilities       	=	Auto,
+	AttachmentType              	=	Screwdriver,
+	UseEndurance                	=	FALSE,	
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	5	,
+	RangeFalloff                	=	TRUE,	
+	AimingPerkRangeModifier     	=	0	,
+	MinDamage                   	=	0	,
+	MaxDamage                   	=	0	,
+	CriticalChance              	=	0	,
+	HitChance                   	=	20	,
+	ToHitModifier               	=	1.5,	
+	AimingPerkHitChanceModifier 	=	0	,
+	MinAngle                     	=	0.920	,
+	AngleFalloff                	=	TRUE,	
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	5,	
+	ConditionLowerChanceOneIn   	=	10,	
+	MultipleHitConditionAffected	=	FALSE,	
+	JamGunChance                	=	0,	
+	AimingTime                  	=	12,
+	ReloadTime                  	=	50,	
+	SwingTime                   	=	1.0,
+	MinimumSwingTime            	=	1.0,
+	SwingAmountBeforeImpact     	=	0.05,	
+	RecoilDelay                 	=	0,
+	Weight                      	=	0.3,
+	OAL				=	0.5	,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	fwp:flame_fuel,		/* MUST HAVE AMMOTYPE */
+	MaxAmmo                     	=	30,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	0,	
+	PiercingBullets             	=	FALSE,	
+	ShareDamage                 	=	TRUE,	
+	SplatSize                   	=	1,	
+	SplatNumber                 	=	1,	
+	SplatBloodOnNoDeath         	=	FALSE,	
+	PushBackMod                 	=	0,	
+	KnockBackOnNoDeath          	=	FALSE,	
+	KnockdownMod                	=	0,	
+	DoorDamage                  	=	10,	
+	TreeDamage                  	=	50,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Run_Weapon2,	
+	IdleAnim                    	=	Idle_Weapon2,
+	SwingAnim                   	=	Rifle,
+	MetalValue                  	=	30,	
+	SoundVolume                 	=	10,	
+	SoundRadius                 	=	10,	
+	SoundGain                   	=	2,	
+	NPCSoundBoost               	=	1.5,	
+	SwingSound                  	=	Flame_Fire,
+	RackSound                   	=	Flame_Eject,
+	BreakSound                  	=	BreakMetalItem,
+	ImpactSound                 	=	null,
+	/* =========== TRANSFORM VARIABLES =========== */
+	/* ============ GRENADE LAUNCHER ============= */
+	UseSelf                     	=	FALSE,	
+        PhysicsObject			=	Base.Molotov,
+	TriggerExplosionTimer       	=	35,	
+	ExtraDamage                 	=	0.2,	
+	ExplosionRange              	=	1,	
+	FirePower                   	=	40,	
+	FireRange                   	=	1,
+	/* =========== ATTACHMENT DATA ============ */			
+	}
+
+	
+	model WD_Flame
+	{
+		mesh = weapons/firearm/WD_Flame,			/* NEED MODEL */
+		texture = weapons/firearm/WD_Flame,
+	}
+
+	item	Musk	{	
+				
+	DisplayName                 	=	Boring CO. Not a FlameThrower,
+	Icon                        	=	Musk,
+	WeaponSprite                	=	Musk,
+	StaticModel                 	=	Musk,
+	WorldStaticModel            	=	Musk,
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,
+	IsAimedFirearm              	=	TRUE,
+	HaveChamber			=	FALSE,
+	WeaponReloadType            	=	boltaction,
+	FireMode                    	=	Auto,
+	FireModePossibilities       	=	Auto,
+	AttachmentType              	=	Rifle,	
+	UseEndurance                	=	FALSE,	
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,	
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	6	,	/* LESS THAN M2A1 */
+	RangeFalloff                	=	TRUE,	
+	AimingPerkRangeModifier     	=	2	,
+	MinDamage                   	=	0	,
+	MaxDamage                   	=	0	,
+	CriticalChance              	=	0	,
+	HitChance                   	=	41	,
+	ToHitModifier               	=	1.5,	
+	AimingPerkHitChanceModifier 	=	16	,
+	MinAngle                     	=	0.920	,
+	AngleFalloff                	=	TRUE,	
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	20,		/* LOW TO ALLOW FAST MELEE BREAKAGE */
+	ConditionLowerChanceOneIn   	=	100,		/* SIMPLE DEVICE, TENDS TO KEEP WORKING */
+	MultipleHitConditionAffected	=	FALSE,	
+	JamGunChance                	=	0,	
+	AimingTime                  	=	12,
+	ReloadTime                  	=	50,	
+	SwingTime                   	=	1.0,
+	MinimumSwingTime            	=	1.0,
+	SwingAmountBeforeImpact     	=	0.05,	
+	RecoilDelay                 	=	0,
+	Weight                      	=	2,
+	OAL				=	2.4	,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	fwp:flame_fuel,		/* MUST HAVE AMMOTYPE */
+	MaxAmmo                     	=	100,
+	MagazineType                	=	Base.M2A1_Can,
+	MagType                	=	Base.M2A1_Can,
+	ExtMagType			=	Base.M2A1_Tank,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	0,	
+	PiercingBullets             	=	FALSE,	
+	ShareDamage                 	=	TRUE,	
+	SplatSize                   	=	1,	
+	SplatNumber                 	=	1,	
+	SplatBloodOnNoDeath         	=	FALSE,	
+	PushBackMod                 	=	0,	
+	KnockBackOnNoDeath          	=	FALSE,	
+	KnockdownMod                	=	0,	
+	DoorDamage                  	=	100,	
+	TreeDamage                  	=	200,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Run_Weapon2,	
+	IdleAnim                    	=	Idle_Weapon2,
+	SwingAnim                   	=	Rifle,
+	MetalValue                  	=	30,	
+	SoundVolume                 	=	10,	
+	SoundRadius                 	=	10,	
+	SoundGain                   	=	2,	
+	NPCSoundBoost               	=	1.5,	
+	SwingSound                  	=	Flame_Fire,
+	InsertAmmoSound             	=	Flame_Insert,
+	EjectAmmoSound              	=	Flame_Eject,
+	RackSound                   	=	Flame_Eject,
+	BreakSound                  	=	BreakMetalItem,	
+	ImpactSound                 	=	null,	
+	/* ============ GRENADE LAUNCHER ============= */			
+	UseSelf                     	=	FALSE,	
+        PhysicsObject			=	Base.Molotov,
+	TriggerExplosionTimer       	=	30,	
+	ExtraDamage                 	=	0.2,	
+	ExplosionRange              	=	2,	
+	FirePower                   	=	60,	
+	FireRange                   	=	2,
+	/* =========== TRANSFORM VARIABLES =========== */
+	Trajectory			=	Medium,
+	/* =========== ATTACHMENT DATA ============ */			
+	ModelWeaponPart = Light_Small				Light_Small				light	light	,
+	ModelWeaponPart = Light_Small_Socom			Light_Small_Socom			light	light	,
+	ModelWeaponPart = Light_Medium_SureFire_M9	Light_Medium_SureFire_M9	light	light	,
+	ModelWeaponPart = Light_Small_TLR_7AH		Light_Small_TLR_7AH		light	light	,
+	ModelWeaponPart = Light_Medium_M952V		Light_Medium_M952V		light	light	,
+	ModelWeaponPart = Light_Large				Light_Large				light	light	,
+	ModelWeaponPart = Laser_Green				Laser_Green				light	light	,
+	ModelWeaponPart = Laser_Red				Laser_Red				light	light	,
+	ModelWeaponPart = Laser_DVAL				Laser_DVAL				light	light	,
+	ModelWeaponPart = Laser_PEQ15				Laser_PEQ15				light	light	,
+	ModelWeaponPart = Light_Small_Socom_ON		Light_Small_Socom_ON	side  side	,
+	ModelWeaponPart = Laser_Green_ON		Laser_Green_ON		side  side	,
+	ModelWeaponPart = Laser_Red_ON			Laser_Red_ON		side  side	,
+	ModelWeaponPart = Laser_DVAL_ON			Laser_DVAL_ON		side  side	,
+	ModelWeaponPart = Laser_PEQ15_ON		Laser_PEQ15_ON		side  side	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Green	FWP_LaserBeam_Green	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Red	FWP_LaserBeam_Red	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_DVAL	FWP_LaserBeam_DVAL	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_PEQ15	FWP_LaserBeam_PEQ15	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Standard_Mag			Standard_Mag_M2A1			mag	mag	,
+/*	ModelWeaponPart = Extended_Mag			Extended_Mag_M2A1					,	*/
+	}
+	
+	model Musk
+	{
+		mesh = weapons/firearm/Musk,			/* NEED MODEL */
+		texture = weapons/firearm/Musk,
+
+		attachment light
+		{		
+			offset = 0.0000 0.2340 -0.0050,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+
+	fixing Fix Musk
+	{
+		Require = Base.Musk,
+		Fixer = Base.WD=1,
+	}
+
+
+	item	M2A1	{
+				
+	DisplayName                 	=	M2A1 Flame Thrower,
+	Icon                        	=	M2A1,
+	WeaponSprite                	=	M2A1,
+	StaticModel                 	=	M2A1,
+	WorldStaticModel            	=	M2A1,
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,
+	IsAimedFirearm              	=	TRUE,
+	HaveChamber			=	FALSE,
+	WeaponReloadType            	=	boltaction,
+	FireMode                    	=	Auto,
+	FireModePossibilities       	=	Auto,
+	AttachmentType              	=	Rifle,	
+	UseEndurance                	=	FALSE,	
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,	
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	7	,
+	RangeFalloff                	=	TRUE,	
+	AimingPerkRangeModifier     	=	2	,
+	MinDamage                   	=	0	,
+	MaxDamage                   	=	0	,
+	CriticalChance              	=	0	,
+	HitChance                   	=	41	,
+	ToHitModifier               	=	1.5,	
+	AimingPerkHitChanceModifier 	=	16	,
+	MinAngle                     	=	0.920	,
+	AngleFalloff                	=	TRUE,	
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	50,	
+	ConditionLowerChanceOneIn   	=	60,	
+	MultipleHitConditionAffected	=	FALSE,	
+	JamGunChance                	=	0,	
+	AimingTime                  	=	12,
+	ReloadTime                  	=	50,	
+	SwingTime                   	=	1.0,
+	MinimumSwingTime            	=	1.0,
+	SwingAmountBeforeImpact     	=	0.05,	
+	RecoilDelay                 	=	0,
+	Weight                      	=	4,
+	OAL				=	1.7	,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	fwp:flame_fuel,		/* MUST HAVE AMMOTYPE */
+	MaxAmmo                     	=	100,
+	MagazineType                	=	Base.M2A1_Can,
+	MagType                	=	Base.M2A1_Can,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	0,	
+	PiercingBullets             	=	FALSE,	
+	ShareDamage                 	=	TRUE,	
+	SplatSize                   	=	1,	
+	SplatNumber                 	=	1,	
+	SplatBloodOnNoDeath         	=	FALSE,	
+	PushBackMod                 	=	0,	
+	KnockBackOnNoDeath          	=	FALSE,	
+	KnockdownMod                	=	0,	
+	DoorDamage                  	=	100,	
+	TreeDamage                  	=	200,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Run_Weapon2,	
+	IdleAnim                    	=	Idle_Weapon2,
+	SwingAnim                   	=	Rifle,
+	MetalValue                  	=	30,	
+	SoundVolume                 	=	10,	
+	SoundRadius                 	=	10,	
+	SoundGain                   	=	2,	
+	NPCSoundBoost               	=	1.5,	
+	SwingSound                  	=	Flame_Fire,
+	InsertAmmoSound             	=	Flame_Insert,
+	EjectAmmoSound              	=	Flame_Eject,
+	RackSound                   	=	Flame_Eject,
+	BreakSound                  	=	BreakMetalItem,
+	ImpactSound                 	=	null,	
+	/* ============ GRENADE LAUNCHER ============= */			
+	UseSelf                     	=	FALSE,	
+        PhysicsObject			=	Base.Molotov,
+	TriggerExplosionTimer       	=	35,	
+	ExtraDamage                 	=	0.2,	
+	ExplosionRange              	=	2,	
+	FirePower                   	=	80,	
+	FireRange                   	=	2,
+	/* =========== TRANSFORM VARIABLES =========== */
+	ExtMagType			=	Base.M2A1_Tank,
+	Trajectory			=	Medium,
+	/* =========== ATTACHMENT DATA ============ */			
+	ModelWeaponPart = Light_Small			Light_Small			light	light	,
+	ModelWeaponPart = Light_Small_Socom		Light_Small_Socom		light	light	,
+	ModelWeaponPart = Light_Medium_SureFire_M9	Light_Medium_SureFire_M9	light	light	,
+	ModelWeaponPart = Light_Small_TLR_7AH		Light_Small_TLR_7AH		light	light	,
+	ModelWeaponPart = Light_Medium_M952V		Light_Medium_M952V		light	light	,
+	ModelWeaponPart = Light_Large			Light_Large			light	light	,
+	ModelWeaponPart = Laser_Green			Laser_Green			light	light	,
+	ModelWeaponPart = Laser_Red			Laser_Red			light	light	,
+	ModelWeaponPart = Laser_DVAL			Laser_DVAL			light	light	,
+	ModelWeaponPart = Laser_PEQ15			Laser_PEQ15			light	light	,
+	ModelWeaponPart = Light_Small_Socom_ON		Light_Small_Socom_ON		side  side	,
+	ModelWeaponPart = Laser_Green_ON		Laser_Green_ON			side  side	,
+	ModelWeaponPart = Laser_Red_ON			Laser_Red_ON			side  side	,
+	ModelWeaponPart = Laser_DVAL_ON			Laser_DVAL_ON			side  side	,
+	ModelWeaponPart = Laser_PEQ15_ON		Laser_PEQ15_ON			side  side	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Green	FWP_LaserBeam_Green	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Red	FWP_LaserBeam_Red	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_DVAL	FWP_LaserBeam_DVAL	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_PEQ15	FWP_LaserBeam_PEQ15	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Standard_Mag			Standard_Mag_M2A1		mag	mag	,
+	}
+
+	
+	model M2A1
+	{
+		mesh = weapons/firearm/M2A1,			/* NEED MODEL */
+		texture = weapons/firearm/M2A1,
+
+		attachment mag
+		{
+			offset = -0.0000 -0.0606 -0.0691,
+			rotate = -102.0000 0.0000 0.000,
+		}
+	}
+
+	model Standard_Mag_M2A1
+	{
+		mesh = Weapons/parts/Standard_Mag_M2A1,
+		texture = Weapons/parts/Grey,
+	}
+
+	fixing Fix M2A1
+	{
+		Require = Base.M2A1,
+		Fixer = Base.Cleaning=1,
+		Fixer = Base.WD=1,
+	}
+
+	item	SS2000	{
+				
+	DisplayName                 	=	SuperSoaker CPS2000,
+	Icon                        	=	SS2000,
+	WeaponSprite                	=	SS2000,
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,	
+	IsAimedFirearm              	=	TRUE,	
+	WeaponReloadType            	=	shotgun,
+/*	HaveChamber			=	FALSE,		WONT PUMP WITH THIS	*/
+	RackAfterShoot              	=	TRUE,
+	FireMode                    	=	Single,
+	AttachmentType              	=	Rifle,	
+	UseEndurance                	=	FALSE,	
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,	
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	6	,
+	RangeFalloff                	=	TRUE,	
+	AimingPerkRangeModifier     	=	2	,
+	MinDamage                   	=	0	,
+	MaxDamage                   	=	0	,
+	CriticalChance              	=	0	,
+	HitChance                   	=	60	,
+	ToHitModifier               	=	1.5,	
+	AimingPerkHitChanceModifier 	=	16	,
+	MinAngle                     	=	0.920	,
+	AngleFalloff                	=	TRUE,	
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	10,	
+	ConditionLowerChanceOneIn   	=	20,		/* PLASTIC TOYS DONT LAST */
+	MultipleHitConditionAffected	=	FALSE,	
+	JamGunChance                	=	0,	
+	AimingTime                  	=	12,
+	ReloadTime                  	=	50,	
+	SwingTime                   	=	1.0,
+	MinimumSwingTime            	=	1.0,
+	SwingAmountBeforeImpact     	=	0.05,	
+	RecoilDelay                 	=	0,
+	Weight                      	=	3,
+	OAL				=	2.3	,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	fwp:water_ammo,		/*MUST HAVE AMMOTYPE */
+	MaxAmmo                     	=	20,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	0,	
+	PiercingBullets             	=	FALSE,	
+	ShareDamage                 	=	FALSE,	
+	SplatSize                   	=	0,
+	SplatNumber                 	=	0,	
+	SplatBloodOnNoDeath         	=	FALSE,	
+	PushBackMod                 	=	0,	
+	KnockBackOnNoDeath          	=	FALSE,	
+	KnockdownMod                	=	0,	
+	DoorDamage                  	=	0,	
+	TreeDamage                  	=	0,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Run_Weapon2,	
+	MetalValue                  	=	30,	
+	SoundVolume                 	=	10,	
+	SoundRadius                 	=	10,	
+	SoundGain                   	=	2,	
+	NPCSoundBoost               	=	1.5,
+/*	SwingSound                  	=	thumpsqueak2,	*/
+	SwingSound                  	=	PumpSuperSoaker,
+	InsertAmmoSound             	=	OverFill,
+	EjectAmmoSound              	=	OverFill,
+	ShellFallSound			=	OverFill,
+	RackSound                   	=	PumpSuperSoaker,
+	BreakSound                  	=	BreakMetalItem,	
+	ImpactSound                 	=	null,	
+	/* ============ GRENADE LAUNCHER ============= */			
+	UseSelf                     	=	FALSE,	
+        PhysicsObject			=	Base.Molotov,
+	TriggerExplosionTimer       	=	20,	
+	ExplosionRange              	=	0,	
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpriteOPEN			=	SS2000_OPEN,
+	SpriteCLOSED			=	SS2000,
+	Trajectory			=	Medium,
+	/* =========== ATTACHMENT DATA ============ */			
+	ModelWeaponPart = Light_Small			Light_Small			light	light	,
+	ModelWeaponPart = Light_Small_Socom		Light_Small_Socom		light	light	,
+	ModelWeaponPart = Light_Medium_SureFire_M9	Light_Medium_SureFire_M9	light	light	,
+	ModelWeaponPart = Light_Small_TLR_7AH		Light_Small_TLR_7AH		light	light	,
+	ModelWeaponPart = Light_Medium_M952V		Light_Medium_M952V		light	light	,
+	ModelWeaponPart = Light_Large			Light_Large			light	light	,
+	ModelWeaponPart = Laser_Green			Laser_Green			light	light	,
+	ModelWeaponPart = Laser_Red			Laser_Red			light	light	,
+	ModelWeaponPart = Laser_DVAL			Laser_DVAL			light	light	,
+	ModelWeaponPart = Laser_PEQ15			Laser_PEQ15			light	light	,
+	ModelWeaponPart = Light_Small_Socom_ON		Light_Small_Socom_ON		side  side	,
+	ModelWeaponPart = Laser_Green_ON		Laser_Green_ON			side  side	,
+	ModelWeaponPart = Laser_Red_ON			Laser_Red_ON			side  side	,
+	ModelWeaponPart = Laser_DVAL_ON			Laser_DVAL_ON			side  side	,
+	ModelWeaponPart = Laser_PEQ15_ON		Laser_PEQ15_ON			side  side	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Green	FWP_LaserBeam_Green	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Red	FWP_LaserBeam_Red	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_DVAL	FWP_LaserBeam_DVAL	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_PEQ15	FWP_LaserBeam_PEQ15	Hide_Beam Hide_Beam	,
+	}
+
+	model SS2000
+	{
+		mesh = weapons/firearm/SS2000,
+		texture = weapons/firearm/SS2000,
+
+		attachment light
+		{		
+			offset = 0.0000 0.2340 -0.0220,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+
+	model SS2000_OPEN
+	{
+		mesh = weapons/firearm/SS2000_OPEN,
+		texture = weapons/firearm/SS2000,
+
+		attachment light
+		{		
+			offset = 0.0000 0.1540 -0.0220,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+
+	fixing Fix SS2000
+	{
+		Require = Base.SS2000,
+		Fixer = Base.WD=1,
+	}
+
+	item	FireExtinguisher	{	
+				
+	DisplayName                 	=	Fire Extinguisher,
+	Icon                        	=	FireExtinguisher,
+	WeaponSprite                	=	FireExtinguisher,
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,
+	IsAimedFirearm              	=	TRUE,
+	HaveChamber			=	FALSE,
+	WeaponReloadType            	=	boltaction,
+	FireMode                    	=	Auto,
+	FireModePossibilities       	=	Auto,
+/*	AttachmentType              	=	Shovel,	*/
+	UseEndurance                	=	FALSE,	
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,	
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	5	,	/* LESS THAN M2A1 */
+	RangeFalloff                	=	TRUE,	
+	AimingPerkRangeModifier     	=	0	,
+	MinDamage                   	=	0	,
+	MaxDamage                   	=	0	,
+	CriticalChance              	=	0	,
+	HitChance                   	=	0	,
+	ToHitModifier               	=	0,	
+	AimingPerkHitChanceModifier 	=	0	,
+	MinAngle                     	=	0.920	,
+	AngleFalloff                	=	TRUE,	
+	AimingPerkMinAngleModifier  	=	0	,
+	ConditionMax                	=	20,		/* LOW TO ALLOW FAST MELEE BREAKAGE */
+	ConditionLowerChanceOneIn   	=	100,		/* SIMPLE DEVICE, TENDS TO KEEP WORKING */
+	MultipleHitConditionAffected	=	FALSE,	
+	JamGunChance                	=	0,	
+	AimingTime                  	=	20,
+	ReloadTime                  	=	50,	
+	SwingTime                   	=	1.0,
+	MinimumSwingTime            	=	1.0,
+	SwingAmountBeforeImpact     	=	0.05,	
+	RecoilDelay                 	=	0,
+	Weight                      	=	2,
+	OAL				=	1,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	fwp:smoke,		/* MUST HAVE AMMOTYPE */
+	MaxAmmo                     	=	100,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	0,	
+	PiercingBullets             	=	FALSE,	
+	ShareDamage                 	=	TRUE,	
+	SplatSize                   	=	0,	
+	SplatNumber                 	=	0,	
+	SplatBloodOnNoDeath         	=	FALSE,	
+	PushBackMod                 	=	0,	
+	KnockBackOnNoDeath          	=	FALSE,	
+	KnockdownMod                	=	0,	
+	DoorDamage                  	=	0,	
+	TreeDamage                  	=	0,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Run_Weapon2,	
+	MetalValue                  	=	30,	
+	SoundVolume                 	=	10,	
+	SoundRadius                 	=	10,	
+	SoundGain                   	=	2,	
+	NPCSoundBoost               	=	1.5,	
+	SwingSound                  	=	OverFill,
+	InsertAmmoSound             	=	Flame_Insert,
+	EjectAmmoSound              	=	Flame_Eject,
+	RackSound                   	=	Flame_Eject,
+	BreakSound                  	=	BreakMetalItem,	
+	ImpactSound                 	=	null,	
+	/* ============ GRENADE LAUNCHER ============= */			
+	UseSelf                     	=	FALSE,	
+	PhysicsObject               	=	Base.Football,	
+	TriggerExplosionTimer       	=	30,	
+	SmokeRange              	=	1,	
+	SmokePower                   	=	1,	
+	/* =========== TRANSFORM VARIABLES =========== */
+	Trajectory				=	Short,
+	/* =========== ATTACHMENT DATA ============ */			
+	}
+	
+	model FireExtinguisher
+	{
+		mesh = weapons/firearm/FireExtinguisher,			/* NEED MODEL */
+		texture = weapons/firearm/FireExtinguisher,
+		scale = 1.5,
+	}
+
+	model W_FireExtinguisher
+	{
+		mesh = weapons/firearm/W_FireExtinguisher,			/* NEED MODEL */
+		texture = weapons/firearm/FireExtinguisher,
+		scale = 1.5,
+	}
+
+/*	fixing Fix FireExtinguisher
+	{
+		Require = Base.FireExtinguisher,
+		Fixer = Base.WD=1,
+	}
+*/
+
+	item Extinguisher
+	{
+	DisplayCategory		=	Household,
+	Weight			=	2.0,				/* EDIT */
+	Type			=	Drainable,
+
+	ItemType = base:drainable,
+	UseWhileEquipped	=	FALSE,
+	UseDelta		=	0.1,
+	DisplayName		=	Fire Extinguisher,
+	Icon			=	FireExtinguisher,
+	MetalValue		=	25,
+	Tooltip			=	Tooltip_Extinguisher,
+	WorldStaticModel	=	W_FireExtinguisher,		/* EDIT */
+	}
+
+}

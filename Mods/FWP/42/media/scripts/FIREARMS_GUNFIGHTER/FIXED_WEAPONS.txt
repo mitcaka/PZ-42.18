@@ -1,0 +1,781 @@
+module Base	{
+
+	item	DSHK	{	
+				
+	DisplayName                 	=	Fixed DSHK Machine-Gun (w/Tripod),
+	Icon                        	=	DSHK,	
+	WeaponSprite                	=	DSHK,
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,	
+	IsAimedFirearm              	=	TRUE,	
+	WeaponReloadType            	=	boltaction,	
+	FireMode                    	=	Auto,
+	FireModePossibilities       	=	Auto,
+/*	AttachmentType              	=	Rifle,				*/
+	UseEndurance                	=	TRUE,
+	EnduranceMod			=	0.1,
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,	
+	Tags				=	Fixed,
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	42	,
+	AimingPerkRangeModifier     	=	4.5	,
+	MinDamage                   	=	4.5	,
+	MaxDamage                   	=	7	,
+	CriticalChance              	=	50	,
+	CritDmgMultiplier            	=	2	,	
+	AimingPerkCritModifier      	=	10	,	
+	HitChance                   	=	25	,	/* +25	*/
+	ToHitModifier               	=	1.5	,	
+	AimingPerkHitChanceModifier 	=	13	,
+	MinAngle                     	=	0.950	,
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	50	,	
+	ConditionLowerChanceOneIn   	=	180	,	/* TOUGHER THAN MINIGUN */
+	MultipleHitConditionAffected	=	FALSE	,	
+	JamGunChance                	=	0.01	,	
+	AimingTime                  	=	25	,	/* TRIPOD IS FASTER	*/
+	ReloadTime                  	=	25	,	
+	SwingTime                   	=	0.5	,
+	MinimumSwingTime            	=	0.5	,
+	SwingAmountBeforeImpact     	=	0.2	,	/* SIMULATE BURST DELAY */
+	RecoilDelay                 	=	0	,
+	Weight                      	=	3.2	,	/* TRIPOD NEGATES WEIGHT */
+	OAL				=	4.0	,	/* REALLY LONG */
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	fwp:50_bmgbullets,	
+	AmmoBox                     	=	50BMGBox,	
+	MaxAmmo                     	=	160,	
+	MagazineType                	=	Base.50MiniCan,	
+	MuzzleFlashModelKey = muzzle_flash_hunting_rifle,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	4,	
+	PiercingBullets             	=	TRUE,
+	ShareDamage                 	=	FALSE,	
+	SplatSize                   	=	5,	
+	SplatNumber                 	=	5,	
+	SplatBloodOnNoDeath         	=	TRUE,	
+	PushBackMod                 	=	0.8,	
+	KnockBackOnNoDeath          	=	TRUE,	
+	KnockdownMod                	=	8,	
+	DoorDamage                  	=	20,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Idle_Weapon2
+	IdleAnim                    	=	Run_Weapon2,	
+	SwingAnim                   	=	Rifle,
+	MetalValue                  	=	65,	
+	SoundVolume                 	=	200,	
+	SoundRadius                 	=	200,	
+	SoundGain                   	=	1,	
+	NPCSoundBoost               	=	1.5,	
+	SwingSound                  	=	[6]Minigun_308,
+	BringToBearSound		=	M14BringToBear,
+	HitSound            		=	BulletHitBody,
+	ClickSound         		=	M14Jam,
+	BreakSound       		=	M14Break,
+	EquipSound       		=	M14Equip,
+	UnequipSound     		=	M14UnEquip,
+	InsertAmmoSound  		=	M14InsertAmmo,
+	EjectAmmoSound  		=	M14EjectAmmo,
+	InsertAmmoStartSound		=	M14InsertAmmoStart,
+	InsertAmmoStopSound		=	M14InsertAmmoStop,
+	EjectAmmoStartSound		=	M14EjectAmmoStart,
+	EjectAmmoStopSound		=	M14EjectAmmoStop,
+	ShellFallSound    		=	M14CartridgeFall,
+	RackSound        		=	M14Rack,
+	ImpactSound            		=	null,
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpriteOPEN			=	DSHK_OPEN,
+	SpriteCLOSED			=	DSHK,
+	SpriteREST			=	DSHK_REST,
+	Fold				=	DSHK_Fold,
+	/* =========== ATTACHMENT DATA ============ */
+	ModelWeaponPart = Light_Small			Light_Small		side	side	,
+	ModelWeaponPart = Light_Small_TLR_7AH		Light_Small_TLR_7AH	side	side	,
+	ModelWeaponPart = Light_Medium_M952V		Light_Medium_M952V	side	side	,
+	ModelWeaponPart = Light_Large			Light_Large		side	side	,
+	ModelWeaponPart = Laser_Green			Laser_Green		side	side	,
+	ModelWeaponPart = Laser_Red			Laser_Red		side	side	,
+	ModelWeaponPart = Laser_DVAL			Laser_DVAL		side	side	,
+	ModelWeaponPart = Laser_PEQ15			Laser_PEQ15		side	side	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Green	FWP_LaserBeam_Green	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Red	FWP_LaserBeam_Red	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_DVAL	FWP_LaserBeam_DVAL	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_PEQ15	FWP_LaserBeam_PEQ15	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Standard_Mag			AmmoCan50		mag	mag	,
+	}			
+
+	model DSHK
+	{			
+		mesh = weapons/firearm/DSHK,
+		texture = weapons/firearm/DSHK,
+
+		attachment world
+		{
+			offset = 0.0000 0.2000 -0.5500,
+			rotate = 0.0000 -90.0000 0.0000,
+		}
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.9410 -0.0022,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.1300 0.2600 0.0025,
+			rotate = 0.0000 0.0000 90.000,
+		}		
+	}
+
+	model DSHK_OPEN
+	{			
+		mesh = weapons/firearm/DSHK_OPEN,
+		texture = weapons/firearm/DSHK,
+
+		attachment world
+		{
+			offset = 0.0000 0.2000 -0.5500,
+			rotate = 0.0000 -90.0000 0.0000,
+		}
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.9410 -0.0022,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.1300 0.2600 0.0025,
+			rotate = 0.0000 0.0000 90.000,
+		}		
+	}
+
+	model DSHK_REST
+	{			
+		mesh = weapons/firearm/DSHK_REST,
+		texture = weapons/firearm/DSHK,
+
+		attachment world
+		{
+			offset = 0.0000 0.2000 -0.5500,
+			rotate = 0.0000 -90.0000 0.0000,
+		}
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.9410 -0.0022,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = -0.2621 0.2614 -0.0565,
+			rotate = -24.500 -16.0000 -22.100,
+		}		
+	}
+				
+	fixing Fix DSHK
+	{			
+		Require = Base.DSHK,
+		Fixer = Base.Cleaning=1,
+		Fixer = Base.WD=1,
+	}
+
+
+
+	item	DSHK_Fold	{	
+				
+	DisplayName                 	=	Fixed DSHK Machine-Gun (w/Folded Tripod),
+	Icon                        	=	DSHK,
+	WeaponSprite                	=	DSHK_Fold,
+	Type                        	=	Weapon,
+
+	ItemType = base:weapon,
+	Categories			=	Improvised;Spear,
+	SubCategory                 	=	Spear,	
+	IsAimedHandWeapon		=	TRUE,
+	IsAimedFirearm              	=	TRUE,
+/*	WeaponReloadType            	=	boltaction,	*/
+	FireMode                    	=	Auto,
+	FireModePossibilities       	=	Auto,
+	EnduranceMod			=	6,		/* MORE THAN SLEDGE */
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,
+/*	Tags				=	HeavyItem,	MESSES WITH 'NON-MOVEABLES' TYPE ITEMS WHEN LOOTING */
+	Tags				=	Fixed_FOLD,
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	1.4	,
+	MinDamage                   	=	0.4	,
+	MaxDamage                   	=	0.8	,
+	CriticalChance              	=	10	,
+	CritDmgMultiplier            	=	2	,	
+	MinAngle                     	=	0.8	,
+	ConditionMax                	=	50	,	
+	ConditionLowerChanceOneIn   	=	20	,	/* NOT MEANT TO BE SWUNG */
+	SwingTime                   	=	2.0	,
+	MinimumSwingTime            	=	2.0	,
+	SwingAmountBeforeImpact     	=	0.5	,
+	Weight                      	=	31.8	,	/* 31.8 = 75 lbs */
+	OAL				=	4.0	,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	fwp:50_bmgbullets,	
+	AmmoBox                     	=	50BMGBox,	
+	MaxAmmo                     	=	160,	
+	MagazineType                	=	Base.50MiniCan,	
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	4,	
+	ShareDamage                 	=	FALSE,	
+	SplatSize                   	=	1,	
+	SplatNumber                 	=	1,	
+	SplatBloodOnNoDeath         	=	TRUE,	
+	PushBackMod                 	=	0.4,	
+	KnockBackOnNoDeath          	=	TRUE,	
+	KnockdownMod                	=	4,	
+	DoorDamage                  	=	4,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Idle_Weapon2
+	IdleAnim                    	=	Run_Weapon2,	
+	MetalValue                  	=	65,	
+
+	SwingAnim			=	Spear,
+	HitFloorSound			=	SledgehammerHit,
+	ImpactSound			=	SledgehammerHit,
+	DoorHitSound			=	SledgehammerHit,
+	HitSound			=	SledgehammerHit,
+	SwingSound			=	SledgehammerSwing,
+	BreakSound			=	SledgehammerBreak,
+
+	BringToBearSound		=	M14BringToBear,
+	EquipSound       		=	M14Equip,
+	UnequipSound     		=	M14UnEquip,
+
+	InsertAmmoSound  		=	M14InsertAmmo,
+	EjectAmmoSound  		=	M14EjectAmmo,
+	InsertAmmoStartSound		=	M14InsertAmmoStart,
+	InsertAmmoStopSound		=	M14InsertAmmoStop,
+	EjectAmmoStartSound		=	M14EjectAmmoStart,
+	EjectAmmoStopSound		=	M14EjectAmmoStop,
+	ShellFallSound    		=	M14CartridgeFall,
+	RackSound        		=	M14Rack,
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpriteOPEN			=	DSHK_Fold_OPEN,
+	SpriteCLOSED			=	DSHK_Fold,
+	Fold				=	DSHK,
+	/* =========== ATTACHMENT DATA ============ */
+	ModelWeaponPart = Light_Small			Light_Small		side	side	,
+	ModelWeaponPart = Light_Small_TLR_7AH		Light_Small_TLR_7AH	side	side	,
+	ModelWeaponPart = Light_Medium_M952V		Light_Medium_M952V	side	side	,
+	ModelWeaponPart = Light_Large			Light_Large		side	side	,
+	ModelWeaponPart = Laser_Green			Laser_Green		side	side	,
+	ModelWeaponPart = Laser_Red			Laser_Red		side	side	,
+	ModelWeaponPart = Laser_DVAL			Laser_DVAL		side	side	,
+	ModelWeaponPart = Laser_PEQ15			Laser_PEQ15		side	side	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Green	FWP_LaserBeam_Green	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Red	FWP_LaserBeam_Red	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_DVAL	FWP_LaserBeam_DVAL	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_PEQ15	FWP_LaserBeam_PEQ15	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Standard_Mag			AmmoCan50		mag	mag	,
+	}			
+
+	model DSHK_Fold
+	{			
+		mesh = weapons/firearm/DSHK_Fold,
+		texture = weapons/firearm/DSHK,
+
+	/*	attachment world
+		{
+			offset = 0.0000 0.2000 -0.5500,
+			rotate = 0.0000 -90.0000 0.0000,
+		}						*/
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.5760 -0.0810,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.1300 0.0461 0.0932,
+			rotate = 0.0000 5.0000 90.000,
+		}		
+	}
+
+	model DSHK_Fold_OPEN
+	{			
+		mesh = weapons/firearm/DSHK_Fold_OPEN,
+		texture = weapons/firearm/DSHK,
+
+	/*	attachment world
+		{
+			offset = 0.0000 0.2000 -0.5500,
+			rotate = 0.0000 -90.0000 0.0000,
+		}						*/
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.5760 -0.0810,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.1300 0.0461 0.0932,
+			rotate = 0.0000 5.0000 90.000,
+		}		
+	}
+				
+	fixing Fix DSHK_Fold
+	{			
+		Require = Base.DSHK_Fold,
+		Fixer = Base.Cleaning=1,
+		Fixer = Base.WD=1,
+	}
+
+
+
+
+/*					
+	item	Fixed_MG	{	
+				
+	DisplayName                 	=	Fixed Machine-Gun (w/Tripod),
+	Icon                        	=	Fixed_MG,	
+	WeaponSprite                	=	Fixed_MG,
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,	
+	IsAimedFirearm              	=	TRUE,	
+	WeaponReloadType            	=	boltaction,	
+	FireMode                    	=	[6]Rotary,
+/*	AttachmentType              	=	Rifle,				*/
+/*	UseEndurance                	=	TRUE,		DONT DO SHIT	*/
+/*	EnduranceMod			=	0.2,		DONT DO SHIT	*/
+/*	BaseSpeed			=	0.5,		DONT DO SHIT	*/
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,	
+	Tags				=	Fixed,
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	25	,
+	AimingPerkRangeModifier     	=	4.5	,
+	MinDamage                   	=	1.9	,
+	MaxDamage                   	=	2.5	,
+	CriticalChance              	=	25	,
+	CritDmgMultiplier            	=	4	,	
+	AimingPerkCritModifier      	=	10	,	
+	HitChance                   	=	25	,	/* +10	*/
+	ToHitModifier               	=	1.5	,	
+	AimingPerkHitChanceModifier 	=	13	,
+	MinAngle                     	=	0.950	,
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	50	,	
+	ConditionLowerChanceOneIn   	=	80	,	
+	MultipleHitConditionAffected	=	FALSE	,	
+	JamGunChance                	=	0.01	,	
+	AimingTime                  	=	15	,	/* +5 HIGHER IS BETTER	*/
+	ReloadTime                  	=	25	,	
+	SwingTime                   	=	0	,
+	MinimumSwingTime            	=	0	,
+	SwingAmountBeforeImpact     	=	1.0	,	/* SIMULATE BURST DELAY */
+	RecoilDelay                 	=	0	,
+	Weight                      	=	20	,	/* 9.2 = 28 lbs */
+	OAL				=	1.9	,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	base:bullets_556,	
+	AmmoBox                     	=	556Box,	
+	MaxAmmo                     	=	520,	
+	MagazineType                	=	Base.556MiniCan,	
+	MuzzleFlashModelKey = muzzle_flash_hunting_rifle,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	2,	
+	PiercingBullets             	=	TRUE,
+	ShareDamage                 	=	FALSE,	
+	SplatSize                   	=	3,	
+	SplatNumber                 	=	3,	
+	SplatBloodOnNoDeath         	=	TRUE,	
+	PushBackMod                 	=	0.4,	
+	KnockBackOnNoDeath          	=	TRUE,	
+	KnockdownMod                	=	4,	
+	DoorDamage                  	=	12,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Idle_Weapon2
+	IdleAnim                    	=	Run_Weapon2,	
+	SwingAnim                   	=	Rifle,
+	MetalValue                  	=	65,	
+	SoundVolume                 	=	100,	
+	SoundRadius                 	=	90,	
+	SoundGain                   	=	1,	
+	NPCSoundBoost               	=	1.5,	
+	SwingSound                  	=	[6]Minigun_308,
+	BringToBearSound		=	M14BringToBear,
+	HitSound            		=	BulletHitBody,
+	ClickSound         		=	M14Jam,
+	BreakSound       		=	M14Break,
+	EquipSound       		=	M14Equip,
+	UnequipSound     		=	M14UnEquip,
+	InsertAmmoSound  		=	M14InsertAmmo,
+	EjectAmmoSound  		=	M14EjectAmmo,
+	InsertAmmoStartSound		=	M14InsertAmmoStart,
+	InsertAmmoStopSound		=	M14InsertAmmoStop,
+	EjectAmmoStartSound		=	M14EjectAmmoStart,
+	EjectAmmoStopSound		=	M14EjectAmmoStop,
+	ShellFallSound    		=	M14CartridgeFall,
+	RackSound        		=	M14Rack,
+	ImpactSound            		=	null,
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpriteOPEN			=	Fixed_MG_OPEN,
+	SpriteCLOSED			=	Fixed_MG,
+	SpriteREST			=	Fixed_MG_REST,
+	Fold				=	Fixed_MG_Fold,
+	/* =========== ATTACHMENT DATA ============ */
+	ModelWeaponPart = Light_Small			Light_Small		side	side	,
+	ModelWeaponPart = Light_Small_TLR_7AH		Light_Small_TLR_7AH	side	side	,
+	ModelWeaponPart = Light_Medium_M952V		Light_Medium_M952V	side	side	,
+	ModelWeaponPart = Light_Large			Light_Large		side	side	,
+	ModelWeaponPart = Laser_Green			Laser_Green		side	side	,
+	ModelWeaponPart = Laser_Red			Laser_Red		side	side	,
+	ModelWeaponPart = Laser_DVAL			Laser_DVAL		side	side	,
+	ModelWeaponPart = Laser_PEQ15			Laser_PEQ15		side	side	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Green	FWP_LaserBeam_Green	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Red	FWP_LaserBeam_Red	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_DVAL	FWP_LaserBeam_DVAL	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_PEQ15	FWP_LaserBeam_PEQ15	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Standard_Mag			AmmoCan50		mag	mag	,
+	}			
+
+	model Fixed_MG
+	{			
+		mesh = weapons/firearm/Fixed_MG,
+		texture = weapons/firearm/Fixed_MG,
+
+		attachment world
+		{
+			offset = 0.0000 0.2000 -0.5500,
+			rotate = 0.0000 -90.0000 0.0000,
+		}
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.5760 -0.0810,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.0220 0.0515 -0.1440,
+			rotate = 0.0000 0.0000 90.000,
+		}		
+	}
+
+	model Fixed_MG_OPEN
+	{			
+		mesh = weapons/firearm/Fixed_MG_OPEN,
+		texture = weapons/firearm/Fixed_MG,
+
+		attachment world
+		{
+			offset = 0.0000 0.2000 -0.5500,
+			rotate = 0.0000 -90.0000 0.0000,
+		}
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.5760 -0.0810,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.0220 0.0515 -0.1440,
+			rotate = 0.0000 0.0000 90.000,
+		}		
+	}
+
+	model Fixed_MG_REST
+	{			
+		mesh = weapons/firearm/Fixed_MG_REST,
+		texture = weapons/firearm/Fixed_MG,
+
+		attachment world
+		{
+			offset = 0.0000 0.2000 -0.5500,
+			rotate = 0.0000 -90.0000 0.0000,
+		}
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.5760 -0.0810,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.0220 0.0515 -0.1440,
+			rotate = 0.0000 0.0000 90.000,
+		}		
+	}
+				
+	fixing Fix Fixed_MG
+	{			
+		Require = Base.Fixed_MG,
+		Fixer = Base.Cleaning=1,
+		Fixer = Base.WD=1,
+	}
+
+
+
+	item	Fixed_MG_Fold	{	
+				
+	DisplayName                 	=	Fixed Machine-Gun (w/Folded Tripod),
+	Icon                        	=	Fixed_MG,
+	WeaponSprite                	=	Fixed_MG_Fold,
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,	
+	IsAimedFirearm              	=	TRUE,	
+	WeaponReloadType            	=	boltaction,	
+	FireMode                    	=	[6]Rotary,
+/*	AttachmentType              	=	Rifle,				*/
+/*	UseEndurance                	=	TRUE,		DONT DO SHIT	*/
+/*	EnduranceMod			=	0.2,		DONT DO SHIT	*/
+/*	BaseSpeed			=	0.5,		DONT DO SHIT	*/
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,	
+/*	Tags				=	Fixed,		*/
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	25	,
+	AimingPerkRangeModifier     	=	4.0	,	/* -0.5 NOT ACCURATE WITHOUT SUPPORT	*/
+	MinDamage                   	=	1.9	,
+	MaxDamage                   	=	2.5	,
+	CriticalChance              	=	25	,
+	CritDmgMultiplier            	=	4	,	
+	AimingPerkCritModifier      	=	10	,	
+	HitChance                   	=	15	,
+	ToHitModifier               	=	1.5	,	
+	AimingPerkHitChanceModifier 	=	8	,	/* -5 HARDER TO LEARN	*/
+	MinAngle                     	=	0.950	,
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	50	,	
+	ConditionLowerChanceOneIn   	=	70	,	/* ROUGHER WITHOUT SUPPORT	*/
+	MultipleHitConditionAffected	=	FALSE	,	
+	JamGunChance                	=	0.01	,	
+	AimingTime                  	=	10	,
+	ReloadTime                  	=	45	,	
+	SwingTime                   	=	0	,
+	MinimumSwingTime            	=	0	,
+	SwingAmountBeforeImpact     	=	1.0	,	/* SIMULATE BURST DELAY */
+	RecoilDelay                 	=	0	,
+	Weight                      	=	20	,	/* 9.2 = 28 lbs */
+	OAL				=	1.9	,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	base:bullets_556,	
+	AmmoBox                     	=	556Box,	
+	MaxAmmo                     	=	520,	
+	MagazineType                	=	Base.556MiniCan,	
+	MuzzleFlashModelKey = muzzle_flash_hunting_rifle,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	2,	
+	PiercingBullets             	=	TRUE,
+	ShareDamage                 	=	FALSE,	
+	SplatSize                   	=	3,	
+	SplatNumber                 	=	3,	
+	SplatBloodOnNoDeath         	=	TRUE,	
+	PushBackMod                 	=	0.4,	
+	KnockBackOnNoDeath          	=	TRUE,	
+	KnockdownMod                	=	4,	
+	DoorDamage                  	=	12,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Idle_Weapon2
+	IdleAnim                    	=	Run_Weapon2,	
+	SwingAnim                   	=	Rifle,
+	MetalValue                  	=	65,	
+	SoundVolume                 	=	100,	
+	SoundRadius                 	=	90,	
+	SoundGain                   	=	1,	
+	NPCSoundBoost               	=	1.5,	
+	SwingSound                  	=	[6]Minigun_308,
+	BringToBearSound		=	M14BringToBear,
+	HitSound            		=	BulletHitBody,
+	ClickSound         		=	M14Jam,
+	BreakSound       		=	M14Break,
+	EquipSound       		=	M14Equip,
+	UnequipSound     		=	M14UnEquip,
+	InsertAmmoSound  		=	M14InsertAmmo,
+	EjectAmmoSound  		=	M14EjectAmmo,
+	InsertAmmoStartSound		=	M14InsertAmmoStart,
+	InsertAmmoStopSound		=	M14InsertAmmoStop,
+	EjectAmmoStartSound		=	M14EjectAmmoStart,
+	EjectAmmoStopSound		=	M14EjectAmmoStop,
+	ShellFallSound    		=	M14CartridgeFall,
+	RackSound        		=	M14Rack,
+	ImpactSound            		=	null,
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpriteOPEN			=	Fixed_MG_Fold_OPEN,
+	SpriteCLOSED			=	Fixed_MG_Fold,
+	Fold				=	Fixed_MG,
+	/* =========== ATTACHMENT DATA ============ */
+	ModelWeaponPart = Light_Small			Light_Small		side	side	,
+	ModelWeaponPart = Light_Small_TLR_7AH		Light_Small_TLR_7AH	side	side	,
+	ModelWeaponPart = Light_Medium_M952V		Light_Medium_M952V	side	side	,
+	ModelWeaponPart = Light_Large			Light_Large		side	side	,
+	ModelWeaponPart = Laser_Green			Laser_Green		side	side	,
+	ModelWeaponPart = Laser_Red			Laser_Red		side	side	,
+	ModelWeaponPart = Laser_DVAL			Laser_DVAL		side	side	,
+	ModelWeaponPart = Laser_PEQ15			Laser_PEQ15		side	side	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Green	FWP_LaserBeam_Green	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Red	FWP_LaserBeam_Red	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_DVAL	FWP_LaserBeam_DVAL	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_PEQ15	FWP_LaserBeam_PEQ15	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Standard_Mag			AmmoCan50		mag	mag	,
+	}			
+
+	model Fixed_MG_Fold
+	{			
+		mesh = weapons/firearm/Fixed_MG_Fold,
+		texture = weapons/firearm/Fixed_MG,
+
+		attachment world
+		{
+			offset = 0.0000 0.2000 -0.5500,
+			rotate = 0.0000 -90.0000 0.0000,
+		}
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.5760 -0.0810,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.0220 0.0515 -0.1440,
+			rotate = 0.0000 0.0000 90.000,
+		}		
+	}
+
+	model Fixed_MG_Fold_OPEN
+	{			
+		mesh = weapons/firearm/Fixed_MG_Fold_OPEN,
+		texture = weapons/firearm/Fixed_MG,
+
+		attachment world
+		{
+			offset = 0.0000 0.2000 -0.5500,
+			rotate = 0.0000 -90.0000 0.0000,
+		}
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.5760 -0.0810,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.0220 0.0515 -0.1440,
+			rotate = 0.0000 0.0000 90.000,
+		}		
+	}
+				
+	fixing Fix Fixed_MG_Fold
+	{			
+		Require = Base.Fixed_MG_Fold,
+		Fixer = Base.Cleaning=1,
+		Fixer = Base.WD=1,
+	}
+*/
+
+}

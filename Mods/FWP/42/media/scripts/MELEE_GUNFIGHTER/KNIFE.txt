@@ -1,0 +1,530 @@
+module Base
+{
+
+/*	==================================================
+	==	(BRITA) RAMBO KNIFE		THROWABLE	==
+	==================================================	*/
+	item RamboKnife
+	{
+
+	DisplayName			=	Rambo III Standard Edition 13" Blade	,
+	Icon				=	RamboKnife		,
+	WeaponSprite			=	RamboKnife		,
+	Type				=	Weapon			,
+	ItemType = base:weapon,
+	Categories			=	LargeBlade		,
+	DisplayCategory			=	Weapon			,
+	SubCategory			=	Stab			,
+	Tags				=	CutPlant;SharpKnife	,
+	AttachmentType			=	Knife			,
+	IsAimedHandWeapon		=	TRUE			,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange			=	0.61	,
+	MaxRange			=	1.1	,	/* ALMOST LIKE MACHETTE */
+	MinDamage			=	1.0	,
+	MaxDamage			=	1.5	,	/* ALMOST LIKE MACHETTE */
+	CriticalChance			=	50	,	/* SAME AS HUNTING */
+	CritDmgMultiplier		=	4	,	/* 1 HIGHER */
+	MinAngle			=	0.65	,
+	SwingTime			=	2.5	,
+	MinimumSwingTime		=	2.5	,
+	SwingAmountBeforeImpact		=	0.02	,
+	ConditionMax			=	20	,	/* DOUBLE HUNTING */
+	ConditionLowerChanceOneIn	=	20	,	/* 5 HIGHER THAN HUNTING */
+	AimingMod			=	0.8	,
+	EnduranceMod			=	0.5	,
+	WeaponLength			=	0.30	,	/* 18.0 in */
+	Weight				=	2.3	,	/* 30.7 oz */
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount			=	1	,
+	SplatNumber			=	4	,
+	PushBackMod			=	0.3	,
+	KnockdownMod			=	0	,
+	KnockBackOnNoDeath		=	FALSE	,
+	SplatBloodOnNoDeath		=	TRUE	,
+	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	TreeDamage			=	2	,
+	DoorDamage			=	2	,
+	/* ============ ANIMATION & SOUND ============ */
+	SwingAnim			=	Stab	,
+	CloseKillMove			=	Jaw_Stab,
+	RunAnim				=	Run_Weapon2,
+	IdleAnim			=	Idle_Weapon2,
+	BreakSound  			=	HuntingKnifeBreak,
+	HitFloorSound			=	HuntingKnifeHit,
+	ImpactSound			=	HuntingKnifeHit,
+	DoorHitSound			=	HuntingKnifeHit,
+	HitSound			=	HuntingKnifeHit,
+	SwingSound			=	HuntingKnifeSwing,
+	MetalValue			=	30	,
+	/* =========== TRANSFORM VARIABLES =========== */
+	ThrownGrip			=	Base.RamboKnife_Thrown,
+	Tooltip				=	Tooltip_Thrown,
+ 	}
+
+	item	RamboKnife_Thrown	{
+				
+	DisplayName			=	Rambo III Standard Edition 13" Blade (Thrown)	,
+	Icon                        	=	RamboKnife_Thrown	,
+	WeaponSprite                	=	RamboKnife		,	/* USE SAME */
+	Type                        	=	Weapon			,
+	ItemType = base:weapon,
+	Categories			=	LargeBlade		,
+	SubCategory                 	=	Stab			,
+	Tags				=	Thrown			,
+	AttachmentType			=	Knife			,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	6	,
+	MinDamage                   	=	0.5	,	/* HALF SWING DAMAGE */
+	MaxDamage                   	=	0.7	,	/* HALF SWING DAMAGE */
+	CriticalChance              	=	5	,
+	AimingPerkCritModifier      	=	2	,
+	CritDmgMultiplier		=	4	,
+	MinAngle                     	=	0.920	,
+/*	HitAngleMod			=	-30	,	*/
+	ConditionMax                	=	20	,	
+	ConditionLowerChanceOneIn   	=	15	,	/* MORE WEAR THEN SWING */
+	SwingTime                   	=	0.2	,
+	MinimumSwingTime            	=	0.2	,
+	SwingAmountBeforeImpact     	=	1.0	,
+	EnduranceMod			=	0.5	,
+	WeaponLength			=	6.5	,	/* MAX RANGE + 0.5 */
+	Weight                      	=	2.3	,
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount                 	=	1	,	
+	PushBackMod			=	0.3	,
+	KnockDownMod			=	2	,
+	KnockBackOnNoDeath          	=	FALSE	,
+	SplatNumber                 	=	4	,	
+	SplatBloodOnNoDeath         	=	TRUE	,	
+	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	DoorDamage                  	=	2	,	
+	TreeDamage                  	=	2	,	
+	/* ============ ANIMATION & SOUND ============ */
+	RunAnim                     	=	Run_Weapon2,
+	SwingAnim			=	Swing,	
+	HitFloorSound			=	HuntingKnifeHit,
+	ImpactSound			=	HuntingKnifeHit,
+	DoorHitSound			=	HuntingKnifeHit,
+	HitSound			=	HuntingKnifeHit,
+	SwingSound			=	HuntingKnifeSwing,
+	/* =========== TRANSFORM VARIABLES =========== */
+	NormalGrip			=	Base.RamboKnife,
+	Tooltip				=	Tooltip_Thrown,
+	UseSelf                     	=	TRUE,	
+	}
+
+	model RamboKnife
+	{
+		mesh = weapons/1handed/RamboKnife,
+	}
+
+
+
+/*	==================================================
+	==	(BRITA) BUTTERFLY KNIFE		FLIPABLE	==
+	==================================================	*/
+	item Butterfly			/* 	SPEAR	*/
+	{
+
+	DisplayName			=	Balisong Butterfly Knife	,
+	Icon				=	Butterfly		,
+	WeaponSprite			=	Butterfly_Up		,
+	Type				=	Weapon			,
+	ItemType = base:weapon,
+	Categories			=	SmallBlade		,
+	DisplayCategory			=	Weapon			,
+	SubCategory			=	Stab			,
+	Tags				=	CutPlant;SharpKnife	,
+	AttachmentType			=	Knife			,
+	IsAimedHandWeapon		=	TRUE			,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange			=	0.61	,
+	MaxRange			=	0.8	,
+	MinDamage			=	0.3	,	/* ALMOST AS ICEPICK.. IS OP*/
+	MaxDamage			=	0.6	,
+	CriticalChance			=	15	,	/* 5 HIGHER THAN ICEPICK */
+	CritDmgMultiplier		=	5	,
+	MinAngle			=	0.65	,
+	SwingTime			=	2.0	,
+	MinimumSwingTime		=	2.0	,
+	SwingAmountBeforeImpact		=	0.02	,
+	ConditionMax			=	10	,
+	ConditionLowerChanceOneIn	=	10	,	/* 3 BETTER THAN ICE PICK */
+	AimingMod			=	0.8	,
+	EnduranceMod			=	0.5	,
+	WeaponLength			=	0.17	,
+	Weight				=	0.2	,
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount			=	1	,
+	SplatNumber			=	2	,
+	PushBackMod			=	0.3	,
+	KnockdownMod			=	0	,
+	KnockBackOnNoDeath		=	FALSE	,
+	SplatBloodOnNoDeath		=	TRUE	,
+	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	TreeDamage			=	1	,
+	DoorDamage			=	1	,
+	/* ============ ANIMATION & SOUND ============ */
+	SwingAnim			=	Stab	,
+	CloseKillMove			=	Jaw_Stab,
+	RunAnim				=	Run_Weapon2,
+	IdleAnim			=	Idle_Weapon2,
+	BreakSound  			=	IcePickBreak,
+	HitFloorSound			=	IcePickHit,
+	ImpactSound			=	IcePickHit,
+	DoorHitSound			=	IcePickHit,
+	HitSound			=	IcePickHit,
+	SwingSound			=	IcePickSwing,
+	MetalValue			=	10	,
+	/* =========== TRANSFORM VARIABLES =========== */
+	CloseGrip			=	Butterfly_Fold,
+	WideGrip			=	Butterfly_Down,
+	GripSound			=	Butterfly_Flip,
+	Tooltip				=	Tooltip_Butterfly,
+ 	}
+
+	model Butterfly_Up
+	{
+		mesh = weapons/1handed/Butterfly_Up,
+		texture = weapons/1handed/Butterfly,
+	}
+
+	item Butterfly_Down		/*	WIDE	*/
+	{
+
+	DisplayName			=	Balisong Butterfly Knife	,
+	Icon				=	Butterfly_Down		,
+	WeaponSprite			=	Butterfly_Down		,
+	Type				=	Weapon			,
+	ItemType = base:weapon,
+	Categories			=	SmallBlade		,
+	DisplayCategory			=	Weapon			,
+	SubCategory			=	Stab			,
+	Tags				=	CutPlant;SharpKnife	,
+	AttachmentType			=	Knife			,
+	IsAimedHandWeapon		=	TRUE			,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange			=	0.61	,
+	MaxRange			=	0.65	,
+	MinDamage			=	0.4	,	/* AS ICEPICK */
+	MaxDamage			=	0.7	,
+	CriticalChance			=	15	,	/* 5 HIGHER THAN ICEPICK */
+	CritDmgMultiplier		=	5	,
+	MinAngle			=	0.65	,
+	SwingTime			=	2.0	,
+	MinimumSwingTime		=	2.0	,
+	SwingAmountBeforeImpact		=	0.02	,
+	ConditionMax			=	10	,
+	ConditionLowerChanceOneIn	=	10	,	/* 3 BETTER THAN ICE PICK */
+	AimingMod			=	0.8	,
+	EnduranceMod			=	0.5	,
+	WeaponLength			=	0.15	,
+	Weight				=	0.2	,
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount			=	1	,
+	SplatNumber			=	2	,
+	PushBackMod			=	0.3	,
+	KnockdownMod			=	0	,
+	KnockBackOnNoDeath		=	FALSE	,
+	SplatBloodOnNoDeath		=	TRUE	,
+	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	TreeDamage			=	1	,
+	DoorDamage			=	1	,
+	/* ============ ANIMATION & SOUND ============ */
+	SwingAnim			=	Bat	,
+	RunAnim				=	Run_Weapon2,
+	IdleAnim			=	Idle_Weapon2,
+	BreakSound  			=	IcePickBreak,
+	HitFloorSound			=	IcePickHit,
+	ImpactSound			=	IcePickHit,
+	DoorHitSound			=	IcePickHit,
+	HitSound			=	IcePickHit,
+	SwingSound			=	IcePickSwing,
+	MetalValue			=	10	,
+	/* =========== TRANSFORM VARIABLES =========== */
+	CloseGrip			=	Butterfly_Fold,
+	SpearGrip			=	Butterfly,
+	GripSound			=	Butterfly_Flip,
+	Tooltip				=	Tooltip_Butterfly,
+ 	}
+
+	model Butterfly_Down
+	{
+		mesh = weapons/1handed/Butterfly_Down,
+		texture = weapons/1handed/Butterfly,
+	}
+
+	item Butterfly_Fold		/*	CLOSE	*/
+	{
+
+	DisplayName			=	Balisong Butterfly Knife	,
+	Icon				=	Butterfly_Fold	,
+	WeaponSprite			=	Butterfly_Fold	,
+	Type				=	Weapon		,
+	ItemType = base:weapon,
+	Categories			=	SmallBlade	,
+	DisplayCategory			=	Weapon		,
+/*	SubCategory			=	Stab		,	*/
+	AttachmentType			=	Knife		,
+	IsAimedHandWeapon		=	TRUE		,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange			=	0.61	,
+	MaxRange			=	0.65	,
+	MinDamage			=	0.0	,	/* AS ICEPICK */
+	MaxDamage			=	0.1	,
+	CriticalChance			=	0	,	/* 5 HIGHER THAN ICEPICK */
+	CritDmgMultiplier		=	0	,
+	MinAngle			=	0.65	,
+	SwingTime			=	2.0	,
+	MinimumSwingTime		=	2.0	,
+	SwingAmountBeforeImpact		=	0.02	,
+	ConditionMax			=	10	,
+	ConditionLowerChanceOneIn	=	40	,	/* BASICALLY WONT BREAK */
+	AimingMod			=	0.8	,
+	EnduranceMod			=	0.5	,
+	WeaponLength			=	0.1	,
+	Weight				=	0.2	,
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount			=	1	,
+	SplatNumber			=	1	,
+	PushBackMod			=	0	,
+	KnockdownMod			=	0	,
+	KnockBackOnNoDeath		=	FALSE	,
+	SplatBloodOnNoDeath		=	FALSE	,
+/*	DamageCategory			=	Slash	,	*/
+/*	DamageMakeHole			=	FALSE	,	*/
+	TreeDamage			=	0	,
+	DoorDamage			=	0	,
+	/* ============ ANIMATION & SOUND ============ */
+	SwingAnim			=	Stab	,
+	RunAnim				=	Run_Weapon2,
+	IdleAnim			=	Idle_Weapon2,
+	BreakSound  			=	IcePickBreak,
+	HitFloorSound			=	IcePickHit,
+	ImpactSound			=	IcePickHit,
+	DoorHitSound			=	IcePickHit,
+	HitSound			=	IcePickHit,
+	SwingSound			=	IcePickSwing,
+	MetalValue			=	10	,
+	/* =========== TRANSFORM VARIABLES =========== */
+	WideGrip			=	Butterfly_Down,
+	SpearGrip			=	Butterfly,
+	GripSound			=	Butterfly_Flip,
+	Tooltip				=	Tooltip_Butterfly,
+ 	}
+
+	model Butterfly_Fold
+	{
+		mesh = weapons/1handed/Butterfly_Fold,
+		texture = weapons/1handed/Butterfly,
+	}
+
+
+
+
+/*	==================================================
+	==	(BRITA) KARAMBIT KNIFE		FLIPPABLE	==
+	==================================================	*/
+	item Karambit
+	{
+
+	DisplayName			=	Karambit Knife	,
+	Icon				=	Karambit	,
+	WeaponSprite			=	Karambit	,
+	Type				=	Weapon		,
+	ItemType = base:weapon,
+	Categories			=	SmallBlade	,
+	DisplayCategory			=	Weapon		,
+	SubCategory			=	Stab		,
+	Tags				=	CutPlant;SharpKnife	,
+	AttachmentType			=	Knife		,
+	IsAimedHandWeapon		=	TRUE		,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange			=	0.61	,
+	MaxRange			=	0.8	,
+	MinDamage			=	0.5	,	/* ALMOST AS ICE PICK.. IS OP */
+	MaxDamage			=	0.7	,
+	CriticalChance			=	17	,
+	CritDmgMultiplier		=	5	,
+	MinAngle			=	0.65	,
+	SwingTime			=	2.0	,
+	MinimumSwingTime		=	2.0	,
+	SwingAmountBeforeImpact		=	0.02	,
+	ConditionMax			=	12	,
+	ConditionLowerChanceOneIn	=	15	,	/* 3 FULL TANG BETTER THAN BUTTERYFLY */
+	AimingMod			=	0.8	,
+	EnduranceMod			=	0.5	,
+	WeaponLength			=	0.16	,
+	Weight				=	0.2	,
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount			=	1	,
+	SplatNumber			=	2	,
+	PushBackMod			=	0.3	,
+	KnockdownMod			=	0	,
+	KnockBackOnNoDeath		=	FALSE	,
+	SplatBloodOnNoDeath		=	TRUE	,
+	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	TreeDamage			=	1	,
+	DoorDamage			=	1	,
+	/* ============ ANIMATION & SOUND ============ */
+	SwingAnim			=	Stab	,
+	CloseKillMove			=	Jaw_Stab,
+	RunAnim				=	Run_Weapon2,
+	IdleAnim			=	Idle_Weapon2,
+	BreakSound  			=	IcePickBreak,
+	HitFloorSound			=	IcePickHit,
+	ImpactSound			=	IcePickHit,
+	DoorHitSound			=	IcePickHit,
+	HitSound			=	IcePickHit,
+	SwingSound			=	IcePickSwing,
+	MetalValue			=	10	,
+	/* =========== TRANSFORM VARIABLES =========== */
+	WideGrip			=	Karambit_Down,
+	GripSound			=	Knife_Flip,
+	Tooltip				=	Tooltip_Karambit,
+ 	}
+
+	model Karambit
+	{
+		mesh = weapons/1handed/Karambit,
+	}
+
+	item Karambit_Down		/*	WIDE	*/
+	{
+
+	DisplayName			=	Karambit Knife	,
+	Icon				=	Karambit_Down	,
+	WeaponSprite			=	Karambit_Down	,
+	Type				=	Weapon		,
+	ItemType = base:weapon,
+	Categories			=	SmallBlade	,
+	DisplayCategory			=	Weapon		,
+	SubCategory			=	Stab		,
+	Tags				=	CutPlant;SharpKnife	,
+	AttachmentType			=	Knife		,
+	IsAimedHandWeapon		=	TRUE		,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange			=	0.61	,
+	MaxRange			=	0.7	,
+	MinDamage			=	0.5	,
+	MaxDamage			=	0.7	,
+	CriticalChance			=	17	,
+	CritDmgMultiplier		=	5	,
+	MinAngle			=	0.65	,
+	SwingTime			=	2.0	,
+	MinimumSwingTime		=	2.0	,
+	SwingAmountBeforeImpact		=	0.02	,
+	ConditionMax			=	12	,
+	ConditionLowerChanceOneIn	=	15	,
+	AimingMod			=	0.8	,
+	EnduranceMod			=	0.5	,
+	WeaponLength			=	0.12	,
+	Weight				=	0.2	,
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount			=	1	,
+	SplatNumber			=	2	,
+	PushBackMod			=	0.3	,
+	KnockdownMod			=	0	,
+	KnockBackOnNoDeath		=	FALSE	,
+	SplatBloodOnNoDeath		=	TRUE	,
+	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	TreeDamage			=	1	,
+	DoorDamage			=	1	,
+	/* ============ ANIMATION & SOUND ============ */
+	SwingAnim			=	Bat	,
+	RunAnim				=	Run_Weapon2,
+	IdleAnim			=	Idle_Weapon2,
+	BreakSound  			=	IcePickBreak,
+	HitFloorSound			=	IcePickHit,
+	ImpactSound			=	IcePickHit,
+	DoorHitSound			=	IcePickHit,
+	HitSound			=	IcePickHit,
+	SwingSound			=	IcePickSwing,
+	MetalValue			=	10	,
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpearGrip			=	Karambit,
+	GripSound			=	Knife_Flip,
+	Tooltip				=	Tooltip_Karambit,
+ 	}
+
+	model Karambit_Down
+	{
+		mesh = weapons/1handed/Karambit_Down,
+		texture = weapons/1handed/Karambit,
+	}
+
+
+/*	==================================================
+	==	(BRITA) PUSH DAGGER				==
+	==================================================	*/
+	item PushDagger
+	{
+
+	DisplayName			=	Push Dagger	,
+	Icon				=	PushDagger	,
+	WeaponSprite			=	PushDagger	,
+	Type				=	Weapon		,
+	ItemType = base:weapon,
+	Categories			=	SmallBlade	,
+	DisplayCategory			=	Weapon		,
+	SubCategory			=	Stab		,
+	Tags				=	CutPlant;SharpKnife	,
+	AttachmentType			=	Knife		,
+	IsAimedHandWeapon		=	TRUE		,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange			=	0.61	,
+	MaxRange			=	0.7	,
+	MinDamage			=	0.3	,
+	MaxDamage			=	0.6	,
+	CriticalChance			=	15	,	/* MORE THAN ICE PICK */
+	CritDmgMultiplier		=	3	,	/* LESS THAN ICE PICK */
+	MinAngle			=	0.65	,
+	SwingTime			=	1.7	,	/* FAST */
+	MinimumSwingTime		=	1.7	,
+	SwingAmountBeforeImpact		=	0.02	,
+	ConditionMax			=	12	,
+	ConditionLowerChanceOneIn	=	16	,	/* 3 FULL TANG BETTER THAN BUTTERYFLY */
+	AimingMod			=	0.8	,
+	EnduranceMod			=	0.5	,
+	WeaponLength			=	0.16	,	/* VERY SHORT */
+	Weight				=	0.14	,
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount			=	1	,
+	SplatNumber			=	1	,
+	PushBackMod			=	0.2	,
+	KnockdownMod			=	0	,
+	KnockBackOnNoDeath		=	FALSE	,
+	SplatBloodOnNoDeath		=	TRUE	,
+	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	TreeDamage			=	0	,
+	DoorDamage			=	1	,
+	/* ============ ANIMATION & SOUND ============ */
+	SwingAnim			=	Stab	,
+	CloseKillMove			=	Jaw_Stab,
+	RunAnim				=	Run_Weapon2,
+	IdleAnim			=	Idle_Weapon2,
+	BreakSound  			=	IcePickBreak,
+	HitFloorSound			=	IcePickHit,
+	ImpactSound			=	IcePickHit,
+	DoorHitSound			=	IcePickHit,
+	HitSound			=	IcePickHit,
+	SwingSound			=	IcePickSwing,
+	MetalValue			=	6	,
+	/* =========== TRANSFORM VARIABLES =========== */
+ 	}
+
+
+	model PushDagger
+	{
+		mesh = weapons/1handed/PushDagger,
+	}
+}

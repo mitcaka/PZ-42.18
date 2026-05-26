@@ -1,0 +1,945 @@
+module Ted
+{
+    fluid TedsFizzyOrange
+    {
+	Color          = 239, 230, 139,
+        ColorReference = Khaki,
+        DisplayName = Ted'sFizzyOrange,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -1.0,
+            StressChange = 0.0,
+            ThirstChange = -25.0,
+            UnhappyChange = -5.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid TedCherryBlast
+    {
+	Color          = 205, 60, 71,
+        ColorReference = FruitPunch,
+        DisplayName = TedCherryBlast,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -1.0,
+            StressChange = 0.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -5.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid TedCola
+    {
+	Color          = 59, 46, 34,
+        ColorReference = Cola,
+        DisplayName = TedCola,
+        Categories
+        { 
+	    Beverage, 
+	}
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -1.0,
+            StressChange = 0.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -5.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories 
+		{ 
+			Beverage, 
+		}
+        }
+    }
+
+    fluid TedShake
+    {
+	Color          = 255, 182, 193,
+        ColorReference = LightPink,
+        DisplayName = TedShake,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -5.0,
+            StressChange = 0.0,
+            ThirstChange = -20.0,
+            UnhappyChange = -5.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid TedTea
+    {
+	Color          = 244, 163, 95,
+        ColorReference = SandyBrown,
+        DisplayName = TedTea,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = -2.0,
+            HungerChange = -1.0,
+            StressChange = 0.0,
+            ThirstChange = -35.0,
+            UnhappyChange = -5.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid VoltEnergy
+    {
+	Color          = 0, 190, 255,
+        ColorReference = DeepSkyBlue,
+        DisplayName = VoltEnergy,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = -20.0,
+            HungerChange = -1.0,
+            StressChange = 0.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -5.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid JoltCherry
+    {
+	Color          = 159, 82, 44,
+        ColorReference = Sienna,
+        DisplayName = JoltCherry,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = -30.0,
+            HungerChange = -1.0,
+            StressChange = 0.0,
+            ThirstChange = -20.0,
+            UnhappyChange = -5.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid KentuckyGoldWhiskey
+    {
+	Color          = 255, 214, 0,
+        ColorReference = Gold,
+        DisplayName = KentuckyGoldWhiskey,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = -30.0,
+            HungerChange = 0.0,
+            StressChange = -20.0,
+            ThirstChange = -20.0,
+            UnhappyChange = -20.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.35,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid MtnLightning
+    {
+	Color          = 0, 190, 255,
+        ColorReference = DeepSkyBlue,
+        DisplayName = MountainLightning,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = -10.0,
+            HungerChange = 0.0,
+            StressChange = 0.0,
+            ThirstChange = -25.0,
+            UnhappyChange = -5.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid DrSkipper
+    {
+	Color          = 255, 182, 193,
+        ColorReference = LightPink,
+        DisplayName = Dr.Skipper,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = 0.0,
+            StressChange = 0.0,
+            ThirstChange = -20.0,
+            UnhappyChange = -5.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid ArizonaTea
+    {
+	Color          = 255, 214, 0,
+        ColorReference = Gold,
+        DisplayName = ArizonaIcedTea,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = 0.0,
+            StressChange = 0.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -5.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid MugRootBeer
+    {
+	Color          = 255, 214, 0,
+        ColorReference = Gold,
+        DisplayName = MugRootBeer,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = 0.0,
+            StressChange = 0.0,
+            ThirstChange = -35.0,
+            UnhappyChange = -5.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid Slivovitz
+    {
+	Color          = 252, 245, 230,
+        ColorReference = OldLace,
+        DisplayName = Slivovitz,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 10.0,
+            HungerChange = 0.0,
+            StressChange = -10.0,
+            ThirstChange = -20.0,
+            UnhappyChange = -30.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.5,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid MatchaLatte
+    {
+	Color          = 151, 250, 151,
+        ColorReference = PaleGreen,
+        DisplayName = MatchaLatte,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = 0.0,
+            StressChange = -10.0,
+            ThirstChange = -20.0,
+            UnhappyChange = -15.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid Sake
+    {
+	Color          = 151, 250, 151,
+        ColorReference = PaleGreen,
+        DisplayName = Sake,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = 0.0,
+            StressChange = -10.0,
+            ThirstChange = -20.0,
+            UnhappyChange = -25.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.30,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid IceColdLemonade
+    {
+	Color          = 244, 163, 95,
+        ColorReference = SandyBrown,
+        DisplayName = IceColdLemonade,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = 0.0,
+            StressChange = 0.0,
+            ThirstChange = -20.0,
+            UnhappyChange = -10.0,
+            Calories = 0.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid Noroc
+    {
+	Color          = 255, 214, 0,
+        ColorReference = Gold,
+        DisplayName = Noroc,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = -5.0,
+            HungerChange = 0.0,
+            StressChange = -10.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -15.0,
+            Calories = 25.0,
+            Carbohydrates = 1.0,
+            Lipids = 0.0,
+            Proteins = 0.0,
+            alcohol = 0.2,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid Kvass
+    {
+	Color          = 255, 214, 0,
+        ColorReference = Gold,
+        DisplayName = Kvass,
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -10.0,
+            StressChange = 0.0,
+            ThirstChange = -20.0,
+            UnhappyChange = -10.0,
+            Calories = 500.0,
+            Carbohydrates = 36.0,
+            Lipids = 0.0,
+            Proteins = 4.0,
+            alcohol = 0.25,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+                Beverage,
+            }
+        }
+    }
+
+    fluid Irn-Bru
+    {
+	Color          = 205, 133, 62,
+        ColorReference = Peru,
+        DisplayName = Irn-Bru,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = 0.0,
+            StressChange = -10.0,
+            ThirstChange = -30.0,
+            UnhappyChange = -10.0,
+            Calories = 20.0,
+            Carbohydrates = 4.0,
+            Lipids = 0.0,
+            Proteins = 0.5,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid Absinthe
+    {
+	Color          = 151, 250, 151,
+        ColorReference = PaleGreen,
+        DisplayName = Absinthe,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 10.0,
+            HungerChange = 0.0,
+            StressChange = -20.0,
+            ThirstChange = -25.0,
+            UnhappyChange = -20.0,
+            Calories = 20.0,
+            Carbohydrates = 4.0,
+            Lipids = 0.0,
+            Proteins = 0.5,
+            alcohol = 1.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid GuaranaAntartica
+    {
+	Color          = 151, 250, 151,
+        ColorReference = PaleGreen,
+        DisplayName = GuaranaAntartica,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = 0.0,
+            StressChange = -5.0,
+            ThirstChange = -25.0,
+            UnhappyChange = -20.0,
+            Calories = 98.0,
+            Carbohydrates = 4.0,
+            Lipids = 0.0,
+            Proteins = 0.5,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid Tequila
+    {
+	Color          = 255, 255, 255,
+        ColorReference = White,
+        DisplayName = Tequila,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = 0.0,
+            StressChange = -15.0,
+            ThirstChange = -25.0,
+            UnhappyChange = -20.0,
+            Calories = 97.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.5,
+            alcohol = 0.4,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid Ouzo
+    {
+	Color          = 255, 255, 255,
+        ColorReference = White,
+        DisplayName = Ouzo,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = 0.0,
+            StressChange = -15.0,
+            ThirstChange = -25.0,
+            UnhappyChange = -20.0,
+            Calories = 97.0,
+            Carbohydrates = 0.0,
+            Lipids = 0.0,
+            Proteins = 0.5,
+            alcohol = 0.3,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid ZuzuMilk
+    {
+	Color          = 255, 255, 255,
+        ColorReference = White,
+        DisplayName = ZuzuMilk,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -1.0,
+            StressChange = -2.0,
+            ThirstChange = -25.0,
+            UnhappyChange = -10.0,
+            Calories = 150.0,
+            Carbohydrates = 4.5,
+            Lipids = 0.0,
+            Proteins = 3.5,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid ChocolateMilk
+    {
+	Color          = 159, 82, 44,
+        ColorReference = Sienna,
+        DisplayName = ChocolateMilk,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -1.0,
+            StressChange = -2.0,
+            ThirstChange = -25.0,
+            UnhappyChange = -10.0,
+            Calories = 150.0,
+            Carbohydrates = 4.5,
+            Lipids = 0.0,
+            Proteins = 3.5,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid StrawberryMilk
+    {
+	Color          = 171, 83, 93,
+        ColorReference = Grenadine,
+        DisplayName = StrawberryMilk,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -5.0,
+            StressChange = -5.0,
+            ThirstChange = -25.0,
+            UnhappyChange = -15.0,
+            Calories = 202.0,
+            Carbohydrates = 4.5,
+            Lipids = 0.0,
+            Proteins = 3.5,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid PeachMilk
+    {
+	Color          = 205, 133, 62,
+        ColorReference = Peru,
+        DisplayName = PeachMilk,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -5.0,
+            StressChange = -5.0,
+            ThirstChange = -25.0,
+            UnhappyChange = -15.0,
+            Calories = 202.0,
+            Carbohydrates = 4.5,
+            Lipids = 0.0,
+            Proteins = 3.5,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid BananaMilk
+    {
+	Color          = 255, 255, 0,
+        ColorReference = Yellow,
+        DisplayName = BananaMilk,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = -5.0,
+            StressChange = -5.0,
+            ThirstChange = -25.0,
+            UnhappyChange = -15.0,
+            Calories = 205.0,
+            Carbohydrates = 4.5,
+            Lipids = 0.0,
+            Proteins = 3.5,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid RedBull
+    {
+	Color          = 134, 206, 249,
+        ColorReference = LightSkyBlue,
+        DisplayName = RedBull,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = -15.0,
+            HungerChange = 0.0,
+            StressChange = -5.0,
+            ThirstChange = -15.0,
+            UnhappyChange = -10.0,
+            Calories = 89.0,
+            Carbohydrates = 29.0,
+            Lipids = 1.0,
+            Proteins = 3.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+   fluid Monster
+    {
+	Color          = 151, 250, 151,
+        ColorReference = PaleGreen,
+        DisplayName = Monster,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = -15.0,
+            HungerChange = 0.0,
+            StressChange = -5.0,
+            ThirstChange = -15.0,
+            UnhappyChange = -10.0,
+            Calories = 89.0,
+            Carbohydrates = 29.0,
+            Lipids = 1.0,
+            Proteins = 3.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+
+    fluid PeachJuice
+    {
+	Color          = 255, 164, 0,
+        ColorReference = Orange,
+        DisplayName = PeachJuice,
+        Categories { Beverage, }
+        Properties
+        {
+            fatigueChange = 0.0,
+            HungerChange = 0.0,
+            StressChange = 0.0,
+            ThirstChange = -20.0,
+            UnhappyChange = -10.0,
+            Calories = 89.0,
+            Carbohydrates = 29.0,
+            Lipids = 1.0,
+            Proteins = 3.0,
+            alcohol = 0.0,
+            fluReduction = 0.0,
+            painReduction = 0.0,
+            enduranceChange = 0.0,
+            foodSicknessChange = 0.0,
+        }
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories { Beverage, }
+        }
+    }
+}

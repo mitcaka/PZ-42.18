@@ -1,0 +1,1408 @@
+module Base	{
+					
+	item	MINI14	{	
+				
+	DisplayName                 	=	Ruger Mini-14	,
+	Icon                        	=	MINI14,	
+	WeaponSprite                	=	MINI14,	
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,	
+	IsAimedFirearm              	=	TRUE,	
+	WeaponReloadType            	=	boltaction,	
+	FireMode                    	=	Single,	
+	AttachmentType              	=	Rifle,	
+	UseEndurance                	=	FALSE,	
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,	
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	24.5	,
+	AimingPerkRangeModifier     	=	4.45	,
+	MinDamage                   	=	1.8	,
+	MaxDamage                   	=	2.4	,
+	CriticalChance              	=	25	,
+	CritDmgMultiplier            	=	4,	
+	AimingPerkCritModifier      	=	10,	
+	HitChance                   	=	26	,
+	ToHitModifier               	=	1.5,	
+	AimingPerkHitChanceModifier 	=	13	,
+	MinAngle                     	=	0.953	,
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	65	,
+	ConditionLowerChanceOneIn   	=	55	,
+	MultipleHitConditionAffected	=	FALSE,	
+	JamGunChance                	=	0.07	,
+	AimingTime                  	=	18	,
+	ReloadTime                  	=	25,	
+	SwingTime                   	=	0.5	,
+	MinimumSwingTime            	=	0.5	,
+	SwingAmountBeforeImpact     	=	0,	
+	RecoilDelay                 	=	29	,
+	Weight                      	=	3.0	,
+	OAL				=	2.5	,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	fwp:223_bullets,	
+	AmmoBox                     	=	223Box,	
+	MaxAmmo                     	=	10,	
+	MagazineType                	=	Base.223StdClip,	
+	MagType                	=	Base.223StdClip,
+	MuzzleFlashModelKey = muzzle_flash_hunting_rifle,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	2,	
+	PiercingBullets             	=	TRUE,	
+	ShareDamage                 	=	FALSE,	
+	SplatSize                   	=	3,	
+	SplatNumber                 	=	3,	
+	SplatBloodOnNoDeath         	=	TRUE,	
+	PushBackMod                 	=	0.3,	
+	KnockBackOnNoDeath          	=	TRUE,	
+	KnockdownMod                	=	3,	
+	DoorDamage                  	=	12,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Run_Weapon2,	
+	IdleAnim                    	=	Idle_Weapon2,	
+	SwingAnim                   	=	Rifle,	
+	MetalValue                  	=	45,	
+	SoundVolume                 	=	58,	
+	SoundRadius                 	=	58,	
+	SoundGain                   	=	2,	
+	NPCSoundBoost               	=	1.5,	
+	BringToBearSound		=	M16BringToBear,
+	SwingSound      		=	M16Shoot,
+	HitSound            		=	BulletHitBody,
+	ClickSound         		=	M16Jam,
+	BreakSound       		=	M16Break,
+	EquipSound       		=	M16Equip,
+	UnequipSound     		=	M16UnEquip,
+	InsertAmmoSound  		=	M16InsertAmmo,
+	EjectAmmoSound  		=	M16EjectAmmo,
+	InsertAmmoStartSound		=	M16InsertAmmoStart,
+	InsertAmmoStopSound		=	M16InsertAmmoStop,
+	EjectAmmoStartSound		=	M16EjectAmmoStart,
+	EjectAmmoStopSound		=	M16EjectAmmoStop,
+	ShellFallSound    		=	M16CartridgeFall,
+	RackSound        		=	M16Rack,
+	ImpactSound            		=	null,
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpriteOPEN				=	MINI14_OPEN,
+	SpriteCLOSED			=	MINI14,
+	ExtMagType				=	Base.223ExtClip,	
+	/* ============= ATTACHMENT DATA ============= */
+	ModelWeaponPart = Light_Small_Socom_ON			Light_Small_Socom_ON		side  side	,
+	ModelWeaponPart = Laser_Green_ON			Laser_Green_ON			side  side	,
+	ModelWeaponPart = Laser_Red_ON				Laser_Red_ON			side  side	,
+	ModelWeaponPart = Laser_DVAL_ON				Laser_DVAL_ON			side  side	,
+	ModelWeaponPart = Laser_PEQ15_ON			Laser_PEQ15_ON			side  side	,
+	ModelWeaponPart = Bipod_OPEN				Bipod_OPEN			bipod bipod	,
+	ModelWeaponPart = Launcher				Launcher			launcher launcher	,
+	ModelWeaponPart = Bipod					Bipod				bipod bipod	,
+	ModelWeaponPart = AmmoBelt				AmmoBelt			sling sling	,
+	ModelWeaponPart = Sling					Sling_1			sling sling	,
+	ModelWeaponPart = RecoilPad				RecoilPad			pad pad	,
+	ModelWeaponPart = ForeGrip				ForeGrip			foregrip foregrip	,
+	ModelWeaponPart = Grip_Magpul				Grip_Magpul			foregrip foregrip	,
+	ModelWeaponPart = Grip_MLOK				Grip_MLOK			foregrip foregrip	,
+	ModelWeaponPart = Grip_TG				Grip_TG			foregrip foregrip	,
+	ModelWeaponPart = Grip_BCM				Grip_BCM			foregrip foregrip	,
+	ModelWeaponPart = Grip_Fold				Grip_Fold			foregrip foregrip	,
+	ModelWeaponPart = Carrier_12g				Carrier_12g			carrier carrier	,
+	ModelWeaponPart = Light_Small				Light_Small			side  side	,
+	ModelWeaponPart = Light_Small_Socom			Light_Small_Socom		side  side	,
+	ModelWeaponPart = Light_Small_TLR_7AH		Light_Small_TLR_7AH	side  side	,
+	ModelWeaponPart = Light_Medium_M952V		Light_Medium_M952V	side  side	,
+	ModelWeaponPart = Light_Medium_M900			Light_Medium_M900		foregrip foregrip	,
+	ModelWeaponPart = Light_Large				Light_Large			side  side	,
+	ModelWeaponPart = Laser_Green				Laser_Green			side  side	,
+	ModelWeaponPart = Laser_Red				Laser_Red			side  side	,
+	ModelWeaponPart = Laser_DVAL				Laser_DVAL			side  side	,
+	ModelWeaponPart = Laser_PEQ15				Laser_PEQ15			side  side	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Green	FWP_LaserBeam_Green	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Red	FWP_LaserBeam_Red	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_DVAL	FWP_LaserBeam_DVAL	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_PEQ15	FWP_LaserBeam_PEQ15	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Suppressor_Pistol			Suppressor_Pistol		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Socom_Pistol		Suppressor_Socom_Pistol	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Rifle			Suppressor_Rifle		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_PBS1_Rifle		Suppressor_PBS1_Rifle	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_PBS4_Rifle		Suppressor_PBS4_Rifle	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Oil			Suppressor_Oil		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Bottle			Suppressor_Bottle		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Shotgun		Suppressor_Shotgun	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_BMG			Suppressor_BMG		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_ROME_BMG		Suppressor_ROME_BMG	suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_Dtkp_Hexagon_Silencer	FWP_Gael_Dtkp_Hexagon_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_Dtkp_Silencer	FWP_Gael_Dtkp_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_NST_Silencer	FWP_Gael_NST_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_OilFilter_Silencer	FWP_Gael_OilFilter_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_PBS1_Silencer	FWP_Gael_PBS1_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_PBS4_Silencer	FWP_Gael_PBS4_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_scrap_pipe_suppressor	FWP_Gael_scrap_pipe_suppressor	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_Scrap_Silencer	FWP_Gael_Scrap_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_SodaCan_Silencer	FWP_Gael_SodaCan_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_SprayCan_Silencer	FWP_Gael_SprayCan_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_TGP_Silencer	FWP_Gael_TGP_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_WaterBottle_ductaped	FWP_Gael_WaterBottle_ductaped	 suppressor suppressor	,
+	ModelWeaponPart = LinearComp_Noveske		LinearComp_Noveske	suppressor suppressor	,
+	ModelWeaponPart = MuzzleBrake				MuzzleBrake			suppressor suppressor	,
+	ModelWeaponPart = MuzzleBrake_DK1			MuzzleBrake_DK1		suppressor suppressor	,
+	ModelWeaponPart = MuzzleBrake_DK2			MuzzleBrake_DK2		suppressor suppressor	,
+	ModelWeaponPart = Compensator				MuzzleBrake			suppressor suppressor	,
+	ModelWeaponPart = Bayonet_M4				Bayonet_M4			bayonet bayonet	,
+	ModelWeaponPart = Bayonet_AK				Bayonet_AK			bayonet bayonet	,
+	ModelWeaponPart = Bayonet_M1917			Bayonet_M1917		bayonet bayonet	,
+	ModelWeaponPart = GhostRing				GhostRing			reddot reddot	,
+	ModelWeaponPart = Sight_MicroDot			Sight_MicroDot		reddot reddot	,
+	ModelWeaponPart = Sight_Fiber_Shotgun		Sight_Fiber_Shotgun	scope scope		,
+	ModelWeaponPart = Sight_RaceDot			Sight_RaceDot		scope scope		,
+	ModelWeaponPart = Sight_Phantom_XL			Sight_Phantom_XL		reddot reddot	,
+	ModelWeaponPart = Sight_OKP7_Reflex			Sight_OKP7_Reflex		reddot reddot	,
+	ModelWeaponPart = Sight_SRS				Sight_SRS			reddot reddot	,
+	ModelWeaponPart = Sight_EOTech			Sight_EOTech		reddot reddot	,
+	ModelWeaponPart = Sight_Aimpoint			Sight_Aimpoint		reddot reddot	,
+	ModelWeaponPart = Sight_Aimpoint_Dot		Sight_Aimpoint_Dot	reddot reddot	,
+	ModelWeaponPart = Sight_Mepro_M21			Sight_Mepro_M21		reddot reddot	,
+	ModelWeaponPart = Sight_Mepro_MOR			Sight_Mepro_MOR		reddot reddot	,
+	ModelWeaponPart = Sight_UH1				Sight_UH1			reddot reddot	,
+	ModelWeaponPart = Sight_ACRO				Sight_ACRO			reddot reddot	,
+	ModelWeaponPart = Sight_MRO				Sight_MRO			reddot reddot	,
+	ModelWeaponPart = Sight_SRO				Sight_SRO			reddot reddot	,
+	ModelWeaponPart = Sight_Nikon				Sight_Nikon			reddot reddot	,
+	ModelWeaponPart = Sight_XPS				Sight_XPS			reddot reddot	,
+	ModelWeaponPart = Sight_3xEOTech			Sight_3xEOTech		scope scope		,
+	ModelWeaponPart = Sight_4xACOG			Sight_4xACOG		scope scope		,
+	ModelWeaponPart = Sight_4xACOG_ECO			Sight_4xACOG_ECO		scope scope		,
+	ModelWeaponPart = Sight_6xELCAN			Sight_6xELCAN		scope scope		,
+	ModelWeaponPart = Sight_6xHensoldt			Sight_6xHensoldt		scope scope		,
+	ModelWeaponPart = Scope_1-4x				Scope_1-4x			scope scope		,
+	ModelWeaponPart = Scope_Trijicon_1-6x		Scope_Trijicon_1-6x	scope scope		,
+	ModelWeaponPart = Scope_TANGO6T_1-6x		Scope_TANGO6T_1-6x	scope scope		,
+	ModelWeaponPart = Scope_20x				Scope_20x			scope scope		,
+	ModelWeaponPart = Sight_C79				Sight_C79			scope scope		,
+	ModelWeaponPart = Sight_SUSAT				Sight_SUSAT			scope scope		,
+	ModelWeaponPart = Sight_Raven				Sight_Raven			scope scope		,
+	ModelWeaponPart = Sight_G28_Scope			Sight_G28_Scope		scope scope		,
+	ModelWeaponPart = Scope_ATACR7_F1			Scope_ATACR7_F1		scope scope		,
+	ModelWeaponPart = Scope_ATACR7_F1r			Scope_ATACR7_F1r		scope scope		,
+	ModelWeaponPart = Sight_M8				Sight_M8			scope scope		,
+	ModelWeaponPart = Sight_VX3				Sight_VX3			scope scope		,
+	ModelWeaponPart = Sight_Brownells			Sight_Brownells		scope scope		,
+	ModelWeaponPart = Sight_L2				Sight_L2			scope scope		,
+	ModelWeaponPart = Sight_LUX				Sight_LUX			scope scope		,
+	ModelWeaponPart = Sight_Malcom			Sight_Malcom		scope scope		,
+	ModelWeaponPart = Sight_PKAS				Sight_PKAS			scope scope		,
+	ModelWeaponPart = Sight_PVS4				Sight_PVS4			scope scope		,
+	ModelWeaponPart = Sight_Thermal			Sight_Thermal		scope scope		,
+	ModelWeaponPart = Sight_Burris_NV			Sight_Burris_NV		scope scope		,
+	ModelWeaponPart = Sight_Armasight_NV		Sight_Armasight_NV	scope scope		,
+	ModelWeaponPart = Sight_KOBRA				Sight_KOBRA			scope2 scope2	,
+	ModelWeaponPart = Scope_4xPSO				Scope_4xPSO			scope2 scope2	,
+	ModelWeaponPart = Scope_12xPSO			Scope_12xPSO		scope2 scope2	,
+	ModelWeaponPart = Sight_1P87				Sight_1P87			scope2 scope2	,
+	ModelWeaponPart = Sight_1P63				Sight_1P63			scope2 scope2	,
+	ModelWeaponPart = Sight_PU				Sight_PU			scope2 scope2	,
+	ModelWeaponPart = Sight_NO32				Sight_NO32			scope2 scope2	,
+	ModelWeaponPart = Sight_Thermal_AK			Sight_Thermal_AK		scope2 scope2	,
+	ModelWeaponPart = Standard_Mag  		Standard_Mag_Mini14 mag mag	,
+	ModelWeaponPart = Extended_Mag  		Standard_Mag_Mini14 mag mag		,
+	}			
+
+	model MINI14
+	{			
+		mesh = weapons/firearm/MINI14,		
+		texture = weapons/firearm/MINI14,		
+	
+		attachment bipod		
+		{		
+			offset = 0.0000 0.0301 -0.0032,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}			
+		attachment foregrip		
+		{		
+			offset = 0.0000 0.0316 -0.0088,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment light		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment side		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment Hide_Beam		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment suppressor		
+		{		
+			offset = 0.0000 0.4340 0.0205,	
+			rotate = 0.0000 0.0000 0.0000,
+		}		
+		attachment muzzle		
+		{		
+			offset = 0.0000 0.4880 0.0205,	
+			rotate = -90.0000 0.0000 0.0000,	
+		}		
+		attachment reddot		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope2		
+		{		
+			offset = 0.0000 0.0644 -0.0086,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment mag		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment pad		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+	}
+
+	model MINI14_OPEN
+	{			
+		mesh = weapons/firearm/MINI14_OPEN,
+		texture = weapons/firearm/MINI14,		
+	
+		attachment bipod		
+		{		
+			offset = 0.0000 0.0301 -0.0032,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}			
+		attachment foregrip		
+		{		
+			offset = 0.0000 0.0316 -0.0088,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment light		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment side		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment Hide_Beam		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment suppressor		
+		{		
+			offset = 0.0000 0.4340 0.0205,	
+			rotate = 0.0000 0.0000 0.0000,
+		}		
+		attachment muzzle		
+		{		
+			offset = 0.0000 0.4880 0.0205,	
+			rotate = -90.0000 0.0000 0.0000,	
+		}		
+		attachment reddot		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope2		
+		{		
+			offset = 0.0000 0.0644 -0.0086,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment mag		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment pad		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+	}			
+				
+	fixing Fix MINI14
+	{			
+		Require = Base.MINI14,
+		Fixer = Base.Cleaning=1,
+		Fixer = Base.WD=1,
+	}			
+
+
+	item	MINI14_Stock	{	
+				
+	DisplayName                 	=	Ruger Mini-14 w/Extended Stock	,
+	Icon                        	=	MINI14_Stock,	
+	WeaponSprite                	=	MINI14_Stock,	
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,	
+	IsAimedFirearm              	=	TRUE,	
+	WeaponReloadType            	=	boltaction,	
+	FireMode                    	=	Single,	
+	AttachmentType              	=	Rifle,	
+	UseEndurance                	=	FALSE,	
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,	
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	24.5	,
+	AimingPerkRangeModifier     	=	4.45	,
+	MinDamage                   	=	1.8	,
+	MaxDamage                   	=	2.4	,
+	CriticalChance              	=	25	,
+	CritDmgMultiplier            	=	4,	
+	AimingPerkCritModifier      	=	10,	
+	HitChance                   	=	26	,
+	ToHitModifier               	=	1.5,	
+	AimingPerkHitChanceModifier 	=	13	,
+	MinAngle                     	=	0.953	,
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	65	,
+	ConditionLowerChanceOneIn   	=	55	,
+	MultipleHitConditionAffected	=	FALSE,	
+	JamGunChance                	=	0.07	,
+	AimingTime                  	=	18	,
+	ReloadTime                  	=	25,	
+	SwingTime                   	=	0.5	,
+	MinimumSwingTime            	=	0.5	,
+	SwingAmountBeforeImpact     	=	0,	
+	RecoilDelay                 	=	29	,
+	Weight                      	=	3.0	,
+	OAL				=	2.5	,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	fwp:223_bullets,	
+	AmmoBox                     	=	223Box,	
+	MaxAmmo                     	=	10,	
+	MagazineType                	=	Base.223StdClip,	
+	MagType                	=	Base.223StdClip,
+	MuzzleFlashModelKey = muzzle_flash_hunting_rifle,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	2,	
+	PiercingBullets             	=	TRUE,	
+	ShareDamage                 	=	FALSE,	
+	SplatSize                   	=	3,	
+	SplatNumber                 	=	3,	
+	SplatBloodOnNoDeath         	=	TRUE,	
+	PushBackMod                 	=	0.3,	
+	KnockBackOnNoDeath          	=	TRUE,	
+	KnockdownMod                	=	3,	
+	DoorDamage                  	=	12,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Run_Weapon2,	
+	IdleAnim                    	=	Idle_Weapon2,	
+	SwingAnim                   	=	Rifle,	
+	MetalValue                  	=	45,	
+	SoundVolume                 	=	58,	
+	SoundRadius                 	=	58,	
+	SoundGain                   	=	2,	
+	NPCSoundBoost               	=	1.5,	
+	BringToBearSound		=	M16BringToBear,
+	SwingSound      		=	M16Shoot,
+	HitSound            		=	BulletHitBody,
+	ClickSound         		=	M16Jam,
+	BreakSound       		=	M16Break,
+	EquipSound       		=	M16Equip,
+	UnequipSound     		=	M16UnEquip,
+	InsertAmmoSound  		=	M16InsertAmmo,
+	EjectAmmoSound  		=	M16EjectAmmo,
+	InsertAmmoStartSound		=	M16InsertAmmoStart,
+	InsertAmmoStopSound		=	M16InsertAmmoStop,
+	EjectAmmoStartSound		=	M16EjectAmmoStart,
+	EjectAmmoStopSound		=	M16EjectAmmoStop,
+	ShellFallSound    		=	M16CartridgeFall,
+	RackSound        		=	M16Rack,
+	ImpactSound            		=	null,
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpriteOPEN				=	MINI14_Stock_OPEN,
+	SpriteCLOSED			=	MINI14_Stock,
+	ExtMagType				=	Base.223ExtClip,
+	Fold					=	Base.MINI14_Fold,	
+	/* ============= ATTACHMENT DATA ============= */
+	ModelWeaponPart = Light_Small_Socom_ON			Light_Small_Socom_ON		side  side	,
+	ModelWeaponPart = Laser_Green_ON			Laser_Green_ON			side  side	,
+	ModelWeaponPart = Laser_Red_ON				Laser_Red_ON			side  side	,
+	ModelWeaponPart = Laser_DVAL_ON				Laser_DVAL_ON			side  side	,
+	ModelWeaponPart = Laser_PEQ15_ON			Laser_PEQ15_ON			side  side	,
+	ModelWeaponPart = Bipod_OPEN				Bipod_OPEN			bipod bipod	,
+	ModelWeaponPart = Launcher				Launcher			launcher launcher	,
+	ModelWeaponPart = Bipod					Bipod				bipod bipod	,
+	ModelWeaponPart = AmmoBelt				AmmoBelt			sling sling	,
+	ModelWeaponPart = Sling					Sling_1			sling sling	,
+	ModelWeaponPart = RecoilPad				RecoilPad			pad pad	,
+	ModelWeaponPart = ForeGrip				ForeGrip			foregrip foregrip	,
+	ModelWeaponPart = Grip_Magpul				Grip_Magpul			foregrip foregrip	,
+	ModelWeaponPart = Grip_MLOK				Grip_MLOK			foregrip foregrip	,
+	ModelWeaponPart = Grip_TG				Grip_TG			foregrip foregrip	,
+	ModelWeaponPart = Grip_BCM				Grip_BCM			foregrip foregrip	,
+	ModelWeaponPart = Grip_Fold				Grip_Fold			foregrip foregrip	,
+	ModelWeaponPart = Carrier_12g				Carrier_12g			carrier carrier	,
+	ModelWeaponPart = Light_Small				Light_Small			side  side	,
+	ModelWeaponPart = Light_Small_Socom			Light_Small_Socom		side  side	,
+	ModelWeaponPart = Light_Small_TLR_7AH		Light_Small_TLR_7AH	side  side	,
+	ModelWeaponPart = Light_Medium_M952V		Light_Medium_M952V	side  side	,
+	ModelWeaponPart = Light_Medium_M900			Light_Medium_M900		foregrip foregrip	,
+	ModelWeaponPart = Light_Large				Light_Large			side  side	,
+	ModelWeaponPart = Laser_Green				Laser_Green			side  side	,
+	ModelWeaponPart = Laser_Red				Laser_Red			side  side	,
+	ModelWeaponPart = Laser_DVAL				Laser_DVAL			side  side	,
+	ModelWeaponPart = Laser_PEQ15				Laser_PEQ15			side  side	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Green	FWP_LaserBeam_Green	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Red	FWP_LaserBeam_Red	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_DVAL	FWP_LaserBeam_DVAL	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_PEQ15	FWP_LaserBeam_PEQ15	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Suppressor_Pistol			Suppressor_Pistol		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Socom_Pistol		Suppressor_Socom_Pistol	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Rifle			Suppressor_Rifle		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_PBS1_Rifle		Suppressor_PBS1_Rifle	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_PBS4_Rifle		Suppressor_PBS4_Rifle	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Oil			Suppressor_Oil		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Bottle			Suppressor_Bottle		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Shotgun		Suppressor_Shotgun	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_BMG			Suppressor_BMG		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_ROME_BMG		Suppressor_ROME_BMG	suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_Dtkp_Hexagon_Silencer	FWP_Gael_Dtkp_Hexagon_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_Dtkp_Silencer	FWP_Gael_Dtkp_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_NST_Silencer	FWP_Gael_NST_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_OilFilter_Silencer	FWP_Gael_OilFilter_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_PBS1_Silencer	FWP_Gael_PBS1_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_PBS4_Silencer	FWP_Gael_PBS4_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_scrap_pipe_suppressor	FWP_Gael_scrap_pipe_suppressor	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_Scrap_Silencer	FWP_Gael_Scrap_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_SodaCan_Silencer	FWP_Gael_SodaCan_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_SprayCan_Silencer	FWP_Gael_SprayCan_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_TGP_Silencer	FWP_Gael_TGP_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_WaterBottle_ductaped	FWP_Gael_WaterBottle_ductaped	 suppressor suppressor	,
+	ModelWeaponPart = LinearComp_Noveske		LinearComp_Noveske	suppressor suppressor	,
+	ModelWeaponPart = MuzzleBrake				MuzzleBrake			suppressor suppressor	,
+	ModelWeaponPart = MuzzleBrake_DK1			MuzzleBrake_DK1		suppressor suppressor	,
+	ModelWeaponPart = MuzzleBrake_DK2			MuzzleBrake_DK2		suppressor suppressor	,
+	ModelWeaponPart = Compensator				MuzzleBrake			suppressor suppressor	,
+	ModelWeaponPart = Bayonet_M4				Bayonet_M4			bayonet bayonet	,
+	ModelWeaponPart = Bayonet_AK				Bayonet_AK			bayonet bayonet	,
+	ModelWeaponPart = Bayonet_M1917			Bayonet_M1917		bayonet bayonet	,
+	ModelWeaponPart = GhostRing				GhostRing			reddot reddot	,
+	ModelWeaponPart = Sight_MicroDot			Sight_MicroDot		reddot reddot	,
+	ModelWeaponPart = Sight_Fiber_Shotgun		Sight_Fiber_Shotgun	scope scope		,
+	ModelWeaponPart = Sight_RaceDot			Sight_RaceDot		scope scope		,
+	ModelWeaponPart = Sight_Phantom_XL			Sight_Phantom_XL		reddot reddot	,
+	ModelWeaponPart = Sight_OKP7_Reflex			Sight_OKP7_Reflex		reddot reddot	,
+	ModelWeaponPart = Sight_SRS				Sight_SRS			reddot reddot	,
+	ModelWeaponPart = Sight_EOTech			Sight_EOTech		reddot reddot	,
+	ModelWeaponPart = Sight_Aimpoint			Sight_Aimpoint		reddot reddot	,
+	ModelWeaponPart = Sight_Aimpoint_Dot		Sight_Aimpoint_Dot	reddot reddot	,
+	ModelWeaponPart = Sight_Mepro_M21			Sight_Mepro_M21		reddot reddot	,
+	ModelWeaponPart = Sight_Mepro_MOR			Sight_Mepro_MOR		reddot reddot	,
+	ModelWeaponPart = Sight_UH1				Sight_UH1			reddot reddot	,
+	ModelWeaponPart = Sight_ACRO				Sight_ACRO			reddot reddot	,
+	ModelWeaponPart = Sight_MRO				Sight_MRO			reddot reddot	,
+	ModelWeaponPart = Sight_SRO				Sight_SRO			reddot reddot	,
+	ModelWeaponPart = Sight_Nikon				Sight_Nikon			reddot reddot	,
+	ModelWeaponPart = Sight_XPS				Sight_XPS			reddot reddot	,
+	ModelWeaponPart = Sight_3xEOTech			Sight_3xEOTech		scope scope		,
+	ModelWeaponPart = Sight_4xACOG			Sight_4xACOG		scope scope		,
+	ModelWeaponPart = Sight_4xACOG_ECO			Sight_4xACOG_ECO		scope scope		,
+	ModelWeaponPart = Sight_6xELCAN			Sight_6xELCAN		scope scope		,
+	ModelWeaponPart = Sight_6xHensoldt			Sight_6xHensoldt		scope scope		,
+	ModelWeaponPart = Scope_1-4x				Scope_1-4x			scope scope		,
+	ModelWeaponPart = Scope_Trijicon_1-6x		Scope_Trijicon_1-6x	scope scope		,
+	ModelWeaponPart = Scope_TANGO6T_1-6x		Scope_TANGO6T_1-6x	scope scope		,
+	ModelWeaponPart = Scope_20x				Scope_20x			scope scope		,
+	ModelWeaponPart = Sight_C79				Sight_C79			scope scope		,
+	ModelWeaponPart = Sight_SUSAT				Sight_SUSAT			scope scope		,
+	ModelWeaponPart = Sight_Raven				Sight_Raven			scope scope		,
+	ModelWeaponPart = Sight_G28_Scope			Sight_G28_Scope		scope scope		,
+	ModelWeaponPart = Scope_ATACR7_F1			Scope_ATACR7_F1		scope scope		,
+	ModelWeaponPart = Scope_ATACR7_F1r			Scope_ATACR7_F1r		scope scope		,
+	ModelWeaponPart = Sight_M8				Sight_M8			scope scope		,
+	ModelWeaponPart = Sight_VX3				Sight_VX3			scope scope		,
+	ModelWeaponPart = Sight_Brownells			Sight_Brownells		scope scope		,
+	ModelWeaponPart = Sight_L2				Sight_L2			scope scope		,
+	ModelWeaponPart = Sight_LUX				Sight_LUX			scope scope		,
+	ModelWeaponPart = Sight_Malcom			Sight_Malcom		scope scope		,
+	ModelWeaponPart = Sight_PKAS				Sight_PKAS			scope scope		,
+	ModelWeaponPart = Sight_PVS4				Sight_PVS4			scope scope		,
+	ModelWeaponPart = Sight_Thermal			Sight_Thermal		scope scope		,
+	ModelWeaponPart = Sight_Burris_NV			Sight_Burris_NV		scope scope		,
+	ModelWeaponPart = Sight_Armasight_NV		Sight_Armasight_NV	scope scope		,
+	ModelWeaponPart = Sight_KOBRA				Sight_KOBRA			scope2 scope2	,
+	ModelWeaponPart = Scope_4xPSO				Scope_4xPSO			scope2 scope2	,
+	ModelWeaponPart = Scope_12xPSO			Scope_12xPSO		scope2 scope2	,
+	ModelWeaponPart = Sight_1P87				Sight_1P87			scope2 scope2	,
+	ModelWeaponPart = Sight_1P63				Sight_1P63			scope2 scope2	,
+	ModelWeaponPart = Sight_PU				Sight_PU			scope2 scope2	,
+	ModelWeaponPart = Sight_NO32				Sight_NO32			scope2 scope2	,
+	ModelWeaponPart = Sight_Thermal_AK			Sight_Thermal_AK		scope2 scope2	,
+	ModelWeaponPart = Standard_Mag  		Standard_Mag_Mini14 mag mag	,
+	ModelWeaponPart = Extended_Mag  		Standard_Mag_Mini14 mag mag		,
+	}			
+
+	model MINI14_Stock
+	{			
+		mesh = weapons/firearm/MINI14_Stock,
+		texture = weapons/firearm/MINI14,
+	
+		attachment bipod		
+		{		
+			offset = 0.0000 0.0301 -0.0032,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}			
+		attachment foregrip		
+		{		
+			offset = 0.0000 0.0316 -0.0088,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment light		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment side		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment Hide_Beam		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment suppressor		
+		{		
+			offset = 0.0000 0.4340 0.0205,	
+			rotate = 0.0000 0.0000 0.0000,
+		}		
+		attachment muzzle		
+		{		
+			offset = 0.0000 0.4880 0.0205,	
+			rotate = -90.0000 0.0000 0.0000,	
+		}		
+		attachment reddot		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope2		
+		{		
+			offset = 0.0000 0.0644 -0.0086,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment mag		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment pad		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+	}
+
+	model MINI14_Stock_OPEN
+	{			
+		mesh = weapons/firearm/MINI14_Stock_OPEN,
+		texture = weapons/firearm/MINI14,
+	
+		attachment bipod		
+		{		
+			offset = 0.0000 0.0301 -0.0032,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}			
+		attachment foregrip		
+		{		
+			offset = 0.0000 0.0316 -0.0088,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment light		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment side		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment Hide_Beam		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment suppressor		
+		{		
+			offset = 0.0000 0.4340 0.0205,	
+			rotate = 0.0000 0.0000 0.0000,
+		}		
+		attachment muzzle		
+		{		
+			offset = 0.0000 0.4880 0.0205,	
+			rotate = -90.0000 0.0000 0.0000,	
+		}		
+		attachment reddot		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope2		
+		{		
+			offset = 0.0000 0.0644 -0.0086,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment mag		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment pad		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+	}
+				
+	fixing Fix MINI14_Stock
+	{			
+		Require = Base.MINI14_Stock,
+		Fixer = Base.Cleaning=1,
+		Fixer = Base.WD=1,
+	}
+
+
+	item	MINI14_Fold	{	
+				
+	DisplayName                 	=	Ruger Mini-14 w/Folded Stock	,
+	Icon                        	=	MINI14_Stock,	
+	WeaponSprite                	=	MINI14_Fold,	
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,	
+	IsAimedFirearm              	=	TRUE,	
+	WeaponReloadType            	=	boltaction,	
+	FireMode                    	=	Single,	
+	AttachmentType              	=	Rifle,	
+	UseEndurance                	=	FALSE,	
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,	
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	24.5	,
+	AimingPerkRangeModifier     	=	2.45	,
+	MinDamage                   	=	1.8	,
+	MaxDamage                   	=	2.4	,
+	CriticalChance              	=	25	,
+	CritDmgMultiplier            	=	4,	
+	AimingPerkCritModifier      	=	10,	
+	HitChance                   	=	18	,
+	ToHitModifier               	=	1.5,	
+	AimingPerkHitChanceModifier 	=	12	,
+	MinAngle                     	=	0.933	,
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	65	,
+	ConditionLowerChanceOneIn   	=	55	,
+	MultipleHitConditionAffected	=	FALSE,	
+	JamGunChance                	=	0.07	,
+	AimingTime                  	=	11	,
+	ReloadTime                  	=	25,	
+	SwingTime                   	=	0.5	,
+	MinimumSwingTime            	=	0.5	,
+	SwingAmountBeforeImpact     	=	0,	
+	RecoilDelay                 	=	35	,
+	Weight                      	=	2.5	,
+	OAL				=	2.0	,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	fwp:223_bullets,	
+	AmmoBox                     	=	223Box,	
+	MaxAmmo                     	=	10,	
+	MagazineType                	=	Base.223StdClip,	
+	MagType                	=	Base.223StdClip,
+	MuzzleFlashModelKey = muzzle_flash_hunting_rifle,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	2,	
+	PiercingBullets             	=	TRUE,	
+	ShareDamage                 	=	FALSE,	
+	SplatSize                   	=	3,	
+	SplatNumber                 	=	3,	
+	SplatBloodOnNoDeath         	=	TRUE,	
+	PushBackMod                 	=	0.3,	
+	KnockBackOnNoDeath          	=	TRUE,	
+	KnockdownMod                	=	3,	
+	DoorDamage                  	=	12,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Run_Weapon2,	
+	IdleAnim                    	=	Idle_Weapon2,	
+	SwingAnim                   	=	Rifle,	
+	MetalValue                  	=	45,	
+	SoundVolume                 	=	58,	
+	SoundRadius                 	=	58,	
+	SoundGain                   	=	2,	
+	NPCSoundBoost               	=	1.5,	
+	BringToBearSound		=	M16BringToBear,
+	SwingSound      		=	M16Shoot,
+	HitSound            		=	BulletHitBody,
+	ClickSound         		=	M16Jam,
+	BreakSound       		=	M16Break,
+	EquipSound       		=	M16Equip,
+	UnequipSound     		=	M16UnEquip,
+	InsertAmmoSound  		=	M16InsertAmmo,
+	EjectAmmoSound  		=	M16EjectAmmo,
+	InsertAmmoStartSound		=	M16InsertAmmoStart,
+	InsertAmmoStopSound		=	M16InsertAmmoStop,
+	EjectAmmoStartSound		=	M16EjectAmmoStart,
+	EjectAmmoStopSound		=	M16EjectAmmoStop,
+	ShellFallSound    		=	M16CartridgeFall,
+	RackSound        		=	M16Rack,
+	ImpactSound            		=	null,
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpriteOPEN				=	MINI14_Fold_OPEN,
+	SpriteCLOSED			=	MINI14_Fold,
+	ExtMagType				=	Base.223ExtClip,
+	Fold					=	Base.MINI14_Stock,	
+	/* ============= ATTACHMENT DATA ============= */
+	ModelWeaponPart = Light_Small_Socom_ON			Light_Small_Socom_ON		side  side	,
+	ModelWeaponPart = Laser_Green_ON			Laser_Green_ON			side  side	,
+	ModelWeaponPart = Laser_Red_ON				Laser_Red_ON			side  side	,
+	ModelWeaponPart = Laser_DVAL_ON				Laser_DVAL_ON			side  side	,
+	ModelWeaponPart = Laser_PEQ15_ON			Laser_PEQ15_ON			side  side	,
+	ModelWeaponPart = Bipod_OPEN				Bipod_OPEN			bipod bipod	,
+	ModelWeaponPart = Launcher				Launcher			launcher launcher	,
+	ModelWeaponPart = Bipod					Bipod				bipod bipod	,
+	ModelWeaponPart = AmmoBelt				AmmoBelt			sling sling	,
+	ModelWeaponPart = Sling					Sling_1			sling sling	,
+	ModelWeaponPart = RecoilPad				RecoilPad			pad pad	,
+	ModelWeaponPart = ForeGrip				ForeGrip			foregrip foregrip	,
+	ModelWeaponPart = Grip_Magpul				Grip_Magpul			foregrip foregrip	,
+	ModelWeaponPart = Grip_MLOK				Grip_MLOK			foregrip foregrip	,
+	ModelWeaponPart = Grip_TG				Grip_TG			foregrip foregrip	,
+	ModelWeaponPart = Grip_BCM				Grip_BCM			foregrip foregrip	,
+	ModelWeaponPart = Grip_Fold				Grip_Fold			foregrip foregrip	,
+	ModelWeaponPart = Carrier_12g				Carrier_12g			carrier carrier	,
+	ModelWeaponPart = Light_Small				Light_Small			side  side	,
+	ModelWeaponPart = Light_Small_Socom			Light_Small_Socom		side  side	,
+	ModelWeaponPart = Light_Small_TLR_7AH		Light_Small_TLR_7AH	side  side	,
+	ModelWeaponPart = Light_Medium_M952V		Light_Medium_M952V	side  side	,
+	ModelWeaponPart = Light_Medium_M900			Light_Medium_M900		foregrip foregrip	,
+	ModelWeaponPart = Light_Large				Light_Large			side  side	,
+	ModelWeaponPart = Laser_Green				Laser_Green			side  side	,
+	ModelWeaponPart = Laser_Red				Laser_Red			side  side	,
+	ModelWeaponPart = Laser_DVAL				Laser_DVAL			side  side	,
+	ModelWeaponPart = Laser_PEQ15				Laser_PEQ15			side  side	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Green	FWP_LaserBeam_Green	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Red	FWP_LaserBeam_Red	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_DVAL	FWP_LaserBeam_DVAL	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_PEQ15	FWP_LaserBeam_PEQ15	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Suppressor_Pistol			Suppressor_Pistol		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Socom_Pistol		Suppressor_Socom_Pistol	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Rifle			Suppressor_Rifle		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_PBS1_Rifle		Suppressor_PBS1_Rifle	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_PBS4_Rifle		Suppressor_PBS4_Rifle	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Oil			Suppressor_Oil		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Bottle			Suppressor_Bottle		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Shotgun		Suppressor_Shotgun	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_BMG			Suppressor_BMG		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_ROME_BMG		Suppressor_ROME_BMG	suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_Dtkp_Hexagon_Silencer	FWP_Gael_Dtkp_Hexagon_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_Dtkp_Silencer	FWP_Gael_Dtkp_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_NST_Silencer	FWP_Gael_NST_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_OilFilter_Silencer	FWP_Gael_OilFilter_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_PBS1_Silencer	FWP_Gael_PBS1_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_PBS4_Silencer	FWP_Gael_PBS4_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_scrap_pipe_suppressor	FWP_Gael_scrap_pipe_suppressor	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_Scrap_Silencer	FWP_Gael_Scrap_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_SodaCan_Silencer	FWP_Gael_SodaCan_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_SprayCan_Silencer	FWP_Gael_SprayCan_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_TGP_Silencer	FWP_Gael_TGP_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_WaterBottle_ductaped	FWP_Gael_WaterBottle_ductaped	 suppressor suppressor	,
+	ModelWeaponPart = LinearComp_Noveske		LinearComp_Noveske	suppressor suppressor	,
+	ModelWeaponPart = MuzzleBrake				MuzzleBrake			suppressor suppressor	,
+	ModelWeaponPart = MuzzleBrake_DK1			MuzzleBrake_DK1		suppressor suppressor	,
+	ModelWeaponPart = MuzzleBrake_DK2			MuzzleBrake_DK2		suppressor suppressor	,
+	ModelWeaponPart = Compensator				MuzzleBrake			suppressor suppressor	,
+	ModelWeaponPart = Bayonet_M4				Bayonet_M4			bayonet bayonet	,
+	ModelWeaponPart = Bayonet_AK				Bayonet_AK			bayonet bayonet	,
+	ModelWeaponPart = Bayonet_M1917			Bayonet_M1917		bayonet bayonet	,
+	ModelWeaponPart = GhostRing				GhostRing			reddot reddot	,
+	ModelWeaponPart = Sight_MicroDot			Sight_MicroDot		reddot reddot	,
+	ModelWeaponPart = Sight_Fiber_Shotgun		Sight_Fiber_Shotgun	scope scope		,
+	ModelWeaponPart = Sight_RaceDot			Sight_RaceDot		scope scope		,
+	ModelWeaponPart = Sight_Phantom_XL			Sight_Phantom_XL		reddot reddot	,
+	ModelWeaponPart = Sight_OKP7_Reflex			Sight_OKP7_Reflex		reddot reddot	,
+	ModelWeaponPart = Sight_SRS				Sight_SRS			reddot reddot	,
+	ModelWeaponPart = Sight_EOTech			Sight_EOTech		reddot reddot	,
+	ModelWeaponPart = Sight_Aimpoint			Sight_Aimpoint		reddot reddot	,
+	ModelWeaponPart = Sight_Aimpoint_Dot		Sight_Aimpoint_Dot	reddot reddot	,
+	ModelWeaponPart = Sight_Mepro_M21			Sight_Mepro_M21		reddot reddot	,
+	ModelWeaponPart = Sight_Mepro_MOR			Sight_Mepro_MOR		reddot reddot	,
+	ModelWeaponPart = Sight_UH1				Sight_UH1			reddot reddot	,
+	ModelWeaponPart = Sight_ACRO				Sight_ACRO			reddot reddot	,
+	ModelWeaponPart = Sight_MRO				Sight_MRO			reddot reddot	,
+	ModelWeaponPart = Sight_SRO				Sight_SRO			reddot reddot	,
+	ModelWeaponPart = Sight_Nikon				Sight_Nikon			reddot reddot	,
+	ModelWeaponPart = Sight_XPS				Sight_XPS			reddot reddot	,
+	ModelWeaponPart = Sight_3xEOTech			Sight_3xEOTech		scope scope		,
+	ModelWeaponPart = Sight_4xACOG			Sight_4xACOG		scope scope		,
+	ModelWeaponPart = Sight_4xACOG_ECO			Sight_4xACOG_ECO		scope scope		,
+	ModelWeaponPart = Sight_6xELCAN			Sight_6xELCAN		scope scope		,
+	ModelWeaponPart = Sight_6xHensoldt			Sight_6xHensoldt		scope scope		,
+	ModelWeaponPart = Scope_1-4x				Scope_1-4x			scope scope		,
+	ModelWeaponPart = Scope_Trijicon_1-6x		Scope_Trijicon_1-6x	scope scope		,
+	ModelWeaponPart = Scope_TANGO6T_1-6x		Scope_TANGO6T_1-6x	scope scope		,
+	ModelWeaponPart = Scope_20x				Scope_20x			scope scope		,
+	ModelWeaponPart = Sight_C79				Sight_C79			scope scope		,
+	ModelWeaponPart = Sight_SUSAT				Sight_SUSAT			scope scope		,
+	ModelWeaponPart = Sight_Raven				Sight_Raven			scope scope		,
+	ModelWeaponPart = Sight_G28_Scope			Sight_G28_Scope		scope scope		,
+	ModelWeaponPart = Scope_ATACR7_F1			Scope_ATACR7_F1		scope scope		,
+	ModelWeaponPart = Scope_ATACR7_F1r			Scope_ATACR7_F1r		scope scope		,
+	ModelWeaponPart = Sight_M8				Sight_M8			scope scope		,
+	ModelWeaponPart = Sight_VX3				Sight_VX3			scope scope		,
+	ModelWeaponPart = Sight_Brownells			Sight_Brownells		scope scope		,
+	ModelWeaponPart = Sight_L2				Sight_L2			scope scope		,
+	ModelWeaponPart = Sight_LUX				Sight_LUX			scope scope		,
+	ModelWeaponPart = Sight_Malcom			Sight_Malcom		scope scope		,
+	ModelWeaponPart = Sight_PKAS				Sight_PKAS			scope scope		,
+	ModelWeaponPart = Sight_PVS4				Sight_PVS4			scope scope		,
+	ModelWeaponPart = Sight_Thermal			Sight_Thermal		scope scope		,
+	ModelWeaponPart = Sight_Burris_NV			Sight_Burris_NV		scope scope		,
+	ModelWeaponPart = Sight_Armasight_NV		Sight_Armasight_NV	scope scope		,
+	ModelWeaponPart = Sight_KOBRA				Sight_KOBRA			scope2 scope2	,
+	ModelWeaponPart = Scope_4xPSO				Scope_4xPSO			scope2 scope2	,
+	ModelWeaponPart = Scope_12xPSO			Scope_12xPSO		scope2 scope2	,
+	ModelWeaponPart = Sight_1P87				Sight_1P87			scope2 scope2	,
+	ModelWeaponPart = Sight_1P63				Sight_1P63			scope2 scope2	,
+	ModelWeaponPart = Sight_PU				Sight_PU			scope2 scope2	,
+	ModelWeaponPart = Sight_NO32				Sight_NO32			scope2 scope2	,
+	ModelWeaponPart = Sight_Thermal_AK			Sight_Thermal_AK		scope2 scope2	,
+	ModelWeaponPart = Standard_Mag  		Standard_Mag_Mini14 mag mag	,
+	ModelWeaponPart = Extended_Mag  		Standard_Mag_Mini14 mag mag		,
+	}			
+
+	model MINI14_Fold			
+	{			
+		mesh = weapons/firearm/MINI14_Fold,		
+		texture = weapons/firearm/MINI14,		
+				
+		attachment bipod		
+		{		
+			offset = 0.0000 0.0301 -0.0032,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}			
+		attachment foregrip		
+		{		
+			offset = 0.0000 0.0316 -0.0088,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment light		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment side		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment Hide_Beam		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment suppressor		
+		{		
+			offset = 0.0000 0.4340 0.0205,	
+			rotate = 0.0000 0.0000 0.0000,
+		}		
+		attachment muzzle		
+		{		
+			offset = 0.0000 0.4880 0.0205,	
+			rotate = -90.0000 0.0000 0.0000,	
+		}		
+		attachment reddot		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope2		
+		{		
+			offset = 0.0000 0.0644 -0.0086,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment mag		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment pad		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}
+	}
+
+	model MINI14_Fold_OPEN
+	{			
+		mesh = weapons/firearm/MINI14_Fold_OPEN,
+		texture = weapons/firearm/MINI14,		
+				
+		attachment bipod		
+		{		
+			offset = 0.0000 0.0301 -0.0032,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}			
+		attachment foregrip		
+		{		
+			offset = 0.0000 0.0316 -0.0088,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment light		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment side		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment Hide_Beam		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment suppressor		
+		{		
+			offset = 0.0000 0.4340 0.0205,	
+			rotate = 0.0000 0.0000 0.0000,
+		}		
+		attachment muzzle		
+		{		
+			offset = 0.0000 0.4880 0.0205,	
+			rotate = -90.0000 0.0000 0.0000,	
+		}		
+		attachment reddot		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope2		
+		{		
+			offset = 0.0000 0.0644 -0.0086,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment mag		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment pad		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}
+	}
+				
+	fixing Fix MINI14_Fold			
+	{			
+		Require = Base.MINI14_Fold,
+		Fixer = Base.Cleaning=1,
+		Fixer = Base.WD=1,
+	}			
+
+				
+
+	item	MINI14_T	{	
+				
+	DisplayName                 	=	Ruger Mini-14 (16" Tactical)	,
+	Icon                        	=	MINI14_T,
+	WeaponSprite                	=	MINI14_T,
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,	
+	IsAimedFirearm              	=	TRUE,	
+	WeaponReloadType            	=	boltaction,	
+	FireMode                    	=	Single,	
+	AttachmentType              	=	Rifle,	
+	UseEndurance                	=	FALSE,	
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,	
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	24	,
+	AimingPerkRangeModifier     	=	4.4	,
+	MinDamage                   	=	1.8	,
+	MaxDamage                   	=	2.4	,
+	CriticalChance              	=	25	,
+	CritDmgMultiplier            	=	4,	
+	AimingPerkCritModifier      	=	10,	
+	HitChance                   	=	25	,
+	ToHitModifier               	=	1.5,	
+	AimingPerkHitChanceModifier 	=	13	,
+	MinAngle                     	=	0.950	,
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	50,	
+	ConditionLowerChanceOneIn   	=	60,	
+	MultipleHitConditionAffected	=	FALSE,	
+	JamGunChance                	=	0.07,	
+	AimingTime                  	=	18	,
+	ReloadTime                  	=	25,	
+	SwingTime                   	=	0.5	,
+	MinimumSwingTime            	=	0.5	,
+	SwingAmountBeforeImpact     	=	0,	
+	RecoilDelay                 	=	29	,
+	Weight                      	=	3.0	,
+	OAL				=	2.5	,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	fwp:223_bullets,	
+	AmmoBox                     	=	223Box,	
+	MaxAmmo                     	=	10,	
+	MagazineType                	=	Base.223StdClip,
+	MagType                	=	Base.223StdClip,
+	MuzzleFlashModelKey = muzzle_flash_hunting_rifle,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	2,	
+	PiercingBullets             	=	TRUE,	
+	ShareDamage                 	=	FALSE,	
+	SplatSize                   	=	3,	
+	SplatNumber                 	=	3,	
+	SplatBloodOnNoDeath         	=	TRUE,	
+	PushBackMod                 	=	0.3,	
+	KnockBackOnNoDeath          	=	TRUE,	
+	KnockdownMod                	=	3,	
+	DoorDamage                  	=	12,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Run_Weapon2,	
+	IdleAnim                    	=	Idle_Weapon2,	
+	SwingAnim                   	=	Rifle,	
+	MetalValue                  	=	45,	
+	SoundVolume                 	=	58,	
+	SoundRadius                 	=	58,	
+	SoundGain                   	=	2,	
+	NPCSoundBoost               	=	1.5,	
+	BringToBearSound		=	M16BringToBear,
+	SwingSound      		=	M16Shoot,
+	HitSound            		=	BulletHitBody,
+	ClickSound         		=	M16Jam,
+	BreakSound       		=	M16Break,
+	EquipSound       		=	M16Equip,
+	UnequipSound     		=	M16UnEquip,
+	InsertAmmoSound  		=	M16InsertAmmo,
+	EjectAmmoSound  		=	M16EjectAmmo,
+	InsertAmmoStartSound		=	M16InsertAmmoStart,
+	InsertAmmoStopSound		=	M16InsertAmmoStop,
+	EjectAmmoStartSound		=	M16EjectAmmoStart,
+	EjectAmmoStopSound		=	M16EjectAmmoStop,
+	ShellFallSound    		=	M16CartridgeFall,
+	RackSound        		=	M16Rack,
+	ImpactSound            		=	null,
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpriteOPEN				=	MINI14_T_OPEN,
+	SpriteCLOSED			=	MINI14_T,
+	ExtMagType				=	Base.223ExtClip,	
+	/* ============= ATTACHMENT DATA ============= */
+	ModelWeaponPart = Light_Small_Socom_ON			Light_Small_Socom_ON		side  side	,
+	ModelWeaponPart = Laser_Green_ON			Laser_Green_ON			side  side	,
+	ModelWeaponPart = Laser_Red_ON				Laser_Red_ON			side  side	,
+	ModelWeaponPart = Laser_DVAL_ON				Laser_DVAL_ON			side  side	,
+	ModelWeaponPart = Laser_PEQ15_ON			Laser_PEQ15_ON			side  side	,
+	ModelWeaponPart = Bipod_OPEN				Bipod_OPEN			bipod bipod	,
+	ModelWeaponPart = Launcher				Launcher			launcher launcher	,
+	ModelWeaponPart = Bipod					Bipod				bipod bipod	,
+	ModelWeaponPart = AmmoBelt				AmmoBelt			sling sling	,
+	ModelWeaponPart = Sling					Sling_1			sling sling	,
+	ModelWeaponPart = RecoilPad				RecoilPad			pad pad	,
+	ModelWeaponPart = ForeGrip				ForeGrip			foregrip foregrip	,
+	ModelWeaponPart = Grip_Magpul				Grip_Magpul			foregrip foregrip	,
+	ModelWeaponPart = Grip_MLOK				Grip_MLOK			foregrip foregrip	,
+	ModelWeaponPart = Grip_TG				Grip_TG			foregrip foregrip	,
+	ModelWeaponPart = Grip_BCM				Grip_BCM			foregrip foregrip	,
+	ModelWeaponPart = Grip_Fold				Grip_Fold			foregrip foregrip	,
+	ModelWeaponPart = Carrier_12g				Carrier_12g			carrier carrier	,
+	ModelWeaponPart = Light_Small				Light_Small			side  side	,
+	ModelWeaponPart = Light_Small_Socom			Light_Small_Socom		side  side	,
+	ModelWeaponPart = Light_Small_TLR_7AH		Light_Small_TLR_7AH	side  side	,
+	ModelWeaponPart = Light_Medium_M952V		Light_Medium_M952V	side  side	,
+	ModelWeaponPart = Light_Medium_M900			Light_Medium_M900		foregrip foregrip	,
+	ModelWeaponPart = Light_Large				Light_Large			side  side	,
+	ModelWeaponPart = Laser_Green				Laser_Green			side  side	,
+	ModelWeaponPart = Laser_Red				Laser_Red			side  side	,
+	ModelWeaponPart = Laser_DVAL				Laser_DVAL			side  side	,
+	ModelWeaponPart = Laser_PEQ15				Laser_PEQ15			side  side	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Green	FWP_LaserBeam_Green	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Red	FWP_LaserBeam_Red	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_DVAL	FWP_LaserBeam_DVAL	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_PEQ15	FWP_LaserBeam_PEQ15	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Suppressor_Pistol			Suppressor_Pistol		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Socom_Pistol		Suppressor_Socom_Pistol	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Rifle			Suppressor_Rifle		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_PBS1_Rifle		Suppressor_PBS1_Rifle	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_PBS4_Rifle		Suppressor_PBS4_Rifle	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Oil			Suppressor_Oil		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Bottle			Suppressor_Bottle		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_Shotgun		Suppressor_Shotgun	suppressor suppressor	,
+	ModelWeaponPart = Suppressor_BMG			Suppressor_BMG		suppressor suppressor	,
+	ModelWeaponPart = Suppressor_ROME_BMG		Suppressor_ROME_BMG	suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_Dtkp_Hexagon_Silencer	FWP_Gael_Dtkp_Hexagon_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_Dtkp_Silencer	FWP_Gael_Dtkp_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_NST_Silencer	FWP_Gael_NST_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_OilFilter_Silencer	FWP_Gael_OilFilter_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_PBS1_Silencer	FWP_Gael_PBS1_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_PBS4_Silencer	FWP_Gael_PBS4_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_scrap_pipe_suppressor	FWP_Gael_scrap_pipe_suppressor	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_Scrap_Silencer	FWP_Gael_Scrap_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_SodaCan_Silencer	FWP_Gael_SodaCan_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_SprayCan_Silencer	FWP_Gael_SprayCan_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_TGP_Silencer	FWP_Gael_TGP_Silencer	 suppressor suppressor	,
+	ModelWeaponPart = FWP_Gael_WaterBottle_ductaped	FWP_Gael_WaterBottle_ductaped	 suppressor suppressor	,
+	ModelWeaponPart = LinearComp_Noveske		LinearComp_Noveske	suppressor suppressor	,
+	ModelWeaponPart = MuzzleBrake				MuzzleBrake			suppressor suppressor	,
+	ModelWeaponPart = MuzzleBrake_DK1			MuzzleBrake_DK1		suppressor suppressor	,
+	ModelWeaponPart = MuzzleBrake_DK2			MuzzleBrake_DK2		suppressor suppressor	,
+	ModelWeaponPart = Compensator				MuzzleBrake			suppressor suppressor	,
+	ModelWeaponPart = Bayonet_M4				Bayonet_M4			bayonet bayonet	,
+	ModelWeaponPart = Bayonet_AK				Bayonet_AK			bayonet bayonet	,
+	ModelWeaponPart = Bayonet_M1917			Bayonet_M1917		bayonet bayonet	,
+	ModelWeaponPart = GhostRing				GhostRing			reddot reddot	,
+	ModelWeaponPart = Sight_MicroDot			Sight_MicroDot		reddot reddot	,
+	ModelWeaponPart = Sight_Fiber_Shotgun		Sight_Fiber_Shotgun	scope scope		,
+	ModelWeaponPart = Sight_RaceDot			Sight_RaceDot		scope scope		,
+	ModelWeaponPart = Sight_Phantom_XL			Sight_Phantom_XL		reddot reddot	,
+	ModelWeaponPart = Sight_OKP7_Reflex			Sight_OKP7_Reflex		reddot reddot	,
+	ModelWeaponPart = Sight_SRS				Sight_SRS			reddot reddot	,
+	ModelWeaponPart = Sight_EOTech			Sight_EOTech		reddot reddot	,
+	ModelWeaponPart = Sight_Aimpoint			Sight_Aimpoint		reddot reddot	,
+	ModelWeaponPart = Sight_Aimpoint_Dot		Sight_Aimpoint_Dot	reddot reddot	,
+	ModelWeaponPart = Sight_Mepro_M21			Sight_Mepro_M21		reddot reddot	,
+	ModelWeaponPart = Sight_Mepro_MOR			Sight_Mepro_MOR		reddot reddot	,
+	ModelWeaponPart = Sight_UH1				Sight_UH1			reddot reddot	,
+	ModelWeaponPart = Sight_ACRO				Sight_ACRO			reddot reddot	,
+	ModelWeaponPart = Sight_MRO				Sight_MRO			reddot reddot	,
+	ModelWeaponPart = Sight_SRO				Sight_SRO			reddot reddot	,
+	ModelWeaponPart = Sight_Nikon				Sight_Nikon			reddot reddot	,
+	ModelWeaponPart = Sight_XPS				Sight_XPS			reddot reddot	,
+	ModelWeaponPart = Sight_3xEOTech			Sight_3xEOTech		scope scope		,
+	ModelWeaponPart = Sight_4xACOG			Sight_4xACOG		scope scope		,
+	ModelWeaponPart = Sight_4xACOG_ECO			Sight_4xACOG_ECO		scope scope		,
+	ModelWeaponPart = Sight_6xELCAN			Sight_6xELCAN		scope scope		,
+	ModelWeaponPart = Sight_6xHensoldt			Sight_6xHensoldt		scope scope		,
+	ModelWeaponPart = Scope_1-4x				Scope_1-4x			scope scope		,
+	ModelWeaponPart = Scope_Trijicon_1-6x		Scope_Trijicon_1-6x	scope scope		,
+	ModelWeaponPart = Scope_TANGO6T_1-6x		Scope_TANGO6T_1-6x	scope scope		,
+	ModelWeaponPart = Scope_20x				Scope_20x			scope scope		,
+	ModelWeaponPart = Sight_C79				Sight_C79			scope scope		,
+	ModelWeaponPart = Sight_SUSAT				Sight_SUSAT			scope scope		,
+	ModelWeaponPart = Sight_Raven				Sight_Raven			scope scope		,
+	ModelWeaponPart = Sight_G28_Scope			Sight_G28_Scope		scope scope		,
+	ModelWeaponPart = Scope_ATACR7_F1			Scope_ATACR7_F1		scope scope		,
+	ModelWeaponPart = Scope_ATACR7_F1r			Scope_ATACR7_F1r		scope scope		,
+	ModelWeaponPart = Sight_M8				Sight_M8			scope scope		,
+	ModelWeaponPart = Sight_VX3				Sight_VX3			scope scope		,
+	ModelWeaponPart = Sight_Brownells			Sight_Brownells		scope scope		,
+	ModelWeaponPart = Sight_L2				Sight_L2			scope scope		,
+	ModelWeaponPart = Sight_LUX				Sight_LUX			scope scope		,
+	ModelWeaponPart = Sight_Malcom			Sight_Malcom		scope scope		,
+	ModelWeaponPart = Sight_PKAS				Sight_PKAS			scope scope		,
+	ModelWeaponPart = Sight_PVS4				Sight_PVS4			scope scope		,
+	ModelWeaponPart = Sight_Thermal			Sight_Thermal		scope scope		,
+	ModelWeaponPart = Sight_Burris_NV			Sight_Burris_NV		scope scope		,
+	ModelWeaponPart = Sight_Armasight_NV		Sight_Armasight_NV	scope scope		,
+	ModelWeaponPart = Sight_KOBRA				Sight_KOBRA			scope2 scope2	,
+	ModelWeaponPart = Scope_4xPSO				Scope_4xPSO			scope2 scope2	,
+	ModelWeaponPart = Scope_12xPSO			Scope_12xPSO		scope2 scope2	,
+	ModelWeaponPart = Sight_1P87				Sight_1P87			scope2 scope2	,
+	ModelWeaponPart = Sight_1P63				Sight_1P63			scope2 scope2	,
+	ModelWeaponPart = Sight_PU				Sight_PU			scope2 scope2	,
+	ModelWeaponPart = Sight_NO32				Sight_NO32			scope2 scope2	,
+	ModelWeaponPart = Sight_Thermal_AK			Sight_Thermal_AK		scope2 scope2	,
+	ModelWeaponPart = Standard_Mag  		Extended_Mag_223 mag mag	,
+	ModelWeaponPart = Extended_Mag  		Extended_Mag_223		,
+	}			
+
+	model MINI14_T		
+	{			
+		mesh = weapons/firearm/MINI14_T,
+		texture = weapons/firearm/MINI14_T,		
+				
+		attachment bipod		
+		{		
+			offset = 0.0000 0.0301 -0.0032,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}			
+		attachment foregrip		
+		{		
+			offset = 0.0000 0.0316 -0.0088,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment light		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment side		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment Hide_Beam		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment suppressor		
+		{		
+			offset = 0.0000 0.3740 0.0205,	
+			rotate = 0.0000 0.0000 0.0000,
+		}		
+		attachment muzzle		
+		{		
+			offset = 0.0000 0.4120 0.0205,	
+			rotate = -90.0000 0.0000 0.0000,	
+		}		
+		attachment reddot		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope2		
+		{		
+			offset = 0.0000 0.0644 -0.0086,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment mag		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment pad		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}
+	}
+
+	model MINI14_T_OPEN
+	{			
+		mesh = weapons/firearm/MINI14_T_OPEN,
+		texture = weapons/firearm/MINI14_T,		
+				
+		attachment bipod		
+		{		
+			offset = 0.0000 0.0301 -0.0032,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}			
+		attachment foregrip		
+		{		
+			offset = 0.0000 0.0316 -0.0088,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment light		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment side		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment Hide_Beam		
+		{		
+			offset = 0.0000 0.2414 0.0130,	
+			rotate = 0.0000 -90.0000 0.0000,	
+		}		
+		attachment suppressor		
+		{		
+			offset = 0.0000 0.3740 0.0205,	
+			rotate = 0.0000 0.0000 0.0000,
+		}		
+		attachment muzzle		
+		{		
+			offset = 0.0000 0.4120 0.0205,	
+			rotate = -90.0000 0.0000 0.0000,	
+		}		
+		attachment reddot		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope		
+		{		
+			offset = 0.0000 0.1570 -0.0116,
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment scope2		
+		{		
+			offset = 0.0000 0.0644 -0.0086,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment mag		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}		
+		attachment pad		
+		{		
+			offset = 0.0000 0.0000 0.0000,	
+			rotate = 0.0000 0.0000 0.0000,	
+		}
+	}			
+				
+	fixing Fix MINI14_T
+	{			
+		Require = Base.MINI14_T,
+		Fixer = Base.Cleaning=1,
+		Fixer = Base.WD=1,
+	}			
+}

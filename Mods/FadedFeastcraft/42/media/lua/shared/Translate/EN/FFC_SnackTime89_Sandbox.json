@@ -1,0 +1,22 @@
+{
+  "Sandbox_SnackTime89": "FFC Snack Shelf",
+
+  "Sandbox_SnackTime89_LootRarity": "FFC snack-shelf world loot rarity",
+  "Sandbox_SnackTime89_LootRarity_tooltip": "Controls how often FFC snack-shelf items appear in the world.",
+  "Sandbox_SnackTime89_LootRarity_option1": "Very rare",
+  "Sandbox_SnackTime89_LootRarity_option2": "Rare",
+  "Sandbox_SnackTime89_LootRarity_option3": "Normal",
+  "Sandbox_SnackTime89_LootRarity_option4": "Frequent",
+  "Sandbox_SnackTime89_LootRarity_option5": "Very frequent",
+
+  "Sandbox_SnackTime89_ZombieLootRarity": "FFC snack-shelf zombie loot rarity",
+  "Sandbox_SnackTime89_ZombieLootRarity_tooltip": "Controls how often zombies drop FFC snack-shelf items when killed.",
+  "Sandbox_SnackTime89_ZombieLootRarity_option1": "Very rare",
+  "Sandbox_SnackTime89_ZombieLootRarity_option2": "Rare",
+  "Sandbox_SnackTime89_ZombieLootRarity_option3": "Normal",
+  "Sandbox_SnackTime89_ZombieLootRarity_option4": "Frequent",
+  "Sandbox_SnackTime89_ZombieLootRarity_option5": "Very frequent",
+
+  "Sandbox_SnackTime89_EnableMysteryBoxes": "Enable mystery boxes on zombies",
+  "Sandbox_SnackTime89_EnableMysteryBoxes_tooltip": "Allows mystery boxes to appear or not in zombie loot."
+}

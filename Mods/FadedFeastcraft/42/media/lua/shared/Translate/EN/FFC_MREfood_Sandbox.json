@@ -1,0 +1,52 @@
+{
+"Sandbox_MR" : "Type 21military rations food",
+
+"Sandbox_MR_NonPerishableChance" : "Frozen meals and food production",
+"Sandbox_MR_NPerishableChance_option1" : "Extremely rare",
+"Sandbox_MR_NPerishableChance_option2" : "rare",
+"Sandbox_MR_NPerishableChance_option3" : "normal",
+"Sandbox_MR_NPerishableChance_option4" : "More",
+"Sandbox_MR_NPerishableChance_option5" : "richness",
+"Sandbox_MR_NPerishableChance_option6" : "None (not recommended)",
+
+"Sandbox_MR_PerishableChance" : "20/21 Military Grain Generation",
+"Sandbox_MR_PerishableChance_option1" : "Extremely rare",
+"Sandbox_MR_PerishableChance_option2" : "rare",
+"Sandbox_MR_PerishableChance_option3" : "normal",
+"Sandbox_MR_PerishableChance_option4" : "More",
+"Sandbox_MR_PerishableChance_option5" : "richness",
+"Sandbox_MR_PerishableChance_option6" : "None (not recommended)",
+
+"Sandbox_MR_CannedSpawnChance" : "Side dishes canned snacks production",
+"Sandbox_MR_CannedSpawnChance_option1" : "Extremely rare",
+"Sandbox_MR_CannedSpawnChance_option2" : "rare",
+"Sandbox_MR_CannedSpawnChance_option3" : "normal",
+"Sandbox_MR_CannedSpawnChance_option4" : "More",
+"Sandbox_MR_CannedSpawnChance_option5" : "richness",
+"Sandbox_MR_CannedSpawnChance_option6" : "None (not recommended)",
+
+"Sandbox_MR_AlcoholChance" : "Cigarettes and alcohol production",
+"Sandbox_MR_AlcoholChance_option1" : "Extremely rare",
+"Sandbox_MR_AlcoholChance_option2" : "rare",
+"Sandbox_MR_AlcoholChance_option3" : "normal",
+"Sandbox_MR_AlcoholChance_option4" : "More",
+"Sandbox_MR_AlcoholChance_option5" : "richness",
+"Sandbox_MR_AlcoholChance_option6" : "None (not recommended)",
+
+"Sandbox_MR_MagazineChance" : "Military impurities generation",
+"Sandbox_MR_MagazineChance_option1" : "Extremely rare",
+"Sandbox_MR_MagazineChance_option2" : "rare",
+"Sandbox_MR_MagazineChance_option3" : "normal",
+"Sandbox_MR_MagazineChance_option4" : "More",
+"Sandbox_MR_MagazineChance_option5" : "richness",
+"Sandbox_MR_MagazineChance_option6" : "None (not recommended)",
+
+"Sandbox_MR_ZombieLootSpawn" : "Probability of zombie drop object generation",
+"Sandbox_MR_ZLootSpawn_option1" : "Extremely rare",
+"Sandbox_MR_ZLootSpawn_option2" : "rare",
+"Sandbox_MR_ZLootSpawn_option3" : "normal",
+"Sandbox_MR_ZLootSpawn_option4" : "More",
+"Sandbox_MR_ZLootSpawn_option5" : "richness",
+"Sandbox_MR_ZLootSpawn_option6" : "None (not recommended)"
+
+} 

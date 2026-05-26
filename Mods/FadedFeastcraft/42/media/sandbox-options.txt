@@ -1,0 +1,248 @@
+VERSION = 1,
+
+option FadedFeastcraft.EnableCSRIntegration
+{
+    type = boolean,
+    default = true,
+    page = FadedFeastcraft,
+    translation = EnableCSRIntegration,
+}
+
+option FadedFeastcraft.EnableNearbyContainerScanning
+{
+    type = boolean,
+    default = true,
+    page = FadedFeastcraft,
+    translation = EnableNearbyContainerScanning,
+}
+
+option FadedFeastcraft.EnableRoomExpiryScanning
+{
+    type = boolean,
+    default = true,
+    page = FadedFeastcraft,
+    translation = EnableRoomExpiryScanning,
+}
+
+option FadedFeastcraft.EnableCSRRecipeScanning
+{
+    type = boolean,
+    default = true,
+    page = FadedFeastcraft,
+    translation = EnableCSRRecipeScanning,
+}
+
+option FadedFeastcraft.IngredientScanRadius
+{
+    type = integer,
+    min = 0,
+    max = 8,
+    default = 2,
+    page = FadedFeastcraft,
+    translation = IngredientScanRadius,
+}
+
+option FadedFeastcraft.ExpiryRoomScanRadius
+{
+    type = integer,
+    min = 2,
+    max = 16,
+    default = 8,
+    page = FadedFeastcraft,
+    translation = ExpiryRoomScanRadius,
+}
+
+option FadedFeastcraft.MaxScannedContainers
+{
+    type = integer,
+    min = 4,
+    max = 80,
+    default = 24,
+    page = FadedFeastcraft,
+    translation = MaxScannedContainers,
+}
+
+option FadedFeastcraft.MaxScannedItems
+{
+    type = integer,
+    min = 50,
+    max = 1000,
+    default = 350,
+    page = FadedFeastcraft,
+    translation = MaxScannedItems,
+}
+
+option FadedFeastcraft.MealBuilderStrictness
+{
+    type = integer,
+    min = 1,
+    max = 3,
+    default = 2,
+    page = FadedFeastcraft,
+    translation = MealBuilderStrictness,
+}
+
+option FadedFeastcraft.MealIngredientLimit
+{
+    type = integer,
+    min = 2,
+    max = 12,
+    default = 8,
+    page = FadedFeastcraft,
+    translation = MealIngredientLimit,
+}
+
+option FadedFeastcraft.MaxBatchOperations
+{
+    type = integer,
+    min = 1,
+    max = 40,
+    default = 10,
+    page = FadedFeastcraft,
+    translation = MaxBatchOperations,
+}
+
+option FadedFeastcraft.EnableExperimentalMealBuilder
+{
+    type = boolean,
+    default = true,
+    page = FadedFeastcraft,
+    translation = EnableExperimentalMealBuilder,
+}
+
+option FadedFeastcraft.EnableAdvancedNutrition
+{
+    type = boolean,
+    default = false,
+    page = FadedFeastcraft,
+    translation = EnableAdvancedNutrition,
+}
+
+option FadedFeastcraft.EnablePreservationSystem
+{
+    type = boolean,
+    default = true,
+    page = FadedFeastcraft,
+    translation = EnablePreservationSystem,
+}
+
+option FadedFeastcraft.SpoilageDifficultyMultiplier
+{
+    type = double,
+    min = 0.25,
+    max = 3.0,
+    default = 1.0,
+    page = FadedFeastcraft,
+    translation = SpoilageDifficultyMultiplier,
+}
+
+option FadedFeastcraft.CookingXPMultiplier
+{
+    type = double,
+    min = 0.0,
+    max = 5.0,
+    default = 1.0,
+    page = FadedFeastcraft,
+    translation = CookingXPMultiplier,
+}
+
+option FadedFeastcraft.MealBuffStrength
+{
+    type = double,
+    min = 0.0,
+    max = 3.0,
+    default = 1.0,
+    page = FadedFeastcraft,
+    translation = MealBuffStrength,
+}
+
+option FadedFeastcraft.EnableMealEffects
+{
+    type = boolean,
+    default = true,
+    page = FadedFeastcraft,
+    translation = EnableMealEffects,
+}
+
+option FadedFeastcraft.EnableMealEffectsHUD
+{
+    type = boolean,
+    default = true,
+    page = FadedFeastcraft,
+    translation = EnableMealEffectsHUD,
+}
+
+option FadedFeastcraft.MealEffectDurationScale
+{
+    type = double,
+    min = 0.25,
+    max = 4.0,
+    default = 1.0,
+    page = FadedFeastcraft,
+    translation = MealEffectDurationScale,
+}
+
+option FadedFeastcraft.MealEffectBaseMinutes
+{
+    type = integer,
+    min = 1,
+    max = 60,
+    default = 5,
+    page = FadedFeastcraft,
+    translation = MealEffectBaseMinutes,
+}
+
+option FadedFeastcraft.MealEffectLevelMinutes
+{
+    type = double,
+    min = 0.0,
+    max = 3.0,
+    default = 1.0,
+    page = FadedFeastcraft,
+    translation = MealEffectLevelMinutes,
+}
+
+option FadedFeastcraft.RottenFoodPenaltyStrength
+{
+    type = double,
+    min = 0.0,
+    max = 3.0,
+    default = 1.0,
+    page = FadedFeastcraft,
+    translation = RottenFoodPenaltyStrength,
+}
+
+option FadedFeastcraft.PreserveFoodBalanceMode
+{
+    type = enum,
+    numValues = 3,
+    default = 2,
+    page = FadedFeastcraft,
+    translation = PreserveFoodBalanceMode,
+}
+
+option FadedFeastcraft.GuiGlowLevel
+{
+    type = integer,
+    min = 0,
+    max = 3,
+    default = 2,
+    page = FadedFeastcraft,
+    translation = GuiGlowLevel,
+}
+
+option FadedFeastcraft.GuiPrimaryMode
+{
+    type = boolean,
+    default = true,
+    page = FadedFeastcraft,
+    translation = GuiPrimaryMode,
+}
+
+option FadedFeastcraft.EnableDebugLogging
+{
+    type = boolean,
+    default = false,
+    page = FadedFeastcraft,
+    translation = EnableDebugLogging,
+}

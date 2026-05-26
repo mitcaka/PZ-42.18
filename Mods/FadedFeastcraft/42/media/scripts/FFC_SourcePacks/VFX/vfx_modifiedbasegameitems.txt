@@ -1,0 +1,290 @@
+module Base {
+
+/*
+    item 
+    {
+
+    }
+*/
+
+/* <<<<<  Rename Base Items  >>>>> */
+
+    /**** Icing > Vanilla Frosting ****/
+
+        item Icing
+        {
+            DisplayName = Vanilla Frosting,
+            StaticModel = Base.VFX_VanillaFrosting,
+            WorldStaticModel = Base.VFX_VanillaFrosting,
+            Icon = VFX_Baking_FrostingVanilla,
+            Tags = VFX:Frosting,
+        }
+
+    /**** Pasta > Spaghetti ****/
+
+        item Pasta
+        {
+            DisplayName = Spaghetti,
+            EatType = eatBox,
+            StaticModel = Base.VFX_Spaghetti,
+            WorldStaticModel = Base.VFX_Spaghetti,
+            Icon = VFX_Pantry_PastaSpaghetti,
+        }
+
+        item PastaBowl
+        {
+            DisplayName = Bowl of Spaghetti,
+            StaticModel = Base.VFX_BowlSpaghetti,
+            WorldStaticModel = Base.VFX_BowlSpaghetti,
+            Icon = VFX_Bowl_Spaghetti,
+        }
+
+        item PastaPan
+        {
+            DisplayName = Spaghetti,
+        }
+
+        item PastaPanCopper
+        {
+            DisplayName = Spaghetti,
+        }
+
+        item PastaPot
+        {
+            DisplayName = Spaghetti,
+        }
+        
+        item PastaPotForged
+        {
+            DisplayName = Spaghetti,
+        }
+
+        item WaterSaucepanPasta
+        {
+            DisplayName = Saucepan with Spaghetti,
+        }
+
+        item WaterSaucepanPastaCopper
+        {
+            DisplayName = Copper Saucepan with Spaghetti,
+        }
+
+        item WaterPotPasta
+        {
+            DisplayName = Cooking Pot with Spaghetti,
+        }
+
+        item WaterPotForgedPasta
+        {
+            DisplayName = Cooking Pot with Spaghetti,
+        }
+
+    /**** Granola Bar > Peanut Butter Granola Bar ****/
+
+        item GranolaBar
+        {
+            DisplayName = Peanut Butter Granola Bar,
+        }
+
+    /**** Bouillon Cube > Chicken Bouillion Cube ****/
+
+        item BouillonCube
+        {
+            DisplayName = Chicken Bouillon Cube,
+            Tags = VFX:BouillionCube,
+            EvolvedRecipe = Chili:3;Curry:3;Casserole:3;Meatloaf:3;Ramen:3;Rice:3;Pasta:3,
+        }
+
+    /**** Cereal > Corn Flakes ****/
+
+        item Cereal
+        {
+            DisplayName = Corn Flakes,
+            Tags = VFX:Cereal,
+            IconsForTexture = VFX_Pantry_Cereal_CornFlakes,
+            StaticModelsByIndex = Base.VFX_CornFlakes,
+            WorldStaticModelsByIndex = Base.VFX_CornFlakes,
+        }
+
+        item CerealBowl
+        {
+            DisplayName = Bowl of Corn Flakes,
+            Icon = VFX_Bowl_CerealCornFlakes,
+            StaticModel = Base.VFX_BowlCornFlakes,
+            WorldStaticModel = Base.VFX_BowlCornFlakes,
+        }
+
+    /**** Crackers > Saltine Crackers ****/
+
+        item Crackers
+        {
+            DisplayName = Saltine Crackers,
+            UnhappyChange = -5,
+            Packaged = true,
+            CantBeFrozen = true,
+            EatType = eatBox,
+            Icon = VFX_Snack_CrackersSaltine,
+            StaticModel = Base.VFX_SaltineCrackers,
+            WorldStaticModel = Base.VFX_SaltineCrackers,
+            EvolvedRecipe = Chili:5;Curry:5;Casserole:5;Meatloaf:5;BakedPotato:5;ScallopedPotatoBake:5,
+        }
+
+    /**** Tea Bag > Black Tea ****/
+
+        item Teabag2
+        {
+            DisplayName = Black Tea Bag,
+        }
+
+    /**** Cheese > Cheddar Cheese ****/
+
+        item Cheese
+        {
+            DisplayName = Cheddar Cheese,
+            Icon = VFX_Fridge_CheeseCheddar,
+            StaticModel = Base.VFX_CheddarCheese,
+            WorldStaticModel = Base.VFX_CheddarCheese,
+        }
+    
+    /**** Yogurt > Vanilla Yogurt ****/
+
+        item Yoghurt
+        {
+            DisplayName = Vanilla Yogurt,
+            Icon = VFX_Fridge_YogurtVanilla,
+            StaticModel = Base.VFX_VanillaYogurt,
+            WorldStaticModel = Base.VFX_VanillaYogurt,
+        }
+
+    /**** TV Dinner > Lasagna ****/
+
+        item TVDinner
+        {
+            DisplayName = Lasagna,
+            StaticModel = Base.VFX_LasagnaFrozenMeal_SM,
+            WorldStaticModel = Base.VFX_LasagnaFrozenMeal,
+        }
+
+    /**** Pizza > Cheese Pizza ****/
+
+        item PizzaWhole
+        {
+            DisplayName = Cheese Pizza,
+
+            Icon = VFX_Freezer_PizzaCheese,
+            StaticModel = Base.VFX_FrozenCheesePizza,
+            WorldStaticModel = Base.VFX_FrozenCheesePizza,
+        }
+
+        item Pizza
+        {
+            DisplayName = Slice of Cheese Pizza,
+            Icon = VFX_Freezer_PizzaSliceCheese,
+            StaticModel = Base.VFX_CheesePizzaSlice,
+            WorldStaticModel = Base.VFX_CheesePizzaSlice,
+        }
+
+    /**** Ice Cream > Vanilla Ice Cream ****/
+
+        item Icecream
+        {
+            DisplayName = Vanilla Ice Cream,
+            Icon = VFX_IceCream_Vanilla,
+            StaticModel = Base.VFX_VanillaIceCream,
+            WorldStaticModel = Base.VFX_VanillaIceCream,
+        }
+
+        item IcecreamMelted
+        {
+            DisplayName = Vanilla Ice Cream (Melted),
+            Icon = VFX_IceCreamMelted_Vanilla,
+            StaticModel = Base.VFX_VanillaIceCreamMelted,
+            WorldStaticModel = Base.VFX_VanillaIceCreamMelted,
+        }
+
+        item ConeIcecream
+        {
+            DisplayName = Vanilla Ice Cream Cone,
+            Icon = VFX_IceCreamCone_Vanilla,
+            StaticModel = Base.VFX_VanillaIceCreamCone,
+            WorldStaticModel = Base.VFX_VanillaIceCreamCone,
+        }
+
+        item ConeIcecreamMelted
+        {
+            DisplayName = Vanilla Ice Cream Cone (Melted),
+            Icon = VFX_IceCreamCone_Vanilla,
+            StaticModel = Cone_Ground,
+            WorldStaticModel = Base.VFX_VanillaIceCreamConeMelted,
+        }
+
+    /**** Burrito > Pork Burrito ****/
+
+        item Burrito
+        {
+            DisplayName = Pork Burrito,
+
+            Packaged = true,
+            GoodHot = true,
+            IsCookable = true,
+            BadCold = true,
+
+            MinutesToCook = 20,
+            MinutesToBurn = 40,
+        }
+
+    /**** Popsicle > Raspberry Popsicle ****/
+
+        item Popsicle
+        {
+            DisplayName = Raspberry Popsicle,
+        }
+
+    /**** Biscuit > Buttermilk Biscuit ****/
+
+        item Biscuit
+        {
+            DisplayName = Buttermilk Biscuit,
+        }
+
+/* <<<<<  Add Models / Icons  >>>>> */
+
+    /**** Baking Tray Models for Cookies ****/
+
+        item CookiesChocolateDough
+        {
+            StaticModel = Base.VFX_CookiesChocolatePrep,
+            WorldStaticModel = Base.VFX_CookiesChocolatePrep,
+        }
+
+        item CookiesOatmealDough
+        {
+            StaticModel = Base.VFX_CookiesOatmealPrep,
+            WorldStaticModel = Base.VFX_CookiesOatmealPrep,
+        }
+
+        item CookiesShortbreadDough
+        {
+            StaticModel = Base.VFX_CookiesShortbreadPrep,
+            WorldStaticModel = Base.VFX_CookiesShortbreadPrep,
+        }
+
+        item CookiesSugarDough
+        {
+            StaticModel = Base.VFX_CookiesSugarPrep,
+            WorldStaticModel = Base.VFX_CookiesSugarPrep,
+        }
+
+/* <<<<<  Add Tags  >>>>> */
+
+    item MincedMeat
+    {
+        Tags = VFX:GroundMeat,
+    }
+
+    item Rice
+    {
+        Tags = base:driedfood;VFX:Rice,
+    }
+
+}

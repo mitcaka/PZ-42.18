@@ -1,0 +1,627 @@
+module Base
+{
+    /* =========================================================
+       Faded's Hunters Calling — Items
+       Naming convention: FHC.<Name>  (script id stays Base.<Name>
+       so vanilla recipes that take generic skinning knives can
+       still pick them up via tags).
+       ========================================================= */
+
+    /* ----- Hunter Melee Toolkit ----- */
+
+    item FHC_HuntingKnife
+    {
+        DisplayName             = Hunting Knife,
+        Type                    = Weapon,
+        Weight                  = 0.4,
+        Icon                    = FHC_HuntingKnife,
+        MaxRange                = 1.0,
+        MinRange                = 0.61,
+        MinAngle                = 0.65,
+        Categories              = SmallBlade,
+        SubCategory             = Stab,
+        SwingTime               = 1.5,
+        WeaponSprite            = HuntingKnifeForged,
+        MinimumSwingTime        = 1.5,
+        ConditionLowerChanceOneIn = 25,
+        SwingAmountBeforeImpact = 0.02,
+        ConditionMax            = 16,
+        MaxHitCount             = 1,
+        IdleAnim                = Idle_Weapon2,
+        RunAnim                 = Run_Weapon2,
+        DoorDamage              = 1,
+        SwingAnim               = Stab,
+        WeaponWeight            = 1.0,
+        DamageMakeHole          = TRUE,
+        CanBeJammed             = FALSE,
+        MaxDamage               = 1.0,
+        MinDamage               = 0.5,
+        SwingSound              = HuntingKnifeSwing,
+        Tags                    = base:cutplant;base:sharpknife;base:butcheranimal;base:sharpenable;base:killanimal;base:hasmetal;Knife;HuntingKnife;SharpKnife,
+        BreakSound              = BreakMetalItem,
+        DoorHitSound            = HuntingKnifeHit,
+        DropSound               = HuntingKnifeDrop,
+        HitFloorSound           = HuntingKnifeHit,
+        HitSound                = HuntingKnifeHit,
+        ImpactSound             = HuntingKnifeHit,
+        TreeDamage              = 0,
+        EnduranceMod            = 0.5,
+        CriticalChance          = 25,
+        CritDmgMultiplier       = 5,
+        PushBackMod             = 0.3,
+        IsAimedHandWeapon       = TRUE,
+        AttachmentType          = Knife,
+    }
+
+    item FHC_SkinningKnife
+    {
+        DisplayName             = Skinning Knife,
+        Type                    = Weapon,
+        Weight                  = 0.3,
+        Icon                    = FHC_SkinningKnife,
+        MaxRange                = 0.9,
+        MinRange                = 0.61,
+        MinAngle                = 0.65,
+        Categories              = SmallBlade,
+        SubCategory             = Stab,
+        SwingTime               = 1.5,
+        WeaponSprite            = HuntingKnifeForged,
+        MinimumSwingTime        = 1.5,
+        ConditionLowerChanceOneIn = 30,
+        SwingAmountBeforeImpact = 0.02,
+        ConditionMax            = 18,
+        MaxHitCount             = 1,
+        IdleAnim                = Idle_Weapon2,
+        RunAnim                 = Run_Weapon2,
+        DoorDamage              = 1,
+        SwingAnim               = Stab,
+        WeaponWeight            = 0.8,
+        DamageMakeHole          = TRUE,
+        MaxDamage               = 0.7,
+        MinDamage               = 0.3,
+        Tags                    = base:cutplant;base:sharpknife;base:butcheranimal;base:sharpenable;base:killanimal;base:hasmetal;FadedHuntersCalling:bestskinner;Knife;SkinningKnife;SharpKnife,
+        BreakSound              = BreakMetalItem,
+        DoorHitSound            = HuntingKnifeHit,
+        DropSound               = HuntingKnifeDrop,
+        HitFloorSound           = HuntingKnifeHit,
+        HitSound                = HuntingKnifeHit,
+        ImpactSound             = HuntingKnifeHit,
+        SwingSound              = HuntingKnifeSwing,
+        TreeDamage              = 0,
+        CriticalChance          = 30,
+        CritDmgMultiplier       = 4,
+        IsAimedHandWeapon       = TRUE,
+        AttachmentType          = Knife,
+    }
+
+    item FHC_CampHatchet
+    {
+        DisplayName             = Camp Hatchet,
+        Type                    = Weapon,
+        Weight                  = 1.2,
+        Icon                    = FHC_CampHatchet,
+        MaxRange                = 1.3,
+        MinRange                = 0.61,
+        MinAngle                = 0.65,
+        Categories              = Axe,
+        SubCategory             = Swinging,
+        SwingTime               = 2.5,
+        WeaponSprite            = HandAxeForged,
+        MinimumSwingTime        = 2.5,
+        ConditionLowerChanceOneIn = 25,
+        SwingAmountBeforeImpact = 0.02,
+        ConditionMax            = 14,
+        MaxHitCount             = 2,
+        IdleAnim                = Idle_Weapon2,
+        RunAnim                 = Run_Weapon2,
+        DoorDamage              = 6,
+        SwingAnim               = Bat,
+        WeaponWeight            = 2.2,
+        DamageMakeHole          = TRUE,
+        MaxDamage               = 2.0,
+        MinDamage               = 1.0,
+        Tags                    = base:choptree;base:cutplant;base:butcheranimal;base:killanimal;base:hasmetal;Axe;Hatchet,
+        BreakSound              = BreakMetalItem,
+        DoorHitSound            = HandAxeHit,
+        DropSound               = HandAxeDrop,
+        HitFloorSound           = HandAxeHit,
+        HitSound                = HandAxeHit,
+        ImpactSound             = HandAxeHit,
+        SwingSound              = HandAxeSwing,
+        TreeDamage              = 35,
+        EnduranceMod            = 1.0,
+        CriticalChance          = 25,
+        CritDmgMultiplier       = 3,
+        AttachmentType          = Hammer,
+    }
+
+    item FHC_FieldMachete
+    {
+        DisplayName             = Field Machete,
+        Type                    = Weapon,
+        Weight                  = 1.0,
+        Icon                    = FHC_FieldMachete,
+        MaxRange                = 1.6,
+        MinRange                = 0.61,
+        MinAngle                = 0.55,
+        Categories              = LongBlade,
+        SubCategory             = Swinging,
+        SwingTime               = 2.0,
+        WeaponSprite            = MacheteForged,
+        MinimumSwingTime        = 2.0,
+        ConditionLowerChanceOneIn = 18,
+        ConditionMax            = 18,
+        MaxHitCount             = 2,
+        IdleAnim                = Idle_Weapon2,
+        RunAnim                 = Run_Weapon2,
+        DoorDamage              = 3,
+        SwingAnim               = Bat,
+        WeaponWeight            = 2.0,
+        DamageMakeHole          = TRUE,
+        MaxDamage               = 2.0,
+        MinDamage               = 0.9,
+        Tags                    = base:ignorezombiedensity;base:cutplant;base:sharpknife;base:butcheranimal;base:sharpenable;base:killanimal;base:hasmetal;Machete;Knife,
+        DoorHitSound            = MacheteHit,
+        DropSound               = MacheteDrop,
+        HitFloorSound           = MacheteHit,
+        HitSound                = MacheteHit,
+        ImpactSound             = MacheteHit,
+        SwingSound              = MacheteSwing,
+        TreeDamage              = 4,
+        CriticalChance          = 20,
+        CritDmgMultiplier       = 3,
+        IsAimedHandWeapon       = TRUE,
+        AttachmentType          = Sword,
+    }
+
+    item FHC_BushcraftSpear
+    {
+        DisplayName             = Bushcraft Spear,
+        Type                    = Weapon,
+        Weight                  = 1.4,
+        Icon                    = FHC_BushcraftSpear,
+        MaxRange                = 1.7,
+        MinRange                = 0.7,
+        MinAngle                = 0.55,
+        Categories              = SpearPolearm;LongBlade,
+        SubCategory             = Stab,
+        SwingTime               = 2.3,
+        WeaponSprite            = SpearCrafted,
+        MinimumSwingTime        = 2.3,
+        ConditionLowerChanceOneIn = 8,
+        ConditionMax            = 8,
+        MaxHitCount             = 1,
+        IdleAnim                = Idle_Weapon2,
+        RunAnim                 = Run_Weapon2,
+        SwingAnim               = Spear,
+        WeaponWeight            = 2.5,
+        DamageMakeHole          = TRUE,
+        MaxDamage               = 2.5,
+        MinDamage               = 1.4,
+        Tags                    = base:killanimal;base:crude;Spear;Stab;CrudeWeapon,
+        DoorHitSound            = SpearCraftedHit,
+        HitFloorSound           = SpearCraftedHit,
+        HitSound                = SpearCraftedHit,
+        ImpactSound             = SpearCraftedHit,
+        SwingSound              = SpearCraftedSwing,
+        TreeDamage              = 0,
+        CriticalChance          = 35,
+        CritDmgMultiplier       = 4,
+        IsAimedHandWeapon       = TRUE,
+        AttachmentType          = Shovel,
+        TwoHandWeapon           = TRUE,
+    }
+
+    item FHC_TrappersClub
+    {
+        DisplayName             = Trapper's Club,
+        Type                    = Weapon,
+        Weight                  = 1.1,
+        Icon                    = FHC_TrappersClub,
+        MaxRange                = 1.2,
+        MinRange                = 0.61,
+        MinAngle                = 0.65,
+        Categories              = Blunt,
+        SubCategory             = Swinging,
+        SwingTime               = 2.0,
+        WeaponSprite            = BaseballBat,
+        MinimumSwingTime        = 2.0,
+        ConditionLowerChanceOneIn = 30,
+        ConditionMax            = 18,
+        MaxHitCount             = 2,
+        IdleAnim                = Idle_Weapon2,
+        RunAnim                 = Run_Weapon2,
+        SwingAnim               = Bat,
+        WeaponWeight            = 1.6,
+        MaxDamage               = 1.4,
+        MinDamage               = 0.6,
+        Tags                    = base:hammer;base:killanimal;base:crude;Hammer;Crude,
+        DoorHitSound            = BaseballBatHit,
+        DropSound               = BaseballBatDrop,
+        HitFloorSound           = BaseballBatHit,
+        HitSound                = BaseballBatHit,
+        ImpactSound             = BaseballBatHit,
+        SwingSound              = BaseballBatSwing,
+        TreeDamage              = 1,
+        CriticalChance          = 15,
+        CritDmgMultiplier       = 3,
+        KnockBackOnNoDeath      = TRUE,
+        AttachmentType          = Shovel,
+    }
+
+    /* ----- Bushcraft consumables / station items ----- */
+
+    item FHC_DryingRack
+    {
+        DisplayName             = Drying Rack (small),
+        Type                    = Normal,
+        Weight                  = 4.0,
+        Icon                    = FHC_DryingRack,
+        Tags                    = FadedHuntersCalling:dryingrack,
+        WorldStaticModel        = FourLogsStack,
+    }
+
+    item FHC_HideRack
+    {
+        DisplayName             = Hide Rack,
+        Type                    = Normal,
+        Weight                  = 4.0,
+        Icon                    = FHC_HideRack,
+        Tags                    = FadedHuntersCalling:hiderack,
+        WorldStaticModel        = FourLogsStack,
+    }
+
+    item FHC_RawHide
+    {
+        DisplayName             = Raw Hide,
+        Type                    = Normal,
+        Weight                  = 0.6,
+        Icon                    = FHC_RawHide,
+        Tags                    = FadedHuntersCalling:rawhide,
+    }
+
+    item FHC_SaltedHide
+    {
+        DisplayName             = Salted Hide,
+        Type                    = Normal,
+        Weight                  = 0.55,
+        Icon                    = FHC_SaltedHide,
+        Tags                    = FadedHuntersCalling:saltedhide,
+    }
+
+    item FHC_CuredHide
+    {
+        DisplayName             = Cured Hide,
+        Type                    = Normal,
+        Weight                  = 0.5,
+        Icon                    = FHC_CuredHide,
+        Tags                    = FadedHuntersCalling:curedhide;base:leathercrudetannedsmall;Leather,
+    }
+
+    item FHC_DriedMeat
+    {
+        DisplayName             = Dried Meat Strip,
+        Type                    = Food,
+        DisplayCategory         = Food,
+        Weight                  = 0.15,
+        Icon                    = FHC_DriedMeat,
+        HungerChange            = -25,
+        Calories                = 220,
+        Carbohydrates           = 0.5,
+        Lipids                  = 8.0,
+        Proteins                = 35.0,
+        DaysFresh               = 30,
+        DaysTotallyRotten       = 90,
+        ThirstChange            = 4,
+        Tags                    = FadedHuntersCalling:preservedmeat;base:isfood,
+    }
+
+    /* ----- Animal scent lures (vanilla cologne sprite/model) ----- */
+
+    item FHC_CowScent
+    {
+        DisplayName             = Cow Scent Lure,
+        Type                    = Normal,
+        DisplayCategory         = Survival,
+        Weight                  = 0.2,
+        Icon                    = Cologne,
+        WorldStaticModel        = Cologne,
+        Tags                    = FadedHuntersCalling:scentlure;FadedHuntersCalling:scent_cow,
+    }
+
+    item FHC_PigScent
+    {
+        DisplayName             = Pig Scent Lure,
+        Type                    = Normal,
+        DisplayCategory         = Survival,
+        Weight                  = 0.2,
+        Icon                    = Cologne,
+        WorldStaticModel        = Cologne,
+        Tags                    = FadedHuntersCalling:scentlure;FadedHuntersCalling:scent_pig,
+    }
+
+    item FHC_SheepScent
+    {
+        DisplayName             = Sheep Scent Lure,
+        Type                    = Normal,
+        DisplayCategory         = Survival,
+        Weight                  = 0.2,
+        Icon                    = Cologne,
+        WorldStaticModel        = Cologne,
+        Tags                    = FadedHuntersCalling:scentlure;FadedHuntersCalling:scent_sheep,
+    }
+
+    item FHC_ChickenScent
+    {
+        DisplayName             = Chicken Scent Lure,
+        Type                    = Normal,
+        DisplayCategory         = Survival,
+        Weight                  = 0.2,
+        Icon                    = Cologne,
+        WorldStaticModel        = Cologne,
+        Tags                    = FadedHuntersCalling:scentlure;FadedHuntersCalling:scent_chicken,
+    }
+
+    item FHC_TurkeyScent
+    {
+        DisplayName             = Turkey Scent Lure,
+        Type                    = Normal,
+        DisplayCategory         = Survival,
+        Weight                  = 0.2,
+        Icon                    = Cologne,
+        WorldStaticModel        = Cologne,
+        Tags                    = FadedHuntersCalling:scentlure;FadedHuntersCalling:scent_turkey,
+    }
+
+    item FHC_RabbitScent
+    {
+        DisplayName             = Rabbit Scent Lure,
+        Type                    = Normal,
+        DisplayCategory         = Survival,
+        Weight                  = 0.2,
+        Icon                    = Cologne,
+        WorldStaticModel        = Cologne,
+        Tags                    = FadedHuntersCalling:scentlure;FadedHuntersCalling:scent_rabbit,
+    }
+
+    item FHC_DeerScent
+    {
+        DisplayName             = Deer Scent Lure,
+        Type                    = Normal,
+        DisplayCategory         = Survival,
+        Weight                  = 0.2,
+        Icon                    = Cologne,
+        WorldStaticModel        = Cologne,
+        Tags                    = FadedHuntersCalling:scentlure;FadedHuntersCalling:scent_deer,
+    }
+
+    item FHC_RaccoonScent
+    {
+        DisplayName             = Raccoon Scent Lure,
+        Type                    = Normal,
+        DisplayCategory         = Survival,
+        Weight                  = 0.2,
+        Icon                    = Cologne,
+        WorldStaticModel        = Cologne,
+        Tags                    = FadedHuntersCalling:scentlure;FadedHuntersCalling:scent_raccoon,
+    }
+
+    item FHC_RatScent
+    {
+        DisplayName             = Rat Scent Lure,
+        Type                    = Normal,
+        DisplayCategory         = Survival,
+        Weight                  = 0.2,
+        Icon                    = Cologne,
+        WorldStaticModel        = Cologne,
+        Tags                    = FadedHuntersCalling:scentlure;FadedHuntersCalling:scent_rat,
+    }
+
+    item FHC_MouseScent
+    {
+        DisplayName             = Mouse Scent Lure,
+        Type                    = Normal,
+        DisplayCategory         = Survival,
+        Weight                  = 0.2,
+        Icon                    = Cologne,
+        WorldStaticModel        = Cologne,
+        Tags                    = FadedHuntersCalling:scentlure;FadedHuntersCalling:scent_mouse,
+    }
+
+    item FHC_SquirrelScent
+    {
+        DisplayName             = Squirrel Scent Lure,
+        Type                    = Normal,
+        DisplayCategory         = Survival,
+        Weight                  = 0.2,
+        Icon                    = Cologne,
+        WorldStaticModel        = Cologne,
+        Tags                    = FadedHuntersCalling:scentlure;FadedHuntersCalling:scent_squirrel,
+    }
+
+    /* ----- Animal call field guides (vanilla book assets) ----- */
+
+    item FHC_AnimalCallBook_Cow
+    {
+        DisplayCategory         = RecipeResource,
+        ItemType                = base:literature,
+        DisplayName             = Field Guide: Cow Calls,
+        Weight                  = 0.5,
+        Icon                    = Book,
+        BoredomChange           = -10,
+        StressChange            = -5,
+        LearnedRecipes          = FHC_Call_Cow,
+        StaticModel             = Book,
+        WorldStaticModel        = BookClosedGround,
+        Tags                    = base:book;FadedHuntersCalling:animalcallbook,
+        OnCreate                = ItemCodeOnCreate.onCreateRecipeMagazine,
+    }
+
+    item FHC_AnimalCallBook_Pig
+    {
+        DisplayCategory         = RecipeResource,
+        ItemType                = base:literature,
+        DisplayName             = Field Guide: Pig Calls,
+        Weight                  = 0.5,
+        Icon                    = Book,
+        BoredomChange           = -10,
+        StressChange            = -5,
+        LearnedRecipes          = FHC_Call_Pig,
+        StaticModel             = Book,
+        WorldStaticModel        = BookClosedGround,
+        Tags                    = base:book;FadedHuntersCalling:animalcallbook,
+        OnCreate                = ItemCodeOnCreate.onCreateRecipeMagazine,
+    }
+
+    item FHC_AnimalCallBook_Sheep
+    {
+        DisplayCategory         = RecipeResource,
+        ItemType                = base:literature,
+        DisplayName             = Field Guide: Sheep Calls,
+        Weight                  = 0.5,
+        Icon                    = Book,
+        BoredomChange           = -10,
+        StressChange            = -5,
+        LearnedRecipes          = FHC_Call_Sheep,
+        StaticModel             = Book,
+        WorldStaticModel        = BookClosedGround,
+        Tags                    = base:book;FadedHuntersCalling:animalcallbook,
+        OnCreate                = ItemCodeOnCreate.onCreateRecipeMagazine,
+    }
+
+    item FHC_AnimalCallBook_Chicken
+    {
+        DisplayCategory         = RecipeResource,
+        ItemType                = base:literature,
+        DisplayName             = Field Guide: Chicken Calls,
+        Weight                  = 0.5,
+        Icon                    = Book,
+        BoredomChange           = -10,
+        StressChange            = -5,
+        LearnedRecipes          = FHC_Call_Chicken,
+        StaticModel             = Book,
+        WorldStaticModel        = BookClosedGround,
+        Tags                    = base:book;FadedHuntersCalling:animalcallbook,
+        OnCreate                = ItemCodeOnCreate.onCreateRecipeMagazine,
+    }
+
+    item FHC_AnimalCallBook_Turkey
+    {
+        DisplayCategory         = RecipeResource,
+        ItemType                = base:literature,
+        DisplayName             = Field Guide: Turkey Calls,
+        Weight                  = 0.5,
+        Icon                    = Book,
+        BoredomChange           = -10,
+        StressChange            = -5,
+        LearnedRecipes          = FHC_Call_Turkey,
+        StaticModel             = Book,
+        WorldStaticModel        = BookClosedGround,
+        Tags                    = base:book;FadedHuntersCalling:animalcallbook,
+        OnCreate                = ItemCodeOnCreate.onCreateRecipeMagazine,
+    }
+
+    item FHC_AnimalCallBook_Rabbit
+    {
+        DisplayCategory         = RecipeResource,
+        ItemType                = base:literature,
+        DisplayName             = Field Guide: Rabbit Calls,
+        Weight                  = 0.5,
+        Icon                    = Book,
+        BoredomChange           = -10,
+        StressChange            = -5,
+        LearnedRecipes          = FHC_Call_Rabbit,
+        StaticModel             = Book,
+        WorldStaticModel        = BookClosedGround,
+        Tags                    = base:book;FadedHuntersCalling:animalcallbook,
+        OnCreate                = ItemCodeOnCreate.onCreateRecipeMagazine,
+    }
+
+    item FHC_AnimalCallBook_Deer
+    {
+        DisplayCategory         = RecipeResource,
+        ItemType                = base:literature,
+        DisplayName             = Field Guide: Deer Calls,
+        Weight                  = 0.5,
+        Icon                    = Book,
+        BoredomChange           = -10,
+        StressChange            = -5,
+        LearnedRecipes          = FHC_Call_Deer,
+        StaticModel             = Book,
+        WorldStaticModel        = BookClosedGround,
+        Tags                    = base:book;FadedHuntersCalling:animalcallbook,
+        OnCreate                = ItemCodeOnCreate.onCreateRecipeMagazine,
+    }
+
+    item FHC_AnimalCallBook_Raccoon
+    {
+        DisplayCategory         = RecipeResource,
+        ItemType                = base:literature,
+        DisplayName             = Field Guide: Raccoon Calls,
+        Weight                  = 0.5,
+        Icon                    = Book,
+        BoredomChange           = -10,
+        StressChange            = -5,
+        LearnedRecipes          = FHC_Call_Raccoon,
+        StaticModel             = Book,
+        WorldStaticModel        = BookClosedGround,
+        Tags                    = base:book;FadedHuntersCalling:animalcallbook,
+        OnCreate                = ItemCodeOnCreate.onCreateRecipeMagazine,
+    }
+
+    item FHC_AnimalCallBook_Rat
+    {
+        DisplayCategory         = RecipeResource,
+        ItemType                = base:literature,
+        DisplayName             = Field Guide: Rat Calls,
+        Weight                  = 0.5,
+        Icon                    = Book,
+        BoredomChange           = -10,
+        StressChange            = -5,
+        LearnedRecipes          = FHC_Call_Rat,
+        StaticModel             = Book,
+        WorldStaticModel        = BookClosedGround,
+        Tags                    = base:book;FadedHuntersCalling:animalcallbook,
+        OnCreate                = ItemCodeOnCreate.onCreateRecipeMagazine,
+    }
+
+    item FHC_AnimalCallBook_Mouse
+    {
+        DisplayCategory         = RecipeResource,
+        ItemType                = base:literature,
+        DisplayName             = Field Guide: Mouse Calls,
+        Weight                  = 0.5,
+        Icon                    = Book,
+        BoredomChange           = -10,
+        StressChange            = -5,
+        LearnedRecipes          = FHC_Call_Mouse,
+        StaticModel             = Book,
+        WorldStaticModel        = BookClosedGround,
+        Tags                    = base:book;FadedHuntersCalling:animalcallbook,
+        OnCreate                = ItemCodeOnCreate.onCreateRecipeMagazine,
+    }
+
+    /* ----- Hunter's Journal item (gives access to the GUI when right-clicked) ----- */
+
+    item FHC_HuntersJournal
+    {
+        DisplayName             = Hunter's Field Journal,
+        Type                    = Normal,
+        Weight                  = 0.3,
+        Icon                    = FHC_Journal,
+        Tags                    = Book;FadedHuntersCalling:journal,
+        StaticModel             = Book,
+        WorldStaticModel        = BookClosedGround,
+    }
+
+    /* ----- Cordage / camp utility (light) ----- */
+
+    item FHC_Sinew
+    {
+        DisplayName             = Animal Sinew,
+        Type                    = Normal,
+        Weight                  = 0.05,
+        Icon                    = FHC_Sinew,
+        Tags                    = base:binding;base:simpleweaponbinding;FadedHuntersCalling:cordage;Cordage,
+    }
+}

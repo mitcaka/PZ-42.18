@@ -1,0 +1,78 @@
+{
+    "Open Boxed bayi cigarettes"	 : "Open Boxed bayi cigarettes",
+    "Take bayiCigarette"	 : "Take bayiCigarette",
+    "Add bayiCigarette"	 : "Add bayiCigarette",
+    "UnpackbayiCigaretteCarton"	 : "Unpack bayi CigaretteCarton",
+    "Pack bayi cigarettes into boxes"	 : "Pack bayi cigarettes into boxes",
+    "Pack bayiCigarette Carton"	 : "Pack bayiCigarette Carton",
+    "open emergency drinking water"	 : "open emergency drinking water",
+    "open AirForce Chocolate"	 : "open AirForce Chocolate",
+    "open Military energy pack"	 : "open Military energy pack",
+    "open Old squadleader pack"	 : "open Old squadleader pack",
+    "open Military reconnaissance pack"	 : "open Military reconnaissance pack",
+    "open Setmenu1"	 : "open Setmenu1",
+    "open Setmenu2"	 : "open Setmenu2",
+    "open Setmenu3"	 : "open Setmenu3",
+    "open Setmenu4"	 : "open Setmenu4",
+    "open Setmenu5"	 : "open Setmenu5",
+    "open armyprovisionsA"	 : "open armyprovisionsA",
+    "open armyprovisionsB"	 : "open armyprovisionsB",
+    "open Military grain"	 : "open Military grain",
+
+    "open Glucose oralsolution"	 : "open Glucose oralsolution",
+    "open box Energy drinks"	 : "open box Energy drinks",
+    "open box Braised cannedbeef"	 : "open box Braised cannedbeef",
+
+
+    "Open Boxed lucky strike"	 : "Open box Lucky Strike cigarettes",
+    "Take lucky strike" : "Take Lucky Strike cigarette",
+    "Add lucky strike" : "Put Lucky Strike cigarettes into the box",
+    "Pack lucky strike into boxes" : "Pack the Lucky Strike cigarettes into boxes",
+
+    "Open Boxed Camel cigarettes"	 : "Open box Camel cigarettes",
+    "Take Camel cigarettes" : "Take Camel cigarette",
+    "Add Camel cigarettes" : "Put the camel cigarettes into the box",
+    "Pack Camel cigarettes into boxes" : "Pack camel cigarettes into boxes",
+
+    "Open Boxed double happiness"  : "Pack camel cigarettes into boxes",
+    "Take double happiness" : "Take Hongshuangxi cigarette",
+    "Add double happiness" : "Put the Hongshuangxi cigarettes into the box",
+    "Packdoublehappinessintoboxes" : "Pack the Hongshuangxi cigarettes into boxes",
+    "Unpack double happiness Carton" : "Open the canned Hongshuangxi cigarettes",
+    "Pack double happiness Carton" : "Pack the reddouble happiness cigarette boxes into cans",
+
+    "Open Boxed Gaoxiba cigarettes" : "Open box Cohiba cigars",
+    "Take Gaoxiba cigarettes" : "Take Gaussie cigar",
+    "Add Gaoxiba cigarettes" : "Put the Gaussch cigar into the box",
+    "Pack Gaoxiba cigarettes into boxes" : "Pack the Gaussie cigars into boxes",
+
+    "Open Boxed yulan cigarettes" : "Open box Yulanhua cigarettes",
+    "Take yulan cigarettes" : "Take stick of Yulan tobacco",
+    "Add yulan cigarettes" : "Put the magnolia flower tobacco into box",
+    "Pack yulan cigarettes into boxes" : "Pack the magnolia flower tobacco into boxed format",
+
+    "open Portable first aidkit" : "Open box of first aid kit",
+    "open Military first aidkit" : "Open box of military first aid kits",
+
+    "OpenCannedFood" : "Open Canned Food",
+    "OpenCannedFood use knife" : "Use Knife to Open Canned Food",
+    "Open Box Of CannedFood" : "Pack Canned Food into Box",
+    "open Lemonjam softpie" : "Open Boxed Lemon Jam Soft Pie",
+    "open LBlueberry Cake CaramelPie" : "Open Boxed Blueberry Caramel Cake Pie",
+
+    "OpenBottleBeer" : "Open Bottled Beer",
+    "Open1982RedWine" : "Open Lafite 1982 Red Wine",
+
+    "Stewed meat vegetables" : "Make Meat and Vegetable Stew",
+    "make Braised beefstew" : "Make Braised Beef Pot",
+
+    "open BoxedShrimpDumplings" : "Open Boxed Shrimp Dumplings",
+    "open BoxedXiaoLongBao" : "Open Boxed Xiao Long Bao",
+    "open BoxedCrabWonton" : "Open Boxed Crab Wonton",
+    "open CompressedBiscuit bucket" : "Open Compressed Biscuit Bucket",
+    "open CompressedBiscuit" : "Open Compressed Biscuit",
+
+    "make Juicy Steamed Meatballs" : "Make Juicy Steamed Meatballs",
+    "make ChineseSteamed PorkRibs" : "Make Chinese Steamed Pork Ribs"
+
+}

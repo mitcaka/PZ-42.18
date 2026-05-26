@@ -1,0 +1,103 @@
+module Ted
+{
+    craftRecipe SpreadNutella
+    {
+        timedAction = SliceFish, 
+        time = 40,
+        category = Cooking,
+        xpAward = Cooking:2,
+        Tags = InHandCraft;CanBeDoneFromFloor;Cooking,
+        
+        inputs
+        {
+            item 1 tags[base:sharpknife;base:butterknife] mode:keep,
+            item 1 [Base.BreadSlices] flags[InheritFoodAge] mode:destroy,
+            item 1 [Ted.Nutella],
+        }
+        
+        outputs
+        {
+            item 1 Ted.BreadWithNutella,
+        }
+    }
+
+    craftRecipe ChickenPateOnBread
+    {
+        timedAction = SliceFish, 
+        time = 40,
+        category = Cooking,
+        xpAward = Cooking:2,
+        Tags = InHandCraft;CanBeDoneFromFloor;Cooking,
+        
+        inputs
+        {
+            item 1 tags[base:sharpknife;base:butterknife] mode:keep,
+            item 1 [Base.BreadSlices] flags[InheritFoodAge] mode:destroy,
+            item 1 [Ted.CannedChickenPateOpen],
+        }
+        
+        outputs
+        {
+            item 1 Ted.ChickenPateOnBread,
+        }
+    }
+
+    craftRecipe DuckPateOnBread
+    {
+        timedAction = SliceFish, 
+        time = 40,
+        category = Cooking,
+        xpAward = Cooking:2,
+        Tags = InHandCraft;CanBeDoneFromFloor;Cooking,
+        
+        inputs
+        {
+            item 1 tags[base:sharpknife;base:butterknife] mode:keep,
+            item 1 [Base.BreadSlices] flags[InheritFoodAge] mode:destroy,
+            item 1 [Ted.CannedDuckPateOpen],
+        }
+        
+        outputs
+        {
+            item 1 Ted.DuckPateOnBread,
+        }
+    }
+
+    craftRecipe MakeBowlOfLuckyCharmsCerealBowl
+    {
+        timedAction = MixingBowl,
+        time = 20,
+        Tags = InHandCraft;Cooking,
+        category = Cooking,
+        xpAward = Cooking:3,
+        inputs
+        {
+            item 1 [Base.Bowl;Base.ClayBowl] mode:destroy flags[ItemCount],
+            -fluid 0.3 [CowMilk;SheepMilk],
+            item 5 [Ted.LuckyCharmsCereal],
+        }
+        outputs
+        {
+            item 1 Ted.LuckyCharmsCerealBowl,
+        }
+    }
+
+    craftRecipe MakeBowlOfOreoCerealBowl
+    {
+        timedAction = MixingBowl,
+        time = 20,
+        Tags = InHandCraft;Cooking,
+        category = Cooking,
+        xpAward = Cooking:3,
+        inputs
+        {
+            item 1 [Base.Bowl;Base.ClayBowl] mode:destroy flags[ItemCount],
+            -fluid 0.3 [CowMilk;SheepMilk],
+            item 5 [Ted.OreoCereal],
+        }
+        outputs
+        {
+            item 1 Ted.OreoCerealBowl,
+        }
+    }
+}

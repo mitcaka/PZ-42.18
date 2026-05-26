@@ -1,0 +1,22 @@
+/*	These have been replaced to fix... DisplayCategory = GunMag,	ARSENAL[26] */
+
+
+module Base
+{
+
+    item 556Belt
+    {
+	CanStack		=	FALSE,
+	Weight		=	0.5,
+	Type			=	Normal,
+	ItemType = base:normal,
+	DisplayName		=	5.56x45mm Box Magazine,
+	DisplayCategory	=	GunMag,
+	Icon			=	M249Mag,
+	MaxAmmo 		=	100,
+	AmmoType 		=	base:bullets_556,
+	StaticModel 	=	GunMagazine,
+	WorldStaticModel 	=	W_Standard_Mag_M249,
+	GunType		=	Multi_Gun,
+    }
+}

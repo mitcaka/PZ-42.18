@@ -1,0 +1,19 @@
+{
+    "IGUI_FWP_INSPECT_INSPECT_WEAPON":  "Sprawd� bro�",
+    "IGUI_FWP_INSPECT_CONDITION":  "Stan",
+    "IGUI_FWP_INSPECT_PRISTINE":  "Nienaganny",
+    "IGUI_FWP_INSPECT_USED":  "U�ywana",
+    "IGUI_FWP_INSPECT_DAMAGED":  "Uszkodzona",
+    "IGUI_FWP_INSPECT_BADLY_DAMAGED":  "Bardzo uszkodzona",
+    "IGUI_FWP_INSPECT_REPAIR_NONE":  "Brak oznak naprawy",
+    "IGUI_FWP_INSPECT_REPAIR_SLIGHTLY":  "Lekko naprawiony",
+    "IGUI_FWP_INSPECT_REPAIR_HEAVILY":  "Powa�nie naprawiony",
+    "IGUI_FWP_INSPECT_ATTACHMENTS":  "Dodatki",
+    "IGUI_FWP_INSPECT_NONE":  "Brak",
+    "IGUI_FWP_INSPECT_CANON":  "Lufa",
+    "IGUI_FWP_INSPECT_CLIP":  "Magazynek",
+    "IGUI_FWP_INSPECT_RECOIL_PAD":  "Recoil Pad",
+    "IGUI_FWP_INSPECT_SCOPE":  "Celownik",
+    "IGUI_FWP_INSPECT_SLING":  "Pas",
+    "IGUI_FWP_INSPECT_STOCK":  "Kolba"
+}

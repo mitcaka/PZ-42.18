@@ -1,0 +1,11 @@
+/*	FAKE ITEM TO SATISFY NEW MAGAZINE ITEM PARAMETER... ARSENAL[26]	*/
+
+
+module Base
+{
+	item Multi_Gun
+	{
+		ItemType = base:normal,
+		DisplayName	=	Multi-Gun,
+	}
+}

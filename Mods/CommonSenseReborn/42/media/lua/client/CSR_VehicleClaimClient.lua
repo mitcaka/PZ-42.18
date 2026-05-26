@@ -77,23 +77,14 @@ local function onClaimVehicle(playerObj)
     if not vehicle then return end
     local username = playerObj:getUsername()
 
-    -- v1.8.5: admins skip the client-side "already claimed" / cap rejects so
-    -- the server-side admin force-claim path can run.
+    -- v1.8.5: admins skip the client-side "already claimed" reject so the
+    -- server-side admin force-claim path can run.
     local access = playerObj.getAccessLevel and playerObj:getAccessLevel() or ""
     local isAdmin = (access == "admin" or access == "Admin")
 
     if not isAdmin and CSR_VehicleClaim.isClaimed(vehicle) then
         notifyError(playerObj, "Vehicle already claimed")
         return
-    end
-
-    if not isAdmin then
-        local count = CSR_VehicleClaim.getClaimCount(username)
-        local max = CSR_VehicleClaim.getMaxClaims()
-        if count >= max then
-            notifyError(playerObj, "Max vehicles claimed (" .. max .. ")")
-            return
-        end
     end
 
     if isClient() then

@@ -1,0 +1,31 @@
+module Base
+{
+    item FWP_12gIncendiaryShells
+    {
+        Count = 5,
+        Weight = 0.06,
+        AlwaysWelcomeGift = TRUE,
+        Type = Normal,
+        ItemType = base:normal,
+        DisplayCategory = Ammo,
+        DisplayName = 12g Incendiary Shell,
+        Icon = 12gAmmo,
+        MetalValue = 1,
+        WorldStaticModel = 12gShotgunShells,
+        Tags = base:ammo;base:shotgunshell;fwp:incendiaryammo,
+    }
+
+    item FWP_12gIncendiaryShellsBox
+    {
+        Weight = 0.75,
+        Type = Normal,
+        ItemType = base:normal,
+        DisplayCategory = Ammo,
+        DisplayName = Box of 12g Incendiary Shells,
+        Icon = 12gBox,
+        MetalValue = 24,
+        WorldStaticModel = WBox_12G,
+        DoubleClickRecipe = FWP_Open_FWP_12gIncendiaryShellsBox,
+        Tags = base:ammo;fwp:incendiaryammo,
+    }
+}

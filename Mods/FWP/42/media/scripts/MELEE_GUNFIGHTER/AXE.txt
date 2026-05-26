@@ -1,0 +1,196 @@
+module Base
+{
+
+/*	==================================================
+	==	(BRITA) TACTICAL SICKLE				==
+	==================================================	*/
+	item Tactical_Sickle	{
+
+	DisplayName			=	Tactical_Sickle	,
+	Icon				=	Tactical_Sickle	,
+	WeaponSprite			=	Tactical_Sickle	,
+	Type				=	Weapon		,
+	ItemType = base:weapon,
+	Categories			=	Axe			,
+	SubCategory			=	Swinging		,
+	DisplayCategory			=	ToolWeapon		,
+	Tags				=	ChopTree;CutPlant	,
+	AttachmentType			=	Hammer		,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange			=	0.61	,
+	MaxRange			=	1.1	,
+	MinDamage			=	0.6	,
+	MaxDamage			=	1.0	,
+	CriticalChance			=	15	,
+	CritDmgMultiplier		=	5	,
+	MinAngle			=	0.67	,
+	MinimumSwingTime		=	3	,
+	SwingAmountBeforeImpact		=	0.02	,
+	ConditionMax			=	15	,	/* +5 HAND AXE */
+	ConditionLowerChanceOneIn	=	20	,	/* +5 HAND AXE */
+	BaseSpeed			=	1	,
+     	WeaponLength			=	0.35	,
+	Weight				=	2	,
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount			=	2	,
+	SwingTime			=	4	,
+	PushBackMod			=	0.3	,
+	SplatNumber			=	2	,
+	KnockdownMod			=	2	,
+	SplatBloodOnNoDeath		=	FALSE	,
+	KnockBackOnNoDeath		=	FALSE	,
+	DoorDamage			=	20	,
+	TreeDamage  			=	5	,
+     	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	/* =========== TRANSFORM VARIABLES =========== */
+	/* ============ ANIMATION & SOUND ============ */
+	SwingAnim			=	Bat,
+	SwingSound			=	HandAxeSwing,
+	BreakSound			=	HandAxeBreak,
+	DoorHitSound			=	HandAxeHit,
+	HitSound			=	HandAxeHit,
+	HitFloorSound			=	HandAxeHit,
+  	}
+
+
+	model Tactical_Sickle
+	{
+		mesh = weapons/1handed/Tactical_Sickle,
+	}
+
+
+/*	==================================================
+	==	(BRITA) WORLDWAR-1 TRENCH AXE			==
+	==================================================	*/
+	item Trench_Axe	{
+
+	DisplayName			=	WW1 Trench Axe		,
+	Icon				=	Trench_Axe		,
+	WeaponSprite			=	Trench_Axe		,
+	Type				=	Weapon			,
+	ItemType = base:weapon,
+	Categories			=	Axe			,
+	SubCategory			=	Swinging		,
+	DisplayCategory			=	ToolWeapon		,
+	Tags				=	ChopTree;CutPlant	,
+	AttachmentType			=	BigBlade		,
+	TwoHandWeapon			=	TRUE			,
+	RequiresEquippedBothHands	=	TRUE			,
+        EnduranceMod			=	3			,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange			=	0.61	,
+	MaxRange			=	1.35	,	/* AS WOOD AXE */
+	MinDamage			=	1.3	,	/* AS WOOD AXE */
+	MaxDamage			=	3.0	,
+	CriticalChance			=	50	,
+	CritDmgMultiplier		=	12	,
+	MinAngle			=	0.8	,	/* AS WOOD AXE */
+	HitAngleMod			=	-30	,
+	MinimumSwingTime		=	0.5	,
+	SwingAmountBeforeImpact		=	0.002	,
+	ConditionMax			=	17	,	/* +2 WOOD AXE */
+	ConditionLowerChanceOneIn	=	30	,	/* +5 WOOD AXE */
+	BaseSpeed			=	1	,
+     	WeaponLength			=	0.5	,
+	Weight				=	3	,	/* AS WOOD AXE */
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount			=	3	,
+	SwingTime			=	0.5	,
+	PushBackMod			=	0.3	,
+	SplatNumber			=	3	,
+	SplatSize			=	5	,
+	KnockdownMod			=	3	,
+	SplatBloodOnNoDeath		=	TRUE	,
+	KnockBackOnNoDeath		=	TRUE	,
+	DoorDamage			=	55	,
+	TreeDamage  			=	55	,
+     	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	/* =========== TRANSFORM VARIABLES =========== */
+	/* ============ ANIMATION & SOUND ============ */
+	IdleAnim			=	Idle_Weapon2,
+	RunAnim				=	Run_Weapon2,
+        SwingAnim			=	Heavy,
+        SwingSound			=	WoodAxeSwing,
+        BreakSound			=	WoodAxeBreak,
+        DoorHitSound			=	WoodAxeHit,
+        HitSound			=	WoodAxeHit,
+        HitFloorSound			=	WoodAxeHit,
+	MetalValue			=	120,
+  	}
+
+	model Trench_Axe
+	{
+		mesh = weapons/2handed/Trench_Axe,
+		texture = Weapons/2handed/Annas_Axe,
+	}
+
+
+/*	==================================================
+	==	(BRITA) CELTIC 1 Broad AXE			==
+	==================================================	*/
+	item Broad_Axe	{
+
+	DisplayName			=	Celtic Broad Axe	,
+	Icon				=	Broad_Axe		,
+	WeaponSprite			=	Broad_Axe		,
+	Type				=	Weapon			,
+	ItemType = base:weapon,
+	Categories			=	Axe			,
+	SubCategory			=	Swinging		,
+	DisplayCategory			=	ToolWeapon		,
+	Tags				=	ChopTree;CutPlant	,
+	AttachmentType			=	BigBlade		,
+	TwoHandWeapon			=	TRUE			,
+	RequiresEquippedBothHands	=	TRUE			,
+        EnduranceMod			=	3			,
+	/* ============ PERFORMANCE DATA ============= */
+	MinRange			=	0.61	,
+	MaxRange			=	1.37	,	/* +0.02 WOOD AXE */
+	MinDamage			=	1.4	,	/* +0.1  WOOD AXE */
+	MaxDamage			=	3.1	,	/* +0.1  WOOD AXE */
+	CriticalChance			=	52	,	/* +2.0  WOOD AXE */
+	CritDmgMultiplier		=	12	,
+	MinAngle			=	0.8	,	/* AS WOOD AXE */
+	HitAngleMod			=	-30	,
+	MinimumSwingTime		=	0.6	,	/* +0.1  WOOD AXE */
+	SwingAmountBeforeImpact		=	0.002	,
+	ConditionMax			=	18	,	/* +3 WOOD AXE */
+	ConditionLowerChanceOneIn	=	35	,	/* +10 WOOD AXE */
+	BaseSpeed			=	1	,
+     	WeaponLength			=	0.5	,	/* AS WOOD AXE */
+	Weight				=	3.5	,	/* +0.5 WOOD AXE */
+	/* ============= AMMUNITION DATA ============= */
+	MaxHitCount			=	3	,
+	SwingTime			=	0.6	,
+	PushBackMod			=	0.3	,
+	SplatNumber			=	3	,
+	SplatSize			=	5	,
+	KnockdownMod			=	3	,
+	SplatBloodOnNoDeath		=	TRUE	,
+	KnockBackOnNoDeath		=	TRUE	,
+	DoorDamage			=	57	,	/* +2.0  WOOD AXE */
+	TreeDamage  			=	57	,	/* +2.0  WOOD AXE */
+     	DamageCategory			=	Slash	,
+	DamageMakeHole			=	TRUE	,
+	/* =========== TRANSFORM VARIABLES =========== */
+	/* ============ ANIMATION & SOUND ============ */
+	IdleAnim			=	Idle_Weapon2,
+	RunAnim				=	Run_Weapon2,
+        SwingAnim			=	Heavy,
+        SwingSound			=	WoodAxeSwing,
+        BreakSound			=	WoodAxeBreak,
+        DoorHitSound			=	WoodAxeHit,
+        HitSound			=	WoodAxeHit,
+        HitFloorSound			=	WoodAxeHit,
+	MetalValue			=	120,
+  	}
+
+
+	model Broad_Axe
+	{
+		mesh = weapons/2handed/Broad_Axe,
+		texture = Weapons/2handed/Annas_Axe,
+	}
+}

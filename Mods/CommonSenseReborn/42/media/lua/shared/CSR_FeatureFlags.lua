@@ -395,6 +395,17 @@ function CSR_FeatureFlags.isClaimRespawnEnabled()
     return sandbox().EnableClaimRespawn ~= false
 end
 
+function CSR_FeatureFlags.isLoginProtectionEnabled()
+    return sandbox().EnableLoginProtection ~= false
+end
+
+function CSR_FeatureFlags.getLoginProtectionSeconds()
+    local value = tonumber(sandbox().LoginProtectionSeconds) or 45
+    if value < 1 then return 1 end
+    if value > 120 then return 120 end
+    return value
+end
+
 function CSR_FeatureFlags.isMultipleSafehouseEnabled()
     return sandbox().EnableMultipleSafehouse ~= false
 end

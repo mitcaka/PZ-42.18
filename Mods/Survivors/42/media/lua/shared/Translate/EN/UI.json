@@ -1,0 +1,10 @@
+{
+    "UI_optionscreen_binding_Bandits":  "Survivors",
+    "UI_optionscreen_binding_POSTS":  "Manage Guardposts",
+    "UI_BanditDeialogue_OptionsMenu_title":  "Survivor Dialogues",
+    "UI_BanditDeialogue_OptionsMenu_keybing":  "View acquaintances list",
+    "UI_BanditDeialogue_OptionsMenu_RelationshipMenutitle":  "Acquaintances List",
+    "UI_BanditDeialogue_OptionsMenu_RelationshipsTitle":  "Acquaintances",
+    "UI_BanditDeialogue_OptionsMenu_Relationships":  "Acquaintances",
+    "UI_BanditDeialogue_OptionsMenu_RelationshipRemove":  "Remove"
+}

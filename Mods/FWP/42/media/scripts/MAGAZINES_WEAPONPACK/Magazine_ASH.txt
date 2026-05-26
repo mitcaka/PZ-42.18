@@ -1,0 +1,40 @@
+/*	These have been replaced to fix... DisplayCategory = GunMag,	ARSENAL[26] */
+
+
+module Base
+{
+
+    item ASHClip
+    {
+	CanStack		=	FALSE,
+	Weight			=	0.25,
+	Type			=	Normal,
+	ItemType = base:normal,
+	DisplayName		=	ASH (50-Mag) Magazine,
+	DisplayCategory		=	GunMag,
+	Icon			=	308ExtMag,
+	MaxAmmo 		=	20,
+	AmmoType 		=	fwp:bullets50_mag,
+	StaticModel	 	=	GunMagazine,
+	WorldStaticModel 	=	W_Extended_Mag_308,
+	GunType			=	Ash, 
+   }
+
+
+    item 50Clip
+    {
+	CanStack		=	FALSE,
+	Weight			=	0.25,
+	Type			=	Normal,
+	ItemType = base:normal,
+	DisplayName		=	50-Mag Sgl-Stack Magazine,
+	DisplayCategory		=	GunMag,
+	Icon			=	44Mag,
+	MaxAmmo 		=	7,
+	AmmoType 		=	fwp:bullets50_mag,
+	StaticModel	 	=	GunMagazine,
+	WorldStaticModel 	=	W_Standard_Mag_DS,
+	GunType			=	Multi-Gun, 
+   }
+
+}

@@ -1,0 +1,22 @@
+/*	These have been replaced to fix... DisplayCategory = GunMag,	ARSENAL[26] */
+
+
+module Base
+{
+
+    item 223StdClip
+    {
+        CanStack	=	FALSE,
+        Weight		=	0.15,
+        Type		=	Normal,
+        ItemType = base:normal,
+        DisplayName	=	223-REM Magazine,
+	DisplayCategory	=	GunMag,
+        Icon		=	223StdMag,
+        MaxAmmo 	=	10,
+        AmmoType 	=	fwp:223_bullets,
+        StaticModel 	=	GunMagazine,
+	WorldStaticModel	=	W_Standard_Mag_223,
+	GunType		=	Multi_Gun,
+    }
+}

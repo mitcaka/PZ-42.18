@@ -1,0 +1,16 @@
+name=Just Survivors
+poster=poster.png
+icon=icon.png
+id=Survivors
+description=<H1><GREEN>JUST SURVIVORS B42.18+ SP/MP
+description=<BR>
+description=Permission-based Just Survivors NPC port for Build 42.18.
+description=<BR>
+description=Includes integrated relationship/dialogue and radio/AI addon systems.
+description=<BR>
+description=<ORANGE>Legacy internal namespace retained for compatibility.
+incompatible=\BetterFPS_B42,\TrueCrawlStealth,\TrueCrawl,\BanditsAddOptions,\TheStar42
+author=Luis / Faded
+versionMin=42.0.0
+modversion=0.42.18-port
+

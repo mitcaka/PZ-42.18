@@ -1,0 +1,22 @@
+/*	These have been replaced to fix... DisplayCategory = GunMag,	ARSENAL[26] */
+
+
+module Base
+{
+
+    item 308Clip
+    {
+	CanStack		=	FALSE,
+	Weight		=	0.2,
+	Type			=	Normal,
+	ItemType = base:normal,
+	DisplayName		=	308-WIN Hunting Magazine,
+	DisplayCategory	=	GunMag,
+	Icon			=	308HuntMag,
+	MaxAmmo 		=	3,
+	AmmoType 		=	base:bullets_308,
+	StaticModel 	=	GunMagazine,
+	WorldStaticModel 	=	W_Hunting_Mag_308,
+	GunType		=	Multi_Gun,
+    }
+}

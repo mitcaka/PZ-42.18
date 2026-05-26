@@ -50,6 +50,7 @@
 
 [h3]Hotfixes[/h3]
 [list]
+[*] [b]Quick Repair scope[/b]: restored quick repair eligibility for most damaged weapons and tools, including machetes and similar condition-based items. Only screwdrivers and hammers now stay on the tougher Tool Repair path requiring a propane torch, scrap metal, and a plank.
 [*] [b]Signal Tools usability[/b]: glow sticks now have an inventory [i]Activate Glow Stick[/i] option in addition to the ground-tile throw menu, the throw/fire ground targeting now falls back to the clicked mouse tile more reliably, and the weapon display name is [i]Signal Flare Gun[/i] so searching "flare gun" in admin item lists finds [i]Base.CSR_SignalPistol[/i]. Signal loot entries were broadened across camping lighting, electronics, gun, police, military, ranger, pawn-shop, and ammo pools.
 [*] [b]Speed Reload MP magazine drop[/b]: dumped magazines are now spawned by a server-backed command in multiplayer instead of relying on a client-local world item drop, so the ejected magazine should persist on the ground with its ammo count.
 [*] [b]Dual Wield secondary damage[/b]: restored direct server-authoritative left-hand hit application for off-hand attacks after B42.18 testing showed the two-phase damage path could animate without applying secondary-weapon damage.

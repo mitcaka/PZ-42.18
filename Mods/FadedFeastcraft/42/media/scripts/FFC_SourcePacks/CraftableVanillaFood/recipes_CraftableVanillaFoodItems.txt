@@ -1,0 +1,429 @@
+module Base
+{
+	craftRecipe MakeCheese
+	{
+		time = 100,
+		timedAction = MixingBowl,
+		tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.CheeseCloth] mode:keep,
+			item 1 [*],
+			-fluid 1 [CowMilk;SheepMilk],
+			item 1 [Base.Vinegar2;Base.Vinegar_Jug;Base.RiceVinegar;Base.BalsamicVinegar],
+			item 1 [Base.Salt;Base.SeasoningSalt],
+		}
+		outputs
+		{
+			item 2 Base.Cheese,
+		}
+	}
+
+	craftRecipe MakeProcessedCheese
+	{
+		timedAction = SliceMeat_Surface,
+		time = 50,
+		Tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 tags[base:sharpknife;base:meatcleaver] mode:keep flags[IsNotDull;SharpnessCheck],
+			item 1 [Base.Cheese] flags[InheritFood;ItemCount],
+		}
+		outputs
+		{
+			item 2 Base.Processedcheese,
+		}
+	}
+
+	craftRecipe MakeIcecream
+	{
+		time = 100,
+		timedAction = MixingBowl,
+		tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 [Base.Whisk] mode:keep,
+			item 1 [Base.Coldpack] mode:keep,
+			item 1 [*],
+			-fluid 2.5 [CowMilk;SheepMilk],
+			item 8 tags[base:sugar],
+		}
+		outputs
+		{
+			item 1 Base.Icecream,
+		}
+	}
+
+	craftRecipe MakeYoghurt
+	{
+		time = 100,
+		timedAction = MixingBowl,
+		tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [*],
+			-fluid 1 [CowMilk;SheepMilk],
+			item 1 [Base.Yeast],
+		}
+		outputs
+		{
+			item 2 Base.Yoghurt,
+		}
+	}
+	
+	craftRecipe MakeGroundBeef
+	{
+		timedAction = SliceMeat_Surface,
+		time = 100,
+		Tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 tags[base:sharpknife;base:meatcleaver] mode:keep flags[IsNotDull;SharpnessCheck],
+			item 40 [Base.Steak;Base.Beef;Base.PorkChop;Base.Pork;Base.Chicken;Base.ChickenFillet;Base.TurkeyLegs;Base.TurkeyFillet;Base.MuttonChop;Base.Venison;Base.Rabbitmeat;Base.Smallbirdmeat] flags[IsUncookedFoodItem;InheritFoodAge;InheritCooked],
+		}
+		outputs
+		{
+			item 1 Base.MincedMeat,
+		}
+	}
+	
+	craftRecipe MakeSausage
+	{
+		timedAction = MixingBowl,
+		time = 100,
+		Tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 40 [Base.MincedMeat;Base.MeatPatty] flags[IsUncookedFoodItem;InheritFoodAge;InheritCooked],
+			item 1 [Base.Salt;Base.SeasoningSalt],
+		}
+		outputs
+		{
+			item 2 Base.Sausage,
+		}
+	}
+	
+	craftRecipe MakeHotdogWienerSingle
+	{
+		timedAction = MixingBowl,
+		time = 100,
+		Tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 40 [Base.MincedMeat;Base.MeatPatty] flags[IsUncookedFoodItem;InheritFoodAge;InheritCooked],
+			item 1 [Base.Salt;Base.SeasoningSalt],
+			item 1 tags[base:sugar],
+		}
+		outputs
+		{
+			item 4 Base.Hotdog_single,
+		}
+	}
+	
+	craftRecipe MakeHamburgerBunsFromBread
+	{
+		timedAction = SliceBread_Surface,
+		time = 40,
+		Tooltip = Tooltip_Recipe_MustCookedSlice,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 tags[base:dullknife;base:sharpknife;base:meatcleaver] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.BreadDough;Base.Bread;Base.Baguette] mappers[breadType;breadType2] flags[InheritCooked;InheritFood;IsCookedFoodItem;ItemCount],
+		}
+		outputs
+		{
+			item 3 Base.BunsHamburger_single,
+		}
+	}
+	
+	craftRecipe MakeHamburgerBunsFromBreadSlices
+	{
+		timedAction = Making,
+		time = 13,
+		category = Cooking,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		xpAward = Cooking:1,
+		inputs
+		{
+			item 1 [Base.BreadSlices] flags[InheritCooked;InheritFood;ItemCount],
+		}
+		outputs
+		{
+			item 1 Base.BunsHamburger_single,
+		}
+	}
+	
+	craftRecipe MakeHotdogBunsFromBread
+	{
+		timedAction = SliceBread_Surface,
+		time = 40,
+		Tooltip = Tooltip_Recipe_MustCookedSlice,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 tags[base:dullknife;base:sharpknife;base:meatcleaver] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.BreadDough;Base.Bread;Base.Baguette] mappers[breadType;breadType2] flags[InheritCooked;InheritFood;IsCookedFoodItem;ItemCount],
+		}
+		outputs
+		{
+			item 3 Base.BunsHotdog_single,
+		}
+	}
+	
+	craftRecipe MakeHotdogBunsFromBreadSlices
+	{
+		timedAction = Making,
+		time = 13,
+		category = Cooking,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		xpAward = Cooking:1,
+		inputs
+		{
+			item 1 [Base.BreadSlices] flags[InheritCooked;InheritFood;ItemCount],
+		}
+		outputs
+		{
+			item 1 Base.BunsHotdog_single,
+		}
+	}
+	craftRecipe MakeTortilla
+	{
+		timedAction = MixingBowl,
+		time = 100,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 [Base.RollingPin] mode:keep flags[MayDegrade],
+			item 1 [Base.Pan;Base.PanForged] mode:keep flags[InheritCondition],
+			item 10 tags[base:flour],
+			item 2 [Base.Salt;Base.SeasoningSalt],
+			item 2 tags[base:bakingfat],
+			item 1 [*],
+			-fluid 1 [Water],
+		}
+		outputs
+		{
+			item 5 Base.Tortilla,
+		}
+	}
+	
+	craftRecipe MakeTacoShell
+	{
+		timedAction = EmptyPan,
+		time = 50,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:1,
+		inputs
+		{
+			item 1 [Base.Pan;Base.PanForged] mode:keep flags[InheritCondition],
+			item 3 [Base.Tortilla] flags[InheritFoodAge;ItemCount],
+			item 1 tags[base:bakingfat],
+		}
+		outputs
+		{
+			item 3 Base.TacoShell,
+		}
+	}
+
+	craftRecipe MakeCone
+	{
+		timedAction = MixingBowl,
+		time = 100,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 tags[base:rollingpin] mode:keep flags[MayDegrade],
+			item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 [Base.BakingTray] mode:keep flags[IsEmpty],
+			item 2 [Base.Butter],
+			item 10 tags[base:sugar],
+			item 2 tags[base:egg] flags[IsUncookedFoodItem;InheritFoodAge;ItemCount],
+			item 3 tags[base:flour],
+		}
+		outputs
+		{
+			item 6 Base.Cone,
+		}
+	}
+
+	craftRecipe MakeSimpleOnigiri
+	{
+		timedAction = MixingBowl,
+		time = 30,
+		NeedToBeLearn = true,
+		OnCreate = RecipeCodeOnCreate.makeSushi,
+		Tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+		AutoLearnAny = Cooking:6,
+		inputs
+		{
+			item 1 tags[base:sharpknife;base:meatcleaver] mode:keep flags[IsNotDull;SharpnessCheck],
+			item 2 tags[base:fishmeat] flags[IsCookedFoodItem;InheritFoodAge],
+			item 4 tags[base:ricerecipe] flags[IsCookedFoodItem],
+			item 1 [Base.Seaweed] flags[ItemCount],
+			item 1 [Base.Salt;Base.SeasoningSalt],
+		}
+		outputs
+		{
+			item 1 Base.Onigiri,
+		}
+	}
+
+	craftRecipe MakeHomemadePancake
+	{
+		timedAction = MixingBowl,
+		time = 100,
+		Tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep flags[ItemCount],
+			item 1 tags[base:flour],
+			item 1 tags[base:bakingfat],
+			item 1 tags[base:sugar],
+			item 1 tags[base:egg] flags[IsUncookedFoodItem;InheritFoodAge;ItemCount],
+			item 1 [Base.BakingSoda;Base.Yeast;Base.Lemon;Base.Lime;Base.Yoghurt],
+			item 1 [*],
+			-fluid 0.3 [CowMilk;SheepMilk],
+		}
+		outputs
+		{
+			item 1 Base.PancakesCraft,
+		}
+	}
+	
+	craftRecipe MakeChickenNuggets
+	{
+		time = 100,
+		timedAction = MixingBowl,
+		tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 tags[base:sharpknife;base:meatcleaver] mode:keep flags[IsNotDull;SharpnessCheck],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
+			item 30 [Base.Chicken;Base.ChickenFillet;Base.TurkeyLegs;Base.TurkeyFillet;Base.MincedMeat] flags[IsUncookedFoodItem;InheritFoodAge;InheritCooked],
+			item 1 tags[base:flour],
+			item 1 [Base.Salt;Base.SeasoningSalt],
+			item 1 [*],
+			-fluid 0.1 [Water],
+			item 2 tags[base:bakingfat],
+		}
+		outputs
+		{
+			item 3 Base.ChickenNuggets,
+		}
+	}
+	
+	craftRecipe MakeFishFingers
+	{
+		time = 80,
+		timedAction = MixingBowl,
+		tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 tags[base:sharpknife;base:meatcleaver] mode:keep flags[IsNotDull;SharpnessCheck],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
+			item 30 [Base.FishFillet] flags[IsUncookedFoodItem;InheritFoodAge;InheritCooked],
+			item 1 tags[base:flour],
+			item 1 [Base.Salt;Base.SeasoningSalt],
+			item 1 [*],
+			-fluid 0.1 [Water],
+			item 2 tags[base:bakingfat],
+		}
+		outputs
+		{
+			item 3 Base.FishFingers,
+		}
+	}
+	
+	craftRecipe MakeFries
+	{
+		time = 80,
+		timedAction = MixingBowl,
+		tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 tags[base:sharpknife;base:meatcleaver] mode:keep flags[IsNotDull;SharpnessCheck],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
+			item 30 [Base.Potato;Base.SweetPotato] flags[IsUncookedFoodItem;InheritFoodAge;InheritCooked],
+			item 1 tags[base:flour],
+			item 1 [Base.Salt;Base.SeasoningSalt],
+			item 1 [*],
+			-fluid 0.1 [Water],
+			item 2 tags[base:bakingfat],
+		}
+		outputs
+		{
+			item 3 Base.FrenchFries,
+		}
+	}
+	
+	craftRecipe MakeTatoDots
+	{
+		time = 100,
+		timedAction = MixingBowl,
+		tags = AnySurfaceCraft;Cooking,
+		category = Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 tags[base:sharpknife;base:meatcleaver] mode:keep flags[IsNotDull;SharpnessCheck],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 tags[base:mixingutensil] mode:keep flags[MayDegradeVeryLight],
+			item 30 [Base.Potato;Base.SweetPotato] flags[IsUncookedFoodItem;InheritFoodAge;InheritCooked],
+			item 1 tags[base:flour],
+			item 1 [Base.Salt;Base.SeasoningSalt],
+			item 1 [*],
+			-fluid 0.1 [Water],
+			item 2 tags[base:bakingfat],
+		}
+		outputs
+		{
+			item 3 Base.TatoDots,
+		}
+	}
+}

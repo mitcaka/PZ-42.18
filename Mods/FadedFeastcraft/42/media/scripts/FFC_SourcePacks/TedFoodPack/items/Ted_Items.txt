@@ -1,0 +1,2950 @@
+module Ted
+{
+    require { base }
+
+    item Cheese Burger
+    {
+	DisplayName = Cheese Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = CheeseBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -30.0,
+        UnhappyChange = -20,
+        Calories = 500.0,
+        Carbohydrates = 0.0,
+        Lipids = 38.0,
+        Proteins = 27.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+	
+    item BBQ Burger
+    {
+	DisplayName = BBQ Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = BBQBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -20.0,
+        UnhappyChange = -15,
+        Calories = 400.0,
+        Carbohydrates = 0.0,
+        Lipids = 35.0,
+        Proteins = 22.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Bacon Burger
+    {
+	DisplayName = Bacon Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = BaconBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -35.0,
+        UnhappyChange = -20,
+        Calories = 520.0,
+        Carbohydrates = 0.0,
+        Lipids = 40.0,
+        Proteins = 30.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Veggie Burger
+    {
+	DisplayName = Veggie Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = VeggieBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -15.0,
+        UnhappyChange = -5,
+        Calories = 150.0,
+        Carbohydrates = 0.0,
+        Lipids = 10.0,
+        Proteins = 10.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Ham Burger
+    {
+	DisplayName = Ham Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = HamBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -25.0,
+        UnhappyChange = -12,
+        Calories = 200.0,
+        Carbohydrates = 0.0,
+        Lipids = 30.0,
+        Proteins = 20.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Grilled Cheese Burger
+    {
+	DisplayName = Grilled Cheese Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = GrilledCheeseBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -30.0,
+        UnhappyChange = -12,
+        Calories = 320.0,
+        Carbohydrates = 0.0,
+        Lipids = 30.0,
+        Proteins = 25.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Onion Burger
+    {
+	DisplayName = Onion Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = OnionBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -30.0,
+        UnhappyChange = -18,
+        Calories = 400.0,
+        Carbohydrates = 0.0,
+        Lipids = 30.0,
+        Proteins = 25.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Smash Burger
+    {
+	DisplayName = Smash Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = SmashBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -35.0,
+        UnhappyChange = -20,
+        Calories = 512.0,
+        Carbohydrates = 0.0,
+        Lipids = 30.0,
+        Proteins = 25.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Salmon Burger
+    {
+	DisplayName = Salmon Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = FishBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -25.0,
+        UnhappyChange = -10,
+        Calories = 356.0,
+        Carbohydrates = 0.0,
+        Lipids = 30.0,
+        Proteins = 24.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Butter Burger
+    {
+	DisplayName = Butter Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = ButterBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -30.0,
+        UnhappyChange = -10,
+        Calories = 361.0,
+        Carbohydrates = 0.0,
+        Lipids = 30.0,
+        Proteins = 30.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Paneer Tikka Burger
+    {
+	DisplayName = Paneer Tikka Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = PaneerTikkaBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -30.0,
+        UnhappyChange = -15,
+        Calories = 422.0,
+        Carbohydrates = 10.0,
+        Lipids = 30.0,
+        Proteins = 22.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Chori Burger
+    {
+	DisplayName = Chori Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = ChoriBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -20.0,
+        UnhappyChange = -10,
+        Calories = 210.0,
+        Carbohydrates = 10.0,
+        Lipids = 30.0,
+        Proteins = 14.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Green Chili Cheeseburger
+    {
+	DisplayName = Green Chili Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = GreenChiliCheeseburger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -20.0,
+        UnhappyChange = -12,
+        Calories = 320.0,
+        Carbohydrates = 10.0,
+        Lipids = 30.0,
+        Proteins = 15.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Australian Burger
+    {
+	DisplayName = Australian Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = AustralianBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -15.0,
+        UnhappyChange = -10,
+        Calories = 236.0,
+        Carbohydrates = 4.0,
+        Lipids = 30.0,
+        Proteins = 25.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Islak Burger
+    {
+	DisplayName = Islak Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = IslakBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -30.0,
+        UnhappyChange = -40,
+        Calories = 641.0,
+        Carbohydrates = 10.0,
+        Lipids = 30.0,
+        Proteins = 36.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Rat Burger
+    {
+	DisplayName = Rat Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = RatBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -20.0,
+        UnhappyChange = -30,
+        Calories = 442.0,
+        Carbohydrates = 10.0,
+        Lipids = 30.0,
+        Proteins = 25.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+ 
+    item BaconCheeseburger
+    {
+	DisplayName = Bacon Cheese Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = BaconCheeseburger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -15.0,
+        UnhappyChange = -25,
+        Calories = 370.0,
+        Carbohydrates = 10.0,
+        Lipids = 30.0,
+        Proteins = 25.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+	
+    item Bofsandwich
+    {
+	DisplayName = Bof Sandwich,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = Bøfsandwich,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -30.0,
+        UnhappyChange = -50,
+        Calories = 552.0,
+        Carbohydrates = 10.0,
+        Lipids = 50.0,
+        Proteins = 26.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Angus Burger
+    {
+	DisplayName = Angus Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = AngusBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -20.0,
+        UnhappyChange = -20,
+        Calories = 382.0,
+        Carbohydrates = 10.0,
+        Lipids = 30.0,
+        Proteins = 26.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Chili Burger
+    {
+	DisplayName = Chili Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = ChiliBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -22.0,
+        UnhappyChange = -20,
+        Calories = 405.0,
+        Carbohydrates = 10.0,
+        Lipids = 30.0,
+        Proteins = 26.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Chimichurri Burger
+    {
+	DisplayName = Chimichurri Burger,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = ChimichurriBurger,
+        EatType = 2handforced,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        HungerChange = -15.0,
+        UnhappyChange = -20,
+        Calories = 211.0,
+        Carbohydrates = 20.0,
+        Lipids = 30.0,
+        Proteins = 19.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item Chicken Shawarma
+    {
+	DisplayName = Chicken Shawarma,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = ChickenShawarma,
+        EatType = 2handforced,
+        DaysFresh = 2,
+        DaysTotallyRotten = 3,
+        HungerChange = -40.0,
+        UnhappyChange = -30,
+        Calories = 850.0,
+        Carbohydrates = 20.0,
+        Lipids = 30.0,
+        Proteins = 35.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+	
+    item Beef Shawarma
+    {
+	DisplayName = Beef Shawarma,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = BeefShawarma,
+        EatType = 2handforced,
+        DaysFresh = 2,
+        DaysTotallyRotten = 3,
+        HungerChange = -40.0,
+        UnhappyChange = -30,
+        Calories = 850.0,
+        Carbohydrates = 20.0,
+        Lipids = 30.0,
+        Proteins = 35.0,
+        StaticModel = Burger,
+        WorldStaticModel = Burger_Ground,
+    }
+
+    item BourbonBalls
+    {
+	DisplayName = Bourbon Balls,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = BourbonBalls,
+        DaysFresh = 2,
+        DaysTotallyRotten = 3,
+        EatType = 2handforced,
+        HungerChange = -15.0,
+        UnhappyChange = -30,
+        Calories = 91.0,
+        Carbohydrates = 10.0,
+        Lipids = 30.0,
+        Proteins = 5.0,
+        StaticModel = Cookie_Oatmeal_Hand,
+        WorldStaticModel = Cookie_Oatmeal_Ground,
+    }
+
+    item PlantainChips
+    {
+	DisplayName = Plantain Chips,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = PlantainChips,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -19.0,
+        UnhappyChange = -5,
+        Calories = 750.0,
+        Carbohydrates = 75.0,
+        Lipids = 30.0,
+        Proteins = 5.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item LaysCheese
+    {
+	DisplayName = Lay's Cheese,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = LaysCheese,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -19.0,
+        UnhappyChange = -5,
+        Calories = 750.0,
+        Carbohydrates = 75.0,
+        Lipids = 30.0,
+        Proteins = 5.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item LaysBarbecue
+    {
+	DisplayName = Lay's Barbecue,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = LaysBarbecue,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -20.0,
+        UnhappyChange = -5,
+        Calories = 780.0,
+        Carbohydrates = 75.0,
+        Lipids = 30.0,
+        Proteins = 5.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item LaysSalt
+    {
+	DisplayName = Lay's Salt,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = LaysSalt,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -15.0,
+        UnhappyChange = -5,
+        Calories = 700.0,
+        Carbohydrates = 75.0,
+        Lipids = 30.0,
+        Proteins = 5.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item LaysSourCream
+    {
+	DisplayName = Lay's Sour Cream,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = LaysSourCream,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -20.0,
+        UnhappyChange = -5,
+        Calories = 740.0,
+        Carbohydrates = 75.0,
+        Lipids = 30.0,
+        Proteins = 5.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item LaysFlaminHot
+    {
+	DisplayName = Lay's Flamin Hot,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = LaysFlaminHot,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -20.0,
+        UnhappyChange = -5,
+        Calories = 800.0,
+        Carbohydrates = 75.0,
+        Lipids = 30.0,
+        Proteins = 5.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item LaysHoney
+    {
+	DisplayName = Lay's Honey,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = LaysHoney,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -20.0,
+        UnhappyChange = -5,
+        Calories = 769.0,
+        Carbohydrates = 75.0,
+        Lipids = 30.0,
+        Proteins = 5.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item LaysSweetHeatBarbecue
+    {
+	DisplayName = Lay's Sweet Heat Barbecue,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = LaysSweetHeatBarbecue,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -20.0,
+        UnhappyChange = -5,
+        Calories = 780.0,
+        Carbohydrates = 75.0,
+        Lipids = 30.0,
+        Proteins = 5.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item LaysPickle
+    {
+	DisplayName = Lay's Pickle,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = LaysPickle,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -20.0,
+        UnhappyChange = -5,
+        Calories = 780.0,
+        Carbohydrates = 75.0,
+        Lipids = 30.0,
+        Proteins = 5.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+
+    item Takis
+    {
+	DisplayName = Takis,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = Takis,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -25.0,
+        UnhappyChange = -5,
+        Calories = 815.0,
+        Carbohydrates = 75.0,
+        Lipids = 30.0,
+        Proteins = 5.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item Funyuns
+    {
+	DisplayName = Funyuns,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = Funyuns,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -25.0,
+        UnhappyChange = -5,
+        Calories = 110.0,
+        Carbohydrates = 32.0,
+        Lipids = 5.0,
+        Proteins = 1.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item ShrimpCrackers
+    {
+	DisplayName = Shrimp Crackers,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = ShrimpCrackers,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -26.0,
+        UnhappyChange = -5,
+        Calories = 792.0,
+        Carbohydrates = 75.0,
+        Lipids = 30.0,
+        Proteins = 5.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item TrailMix
+    {
+	DisplayName = Trail Mix,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = TrailMix,
+        DaysFresh = 31,
+        DaysTotallyRotten = 32,
+        EatType = EatBox,
+        HungerChange = -26.0,
+        UnhappyChange = -5,
+        Calories = 462.0,
+        Carbohydrates = 44.9,
+        Lipids = 30.0,
+        Proteins = 10.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item Knoppers
+    {
+	DisplayName = Knoppers,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = Knoppers,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = 2handforced,
+        HungerChange = -25.0,
+        UnhappyChange = -5,
+        Calories = 815.0,
+        Carbohydrates = 75.0,
+        Lipids = 30.0,
+        Proteins = 5.0,
+        StaticModel = Smore_Ground,
+        WorldStaticModel = Smore_Ground,
+    }
+
+    item KitKat
+    {
+	DisplayName = KitKat,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = KitKat,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = 2handforced,
+        HungerChange = -25.0,
+        UnhappyChange = -5,
+        Calories = 207.0,
+        Carbohydrates = 62.0,
+        Lipids = 2.3,
+        Proteins = 7.0,
+        StaticModel = Smore_Ground,
+        WorldStaticModel = Smore_Ground,
+    }
+
+    item Oreo
+    {
+	DisplayName = Oreo,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = Oreo,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = 2handforced,
+        HungerChange = -25.0,
+        UnhappyChange = -5,
+        Calories = 160.0,
+        Carbohydrates = 25.0,
+        Lipids = 2.3,
+        Proteins = 1.0,
+        StaticModel = Smore_Ground,
+        WorldStaticModel = Smore_Ground,
+    }
+
+    item DoritosNachoCheese
+    {
+	DisplayName = Doritos Nacho Cheese,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = NachoCheese,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -20.0,
+        UnhappyChange = -5,
+        Calories = 346.0,
+        Carbohydrates = 36.0,
+        Lipids = 18.0,
+        Proteins = 9.1,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item DoritosCoolRanch
+    {
+	DisplayName = Doritos Cool Ranch,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = DoritosCoolRanch,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -20.0,
+        UnhappyChange = -5,
+        Calories = 250.0,
+        Carbohydrates = 36.0,
+        Lipids = 18.0,
+        Proteins = 9.1,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item DoritosSpicyChili
+    {
+	DisplayName = Doritos Spicy Chili,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = DoritosSpicyChili,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -15.0,
+        UnhappyChange = -5,
+        Calories = 150.0,
+        Carbohydrates = 18.0,
+        Lipids = 7.0,
+        Proteins = 2.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item DoritosSweetChili
+    {
+	DisplayName = Doritos Sweet Chili,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = DoritosSweetChili,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -15.0,
+        UnhappyChange = -5,
+        Calories = 260.0,
+        Carbohydrates = 32.0,
+        Lipids = 13.0,
+        Proteins = 3.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+ 
+    item DoritosBBQSauce
+    {
+	DisplayName = Doritos BBQ Sauce,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = DoritosBBQSauce,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -15.0,
+        UnhappyChange = -5,
+        Calories = 150.0,
+        Carbohydrates = 32.0,
+        Lipids = 13.0,
+        Proteins = 3.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item DoritosTacoFlavor
+    {
+	DisplayName = Doritos Taco Flavor,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = DoritosTacoFlavor,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -15.0,
+        UnhappyChange = -5,
+        Calories = 150.0,
+        Carbohydrates = 32.0,
+        Lipids = 13.0,
+        Proteins = 3.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item DoritosSalsaGreen
+    {
+	DisplayName = Doritos Salsa Green,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = DoritosSalsaGreen,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -15.0,
+        UnhappyChange = -5,
+        Calories = 150.0,
+        Carbohydrates = 32.0,
+        Lipids = 13.0,
+        Proteins = 2.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+    item CheetosFlaminHot
+    {
+	DisplayName = Cheetos Flamin Hot,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = CheetosFlaminHot,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -15.0,
+        UnhappyChange = -5,
+        Calories = 170.0,
+        Carbohydrates = 21.0,
+        Lipids = 13.0,
+        Proteins = 1.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+
+
+    item Pocky
+    {
+	DisplayName = Pocky,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = Pocky,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -25.0,
+        UnhappyChange = -5,
+        Calories = 525.0,
+        Carbohydrates = 52.0,
+        Lipids = 20.0,
+        Proteins = 5.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Frozen_FrenchFries,
+        WorldStaticModel = Frozen_FrenchFries,
+    }
+
+    item Haribo
+    {
+	DisplayName = Haribo,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = Haribo,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -10.0,
+        UnhappyChange = -5,
+        Calories = 100.0,
+        Carbohydrates = 23.0,
+        Lipids = 5.0,
+        Proteins = 2.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = GummyBears,
+        WorldStaticModel = GummyBears,
+    }
+
+    item ColaGummies
+    {
+	DisplayName = Cola Gummies,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = ColaGummies,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -10.0,
+        UnhappyChange = -5,
+        Calories = 100.0,
+        Carbohydrates = 23.0,
+        Lipids = 5.0,
+        Proteins = 2.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = GummyBears,
+        WorldStaticModel = GummyBears,
+    }
+
+    item CherryGummies
+    {
+	DisplayName = Cherry Gummies,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = CherryGummies,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -10.0,
+        UnhappyChange = -5,
+        Calories = 100.0,
+        Carbohydrates = 23.0,
+        Lipids = 5.0,
+        Proteins = 2.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = GummyBears,
+        WorldStaticModel = GummyBears,
+    }
+
+    item GummyEggs
+    {
+	DisplayName = Gummy Eggs,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = GummyEggs,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -10.0,
+        UnhappyChange = -5,
+        Calories = 200.0,
+        Carbohydrates = 23.0,
+        Lipids = 5.0,
+        Proteins = 2.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = GummyBears,
+        WorldStaticModel = GummyBears,
+    }
+
+    item NerdsCandy
+    {
+	DisplayName = Nerds Candy,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = NerdsCandy,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -10.0,
+        UnhappyChange = -5,
+        Calories = 200.0,
+        Carbohydrates = 23.0,
+        Lipids = 5.0,
+        Proteins = 2.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = GummyBears,
+        WorldStaticModel = GummyBears,
+    }
+
+    item TicTacApple
+    {
+	DisplayName = TicTac Apple,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = TicTacApple,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -5.0,
+        UnhappyChange = -5,
+        Calories = 40.0,
+        Carbohydrates = 23.0,
+        Lipids = 5.0,
+        Proteins = 2.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = PeanutButter,
+        WorldStaticModel = PeanutButter,
+    }
+
+    item TicTacOrange
+    {
+	DisplayName = TicTac Orange
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = TicTacOrange,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -5.0,
+        UnhappyChange = -5,
+        Calories = 40.0,
+        Carbohydrates = 23.0,
+        Lipids = 5.0,
+        Proteins = 2.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = PeanutButter,
+        WorldStaticModel = PeanutButter,
+    }
+
+    item TicTacFruit
+    {
+	DisplayName = TicTac Fruit,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = TicTacFruit,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -5.0,
+        UnhappyChange = -5,
+        Calories = 40.0,
+        Carbohydrates = 23.0,
+        Lipids = 5.0,
+        Proteins = 2.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = PeanutButter,
+        WorldStaticModel = PeanutButter,
+    }
+
+    item TicTacSprite
+    {
+	DisplayName = TicTacSprite,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = TicTacSprite,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -5.0,
+        UnhappyChange = -5,
+        Calories = 40.0,
+        Carbohydrates = 23.0,
+        Lipids = 5.0,
+        Proteins = 2.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = PeanutButter,
+        WorldStaticModel = PeanutButter,
+    }
+
+    item OrbitSweetBliss
+    {
+	DisplayName = Orbit Sweet Bliss,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = OrbitSweetBliss,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -2.0,
+        UnhappyChange = -10,
+        Calories = 40.0,
+        Carbohydrates = 10.0,
+        Lipids = 0.0,
+        Proteins = 0.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Gum,
+        WorldStaticModel = Gum,
+    }
+
+    item OrbitStrawberry
+    {
+	DisplayName = Orbit Strawberry,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = OrbitStrawberry,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -2.0,
+        UnhappyChange = -10,
+        Calories = 40.0,
+        Carbohydrates = 10.0,
+        Lipids = 0.0,
+        Proteins = 0.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Gum,
+        WorldStaticModel = Gum,
+    }
+
+    item OrbitWinterMint
+    {
+	DisplayName = Orbit Wintermint,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = OrbitWinterMint,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -2.0,
+        UnhappyChange = -10,
+        Calories = 40.0,
+        Carbohydrates = 10.0,
+        Lipids = 0.0,
+        Proteins = 0.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Gum,
+        WorldStaticModel = Gum,
+    }
+
+    item OrbitApple
+    {
+	DisplayName = Orbit Apple,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = OrbitApple,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -5.0,
+        UnhappyChange = -10,
+        Calories = 80.0,
+        Carbohydrates = 15.0,
+        Lipids = 0.0,
+        Proteins = 0.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Gum,
+        WorldStaticModel = Gum,
+    }
+
+    item OrbitBubbleMint
+    {
+	DisplayName = Orbit Bubble Mint,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = OrbitBubbleMint,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -5.0,
+        UnhappyChange = -10,
+        Calories = 80.0,
+        Carbohydrates = 15.0,
+        Lipids = 0.0,
+        Proteins = 0.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Gum,
+        WorldStaticModel = Gum,
+    }
+
+    item Snickers
+    {
+	DisplayName = Snickers,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = Snickers,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = 2handforced,
+        HungerChange = -25.0,
+        UnhappyChange = -5,
+        Calories = 280.0,
+        Carbohydrates = 35.0,
+        Lipids = 10.0,
+        Proteins = 4.0,
+        StaticModel = Smore_Ground,
+        WorldStaticModel = Smore_Ground,
+    }
+
+    item Smoki
+    {
+	DisplayName = Smoki,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = Smoki,
+        DaysFresh = 40,
+        DaysTotallyRotten = 42,
+        EatType = EatBox,
+        HungerChange = -25.0,
+        UnhappyChange = -5,
+        Calories = 815.0,
+        Carbohydrates = 75.0,
+        Lipids = 30.0,
+        Proteins = 5.0,
+        CustomEatSound = EatingCrispy,
+        StaticModel = Chips,
+        WorldStaticModel = Chips,
+    }
+ 
+    item Ovaltine
+    {
+	DisplayName = Ovaltine,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = Ovaltine,
+        EatType = 2handforced,
+        DaysFresh = 10,
+        DaysTotallyRotten = 13,
+        HungerChange = -15.0,
+        UnhappyChange = 30,
+        Calories = 55.0,
+        Carbohydrates = 11.0,
+        Lipids = 10.0,
+        Proteins = 0.0,
+        StaticModel = MacAndCheese,
+        WorldStaticModel = MacAndCheese,
+    }
+
+    item CannedCabbageRolls
+    {
+	DisplayName = Canned Cabbage Rolls,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = CannedCabbageRolls,
+        DaysFresh = 30,
+        DaysTotallyRotten = 60,
+        WorldStaticModel = CanClosedCornerBeef,
+        CantEat = true,
+        HungerChange = -40.0,
+        Carbohydrates = 10.0,
+        Proteins = 6.0,
+        Lipids = 0.8,
+        Calories = 200.0,
+        Tags = base:hasmetal;base:hidehungerchange;base:spawncooked;base:preservedfood;TedCannedFood,
+        Tooltip = Tooltip_item_CookForPreservation,
+    }
+
+    item CannedCabbageRollsOpen
+    {
+	DisplayName = Open Cabbage Rolls,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = CabbageRollsOpen,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        StaticModel = CanOpenCornerBeef,
+        WorldStaticModel = CanOpenCornerBeef,
+        ReplaceOnUse = Base.TinCanEmpty,
+        FoodType = Roe,
+        HungerChange = -40.0,
+        UnhappyChange = -20,
+        Calories = 200.0,
+        Carbohydrates = 10.0,
+        Lipids = 0.8,
+        Proteins = 6.0,
+        Tags = base:hasmetal;TedCannedFood,
+        EatType = Eat,
+    }
+
+    item  CannedSausages
+    {
+	DisplayName = Canned Sausages,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = CannedSausages,
+        DaysFresh = 30,
+        DaysTotallyRotten = 60,
+        WorldStaticModel = CanClosedCornerBeef,
+        CantEat = true,
+        HungerChange = -35.0,
+        Carbohydrates = 10.0,
+        Proteins = 11.0,
+        Lipids = 21.0,
+        Calories = 260.0,
+        Tags = base:hasmetal;base:hidehungerchange;base:spawncooked;base:preservedfood;TedCannedFood,
+        Tooltip = Tooltip_item_CookForPreservation,
+    }
+
+    item CannedSausagesOpen
+    {
+	DisplayName = Canned Sausages Open,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = CannedSausagesOpen,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        StaticModel = CanOpenCornerBeef,
+        WorldStaticModel = CanOpenCornerBeef,
+        ReplaceOnUse = Base.TinCanEmpty,
+        FoodType = Roe,
+        HungerChange = -35.0,
+        UnhappyChange = -25,
+        Calories = 260.0,
+        Carbohydrates = 10.0,
+        Lipids = 21.0,
+        Proteins = 11.0,
+        Tags = base:hasmetal;TedCannedFood,
+        EatType = Eat,
+    }
+
+    item  CannedRavioli
+    {
+	DisplayName = Canned Ravioli,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = CannedRavioli,
+        DaysFresh = 30,
+        DaysTotallyRotten = 60,
+        WorldStaticModel = CanClosedCornerBeef,
+        CantEat = true,
+        HungerChange = -25.0,
+        Carbohydrates = 10.0,
+        Proteins = 6.0,
+        Lipids = 3.0,
+        Calories = 147.0,
+        Tags = base:hasmetal;base:hidehungerchange;base:spawncooked;base:preservedfood;TedCannedFood,
+        Tooltip = Tooltip_item_CookForPreservation,
+    }
+
+    item CannedRavioliOpen
+    {
+	DisplayName = Canned Ravioli Open,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = CannedRavioliOpen,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        StaticModel = CanOpenCornerBeef,
+        WorldStaticModel = CanOpenCornerBeef,
+        ReplaceOnUse = Base.TinCanEmpty,
+        FoodType = Roe,
+        HungerChange = -25.0,
+        UnhappyChange = -20,
+        Calories = 147.0,
+        Carbohydrates = 10.0,
+        Lipids = 3.0,
+        Proteins = 6.0,
+        Tags = base:hasmetal;TedCannedFood,
+        EatType = Eat,
+    }
+
+    item  CannedCurry
+    {
+	DisplayName = Canned Curry,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = CannedCurry,
+        DaysFresh = 30,
+        DaysTotallyRotten = 60,
+        WorldStaticModel = CanClosedCornerBeef,
+        CantEat = true,
+        HungerChange = -30.0,
+        Carbohydrates = 15.0,
+        Proteins = 9.0,
+        Lipids = 5.0,
+        Calories = 150.0,
+        Tags = base:hasmetal;base:hidehungerchange;base:spawncooked;base:preservedfood;TedCannedFood,
+        Tooltip = Tooltip_item_CookForPreservation,
+    }
+
+    item CannedCurryOpen
+    {
+	DisplayName = Canned Curry Open,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = CannedCurryOpen,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        StaticModel = CanOpenCornerBeef,
+        WorldStaticModel = CanOpenCornerBeef,
+        ReplaceOnUse = Base.TinCanEmpty,
+        FoodType = Roe,
+        HungerChange = -30.0,
+        UnhappyChange = -20,
+        Calories = 150.0,
+        Carbohydrates = 15.0,
+        Lipids = 5.0,
+        Proteins = 9.0,
+        Tags = base:hasmetal;TedCannedFood,
+        EatType = Eat,
+    }
+
+    item  CannedKimchi
+    {
+	DisplayName = Canned Kimchi,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = Kimchi,
+        DaysFresh = 30,
+        DaysTotallyRotten = 60,
+        WorldStaticModel = CanClosedCornerBeef,
+        CantEat = true,
+        HungerChange = -15.0,
+        Carbohydrates = 1.0,
+        Proteins = 5.0,
+        Lipids = 2.0,
+        Calories = 45.0,
+        Tags = base:hasmetal;base:hidehungerchange;base:spawncooked;base:preservedfood;TedCannedFood,
+        Tooltip = Tooltip_item_CookForPreservation,
+    }
+
+    item CannedKimchiOpen
+    {
+	DisplayName = Canned Kimchi Open,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = KimchiOpen,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        StaticModel = CanOpenCornerBeef,
+        WorldStaticModel = CanOpenCornerBeef,
+        ReplaceOnUse = Base.TinCanEmpty,
+        FoodType = Roe,
+        HungerChange = -15.0,
+        UnhappyChange = -10,
+        Calories = 45.0,
+        Carbohydrates = 1.0,
+        Lipids = 2.0,
+        Proteins = 5.0,
+        Tags = base:hasmetal;TedCannedFood,
+        EatType = Eat,
+    }
+
+    item  CannedFeijoada
+    {
+	DisplayName = Canned Feijoada,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = Feijoada,
+        DaysFresh = 30,
+        DaysTotallyRotten = 60,
+        WorldStaticModel = CanClosedCornerBeef,
+        CantEat = true,
+        HungerChange = -15.0,
+        Carbohydrates = 1.0,
+        Proteins = 5.0,
+        Lipids = 2.0,
+        Calories = 45.0,
+        Tags = base:hasmetal;base:hidehungerchange;base:spawncooked;base:preservedfood;TedCannedFood,
+        Tooltip = Tooltip_item_CookForPreservation,
+    }
+
+    item CannedFeijoadaOpen
+    {
+	DisplayName = Canned Feijoada Open,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = FeijoadaOpen,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        StaticModel = CanOpenCornerBeef,
+        WorldStaticModel = CanOpenCornerBeef,
+        ReplaceOnUse = Base.TinCanEmpty,
+        FoodType = Roe,
+        HungerChange = -15.0,
+        UnhappyChange = -10,
+        Calories = 45.0,
+        Carbohydrates = 1.0,
+        Lipids = 2.0,
+        Proteins = 5.0,
+        Tags = TedCannedFood,
+        EatType = Eat,
+    }
+ 
+    item  CannedSpam
+    {
+	DisplayName = Canned Spam,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = Spam,
+        DaysFresh = 30,
+        DaysTotallyRotten = 60,
+        WorldStaticModel = CanClosedCornerBeef,
+        CantEat = true,
+        HungerChange = -20.0,
+        Carbohydrates = 1.0,
+        Proteins = 7.0,
+        Lipids = 2.0,
+        Calories = 180.0,
+        Tags = base:hasmetal;base:hidehungerchange;base:spawncooked;base:preservedfood;TedCannedFood,
+        Tooltip = Tooltip_item_CookForPreservation,
+    }
+
+    item CannedSpamOpen
+    {
+	DisplayName = Canned Spam Open,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = SpamOpen,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        StaticModel = CanOpenCornerBeef,
+        WorldStaticModel = CanOpenCornerBeef,
+        ReplaceOnUse = Base.TinCanEmpty,
+        FoodType = Roe,
+        HungerChange = -20.0,
+        UnhappyChange = -15,
+        Calories = 180.0,
+        Carbohydrates = 1.0,
+        Lipids = 2.0,
+        Proteins = 7.0,
+        Tags = base:hasmetal;TedCannedFood,
+        EatType = Eat,
+    }
+
+    item PremiumCatFood
+    {
+	DisplayName = Premium Cat Food,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = PremiumCatFood,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+        Calories = 498.0,
+        Carbohydrates = 77.56,
+        Lipids = 12.58,
+        Proteins = 16.04,
+        WorldStaticModel = CanClosedDogFood,
+        Tags = base:hasmetal,
+        Tooltip = Tooltip_item_CanOpener,
+        OpeningRecipe = OpenCannedFood,
+    }
+
+    item PremiumCatFoodOpen
+    {
+	DisplayName = Premium Cat Food Open,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = PremiumCatFoodOpen,
+        FoodType = DogFood,
+        CannedFood = true,
+        EatType = Candrink,
+        Packaged = true,
+        ReplaceOnUse = Base.TinCanEmpty,
+        DaysFresh = 5,
+        DaysTotallyRotten = 7,
+        HungerChange = -30.0,
+        UnhappyChange = 50,
+        Calories = 498.0,
+        Carbohydrates = 77.56,
+        Lipids = 12.58,
+        Proteins = 16.04,
+        FishingLure = true,
+        StaticModel = CanOpenDogFood,
+        WorldStaticModel = CanOpenDogFood,
+        EvolvedRecipeName = Dog Food,
+        EvolvedRecipe = Burger:10|Cooked;Burrito:10|Cooked;Sandwich:10|Cooked;Stew:15;Taco:5|Cooked;AddBaitToChum:30,
+        Tags = base:hasmetal;base:hideuncooked,
+        IsCookable = true,
+        MinutesToCook = 10,
+        MinutesToBurn = 30,
+        CookingSound = FryingFood,
+        CustomEatSound = EatingMushy,
+    }
+
+    item PremiumDogFood
+    {	DisplayName = Premium Dog Food,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = PremiumDogFood,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+        Calories = 498.0,
+        Carbohydrates = 77.56,
+        Lipids = 12.58,
+        Proteins = 16.04,
+        WorldStaticModel = CanClosedDogFood,
+        Tags = base:hasmetal,
+        Tooltip = Tooltip_item_CanOpener,
+        OpeningRecipe = OpenCannedFood,
+    }
+
+    item PremiumDogFoodOpen
+    {
+	DisplayName = Premium Dog Food Open,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = PremiumDogFoodOpen,
+        FoodType = DogFood,
+        CannedFood = true,
+        EatType = Candrink,
+        Packaged = true,
+        ReplaceOnUse = Base.TinCanEmpty,
+        DaysFresh = 5,
+        DaysTotallyRotten = 7,
+        HungerChange = -30.0,
+        UnhappyChange = 50,
+        Calories = 498.0,
+        Carbohydrates = 77.56,
+        Lipids = 12.58,
+        Proteins = 16.04,
+        FishingLure = true,
+        StaticModel = CanOpenDogFood,
+        WorldStaticModel = CanOpenDogFood,
+        EvolvedRecipeName = Dog Food,
+        EvolvedRecipe = Burger:10|Cooked;Burrito:10|Cooked;Sandwich:10|Cooked;Stew:15;Taco:5|Cooked;AddBaitToChum:30,
+        Tags = base:hasmetal;base:hideuncooked,
+        IsCookable = true,
+        MinutesToCook = 10,
+        MinutesToBurn = 30,
+        CookingSound = FryingFood,
+        CustomEatSound = EatingMushy,
+    }
+
+    item CannedChickenPate
+    {
+	DisplayName = Canned Chicken Pate,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = CannedChickenPate,
+        DaysFresh = 30,
+        DaysTotallyRotten = 60,
+        WorldStaticModel = CanClosedCornerBeef,
+        CantEat = true,
+        HungerChange = -40.0,
+        Carbohydrates = 10.0,
+        Proteins = 6.0,
+        Lipids = 0.8,
+        Calories = 200.0,
+        Tags = base:hasmetal;base:hidehungerchange;base:spawncooked;base:preservedfood;TedCannedFood,
+        Tooltip = Tooltip_item_CookForPreservation,
+    }
+
+    item CannedChickenPateOpen
+    {
+	DisplayName = Canned Chicken Pate Open,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = CannedChickenPateOpen,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        StaticModel = CanOpenCornerBeef,
+        WorldStaticModel = CanOpenCornerBeef,
+        ReplaceOnUse = Base.TinCanEmpty,
+        FoodType = Roe,
+        HungerChange = -40.0,
+        UnhappyChange = -20,
+        Calories = 200.0,
+        Carbohydrates = 10.0,
+        Lipids = 0.8,
+        Proteins = 6.0,
+        Tags = base:hasmetal;TedCannedFood,
+        EatType = Eat,
+    }
+
+    item CannedDuckPate
+    {
+	DisplayName = Canned Duck Pate,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = CannedDuckPate,
+        DaysFresh = 30,
+        DaysTotallyRotten = 60,
+        WorldStaticModel = CanClosedCornerBeef,
+        CantEat = true,
+        HungerChange = -40.0,
+        Carbohydrates = 10.0,
+        Proteins = 6.0,
+        Lipids = 0.8,
+        Calories = 200.0,
+        Tags = base:hasmetal;base:hidehungerchange;base:spawncooked;base:preservedfood;TedCannedFood,
+        Tooltip = Tooltip_item_CookForPreservation,
+    }
+
+    item CannedDuckPateOpen
+    {
+	DisplayName = Canned Duck Pate Open,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = CannedDuckPateOpen,
+        DaysFresh = 3,
+        DaysTotallyRotten = 5,
+        StaticModel = CanOpenCornerBeef,
+        WorldStaticModel = CanOpenCornerBeef,
+        ReplaceOnUse = Base.TinCanEmpty,
+        FoodType = Roe,
+        HungerChange = -40.0,
+        UnhappyChange = -20,
+        Calories = 200.0,
+        Carbohydrates = 10.0,
+        Lipids = 0.8,
+        Proteins = 6.0,
+        Tags = base:hasmetal;TedCannedFood,
+        EatType = Eat,
+    }
+
+
+    item ChickenPateOnBread
+    {
+	DisplayName = Chicken Pate On Bread,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = PateOnBread,
+        EatType = 2handforced,
+        DaysFresh = 56,
+        DaysTotallyRotten = 58,
+        HungerChange = -10.0,
+        UnhappyChange = 30,
+        Calories = 50.0,
+        Carbohydrates = 10.0,
+        Lipids = 5.0,
+        Proteins = 1.0,
+        StaticModel = Toast,
+        WorldStaticModel = Toast,
+    }
+
+    item DuckPateOnBread
+    {
+	DisplayName = Duck Pate On Bread,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = PateOnBread,
+        EatType = 2handforced,
+        DaysFresh = 56,
+        DaysTotallyRotten = 58,
+        HungerChange = -12.0,
+        UnhappyChange = 30,
+        Calories = 60.0,
+        Carbohydrates = 10.0,
+        Lipids = 5.0,
+        Proteins = 1.0,
+        StaticModel = Toast,
+        WorldStaticModel = Toast,
+    }
+
+    item LuckyCharmsCereal
+    {
+	DisplayName = Lucky Charms Cereal,
+        DisplayCategory = Food,
+        EatType = EatBox,
+        ItemType = base:food,
+        Weight = 0.2,
+        Icon = LuckyCharmsCereal,
+        Packaged = true,
+        HungerChange = -40.0,
+        Calories = 2360.0,
+        Carbohydrates = 572.0,
+        Lipids = 26.0,
+        Proteins = 52.0,
+        StaticModel = Cereal,
+        WorldStaticModel  = Cereal,
+    }
+
+    item LuckyCharmsCerealBowl
+    {
+	DisplayName = Lucky Charms Cereal Bowl,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = Oatmeal,
+        EatType = 2handbowl,
+        PourType = bowl,
+        ReplaceOnUse = Base.Bowl,
+        DaysFresh = 4,
+        DaysTotallyRotten = 7,
+        HungerChange = -20.0,
+        ThirstChange = -15.0,
+        Calories = 295.0,
+        Carbohydrates = 71.5,
+        Lipids = 3.25,
+        Proteins = 6.5,
+        StaticModel = BowlRice_Ground,
+        WorldStaticModel = BowlRice_Ground,
+        SoundMap = DumpContents EmptyBowlFromFood,
+        Tags = base:dontinheritcondition,
+    }
+
+    item OreoCereal
+    {
+	DisplayName = Oreo Cereal,
+        DisplayCategory = Food,
+        EatType = EatBox,
+        ItemType = base:food,
+        Weight = 0.2,
+        Icon = OreoCereal,
+        Packaged = true,
+        HungerChange = -40.0,
+        Calories = 2560.0,
+        Carbohydrates = 572.0,
+        Lipids = 26.0,
+        Proteins = 52.0,
+        StaticModel = Cereal,
+        WorldStaticModel  = Cereal,
+    }
+
+    item OreoCerealBowl
+    {
+	DisplayName = Oreo Cereal Bowl,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.8,
+        Icon = Oatmeal,
+        EatType = 2handbowl,
+        PourType = bowl,
+        ReplaceOnUse = Base.Bowl,
+        DaysFresh = 4,
+        DaysTotallyRotten = 7,
+        HungerChange = -20.0,
+        ThirstChange = -15.0,
+        Calories = 295.0,
+        Carbohydrates = 71.5,
+        Lipids = 3.25,
+        Proteins = 6.5,
+        StaticModel = BowlRice_Ground,
+        WorldStaticModel = BowlRice_Ground,
+        SoundMap = DumpContents EmptyBowlFromFood,
+        Tags = base:dontinheritcondition,
+    }
+
+
+    item MilkaChocolate
+    {
+	DisplayName = Milka Chocolate,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.2,
+        Icon = MilkaChocolate,
+        EvolvedRecipe = Cake:20;PieSweet:20;Muffin:10;Pancakes:10;Bread:10;ConeIcecream:5;Toast:5,
+        EvolvedRecipeName = Chocolate,
+        FoodType = NoExplicit,
+        Packaged = true,
+        HungerChange = -20.0,
+        UnhappyChange = -10,
+        Calories = 850.0,
+        Carbohydrates = 110.0,
+        Lipids = 66.0,
+        Proteins = 10.0,
+        StaticModel = Chocolate,
+        WorldStaticModel = Chocolate,
+    }
+
+    item OreoChocolate
+    {
+	DisplayName = Oreo Chocolate,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.2,
+        Icon = OreoChocolate,
+        EvolvedRecipe = Cake:20;PieSweet:20;Muffin:10;Pancakes:10;Bread:10;ConeIcecream:5;Toast:5,
+        EvolvedRecipeName = Chocolate,
+        FoodType = NoExplicit,
+        Packaged = true,
+        HungerChange = -20.0,
+        UnhappyChange = -10,
+        Calories = 950.0,
+        Carbohydrates = 110.0,
+        Lipids = 66.0,
+        Proteins = 11.0,
+        StaticModel = Chocolate,
+        WorldStaticModel = Chocolate,
+    }
+
+    item MilkaCherry
+    {
+	DisplayName = Milka Cherry,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.2,
+        Icon = MilkaCherry,
+        EvolvedRecipe = Cake:20;PieSweet:20;Muffin:10;Pancakes:10;Bread:10;ConeIcecream:5;Toast:5,
+        EvolvedRecipeName = Chocolate,
+        FoodType = NoExplicit,
+        Packaged = true,
+        HungerChange = -20.0,
+        UnhappyChange = -10,
+        Calories = 950.0,
+        Carbohydrates = 110.0,
+        Lipids = 66.0,
+        Proteins = 11.0,
+        StaticModel = Chocolate,
+        WorldStaticModel = Chocolate,
+    }
+
+    item MilkaWholeHazelnut
+    {
+	DisplayName = Milka Whole Hazelnut,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.2,
+        Icon = MilkaWholeHazelnut,
+        EvolvedRecipe = Cake:20;PieSweet:20;Muffin:10;Pancakes:10;Bread:10;ConeIcecream:5;Toast:5,
+        EvolvedRecipeName = Chocolate,
+        FoodType = NoExplicit,
+        Packaged = true,
+        HungerChange = -20.0,
+        UnhappyChange = -10,
+        Calories = 900.0,
+        Carbohydrates = 110.0,
+        Lipids = 66.0,
+        Proteins = 11.0,
+        StaticModel = Chocolate,
+        WorldStaticModel = Chocolate,
+    }
+
+    item Nutella
+    {
+	DisplayName = Nutella,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = Nutella,
+        EatType = 2handforced,
+        DaysFresh = 56,
+        DaysTotallyRotten = 58,
+        HungerChange = -20.0,
+        UnhappyChange = 30,
+        Calories = 200.0,
+        Carbohydrates = 22.0,
+        Lipids = 11.0,
+        Proteins = 2.0,
+        StaticModel = CocoaPowder,
+        WorldStaticModel = CocoaPowder,
+    }
+
+    item BreadWithNutella
+    {
+	DisplayName = Bread with Nutella,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Weight = 0.3,
+        Icon = BreadWithNutella,
+        EatType = 2handforced,
+        DaysFresh = 56,
+        DaysTotallyRotten = 58,
+        HungerChange = -10.0,
+        UnhappyChange = 30,
+        Calories = 50.0,
+        Carbohydrates = 10.0,
+        Lipids = 5.0,
+        Proteins = 1.0,
+        StaticModel = Toast,
+        WorldStaticModel = Toast,
+    }
+ 
+    item TedsFizzyOrange
+    {
+	DisplayName = Fizzy Orange,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Ted’sFizzyOrange,
+        EatType = Popcan,
+        StaticModel = PopCanDiet,
+        WorldStaticModel = PopCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = Ted'sFizzyOrange,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = TedsFizzyOrange:1.0,
+            }
+        }
+    }
+
+    item TedCherryBlast
+    {
+	DisplayName = Cherry Blast,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Ted-CherryBlast,
+        EatType = Popcan,
+        StaticModel = PopCanDiet,
+        WorldStaticModel = PopCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = TedCherryBlast,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = TedCherryBlast:1.0,
+            }
+        }
+    }
+
+    item TedCola
+    {
+	DisplayName = Ted Cola,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Ted-Cola,
+        EatType = Popcan,
+        StaticModel = PopCanDiet,
+        WorldStaticModel = PopCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = TedCola,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = TedCola:1.0,
+            }
+        }
+    }
+
+    item TedShake
+    {
+	DisplayName = Ted Shake,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = TedShake,
+        EatType = Popcan,
+        StaticModel = PopCanDiet,
+        WorldStaticModel = PopCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = TedShake,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = TedShake:1.0,
+            }
+        }
+    }
+
+    item TedTea
+    {
+	DisplayName = Tea,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Ted-Tea,
+        EatType = Popcan,
+        StaticModel = PopCanDiet,
+        WorldStaticModel = PopCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = TedTea,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = TedTea:1.0,
+            }
+        }
+    }
+
+    item VoltEnergy
+    {
+	DisplayName = Volt Energy,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = VoltEnergy,
+        EatType = Popcan,
+        StaticModel = PopCanDiet,
+        WorldStaticModel = PopCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = VoltEnergy,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = VoltEnergy:1.0,
+            }
+        }
+    }
+
+    item JoltCherry
+    {
+	DisplayName = Jolt Cherry,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = JoltCherry,
+        EatType = Popcan,
+        StaticModel = PopCanDiet,
+        WorldStaticModel = PopCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = JoltCherry,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = JoltCherry:1.0,
+            }
+        }
+    }
+
+    item KentuckyGoldWhiskey
+    {
+	DisplayName = Kentucky Gold Whiskey,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = KentuckyGoldWhiskey,
+        EatType = Popcan,
+        StaticModel = PopCanDiet,
+        WorldStaticModel = PopCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = KentuckyGoldWhiskey,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = KentuckyGoldWhiskey:1.0,
+            }
+        }
+    }
+
+    item MtnLightning
+    {
+	DisplayName = Mountain Lightning,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = MtnLightning,
+        EatType = Popcan,
+        StaticModel = PopCanDiet,
+        WorldStaticModel = PopCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = MountainLightning,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = MtnLightning:1.0,
+            }
+        }
+    }
+
+    item DrSkipper
+    {
+	DisplayName = Dr. Skipper,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = DrSkipper,
+        EatType = Popcan,
+        StaticModel = PopCanDiet,
+        WorldStaticModel = PopCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = Dr.Skipper,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = DrSkipper:1.0,
+            }
+        }
+    }
+
+    item ArizonaTea
+    {
+	DisplayName = Arizona Tea,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = ArizonaTea,
+        EatType = Popcan,
+        StaticModel = PopCanDiet,
+        WorldStaticModel = PopCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = ArizonaIcedTea,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = ArizonaTea:1.0,
+            }
+        }
+    }
+
+    item MugRootBeer
+    {
+	DisplayName = Mug Root Beer,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = MugRootBeer,
+        EatType = Popcan,
+        StaticModel = PopCanDiet,
+        WorldStaticModel = PopCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = MugRootBeer,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = MugRootBeer:1.0,
+            }
+        }
+    }
+
+    item Slivovitz
+    {
+	DisplayName = Slivovitz,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Slivovitz,
+        EatType = Popcan,
+        StaticModel = Whiskey,
+        WorldStaticModel = Whiskey,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = Slivovitz,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = Slivovitz:1.0,
+            }
+        }
+    }
+
+    item MatchaLatte
+    {
+	DisplayName = Matcha Latte,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = MatchaLatte,
+        EatType = Popcan,
+        StaticModel = PlasticCup,
+        WorldStaticModel = PlasticCup,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = MatchaLatte,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = MatchaLatte:1.0,
+            }
+        }
+    }
+
+    item Sake
+    {
+	DisplayName = Sake,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Sake,
+        EatType = Popcan,
+        StaticModel = Champagne,
+        WorldStaticModel = Champagne,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = Sake,
+            Capacity = 1.0,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = Sake:1.0,
+            }
+        }
+    }
+
+    item IceColdLemonade
+    {
+	DisplayName = Ice Cold Lemonade,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = IceColdLemonade,
+        EatType = Popcan,
+        StaticModel = JuiceBoxOrange,
+        WorldStaticModel = JuiceBoxOrange,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = IceColdLemonade,
+            Capacity = 0.5,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = IceColdLemonade:1.0,
+            }
+        }
+    }
+
+    item Noroc
+    {
+	DisplayName = Noroc,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Noroc,
+        EatType = Popcan,
+        StaticModel = BeerBottle,
+        WorldStaticModel = BeerBottleGround,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = Noroc,
+            Capacity = 2.5,
+            CustomEatSound = DrinkingFromBottleGlass,
+            Fluids
+            {
+                fluid = Noroc:1.0,
+            }
+        }
+    }
+
+    item Kvass
+    {
+	DisplayName = Kvass,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.4,
+        Icon = Kvass,
+        EatType = Bourbon,
+        StaticModel = BeerBottle,
+        WorldStaticModel = BeerBottleGround,
+        FillFromDispenserSound = GetWaterFromDispenserGlass,
+        FillFromLakeSound = GetWaterFromLakeBottle,
+        FillFromTapSound = GetWaterFromTapGlass,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:glass;base:glassbottlesmall,
+        OpeningRecipe = OpenBottleOfBeer,
+        component FluidContainer
+        {
+            ContainerName = Kvass,
+            Capacity = 2.5,
+            Opened = false,
+            CustomDrinkSound = DrinkingFromBottleGlass,
+            Fluids
+            {
+                fluid = Kvass:1.0,
+            }
+        }
+        component Durability
+        {
+            Material = Glass_Light,
+            MaxHitPoints = 1.0,
+        }
+    }
+
+    item Irn-Bru
+    {
+	DisplayName = Irn-Bru,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Irn-Bru,
+        EatType = Popcan,
+        StaticModel = PopCanDiet,
+        WorldStaticModel = PopCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = Irn-Bru,
+            Capacity = 0.5,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = Irn-Bru:1.0,
+            }
+        }
+    }
+
+    item Absinthe
+    {
+	DisplayName = Absinthe,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Absinthe,
+        EatType = Popcan,
+        StaticModel = BeerBottle,
+        WorldStaticModel = BeerBottleGround,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = Absinthe,
+            Capacity = 1.5,
+            CustomEatSound = DrinkingFromBottleGlass,
+            Fluids
+            {
+                fluid = Absinthe:1.0,
+            }
+        }
+    }
+
+    item GuaranaAntartica
+    {
+	DisplayName = Guarana Antartica,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = GuaranaAntartica,
+        EatType = Popcan,
+        StaticModel = PopCanDiet,
+        WorldStaticModel = PopCanDiet,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = GuaranaAntartica,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = GuaranaAntartica:1.0,
+            }
+        }
+    }
+
+    item Tequila
+    {
+	DisplayName = Tequila,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Tequila,
+        EatType = Popcan,
+        StaticModel = BeerBottle,
+        WorldStaticModel = BeerBottleGround,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = Tequila,
+            Capacity = 1.5,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = Tequila:1.0,
+            }
+        }
+    }
+
+    item Ouzo
+    {
+	DisplayName = Ouzo,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = Ouzo,
+        EatType = Popcan,
+        StaticModel = BottleCrafted,
+        WorldStaticModel = BottleCrafted,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = Ouzo,
+            Capacity = 1.5,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = Ouzo:1.0,
+            }
+        }
+    }
+
+    item ZuzuMilk
+    {
+	DisplayName = Zuzu Milk,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = ZuzuMilk,
+        EatType = Popcan,
+        StaticModel = Milk,
+        WorldStaticModel = Milk,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = ZuzuMilk,
+            Capacity = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+            Fluids
+            {
+                fluid = ZuzuMilk:1.0,
+            }
+        }
+    }
+
+    item ChocolateMilk
+    {
+	DisplayName = Chocolate Milk,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = ChocolateMilk,
+        EatType = Popcan,
+        StaticModel = Milk,
+        WorldStaticModel = Milk,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = ChocolateMilk,
+            Capacity = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+            Fluids
+            {
+                fluid = ChocolateMilk:1.0,
+            }
+        }
+    }
+ 
+    item StrawberryMilk
+    {	
+	DisplayName = Strawberry Milk,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = StrawberryMilk,
+        EatType = Popcan,
+        StaticModel = Milk,
+        WorldStaticModel = Milk,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = StrawberryMilk,
+            Capacity = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+            Fluids
+            {
+                fluid = StrawberryMilk:1.0,
+            }
+        }
+    }
+
+    item PeachMilk
+    {
+	DisplayName = Peach Milk,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = PeachMilk,
+        EatType = Popcan,
+        StaticModel = Milk,
+        WorldStaticModel = Milk,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = PeachMilk,
+            Capacity = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+            Fluids
+            {
+                fluid = PeachMilk:1.0,
+            }
+        }
+    }
+
+    item BananaMilk
+    {
+	DisplayName = Banana Milk,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = BananaMilk,
+        EatType = Popcan,
+        StaticModel = Milk,
+        WorldStaticModel = Milk,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = BananaMilk,
+            Capacity = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+            Fluids
+            {
+                fluid = BananaMilk:1.0,
+            }
+        }
+    }
+
+    item RedBull
+    {	
+	DisplayName = RedBull,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = RedBull,
+        EatType = Popcan,
+        StaticModel = BeerCan,
+        WorldStaticModel = BeerCan,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = RedBull,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = RedBull:1.0,
+            }
+        }
+    }
+
+    item Monster
+    {
+	DisplayName = Monster,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = Monster,
+        EatType = Popcan,
+        StaticModel = BeerCan,
+        WorldStaticModel = BeerCan,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = Monster,
+            Capacity = 0.3,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = Monster:1.0,
+            }
+        }
+    }
+
+    item PeachJuice
+    {	
+	DisplayName = Peach Juice,
+        DisplayCategory = Food,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = PeachJuice,
+        EatType = Popcan,
+        StaticModel = BeerCan,
+        WorldStaticModel = BeerCan,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+        Tags = base:cookable;base:hasmetal;base:sealedbeveragecan,
+        component FluidContainer
+        {
+            ContainerName = PeachJuice,
+            Capacity = 1.0,
+            CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = PeachJuice:1.0,
+            }
+        }
+    }
+}
+}

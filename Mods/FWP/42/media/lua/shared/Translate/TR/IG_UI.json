@@ -1,0 +1,19 @@
+{
+    "IGUI_FWP_INSPECT_INSPECT_WEAPON":  "Silah� incele",
+    "IGUI_FWP_INSPECT_CONDITION":  "Durum",
+    "IGUI_FWP_INSPECT_PRISTINE":  "Yeni",
+    "IGUI_FWP_INSPECT_USED":  "Kullan�lm��",
+    "IGUI_FWP_INSPECT_DAMAGED":  "Hasarl�",
+    "IGUI_FWP_INSPECT_BADLY_DAMAGED":  "�ok hasarl�",
+    "IGUI_FWP_INSPECT_REPAIR_NONE":  "Tamirsiz",
+    "IGUI_FWP_INSPECT_REPAIR_SLIGHTLY":  "Az tamirli",
+    "IGUI_FWP_INSPECT_REPAIR_HEAVILY":  "A��r tamirli",
+    "IGUI_FWP_INSPECT_ATTACHMENTS":  "Eklentiler",
+    "IGUI_FWP_INSPECT_NONE":  "Yok",
+    "IGUI_FWP_INSPECT_CANON":  "G�vde",
+    "IGUI_FWP_INSPECT_CLIP":  "�arj�r",
+    "IGUI_FWP_INSPECT_RECOIL_PAD":  "Dip�ik",
+    "IGUI_FWP_INSPECT_SCOPE":  "D�rb�n",
+    "IGUI_FWP_INSPECT_SLING":  "Ask�",
+    "IGUI_FWP_INSPECT_STOCK":  "Kabza"
+}

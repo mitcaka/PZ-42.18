@@ -1,0 +1,255 @@
+module Base
+{
+    craftRecipe SaltMeat
+    {
+        time = 30,
+        tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+        OnCreate = Recipe.OnCreate.SaltMeat,
+
+        inputs
+        {
+            item 1 [Base.TurkeyWhole;Base.TurkeyLegs;Base.TurkeyFillet;Base.TurkeyWings;Base.Beef;Base.Pork;Base.PorkChop;Base.Venison;Base.Steak;Base.MuttonChop;Base.Rabbitmeat;Base.Smallanimalmeat;Base.Smallbirdmeat] mode:destroy,
+            item 1 [Base.Salt],
+        }
+
+        outputs
+        {
+            item 1 AdvancedDrying42.SaltedMeat,
+        }
+    }
+
+    craftRecipe SaltFish
+    {
+        time = 30,
+        tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+        OnCreate = Recipe.OnCreate.SaltFish,
+
+        inputs
+        {
+            item 1 tags[base:uncutfish] mode:destroy flags[InheritFoodAge;ItemCount],
+            item 1 [Base.Salt],
+        }
+
+        outputs
+        {
+            item 1 AdvancedDrying42.SaltedFish,
+        }
+    }
+
+    craftRecipe SaltFishFillet
+    {
+        time = 30,
+        tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+        OnCreate = Recipe.OnCreate.SaltFishFillet,
+
+        inputs
+        {
+            item 1 [Base.FishFillet] mode:destroy,
+            item 1 [Base.Salt],
+        }
+
+        outputs
+        {
+            item 1 AdvancedDrying42.SaltedFishFillet,
+        }
+    }
+
+    craftRecipe DrySaltedFish
+    {
+        time = 40,
+        tags = DryingRackGrain,
+        category = Farming,
+        overlayStyle = Tobacco,
+
+        OnTest = Recipe.OnTest.CanDryRawSaltedFood,
+        OnCreate = Recipe.OnCreate.DrySaltedFish,
+
+        inputs
+        {
+            item 1 [AdvancedDrying42.SaltedFish] mode:destroy,
+        }
+
+        outputs
+        {
+            item 1 AdvancedDrying42.DriedFish,
+        }
+    }
+
+    craftRecipe DrySaltedFishFillet
+    {
+        time = 40,
+        tags = DryingRackGrain,
+        category = Farming,
+        overlayStyle = Tobacco,
+
+        OnTest = Recipe.OnTest.CanDryRawSaltedFood,
+        OnCreate = Recipe.OnCreate.DrySaltedFishFillet,
+
+        inputs
+        {
+            item 1 [AdvancedDrying42.SaltedFishFillet] mode:destroy,
+        }
+
+        outputs
+        {
+            item 1 AdvancedDrying42.DriedFishFillet,
+        }
+    }
+
+    craftRecipe SliceSaltedMeat
+    {
+        timedAction = SliceMeat,
+        time = 40,
+        tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+
+        OnTest = Recipe.OnTest.SplitSaltedMeat,
+        OnCreate = Recipe.OnCreate.SplitSaltedMeat,
+
+        inputs
+        {
+            item 1 tags[base:dullknife;base:sharpknife;base:meatcleaver] mode:keep flags[MayDegradeVeryLight],
+            item 1 [AdvancedDrying42.SaltedMeat] mode:destroy,
+        }
+
+        outputs
+        {
+            item 2 AdvancedDrying42.SaltedMeat,
+        }
+    }
+
+    craftRecipe DrySaltedMeat
+    {
+        time = 40,
+        tags = DryingRackGrain,
+        category = Farming,
+        overlayStyle = Tobacco,
+
+        OnTest = Recipe.OnTest.CanDryRawSaltedFood,
+        OnCreate = Recipe.OnCreate.DrySaltedMeat,
+
+        inputs
+        {
+            item 1 [AdvancedDrying42.SaltedMeat],
+        }
+
+        outputs
+        {
+            item 1 AdvancedDrying42.DriedMeat,
+        }
+    }
+
+    craftRecipe SliceSaltedFishFillet
+    {
+        timedAction = SliceMeat,
+        time = 40,
+        tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+
+        OnTest = Recipe.OnTest.SplitSaltedFishFillet,
+        OnCreate = Recipe.OnCreate.SplitSaltedFishFillet,
+
+        inputs
+        {
+            item 1 tags[base:dullknife;base:sharpknife;base:meatcleaver] mode:keep flags[MayDegradeVeryLight],
+            item 1 [AdvancedDrying42.SaltedFishFillet] mode:destroy,
+        }
+
+        outputs
+        {
+            item 2 AdvancedDrying42.SaltedFishFillet,
+        }
+    }
+
+    
+    craftRecipe SliceSaltedFish
+    {
+        timedAction = SliceMeat,
+        time = 40,
+        tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+
+        OnTest = Recipe.OnTest.SplitSaltedFish,
+        OnCreate = Recipe.OnCreate.SplitSaltedFish,
+
+        inputs
+        {
+            item 1 tags[base:dullknife;base:sharpknife;base:meatcleaver] mode:keep flags[MayDegradeVeryLight],
+            item 1 [AdvancedDrying42.SaltedFish] mode:destroy,
+        }
+
+        outputs
+        {
+            item 2 AdvancedDrying42.SaltedFishFillet,
+        }
+    }
+
+    craftRecipe SliceDriedFish
+    {
+        timedAction = SliceMeat,
+        time = 40,
+        tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+
+        OnTest = Recipe.OnTest.SplitDriedFish,
+        OnCreate = Recipe.OnCreate.SplitDriedFish,
+
+        inputs
+        {
+            item 1 tags[base:dullknife;base:sharpknife;base:meatcleaver] mode:keep flags[MayDegradeVeryLight],
+            item 1 [AdvancedDrying42.DriedFish] mode:destroy,
+        }
+
+        outputs
+        {
+            item 2 AdvancedDrying42.DriedFishFillet,
+        }
+    }
+
+    craftRecipe SliceDriedFishFillet
+    {
+        timedAction = SliceMeat,
+        time = 40,
+        tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+
+        OnTest = Recipe.OnTest.SplitDriedFishFillet,
+        OnCreate = Recipe.OnCreate.SplitDriedFishFillet,
+
+        inputs
+        {
+            item 1 tags[base:dullknife;base:sharpknife;base:meatcleaver] mode:keep flags[MayDegradeVeryLight],
+            item 1 [AdvancedDrying42.DriedFishFillet] mode:destroy,
+        }
+
+        outputs
+        {
+            item 2 AdvancedDrying42.DriedFishFillet,
+        }
+    }
+
+    craftRecipe SliceDriedMeat
+    {
+        timedAction = SliceMeat,
+        time = 40,
+        tags = AnySurfaceCraft;Cooking,
+        category = Cooking,
+
+        OnTest = Recipe.OnTest.SplitDriedMeat,
+        OnCreate = Recipe.OnCreate.SplitDriedMeat,
+
+        inputs
+        {
+            item 1 tags[base:dullknife;base:sharpknife;base:meatcleaver] mode:keep flags[MayDegradeVeryLight],
+            item 1 [AdvancedDrying42.DriedMeat] mode:destroy,
+        }
+
+        outputs
+        {
+            item 2 AdvancedDrying42.DriedMeat,
+        }
+    }
+}

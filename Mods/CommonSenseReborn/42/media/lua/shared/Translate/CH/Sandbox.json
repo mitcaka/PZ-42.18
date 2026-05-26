@@ -1,4 +1,8 @@
 {
+    "Sandbox_EnableLoginProtection":  "Enable login protection",
+    "Sandbox_EnableLoginProtection_tooltip":  "Temporarily protects players when they first log in. The player is made invisible, ghosted, invulnerable, and outlined in purple until the timer ends. Default ON.",
+    "Sandbox_LoginProtectionSeconds":  "Login protection duration (seconds)",
+    "Sandbox_LoginProtectionSeconds_tooltip":  "How many real seconds login protection lasts after joining. Range 1-120. Default 45.",
     "Sandbox_CommonSenseReborn":  "常識重生",
     "Sandbox_CSR_Tools":  "CSR：工具與強制進入",
     "Sandbox_CSR_Gameplay":  "CSR：遊戲玩法",

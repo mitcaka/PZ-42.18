@@ -1,0 +1,4893 @@
+module Base
+{
+
+/*-----Category:Food-----*/
+
+	model AEMVFSM_Antibiotics
+    {
+        mesh        = WorldItems/AEMVFSM_Antibiotics,
+        texture     = WorldItems/Antibiotics,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0090 -0.0041 -0.0227,
+            rotate = 7.5700 -58.2049 178.4193,
+        }
+    }
+	model AEMVFSM_ApplePie
+    {
+        mesh        = WorldItems/Pie_Slice,
+        texture     = WorldItems/PieApple,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0323 0.0272 -0.0236,
+            rotate = 96.4622 -3.0099 -58.1980,
+            scale = 0.4650,
+        }
+    }
+	model AEMVFSM_ApricotsDried
+    {
+        mesh        = WorldItems/DriedApricot_Hand,
+        texture     = WorldItems/DriedApricot,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0011 0.0418 -0.0159,
+            rotate = -84.6604 0.4532 -124.4917,
+            scale = 0.1498,
+        }
+    }
+	model AEMVFSM_Avocado
+    {
+        mesh        = WorldItems/Avocado,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0412 0.0252 0.0034,
+            rotate = -82.2919 -0.0000 -33.9466,
+            scale = 0.4000,
+        }
+    }
+	model AEMVFSM_AvocadoRotten
+    {
+        mesh = WorldItems/Avocado,
+        texture = WorldItems/AvocadoRotten,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0412 0.0252 0.0034,
+            rotate = -82.2919 -0.0000 -33.9466,
+            scale = 0.4000,
+        }
+    }
+	model AEMVFSM_BaconBits
+    {
+        mesh        = WorldItems/BaconBits,
+        texture     = WorldItems/BaconBaconBits,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0075 0.0188 0.0014,
+            rotate = -3.6594 -30.9942 87.6194,
+            scale = 0.3448,
+        }
+    }
+	model AEMVFSM_BaconBitsCooked
+    {
+        mesh = WorldItems/BaconBits,
+        texture = WorldItems/BaconBaconBitsCooked,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0075 0.0188 0.0014,
+            rotate = -3.6594 -30.9942 87.6194,
+            scale = 0.3448,
+        }
+    }
+	model AEMVFSM_BaconBitsRotten
+    {
+        mesh = WorldItems/BaconBits,
+        texture = WorldItems/BaconBaconBitsRotten,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0075 0.0188 0.0014,
+            rotate = -3.6594 -30.9942 87.6194,
+            scale = 0.3448,
+        }
+    }
+	model AEMVFSM_BagelPlain
+    {
+        mesh        = WorldItems/Bagel,
+        texture     = WorldItems/Bagel,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0075 0.0389 -0.0311,
+            rotate = -1.0100 -45.3965 -88.0276,
+            scale = 0.3053,
+        }
+    }
+	model AEMVFSM_BaloneySlice
+    {
+        mesh        = WorldItems/BalonySlice_Hand,
+        texture     = WorldItems/Baloney,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0004 0.0407 -0.0165,
+            rotate = 0.9853 -52.2433 -87.6118,
+            scale = 0.1300,
+        }
+    }
+	model AEMVFSM_Banana
+    {
+        mesh        = WorldItems/Banana,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0243 0.0267 0.0133,
+            rotate = 86.8954 -7.0833 -126.2389,
+            scale = 0.3100,
+        }
+    }
+	model AEMVFSM_BananaRotten
+    {
+        mesh = WorldItems/Banana,
+        texture = WorldItems/BananaRotten,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0243 0.0267 0.0133,
+            rotate = 86.8954 -7.0833 -126.2389,
+            scale = 0.3100,
+        }
+    }
+	model AEMVFSM_Basil_Seasoning
+    {
+        mesh        = WorldItems/Seasoning,
+        texture     = WorldItems/Seasoning_Basil,
+        scale       = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 -0.0216 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_Beef
+    {
+        mesh        = WorldItems/Beef,
+        texture     = WorldItems/Beef_Raw,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0175 0.0817 -0.0696,
+            rotate = 164.6228 -79.8376 69.8919,
+            scale = 0.8131,
+        }
+    }
+	model AEMVFSM_BeefCooked
+    {
+        mesh = WorldItems/Beef,
+        texture = WorldItems/Beef_Cooked,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0175 0.0817 -0.0696,
+            rotate = 164.6228 -79.8376 69.8919,
+            scale = 0.8131,
+        }
+    }
+	model AEMVFSM_BeefBurnt
+    {
+        mesh = WorldItems/Beef,
+        texture = WorldItems/Beef_OverDone,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0175 0.0817 -0.0696,
+            rotate = 164.6228 -79.8376 69.8919,
+            scale = 0.8131,
+        }
+    }
+	model AEMVFSM_BeefRotten
+    {
+        mesh = WorldItems/Beef,
+        texture = WorldItems/BeefRaw_Rotten,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0175 0.0817 -0.0696,
+            rotate = 164.6228 -79.8376 69.8919,
+            scale = 0.8131,
+        }
+    }
+	model AEMVFSM_BeefJerky
+    {
+        mesh        = WorldItems/BeefJerky_Hand,
+        texture     = WorldItems/BeefJerky,
+        scale       = 0.6,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0053 -0.0083 -0.0133,
+            rotate = 90.9093 -3.8973 -55.5290,
+            scale = 0.2368,
+        }
+    }
+	model AEMVFSM_BeefPatty
+    {
+        mesh        = WorldItems/MeatPatty,
+        texture     = WorldItems/MeatPatty,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0019 0.0322 -0.0273,
+            rotate = 32.8573 -29.8499 -78.6623,
+            scale = 0.7700,
+        }
+    }
+	model AEMVFSM_BeefPattyBurnt
+    {
+        mesh = WorldItems/MeatPatty,
+        texture = WorldItems/MeatPattyBurnt,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0019 0.0322 -0.0273,
+            rotate = 32.8573 -29.8499 -78.6623,
+            scale = 0.7700,
+        }
+    }
+	model AEMVFSM_BeefPattyCooked
+    {
+        mesh = WorldItems/MeatPatty,
+        texture = WorldItems/MeatPattyCooked,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0019 0.0322 -0.0273,
+            rotate = 32.8573 -29.8499 -78.6623,
+            scale = 0.7700,
+        }
+    }
+	model AEMVFSM_BeefPattyRotten
+    {
+        mesh = WorldItems/MeatPatty,
+        texture = WorldItems/MeatPattyRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0019 0.0322 -0.0273,
+            rotate = 32.8573 -29.8499 -78.6623,
+            scale = 0.7700,
+        }
+    }
+	model AEMVFSM_BellPepper
+    {
+        mesh        = WorldItems/BellPepper,
+        texture     = WorldItems/BellPepper,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0477 0.0290 -0.0271,
+            rotate = 13.7261 -3.7268 -70.5218,
+            scale = 0.8000,
+        }
+    }
+	model AEMVFSM_BellPepperRotten
+    {
+        mesh = WorldItems/BellPepper,
+        texture = WorldItems/BellPepperRotten,
+        scale = 0.4,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0477 0.0290 -0.0271,
+            rotate = 13.7261 -3.7268 -70.5218,
+            scale = 0.8000,
+        }
+    }
+	model AEMVFSM_Biscuit
+    {
+        mesh        = WorldItems/Biscuit,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0243 0.0347 -0.0366,
+            rotate = 38.0851 -30.7116 -71.0808,
+        }
+    }
+	model AEMVFSM_BlackForestCake
+    {
+        mesh        = WorldItems/CakeSlice_BlackForest,
+        texture     = WorldItems/CakeBlackforest,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0420 0.0402 -0.0288,
+            rotate = 95.9936 -2.7456 -60.5714,
+        }
+    }
+	model AEMVFSM_BlueberryPie
+    {
+        mesh        = WorldItems/Pie_Slice,
+        texture     = WorldItems/PieBlueberry,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0315 0.0312 -0.0194,
+            rotate = 103.8974 0.6516 -60.3023,
+        }
+    }
+	model AEMVFSM_BreadSlices
+    {
+        mesh        = WorldItems/AEMVFSM_BreadSlices,
+        texture     = WorldItems/CheeseSandwich_PeanutButterSandwich_BreadSlices,
+        scale       = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0195 0.0129 -0.0226,
+            rotate = -86.0252 2.6844 -160.3017,
+        }
+    }
+	model AEMVFSM_BreadSlicesRotten
+    {
+        mesh        = WorldItems/AEMVFSM_BreadSlices,
+        texture     = WorldItems/BreadSlices_Toast_Rotten,
+        scale       = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0195 0.0129 -0.0226,
+            rotate = -86.0252 2.6844 -160.3017,
+        }
+    }
+	model AEMVFSM_Broccoli
+    {
+        mesh        = WorldItems/Broccoli,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0468 0.0279 -0.0181,
+            rotate = -9.8620 -9.1073 -71.1453,
+            scale = 0.8700,
+        }
+    }
+	model AEMVFSM_BroccoliRotten
+    {
+        mesh = WorldItems/Broccoli,
+        texture = WorldItems/BroccoliRotten,
+        scale = 0.4,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0468 0.0279 -0.0181,
+            rotate = -9.8620 -9.1073 -71.1453,
+            scale = 0.8700,
+        }
+    }
+	model AEMVFSM_BrownSugar
+    {
+        mesh        = WorldItems/Sugar,
+        texture     = WorldItems/SugarBrown,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0076 -0.0392 -0.0132,
+            rotate = 8.7141 34.5836 -4.2283,
+        }
+    }
+	model AEMVFSM_BrusselSprouts
+    {
+        mesh        = WorldItems/AEMVFSM_BrusselSprouts,
+        texture     = WorldItems/BrusselSprouts,
+        scale       = 0.125,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0032 0.0388 -0.0046,
+            rotate = 0.0000 0.0000 0.0000,
+            scale = 1.9718,
+        }
+    }
+	model AEMVFSM_BrusselSproutsRotten
+    {
+        mesh = WorldItems/AEMVFSM_BrusselSprouts,
+        texture = WorldItems/BrusselSprouts_Rotten,
+        scale = 0.125,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0032 0.0388 -0.0046,
+            rotate = 0.0000 0.0000 0.0000,
+            scale = 1.9718,
+        }
+    }
+	model AEMVFSM_Burger
+    {
+        mesh        = Burger,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0140 0.0320 -0.0207,
+            rotate = 5.8359 49.6995 17.6135,
+            scale = 0.8050,
+        }
+    }
+	model AEMVFSM_BurgerRotten
+    {
+        mesh = WorldItems/Burger,
+        texture = WorldItems/BurgerRotten,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0140 0.0320 -0.0207,
+            rotate = 5.8359 49.6995 17.6135,
+            scale = 0.8050,
+        }
+    }
+	model AEMVFSM_Butter
+    {
+        mesh        = WorldItems/AEMVFSM_Butter,
+        texture     = WorldItems/Butter,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0010 0.0365 -0.0427,
+            rotate = 1.5068 -13.5623 -3.4011,
+            scale = 0.9350,
+        }
+    }
+	model AEMVFSM_CakeSlice
+    {
+        mesh        = WorldItems/PiePumpkin,
+        texture     = WorldItems/CakeSlice,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0280 0.0225 -0.0213,
+            rotate = 98.9536 -1.9353 -60.2144,
+            scale = 0.7950,
+        }
+    }
+	model AEMVFSM_CakeSliceRotten
+    {
+        mesh = WorldItems/PiePumpkin,
+        texture = WorldItems/PumpkinPieSliceRotten,
+        scale = 0.4,
+        
+        attachment Bip01_Prop2
+        {
+            offset = -0.0280 0.0225 -0.0213,
+            rotate = 98.9536 -1.9353 -60.2144,
+            scale = 0.7950,
+        }
+    }
+	model AEMVFSM_CanOfOats
+    {
+        mesh        = WorldItems/CanOfOats,
+        texture     = WorldItems/CanOfOats,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0124 -0.0230 -0.0181,
+            rotate = -173.5871 -77.7285 179.8130,
+            scale = 0.7564,
+        }
+    }
+	model AEMVFSM_CandyFruitSlices
+    {
+        mesh        = WorldItems/AEMVFSM_CandyFruitSlices,
+        texture     = WorldItems/CandyFruitSlices,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0009 0.0401 -0.0118,
+            rotate = 20.8441 -42.2059 -84.1671,
+        }
+    }
+	model AEMVFSM_CarrotCake
+    {
+        mesh        = WorldItems/CakeSlice,
+        texture     = WorldItems/CakeCarrotCake,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0392 0.0363 -0.0278,
+            rotate = 97.1495 -0.9380 -60.5787,
+        }
+    }
+	model AEMVFSM_CaterpillarAmericanLady
+    {
+        mesh        = WorldItems/Insect_Caterpillar,
+        texture     = WorldItems/Insect_AmericanLadyCaterpillar,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0162 0.0334 -0.0090,
+            rotate = 98.3185 0.5740 -60.6612,
+            scale = 0.9150,
+        }
+    }
+	model AEMVFSM_CaterpillarSwallowtail
+    {
+        mesh        = WorldItems/Insect_Caterpillar,
+        texture     = WorldItems/Insect_SwallowtailCaterpillar,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0162 0.0334 -0.0090,
+            rotate = 98.3185 0.5740 -60.6612,
+            scale = 0.9150,
+        }
+    }
+	model AEMVFSM_CaterpillarMonarch
+    {
+        mesh        = WorldItems/Insect_Caterpillar,
+        texture     = WorldItems/Insect_MonarchrCaterpillar,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0162 0.0334 -0.0090,
+            rotate = 98.3185 0.5740 -60.6612,
+            scale = 0.9150,
+        }
+    }
+	model AEMVFSM_CaterpillarSilkMoth
+    {
+        mesh        = WorldItems/Insect_Caterpillar,
+        texture     = WorldItems/Insect_SilkMothCaterpillar,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0162 0.0334 -0.0090,
+            rotate = 98.3185 0.5740 -60.6612,
+            scale = 0.9150,
+        }
+    }
+	model AEMVFSM_CaterpillarSawflyLarva
+    {
+        mesh        = WorldItems/Insect_Caterpillar,
+        texture     = WorldItems/Insect_SawflyLarva,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0162 0.0334 -0.0090,
+            rotate = 98.3185 0.5740 -60.6612,
+            scale = 0.9150,
+        }
+    }
+	model AEMVFSM_CaterpillarBandedWoolyBear
+    {
+        mesh        = WorldItems/Insect_BandedWoolyBearCaterpillar,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0186 0.0414 -0.0096,
+            rotate = 91.6737 -3.2218 -61.2673,
+            scale = 0.9150,
+        }
+    }
+	model AEMVFSM_Cauliflower
+    {
+        mesh        = WorldItems/Cauliflower,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0252 0.0253 -0.0289,
+            rotate = 143.8883 39.8706 -94.0833,
+            scale = 0.7013,
+        }
+    }
+	model AEMVFSM_Cereal
+    {
+        mesh        = WorldItems/Cereal,
+        texture     = WorldItems/Cereal_SunBallz,
+        scale       = 0.1375,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0507 -0.0467 -0.0461,
+            rotate = 17.1706 18.3058 -0.8764,
+            scale = 0.7614,
+        }
+    }
+	model AEMVFSM_Cereal2
+    {
+        mesh        = WorldItems/Cereal,
+        texture     = WorldItems/Cereal_CornFlakes,
+        scale       = 0.1375,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0507 -0.0467 -0.0461,
+            rotate = 17.1706 18.3058 -0.8764,
+            scale = 0.7614,
+        }
+    }
+	model AEMVFSM_Cereal3
+    {
+        mesh        = WorldItems/Cereal,
+        texture     = WorldItems/Cereal_FruitMuesli,
+        scale       = 0.1375,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0507 -0.0467 -0.0461,
+            rotate = 17.1706 18.3058 -0.8764,
+            scale = 0.7614,
+        }
+    }
+	model AEMVFSM_Cereal4
+    {
+        mesh        = WorldItems/Cereal,
+        texture     = WorldItems/Cereal_HappyCurios,
+        scale       = 0.1375,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0507 -0.0467 -0.0461,
+            rotate = 17.1706 18.3058 -0.8764,
+            scale = 0.7614,
+        }
+    }
+	model AEMVFSM_Cereal5
+    {
+        mesh        = WorldItems/Cereal,
+        texture     = WorldItems/Cereal_OatRings,
+        scale       = 0.1375,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0507 -0.0467 -0.0461,
+            rotate = 17.1706 18.3058 -0.8764,
+            scale = 0.7614,
+        }
+    }
+	model AEMVFSM_Chamomile
+    {
+        mesh        = WorldItems/Chamomile_Fresh,
+        texture     = WorldItems/Chamomile_Fresh,
+        scale       = 0.2,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0235 0.0056 -0.0188,
+            rotate = -101.6732 4.2331 -154.4779,
+            scale = 0.8050,
+        }
+    }
+	model AEMVFSM_ChamomileRotten
+    {
+        mesh = WorldItems/Chamomile_Dried_Rotten,
+        texture = WorldItems/Chamomile_Rotten,
+        scale = 0.2,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0235 0.0056 -0.0188,
+            rotate = -101.6732 4.2331 -154.4779,
+            scale = 0.8050,
+        }
+    }
+	model AEMVFSM_ChamomileDried
+    {
+        mesh        = WorldItems/Chamomile_Dried_Rotten,
+        texture     = WorldItems/Chamomile_Dried,
+        scale       = 0.2,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0235 0.0056 -0.0188,
+            rotate = -101.6732 4.2331 -154.4779,
+            scale = 0.8050,
+        }
+    }
+	model AEMVFSM_Cheese
+    {
+        mesh        = WorldItems/Cheese,
+        texture     = WorldItems/Cheese,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0007 0.0179 -0.0487,
+            rotate = 89.4160 -18.5324 26.3813,
+            scale = 0.7735,
+        }
+    }
+	model AEMVFSM_CheeseRotten
+    {
+        mesh = WorldItems/Cheese,
+        texture = WorldItems/CheeseRotten,
+        scale = 0.4,
+        attachment Bip01_Prop2
+        {
+            offset = 0.0007 0.0179 -0.0487,
+            rotate = 89.4160 -18.5324 26.3813,
+            scale = 0.7735,
+        }
+    }
+	model AEMVFSM_CheeseCake
+    {
+        mesh        = WorldItems/CakeSlice,
+        texture     = WorldItems/CakeCheeseCake,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0392 0.0363 -0.0278,
+            rotate = 97.1495 -0.9380 -60.5787,
+        }
+    }
+	model AEMVFSM_Cherry
+    {
+        mesh        = WorldItems/Cherry,
+        scale       = 0.6,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0082 0.0265 0.0117,
+            rotate = -97.3789 6.0950 37.9569,
+            scale = 0.8600,
+        }
+    }
+	model AEMVFSM_CherryRotten
+    {
+        mesh = WorldItems/Cherry,
+        texture = WorldItems/CherryRotten,
+        scale = 0.6,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0082 0.0265 0.0117,
+            rotate = -97.3789 6.0950 37.9569,
+            scale = 0.8600,
+        }
+    }
+	model AEMVFSM_CherryPie
+    {
+        mesh        = WorldItems/PiePumpkin,
+        texture     = WorldItems/Pie,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0280 0.0225 -0.0213,
+            rotate = 98.9536 -1.9353 -60.2144,
+            scale = 0.7950,
+        }
+    }
+	model AEMVFSM_CherryPieRotten
+    {
+        mesh = WorldItems/PiePumpkin,
+        texture = WorldItems/PieRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0280 0.0225 -0.0213,
+            rotate = 98.9536 -1.9353 -60.2144,
+            scale = 0.7950,
+        }
+    }
+	model AEMVFSM_ChickenWhole
+    {
+        mesh        = WorldItems/ChickenWhole,
+        texture     = WorldItems/PoultryWhole_Raw,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0008 0.0373 -0.0072,
+            rotate = -151.9447 36.1239 162.4961,
+            scale = 0.7650,
+        }
+    }
+	model AEMVFSM_ChickenWholeCooked
+    {
+        mesh = WorldItems/ChickenWhole,
+        texture = WorldItems/PoultryWhole_Cooked,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0008 0.0373 -0.0072,
+            rotate = -151.9447 36.1239 162.4961,
+            scale = 0.7650,
+        }
+    }
+	model AEMVFSM_ChickenWholeBurnt
+    {
+        mesh = WorldItems/ChickenWhole,
+        texture = WorldItems/PoultryWhole_OverDone,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0008 0.0373 -0.0072,
+            rotate = -151.9447 36.1239 162.4961,
+            scale = 0.7650,
+        }
+    }
+	model AEMVFSM_ChickenWholeRotten
+    {
+        mesh = WorldItems/ChickenWhole,
+        texture = WorldItems/PoultryWhole_Raw_Rotten,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0008 0.0373 -0.0072,
+            rotate = -151.9447 36.1239 162.4961,
+            scale = 0.7650,
+        }
+    }
+	model AEMVFSM_ChickenFillet
+    {
+        mesh        = WorldItems/PoultryFillet,
+        texture     = WorldItems/PoultryFillet_Raw,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0219 -0.0010 -0.0273,
+            rotate = -89.9554 10.2986 -141.5309,
+            scale = 0.9450,
+        }
+    }
+	model AEMVFSM_ChickenFilletCooked
+    {
+        mesh = WorldItems/PoultryFillet,
+        texture = WorldItems/PoultryFillet_Cooked,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0219 -0.0010 -0.0273,
+            rotate = -89.9554 10.2986 -141.5309,
+            scale = 0.9450,
+        }
+    }
+	model AEMVFSM_ChickenFilletBurnt
+    {
+        mesh = WorldItems/PoultryFillet,
+        texture = WorldItems/PoultryFillet_OverDone,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0219 -0.0010 -0.0273,
+            rotate = -89.9554 10.2986 -141.5309,
+            scale = 0.9450,
+        }
+    }
+	model AEMVFSM_ChickenFilletRotten
+    {
+        mesh = WorldItems/PoultryFillet,
+        texture = WorldItems/PoultryFillet_Raw_Rotten,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0219 -0.0010 -0.0273,
+            rotate = -89.9554 10.2986 -141.5309,
+            scale = 0.9450,
+        }
+    }
+	model AEMVFSM_ChickenFoot
+    {
+        mesh        = WorldItems/ChickenFoot,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0116 0.0415 -0.0059,
+            rotate = -24.1438 -14.6266 -105.9898,
+            scale = 0.6362,
+        }
+    }
+	model AEMVFSM_ChickenLeg
+    {
+        mesh        = WorldItems/Chicken,
+        texture     = WorldItems/ChickenRaw,
+        scale       = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0041 0.0301 -0.0103,
+            rotate = -67.1016 -13.5512 59.6213,
+        }
+    }
+	model AEMVFSM_ChickenLegCooked
+    {
+        mesh = WorldItems/Chicken,
+        texture = WorldItems/ChickenCooked,
+        scale = 0.3,
+        attachment Bip01_Prop2
+        {
+            offset = 0.0041 0.0301 -0.0103,
+            rotate = -67.1016 -13.5512 59.6213,
+        }
+    }
+	model AEMVFSM_ChickenLegBurnt
+    {
+        mesh = WorldItems/Chicken,
+        texture = WorldItems/ChickenBurnt,
+        scale = 0.3,
+        attachment Bip01_Prop2
+        {
+            offset = 0.0041 0.0301 -0.0103,
+            rotate = -67.1016 -13.5512 59.6213,
+        }
+    }
+	model AEMVFSM_ChickenLegRotten
+    {
+        mesh = WorldItems/Chicken,
+        texture = WorldItems/ChickenRawRotten,
+        scale = 0.3,
+        attachment Bip01_Prop2
+        {
+            offset = 0.0041 0.0301 -0.0103,
+            rotate = -67.1016 -13.5512 59.6213,
+        }
+    }
+	model AEMVFSM_ChickenNuggets
+    {
+        mesh        = WorldItems/AEMVFSM_ChickenNuggets,
+        texture     = WorldItems/ChickenNuggets,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0113 0.0051 -0.0242,
+            rotate = 8.8987 8.6252 179.4041,
+            scale = 2.4124,
+        }
+    }
+	model AEMVFSM_ChickenWings
+    {
+        mesh        = WorldItems/PoultryWing,
+        texture     = WorldItems/PoultryWing_Raw,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0147 0.0202 -0.0369,
+            rotate = -104.2017 7.0159 -121.6624,
+            scale = 0.5600,
+        }
+    }
+	model AEMVFSM_ChickenWingsCooked
+    {
+        mesh = WorldItems/PoultryWing,
+        texture = WorldItems/PoultryWing_Cooked,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0147 0.0202 -0.0369,
+            rotate = -104.2017 7.0159 -121.6624,
+            scale = 0.5600,
+        }
+    }
+	model AEMVFSM_ChickenWingsBurnt
+    {
+        mesh = WorldItems/PoultryWing,
+        texture = WorldItems/PoultryWing_OverCooked,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0147 0.0202 -0.0369,
+            rotate = -104.2017 7.0159 -121.6624,
+            scale = 0.5600,
+        }
+    }
+	model AEMVFSM_ChickenWingsRotten
+    {
+        mesh = WorldItems/PoultryWing,
+        texture = WorldItems/PoultryWing_Cooked_Rotten,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0147 0.0202 -0.0369,
+            rotate = -104.2017 7.0159 -121.6624,
+            scale = 0.5600,
+        }
+    }
+	model AEMVFSM_Chives
+    {
+        mesh        = WorldItems/HerbChives,
+        scale       = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0059 0.0027 -0.0126,
+            rotate = 83.6167 -7.0272 -55.8301,
+            scale = 0.9600,
+        }
+    }
+	model AEMVFSM_Chives_Seasoning
+    {
+        mesh        = WorldItems/Seasoning,
+        texture     = WorldItems/Seasoning_Chives,
+        scale       = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 -0.0216 0.0000,
+            rotate = 0 0 0,
+        }
+    }
+	model AEMVFSM_ChocoCakes
+    {
+        mesh = WorldItems/AEMVFSM_ChocoCakes,
+        texture = WorldItems/Snackcake_Chocakes,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0244 0.0111 0.0173,
+            rotate = 156.1113 -13.8064 31.5343,
+            scale = 0.8700,
+        }
+    }
+	model AEMVFSM_ChocolateBread
+    {
+        mesh = WorldItems/Painauchocolat,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0217 0.0347 -0.0219,
+            rotate = 177.9926 38.0578 -86.1709,
+            scale = 0.7200,
+        }
+    }
+	model AEMVFSM_ChocolateCake
+    {
+        mesh = WorldItems/CakeSlice,
+        texture = WorldItems/CakeChocolate,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0392 0.0363 -0.0278,
+            rotate = 97.1495 -0.9380 -60.5787,
+        }
+    }
+	model AEMVFSM_ChocolateDonut
+    {
+        mesh = WorldItems/Doughnut,
+        texture = WorldItems/Doughnut_Chocolate,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0214 0.0307 -0.0327,
+            rotate = 65.5547 -42.4405 -38.6190,
+            scale = 0.8878,
+        }
+    }
+	model AEMVFSM_Cilantro
+    {
+        mesh = WorldItems/HerbCilantro_HerbParsley,
+        texture = WorldItems/HerbCilantro,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0027 0.0463 -0.0023,
+            rotate = -85.5341 0.0000 24.4360,
+        }
+    }
+	model AEMVFSM_Cilantro_Seasoning
+    {
+        mesh = WorldItems/Seasoning,
+        texture = WorldItems/Seasoning_Cilantro,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 -0.0216 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_Cockroach
+    {
+        mesh = WorldItems/Cockroach,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0143 0.0328 0.0012,
+            rotate = -82.9992 13.1612 24.9311,
+        }
+    }
+	model AEMVFSM_Coffee
+    {
+        mesh = WorldItems/Coffee,
+        texture = WorldItems/Coffee,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0082 -0.0658 -0.0169,
+            rotate = 6.1831 43.5729 -1.3748,
+            scale = 0.9450,
+        }
+    }
+	model AEMVFSM_Crackle
+    {
+        mesh = WorldItems/Chocolate_Crackle,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0146 0.0039 -0.0172,
+            rotate = 91.4300 0.0000 -35.2651,
+            scale = 0.7950,
+        }
+    }
+	model AEMVFSM_Creamocle_Melted
+    {
+        mesh = WorldItems/IceOcle_Melted,
+        texture = WorldItems/Creamocle,
+        scale = 0.125,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0083 0.0434 -0.0318,
+            rotate = 20.6224 61.3385 5.9616,
+            scale = 0.5997,
+        }
+    }
+	model AEMVFSM_Cricket
+    {
+        mesh = WorldItems/Cricket,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0105 0.0302 0.0048,
+            rotate = -79.8260 4.6607 20.1598,
+        }
+    }
+	model AEMVFSM_Croissant
+    {
+        mesh = WorldItems/Croissant,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0000 0.0071 -0.0098,
+            rotate = 13.5593 -39.2896 90.7718,
+            scale = 0.8850,
+        }
+    }
+	model AEMVFSM_DeadMouse
+    {
+        mesh = DeadMouse,
+        texture = Mouse_Deer,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0261 0.0172 -0.0236,
+            rotate = 170.3950 31.9968 -165.4377,
+        }
+    }
+	model AEMVFSM_DeadMouseCooked
+    {
+        mesh = DeadMouse,
+        texture = WorldItems/Mouse_DeerCooked,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0261 0.0172 -0.0236,
+            rotate = 170.3950 31.9968 -165.4377,
+        }
+    }
+	model AEMVFSM_DeadMouseBurnt
+    {
+        mesh = DeadMouse,
+        texture = WorldItems/Mouse_DeerBurnt,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0261 0.0172 -0.0236,
+            rotate = 170.3950 31.9968 -165.4377,
+        }
+    }
+	model AEMVFSM_DeadRabbit
+    {
+        mesh = WorldItems/AEMVFSM_DeadRabbit,
+        texture = WorldItems/DeadSquirrel,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0034 -0.0299 -0.0045,
+            rotate = -164.4129 -2.4189 -0.6269,
+            scale = 3.0550,
+        }
+    }
+	model AEMVFSM_DeadRabbitCooked
+    {
+        mesh = WorldItems/AEMVFSM_DeadRabbit,
+        texture = WorldItems/DeadSquirrelCooked,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0034 -0.0299 -0.0045,
+            rotate = -164.4129 -2.4189 -0.6269,
+            scale = 3.0550,
+        }
+    }
+	model AEMVFSM_DeadRabbitBurnt
+    {
+        mesh = WorldItems/AEMVFSM_DeadRabbit,
+        texture = WorldItems/DeadSquirrelBurnt,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0034 -0.0299 -0.0045,
+            rotate = -164.4129 -2.4189 -0.6269,
+            scale = 3.0550,
+        }
+    }
+	model AEMVFSM_DeadRat
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/DeadRat,
+        scale = 0.11,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0164 -0.0295 -0.0334,
+            rotate = 14.0732 -31.2611 90.2276,
+        }
+    }
+	model AEMVFSM_DeadRatCooked
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/DeadRatCooked,
+        scale = 0.11,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0164 -0.0295 -0.0334,
+            rotate = 14.0732 -31.2611 90.2276,
+        }
+    }
+	model AEMVFSM_DeadRatBurnt
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/DeadRatBurnt,
+        scale = 0.11,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0164 -0.0295 -0.0334,
+            rotate = 14.0732 -31.2611 90.2276,
+        }
+    }
+	model AEMVFSM_DeadSquirrel
+    {
+        mesh = WorldItems/AEMVFSM_DeadSquirrel,
+        texture = WorldItems/DeadSquirrel,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0147 -0.0469 -0.0556,
+            rotate = 45.6837 13.7313 -153.6351,
+            scale = 3.4830,
+        }
+    }
+	model AEMVFSM_DeadSquirrelCooked
+    {
+        mesh = WorldItems/AEMVFSM_DeadSquirrel,
+        texture = WorldItems/DeadSquirrelCooked,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0147 -0.0469 -0.0556,
+            rotate = 45.6837 13.7313 -153.6351,
+            scale = 3.4830,
+        }
+    }
+	model AEMVFSM_DeadSquirrelBurnt
+    {
+        mesh = WorldItems/AEMVFSM_DeadSquirrel,
+        texture = WorldItems/DeadSquirrelBurnt,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0147 -0.0469 -0.0556,
+            rotate = 45.6837 13.7313 -153.6351,
+            scale = 3.4830,
+        }
+    }
+	model AEMVFSM_DoughnutPlain
+    {
+        mesh = WorldItems/Doughnut,
+        texture = WorldItems/Doughnut_Plain,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0214 0.0307 -0.0327,
+            rotate = 65.5547 -42.4405 -38.6190,
+            scale = 0.8878,
+        }
+    }
+	model AEMVFSM_DryRamen
+    {
+        mesh = WorldItems/DryRamenNoodles,
+        texture = WorldItems/DryRamenNoodles,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0037 0.0375 -0.0073,
+            rotate = 7.2552 -64.2866 92.4559,
+            scale = 0.8200,
+        }
+    }
+	model AEMVFSM_Edamame
+    {
+        mesh = WorldItems/AEMVFSM_Edamame,
+        texture = WorldItems/Edamame,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0126 0.0241 -0.0076,
+            rotate = 165.9510 40.2954 -77.6898,
+            scale = 1.2198,
+        }
+    }
+	model AEMVFSM_Egg
+    {
+        mesh = WorldItems/Egg,
+        texture = WorldItems/Egg,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0003 0.0449 0.0040,
+            rotate = -82.7100 9.8599 48.5808,
+        }
+    }
+	model AEMVFSM_EggBoiled
+    {
+        mesh = WorldItems/AEMVFSM_EggBoiled,
+        texture = WorldItems/EggBoiled,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0097 0.0192 -0.0089,
+            rotate = -1.6932 32.7490 4.8598,
+        }
+    }
+	model AEMVFSM_EggPoached
+    {
+        mesh = WorldItems/EggPoached,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0137 0.0403 -0.0110,
+            rotate = 52.8466 -56.8962 -47.1791,
+        }
+    }
+	model AEMVFSM_EggScrambled
+    {
+        mesh = WorldItems/AEMVFSM_EggScrambled,
+        texture = WorldItems/EggScrambled,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0279 0.0417 -0.0047,
+            rotate = 148.0011 63.0404 -54.9315,
+        }
+    }
+	model AEMVFSM_Fish
+    {
+        mesh = WorldItems/FishFillet,
+        texture = WorldItems/FishFried,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0103 -0.0034 -0.0163,
+            rotate = -2.5785 -60.3574 -99.4476,
+            scale = 0.6241,
+        }
+    }
+	model AEMVFSM_FishRotten
+    {
+        mesh = WorldItems/FishFillet,
+        texture = WorldItems/FishFriedRotten,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0103 -0.0034 -0.0163,
+            rotate = -2.5785 -60.3574 -99.4476,
+            scale = 0.6241,
+        }
+    }
+	model AEMVFSM_FishFillet
+    {
+        mesh = WorldItems/FishFillet,
+        texture = WorldItems/FishFillet,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0103 -0.0034 -0.0163,
+            rotate = -2.5785 -60.3574 -99.4476,
+            scale = 0.6241,
+        }
+    }
+	model AEMVFSM_FishFilletCooked
+    {
+        mesh = WorldItems/FishFillet,
+        texture = WorldItems/FishFilletCooked,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0103 -0.0034 -0.0163,
+            rotate = -2.5785 -60.3574 -99.4476,
+            scale = 0.6241,
+        }
+    }
+	model AEMVFSM_FishFilletBurnt
+    {
+        mesh = WorldItems/FishFillet,
+        texture = WorldItems/FishFilletBurnt,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0103 -0.0034 -0.0163,
+            rotate = -2.5785 -60.3574 -99.4476,
+            scale = 0.6241,
+        }
+    }
+	model AEMVFSM_FishFilletRotten
+    {
+        mesh = WorldItems/FishFillet,
+        texture = WorldItems/FishFilletRotten,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0103 -0.0034 -0.0163,
+            rotate = -2.5785 -60.3574 -99.4476,
+            scale = 0.6241,
+        }
+    }
+	model AEMVFSM_FishFingers
+    {
+        mesh = WorldItems/FishFinger_Hand,
+        texture = WorldItems/FishFingers,
+        scale = 0.125,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0160 0.0222 -0.0119,
+            rotate = 85.9170 -4.8161 -62.1790,
+        }
+    }
+	model AEMVFSM_FishFingersBurnt
+    {
+        mesh = WorldItems/FishFinger_Hand,
+        texture = WorldItems/FishFingers_Burnt,
+        scale = 0.125,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0160 0.0222 -0.0119,
+            rotate = 85.9170 -4.8161 -62.1790,
+        }
+    }
+	model AEMVFSM_FishFingersRotten
+    {
+        mesh = WorldItems/FishFinger_Hand,
+        texture = WorldItems/FishFingers_Rotten,
+        scale = 0.125,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0160 0.0222 -0.0119,
+            rotate = 85.9170 -4.8161 -62.1790,
+        }
+    }
+	model AEMVFSM_FishGuts
+    {
+        mesh = WorldItems/FishGuts,
+        texture = WorldItems/FishGuts,
+        scale = 0.125,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0176 0.0082 -0.0267,
+            rotate = 92.2243 -18.1303 -30.6431,
+        }
+    }
+	model AEMVFSM_FishRoe
+    {
+        mesh = WorldItems/FishRoe,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0111 0.0403 -0.0098,
+            rotate = -78.2304 -1.0118 -159.8298,
+        }
+    }
+	model AEMVFSM_FishRoeSac
+    {
+        mesh = WorldItems/FishEggSac,
+        texture = WorldItems/FishEggSac,
+        scale = 0.125,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0180 -0.0135 -0.0211,
+            rotate = 93.9296 -1.4980 -24.2392,
+            scale = 0.9200,
+        }
+    }
+	model AEMVFSM_FishSushi
+    {
+        mesh = WorldItems/AEMVFSM_SushiFish,
+        texture = WorldItems/SushiFish,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0011 0.0047 -0.0077,
+            rotate = -174.2186 6.5313 1.9435,
+            scale = 0.8900,
+        }
+    }
+	model AEMVFSM_FriedChicken
+    {
+        mesh = FriedChicken,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0051 0.0233 -0.0003,
+            rotate = 175.6050 60.3876 -171.3400,
+        }
+    }
+	model AEMVFSM_FriedOnionRings
+    {
+        mesh = WorldItems/OnionRings,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0156 0.0375 -0.0166,
+            rotate = -15.4503 -68.3124 -96.1230,
+            scale = 0.9200,
+        }
+    }
+	model AEMVFSM_FriesFrench
+    {
+        mesh = WorldItems/FrenchFries_Hand,
+        texture = WorldItems/FrenceFries,
+        scale = 0.2,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0113 0.0190 -0.0056,
+            rotate = 89.9888 -1.3099 -52.9115,
+        }
+    }
+	model AEMVFSM_FriesFrenchBurnt
+    {
+        mesh = WorldItems/FrenchFries_Hand,
+        texture = WorldItems/FrenceFries_Burnt,
+        scale = 0.2,
+        
+        attachment Bip01_Prop2
+        {
+            offset = -0.0113 0.0190 -0.0056,
+            rotate = 89.9888 -1.3099 -52.9115,
+        }
+    }
+	model AEMVFSM_FriesFrenchRotten
+    {
+        mesh = WorldItems/FrenchFries_Hand,
+        texture = WorldItems/FrenceFries_Rotten,
+        scale = 0.2,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0113 0.0190 -0.0056,
+            rotate = 89.9888 -1.3099 -52.9115,
+        }
+    }
+	model AEMVFSM_FrogMeat
+    {
+        mesh = WorldItems/AEMVFSM_FrogMeat,
+        texture = WorldItems/FrogMeat,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0200 0.0208 -0.0168,
+            rotate = 1.5097 -29.1737 162.8215,
+            scale = 2.2250,
+        }
+    }
+	model AEMVFSM_FrogMeatCooked
+    {
+        mesh = WorldItems/AEMVFSM_FrogMeat,
+        texture = WorldItems/FrogMeatCooked,
+        scale = 0.4,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0200 0.0208 -0.0168,
+            rotate = 1.5097 -29.1737 162.8215,
+            scale = 2.2250,
+        }
+    }
+	model AEMVFSM_FrogMeatBurnt
+    {
+        mesh = WorldItems/AEMVFSM_FrogMeat,
+        texture = WorldItems/FrogMeatBurnt,
+        scale = 0.4,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0200 0.0208 -0.0168,
+            rotate = 1.5097 -29.1737 162.8215,
+            scale = 2.2250,
+        }
+    }
+	model AEMVFSM_FrogMeatRotten
+    {
+        mesh = WorldItems/AEMVFSM_FrogMeat,
+        texture = WorldItems/FrogMeatRotten,
+        scale = 0.4,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0200 0.0208 -0.0168,
+            rotate = 1.5097 -29.1737 162.8215,
+            scale = 2.2250,
+        }
+    }
+	model AEMVFSM_FrostedDoughnut
+    {
+        mesh = WorldItems/Doughnut,
+        texture = WorldItems/Doughnut_Frosted,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0214 0.0307 -0.0327,
+            rotate = 65.5547 -42.4405 -38.6190,
+            scale = 0.8878,
+        }
+    }
+	model AEMVFSM_FruitJam
+    {
+        mesh = WorldItems/JarLid,
+        texture = WorldItems/JamFruit,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0057 -0.0107 -0.0068,
+            rotate = 4.5217 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_FudgeePop_Melted
+    {
+        mesh = WorldItems/IceOcle_Melted,
+        texture = WorldItems/Fudgocle,
+        scale = 0.125,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0083 0.0434 -0.0318,
+            rotate = 20.6224 61.3385 5.9616,
+            scale = 0.5997,
+        }
+    }
+	model AEMVFSM_GarlicPowdered
+    {
+        mesh = WorldItems/PowderedJar,
+        texture = WorldItems/PowderedGarlic,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0000 -0.0064 0.0055,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_GingerPickled
+    {
+        mesh = WorldItems/GingerPickled,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0130 0.0381 -0.0135,
+            rotate = 14.3927 -60.6467 -79.7211,
+            scale = 0.8450,
+        }
+    }
+	model AEMVFSM_GingerRoot
+    {
+        mesh = WorldItems/Ginger,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0082 0.0386 -0.0009,
+            rotate = -94.2169 -0.2500 29.0795,
+            scale = 0.6950,
+        }
+    }
+	model AEMVFSM_Gingerbreadman
+    {
+        mesh = WorldItems/Gingerbreadman,
+        texture = WorldItems/Gingerbreadman,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0120 0.0280 0.0037,
+            rotate = -89.2351 18.0588 22.4288,
+            scale = 0.7588,
+        }
+    }
+	model AEMVFSM_GranolaBar
+    {
+        mesh = WorldItems/GranolaBar,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0063 0.0065 -0.0030,
+            rotate = -4.1019 -61.2857 84.3106,
+            scale = 0.8850,
+        }
+    }
+	model AEMVFSM_GrapeLeaves
+    {
+        mesh = WorldItems/AEMVFSM_GrapeLeaves,
+        texture = WorldItems/CommonMallowGrapeLeaves,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0668 0.0450 0.0080,
+            rotate = -48.7353 20.4971 103.5559,
+        }
+    }
+	model AEMVFSM_Grapes
+    {
+        mesh = WorldItems/Grapes,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0086 0.0101 0.0065,
+            rotate = 169.5883 66.2242 96.2279,
+            scale = 0.8228,
+        }
+    }
+	model AEMVFSM_GrapesRotten
+    {
+        mesh = WorldItems/Grapes,
+        texture = WorldItems/GrapesRotten,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0086 0.0101 0.0065,
+            rotate = 169.5883 66.2242 96.2279,
+            scale = 0.8228,
+        }
+    }
+	model AEMVFSM_GreenOnions
+    {
+        mesh = WorldItems/GreenOnion,
+        texture = WorldItems/GreenOnions,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0262 -0.0513 -0.0017,
+            rotate = -88.4250 3.3507 -51.4518,
+        }
+    }
+	model AEMVFSM_GreenOnionsRotten
+    {
+        mesh = WorldItems/GreenOnion,
+        texture = WorldItems/GreenOnions_Rotten,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0262 -0.0513 -0.0017,
+            rotate = -88.4250 3.3507 -51.4518,
+        }
+    }
+	model AEMVFSM_Greenpeas
+    {
+        mesh = WorldItems/Greenpeas,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0224 0.0307 -0.0093,
+            rotate = 9.6243 -69.0823 -96.1472,
+        }
+    }
+	model AEMVFSM_GreenpeasRotten
+    {
+        mesh = WorldItems/Greenpeas,
+        texture = WorldItems/Greenpeas_Rotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0224 0.0307 -0.0093,
+            rotate = 9.6243 -69.0823 -96.1472,
+        }
+    }
+	model AEMVFSM_GroundBeef
+    {
+        mesh = WorldItems/MincedMeat,
+        texture = WorldItems/MincedMeatRaw,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0021 0.0384 -0.0269,
+            rotate = 15.6746 -3.7059 17.7340,
+            scale = 0.9700,
+        }
+    }
+	model AEMVFSM_GroundBeefCooked
+    {
+        mesh = WorldItems/MincedMeat,
+        texture = WorldItems/MincedMeatCooked,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0021 0.0384 -0.0269,
+            rotate = 15.6746 -3.7059 17.7340,
+            scale = 0.9700,
+        }
+    }
+	model AEMVFSM_GroundBeefBurnt
+    {
+        mesh = WorldItems/MincedMeat,
+        texture = WorldItems/MincedMeatBurnt,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0021 0.0384 -0.0269,
+            rotate = 15.6746 -3.7059 17.7340,
+            scale = 0.9700,
+        }
+    }
+	model AEMVFSM_GroundBeefRotten
+    {
+        mesh = WorldItems/MincedMeat,
+        texture = WorldItems/MincedMeatRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0021 0.0384 -0.0269,
+            rotate = 15.6746 -3.7059 17.7340,
+            scale = 0.9700,
+        }
+    }
+	model AEMVFSM_Guacamole
+    {
+        mesh = WorldItems/Guacamole,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0221 0.0339 -0.0178,
+            rotate = -66.9212 -34.1228 -146.1760,
+            scale = 0.8221,
+        }
+    }
+	model AEMVFSM_Gum
+    {
+        mesh = WorldItems/Gum,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0154 0.0260 -0.0162,
+            rotate = 5.5883 -33.7093 -91.8639,
+            scale = 0.9550,
+        }
+    }
+	model AEMVFSM_GummyWorms
+    {
+        mesh = WorldItems/GummyWorms,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0075 0.0455 -0.0081,
+            rotate = 102.9270 18.1615 -32.7226,
+        }
+    }
+	model AEMVFSM_Habanero
+    {
+        mesh = WorldItems/PepperHabanero,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0021 0.0672 -0.0037,
+            rotate = -6.2251 -21.4802 151.9986,
+        }
+    }
+	model AEMVFSM_HabaneroDried
+    {
+        mesh = WorldItems/PepperHabanero_Dried,
+        scale = 0.2,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0180 0.0429 -0.0113,
+            rotate = 176.9632 62.4939 -73.5057,
+        }
+    }
+	model AEMVFSM_Ham
+    {
+        mesh = WorldItems/Ham,
+        texture = WorldItems/Ham,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0009 0.0783 -0.0708,
+            rotate = 92.4382 -0.3444 8.0636,
+            scale = 0.6312,
+        }
+    }
+	model AEMVFSM_HamSlice
+    {
+        mesh = WorldItems/HamSlice,
+        texture = WorldItems/Ham_HamSlice,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0068 0.0183 -0.0133,
+            rotate = -90.4371 -6.6796 26.7873,
+            scale = 0.7250,
+        }
+    }
+	model AEMVFSM_HiHis
+    {
+        mesh = WorldItems/Snackcake_HiHis,
+        texture = WorldItems/Snackcake_HiHis,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0213 0.0337 -0.0293,
+            rotate = 169.4106 68.4667 -78.6057,
+            scale = 0.7850,
+        }
+    }
+	model AEMVFSM_Hotdog
+    {
+        mesh = HotDog,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0214 -0.0488 -0.0243,
+            rotate = 4.2817 36.7162 -1.5483,
+            scale = 0.8375,
+        }
+    }
+	model AEMVFSM_HotDrinkMug
+    {
+        mesh        = WorldItems/Mug_Fluid,
+        texture     = Mug_Green,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_HotDrinkMugWhite
+    {
+        mesh        = WorldItems/Mug_Fluid,
+        texture     = Mug_White,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_HotDrinkMugRed
+    {
+        mesh = WorldItems/Mug_Fluid,
+        texture = Mug_Red,
+        scale = 0.1,
+        
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_HotDrinkMugBlue
+    {
+        mesh = WorldItems/Mug_Fluid,
+        texture = Mug_Blue,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_HotDrinkMugYellow
+    {
+        mesh = WorldItems/Mug_Fluid,
+        texture = Mug_Yellow,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_HotDrinkMugSpiffo
+    {
+        mesh        = WorldItems/Mug_Fluid,
+        texture     = Mug_YellowSpiffo,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_HotdogBun
+    {
+        mesh = WorldItems/Buns_Hotdog_Single,
+        texture = WorldItems/BunsHotdog,
+        scale = 0.125,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0260 0.0083 -0.0348,
+            rotate = -8.7535 -64.8438 -101.7314,
+            scale = 0.8450,
+        }
+    }
+	model AEMVFSM_Hotdog_single
+    {
+        mesh = WorldItems/Hotdog_Single,
+        scale = 0.125,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0093 0.0028 -0.0099,
+            rotate = 4.4947 39.9255 81.1602,
+            scale = 0.7900,
+        }
+    }
+	model AEMVFSM_Icecream
+    {
+        mesh = WorldItems/IceCream,
+        texture = WorldItems/IceCream,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0158 -0.0165 -0.0183,
+            rotate = -0.2806 -78.6527 -5.7299,
+        }
+    }
+	model AEMVFSM_IcecreamMelted
+    {
+        mesh = WorldItems/IcecreamMelted,
+        texture = WorldItems/IceCream,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0158 -0.0165 -0.0183,
+            rotate = -0.2806 -78.6527 -5.7299,
+        }
+    }
+	model AEMVFSM_IcecreamSandwich
+    {
+        mesh = WorldItems/IcecreamSandwich,
+        texture = WorldItems/IcecreamSandwich,
+        scale = 0.375,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0010 0.0160 -0.0096,
+            rotate = -2.8698 -60.2272 85.6338,
+            scale = 0.8950,
+        }
+    }
+	model AEMVFSM_IcecreamSandwich_Melted
+    {
+        mesh = WorldItems/IcecreamSandwich_Melted,
+        texture = WorldItems/IcecreamSandwich,
+        scale = 0.125,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0034 0.0394 -0.0266,
+            rotate = -16.1828 44.4509 30.9536,
+            scale = 0.7372,
+        }
+    }
+	model AEMVFSM_Jalapeno
+    {
+        mesh = WorldItems/PepperJalapeno,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0079 0.0364 -0.0019,
+            rotate = 179.0332 15.0145 94.2178,
+        }
+    }
+	model AEMVFSM_JalapenoDried
+    {
+        mesh = WorldItems/PepperJalapeno_Dried,
+        scale = 0.2,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0040 0.0190 -0.0024,
+            rotate = -170.9222 10.7552 89.5192,
+        }
+    }
+	model AEMVFSM_JellyDonut
+    {
+        mesh = WorldItems/Doughnut,
+        texture = WorldItems/Doughnut_Jelly,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0214 0.0307 -0.0327,
+            rotate = 65.5547 -42.4405 -38.6190,
+            scale = 0.8878,
+        }
+    }
+	model AEMVFSM_Kale
+    {
+        mesh = WorldItems/AEMVFSM_Kale,
+        texture = WorldItems/Kale,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0013 0.0086 0.0067,
+            rotate = -93.9746 9.3512 3.4349,
+            scale = 0.7550,
+        }
+    }
+	model AEMVFSM_KaleRotten
+    {
+        mesh = WorldItems/AEMVFSM_Kale,
+        texture = WorldItems/Kale_Rotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0013 0.0086 0.0067,
+            rotate = -93.9746 9.3512 3.4349,
+            scale = 0.7550,
+        }
+    }
+	model AEMVFSM_Ketchup
+    {
+        mesh = WorldItems/Ketchup,
+        texture = WorldItems/Ketchup,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0122 -0.0819 -0.0000,
+            rotate = 0.0000 0.3052 0.0000,
+            scale = 0.9200,
+        }
+    }
+	model AEMVFSM_KeyLimePie
+    {
+        mesh = WorldItems/Pie_Keylime,
+        texture = WorldItems/PieKeylime,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0243 0.0239 -0.0292,
+            rotate = 96.4547 -2.5970 -23.5832,
+        }
+    }
+	model AEMVFSM_Lard
+    {
+        mesh = WorldItems/AEMVFSM_Lard,
+        texture = WorldItems/Lard,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0227 0.0252 -0.0383,
+            rotate = -89.2273 2.7134 -148.3483,
+            scale = 1.9445,
+        }
+    }
+	model AEMVFSM_Lavender
+    {
+        mesh = WorldItems/Lavender_Fresh,
+        texture = WorldItems/Lavender_Fresh,
+        scale = 0.2,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0021 0.0205 0.0223,
+            rotate = -79.8309 0.0000 -19.9602,
+        }
+    }
+	model AEMVFSM_Leech
+    {
+        mesh = WorldItems/Leech,
+        texture = WorldItems/Leech,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0151 0.0026 -0.0093,
+            rotate = 96.3433 -6.8896 -25.2479,
+        }
+    }
+	model AEMVFSM_Leek
+    {
+        mesh = WorldItems/Leek,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0060 0.0036 -0.0148,
+            rotate = 93.0248 -2.7546 27.2976,
+            scale = 0.8550,
+        }
+    }
+	model AEMVFSM_LeekRotten
+    {
+        mesh = WorldItems/Leek,
+        texture = WorldItems/LeekRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0060 0.0036 -0.0148,
+            rotate = 93.0248 -2.7546 27.2976,
+            scale = 0.8550,
+        }
+    }
+	model AEMVFSM_Lemon
+    {
+        mesh = WorldItems/Lemon,
+        texture = WorldItems/Lemon,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0205 0.0332 0.0118,
+            rotate = -91.2382 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_LemonRotten
+    {
+        mesh = WorldItems/Lemon,
+        texture = WorldItems/LemonRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0205 0.0332 0.0118,
+            rotate = -91.2382 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_LemonBar
+    {
+        mesh = WorldItems/LemonBar,
+        scale = 0.35,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0185 0.0311 -0.0291,
+            rotate = -3.0855 -61.8118 -95.9029,
+        }
+    }
+	model AEMVFSM_LemonMeringuePie
+    {
+        mesh = WorldItems/Pie_Slice,
+        texture = WorldItems/PieLemonmeringue,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0315 0.0312 -0.0194,
+            rotate = 103.8974 0.6516 -60.3023,
+        }
+    }
+	model AEMVFSM_LemonGrass
+    {
+        mesh = WorldItems/LemonGrass,
+        texture = WorldItems/LemonGrass,
+        scale = 0.6,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0197 -0.0190 -0.0140,
+            rotate = 92.8702 -9.7326 -24.4659,
+        }
+    }
+	model AEMVFSM_LicoriceBlack
+    {
+        mesh = WorldItems/Licorice,
+        texture = WorldItems/LicoriceBlack,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0159 0.0030 -0.0078,
+            rotate = -15.3129 -62.1593 -109.5330,
+            scale = 0.9250,
+        }
+    }
+	model AEMVFSM_LicoriceRed
+    {
+        mesh = WorldItems/Licorice,
+        texture = WorldItems/LicoriceRed,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0159 0.0030 -0.0078,
+            rotate = -15.3129 -62.1593 -109.5330,
+            scale = 0.9250,
+        }
+    }
+	model AEMVFSM_Maki
+    {
+        mesh = WorldItems/AEMVFSM_Maki,
+        texture = WorldItems/Maki,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0041 0.0803 -0.0169,
+            rotate = 1.4945 0.2014 -2.7048,
+            scale = 1.9902,
+        }
+    }
+	model AEMVFSM_MapleSyrup
+    {
+        mesh = WorldItems/MapleSyrup,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0032 -0.0646 -0.0014,
+            rotate = 2.0520 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_Margarine
+    {
+        mesh = WorldItems/Margerine,
+        scale = 0.5,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0003 0.0600 -0.0188,
+            rotate = -165.7611 89.5621 -137.5191,
+        }
+    }
+	model AEMVFSM_Marigold
+    {
+        mesh = WorldItems/Marigolds,
+        texture = WorldItems/Marigolds_Fresh,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0074 0.0274 0.0108,
+            rotate = -75.5122 -0.0000 -14.2865,
+            scale = 0.1483,
+        }
+    }
+	model MarigoldRotten
+    {
+        mesh = WorldItems/Marigolds,
+        texture = WorldItems/Marigolds_Rotten,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0074 0.0274 0.0108,
+            rotate = -75.5122 -0.0000 -14.2865,
+            scale = 0.1483,
+        }
+    }
+	model AEMVFSM_MarigoldDried
+    {
+        mesh = WorldItems/Marigolds,
+        texture = WorldItems/Marigolds_Dried,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0074 0.0274 0.0108,
+            rotate = -75.5122 -0.0000 -14.2865,
+            scale = 0.9867,
+        }
+    }
+	model AEMVFSM_Marinara
+    {
+        mesh = WorldItems/Marinara,
+        texture = WorldItems/Marinara,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0061 -0.0318 -0.0031,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_Marmalade
+    {
+        mesh = WorldItems/JarLid,
+        texture = WorldItems/JamMarmalade,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0057 -0.0107 -0.0068,
+            rotate = 4.5217 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_MeatDumpling
+    {
+        mesh = WorldItems/AEMVFSM_MeatDumpling,
+        texture = WorldItems/MeatDumplings,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0192 0.0061 -0.0292,
+            rotate = -12.9991 -55.1528 169.0245,
+            scale = 2.0650,
+        }
+    }
+	model AEMVFSM_MilkChocolate
+    {
+        mesh = WorldItems/AEMVFSM_Chocolate,
+        texture = WorldItems/Chocolate,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0094 -0.0023 -0.0035,
+            rotate = -178.0266 12.8155 -1.8123,
+            scale = 2.2459,
+        }
+    }
+	model AEMVFSM_Millipede
+    {
+        mesh = WorldItems/Insect_Millipede,
+        texture = WorldItems/Insect_Millipede1,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0143 0.0251 -0.0127,
+            rotate = -82.1489 5.4512 -163.0193,
+        }
+    }
+	model AEMVFSM_Millipede2
+    {
+        mesh = WorldItems/Insect_Millipede,
+        texture = WorldItems/Insect_Millipede2,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0143 0.0251 -0.0127,
+            rotate = -82.1489 5.4512 -163.0193,
+        }
+    }
+	model AEMVFSM_MintCandy
+    {
+        mesh = WorldItems/MintCandy,
+        texture = WorldItems/MintCandy,
+        scale = 0.5,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0011 0.0434 -0.0050,
+            rotate = -88.7765 2.1462 34.4772,
+        }
+    }
+	model AEMVFSM_Modjeska
+    {
+        mesh = WorldItems/AEMVFSM_Modjeska,
+        texture = WorldItems/Modjeska,
+        scale = 0.6,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0243 -0.0120 -0.0063,
+            rotate = -11.1094 13.5539 171.0762,
+            scale = 1.6700,
+        }
+    }
+	model AEMVFSM_MousePupsDead
+    {
+        mesh = DeadMouse,
+        texture = Mouse_Deer,
+        scale = 0.5,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0070 0.0319 -0.0011,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_MousePupsDeadCooked
+    {
+        mesh = DeadMouse,
+        texture = WorldItems/Mouse_DeerCooked,
+        scale = 0.5,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0070 0.0319 -0.0011,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_MousePupsDeadBurnt
+    {
+        mesh = DeadMouse,
+        texture = WorldItems/Mouse_DeerBurnt,
+        scale = 0.5,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0070 0.0319 -0.0011,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_MuttonChop
+    {
+        mesh = WorldItems/AEMVFSM_MuttonChop,
+        texture = WorldItems/MuttonChop,
+        scale = 0.6,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0123 -0.0242 -0.0377,
+            rotate = 7.2272 -22.4772 -177.6828,
+            scale = 1.4990,
+        }
+    }
+	model AEMVFSM_MuttonChopCooked
+    {
+        mesh = WorldItems/AEMVFSM_MuttonChop,
+        texture = WorldItems/MuttonChopCooked,
+        scale = 0.6,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0123 -0.0242 -0.0377,
+            rotate = 7.2272 -22.4772 -177.6828,
+            scale = 1.4990,
+        }
+    }
+	model AEMVFSM_MuttonChopBurnt
+    {
+        mesh = WorldItems/AEMVFSM_MuttonChop,
+        texture = WorldItems/MuttonChopBurnt,
+        scale = 0.6,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0123 -0.0242 -0.0377,
+            rotate = 7.2272 -22.4772 -177.6828,
+            scale = 1.4990,
+        }
+    }
+	model AEMVFSM_MuttonChopRotten
+    {
+        mesh = WorldItems/AEMVFSM_MuttonChop,
+        texture = WorldItems/MuttonChop,
+        scale = 0.6,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0123 -0.0242 -0.0377,
+            rotate = 7.2272 -22.4772 -177.6828,
+            scale = 1.4990,
+        }
+    }
+	model AEMVFSM_NachoCheeseDip
+    {
+        mesh = WorldItems/DipJar,
+        texture = WorldItems/Dip_NachoCheese,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0061 0.0084 -0.0150,
+            rotate = 0.0000 0.0000 0.0000,
+            scale = 0.9550,
+        }
+    }
+	model AEMVFSM_Nettles
+    {
+        mesh = WorldItems/AEMVFSM_Nettle,
+        texture = WorldItems/Nettle,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0048 0.0358 -0.0006,
+            rotate = -90.2817 6.7992 33.8757,
+        }
+    }
+	model AEMVFSM_OliveOil
+    {
+        mesh = WorldItems/OilOlive,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0000 -0.1434 0.0108,
+            rotate = -1.3005 -0.0066 0.7116,
+            scale = 0.8987,
+        }
+    }
+	model AEMVFSM_OmeletteRecipeForged
+    {
+        mesh = WorldItems/FryingPan_Forged_Food,
+        texture = WorldItems/FryingPan_Forged_OmletteRaw,
+        scale = 0.135,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0088 0.0406 -0.0055,
+            rotate = 75.1099 -75.0556 -3.4643,
+            scale = 0.8810,
+        }
+    }
+	model AEMVFSM_OmeletteRecipeForgedCooked
+    {
+        mesh = WorldItems/FryingPan_Forged_Food,
+        texture = WorldItems/FryingPan_Forged_Omlette,
+        scale = 0.135,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0088 0.0406 -0.0055,
+            rotate = 75.1099 -75.0556 -3.4643,
+            scale = 0.8810,
+        }
+    }
+	model AEMVFSM_OmeletteRecipeForgedBurnt
+    {
+        mesh = WorldItems/FryingPan_Forged_Food,
+        texture = WorldItems/FryingPan_Forged_OmletteBurnt,
+        scale = 0.135,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0088 0.0406 -0.0055,
+            rotate = 75.1099 -75.0556 -3.4643,
+            scale = 0.8810,
+        }
+    }
+	model AEMVFSM_OmeletteRecipeForgedRotten
+    {
+        mesh = WorldItems/FryingPan_Forged_Food,
+        texture = WorldItems/FryingPan_Forged_OmletteRotten,
+        scale = 0.135,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0088 0.0406 -0.0055,
+            rotate = 75.1099 -75.0556 -3.4643,
+            scale = 0.8810,
+        }
+    }
+	model AEMVFSM_Omelette
+    {
+        mesh = WorldItems/EggOmlette,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0016 0.0017 -0.0356,
+            rotate = 3.5226 -31.9923 -92.2263,
+            scale = 0.8450,
+        }
+    }
+	model AEMVFSM_Onigiri
+    {
+        mesh = WorldItems/AEMVFSM_Onigiri,
+        texture = WorldItems/Onigiri,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0167 0.0122 -0.0262,
+            rotate = 0.9775 -6.1433 174.8575,
+            scale = 2.2266,
+        }
+    }
+	model AEMVFSM_OnionPowdered
+    {
+        mesh = WorldItems/PowderedJar,
+        texture = WorldItems/PowderedOnion,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0000 -0.0064 0.0055,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_Oregano_Seasoning
+    {
+        mesh = WorldItems/Seasoning,
+        texture = WorldItems/Seasoning_Oregano,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 -0.0216 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_Oysters
+    {
+        mesh = WorldItems/AEMVFSM_Oysters,
+        texture = WorldItems/OystersRaw,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0116 0.0147 -0.0168,
+            rotate = 21.8462 -73.3837 -160.3427,
+            scale = 1.8200,
+        }
+    }
+	model AEMVFSM_OystersCooked
+    {
+        mesh = WorldItems/AEMVFSM_Oysters,
+        texture = WorldItems/OystersCooked,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0116 0.0147 -0.0168,
+            rotate = 21.8462 -73.3837 -160.3427,
+            scale = 1.8200,
+        }
+    }
+	model AEMVFSM_OystersRotten
+    {
+        mesh = WorldItems/AEMVFSM_Oysters,
+        texture = WorldItems/OystersRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0116 0.0147 -0.0168,
+            rotate = 21.8462 -73.3837 -160.3427,
+            scale = 1.8200,
+        }
+    }
+	model AEMVFSM_OystersFried
+    {
+        mesh = WorldItems/AEMVFSM_OystersFried,
+        texture = WorldItems/OystersFried,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0086 0.0068 -0.0217,
+            rotate = -174.8755 -7.3884 177.7774,
+            scale = 2.3660,
+        }
+    }
+	model AEMVFSM_OystersFriedRotten
+    {
+        mesh = WorldItems/AEMVFSM_OystersFried,
+        texture = WorldItems/OystersRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0086 0.0068 -0.0217,
+            rotate = -174.8755 -7.3884 177.7774,
+            scale = 2.3660,
+        }
+    }
+	model AEMVFSM_Peas
+    {
+        mesh = WorldItems/Peas,
+        texture = WorldItems/Peas,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0287 0.0299 -0.0238,
+            rotate = 3.1014 -60.7527 -100.8053,
+            scale = 0.8900,
+        }
+    }
+	model AEMVFSM_Parsley_Seasoning
+    {
+        mesh = WorldItems/Seasoning,
+        texture = WorldItems/Seasoning_Parsley,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 -0.0216 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_Pasta
+    {
+        mesh = WorldItems/AEMVFSM_Pasta,
+        texture = WorldItems/Pasta,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0110 0.0504 0.0026,
+            rotate = -179.9639 20.5654 3.7190,
+            scale = 2.2113,
+        }
+    }
+	model AEMVFSM_PeanutButter
+    {
+        mesh = WorldItems/PeanutButter,
+        texture = WorldItems/PeanutButter,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0068 -0.0208 0.0000,
+            rotate = 0.0000 -89.6891 0.0000,
+            scale = 0.9215,
+        }
+    }
+	model AEMVFSM_Pepperoni
+    {
+        mesh = WorldItems/AEMVFSM_Pepperoni,
+        texture = WorldItems/Pepperoni,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0034 0.0009 -0.0047,
+            rotate = 179.6853 10.8097 4.8415,
+            scale = 2.0079,
+        }
+    }
+	model AEMVFSM_Perogies
+    {
+        mesh = WorldItems/AEMVFSM_Perogies,
+        texture = WorldItems/Perogies,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0271 0.0247 -0.0419,
+            rotate = 54.1802 21.5300 -129.7916,
+            scale = 2.4605,
+        }
+    }
+	model AEMVFSM_Pickles
+    {
+        mesh = WorldItems/AEMVFSM_Pickles,
+        texture = WorldItems/Pickles,
+        scale = 0.6,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0151 0.0020 -0.0229,
+            rotate = 0.6325 -55.9254 -179.7793,
+            scale = 1.4075,
+        }
+    }
+	model AEMVFSM_Pizza
+    {
+        mesh = WorldItems/PizzaSlice,
+        texture = WorldItems/PizzaSlice,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0140 0.0300 -0.0125,
+            rotate = 93.2283 -8.7059 -21.4051,
+            scale = 0.7076,
+        }
+    }
+	model AEMVFSM_PizzaRotten
+    {
+        mesh = WorldItems/PizzaSlice,
+        texture = WorldItems/PizzaSliceRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0140 0.0300 -0.0125,
+            rotate = 93.2283 -8.7059 -21.4051,
+            scale = 0.7076,
+        }
+    }
+	model AEMVFSM_Popsicle_Melted
+    {
+        mesh = WorldItems/Popsicle_Melted,
+        texture = WorldItems/Popsicle,
+        scale = 0.125,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0094 0.0440 -0.0251,
+            rotate = -33.8942 49.6604 53.0330,
+            scale = 0.5809,
+        }
+    }
+	model AEMVFSM_Pork
+    {
+        mesh = WorldItems/Pork,
+        texture = WorldItems/Pork_Raw,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0061 0.0409 -0.0552,
+            rotate = 2.4853 -75.3323 -96.4710,
+            scale = 0.7950,
+        }
+    }
+	model AEMVFSM_PorkCooked
+    {
+        mesh = WorldItems/Pork,
+        texture = WorldItems/Pork_Cooked,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0061 0.0409 -0.0552,
+            rotate = 2.4853 -75.3323 -96.4710,
+            scale = 0.7950,
+        }
+    }
+	model AEMVFSM_PorkBurnt
+    {
+        mesh = WorldItems/Pork,
+        texture = WorldItems/Pork_OverDone,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0061 0.0409 -0.0552,
+            rotate = 2.4853 -75.3323 -96.4710,
+            scale = 0.7950,
+        }
+    }
+	model AEMVFSM_PorkRotten
+    {
+        mesh = WorldItems/Pork,
+        texture = WorldItems/PorkRaw_Rotten,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0061 0.0409 -0.0552,
+            rotate = 2.4853 -75.3323 -96.4710,
+            scale = 0.7950,
+        }
+    }
+	model AEMVFSM_PorkChop
+    {
+        mesh = WorldItems/PorkChop,
+        texture = WorldItems/PorkChop,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0150 0.0028 -0.0152,
+            rotate = -101.0816 10.2448 -117.9212,
+        }
+    }
+	model AEMVFSM_PorkChopCooked
+    {
+        mesh = WorldItems/PorkChop,
+        texture = WorldItems/PorkChopCooked,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0150 0.0028 -0.0152,
+            rotate = -101.0816 10.2448 -117.9212,
+        }
+    }
+	model AEMVFSM_PorkChopBurnt
+    {
+        mesh = WorldItems/PorkChop,
+        texture = WorldItems/PorkChopBurnt,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0150 0.0028 -0.0152,
+            rotate = -101.0816 10.2448 -117.9212,
+        }
+    }
+	model AEMVFSM_PorkChopRotten
+    {
+        mesh = WorldItems/PorkChop,
+        texture = WorldItems/PorkChopRotten,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0150 0.0028 -0.0152,
+            rotate = -101.0816 10.2448 -117.9212,
+        }
+    }
+	model AEMVFSM_PotatoPancakes
+    {
+        mesh = WorldItems/AEMVFSM_PotatoPancakes,
+        texture = WorldItems/PotatoPancakes,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0023 -0.0069 -0.0075,
+            rotate = -177.9731 20.7476 7.9940,
+            scale = 2.3595,
+        }
+    }
+	model AEMVFSM_PumpkinPie
+    {
+        mesh = WorldItems/PiePumpkin,
+        texture = WorldItems/PumpkinPieSlice,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0280 0.0225 -0.0213,
+            rotate = 98.9536 -1.9353 -60.2144,
+            scale = 0.7950,
+        }
+    }
+	model AEMVFSM_PumpkinPieRotten
+    {
+        mesh = WorldItems/PiePumpkin,
+        texture = WorldItems/PumpkinPieSliceRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0280 0.0225 -0.0213,
+            rotate = 98.9536 -1.9353 -60.2144,
+            scale = 0.7950,
+        }
+    }
+	model AEMVFSM_QuaggaCakes
+    {
+        mesh        = WorldItems/AEMVFSM_QuaggaCakes,
+        texture     = WorldItems/Snackcake_QuaggaCakes,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0160 0.0737 0.0247,
+            rotate = 106.1225 -60.5706 66.1194,
+        }
+    }
+	model AEMVFSM_Rabbitmeat
+    {
+        mesh = WorldItems/RabbitMeat,
+        texture = WorldItems/RabbitMeat,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0136 -0.0165 -0.0347,
+            rotate = 162.3450 64.2151 -70.3265,
+            scale = 0.8251,
+        }
+    }
+	model AEMVFSM_RabbitmeatCooked
+    {
+        mesh = WorldItems/RabbitMeat,
+        texture = WorldItems/RabbitMeatCooked,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0136 -0.0165 -0.0347,
+            rotate = 162.3450 64.2151 -70.3265,
+            scale = 0.8251,
+        }
+    }
+	model AEMVFSM_RabbitmeatBurnt
+    {
+        mesh = WorldItems/RabbitMeat,
+        texture = WorldItems/RabbitMeatBurnt,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0136 -0.0165 -0.0347,
+            rotate = 162.3450 64.2151 -70.3265,
+            scale = 0.8251,
+        }
+    }
+	model AEMVFSM_RanchDip
+    {
+        mesh = WorldItems/DipJar,
+        texture = WorldItems/Dip_Ranch,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0061 0.0084 -0.0150,
+            rotate = 0.0000 0.0000 0.0000,
+            scale = 0.9550,
+        }
+    }
+	model AEMVFSM_RaspberryCookie
+    {
+        mesh = WorldItems/CookieJelly,
+        texture = WorldItems/RaspberryShortbread,
+        scale = 0.6,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0105 0.0438 -0.0188,
+            rotate = -129.4813 54.5519 -125.6576,
+            scale = 0.8317,
+        }
+    }
+	model AEMVFSM_RatBabyDead
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/DeadRat,
+        scale = 0.08,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0114 0.0018 -0.0207,
+            rotate = 6.6525 -33.8132 87.2389,
+        }
+    }
+	model AEMVFSM_RatBabyDeadCooked
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/DeadRatCooked,
+        scale = 0.08,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0114 0.0018 -0.0207,
+            rotate = 6.6525 -33.8132 87.2389,
+        }
+    }
+	model AEMVFSM_RatBabyDeadBurnt
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/DeadRatBurnt,
+        scale = 0.08,
+        
+        attachment Bip01_Prop2
+        {
+            offset = 0.0114 0.0018 -0.0207,
+            rotate = 6.6525 -33.8132 87.2389,
+        }
+    }
+	model AEMVFSM_RatKing
+    {
+        mesh = WorldItems/Ratking,
+        scale = 0.125,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0234 -0.1952 -0.0138,
+            rotate = -7.5691 -31.4342 79.2725,
+        }
+    }
+	model AEMVFSM_RedVelvetCake
+    {
+        mesh = WorldItems/CakeSlice,
+        texture = WorldItems/CakeRedVelvet,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0392 0.0363 -0.0278,
+            rotate = 97.1495 -0.9380 -60.5787,
+        }
+    }
+	model AEMVFSM_RicePaper
+    {
+        mesh = WorldItems/RicePaper,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0068 0.0243 -0.0090,
+            rotate = 38.8147 -67.1395 -58.1008,
+            scale = 0.9050,
+        }
+    }
+	model AEMVFSM_RiceVinegar
+    {
+        mesh = WorldItems/RiceVinegar,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0085 -0.0990 -0.0000,
+            rotate = 2.1314 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_Roast
+    {
+        mesh = WorldItems/RoastedVegtables,
+        texture = WorldItems/RoastedVegtables,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0000 0.0984 -0.0265,
+            rotate = 67.2625 0.0000 0.0000,
+            scale = 0.8750,
+        }
+    }
+	model AEMVFSM_RoastRotten
+    {
+        mesh = WorldItems/RoastedVegtables,
+        texture = WorldItems/RoastedVegtablesRotten,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0000 0.0984 -0.0265,
+            rotate = 67.2625 0.0000 0.0000,
+            scale = 0.8750,
+        }
+    }
+	model AEMVFSM_RodentMeat
+    {
+        mesh = WorldItems/SmallAnimalMeat,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0165 0.0055 -0.0203,
+            rotate = -57.7794 -38.9641 -130.4960,
+        }
+    }
+	model AEMVFSM_RodentMeatCooked
+    {
+        mesh = WorldItems/SmallAnimalMeat,
+        texture = WorldItems/SmallAnimalMeatCooked,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0165 0.0055 -0.0203,
+            rotate = -57.7794 -38.9641 -130.4960,
+        }
+    }
+	model AEMVFSM_RodentMeatBurnt
+    {
+        mesh = WorldItems/SmallAnimalMeat,
+        texture = WorldItems/SmallAnimalMeatBurnt,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0165 0.0055 -0.0203,
+            rotate = -57.7794 -38.9641 -130.4960,
+        }
+    }
+	model AEMVFSM_RodentMeatRotten
+    {
+        mesh = WorldItems/SmallAnimalMeat,
+        texture = WorldItems/SmallAnimalMeatRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0165 0.0055 -0.0203,
+            rotate = -57.7794 -38.9641 -130.4960,
+        }
+    }
+	model AEMVFSM_Rosemary_Seasoning
+    {
+        mesh = WorldItems/Seasoning,
+        texture = WorldItems/Seasoning_Rosemary,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 -0.0216 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_Roses
+    {
+        mesh = WorldItems/Roses_Fresh,
+        texture = WorldItems/Roses_Fresh,
+        scale = 0.2,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0035 0.0135 0.0120,
+            rotate = -80.3483 0.0000 -11.3602,
+            scale = 0.9150,
+        }
+    }
+	model AEMVFSM_Sage_Seasoning
+    {
+        mesh = WorldItems/Seasoning,
+        texture = WorldItems/Seasoning_Sage,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 -0.0216 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_Salmon
+    {
+        mesh = WorldItems/Salmon,
+        texture = WorldItems/Salmon,
+        scale = 0.25,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0083 0.0019 -0.0212,
+            rotate = 1.2986 -65.9693 -98.0424,
+        }
+    }
+	model AEMVFSM_SalmonCooked
+    {
+        mesh = WorldItems/Salmon,
+        texture = WorldItems/SalmonCooked,
+        scale = 0.25,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0083 0.0019 -0.0212,
+            rotate = 1.2986 -65.9693 -98.0424,
+        }
+    }
+	model AEMVFSM_SalmonBurnt
+    {
+        mesh = WorldItems/Salmon,
+        texture = WorldItems/SalmonBurnt,
+        scale = 0.25,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0083 0.0019 -0.0212,
+            rotate = 1.2986 -65.9693 -98.0424,
+        }
+    }
+	model AEMVFSM_SalmonRotten
+    {
+        mesh = WorldItems/Salmon,
+        texture = WorldItems/SalmonRotten,
+        scale = 0.25,
+        
+        attachment Bip01_Prop2
+        {
+            offset = -0.0083 0.0019 -0.0212,
+            rotate = 1.2986 -65.9693 -98.0424,
+        }
+    }
+	model AEMVFSM_SalsaDip
+    {
+        mesh = WorldItems/DipJar,
+        texture = WorldItems/Dip_Salsa,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0061 0.0084 -0.0150,
+            rotate = 0.0000 0.0000 0.0000,
+            scale = 0.9550,
+        }
+    }
+	model AEMVFSM_Sandwich
+    {
+        mesh = Sandwich,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0111 -0.0295 -0.0216,
+            rotate = 2.3141 21.0534 2.7842,
+        }
+    }
+	model AEMVFSM_SandwichCooked
+    {
+        mesh = Sandwich,
+        texture = SandwichGrilled,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0111 -0.0295 -0.0216,
+            rotate = 2.3141 21.0534 2.7842,
+        }
+    }
+	model AEMVFSM_SandwichBaguette
+    {
+        mesh = WorldItems/BaguetteSandwich,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0071 0.0343 -0.0258,
+            rotate = 90.8896 2.0004 12.1084,
+            scale = 0.7809,
+        }
+    }
+	model AEMVFSM_ScoutCookies
+    {
+        mesh = WorldItems/Scout_Cookies,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0349 -0.0488 -0.0184,
+            rotate = 180.0000 67.6157 -172.3474,
+        }
+    }
+	model AEMVFSM_SeasoningSalt
+    {
+        mesh = WorldItems/Seasoning_Salt,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 -0.0067 0.0000,
+            rotate = 1.8800 -0.2980 0.0023,
+        }
+    }
+	model AEMVFSM_Seaweed
+    {
+        mesh = WorldItems/SeaWeed,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0113 0.0017 -0.0203,
+            rotate = -80.4962 8.4427 22.1636,
+        }
+    }
+	model AEMVFSM_SeedPaste
+    {
+        mesh = WorldItems/Flax_SeedPaste_Blob,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0126 0.0460 -0.0132,
+            rotate = -11.5593 -66.1621 -105.0777,
+        }
+    }
+	model AEMVFSM_SesameBagel
+    {
+        mesh = WorldItems/Bagel,
+        texture = WorldItems/BagelSesameSeeds,
+        scale = 0.35,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0075 0.0389 -0.0311,
+            rotate = -1.0100 -45.3965 -88.0276,
+            scale = 0.3053,
+        }
+    }
+	model AEMVFSM_Shrimp
+    {
+        mesh = WorldItems/Shrimp_Raw_Rotten,
+        texture = WorldItems/ShrimpRaw,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0095 0.0474 -0.0095,
+            rotate = -96.7206 16.7705 -138.8563,
+        }
+    }
+	model AEMVFSM_ShrimpDumpling
+    {
+        mesh = WorldItems/AEMVFSM_ShrimpDumpling,
+        texture = WorldItems/ShrimpDumpling,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0068 0.0133 -0.0237,
+            rotate = 21.2106 -57.4811 -143.0236,
+            scale = 1.9234,
+        }
+    }
+	model AEMVFSM_SkinnedDeadMouse
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/DeadRat_Skinned,
+        scale = 0.06,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0078 0.0063 -0.0151,
+            rotate = 6.6525 -33.8132 87.2389,
+        }
+    }
+	model AEMVFSM_SkinnedDeadMouseCooked
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/Mouse_DeerCooked,
+        scale = 0.06,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0078 0.0063 -0.0151,
+            rotate = 6.6525 -33.8132 87.2389,
+        }
+    }
+	model AEMVFSM_SkinnedDeadMouseBurnt
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/Mouse_DeerBurnt,
+        scale = 0.06,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0078 0.0063 -0.0151,
+            rotate = 6.6525 -33.8132 87.2389,
+        }
+    }
+	model AEMVFSM_SkinnedDeadMousePups
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/DeadRat_Skinned,
+        scale = 0.04,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0025 0.0259 -0.0070,
+            rotate = 7.0453 -33.6642 91.4560,
+        }
+    }
+	model AEMVFSM_SkinnedDeadMousePupsCooked
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/Mouse_DeerCooked,
+        scale = 0.04,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0025 0.0259 -0.0070,
+            rotate = 7.0453 -33.6642 91.4560,
+        }
+    }
+	model AEMVFSM_SkinnedDeadMousePupsBurnt
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/Mouse_DeerBurnt,
+        scale = 0.04,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0025 0.0259 -0.0070,
+            rotate = 7.0453 -33.6642 91.4560,
+        }
+    }
+	model AEMVFSM_SkinnedDeadRat
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/DeadRat_Skinned,
+        scale = 0.11,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0079 -0.0342 -0.0270,
+            rotate = 6.6525 -33.8132 87.2389,
+            scale = 0.9554,
+        }
+    }
+	model AEMVFSM_SkinnedDeadRatCooked
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/DeadRatCooked,
+        scale = 0.11,
+        
+        attachment Bip01_Prop2
+        {
+            offset = 0.0079 -0.0342 -0.0270,
+            rotate = 6.6525 -33.8132 87.2389,
+            scale = 0.9554,
+        }
+    }
+	model AEMVFSM_SkinnedDeadRatBurnt
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/DeadRatBurnt,
+        scale = 0.11,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0079 -0.0342 -0.0270,
+            rotate = 6.6525 -33.8132 87.2389,
+            scale = 0.9554,
+        }
+    }
+	model AEMVFSM_SkinnedDeadRatBaby
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/DeadRat_Skinned,
+        scale = 0.08,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0106 -0.0061 -0.0218,
+            rotate = 6.7849 -33.7805 88.5744,
+        }
+    }
+	model AEMVFSM_SkinnedDeadRatBabyCooked
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/DeadRatCooked,
+        scale = 0.08,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0106 -0.0061 -0.0218,
+            rotate = 6.7849 -33.7805 88.5744,
+        }
+    }
+	model AEMVFSM_SkinnedDeadRatBabyBurnt
+    {
+        mesh = WorldItems/DeadRat,
+        texture = WorldItems/DeadRatBurnt,
+        scale = 0.08,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0106 -0.0061 -0.0218,
+            rotate = 6.7849 -33.7805 88.5744,
+        }
+    }
+	model AEMVFSM_Slug
+    {
+        mesh = WorldItems/Slug,
+        texture = WorldItems/Slug2,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0172 0.0332 -0.0090,
+            rotate = 94.0128 -3.5738 -55.9600,
+        }
+    }
+	model AEMVFSM_Slug2
+    {
+        mesh = WorldItems/Slug,
+        texture = WorldItems/Slug1,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0172 0.0332 -0.0090,
+            rotate = 94.0128 -3.5738 -55.9600,
+        }
+    }
+	model AEMVFSM_Smallbirdmeat
+    {
+        mesh = WorldItems/SmallBirdMeat,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0142 0.0287 -0.0170,
+            rotate = -57.7794 -38.9641 -130.4960,
+        }
+    }
+	model AEMVFSM_SmallbirdmeatCooked
+    {
+        mesh = WorldItems/SmallBirdMeat,
+        texture = WorldItems/SmallBirdMeatCooked,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0142 0.0287 -0.0170,
+            rotate = -57.7794 -38.9641 -130.4960,
+        }
+    }
+	model AEMVFSM_SmallbirdmeatBurnt
+    {
+        mesh = WorldItems/SmallBirdMeat,
+        texture = WorldItems/SmallBirdMeatBurnt,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0142 0.0287 -0.0170,
+            rotate = -57.7794 -38.9641 -130.4960,
+        }
+    }
+	model AEMVFSM_SmallbirdmeatRotten
+    {
+        mesh = WorldItems/SmallBirdMeat,
+        texture = WorldItems/SmallBirdMeatRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0142 0.0287 -0.0170,
+            rotate = -57.7794 -38.9641 -130.4960,
+        }
+    }
+	model AEMVFSM_Smore
+    {
+        mesh = WorldItems/Smore,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0018 0.0402 -0.0064,
+            rotate = 7.4071 -56.8135 93.8257,
+        }
+    }
+	model AEMVFSM_SnoGlobes
+    {
+        mesh        = WorldItems/AEMVFSM_SnoGlobes,
+        texture     = WorldItems/Snackcake_SnoSpheres,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0006 0.0819 -0.0096,
+            rotate = -93.2313 -83.8875 -87.0964,
+            scale = 0.8150,
+        }
+    }
+	model AEMVFSM_SourCream
+    {
+        mesh = WorldItems/SourCream,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0000 0.0226 -0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_Soysauce
+    {
+        mesh = WorldItems/Soysauce,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 -0.0320 -0.0000,
+            rotate = 1.8777 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_Spinach
+    {
+        mesh = WorldItems/Spinach,
+        scale = 0.14,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0067 0.0274 -0.0026,
+            rotate = -100.4329 11.3499 28.0778,
+            scale = 0.7200,
+        }
+    }
+	model AEMVFSM_Springroll
+    {
+        mesh = WorldItems/AEMVFSM_Springroll,
+        texture = WorldItems/Springroll,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0145 -0.0044 -0.0234,
+            rotate = 1.7561 -59.0424 174.8975,
+            scale = 1.9750,
+        }
+    }
+	model AEMVFSM_Squid
+    {
+        mesh = WorldItems/Squid,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0206 0.0056 -0.0243,
+            rotate = -17.0062 -66.4649 -111.4169,
+        }
+    }
+	model AEMVFSM_SquidCalamari
+    {
+        mesh = WorldItems/AEMVFSM_SquidCalamari,
+        texture = WorldItems/SquidCalimariRaw,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0137 0.0002 -0.0012,
+            rotate = 174.4967 20.7111 8.2885,
+            scale = 2.1800,
+        }
+    }
+	model AEMVFSM_SquidCalamariCooked
+    {
+        mesh = WorldItems/AEMVFSM_SquidCalamari,
+        scale = 0.4,
+        
+        attachment Bip01_Prop2
+        {
+            offset = -0.0137 0.0002 -0.0012,
+            rotate = 174.4967 20.7111 8.2885,
+            scale = 2.1800,
+        }
+    }
+	model AEMVFSM_Steak
+    {
+        mesh = WorldItems/Steak,
+        texture = WorldItems/Steak,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0097 0.0046 -0.0251,
+            rotate = 128.9767 46.8427 -44.9091,
+        }
+    }
+	model AEMVFSM_SteakCooked
+    {
+        mesh = WorldItems/Steak,
+        texture = WorldItems/SteakCooked,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0097 0.0046 -0.0251,
+            rotate = 128.9767 46.8427 -44.9091,
+        }
+    }
+	model AEMVFSM_SteakBurnt
+    {
+        mesh = WorldItems/Steak,
+        texture = WorldItems/SteakBurnt,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0097 0.0046 -0.0251,
+            rotate = 128.9767 46.8427 -44.9091,
+        }
+    }
+	model AEMVFSM_SteakRotten
+    {
+        mesh = WorldItems/Steak,
+        texture = WorldItems/SteakRotten,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0097 0.0046 -0.0251,
+            rotate = 128.9767 46.8427 -44.9091,
+        }
+    }
+	model AEMVFSM_Strawberry
+    {
+        mesh = WorldItems/Strawberry,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0029 0.0483 -0.0032,
+            rotate = 78.3936 21.3459 119.3428,
+        }
+    }
+	model AEMVFSM_StrawberryRotten
+    {
+        mesh = WorldItems/Strawberry,
+        texture = WorldItems/StrawberryRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0029 0.0483 -0.0032,
+            rotate = 78.3936 21.3459 119.3428,
+        }
+    }
+	model AEMVFSM_StrawberryShortcake
+    {
+        mesh = WorldItems/CakeSlice_StrawberryShortcake,
+        texture = WorldItems/CakeStrawberryShortcake,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0402 0.0333 -0.0229,
+            rotate = 92.5056 -3.2167 -62.1466,
+        }
+    }
+	model AEMVFSM_SugarBeet
+    {
+        mesh = WorldItems/AEMVFSM_SugarBeet,
+        texture = WorldItems/SugarBeet,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0076 -0.0010 -0.0081,
+            rotate = 86.5635 -12.1856 59.3614,
+            scale = 2.7721,
+        }
+    }
+	model AEMVFSM_SweetPotato
+    {
+        mesh = WorldItems/SweetPotato,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0434 0.0007 -0.0241,
+            rotate = 1.3350 -26.5149 -95.1153,
+            scale = 0.9000,
+        }
+    }
+	model AEMVFSM_SweetPotatoRotten
+    {
+        mesh = WorldItems/SweetPotato,
+        texture = WorldItems/SweetPotatoRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0434 0.0007 -0.0241,
+            rotate = 1.3350 -26.5149 -95.1153,
+            scale = 0.9000,
+        }
+    }
+	model AEMVFSM_Taco
+    {
+        mesh = WorldItems/Taco,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0327 0.0053 -0.0103,
+            rotate = -178.6309 -22.7700 -123.9373,
+            scale = 0.8550,
+        }
+    }
+	model AEMVFSM_TacoShell
+    {
+        mesh = WorldItems/TacoShell,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0327 0.0053 -0.0103,
+            rotate = -178.6309 -22.7700 -123.9373,
+            scale = 0.8550,
+        }
+    }
+	model AEMVFSM_Tadpole
+    {
+        mesh = WorldItems/Tadpole,
+        texture = WorldItems/Tadpole,
+        scale = 0.2,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0103 0.0180 -0.0128,
+            rotate = 86.2511 -1.9328 -15.4981,
+        }
+    }
+	model AEMVFSM_Termites
+    {
+        mesh = WorldItems/Insect_Termite,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0007 0.0422 0.0028,
+            rotate = 100.1440 2.6532 125.9368,
+        }
+    }
+	model AEMVFSM_Thistle
+    {
+        mesh = WorldItems/Thistle,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0278 0.0208 -0.0064,
+            rotate = 156.8983 -38.1924 -160.1661,
+            scale = 0.9400,
+        }
+    }
+	model AEMVFSM_Thyme_Seasoning
+    {
+        mesh = WorldItems/Seasoning,
+        texture = WorldItems/Seasoning_Thyme,
+        scale = 0.15,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 -0.0216 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+	model AEMVFSM_Toast
+    {
+        mesh        = WorldItems/AEMVFSM_BreadSlices,
+        texture     = WorldItems/BreadSlices_Toast,
+        scale       = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0195 0.0129 -0.0226,
+            rotate = -86.0252 2.6844 -160.3017,
+        }
+    }
+	model AEMVFSM_ToastRotten
+    {
+        mesh = WorldItems/AEMVFSM_BreadSlices,
+        texture = WorldItems/BreadSlices_Toast_Rotten,
+        scale = 0.3,
+        attachment Bip01_Prop2
+        {
+            offset = -0.0195 0.0129 -0.0226,
+            rotate = -86.0252 2.6844 -160.3017,
+        }
+    }
+	model AEMVFSM_Tofu
+    {
+        mesh = WorldItems/Tofu,
+        texture = WorldItems/Tofu,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0196 0.0359 -0.0366,
+            rotate = 168.8493 64.8428 -71.9243,
+        }
+    }
+	model AEMVFSM_Tortilla
+    {
+        mesh = WorldItems/Tortilla,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0053 0.0127 -0.0162,
+            rotate = -23.6369 -68.0335 -115.0960,
+            scale = 0.6750,
+        }
+    }
+	model AEMVFSM_TortillaChips
+    {
+        mesh = WorldItems/Chips,
+        texture = WorldItems/CornChips,
+        scale = 0.28,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0486 0.0062 -0.0001,
+            rotate = 21.3831 -58.6859 97.0853,
+        }
+    }
+	model AEMVFSM_TortillaChipsBaked
+    {
+        mesh = WorldItems/AEMVFSM_TortillaChips,
+        texture = WorldItems/TortillaChips,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0031 0.0451 -0.0049,
+            rotate = 121.3181 50.2344 146.6196,
+        }
+    }
+	model AEMVFSM_Turkey
+    {
+        mesh = WorldItems/TurkeyWhole,
+        texture = WorldItems/PoultryWhole_Raw,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = -150.0398 49.5074 178.8914,
+            scale = 0.8000,
+        }
+    }
+	model AEMVFSM_TurkeyCooked
+    {
+        mesh = WorldItems/TurkeyWhole,
+        texture = WorldItems/PoultryWhole_Cooked,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = -150.0398 49.5074 178.8914,
+            scale = 0.8000,
+        }
+    }
+	model AEMVFSM_TurkeyBurnt
+    {
+        mesh = WorldItems/TurkeyWhole,
+        texture = WorldItems/PoultryWhole_OverDone,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = -150.0398 49.5074 178.8914,
+            scale = 0.8000,
+        }
+    }
+	model AEMVFSM_TurkeyRotten
+    {
+        mesh = WorldItems/TurkeyWhole,
+        texture = WorldItems/PoultryWhole_Raw_Rotten,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = -150.0398 49.5074 178.8914,
+            scale = 0.8000,
+        }
+    }
+	model AEMVFSM_TurkeyEgg
+    {
+        mesh = WorldItems/Egg,
+        texture = WorldItems/Egg_Turkey,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0174 0.0424 0.0070,
+            rotate = -80.2428 0.9210 -11.5426,
+        }
+    }
+	model AEMVFSM_TurkeyFillet
+    {
+        mesh = WorldItems/PoultryFillet,
+        texture = WorldItems/PoultryFillet_Raw,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0219 -0.0010 -0.0273,
+            rotate = -89.9554 10.2986 -141.5309,
+            scale = 0.9450,
+        }
+    }
+	model AEMVFSM_TurkeyFilletCooked
+    {
+        mesh = WorldItems/PoultryFillet,
+        texture = WorldItems/PoultryFillet_Cooked,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0219 -0.0010 -0.0273,
+            rotate = -89.9554 10.2986 -141.5309,
+            scale = 0.9450,
+        }
+    }
+	model AEMVFSM_TurkeyFilletBurnt
+    {
+        mesh = WorldItems/PoultryFillet,
+        texture = WorldItems/PoultryFillet_OverDone,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0219 -0.0010 -0.0273,
+            rotate = -89.9554 10.2986 -141.5309,
+            scale = 0.9450,
+        }
+    }
+	model AEMVFSM_TurkeyFilletRotten
+    {
+        mesh = WorldItems/PoultryFillet,
+        texture = WorldItems/PoultryFillet_Raw_Rotten,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0219 -0.0010 -0.0273,
+            rotate = -89.9554 10.2986 -141.5309,
+            scale = 0.9450,
+        }
+    }
+	model AEMVFSM_TurkeyLegs
+    {
+        mesh = WorldItems/Chicken,
+        texture = WorldItems/ChickenRaw,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0041 0.0301 -0.0103,
+            rotate = -67.1016 -13.5512 59.6213,
+        }
+    }
+	model AEMVFSM_TurkeyLegsCooked
+    {
+        mesh = WorldItems/Chicken,
+        texture = WorldItems/ChickenCooked,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0041 0.0301 -0.0103,
+            rotate = -67.1016 -13.5512 59.6213,
+        }
+    }
+	model AEMVFSM_TurkeyLegsBurnt
+    {
+        mesh = WorldItems/Chicken,
+        texture = WorldItems/ChickenBurnt,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0041 0.0301 -0.0103,
+            rotate = -67.1016 -13.5512 59.6213,
+        }
+    }
+	model AEMVFSM_TurkeyLegsRotten
+    {
+        mesh = WorldItems/Chicken,
+        texture = WorldItems/ChickenRawRotten,
+        scale = 0.3,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0041 0.0301 -0.0103,
+            rotate = -67.1016 -13.5512 59.6213,
+        }
+    }
+	model AEMVFSM_TurkeyWings
+    {
+        mesh = WorldItems/PoultryWing,
+        texture = WorldItems/PoultryWing_Raw,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0147 0.0202 -0.0369,
+            rotate = -104.2017 7.0159 -121.6624,
+            scale = 0.5600,
+        }
+    }
+	model AEMVFSM_TurkeyWingsCooked
+    {
+        mesh = WorldItems/PoultryWing,
+        texture = WorldItems/PoultryWing_Cooked,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0147 0.0202 -0.0369,
+            rotate = -104.2017 7.0159 -121.6624,
+            scale = 0.5600,
+        }
+    }
+	model AEMVFSM_TurkeyWingsBurnt
+    {
+        mesh = WorldItems/PoultryWing,
+        texture = WorldItems/PoultryWing_OverCooked,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0147 0.0202 -0.0369,
+            rotate = -104.2017 7.0159 -121.6624,
+            scale = 0.5600,
+        }
+    }
+	model AEMVFSM_TurkeyWingsRotten
+    {
+        mesh = WorldItems/PoultryWing,
+        texture = WorldItems/PoultryWing_Cooked_Rotten,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0147 0.0202 -0.0369,
+            rotate = -104.2017 7.0159 -121.6624,
+            scale = 0.5600,
+        }
+    }
+	model AEMVFSM_Turnip
+    {
+        mesh = WorldItems/Turnip,
+        scale = 0.2,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0044 0.0290 -0.0421,
+            rotate = 103.4876 16.4746 47.1679,
+        }
+    }
+	model AEMVFSM_TurnipRotten
+    {
+        mesh = WorldItems/Turnip,
+        texture = WorldItems/Turnip_Rotten,
+        scale = 0.2,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0044 0.0290 -0.0421,
+            rotate = 103.4876 16.4746 47.1679,
+        }
+    }
+	model AEMVFSM_VegetableOil
+    {
+        mesh = WorldItems/OilVegetable,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0069 -0.1140 0.0033,
+            rotate = 0.9396 37.1784 -0.1021,
+        }
+    }
+	model AEMVFSM_Venison
+    {
+        mesh = Venison,
+        texture = WorldItems/Venison_Raw,
+        scale = 0.08,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0354 -0.0451 -0.0637,
+            rotate = -86.1433 0.0000 -161.2539,
+            scale = 0.9000,
+        }
+    }
+	model AEMVFSM_VenisonCooked
+    {
+        mesh = Venison,
+        texture = WorldItems/Venison_Cooked,
+        scale = 0.08,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0354 -0.0451 -0.0637,
+            rotate = -86.1433 0.0000 -161.2539,
+            scale = 0.9000,
+        }
+    }
+	model AEMVFSM_VenisonBurnt
+    {
+        mesh = Venison,
+        texture = WorldItems/Venison_Burnt,
+        scale = 0.08,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0354 -0.0451 -0.0637,
+            rotate = -86.1433 0.0000 -161.2539,
+            scale = 0.9000,
+        }
+    }
+	model AEMVFSM_VenisonRotten
+    {
+        mesh = Venison,
+        texture = WorldItems/Venison_Rotten,
+        scale = 0.08,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0354 -0.0451 -0.0637,
+            rotate = -86.1433 0.0000 -161.2539,
+            scale = 0.9000,
+        }
+    }
+	model AEMVFSM_WatermelonSmashed
+    {
+        mesh = WorldItems/AEMVFSM_WaterMelonChunks,
+        texture = WorldItems/WaterMelonSliceChunks,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0219 0.0388 -0.0246,
+            rotate = 45.8569 -51.1745 -55.4124,
+        }
+    }
+	model AEMVFSM_WatermelonSmashedRotten
+    {
+        mesh = WorldItems/AEMVFSM_WaterMelonChunks,
+        texture = WorldItems/WaterMelonSliceChunksRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0219 0.0388 -0.0246,
+            rotate = 45.8569 -51.1745 -55.4124,
+        }
+    }
+	model AEMVFSM_WatermelonSliced
+    {
+        mesh = WorldItems/WaterMelonSlice,
+        texture = WorldItems/WaterMelonSliceChunks,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0194 0.0181 -0.0332,
+            rotate = 92.4389 -0.2794 -21.6106,
+            scale = 0.9550,
+        }
+    }
+	model AEMVFSM_WatermelonSlicedRotten
+    {
+        mesh = WorldItems/WaterMelonSlice,
+        texture = WorldItems/WaterMelonSliceChunksRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0194 0.0181 -0.0332,
+            rotate = 92.4389 -0.2794 -21.6106,
+            scale = 0.9550,
+        }
+    }
+	model AEMVFSM_WhiteSugar
+    {
+        mesh = WorldItems/Sugar,
+        texture = WorldItems/Sugar,
+        scale = 0.5,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0076 -0.0392 -0.0132,
+            rotate = 8.7141 34.5836 -4.2283,
+        }
+    }
+	model AEMVFSM_WildEggs
+    {
+        mesh = WorldItems/AEMVFSM_WildEggs,
+        texture = WorldItems/WildEggs,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0013 0.0388 -0.0012,
+            rotate = -85.1141 4.8881 61.7593,
+        }
+    }
+	model AEMVFSM_Yoghurt
+    {
+        mesh = WorldItems/Yogurt,
+        texture = WorldItems/Yogurt,
+        scale = 0.6,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0116 0.0201 -0.0014,
+            rotate = 2.0843 -5.8944 -7.7482,
+            scale = 0.6965,
+        }
+    }
+	model AEMVFSM_Zucchini
+    {
+        mesh = WorldItems/Zucchini,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0017 0.0003 -0.0060,
+            rotate = -88.2996 2.7053 57.8317,
+        }
+    }
+	model AEMVFSM_ZucchiniRotten
+    {
+        mesh = WorldItems/Zucchini,
+        texture = WorldItems/ZucchiniRotten,
+        scale = 0.4,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0017 0.0003 -0.0060,
+            rotate = -88.2996 2.7053 57.8317,
+        }
+    }
+
+/*-----Category:Normal-----*/
+
+	model AEMVFSM_Mug
+    {
+        mesh        = WorldItems/Mug,
+        texture     = Mug_Green,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_Mug_Fluid
+    {
+        mesh        = WorldItems/Mug_Fluid,
+        texture     = Mug_Green,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_ClayMug
+    {
+        mesh        = WorldItems/Mug,
+        texture     = WorldItems/Mug_Fired,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model MugClay_Fluid
+    {
+        mesh        = WorldItems/Mug_Fluid,
+        texture     = WorldItems/Mug_Fired,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+            scale = 0.98,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }        
+    }
+	model AEMVFSM_MugSpiffo
+    {
+        mesh        = WorldItems/Mug,
+        texture     = Mug_YellowSpiffo,
+        scale       = 0.1,
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model MugSpiffo_Fluid
+    {
+        mesh        = WorldItems/Mug_Fluid,
+        texture     = Mug_YellowSpiffo,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_MugWhite
+    {
+        mesh        = WorldItems/Mug,
+        texture     = Mug_White,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model MugWhite_Fluid
+    {
+        mesh        = WorldItems/Mug_Fluid,
+        texture     = Mug_White,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+            scale = 0.98,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_MugWhite_Fluid
+    {
+        mesh        = WorldItems/Mug_Fluid,
+        texture     = Mug_White,
+        scale       = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+            scale = 0.98,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_MugRed
+    {
+        mesh = WorldItems/Mug,
+        texture = Mug_Red,
+        scale = 0.1,
+        
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_MugRed_Fluid
+    {
+        mesh = WorldItems/Mug_Fluid,
+        texture = Mug_Red,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_MugBlue
+    {
+        mesh = WorldItems/Mug,
+        texture = Mug_Blue,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_MugBlue_Fluid
+    {
+        mesh = WorldItems/Mug_Fluid,
+        texture = Mug_Blue,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_MugYellow
+    {
+        mesh = WorldItems/Mug,
+        texture = Mug_Yellow,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+	model AEMVFSM_MugYellow_Fluid
+    {
+        mesh = WorldItems/Mug_Fluid,
+        texture = Mug_Yellow,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = 0.0067 -0.0148 -0.0011,
+            rotate = 5.0883 83.6918 0.7867,
+        }
+        attachment world
+        {
+            offset = -0.0004 0.004 -0.0139,
+            rotate = 0.0 10.0 0.0,
+        }
+    }
+
+/*-----Others-----*/
+
+	model AEMVFSM_ZZNothingZZ
+    {
+        mesh        = WorldItems/Soybeans,
+        scale = 0.01,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0174 -0.0001 0.0127,
+            rotate = 0.0000 0.0000 0.0000,
+        }
+    }
+}

@@ -1,0 +1,5 @@
+Sandbox_EN = {
+    Sandbox_DriedFoodModDrop_chance = "Dried Food Can Drop Chance",
+	Sandbox_DriedFoodModDrop = "Dried Food Can Settings",
+
+}

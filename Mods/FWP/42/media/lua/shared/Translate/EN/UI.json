@@ -1,0 +1,20 @@
+{
+    "UI_optionscreen_binding_AMMO_TYPE_1":  "AMMO-TYPE 1",
+    "UI_optionscreen_binding_AMMO_TYPE_2":  "AMMO-TYPE 2",
+    "UI_optionscreen_binding_MAG_TYPE_1":  "MAG-TYPE (Auto) / MELEE-GRIP (THROW) 1",
+    "UI_optionscreen_binding_MAG_TYPE_2":  "MAG-TYPE (Manual) / MELEE-GRIP (THROW) 2",
+    "UI_optionscreen_binding_FOLD_STOCK":  "FOLD : STOCK / BAYO",
+    "UI_optionscreen_binding_MELEE_MODE":  "MELEE / THROWN MODE",
+    "UI_optionscreen_binding_SELECT_FIRE":  "SELECT-FIRE / AUTO-EQUIP (THROWN)",
+    "UI_optionscreen_binding_ALT_LOAD":  "ALTERNATE-LOAD",
+    "UI_optionscreen_binding_TRAJECTORY_UP":  "TRAJECTORY-UP / CQB-OFF",
+    "UI_optionscreen_binding_TRAJECTORY_DOWN":  "TRAJECTORY-DOWN / CQB-ON",
+    "UI_optionscreen_binding_WEAPON_LIGHT":  "WEAPON-LIGHT/LASER",
+    "UI_optionscreen_binding_WEAPON_BIPOD":  "WEAPON-BIPOD",
+    "UI_optionscreen_binding_NORMAL_FIRE_MODE":  "NORMAL FIRE MODE",
+    "UI_optionscreen_binding_REFRESH_SCRIPT":  "REFRESH WEAPON SCRIPT",
+    "UI_optionscreen_binding_WEAPON_NVG":  "WEAPON NIGHT-VISION",
+    "UI_optionscreen_binding_LauchGrenadelauncherat":  "LAUNCHER FIRE",
+    "UI_optionscreen_binding_OPTION_INSPECT_WEAPON":  "Inspect Weapon",
+    "UI_optionscreen_binding_OPTION_INSPECT_CURRENT_WEAPON":  "Inspect Current Weapon"
+}

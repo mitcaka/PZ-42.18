@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+
+	<files>
+	<path>media/clothing/clothingItems/Bag_M2A1.xml</path>
+	<guid>2ab06982-92bc-414e-a597-d5e65f630000</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/NV_Control.xml</path>
+	<guid>arsenal26-gunfighter-mod-nv_control-01</guid>
+	</files>
+
+	<files>
+	<path>media/clothing/clothingItems/NV_Control_NL.xml</path>
+	<guid>arsenal26-gunfighter-mod-nv_control-NL</guid>
+	</files>
+	<files>
+	<path>media/clothing/clothingItems/NV_Control_LB.xml</path>
+	<guid>arsenal26-gunfighter-mod-nv_control-LB</guid>
+	</files>
+	<files>
+	<path>media/clothing/clothingItems/NV_Control_IR.xml</path>
+	<guid>arsenal26-gunfighter-mod-nv_control-IR</guid>
+	</files>
+	<files>
+	<path>media/clothing/clothingItems/NV_Control_XR.xml</path>
+	<guid>arsenal26-gunfighter-mod-nv_control-XR</guid>
+	</files>
+
+</fileGuidTable>

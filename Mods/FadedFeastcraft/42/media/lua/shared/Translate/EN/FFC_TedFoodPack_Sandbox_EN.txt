@@ -1,0 +1,5 @@
+Sandbox_TedMod = "Ted's Burger Options",
+Sandbox_TedMod_BurgerSpawnMult = "Burger Spawn Rate",
+Sandbox_TedMod_BurgerSpawnMult_tooltip = "Multiplicator pentru rata de apariție a burgerilor Ted.",
+Sandbox_TedMod_EnableRatBurger = "Enable Rat Burger",
+Sandbox_TedMod_EnableRatBurger_tooltip = "Dacă e dezactivat, Rat Burger nu va apărea deloc în lume.",

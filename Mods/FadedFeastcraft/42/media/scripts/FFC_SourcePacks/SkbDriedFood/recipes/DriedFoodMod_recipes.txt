@@ -1,0 +1,105 @@
+module DriedFoodMod
+{
+  imports
+  {
+    Base
+  }
+
+  craftRecipe OpenDriedFoodCan
+  {
+    timedAction = OpenTinCan,
+    time = 80,
+    tags = InHandCraft;CanBeDoneInDark,
+		category = DriedFood,
+    inputs
+    {
+      item 1 tags[CanOpener] mode:keep flags[MayDegradeLight],
+      item 1 [DriedFoodMod.FDriedFoodCan],
+    }
+    outputs
+    {
+      item 1 TinCanEmpty,
+    }
+    OnCreate = DriedFoodMod.GetDriedFood,
+  }
+
+  craftRecipe OpenDriedFoodCanWithKnifeOrSharpStoneFlake
+	{
+		timedAction = OpenTinCanWithKnife,
+		Time = 80,
+    tags = InHandCraft;CanBeDoneInDark,
+    category = DriedFood,
+		ToolTip = Tooltip_Recipe_OpenCanWithKnife,
+		inputs
+		{
+			item 1 tags[SharpKnife] mode:keep flags[MayDegrade;IsNotDull],
+			item 1 [DriedFoodMod.FDriedFoodCan],
+		}
+		outputs
+		{
+      item 1 TinCanEmpty,
+		}
+    OnCreate = DriedFoodMod.GetDriedFood,
+	}
+
+  craftRecipe RehydrateSteak
+  {
+    timedAction = DriedFoodMod.HydrateSteak,
+    Time = 200,
+    category = DriedFood,
+    Tags = InHandCraft;Cooking,
+    xpAward = Cooking:5,
+    inputs
+		{
+			item 1 [DriedFoodMod.FDriedSteak] mode:destroy,
+      item 1 [*],
+      -fluid 0.5 [Water],
+		}
+		outputs
+		{
+      item 1 Base.Steak,
+		}
+    OnCreate = DriedFoodMod.CookedReward,
+  }
+
+  craftRecipe RehydrateChicken
+  {
+    timedAction = DriedFoodMod.HydrateChicken,
+    Time = 200,
+    category = DriedFood,
+    Tags = InHandCraft;Cooking,
+    xpAward = Cooking:5,
+    inputs
+		{
+			item 1 [DriedFoodMod.FDriedChicken] mode:destroy,
+      item 1 [*],
+      -fluid 0.5 [Water],
+		}
+		outputs
+		{
+      item 1 Base.Chicken,
+		}
+    OnCreate = DriedFoodMod.CookedReward,
+  }
+
+  craftRecipe RehydratePorkChop
+  {
+    timedAction = DriedFoodMod.HydratePorkChop,
+    Time = 200,
+    category = DriedFood,
+    Tags = InHandCraft;Cooking,
+    xpAward = Cooking:5,
+    inputs
+		{
+			item 1 [DriedFoodMod.FDriedPorkChop] mode:destroy,
+      item 1 [*],
+      -fluid 0.5 [Water],
+		}
+		outputs
+		{
+      item 1 Base.PorkChop,
+		}
+    OnCreate = DriedFoodMod.CookedReward,
+  }
+
+}

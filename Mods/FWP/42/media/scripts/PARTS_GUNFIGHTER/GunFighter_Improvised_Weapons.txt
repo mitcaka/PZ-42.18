@@ -1,0 +1,182 @@
+module Base
+{
+
+/*************************************/
+/**	STONER - BOOK			**/
+/*************************************/
+	item Stoner_Book
+	{
+		Weight			=	1,
+		Type			=	Literature,
+		ItemType = base:literature,
+		DisplayName		=	Armalite Rifle - By Eugene M. Stoner,
+		DisplayCategory		=	SkillBook,
+		        NumberOfPages     = 5,
+Icon			=	Stoner_Book,
+		ReplaceOnUse		=	Stoner_Book,
+		StaticModel		=	Book,
+		WorldStaticModel	=	Stoner_Book_Ground,
+        Tags                = base:magazine,
+        OnCreate            = ItemCodeOnCreate.onCreateRecipeMagazine,
+		Tooltip			=	Tooltip_Stoner_Book,
+	}
+
+/*************************************/
+/**	KALASHNIKOV - BOOK		**/
+/*************************************/
+	item Kalashnikov_Book
+	{
+		Weight			=	1,
+		Type			=	Literature,
+		ItemType = base:literature,
+		DisplayName		=	AK-47 Rifle - By Mikhail Kalashnikov,
+		DisplayCategory		=	SkillBook,
+		        NumberOfPages     = 5,
+Icon			=	Kalashnikov_Book,
+		ReplaceOnUse		=	Kalashnikov_Book,
+		StaticModel		=	Book,
+		WorldStaticModel	=	Kalashnikov_Book_Ground,
+        Tags                = base:magazine,
+        OnCreate            = ItemCodeOnCreate.onCreateRecipeMagazine,
+		Tooltip			=	Tooltip_Kalashnikov_Book,
+	}
+
+/*************************************/
+/**	HECKLER & KOCH - BOOK		**/
+/*************************************/
+	item HecklerKoch_Book
+	{
+		Weight			=	1,
+		Type			=	Literature,
+		ItemType = base:literature,
+		DisplayName		=	HK Weapon Systems - By Edmund Heckler,
+		DisplayCategory		=	SkillBook,
+		        NumberOfPages     = 5,
+Icon			=	HecklerKoch_Book,
+		ReplaceOnUse		=	HecklerKoch_Book,
+		StaticModel		=	Book,
+		WorldStaticModel	=	HecklerKoch_Book_Ground,
+        Tags                = base:magazine,
+        OnCreate            = ItemCodeOnCreate.onCreateRecipeMagazine,
+		Tooltip			=	Tooltip_HecklerKoch_Book,
+	}
+
+/*************************************/
+/**	FN HERSTAL - BOOK		**/
+/*************************************/
+	item FNHerstal_Book
+	{
+		Weight			=	1,
+		Type			=	Literature,
+		ItemType = base:literature,
+		DisplayName		=	FAL Battle Rifle - By Dieudonn� Saive,
+		DisplayCategory		=	SkillBook,
+		        NumberOfPages     = 5,
+Icon			=	FNHerstal_Book,
+		ReplaceOnUse		=	FNHerstal_Book,
+		StaticModel		=	Book,
+		WorldStaticModel	=	FNHerstal_Book_Ground,
+        Tags                = base:magazine,
+        OnCreate            = ItemCodeOnCreate.onCreateRecipeMagazine,
+		Tooltip			=	Tooltip_FNHerstal_Book,
+	}
+
+/*************************************/
+/**	FIRST BLOOD - BOOK		**/
+/*************************************/
+	item FirstBlood_Book
+	{
+		Weight			=	1,
+		Type			=	Literature,
+		ItemType = base:literature,
+		DisplayName		=	First Blood - By John Rambo,
+		DisplayCategory		=	SkillBook,
+		        NumberOfPages     = 5,
+Icon			=	FirstBlood_Book,
+        LearnedRecipes      = FWP_Craft_Arrow_Fiberglass;
+                      FWP_Craft_Bolt_Bear;
+                      FWP_Recover_Bolt_Components;
+                      FWP_Recover_Arrow_Components,
+		ReplaceOnUse		=	FirstBlood_Book,
+		StaticModel		=	Book,
+		WorldStaticModel	=	FirstBlood_Book_Ground,
+        Tags                = base:magazine,
+        OnCreate            = ItemCodeOnCreate.onCreateRecipeMagazine,
+		Tooltip			=	Tooltip_FirstBlood_Book,
+	}
+
+/*************************************/
+/**	BRUCE LEE - BE LIKE WATER	**/
+/*************************************/
+	item BeLikeWater_Book
+	{
+		Weight			=	1,
+		Type			=	Literature,
+		ItemType = base:literature,
+		DisplayName		=	Be Like Water - by Bruce Lee,
+		DisplayCategory		=	SkillBook,
+		        NumberOfPages     = 5,
+Icon			=	BeLikeWater_Book,
+        LearnedRecipes      = FWP_Assemble_Steel_Nun_Chucks;
+                      FWP_Assemble_Poly_Nun_Chucks;
+                      FWP_Assemble_Wood_Nun_Chucks,
+		ReplaceOnUse		=	BeLikeWater_Book,
+		StaticModel		=	Book,
+		WorldStaticModel	=	BeLikeWater_Book_Ground,
+        Tags                = base:magazine,
+        OnCreate            = ItemCodeOnCreate.onCreateRecipeMagazine,
+		Tooltip			=	Tooltip_BeLikeWater_Book,
+	}
+
+/*************************************/
+/**	BOY SCOUT - BOOK		**/
+/*************************************/
+	item BoyScout_Book
+	{
+		Weight			=	1,
+		Type			=	Literature,
+		ItemType = base:literature,
+		DisplayName		=	Boy Scouts Handbook - Original 1911 Edition,
+		DisplayCategory		=	SkillBook,
+		        NumberOfPages     = 5,
+Icon			=	BoyScout_Book,
+        LearnedRecipes      = FWP_Create_Improvised_Flame_Thrower;
+                      FWP_Scrap_Improvised_Flame_Thrower,
+		ReplaceOnUse		=	BoyScout_Book,
+		StaticModel		=	Book,
+		WorldStaticModel	=	BoyScout_Book_Ground,
+        Tags                = base:magazine,
+        OnCreate            = ItemCodeOnCreate.onCreateRecipeMagazine,
+		Tooltip			=	Tooltip_BoyScout_Book,
+	}
+
+
+
+/*************************************/
+/**	IMPROVISED FLEX WEAPONS		**/
+/*************************************/
+
+	/*************************/
+	/**	CRAFTED TORCH	**/
+	/*************************/
+	/*************************/
+	/**	NUN-CHUCKS		**/
+	/*************************/
+	/*************************/
+	/**	BALL IN SOCK	**/
+	/*************************/
+	/*************************/
+	/**	LOCK ON BELT	**/
+	/*************************/
+	item DogChain
+	{
+		DisplayCategory		= Material,
+		Weight			= 0.3,
+		Type			= Normal,
+		ItemType = base:normal,
+		DisplayName		= Dog Chain,
+		Icon			= DogChain,
+		MetalValue		= 2,
+	/*	WorldStaticModel	= DogChain,	*/
+	}
+}	

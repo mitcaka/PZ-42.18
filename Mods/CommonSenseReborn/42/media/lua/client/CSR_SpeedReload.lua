@@ -74,6 +74,14 @@ local function isGunworksReloadItem(item)
     return md and (md.AmmoList ~= nil or md.MagazineType ~= nil or md.MagazineTypeLastIndex ~= nil) or false
 end
 
+local function hasFixedOrIntegralMagazine(gun)
+    local md = gun and gun.getModData and gun:getModData() or nil
+    if not md then return false end
+    if md.FixedMagType ~= nil then return true end
+    if md.ClipType ~= nil and md.MagType == nil then return true end
+    return false
+end
+
 local function getHeldGun(playerObj)
     local weapon = playerObj and playerObj.getPrimaryHandItem and playerObj:getPrimaryHandItem() or nil
     if not weapon then return nil end
@@ -97,6 +105,7 @@ local function canSpeedReload(playerObj, gun)
     if not (playerObj and gun) then return false end
     if isGunworksReloadItem(gun) then return false end
     if isGunworksItemKey(gun:getMagazineType()) then return false end
+    if hasFixedOrIntegralMagazine(gun) then return false end
     if not gun:isContainsClip() then return false end
     if not getBestLoadedMagazine(playerObj, gun) then return false end
     return true

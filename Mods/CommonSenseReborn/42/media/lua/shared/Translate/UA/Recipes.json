@@ -51,12 +51,12 @@
     "Recipe_CSR_BundleMixedConstruction":  "Пакет змішаних конструкційних матеріалів",
     "Recipe_CSR_UnbundleMixedConstruction":  "Розділіть змішані будівельні матеріали",
     "Recipe_CSR_CraftBinksScooper":  "Bink's No Stinks: Pooper Scooper",
-    "Recipe_CSR_CraftGlowstickRed":  "Craft Signal Glow Stick (Red)",
-    "Recipe_CSR_CraftGlowstickGreen":  "Craft Signal Glow Stick (Green)",
-    "Recipe_CSR_CraftGlowstickBlue":  "Craft Signal Glow Stick (Blue)",
-    "Recipe_CSR_CraftGlowstickWhite":  "Craft Signal Glow Stick (White)",
-    "Recipe_CSR_CraftGlowstickYellow":  "Craft Signal Glow Stick (Yellow)",
-    "Recipe_CSR_CraftGlowstickPurple":  "Craft Signal Glow Stick (Purple)",
-    "Recipe_CSR_OpenSignalFlareRoundBox":  "Open Box of Signal Flare Rounds",
-    "Recipe_CSR_PackSignalFlareRoundBox":  "Pack Signal Flare Rounds"
+    "Recipe_CSR_CraftGlowstickRed":  "Виготовити сигнальний світловий жезл (червоний)",
+    "Recipe_CSR_CraftGlowstickGreen":  "Виготовити сигнальний світловий жезл (зелений)",
+    "Recipe_CSR_CraftGlowstickBlue":  "Виготовити сигнальний світловий жезл (синій)",
+    "Recipe_CSR_CraftGlowstickWhite":  "Виготовити сигнальний світловий жезл (білий)",
+    "Recipe_CSR_CraftGlowstickYellow":  "Виготовити сигнальний світловий жезл (жовтий)",
+    "Recipe_CSR_CraftGlowstickPurple":  "Виготовити сигнальний світловий жезл (фіолетовий)",
+    "Recipe_CSR_OpenSignalFlareRoundBox":  "Відкрити коробку сигнальних ракет",
+    "Recipe_CSR_PackSignalFlareRoundBox":  "Упакувати сигнальні ракети"
 }

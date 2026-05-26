@@ -6,42 +6,49 @@ local CATEGORY_DEFS = {
     {
         key = "tires",
         label = getText("ContextMenu_CSR_UninstallAllTires"),
+        installLabel = getText("ContextMenu_CSR_InstallAllTires"),
         include = { "tire" },
         exclude = { "spare", "carrier", "cover" },
     },
     {
         key = "lights",
         label = getText("ContextMenu_CSR_UninstallAllLights"),
+        installLabel = getText("ContextMenu_CSR_InstallAllLights"),
         include = { "headlight", "headlamp", "taillight", "taillamp", "rearlight", "lightrear", "brakelight", "spotlight", "lamp" },
         exclude = { "interior", "dashboard", "cab", "dome", "glove", "roomlight" },
     },
     {
         key = "windows",
         label = getText("ContextMenu_CSR_UninstallAllWindows"),
+        installLabel = getText("ContextMenu_CSR_InstallAllWindows"),
         include = { "window" },
         exclude = {},
     },
     {
         key = "doors",
         label = getText("ContextMenu_CSR_UninstallAllDoors"),
+        installLabel = getText("ContextMenu_CSR_InstallAllDoors"),
         include = { "door" },
         exclude = { "window" },
     },
     {
         key = "seats",
         label = getText("ContextMenu_CSR_UninstallAllSeats"),
+        installLabel = getText("ContextMenu_CSR_InstallAllSeats"),
         include = { "seat" },
         exclude = {},
     },
     {
         key = "brakes",
         label = getText("ContextMenu_CSR_UninstallAllBrakes"),
+        installLabel = getText("ContextMenu_CSR_InstallAllBrakes"),
         include = { "brake" },
         exclude = {},
     },
     {
         key = "suspension",
         label = getText("ContextMenu_CSR_UninstallAllSuspension"),
+        installLabel = getText("ContextMenu_CSR_InstallAllSuspension"),
         include = { "suspension" },
         exclude = {},
     },
@@ -405,6 +412,130 @@ local function startBatchUninstall(player, category, vehicle)
 end
 
 -- ==========================================
+-- Batch install: pair empty vehicle slots with player items, queue
+-- vanilla onInstallPart for each pair. Vanilla ISInstallVehiclePart
+-- already awards Mechanics XP on perform(), so each queued action
+-- grants XP exactly as if installed manually.
+-- ==========================================
+local function collectInstallablePairs(player, vehicle, category)
+    local pairs_ = {}
+    if not player or not vehicle then return pairs_ end
+
+    local pcOk, partCount = pcall(vehicle.getPartCount, vehicle)
+    if not pcOk or not partCount then return pairs_ end
+
+    local typeToItem = nil
+    if VehicleUtils and VehicleUtils.getItems and player.getPlayerNum then
+        local ok, res = pcall(VehicleUtils.getItems, player:getPlayerNum())
+        if ok then typeToItem = res end
+    end
+    if not typeToItem then return pairs_ end
+
+    local usedItems = {}
+
+    for i = 0, partCount - 1 do
+        pcall(function()
+            local part = vehicle:getPartByIndex(i)
+            if not part or not part.getTable or not part:getTable("install") then return end
+            if part.getInventoryItem and part:getInventoryItem() then return end
+            if not partIdMatches(part, category) then return end
+
+            local itemTypes = part.getItemType and part:getItemType() or nil
+            if not itemTypes or itemTypes:isEmpty() then return end
+
+            if not ISVehicleMechanics.cheat and not vehicle:canInstallPart(player, part) then return end
+
+            -- pick best-condition unused candidate across all compatible types
+            local bestItem = nil
+            local bestCond = -1
+            for j = 0, itemTypes:size() - 1 do
+                local itemType = itemTypes:get(j)
+                local candidates = typeToItem and typeToItem[itemType] or nil
+                if candidates then
+                    for _, candidate in ipairs(candidates) do
+                        if not usedItems[candidate] then
+                            local cond = candidate.getCondition and candidate:getCondition() or 0
+                            if cond > bestCond then
+                                bestCond = cond
+                                bestItem = candidate
+                            end
+                        end
+                    end
+                end
+            end
+
+            if bestItem then
+                usedItems[bestItem] = true
+                table.insert(pairs_, { part = part, item = bestItem })
+            end
+        end)
+    end
+
+    return pairs_
+end
+
+local function startBatchInstall(player, category, vehicle)
+    if not player or not category or not vehicle then return end
+
+    ISTimedActionQueue.clear(player)
+
+    local pairs_ = collectInstallablePairs(player, vehicle, category)
+    if #pairs_ == 0 then
+        if player.setHaloNote then
+            player:setHaloNote("No " .. tostring(category.installLabel or "parts") .. " available", 255, 128, 128, 200)
+        end
+        return
+    end
+
+    for _, pair in ipairs(pairs_) do
+        ISVehiclePartMenu.onInstallPart(player, pair.part, pair.item)
+    end
+
+    if player.setHaloNote then
+        player:setHaloNote("Queued " .. #pairs_ .. " part(s) to install", 128, 255, 128, 300)
+    end
+end
+
+-- ==========================================
+-- Pure-Lua substitute for FixingManager.getFixes that nil-guards
+-- malformed fixing definitions. Vanilla Java getFixes() crashes with
+-- an NPE when any loaded mod ships a fixing block missing the
+-- required-item line (Fixing.getRequiredItem() returns null and the
+-- subsequent .contains(item:getFullType()) call dereferences it).
+-- Return a real Java ArrayList so every vanilla repair path keeps the
+-- same list semantics and fixing indices.
+-- ==========================================
+local function csrGetFixesForItem(item)
+    local matches = ArrayList.new()
+    if item and item.getFullType then
+        local itemFullType = item:getFullType()
+        local sm = getScriptManager and getScriptManager() or nil
+        local allFixing = sm and sm.getAllFixing and sm:getAllFixing(ArrayList.new()) or nil
+        if allFixing then
+            local count = allFixing:size()
+            for i = 0, count - 1 do
+                local fixing = allFixing:get(i)
+                local required = fixing and fixing.getRequiredItem and fixing:getRequiredItem() or nil
+                if required and required.contains and required:contains(itemFullType) then
+                    matches:add(fixing)
+                end
+            end
+        end
+    end
+    return matches
+end
+
+local function patchFixingManagerGetFixes()
+    if not FixingManager or not FixingManager.getFixes or FixingManager.__csr_safe_getFixes then
+        return
+    end
+
+    FixingManager.__csr_original_getFixes = FixingManager.getFixes
+    FixingManager.getFixes = csrGetFixesForItem
+    FixingManager.__csr_safe_getFixes = true
+end
+
+-- ==========================================
 -- Patch ISVehicleMechanics to add our context menu
 -- ==========================================
 local function patchVehicleMechanics()
@@ -414,52 +545,12 @@ local function patchVehicleMechanics()
 
     ISVehicleMechanics.__csr_mechanics_patched = true
 
+    patchFixingManagerGetFixes()
+
     local original_doPartContextMenu = ISVehicleMechanics.doPartContextMenu
 
-    local emptyFixingList = {
-        isEmpty = function() return true end,
-        size = function() return 0 end,
-        get = function() return nil end,
-    }
-
-    local function isUsableFixingList(fixingList)
-        if not fixingList then
-            return false
-        end
-
-        local ok = pcall(function()
-            local _ = fixingList:isEmpty()
-            local _ = fixingList:size()
-        end)
-
-        return ok
-    end
-
     local function callOriginalPartContextMenu(selfObj, part, x, y)
-        if not FixingManager or not FixingManager.getFixes then
-            return original_doPartContextMenu(selfObj, part, x, y)
-        end
-
-        local partItem = nil
-        pcall(function()
-            partItem = part and part.getInventoryItem and part:getInventoryItem() or nil
-        end)
-
-        local originalGetFixes = FixingManager.getFixes
         local originalBuildFixingMenu = ISInventoryPaneContextMenu and ISInventoryPaneContextMenu.buildFixingMenu or nil
-
-        FixingManager.getFixes = function(item)
-            if partItem and item == partItem then
-                local ok, fixingList = pcall(function()
-                    return originalGetFixes(item)
-                end)
-                if ok and isUsableFixingList(fixingList) then
-                    return fixingList
-                end
-                return emptyFixingList
-            end
-            return originalGetFixes(item)
-        end
 
         if originalBuildFixingMenu then
             ISInventoryPaneContextMenu.buildFixingMenu = function(...)
@@ -474,7 +565,6 @@ local function patchVehicleMechanics()
             return original_doPartContextMenu(selfObj, part, x, y)
         end)
 
-        FixingManager.getFixes = originalGetFixes
         if originalBuildFixingMenu then
             ISInventoryPaneContextMenu.buildFixingMenu = originalBuildFixingMenu
         end
@@ -587,6 +677,16 @@ local function patchVehicleMechanics()
             option.toolTip = makeTooltip(self.chr, self.vehicle, category, parts, availableParts)
             if #availableParts == 0 then
                 option.notAvailable = true
+            else
+                anyEnabled = true
+            end
+
+            -- Install counterpart: pair empty slots with player items
+            local installPairs = collectInstallablePairs(self.chr, self.vehicle, category)
+            local installLabel = (category.installLabel or ("Install all " .. tostring(category.key))) .. " (" .. tostring(#installPairs) .. ")"
+            local installOpt = subMenu:addOption(installLabel, self.chr, startBatchInstall, category, self.vehicle)
+            if #installPairs == 0 then
+                installOpt.notAvailable = true
             else
                 anyEnabled = true
             end

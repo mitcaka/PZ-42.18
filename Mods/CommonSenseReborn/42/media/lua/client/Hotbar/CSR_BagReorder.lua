@@ -378,11 +378,21 @@ local function patchBagReorder()
     -- Hook refreshBackpacks to re-apply saved sort order.
     -- -----------------------------------------------------------------
     local origRefreshBackpacks = ISInventoryPage.refreshBackpacks
-    function ISInventoryPage:refreshBackpacks()
-        origRefreshBackpacks(self)
-        if csrShouldOwnReorder(self) then
-            self:csrApplyContainerSort()
+    function ISInventoryPage:refreshBackpacks(...)
+        if not csrShouldOwnReorder(self) then
+            return origRefreshBackpacks(self, ...)
         end
+
+        if self._csrBagReorderRefreshActive then
+            self._csrBagReorderRefreshDeferred = true
+            return
+        end
+
+        self._csrBagReorderRefreshActive = true
+        origRefreshBackpacks(self, ...)
+        self._csrBagReorderRefreshActive = false
+        self._csrBagReorderRefreshDeferred = nil
+        self:csrApplyContainerSort()
     end
 
     -- -----------------------------------------------------------------

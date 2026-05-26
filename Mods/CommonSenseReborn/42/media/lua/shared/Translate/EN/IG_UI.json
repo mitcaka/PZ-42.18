@@ -1,4 +1,6 @@
 {
+    "IGUI_CSR_LoginProtectionStarted":  "Login protection active for %1 seconds.",
+    "IGUI_CSR_LoginProtectionEnded":  "Login protection ended.",
     "IGUI_CraftCategory_CommonSenseReborn":  "Common Sense Reborn",
     "IGUI_CSR_KnoxCallSupport":  "Call in Knox Syndicate",
     "IGUI_CSR_KnoxCallReady":  "Knox Syndicate is standing by on 100.8 FM.",

@@ -25,6 +25,7 @@ require "CSR_PowerLine"
 require "CSR_PowerLineSprites"
 require "CSR_SolarNeverFadedBridge"
 require "CSR_Throwables"
+require "TimedActions/CSR_SpeedReloadActions"
 
 local CSR_DualWieldUtils = nil
 local function getDWUtils()
@@ -754,33 +755,18 @@ function CSR_ServerCommands.handleSpeedReloadDropMagazine(player, args)
     local clientAmmo = tonumber(args.ammoCount) or 0
     local hadClip = gun.isContainsClip and gun:isContainsClip()
     if not hadClip then return end
-    local ammoCount = serverAmmo or clientAmmo or 0
 
-    local mag = instanceItem(magazineType)
-    if not mag then return end
-
-    if mag.setCurrentAmmoCount then
-        local maxAmmo = mag.getMaxAmmo and tonumber(mag:getMaxAmmo()) or ammoCount
-        if maxAmmo and maxAmmo > 0 then
-            ammoCount = math.min(ammoCount, maxAmmo)
-        end
-        mag:setCurrentAmmoCount(math.max(0, ammoCount))
+    local ammoCount = serverAmmo
+    if (not ammoCount or ammoCount <= 0) and clientAmmo and clientAmmo > 0 then
+        ammoCount = clientAmmo
     end
 
-    local square = player.getCurrentSquare and player:getCurrentSquare() or nil
-    if square and square.AddWorldInventoryItem then
-        square:AddWorldInventoryItem(mag, ZombRandFloat(0.25, 0.75), ZombRandFloat(0.25, 0.75), 0.0)
-    else
-        local inv = player.getInventory and player:getInventory() or nil
-        if inv then
-            addItem(inv, mag)
-        end
+    if CSR_SpeedReloadActions and CSR_SpeedReloadActions.dropInsertedMagazineToGround then
+        CSR_SpeedReloadActions.dropInsertedMagazineToGround(player, gun, {
+            magazineType = magazineType,
+            ammoCount = ammoCount,
+        })
     end
-
-    if gun.setContainsClip then gun:setContainsClip(false) end
-    if gun.setCurrentAmmoCount then gun:setCurrentAmmoCount(0) end
-    syncInventoryItem(gun)
-    syncPlayerInventory(player)
 end
 
 local function toolHasUsableCondition(tool)
@@ -3534,15 +3520,14 @@ function CSR_ServerCommands._mirrorVehicleClaimKey(vehicle, row)
     if keyId <= 0 or token == "" then return false end
 
     local changed = false
+    local varsChanged = false
     if vehicle.getKeyId and vehicle.setKeyId then
         local cur = tonumber(vehicle:getKeyId()) or 0
         if cur ~= keyId then
             vehicle:setKeyId(keyId)
             changed = true
+            varsChanged = true
         end
-    end
-    if CSR_ServerCommands._clearVehicleHotwire(vehicle) then
-        changed = true
     end
 
     local data = vehicle.getModData and vehicle:getModData() or nil
@@ -3563,6 +3548,7 @@ function CSR_ServerCommands._mirrorVehicleClaimKey(vehicle, row)
     end
 
     if changed and vehicle.saveToVehicleTable then vehicle:saveToVehicleTable() end
+    if varsChanged and vehicle.sendVars then vehicle:sendVars() end
     if changed and vehicle.transmitModData then vehicle:transmitModData() end
     return changed
 end

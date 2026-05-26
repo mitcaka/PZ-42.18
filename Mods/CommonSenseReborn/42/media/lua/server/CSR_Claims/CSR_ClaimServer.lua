@@ -968,23 +968,6 @@ local function findVehicleRowBySqlId(sqlId)
     return found
 end
 
-local function clearVehicleHotwire(vehicle)
-    if not vehicle then return false end
-    local wasHotwired = vehicle.isHotwired and vehicle:isHotwired() == true
-    local wasBroken = vehicle.isHotwiredBroken and vehicle:isHotwiredBroken() == true
-    if not wasHotwired and not wasBroken then return false end
-
-    if vehicle.cheatHotwire then
-        vehicle:cheatHotwire(false, false)
-    elseif vehicle.setHotwired then
-        vehicle:setHotwired(false)
-        if vehicle.setHotwiredBroken then
-            vehicle:setHotwiredBroken(false)
-        end
-    end
-    return true
-end
-
 local function reconcileVehicleMirror(vehicle, row)
     if not vehicle or not row or row.kind ~= "vehicle" then return false end
     local data = vehicleModData(vehicle)
@@ -1026,6 +1009,7 @@ local function reconcileVehicleMirror(vehicle, row)
         end
     end
 
+    local varsChanged = false
     local keyId = tonumber(row.vehicleClaimKeyId) or 0
     local token = tostring(row.vehicleClaimKeyToken or "")
     if keyId > 0 and token ~= "" then
@@ -1037,14 +1021,13 @@ local function reconcileVehicleMirror(vehicle, row)
             if cur ~= keyId then
                 vehicle:setKeyId(keyId)
                 changed = true
+                varsChanged = true
             end
-        end
-        if clearVehicleHotwire(vehicle) then
-            changed = true
         end
     end
 
     if changed and vehicle.saveToVehicleTable then vehicle:saveToVehicleTable() end
+    if varsChanged and vehicle.sendVars then vehicle:sendVars() end
     if changed and vehicle.transmitModData then vehicle:transmitModData() end
     return changed
 end

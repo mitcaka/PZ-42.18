@@ -1,0 +1,1354 @@
+module Base
+{
+
+/*-----Category:Food-----*/
+
+    item Antibiotics
+    {
+        StaticModel = AEMVFSM_Antibiotics,
+    }
+
+    item PieApple
+    {
+        StaticModel = AEMVFSM_ApplePie,
+    }
+
+    item DriedApricots
+    {
+        StaticModel = AEMVFSM_ApricotsDried,
+    }
+
+    item Avocado
+    {
+        StaticModel = AEMVFSM_Avocado,
+    }
+
+    item BaconBits
+    {
+        StaticModel = AEMVFSM_BaconBits,
+    }
+
+    item BagelPlain
+    {
+        StaticModel = AEMVFSM_BagelPlain,
+    }
+
+    item BaloneySlice
+    {
+        StaticModel = AEMVFSM_BaloneySlice,
+    }
+
+    item Banana
+    {
+        StaticModel = AEMVFSM_Banana,
+    }
+
+    item BasilDried
+    {
+        EatType = EatSmall,
+    }
+
+    item Seasoning_Basil
+    {
+        StaticModel = AEMVFSM_Basil_Seasoning,
+        EatType = Drink,
+    }
+
+    item Beef
+    {
+        StaticModel = AEMVFSM_Beef,
+        EatType = EatOffStick,
+    }
+
+    item BeefJerky
+    {
+        StaticModel = AEMVFSM_BeefJerky,
+    }
+
+    item MeatPatty
+    {
+        StaticModel = AEMVFSM_BeefPatty,
+    }
+
+    item BellPepper
+    {
+        StaticModel = AEMVFSM_BellPepper,
+    }
+
+    item Biscuit
+    {
+        StaticModel = AEMVFSM_Biscuit,
+    }
+
+    item CakeBlackForest
+    {
+        StaticModel = AEMVFSM_BlackForestCake,
+    }
+
+    item PieBlueberry
+    {
+        StaticModel = AEMVFSM_BlueberryPie,
+    }
+
+    item BreadSlices
+    {
+        StaticModel = AEMVFSM_BreadSlices,
+    }
+
+    item Broccoli
+    {
+        StaticModel = AEMVFSM_Broccoli,
+    }
+
+    item SugarBrown
+    {
+        StaticModel = AEMVFSM_BrownSugar,
+    }
+
+    item BrusselSprouts
+    {
+        StaticModel = AEMVFSM_BrusselSprouts,
+    }
+
+    item Burger
+    {
+        StaticModel = AEMVFSM_Burger,
+    }
+
+    item BurgerRecipe
+    {
+        StaticModel = AEMVFSM_Burger,
+    }
+
+    item Butter
+    {
+        StaticModel = AEMVFSM_Butter,
+    }
+
+    item CakeSlice
+    {
+        StaticModel = AEMVFSM_CakeSlice,
+    }
+
+    item OatsRaw
+    {
+        StaticModel = AEMVFSM_CanOfOats,
+    }
+
+    item CandyFruitSlices
+    {
+        StaticModel = AEMVFSM_CandyFruitSlices,
+        EatType = Eat,
+    }
+
+    item CakeCarrot
+    {
+        StaticModel = AEMVFSM_CarrotCake,
+    }
+
+    item AmericanLadyCaterpillar
+    {
+        StaticModel = AEMVFSM_CaterpillarAmericanLady,
+    }
+
+    item SwallowtailCaterpillar
+    {
+        StaticModel = AEMVFSM_CaterpillarSwallowtail,
+    }
+
+    item MonarchCaterpillar
+    {
+        StaticModel = AEMVFSM_CaterpillarMonarch,
+    }
+
+    item SilkMothCaterpillar
+    {
+        StaticModel = AEMVFSM_CaterpillarSilkMoth,
+    }
+
+    item SawflyLarva
+    {
+        StaticModel = AEMVFSM_CaterpillarSawflyLarva,
+    }
+
+    item BandedWoolyBearCaterpillar
+    {
+        StaticModel = AEMVFSM_CaterpillarBandedWoolyBear,
+    }
+
+    item Cauliflower
+    {
+        StaticModel = AEMVFSM_Cauliflower,
+    }
+
+    item Cereal
+    {
+        StaticModelsByIndex = AEMVFSM_Cereal;AEMVFSM_Cereal2;AEMVFSM_Cereal3;AEMVFSM_Cereal4;AEMVFSM_Cereal5,
+    }
+
+    item Chamomile
+    {
+        StaticModel = AEMVFSM_Chamomile,
+        EatType = Eat,
+    }
+
+    item ChamomileDried
+    {
+        StaticModel = AEMVFSM_ChamomileDried,
+    }
+
+    item Cheese
+    {
+        StaticModel = AEMVFSM_Cheese,
+    }
+
+    item CakeCheeseCake
+    {
+        StaticModel = AEMVFSM_CheeseCake,
+    }
+
+    item Cherry
+    {
+        StaticModel = AEMVFSM_Cherry,
+    }
+
+    item Pie
+    {
+        StaticModel = AEMVFSM_CherryPie,
+    }
+
+    item ChickenWhole
+    {
+        StaticModel = AEMVFSM_ChickenWhole,
+        EatType = 2handforced,
+    }
+
+    item ChickenFillet
+    {
+        StaticModel = AEMVFSM_ChickenFillet,
+    }
+
+    item ChickenFoot
+    {
+        StaticModel = AEMVFSM_ChickenFoot,
+    }
+
+    item Chicken
+    {
+        StaticModel = AEMVFSM_ChickenLeg,
+    }
+
+    item ChickenNuggets
+    {
+        StaticModel = AEMVFSM_ChickenNuggets,
+        EatType = Eat,
+    }
+
+    item ChickenWings
+    {
+        StaticModel = AEMVFSM_ChickenWings,
+    }
+
+    item Chives
+    {
+        StaticModel = AEMVFSM_Chives,
+        EatType = Eat,
+    }
+
+    item Seasoning_Chives
+    {
+        StaticModel = AEMVFSM_Chives_Seasoning,
+        EatType = Drink,
+    }
+
+    item ChivesDried
+    {
+        EatType = EatSmall,
+    }
+
+    item ChocoCakes
+    {
+        StaticModel = AEMVFSM_ChocoCakes,
+    }
+
+    item Painauchocolat
+    {
+        StaticModel = AEMVFSM_ChocolateBread,
+    }
+
+    item CakeChocolate
+    {
+        StaticModel = AEMVFSM_ChocolateCake,
+    }
+
+    item DoughnutChocolate
+    {
+        StaticModel = AEMVFSM_ChocolateDonut,
+    }
+
+    item Cilantro
+    {
+        StaticModel = AEMVFSM_Cilantro,
+        EatType = Eat,
+    }
+
+    item CilantroDried
+    {
+        EatType = EatSmall,
+    }
+
+    item Seasoning_Cilantro
+    {
+        StaticModel = AEMVFSM_Cilantro_Seasoning,
+        EatType = Drink,
+    }
+
+    item CilantroSeed
+    {
+        EatType = EatSmall,
+    }
+
+    item Cockroach
+    {
+        StaticModel = AEMVFSM_Cockroach,
+    }
+
+    item Coffee2
+    {
+        StaticModel = AEMVFSM_Coffee,
+    }
+
+    item Chocolate_Crackle
+    {
+        StaticModel = AEMVFSM_Crackle,
+    }
+
+    item Creamocle_Melted
+    {
+        StaticModel = AEMVFSM_Creamocle_Melted,
+        EatType = 2handforced,
+    }
+
+    item Cricket
+    {
+        StaticModel = AEMVFSM_Cricket,
+    }
+
+    item Croissant
+    {
+        StaticModel = AEMVFSM_Croissant,
+    }
+
+    item DeadMouse
+    {
+        StaticModel = AEMVFSM_DeadMouse,
+    }
+
+    item DeadRabbit
+    {
+        StaticModel = AEMVFSM_DeadRabbit,
+    }
+
+    item DeadRat
+    {
+        StaticModel = AEMVFSM_DeadRat,
+    }
+
+    item DeadSquirrel
+    {
+        StaticModel = AEMVFSM_DeadSquirrel,
+    }
+
+    item DoughnutPlain
+    {
+        StaticModel = AEMVFSM_DoughnutPlain,
+    }
+
+    item Ramen
+    {
+        StaticModel = AEMVFSM_DryRamen,
+    }
+
+    item Edamame
+    {
+        StaticModel = AEMVFSM_Edamame,
+    }
+
+    item Egg
+    {
+        StaticModel = AEMVFSM_Egg,
+    }
+
+    item EggBoiled
+    {
+        StaticModel = AEMVFSM_EggBoiled,
+    }
+
+    item EggPoached
+    {
+        StaticModel = AEMVFSM_EggPoached,
+    }
+
+    item EggScrambled
+    {
+        StaticModel = AEMVFSM_EggScrambled,
+    }
+
+    item FishFried
+    {
+        StaticModel = AEMVFSM_Fish,
+    }
+
+    item FishFillet
+    {
+        StaticModel = AEMVFSM_FishFillet,
+    }
+
+    item FishFingers
+    {
+        StaticModel = AEMVFSM_FishFingers,
+    }
+
+    item FishGuts
+    {
+        StaticModel = AEMVFSM_FishGuts,
+    }
+
+    item FishRoe
+    {
+        StaticModel = AEMVFSM_FishRoe,
+    }
+
+    item FishRoeSac
+    {
+        StaticModel = AEMVFSM_FishRoeSac,
+    }
+
+    item SushiFish
+    {
+        StaticModel = AEMVFSM_FishSushi,
+    }
+
+    item FlaxSeed
+    {
+        EatType = EatSmall,
+    }
+
+    item ChickenFried
+    {
+        StaticModel = AEMVFSM_FriedChicken,
+        EatType = EatOffStick,
+    }
+
+    item FriedOnionRings
+    {
+        StaticModel = AEMVFSM_FriedOnionRings,
+    }
+
+    item FriedOnionRingsCraft
+    {
+        StaticModel = AEMVFSM_FriedOnionRings,
+    }
+
+    item FrenchFries
+    {
+        StaticModel = AEMVFSM_FriesFrench,
+    }
+
+    item FrogMeat
+    {
+        StaticModel = AEMVFSM_FrogMeat,
+    }
+
+    item DoughnutFrosted
+    {
+        StaticModel = AEMVFSM_FrostedDoughnut,
+    }
+
+    item JamFruit
+    {
+        StaticModel = AEMVFSM_FruitJam,
+    }
+
+    item FudgeePop_Melted
+    {
+        StaticModel = AEMVFSM_FudgeePop_Melted,
+        EatType = 2handforced,
+    }
+
+    item PowderedGarlic
+    {
+        StaticModel = AEMVFSM_GarlicPowdered,
+    }
+
+    item GingerPickled
+    {
+        StaticModel = AEMVFSM_GingerPickled,
+    }
+
+    item GingerRoot
+    {
+        StaticModel = AEMVFSM_GingerRoot,
+    }
+
+    item Gingerbreadman
+    {
+        StaticModel = AEMVFSM_Gingerbreadman,
+    }
+
+    item GranolaBar
+    {
+        StaticModel = AEMVFSM_GranolaBar,
+    }
+
+    item GrapeLeaves
+    {
+        StaticModel = AEMVFSM_GrapeLeaves,
+        EatType = Eat,
+    }
+
+    item Grapes
+    {
+        StaticModel = AEMVFSM_Grapes,
+    }
+
+    item GreenOnions
+    {
+        StaticModel = AEMVFSM_GreenOnions,
+        WorldStaticModel = AEMVFSM_GreenOnions,
+        EatType = Eat,
+    }
+
+    item Greenpeas
+    {
+        StaticModel = AEMVFSM_Greenpeas,
+    }
+
+    item MincedMeat
+    {
+        StaticModel = AEMVFSM_GroundBeef,
+    }
+
+    item Guacamole
+    {
+        StaticModel = AEMVFSM_Guacamole,
+        EatType = Eat,
+    }
+
+    item Gum
+    {
+        StaticModel = AEMVFSM_Gum,
+    }
+
+    item GummyWorms
+    {
+        StaticModel = AEMVFSM_GummyWorms,
+    }
+
+    item PepperHabanero
+    {
+        StaticModel = AEMVFSM_Habanero,
+    }
+
+    item PepperHabaneroDried
+    {
+        StaticModel = AEMVFSM_HabaneroDried,
+    }
+
+    item Ham
+    {
+        StaticModel = AEMVFSM_Ham,
+        EatType = EatOffStick,
+    }
+
+    item HamSlice
+    {
+        StaticModel = AEMVFSM_HamSlice,
+    }
+
+    item HiHis
+    {
+        StaticModel = AEMVFSM_HiHis,
+    }
+
+    item Hotdog
+    {
+        StaticModel = AEMVFSM_Hotdog,
+    }
+
+    item HotDrink
+    {
+        StaticModelsByIndex = AEMVFSM_HotDrinkMug;AEMVFSM_HotDrinkMugRed;AEMVFSM_HotDrinkMugWhite;AEMVFSM_HotDrinkMugBlue;AEMVFSM_HotDrinkMugYellow,
+        EatType = Teacup,
+    }
+
+    item HotDrinkSpiffo
+    {
+        StaticModel = AEMVFSM_HotDrinkMugSpiffo,
+        EatType = Teacup,
+    }
+
+    item HotDrinkWhite
+    {
+        StaticModel = AEMVFSM_HotDrinkMugWhite,
+        EatType = Teacup,
+    }
+
+    item BunsHotdog_single
+    {
+        StaticModel = AEMVFSM_HotdogBun,
+    }
+
+    item Hotdog_single
+    {
+        StaticModel = AEMVFSM_Hotdog_single,
+    }
+
+    item Icecream
+    {
+        StaticModel = AEMVFSM_Icecream,
+    }
+
+    item IcecreamMelted
+    {
+        StaticModel = AEMVFSM_IcecreamMelted,
+    }
+
+    item IcecreamSandwich
+    {
+        StaticModel = AEMVFSM_IcecreamSandwich,
+    }
+
+    item IcecreamSandwich_Melted
+    {
+        StaticModel = AEMVFSM_IcecreamSandwich_Melted,
+        EatType = 2handforced,
+    }
+
+    item PepperJalapeno
+    {
+        StaticModel = AEMVFSM_Jalapeno,
+    }
+
+    item PepperJalapenoDried
+    {
+        StaticModel = AEMVFSM_JalapenoDried,
+    }
+
+    item DoughnutJelly
+    {
+        StaticModel = AEMVFSM_JellyDonut,
+    }
+
+    item Kale
+    {
+        StaticModel = AEMVFSM_Kale,
+    }
+
+    item Ketchup
+    {
+        StaticModel = AEMVFSM_Ketchup,
+    }
+
+    item PieKeyLime
+    {
+        StaticModel = AEMVFSM_KeyLimePie,
+    }
+
+    item Lard
+    {
+        StaticModel = AEMVFSM_Lard,
+    }
+
+    item Lavender
+    {
+        StaticModel = AEMVFSM_Lavender,
+        EatType = EatOffStick,
+    }
+
+    item Leech
+    {
+        StaticModel = AEMVFSM_Leech,
+    }
+
+    item Leek
+    {
+        StaticModel = AEMVFSM_Leek,
+        EatType = EatOffStick,
+    }
+
+    item Lemon
+    {
+        StaticModel = AEMVFSM_Lemon,
+    }
+
+    item LemonBar
+    {
+        StaticModel = AEMVFSM_LemonBar,
+    }
+    
+    item PieLemonMeringue
+    {
+        StaticModel = AEMVFSM_LemonMeringuePie,
+    }
+
+    item LemonGrass
+    {
+        StaticModel = AEMVFSM_LemonGrass,
+    }
+
+    item LicoriceBlack
+    {
+        StaticModel = AEMVFSM_LicoriceBlack,
+    }
+
+    item LicoriceRed
+    {
+        StaticModel = AEMVFSM_LicoriceRed,
+    }
+
+    item Maki
+    {
+        StaticModel = AEMVFSM_Maki,
+    }
+
+    item MapleSyrup
+    {
+        StaticModel = AEMVFSM_MapleSyrup,
+    }
+
+    item Margarine
+    {
+        StaticModel = AEMVFSM_Margarine,
+        EatType = Plate,
+    }
+
+    item Marigold
+    {
+        StaticModel = AEMVFSM_Marigold,
+        EatType = EatOffStick,
+    }
+
+    item MarigoldDried
+    {
+        StaticModel = AEMVFSM_MarigoldDried,
+        EatType = EatOffStick,
+    }
+
+    item Marinara
+    {
+        StaticModel = AEMVFSM_Marinara,
+    }
+
+    item JamMarmalade
+    {
+        StaticModel = AEMVFSM_Marmalade,
+    }
+
+    item MeatDumpling
+    {
+        StaticModel = AEMVFSM_MeatDumpling,
+    }
+
+    item Chocolate
+    {
+        StaticModel = AEMVFSM_MilkChocolate,
+    }
+
+    item Millipede
+    {
+        StaticModel = AEMVFSM_Millipede,
+    }
+
+    item Millipede2
+    {
+        StaticModel = AEMVFSM_Millipede2,
+    }
+
+    item MintCandy
+    {
+        StaticModel = AEMVFSM_MintCandy,
+    }
+
+    item Modjeska
+    {
+        StaticModel = AEMVFSM_Modjeska,
+    }
+
+    item DeadMousePups
+    {
+        StaticModel = AEMVFSM_MousePupsDead,
+    }
+
+    item MuttonChop
+    {
+        StaticModel = AEMVFSM_MuttonChop,
+    }
+
+    item Dip_NachoCheese
+    {
+        StaticModel = AEMVFSM_NachoCheeseDip,
+    }
+
+    item Nettles
+    {
+        StaticModel = AEMVFSM_Nettles,
+    }
+
+    item OilOlive
+    {
+        StaticModel = AEMVFSM_OliveOil,
+    }
+
+    item OmeletteRecipe
+    {
+        StaticModel = AEMVFSM_OmeletteRecipeForged,
+        EatType = Plate,
+    }
+
+    item OmeletteRecipeForged
+    {
+        StaticModel = AEMVFSM_OmeletteRecipeForged,
+        EatType = Plate,
+    }
+
+    item EggOmelette
+    {
+        StaticModel = AEMVFSM_Omelette,
+    }
+
+    item Onigiri
+    {
+        StaticModel = AEMVFSM_Onigiri,
+    }
+
+    item PowderedOnion
+    {
+        StaticModel = AEMVFSM_OnionPowdered,
+    }
+    
+    item OreganoDried
+    {
+        EatType = EatSmall,
+    }
+
+    item Seasoning_Oregano
+    {
+        StaticModel = AEMVFSM_Oregano_Seasoning,
+        EatType = Drink,
+    }
+
+    item Oysters
+    {
+        StaticModel = AEMVFSM_Oysters,
+        EatType = Eat,
+    }
+
+    item OystersFried
+    {
+        StaticModel = AEMVFSM_OystersFried,
+        EatType = Eat,
+    }
+
+    item Peas
+    {
+        StaticModel = AEMVFSM_Peas,
+    }
+
+    item ParsleyDried
+    {
+        EatType = EatSmall,
+    }
+
+    item Seasoning_Parsley
+    {
+        StaticModel = AEMVFSM_Parsley_Seasoning,
+        EatType = Drink,
+    }
+
+    item Pasta
+    {
+        StaticModel = AEMVFSM_Pasta,
+    }
+
+    item PeanutButter
+    {
+        StaticModel = AEMVFSM_PeanutButter,
+    }
+
+    item Pepperoni
+    {
+        StaticModel = AEMVFSM_Pepperoni,
+    }
+    
+    item Perogies
+    {
+        StaticModel = AEMVFSM_Perogies,
+    }
+
+    item Pickles
+    {
+        StaticModel = AEMVFSM_Pickles,
+    }
+
+    item Pillbug
+    {
+        EatType = EatSmall,
+    }
+
+    item Pizza
+    {
+        StaticModel = AEMVFSM_Pizza,
+    }
+    
+    item Popsicle_Melted
+    {
+        StaticModel = AEMVFSM_Popsicle_Melted,
+        EatType = 2handforced,
+    }
+
+    item Pork
+    {
+        StaticModel = AEMVFSM_Pork,
+        EatType = EatOffStick,
+    }
+
+    item PorkChop
+    {
+        StaticModel = AEMVFSM_PorkChop,
+    }
+
+    item PotatoPancakes
+    {
+        StaticModel = AEMVFSM_PotatoPancakes,
+    }
+
+    item PiePumpkin
+    {
+        StaticModel = AEMVFSM_PumpkinPie,
+    }
+
+    item PumpkinSeed
+    {
+        StaticModel = AEMVFSM_ZZNothingZZ,
+        EatType = EatSmall,
+    }
+
+    item QuaggaCakes
+    {
+        StaticModel = AEMVFSM_QuaggaCakes,
+    }
+
+    item Rabbitmeat
+    {
+        StaticModel = AEMVFSM_Rabbitmeat,
+    }
+
+    item Dip_Ranch
+    {
+        StaticModel = AEMVFSM_RanchDip,
+    }
+
+    item CookieJelly
+    {
+        StaticModel = AEMVFSM_RaspberryCookie,
+    }
+
+    item DeadRatBaby
+    {
+        StaticModel = AEMVFSM_RatBabyDead,
+    }
+
+    item RatKing
+    {
+        StaticModel = AEMVFSM_RatKing,
+    }
+
+    item CakeRedVelvet
+    {
+        StaticModel = AEMVFSM_RedVelvetCake,
+    }
+
+    item RicePaper
+    {
+        StaticModel = AEMVFSM_RicePaper,
+    }
+
+    item RiceVinegar
+    {
+        StaticModel = AEMVFSM_RiceVinegar,
+    }
+
+    item PanFriedVegetables2
+    {
+        StaticModel = AEMVFSM_Roast,
+    }
+
+    item Smallanimalmeat
+    {
+        StaticModel = AEMVFSM_RodentMeat,
+    }
+
+    item RosemaryDried
+    {
+        EatType = EatSmall,
+    }
+
+    item Seasoning_Rosemary
+    {
+        StaticModel = AEMVFSM_Rosemary_Seasoning,
+    }
+
+    item Roses
+    {
+        StaticModel = AEMVFSM_Roses,
+        EatType = EatOffStick,
+    }
+
+    item SageDried
+    {
+        EatType = EatSmall,
+    }
+
+    item Seasoning_Sage
+    {
+        StaticModel = AEMVFSM_Sage_Seasoning,
+    }
+
+    item Salmon
+    {
+        StaticModel = AEMVFSM_Salmon,
+    }
+
+    item Dip_Salsa
+    {
+        StaticModel = AEMVFSM_SalsaDip,
+    }
+
+    item Sandwich
+    {
+        StaticModel = AEMVFSM_Sandwich,
+    }
+
+    item BaguetteSandwich
+    {
+        StaticModel = AEMVFSM_SandwichBaguette,
+        EatType = EatOffStick,
+    }
+
+    item ScoutCookies
+    {
+        StaticModel = AEMVFSM_ScoutCookies,
+    }
+
+    item SeasoningSalt
+    {
+        StaticModel = AEMVFSM_SeasoningSalt,
+    }
+
+    item Seaweed
+    {
+        StaticModel = AEMVFSM_Seaweed,
+    }
+
+    item SeedPaste
+    {
+        StaticModel = AEMVFSM_SeedPaste,
+    }
+
+    item BagelSesame
+    {
+        StaticModel = AEMVFSM_SesameBagel,
+    }
+
+    item Shrimp
+    {
+        StaticModel = AEMVFSM_Shrimp,
+    }
+
+    item ShrimpDumpling
+    {
+        StaticModel = AEMVFSM_ShrimpDumpling,
+    }
+
+    item DeadMouseSkinned
+    {
+        StaticModel = AEMVFSM_SkinnedDeadMouse,
+    }
+
+    item DeadMousePupsSkinned
+    {
+        StaticModel = AEMVFSM_SkinnedDeadMousePups,
+    }
+
+    item DeadRatSkinned
+    {
+        StaticModel = AEMVFSM_SkinnedDeadRat,
+    }
+
+    item DeadRatBabySkinned
+    {
+        StaticModel = AEMVFSM_SkinnedDeadRatBaby,
+    }
+
+    item Slug
+    {
+        StaticModel = AEMVFSM_Slug,
+    }
+
+    item Slug2
+    {
+        StaticModel = AEMVFSM_Slug2,
+    }
+
+    item Smallbirdmeat
+    {
+        StaticModel = AEMVFSM_Smallbirdmeat,
+    }
+
+    item Smore    
+    {
+        StaticModel = AEMVFSM_Smore,
+    }
+
+    item SnoGlobes
+    {
+        StaticModel = AEMVFSM_SnoGlobes,
+    }
+
+    item SourCream
+    {
+        StaticModel = AEMVFSM_SourCream,
+        EatType = Candrink,
+    }
+
+    item Soysauce
+    {
+        StaticModel = AEMVFSM_Soysauce,
+    }
+
+    item Soybeans
+    {
+        StaticModel = AEMVFSM_ZZNothingZZ,
+        EatType = EatSmall,
+    }
+
+    item Spinach
+    {
+        StaticModel = AEMVFSM_Spinach,
+    }
+
+    item Springroll
+    {
+        StaticModel = AEMVFSM_Springroll,
+    }
+
+    item Squid
+    {
+        StaticModel = AEMVFSM_Squid,
+    }
+
+    item SquidCalamari
+    {
+        StaticModel = AEMVFSM_SquidCalamari,
+    }
+
+    item Steak
+    {
+        StaticModel = AEMVFSM_Steak,
+    }
+
+    item Strewberrie
+    {
+        StaticModel = AEMVFSM_Strawberry,
+    }
+
+    item CakeStrawberryShortcake
+    {
+        StaticModel = AEMVFSM_StrawberryShortcake,
+    }
+
+    item SugarBeet
+    {
+        StaticModel = AEMVFSM_SugarBeet,
+    }
+
+    item SunflowerSeeds
+    {
+        StaticModel = AEMVFSM_ZZNothingZZ,
+        EatType = EatSmall,
+    }
+
+    item SweetPotato
+    {
+        StaticModel = AEMVFSM_SweetPotato,
+    }
+
+    item Taco
+    {
+        StaticModel = AEMVFSM_Taco,
+        EatType = Eat,
+    }
+
+    item TacoRecipe
+    {
+        StaticModel = AEMVFSM_Taco,
+        EatType = Eat,
+    }
+
+    item TacoShell
+    {
+        StaticModel = AEMVFSM_TacoShell,
+        EatType = Eat,
+    }
+
+    item Tadpole
+    {
+        StaticModel = AEMVFSM_Tadpole,
+    }
+
+    item Termites
+    {
+        StaticModel = AEMVFSM_Termites,
+    }
+
+    item Thistle
+    {
+        StaticModel = AEMVFSM_Thistle,
+    }
+
+    item ThymeDried
+    {
+        EatType = EatSmall,
+    }
+
+    item Seasoning_Thyme
+    {
+        StaticModel = AEMVFSM_Thyme_Seasoning,
+        EatType = Drink,
+    }
+
+    item Toast
+    {
+        StaticModel = AEMVFSM_Toast,
+    }
+
+    item Tofu
+    {
+        StaticModel = AEMVFSM_Tofu,
+    }
+
+    item Tortilla
+    {
+        StaticModel = AEMVFSM_Tortilla,
+    }
+
+    item TortillaChips
+    {
+        StaticModel = AEMVFSM_TortillaChips,
+    }
+
+    item TortillaChipsBaked
+    {
+        StaticModel = AEMVFSM_TortillaChipsBaked,
+        EatType = Eat,
+    }
+
+    item TurkeyWhole
+    {
+        StaticModel = AEMVFSM_Turkey,
+        EatType = 2handforced,
+    }
+
+    item TurkeyEgg
+    {
+        StaticModel = AEMVFSM_TurkeyEgg,
+    }
+
+    item TurkeyFillet
+    {
+        StaticModel = AEMVFSM_TurkeyFillet,
+    }
+
+    item TurkeyLegs
+    {
+        StaticModel = AEMVFSM_TurkeyLegs,
+    }
+
+    item TurkeyWings
+    {
+        StaticModel = AEMVFSM_TurkeyWings,
+    }
+
+    item Turnip
+    {
+        StaticModel = AEMVFSM_Turnip,
+    }
+
+    item OilVegetable
+    {
+        StaticModel = AEMVFSM_VegetableOil,
+    }
+
+    item Venison
+    {
+        StaticModel = AEMVFSM_Venison,
+    }
+
+    item WatermelonSmashed
+    {
+        StaticModel = AEMVFSM_WatermelonSmashed,
+    }
+
+    item WatermelonSliced
+    {
+        StaticModel = AEMVFSM_WatermelonSliced,
+    }
+
+    item Sugar
+    {
+        StaticModel = AEMVFSM_WhiteSugar,
+    }
+
+    item WildEggs
+    {
+        StaticModel = AEMVFSM_WildEggs,
+    }
+
+    item Yoghurt
+    {
+        StaticModel = AEMVFSM_Yoghurt,
+    }
+
+    item Zucchini
+    {
+        StaticModel = AEMVFSM_Zucchini,
+    }
+
+/*-----Category:Normal-----*/
+
+    item Mugl
+    {
+        StaticModelsByIndex = AEMVFSM_Mug;AEMVFSM_MugRed;AEMVFSM_MugWhite;AEMVFSM_MugBlue;AEMVFSM_MugYellow,
+        WorldStaticModelsByIndex = AEMVFSM_Mug;AEMVFSM_MugRed;AEMVFSM_MugWhite;AEMVFSM_MugBlue;AEMVFSM_MugYellow,
+        EatType = Teacup,
+    }
+
+    item ClayMug
+    {
+        StaticModel = AEMVFSM_ClayMug,
+        EatType = Teacup,
+    }
+
+    item MugSpiffo
+    {
+        StaticModel = AEMVFSM_MugSpiffo,
+        EatType = Teacup,
+    }
+
+    item MugWhite
+    {
+        StaticModel = AEMVFSM_MugWhite,
+        EatType = Teacup,
+    }   
+}

@@ -1,0 +1,11 @@
+Tooltip_EN = {
+    Tooltip_FHC_NeedKnife = "Requires a sharp knife.",
+    Tooltip_FHC_NeedSalt = "Requires salt.",
+    Tooltip_FHC_RawHide = "A raw animal hide. Salt it first, then cure it.",
+    Tooltip_FHC_SaltedHide = "A salted hide. Cure it with a knife to finish.",
+    Tooltip_FHC_CuredHide = "A finished leather hide. Useful for many crafts.",
+    Tooltip_FHC_HuntersJournal = "Right-click to open the Hunter's Journal.",
+    Tooltip_FHC_Sinew = "Springy animal sinew. Acts as cordage.",
+    Tooltip_FHC_DriedMeat = "Salted, dried strip of meat. Stays edible for weeks.",
+    Tooltip_FHC_AnimalCallBook = "Read to learn this animal call.",
+}

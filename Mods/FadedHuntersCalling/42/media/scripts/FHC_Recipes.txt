@@ -1,0 +1,558 @@
+module Base
+{
+    /*
+        Hunter Hub craft recipes.
+
+        These are real B42 craftRecipe records with real inputs and outputs.
+        They deliberately omit vanilla handcraft query tags so the vanilla
+        crafting window does not become a second route around the Hub's
+        server-authoritative validation.
+    */
+
+    craftRecipe FHC_CraftHuntingKnife
+    {
+        timedAction = Making,
+        time = 200,
+        category = FHCHidden,
+        SkillRequired = MetalWelding:2,
+        xpAward = MetalWelding:3,
+        inputs
+        {
+            item 1 [Base.SmallSheetMetal],
+            item 1 [Base.ScrapMetal],
+            item 1 [Base.BlowTorch] mode:keep flags[MayDegrade],
+            item 1 tags[base:hammer;Hammer] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.FHC_HuntingKnife,
+        }
+    }
+
+    craftRecipe FHC_CraftSkinningKnife
+    {
+        timedAction = Making,
+        time = 220,
+        category = FHCHidden,
+        SkillRequired = MetalWelding:3,
+        xpAward = MetalWelding:4,
+        inputs
+        {
+            item 1 [Base.SmallSheetMetal],
+            item 1 [Base.BlowTorch] mode:keep flags[MayDegrade],
+            item 1 tags[base:hammer;Hammer] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.FHC_SkinningKnife,
+        }
+    }
+
+    craftRecipe FHC_CraftCampHatchet
+    {
+        timedAction = Making,
+        time = 250,
+        category = FHCHidden,
+        SkillRequired = MetalWelding:2,
+        xpAward = MetalWelding:3,
+        inputs
+        {
+            item 1 [Base.SmallSheetMetal],
+            item 1 [Base.Plank],
+            item 1 [Base.BlowTorch] mode:keep flags[MayDegrade],
+            item 1 tags[base:hammer;Hammer] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.FHC_CampHatchet,
+        }
+    }
+
+    craftRecipe FHC_CraftBushcraftSpear
+    {
+        timedAction = Making,
+        time = 150,
+        category = FHCHidden,
+        xpAward = Carving:3,
+        inputs
+        {
+            item 1 [Base.Plank],
+            item 1 tags[base:sharpknife;SharpKnife;base:meatcleaver] mode:keep flags[MayDegradeLight;IsNotDull],
+            item 1 tags[base:binding;base:rope;FadedHuntersCalling:cordage;Cordage],
+        }
+        outputs
+        {
+            item 1 Base.FHC_BushcraftSpear,
+        }
+    }
+
+    craftRecipe FHC_CraftTrappersClub
+    {
+        timedAction = Making,
+        time = 120,
+        category = FHCHidden,
+        xpAward = Woodwork:3,
+        inputs
+        {
+            item 1 [Base.Plank],
+            item 1 tags[base:sharpknife;SharpKnife;base:meatcleaver] mode:keep flags[MayDegradeLight;IsNotDull],
+        }
+        outputs
+        {
+            item 1 Base.FHC_TrappersClub,
+        }
+    }
+
+    craftRecipe FHC_CraftDryingRack
+    {
+        timedAction = Making,
+        time = 350,
+        category = FHCHidden,
+        xpAward = Woodwork:5,
+        inputs
+        {
+            item 4 [Base.Plank],
+            item 6 [Base.Nails],
+            item 1 tags[base:hammer;Hammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:saw;base:smallsaw;base:crudesaw] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.FHC_DryingRack,
+        }
+    }
+
+    craftRecipe FHC_CraftHideRack
+    {
+        timedAction = Making,
+        time = 300,
+        category = FHCHidden,
+        xpAward = Woodwork:5,
+        inputs
+        {
+            item 4 [Base.Plank],
+            item 4 [Base.Nails],
+            item 1 tags[base:binding;base:rope;FadedHuntersCalling:cordage;Cordage],
+            item 1 tags[base:hammer;Hammer] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.FHC_HideRack,
+        }
+    }
+
+    craftRecipe FHC_SaltHide
+    {
+        timedAction = Making,
+        time = 150,
+        category = FHCHidden,
+        xpAward = Trapping:2,
+        inputs
+        {
+            item 1 [Base.FHC_RawHide],
+            item 1 [Base.Salt],
+        }
+        outputs
+        {
+            item 1 Base.FHC_SaltedHide,
+        }
+    }
+
+    craftRecipe FHC_CureHide
+    {
+        timedAction = Making,
+        time = 300,
+        category = FHCHidden,
+        xpAward = Trapping:4,
+        inputs
+        {
+            item 1 [Base.FHC_SaltedHide],
+            item 1 tags[base:sharpknife;SharpKnife;base:scissors] mode:keep flags[MayDegradeLight;IsNotDull],
+        }
+        outputs
+        {
+            item 1 Base.FHC_CuredHide,
+        }
+    }
+
+    craftRecipe FHC_DryMeatStrip
+    {
+        timedAction = SliceMeat,
+        time = 280,
+        category = FHCHidden,
+        xpAward = Cooking:3,
+        inputs
+        {
+            item 1 [Base.Beef;Base.Steak;Base.Pork;Base.PorkChop;Base.MuttonChop;Base.Rabbitmeat;Base.Venison;Base.Smallanimalmeat;Base.ChickenWhole;Base.TurkeyWhole;Base.FrogMeat;Base.MincedMeat],
+            item 1 [Base.Salt],
+            item 1 tags[base:sharpknife;SharpKnife;base:meatcleaver] mode:keep flags[MayDegradeLight;IsNotDull],
+        }
+        outputs
+        {
+            item 1 Base.FHC_DriedMeat,
+        }
+    }
+
+    craftRecipe FHC_HarvestSinewFromCarcass
+    {
+        timedAction = SliceMeat,
+        time = 120,
+        category = FHCHidden,
+        xpAward = Trapping:2,
+        inputs
+        {
+            item 1 [Base.Beef;Base.Steak;Base.Pork;Base.PorkChop;Base.MuttonChop;Base.Rabbitmeat;Base.Venison;Base.Smallanimalmeat;Base.ChickenWhole;Base.TurkeyWhole;Base.FrogMeat;Base.MincedMeat],
+            item 1 tags[base:sharpknife;SharpKnife;base:meatcleaver] mode:keep flags[MayDegradeLight;IsNotDull],
+        }
+        outputs
+        {
+            item 1 Base.FHC_Sinew,
+        }
+    }
+
+    craftRecipe FHC_CraftCowScent
+    {
+        timedAction = Making,
+        time = 90,
+        category = FHCHidden,
+        xpAward = Trapping:1,
+        inputs
+        {
+            item 1 [Base.Cologne],
+            item 1 [Base.Beef],
+        }
+        outputs
+        {
+            item 1 Base.FHC_CowScent,
+        }
+    }
+
+    craftRecipe FHC_CraftPigScent
+    {
+        timedAction = Making,
+        time = 90,
+        category = FHCHidden,
+        xpAward = Trapping:1,
+        inputs
+        {
+            item 1 [Base.Cologne],
+            item 1 [Base.Pork],
+        }
+        outputs
+        {
+            item 1 Base.FHC_PigScent,
+        }
+    }
+
+    craftRecipe FHC_CraftSheepScent
+    {
+        timedAction = Making,
+        time = 90,
+        category = FHCHidden,
+        xpAward = Trapping:1,
+        inputs
+        {
+            item 1 [Base.Cologne],
+            item 1 [Base.MuttonChop],
+        }
+        outputs
+        {
+            item 1 Base.FHC_SheepScent,
+        }
+    }
+
+    craftRecipe FHC_CraftChickenScent
+    {
+        timedAction = Making,
+        time = 90,
+        category = FHCHidden,
+        xpAward = Trapping:1,
+        inputs
+        {
+            item 1 [Base.Cologne],
+            item 1 [Base.ChickenWhole],
+        }
+        outputs
+        {
+            item 1 Base.FHC_ChickenScent,
+        }
+    }
+
+    craftRecipe FHC_CraftTurkeyScent
+    {
+        timedAction = Making,
+        time = 90,
+        category = FHCHidden,
+        xpAward = Trapping:1,
+        inputs
+        {
+            item 1 [Base.Cologne],
+            item 1 [Base.TurkeyWhole],
+        }
+        outputs
+        {
+            item 1 Base.FHC_TurkeyScent,
+        }
+    }
+
+    craftRecipe FHC_CraftRabbitScent
+    {
+        timedAction = Making,
+        time = 90,
+        category = FHCHidden,
+        xpAward = Trapping:1,
+        inputs
+        {
+            item 1 [Base.Cologne],
+            item 1 [Base.Rabbitmeat],
+        }
+        outputs
+        {
+            item 1 Base.FHC_RabbitScent,
+        }
+    }
+
+    craftRecipe FHC_CraftDeerScent
+    {
+        timedAction = Making,
+        time = 90,
+        category = FHCHidden,
+        xpAward = Trapping:1,
+        inputs
+        {
+            item 1 [Base.Cologne],
+            item 1 [Base.Venison],
+        }
+        outputs
+        {
+            item 1 Base.FHC_DeerScent,
+        }
+    }
+
+    craftRecipe FHC_CraftRaccoonScent
+    {
+        timedAction = Making,
+        time = 90,
+        category = FHCHidden,
+        xpAward = Trapping:1,
+        inputs
+        {
+            item 1 [Base.Cologne],
+            item 1 [Base.Smallanimalmeat],
+        }
+        outputs
+        {
+            item 1 Base.FHC_RaccoonScent,
+        }
+    }
+
+    craftRecipe FHC_CraftRatScent
+    {
+        timedAction = Making,
+        time = 90,
+        category = FHCHidden,
+        xpAward = Trapping:1,
+        inputs
+        {
+            item 1 [Base.Cologne],
+            item 1 [Base.Smallanimalmeat],
+        }
+        outputs
+        {
+            item 1 Base.FHC_RatScent,
+        }
+    }
+
+    craftRecipe FHC_CraftMouseScent
+    {
+        timedAction = Making,
+        time = 90,
+        category = FHCHidden,
+        xpAward = Trapping:1,
+        inputs
+        {
+            item 1 [Base.Cologne],
+            item 1 [Base.Smallanimalmeat],
+        }
+        outputs
+        {
+            item 1 Base.FHC_MouseScent,
+        }
+    }
+
+    craftRecipe FHC_CraftSquirrelScent
+    {
+        timedAction = Making,
+        time = 90,
+        category = FHCHidden,
+        xpAward = Trapping:1,
+        inputs
+        {
+            item 1 [Base.Cologne],
+            item 1 [Base.Smallanimalmeat],
+        }
+        outputs
+        {
+            item 1 Base.FHC_SquirrelScent,
+        }
+    }
+
+    /*
+        Learn-only animal call tokens.
+
+        B42 literature validates LearnedRecipes against craftRecipe IDs. These
+        records make the unlocks real while keeping animal calls as learned
+        abilities used through the context menu and Hunter Hub, not craftable
+        inventory outputs.
+    */
+
+    craftRecipe FHC_Call_Cow
+    {
+        time = 1,
+        NeedToBeLearn = true,
+        category = FHCHidden,
+        inputs
+        {
+            item 1 [Base.FHC_AnimalCallBook_Cow] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.FHC_AnimalCallBook_Cow,
+        }
+    }
+
+    craftRecipe FHC_Call_Pig
+    {
+        time = 1,
+        NeedToBeLearn = true,
+        category = FHCHidden,
+        inputs
+        {
+            item 1 [Base.FHC_AnimalCallBook_Pig] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.FHC_AnimalCallBook_Pig,
+        }
+    }
+
+    craftRecipe FHC_Call_Sheep
+    {
+        time = 1,
+        NeedToBeLearn = true,
+        category = FHCHidden,
+        inputs
+        {
+            item 1 [Base.FHC_AnimalCallBook_Sheep] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.FHC_AnimalCallBook_Sheep,
+        }
+    }
+
+    craftRecipe FHC_Call_Chicken
+    {
+        time = 1,
+        NeedToBeLearn = true,
+        category = FHCHidden,
+        inputs
+        {
+            item 1 [Base.FHC_AnimalCallBook_Chicken] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.FHC_AnimalCallBook_Chicken,
+        }
+    }
+
+    craftRecipe FHC_Call_Turkey
+    {
+        time = 1,
+        NeedToBeLearn = true,
+        category = FHCHidden,
+        inputs
+        {
+            item 1 [Base.FHC_AnimalCallBook_Turkey] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.FHC_AnimalCallBook_Turkey,
+        }
+    }
+
+    craftRecipe FHC_Call_Rabbit
+    {
+        time = 1,
+        NeedToBeLearn = true,
+        category = FHCHidden,
+        inputs
+        {
+            item 1 [Base.FHC_AnimalCallBook_Rabbit] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.FHC_AnimalCallBook_Rabbit,
+        }
+    }
+
+    craftRecipe FHC_Call_Deer
+    {
+        time = 1,
+        NeedToBeLearn = true,
+        category = FHCHidden,
+        inputs
+        {
+            item 1 [Base.FHC_AnimalCallBook_Deer] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.FHC_AnimalCallBook_Deer,
+        }
+    }
+
+    craftRecipe FHC_Call_Raccoon
+    {
+        time = 1,
+        NeedToBeLearn = true,
+        category = FHCHidden,
+        inputs
+        {
+            item 1 [Base.FHC_AnimalCallBook_Raccoon] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.FHC_AnimalCallBook_Raccoon,
+        }
+    }
+
+    craftRecipe FHC_Call_Rat
+    {
+        time = 1,
+        NeedToBeLearn = true,
+        category = FHCHidden,
+        inputs
+        {
+            item 1 [Base.FHC_AnimalCallBook_Rat] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.FHC_AnimalCallBook_Rat,
+        }
+    }
+
+    craftRecipe FHC_Call_Mouse
+    {
+        time = 1,
+        NeedToBeLearn = true,
+        category = FHCHidden,
+        inputs
+        {
+            item 1 [Base.FHC_AnimalCallBook_Mouse] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.FHC_AnimalCallBook_Mouse,
+        }
+    }
+}

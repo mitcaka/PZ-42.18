@@ -1,0 +1,6 @@
+ItemName_EN = {
+	ItemName_DriedFoodMod.FDriedFoodCan = "Dried Food Can",
+    ItemName_DriedFoodMod.FDriedSteak = "Dried Steak",
+    ItemName_DriedFoodMod.FDriedChicken = "Dried Chicken",
+    ItemName_DriedFoodMod.FDriedPorkChop = "Dried Pork Chop",
+}

@@ -1,0 +1,20 @@
+module Base
+{
+
+    item ASVALClip
+    {
+	CanStack		=	FALSE,
+	Weight		=	0.2,
+	Type			=	Normal,
+	ItemType = base:normal,
+	DisplayName		=	VSS Ext Magazine,
+	DisplayCategory	=	GunMag,
+	Icon			=	ASVALMag,
+	MaxAmmo		=	20,
+	AmmoType		=	base:bullets_9mm,
+	StaticModel		=	GunMagazine,
+	WorldStaticModel	=	W_Extended_Mag_9x39,
+	GunType		=	ASVAL,
+	Tooltip		=	Tooltip_MagType,
+    }
+}

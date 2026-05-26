@@ -1,0 +1,583 @@
+module MR
+{
+                model sznr	/* 水煮牛肉会餐 */
+   {
+    mesh = Worlditems/sznr,
+	texture = Worlditems/sznr,
+	scale = 1,
+   }
+
+                model nengliangjiao	/* PLA能量胶 */
+   {
+    mesh = Worlditems/nengliangjiao,
+	texture = Worlditems/nengliangjiao,
+	scale = 1,
+   }
+
+                model hsnrgt	/* 红烧牛肉罐头 */
+   {
+    mesh = Worlditems/hsnrgt,
+	texture = Worlditems/hsnrgt,
+	scale = 1,
+   }
+
+                model hsrgt	/* 红烧肉罐头 */
+   {
+    mesh = Worlditems/hsrgt,
+	texture = Worlditems/hsrgt,
+	scale = 1,
+   }
+
+                model htgt	/* 黄桃罐头 */
+   {
+    mesh = Worlditems/htgt,
+	texture = Worlditems/htgt,
+	scale = 1,
+   }
+
+                model nengliangbang	/* 末日工坊牌能量棒 */
+   {
+    mesh = Worlditems/nengliangbang,
+	texture = Worlditems/nengliangbang,
+	scale = 1,
+   }
+
+                model kjqkl	/* 18式空军巧克力 */
+   {
+    mesh = Worlditems/kjqkl,
+	texture = Worlditems/kjqkl,
+	scale = 1,
+   }
+
+                model yjH2Oxz	/* 一箱应急饮用水H2O */
+   {
+    mesh = Worlditems/yjH2Oxz,
+	texture = Worlditems/yjH2Oxz,
+	scale = 1,
+   }
+
+                model dpty	/* 能量饮料 */
+   {
+    mesh = Worlditems/dpty,
+	texture = Worlditems/dongpeng,
+	scale = 1,
+   }
+
+                model dptyyx	/* 一箱能量饮料 */
+   {
+    mesh = Worlditems/dptyyx,
+	texture = Worlditems/dptyyx,
+	scale = 1,
+   }
+
+                model yjs	/* 应急饮用水H2O */
+   {
+    mesh = Worlditems/yjs,
+	texture = Worlditems/yjs,
+	scale = 1,
+   }
+
+                model hz81xy	/* 八一香烟盒装 */
+   {
+    mesh = Worlditems/hz81xy,
+	texture = Worlditems/hz81xy,
+	scale = 1,
+   }
+
+                model tiaozhuangxiangyan	/* 八一香烟条装 */
+   {
+    mesh = Worlditems/tiaozhuangxiangyan,
+	texture = Worlditems/tz81xy,
+	scale = 1,
+   }
+
+                model luotuo	/* Camel骆驼香烟（盒装） */
+   {
+    mesh = Worlditems/luotuo,
+	texture = Worlditems/luotuo,
+	scale = 1,
+   }
+
+                model lucky	/* 鸿运当头烟（盒装） */
+   {
+    mesh = Worlditems/lucky,
+	texture = Worlditems/lucky,
+	scale = 1,
+   }
+
+                model gxbxy	/* 高希霸香烟 */
+   {
+    mesh = Worlditems/gxbxy,
+	texture = Worlditems/gxbxy,
+	scale = 1,
+   }
+
+                model gxbxyhz	/* 高希霸香烟盒装 */
+   {
+    mesh = Worlditems/gxbxyhz,
+	texture = Worlditems/gxbxyhz,
+	scale = 1,
+   }
+
+                model hsxxy	/* 红双喜香烟盒装 */
+   {
+    mesh = Worlditems/hsxxy,
+	texture = Worlditems/hsxxy,
+	scale = 1,
+   }
+
+                model hsxxygz	/* 红双喜香烟罐装 */
+   {
+    mesh = Worlditems/hsxxygz,
+	texture = Worlditems/hsxxygz,
+	scale = 1,
+   }
+
+                model yulanxyhz	/* 玉兰香烟盒装 */
+   {
+    mesh = Worlditems/yulanxyhz,
+	texture = Worlditems/yulanxyhz,
+	scale = 1,
+   }
+
+                model ysbg	/* 末日工坊牌压缩饼干 */
+   {
+    mesh = Worlditems/ysbg,
+	texture = Worlditems/ysbg,
+	scale = 1,
+   }
+
+                model kqtshp	/* 空勤提神含片 */
+   {
+    mesh = Worlditems/kqtshp,
+	texture = Worlditems/kqtshp,
+	scale = 1,
+   }
+
+                model zrdg	/* 耐贮蛋糕 */
+   {
+    mesh = Worlditems/zrdg,
+	texture = Worlditems/zrdg,
+	scale = 1,
+   }
+
+                model jyzqnlb	/* 军用执勤能量包 */
+   {
+    mesh = Worlditems/jyzqnlb,
+	texture = Worlditems/jyzqnlb,
+	scale = 1,
+   }
+
+                model jyzcwpb	/* 军用侦察物品包 */
+   {
+    mesh = Worlditems/jyzcwpb,
+	texture = Worlditems/jyzcwpb,
+	scale = 1,
+   }
+
+                model lbztgb	/* 老班长特供包 */
+   {
+    mesh = Worlditems/lbztgb,
+	texture = Worlditems/lbztgb,
+	scale = 1,
+   }
+
+                model myjjb	/* 便携急救包 */
+   {
+    mesh = Worlditems/myjjb,
+	texture = Worlditems/myjjb,
+	scale = 1,
+   }
+
+                model jyjjb	/* 军用急救包 */
+   {
+    mesh = Worlditems/jyjjb,
+	texture = Worlditems/jyjjb,
+	scale = 1,
+   }
+
+                model junliang	/* 一箱军粮 */
+   {
+    mesh = Worlditems/junliang,
+	texture = Worlditems/junliang,
+	scale = 1,
+   }
+
+                model kfy	/* 牛磺酸葡萄糖口服液 */
+   {
+    mesh = Worlditems/kfy,
+	texture = Worlditems/pzkfy,
+	scale = 1,
+   }
+
+                model hzkfy	/* 一盒牛磺酸葡萄糖口服液 */
+   {
+    mesh = Worlditems/hzkfy,
+	texture = Worlditems/pttkfy,
+	scale = 1,
+   }
+
+                model galiniurou	/* 咖喱牛肉 */
+   {
+    mesh = Worlditems/galiniurou,
+	texture = Worlditems/glnr,
+	scale = 1,
+   }
+
+                model ganmaoling	/* 抗流感感冒灵 */
+   {
+    mesh = Worlditems/ganmaoling,
+	texture = Worlditems/ganmaoling,
+	scale = 1,
+   }
+
+                model kqysw	/* 抗缺氧食物 */
+   {
+    mesh = Worlditems/kqysw,
+	texture = Worlditems/kqysw,
+	scale = 1,
+   }
+
+                model hxegt	/* 蚁鞭劲酒 */
+   {
+    mesh = Worlditems/hxegt,
+	texture = Worlditems/hxegt,
+	scale = 1,
+   }
+
+                model yspyz	/* 椰树牌椰汁 */
+   {
+    mesh = Worlditems/yspyz,
+	texture = Worlditems/yspyz,
+	scale = 1,
+   }
+
+                model taocan	/* 21式单兵口粮1号餐 */
+   {
+    mesh = Worlditems/taocan,
+	texture = Worlditems/1haocan,
+	scale = 1,
+   }
+
+                model azdkl	/* 20式A类战斗口粮 */
+   {
+    mesh = Worlditems/azdkl,
+	texture = Worlditems/azdkl,
+	scale = 1,
+   }
+
+                model bzdkl	/* 20式B类战斗口粮 */
+   {
+    mesh = Worlditems/bzdkl,
+	texture = Worlditems/bzdkl,
+	scale = 1,
+   }
+
+                model smmbgt	/* 生命面包罐头 */
+   {
+    mesh = Worlditems/smmbgt,
+	texture = Worlditems/smmbgt,
+	scale = 1,
+   }
+
+                model smmbgtxz	/* 生命面包罐头(箱装) */
+   {
+    mesh = Worlditems/smmbgtxz,
+	texture = Worlditems/smmbgtxz,
+	scale = 1,
+   }
+
+                model nmgjrp	/* 柠檬果酱软派 */
+   {
+    mesh = Worlditems/nmgjrp,
+	texture = Worlditems/nmgjrp,
+	scale = 1,
+   }
+
+                model nmgjrphz	/* 柠檬果酱软派(盒装) */
+   {
+    mesh = Worlditems/nmgjrphz,
+	texture = Worlditems/nmgjrp,
+	scale = 1,
+   }
+
+                model lanmeipai	/* 蓝莓蛋糕焦糖派 */
+   {
+    mesh = Worlditems/lanmeipai,
+	texture = Worlditems/lmdgjtp,
+	scale = 1,
+   }
+
+                model lmdgjtphz	/* 蓝莓蛋糕焦糖派(盒装) */
+   {
+    mesh = Worlditems/lmdgjtphz,
+	texture = Worlditems/lmdgjtp,
+	scale = 1,
+   }
+
+                model zhimatanyuan	/* 芝麻汤圆罐头 */
+   {
+    mesh = Worlditems/zhimatanyuan,
+	texture = Worlditems/zmtygt,
+	scale = 1,
+   }
+
+                model hlzdjtgt	/* 胡椒猪肚鸡汤罐头 */
+   {
+    mesh = Worlditems/hlzdjtgt,
+	texture = Worlditems/hlzdjtgt,
+	scale = 1,
+   }
+
+                model naiyoupeigeng	/* 奶油培根汤罐头 */
+   {
+    mesh = Worlditems/naiyoupeigeng,
+	texture = Worlditems/naiyoupeigeng,
+	scale = 1,
+   }
+
+                model fqdzcgt	/* 番茄炖杂菜罐头 */
+   {
+    mesh = Worlditems/fqdzcgt,
+	texture = Worlditems/fqdzcgt,
+	scale = 1,
+   }
+
+                model htjyhsgt	/* 海苔椒盐花生罐头 */
+   {
+    mesh = Worlditems/htjyhsgt,
+	texture = Worlditems/htjyhsgt,
+	scale = 1,
+   }
+
+                model lgmjdljgt	/* 老干妈鸡丁辣椒罐头 */
+   {
+    mesh = Worlditems/lgmjdljgt,
+	texture = Worlditems/lgmjdljgt,
+	scale = 1,
+   }
+
+                model dclygt	/* 甘竹牌豆豉鲮鱼罐头 */
+   {
+    mesh = Worlditems/dclygt,
+	texture = Worlditems/dclygt,
+	scale = 1,
+   }
+
+                model yxdlgt	/* 烟熏牡蛎罐头 */
+   {
+    mesh = Worlditems/yxdlgt,
+	texture = Worlditems/yxdlgt,
+	scale = 1,
+   }
+                model fmymdbb	/* 蜂蜜燕麦蛋白棒 */
+   {
+    mesh = Worlditems/fmymdbb,
+	texture = Worlditems/fmymdbb,
+	scale = 1,
+   }
+
+                model fmymdbbhz	/* 蜂蜜燕麦蛋白棒盒装 */
+   {
+    mesh = Worlditems/fmymdbbhz,
+	texture = Worlditems/fmymdbb,
+	scale = 1,
+   }
+
+                model cwnrhggt	/* 川味牛肉火锅罐头 */
+   {
+    mesh = Worlditems/cwnrhggt,
+	texture = Worlditems/cwnrhggt,
+	scale = 1,
+   }
+
+                model binghongcha	/* 劳大冰红茶 */
+   {
+    mesh = Worlditems/binghongcha,
+	texture = Worlditems/binghongcha,
+	scale = 1,
+   }
+
+                model lvcha	/* 劳大冰红茶（薄荷味） */
+   {
+    mesh = Worlditems/lvcha,
+	texture = Worlditems/lvcha,
+	scale = 1,
+   }
+
+                model fendaczw	/* 毛毛裤牌提神可乐 */
+   {
+    mesh = Worlditems/fendaczw,
+	texture = Worlditems/fendaczw,
+	scale = 1,
+   }
+
+                model dzzrp	/* 五香猪肉粒 */
+   {
+    mesh = Worlditems/dzzrp,
+	texture = Worlditems/dzzrp,
+	scale = 1,
+   }
+
+                model qdpjpz	/* 青岛精酿 */
+   {
+    mesh = Worlditems/qdpjpz,
+	texture = Worlditems/qdpjpz,
+	scale = 1,
+   }
+
+                model hsxjst	/* 巧克力香蕉世涛啤酒 */
+   {
+    mesh = Worlditems/hsxjst,
+	texture = Worlditems/hsxjst,
+	scale = 1,
+   }
+
+                model bfyznystpj	/* 北峰椰子奶油世涛啤酒 */
+   {
+    mesh = Worlditems/bfyznystpj,
+	texture = Worlditems/bfyznystpj,
+	scale = 1,
+   }
+
+                model ljpj	/* 茉莉龙井啤酒 */
+   {
+    mesh = Worlditems/ljpj,
+	texture = Worlditems/ljpj,
+	scale = 1,
+   }
+
+                model lfhj	/* 拉菲酒庄1982年干红 */
+   {
+    mesh = Worlditems/lfhj,
+	texture = Worlditems/lfhj,
+	scale = 1,
+   }
+
+                model gtjzxlb	/* 灌汤鸡汁小笼包 */
+   {
+    mesh = Worlditems/gtjzxlb,
+	texture = Worlditems/gtjzxlb,
+	scale = 1,
+   }
+
+                model gzjjxjhhz1	/* 盒装广州酒家虾饺皇 */
+   {
+    mesh = Worlditems/gzjjxjhhz1,
+	texture = Worlditems/gzjjxjhhz1,
+	scale = 1,
+   }
+
+                model gtjzxlbhz	/* 盒装灌汤鸡汁小笼包 */
+   {
+    mesh = Worlditems/gtjzxlbhz,
+	texture = Worlditems/gtjzxlbhz,
+	scale = 1,
+   }
+
+                model xzxrsmhz	/* 盒装蟹籽鲜肉烧麦 */
+   {
+    mesh = Worlditems/xzxrsmhz,
+	texture = Worlditems/xzxrsmhz,
+	scale = 1,
+   }
+
+                model gxxclpg	/* 高雄香肠卤排骨便当 */
+   {
+    mesh = Worlditems/gxxclpg,
+	texture = Worlditems/gxxclpg,
+	scale = 1,
+   }
+
+                model tssbjgf	/* 台式三杯鸡拼虾卷盖饭 */
+   {
+    mesh = Worlditems/tssbjgf,
+	texture = Worlditems/tssbjgf,
+	scale = 1,
+   }
+
+                model hzhbrdbf	/* 厚芝汉堡肉蛋包饭 */
+   {
+    mesh = Worlditems/hzhbrdbf,
+	texture = Worlditems/hzhbrdbf,
+	scale = 1,
+   }
+
+                model mpdfszjkf	/* 麻婆豆腐酥炸鸡块饭 */
+   {
+    mesh = Worlditems/mpdfszjkf,
+	texture = Worlditems/mpdfszjkf,
+	scale = 1,
+   }
+
+                model xfdckdpf1	/* 蟹粉蛋葱烤大排饭 */
+   {
+    mesh = Worlditems/xfdckdpf1,
+	texture = Worlditems/xfdckdpf1,
+	scale = 1,
+   }
+
+                model mzxhcsdf	/* 黯然销魂叉烧蛋饭 */
+   {
+    mesh = Worlditems/mzxhcsdf,
+	texture = Worlditems/mzxhcsdf,
+	scale = 1,
+   }
+
+                model ygqgsgcnh	/* 有锅气广式干炒牛河 */
+   {
+    mesh = Worlditems/ygqgsgcnh,
+	texture = Worlditems/ygqgsgcnh,
+	scale = 1,
+   }
+
+                model zsjrmzcf	/* 照烧鸡肉蜜汁炒饭 */
+   {
+    mesh = Worlditems/zsjrmzcf,
+	texture = Worlditems/zsjrmzcf,
+	scale = 1,
+   }
+
+                model xynmc	/* 香芋糯米糍 */
+   {
+    mesh = Worlditems/xynmc,
+	texture = Worlditems/xynmc,
+	scale = 1,
+   }
+
+                model shlryb	/* 四黄莲蓉月饼 */
+   {
+    mesh = Worlditems/shlryb,
+	texture = Worlditems/shlryb,
+	scale = 1,
+   }
+
+                model dsg	/* 定胜糕 */
+   {
+    mesh = Worlditems/dsg,
+	texture = Worlditems/dsg,
+	scale = 1,
+   }
+
+                model dwysbgbk	/* 半块多维压缩饼干 */
+   {
+    mesh = Worlditems/dwysbgbk,
+	texture = Worlditems/dwysbgbk,
+	scale = 1,
+   }
+
+                model dwysbg	/* 多维压缩饼干 */
+   {
+    mesh = Worlditems/dwysbg,
+	texture = Worlditems/dwysbg,
+	scale = 1,
+   }
+
+                model dwysbgtz	/* 一桶多维压缩饼干 */
+   {
+    mesh = Worlditems/dwysbgtz,
+	texture = Worlditems/dwysbg,
+	scale = 1,
+   }
+
+}

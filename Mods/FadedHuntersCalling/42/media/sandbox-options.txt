@@ -1,0 +1,227 @@
+VERSION = 1,
+
+option FadedHuntersCalling.Enable_Mod
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_General,
+    translation = FHC_Sandbox_EnableMod,
+}
+
+option FadedHuntersCalling.Enable_GUI
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_General,
+    translation = FHC_Sandbox_EnableGUI,
+}
+
+option FadedHuntersCalling.Enable_Hotkey
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_General,
+    translation = FHC_Sandbox_EnableHotkey,
+}
+
+option FadedHuntersCalling.Enable_Trapping
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Trapping,
+    translation = FHC_Sandbox_EnableTrapping,
+}
+
+option FadedHuntersCalling.Enable_LiveCapture
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Trapping,
+    translation = FHC_Sandbox_EnableLiveCapture,
+}
+
+option FadedHuntersCalling.Enable_TrapBoard
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Trapping,
+    translation = FHC_Sandbox_EnableTrapBoard,
+}
+
+option FadedHuntersCalling.Enable_Bushcraft
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Bushcraft,
+    translation = FHC_Sandbox_EnableBushcraft,
+}
+
+option FadedHuntersCalling.Enable_FieldDress
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Bushcraft,
+    translation = FHC_Sandbox_EnableFieldDress,
+}
+
+option FadedHuntersCalling.Enable_MeatDrying
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Bushcraft,
+    translation = FHC_Sandbox_EnableMeatDrying,
+}
+
+option FadedHuntersCalling.Enable_HideCuring
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Bushcraft,
+    translation = FHC_Sandbox_EnableHideCuring,
+}
+
+option FadedHuntersCalling.Enable_Tools
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Tools,
+    translation = FHC_Sandbox_EnableTools,
+}
+
+option FadedHuntersCalling.Enable_AnimalOutline
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Tracking,
+    translation = FHC_Sandbox_EnableAnimalOutline,
+}
+
+option FadedHuntersCalling.Outline_AlwaysOn
+{
+    type = boolean,
+    default = false,
+    page = FadedHuntersCalling_Tracking,
+    translation = FHC_Sandbox_OutlineAlwaysOn,
+}
+
+option FadedHuntersCalling.Outline_Radius
+{
+    type = integer,
+    min = 10,
+    max = 100,
+    default = 30,
+    page = FadedHuntersCalling_Tracking,
+    translation = FHC_Sandbox_OutlineRadius,
+}
+
+option FadedHuntersCalling.Enable_NearbyPanel
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Tracking,
+    translation = FHC_Sandbox_EnableNearbyPanel,
+}
+
+option FadedHuntersCalling.Enable_MapMarkers
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Tracking,
+    translation = FHC_Sandbox_EnableMapMarkers,
+}
+
+option FadedHuntersCalling.MapMarkers_Radius
+{
+    type = integer,
+    min = 50,
+    max = 500,
+    default = 150,
+    page = FadedHuntersCalling_Tracking,
+    translation = FHC_Sandbox_MapMarkersRadius,
+}
+
+option FadedHuntersCalling.Trait_RegisterHunter
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Progression,
+    translation = FHC_Sandbox_TraitRegisterHunter,
+}
+
+option FadedHuntersCalling.Trait_RegisterTrapperProf
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Progression,
+    translation = FHC_Sandbox_TraitRegisterTrapper,
+}
+
+option FadedHuntersCalling.Difficulty
+{
+    type = enum,
+    numValues = 3,
+    default = 2,
+    page = FadedHuntersCalling_Progression,
+    translation = FHC_Sandbox_Difficulty,
+    valueTranslation = FHC_Sandbox_Difficulty_Value,
+}
+
+option FadedHuntersCalling.ProcessingSpeed
+{
+    type = double,
+    min = 0.25,
+    max = 4.0,
+    default = 1.0,
+    page = FadedHuntersCalling_Progression,
+    translation = FHC_Sandbox_ProcessingSpeed,
+}
+
+option FadedHuntersCalling.RequireTools
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Progression,
+    translation = FHC_Sandbox_RequireTools,
+}
+
+option FadedHuntersCalling.Enable_ServerQoL
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Server,
+    translation = FHC_Sandbox_EnableServerQoL,
+}
+
+option FadedHuntersCalling.Enable_AdminPopulationControl
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Server,
+    translation = FHC_Sandbox_EnableAdminPopulation,
+}
+
+option FadedHuntersCalling.MP_StrictValidation
+{
+    type = boolean,
+    default = true,
+    page = FadedHuntersCalling_Server,
+    translation = FHC_Sandbox_MPStrictValidation,
+}
+
+option FadedHuntersCalling.Debug_Logging
+{
+    type = boolean,
+    default = false,
+    page = FadedHuntersCalling_Server,
+    translation = FHC_Sandbox_DebugLogging,
+}
+
+option FadedHuntersCalling.Scan_ThrottleMs
+{
+    type = integer,
+    min = 100,
+    max = 5000,
+    default = 500,
+    page = FadedHuntersCalling_Server,
+    translation = FHC_Sandbox_ScanThrottle,
+}

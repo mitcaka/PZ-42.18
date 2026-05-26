@@ -1,0 +1,88 @@
+module Base
+{
+    item FWP_40HEProjectile
+    {
+        Type = Normal,
+        ItemType = base:normal,
+        DisplayCategory = Ammo,
+        DisplayName = FWP 40mm HE Projectile Visual,
+        Icon = 40mm_ammo,
+        Weight = 0.0,
+        StaticModel = FWP_40mmProjectile,
+        WorldStaticModel = FWP_40mmProjectileWorld,
+    }
+
+    item FWP_40INCProjectile
+    {
+        Type = Normal,
+        ItemType = base:normal,
+        DisplayCategory = Ammo,
+        DisplayName = FWP 40mm Incendiary Projectile Visual,
+        Icon = 40INCRound,
+        Weight = 0.0,
+        StaticModel = FWP_40mmProjectile,
+        WorldStaticModel = FWP_40mmProjectileWorld,
+    }
+
+    item FWP_HERocketProjectile
+    {
+        Type = Normal,
+        ItemType = base:normal,
+        DisplayCategory = Ammo,
+        DisplayName = FWP HE Rocket Projectile Visual,
+        Icon = rocket,
+        Weight = 0.0,
+        StaticModel = FWP_HERocketProjectile,
+        WorldStaticModel = FWP_HERocketProjectileWorld,
+    }
+
+    item FWP_AMMO_RocketPart
+    {
+        Type = WeaponPart,
+        ItemType = base:weaponpart,
+        DisplayCategory = WeaponPart,
+        DisplayName = FWP RPG-7 Rocket Visual,
+        Icon = rocket,
+        PartType = AMMO,
+        Weight = 0.0,
+        Tags = GunParts,
+        MountOn = Base.RPG_7;,
+        StaticModel = FWP_AMMO_RocketPart,
+        WorldStaticModel = FWP_AMMO_RocketPart,
+    }
+
+    model FWP_40mmProjectile
+    {
+        mesh = Ammo/40mm_ammo,
+        texture = GunTexture/40mm_ammo_tex,
+        scale = 1.0,
+    }
+
+    model FWP_40mmProjectileWorld
+    {
+        mesh = Ammo/40ammo_world,
+        texture = GunTexture/40mm_ammo_tex,
+        scale = 1.0,
+    }
+
+    model FWP_HERocketProjectile
+    {
+        mesh = Explosives/boom|rocket,
+        texture = GunTexture/rocket_tex,
+        scale = 1.0,
+    }
+
+    model FWP_HERocketProjectileWorld
+    {
+        mesh = Explosives/boom|rocket,
+        texture = GunTexture/rocket_tex,
+        scale = 1.0,
+    }
+
+    model FWP_AMMO_RocketPart
+    {
+        mesh = Explosives/boom|rocket_part,
+        texture = GunTexture/rocket_tex,
+        scale = 1.0,
+    }
+}

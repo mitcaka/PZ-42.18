@@ -1,0 +1,1509 @@
+module Base
+{
+    /*
+        Disabled for B42 server stability: these legacy trigger-group recipes
+        hard-reference large weapon itemMapper lists during world dictionary load.
+        The feature now runs through FWP_WeaponWorkRuntime and server validation.
+
+    craftRecipe FWP_Remove_AR_Trigger_Group
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPRemoveTriggerGroup,
+        inputs
+        {
+            item 1 [Base.AR57_PDW;Base.AR57_PDW_Fold;Base.AR57_PDW_Long;Base.LVOA_C;Base.AssaultRifle;Base.ADAR;Base.MK47;Base.AAC_Honey;Base.AAC_Honey_Fold;Base.AAC_HoneySD;Base.AAC_HoneySD_Fold;Base.Bush_AR15_MOE;Base.Bush_XM15;Base.Bush_XM15_Custom;Base.TR1_UltraLight;Base.MCX_Spear;Base.MCX_Virtus;Base.MCX_VirtusPatrol;Base.MCX_Socom;Base.JW3_TTI_MPX;Base.M723;Base.XM117;Base.H416;Base.AR18;Base.AR18_Fold;Base.Carbon15_97;Base.CAR15SMG;Base.CAR15_Survival;Base.M635;Base.M635S;Base.M635SD;Base.M4;Base.M4A1;Base.M16A1;Base.M16A2;Base.M16A3;Base.ColtM16;Base.M16Wood;Base.M16Tape;Base.SCARL;Base.SCARSC_Stock;Base.SCARSC_Fold;Base.SCARH;Base.SCAR20;Base.MK18] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mappers[FWP_Remove_AR_Trigger_Group_Weapon] mode:destroy,
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 mapper:FWP_Remove_AR_Trigger_Group_Weapon,
+        }
+        itemMapper FWP_Remove_AR_Trigger_Group_Weapon
+        {
+            Base.AR57_PDW = Base.AR57_PDW,
+            Base.AR57_PDW_Fold = Base.AR57_PDW_Fold,
+            Base.AR57_PDW_Long = Base.AR57_PDW_Long,
+            Base.LVOA_C = Base.LVOA_C,
+            Base.AssaultRifle = Base.AssaultRifle,
+            Base.ADAR = Base.ADAR,
+            Base.MK47 = Base.MK47,
+            Base.AAC_Honey = Base.AAC_Honey,
+            Base.AAC_Honey_Fold = Base.AAC_Honey_Fold,
+            Base.AAC_HoneySD = Base.AAC_HoneySD,
+            Base.AAC_HoneySD_Fold = Base.AAC_HoneySD_Fold,
+            Base.Bush_AR15_MOE = Base.Bush_AR15_MOE,
+            Base.Bush_XM15 = Base.Bush_XM15,
+            Base.Bush_XM15_Custom = Base.Bush_XM15_Custom,
+            Base.TR1_UltraLight = Base.TR1_UltraLight,
+            Base.MCX_Spear = Base.MCX_Spear,
+            Base.MCX_Virtus = Base.MCX_Virtus,
+            Base.MCX_VirtusPatrol = Base.MCX_VirtusPatrol,
+            Base.MCX_Socom = Base.MCX_Socom,
+            Base.JW3_TTI_MPX = Base.JW3_TTI_MPX,
+            Base.M723 = Base.M723,
+            Base.XM117 = Base.XM117,
+            Base.H416 = Base.H416,
+            Base.AR18 = Base.AR18,
+            Base.AR18_Fold = Base.AR18_Fold,
+            Base.Carbon15_97 = Base.Carbon15_97,
+            Base.CAR15SMG = Base.CAR15SMG,
+            Base.CAR15_Survival = Base.CAR15_Survival,
+            Base.M635 = Base.M635,
+            Base.M635S = Base.M635S,
+            Base.M635SD = Base.M635SD,
+            Base.M4 = Base.M4,
+            Base.M4A1 = Base.M4A1,
+            Base.M16A1 = Base.M16A1,
+            Base.M16A2 = Base.M16A2,
+            Base.M16A3 = Base.M16A3,
+            Base.ColtM16 = Base.ColtM16,
+            Base.M16Wood = Base.M16Wood,
+            Base.M16Tape = Base.M16Tape,
+            Base.SCARL = Base.SCARL,
+            Base.SCARSC_Stock = Base.SCARSC_Stock,
+            Base.SCARSC_Fold = Base.SCARSC_Fold,
+            Base.SCARH = Base.SCARH,
+            Base.SCAR20 = Base.SCAR20,
+            Base.MK18 = Base.MK18,
+        }
+    }
+
+    craftRecipe FWP_Install_AR_Trigger_Group
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPInstallTriggerGroup,
+        inputs
+        {
+            item 1 [Base.AR57_PDW;Base.AR57_PDW_Fold;Base.AR57_PDW_Long;Base.LVOA_C;Base.AssaultRifle;Base.ADAR;Base.MK47;Base.AAC_Honey;Base.AAC_Honey_Fold;Base.AAC_HoneySD;Base.AAC_HoneySD_Fold;Base.Bush_AR15_MOE;Base.Bush_XM15;Base.Bush_XM15_Custom;Base.TR1_UltraLight;Base.MCX_Spear;Base.MCX_Virtus;Base.MCX_VirtusPatrol;Base.MCX_Socom;Base.JW3_TTI_MPX;Base.M723;Base.XM117;Base.H416;Base.AR18;Base.AR18_Fold;Base.Carbon15_97;Base.CAR15SMG;Base.CAR15_Survival;Base.M635;Base.M635S;Base.M635SD;Base.M4;Base.M4A1;Base.M16A1;Base.M16A2;Base.M16A3;Base.ColtM16;Base.M16Wood;Base.M16Tape;Base.SCARL;Base.SCARSC_Stock;Base.SCARSC_Fold;Base.SCARH;Base.SCAR20;Base.MK18] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mappers[FWP_Install_AR_Trigger_Group_Weapon] mode:destroy,
+            item 1 [Base.TriggerGroup_AR] flags[Prop1],
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 mapper:FWP_Install_AR_Trigger_Group_Weapon,
+        }
+        itemMapper FWP_Install_AR_Trigger_Group_Weapon
+        {
+            Base.AR57_PDW = Base.AR57_PDW,
+            Base.AR57_PDW_Fold = Base.AR57_PDW_Fold,
+            Base.AR57_PDW_Long = Base.AR57_PDW_Long,
+            Base.LVOA_C = Base.LVOA_C,
+            Base.AssaultRifle = Base.AssaultRifle,
+            Base.ADAR = Base.ADAR,
+            Base.MK47 = Base.MK47,
+            Base.AAC_Honey = Base.AAC_Honey,
+            Base.AAC_Honey_Fold = Base.AAC_Honey_Fold,
+            Base.AAC_HoneySD = Base.AAC_HoneySD,
+            Base.AAC_HoneySD_Fold = Base.AAC_HoneySD_Fold,
+            Base.Bush_AR15_MOE = Base.Bush_AR15_MOE,
+            Base.Bush_XM15 = Base.Bush_XM15,
+            Base.Bush_XM15_Custom = Base.Bush_XM15_Custom,
+            Base.TR1_UltraLight = Base.TR1_UltraLight,
+            Base.MCX_Spear = Base.MCX_Spear,
+            Base.MCX_Virtus = Base.MCX_Virtus,
+            Base.MCX_VirtusPatrol = Base.MCX_VirtusPatrol,
+            Base.MCX_Socom = Base.MCX_Socom,
+            Base.JW3_TTI_MPX = Base.JW3_TTI_MPX,
+            Base.M723 = Base.M723,
+            Base.XM117 = Base.XM117,
+            Base.H416 = Base.H416,
+            Base.AR18 = Base.AR18,
+            Base.AR18_Fold = Base.AR18_Fold,
+            Base.Carbon15_97 = Base.Carbon15_97,
+            Base.CAR15SMG = Base.CAR15SMG,
+            Base.CAR15_Survival = Base.CAR15_Survival,
+            Base.M635 = Base.M635,
+            Base.M635S = Base.M635S,
+            Base.M635SD = Base.M635SD,
+            Base.M4 = Base.M4,
+            Base.M4A1 = Base.M4A1,
+            Base.M16A1 = Base.M16A1,
+            Base.M16A2 = Base.M16A2,
+            Base.M16A3 = Base.M16A3,
+            Base.ColtM16 = Base.ColtM16,
+            Base.M16Wood = Base.M16Wood,
+            Base.M16Tape = Base.M16Tape,
+            Base.SCARL = Base.SCARL,
+            Base.SCARSC_Stock = Base.SCARSC_Stock,
+            Base.SCARSC_Fold = Base.SCARSC_Fold,
+            Base.SCARH = Base.SCARH,
+            Base.SCAR20 = Base.SCAR20,
+            Base.MK18 = Base.MK18,
+        }
+    }
+
+    craftRecipe FWP_Remove_AK_Trigger_Group
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPRemoveTriggerGroup,
+        inputs
+        {
+            item 1 [Base.Origin;Base.Saiga12;Base.Saiga12_Long;Base.Saiga12_Tromix;Base.AK12_New;Base.RPK16;Base.AK308;Base.AKM_Gold;Base.AKM_Custom;Base.AK74_Custom;Base.AK47;Base.AKM;Base.AK103;Base.M85_Stock;Base.M85_Fold;Base.MD65_Stock;Base.MD65_Fold;Base.AKMS_Stock;Base.AKMS_Fold;Base.AK74;Base.AKS74;Base.AKS74_Fold;Base.AKS74U;Base.AKS74U_Fold;Base.AK12;Base.AK12_Fold;Base.AK74_Alpha;Base.AK74_Alpha_Fold;Base.RPK74;Base.Galil;Base.Galil_Fold;Base.Galil_Sniper;Base.Galil_Sniper_Fold;Base.Vz58;Base.Vz58_Stock;Base.Vz58_Fold;Base.Vz58_Mini_Stock;Base.Vz58_Mini_Fold] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mappers[FWP_Remove_AK_Trigger_Group_Weapon] mode:destroy,
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 mapper:FWP_Remove_AK_Trigger_Group_Weapon,
+        }
+        itemMapper FWP_Remove_AK_Trigger_Group_Weapon
+        {
+            Base.Origin = Base.Origin,
+            Base.Saiga12 = Base.Saiga12,
+            Base.Saiga12_Long = Base.Saiga12_Long,
+            Base.Saiga12_Tromix = Base.Saiga12_Tromix,
+            Base.AK12_New = Base.AK12_New,
+            Base.RPK16 = Base.RPK16,
+            Base.AK308 = Base.AK308,
+            Base.AKM_Gold = Base.AKM_Gold,
+            Base.AKM_Custom = Base.AKM_Custom,
+            Base.AK74_Custom = Base.AK74_Custom,
+            Base.AK47 = Base.AK47,
+            Base.AKM = Base.AKM,
+            Base.AK103 = Base.AK103,
+            Base.M85_Stock = Base.M85_Stock,
+            Base.M85_Fold = Base.M85_Fold,
+            Base.MD65_Stock = Base.MD65_Stock,
+            Base.MD65_Fold = Base.MD65_Fold,
+            Base.AKMS_Stock = Base.AKMS_Stock,
+            Base.AKMS_Fold = Base.AKMS_Fold,
+            Base.AK74 = Base.AK74,
+            Base.AKS74 = Base.AKS74,
+            Base.AKS74_Fold = Base.AKS74_Fold,
+            Base.AKS74U = Base.AKS74U,
+            Base.AKS74U_Fold = Base.AKS74U_Fold,
+            Base.AK12 = Base.AK12,
+            Base.AK12_Fold = Base.AK12_Fold,
+            Base.AK74_Alpha = Base.AK74_Alpha,
+            Base.AK74_Alpha_Fold = Base.AK74_Alpha_Fold,
+            Base.RPK74 = Base.RPK74,
+            Base.Galil = Base.Galil,
+            Base.Galil_Fold = Base.Galil_Fold,
+            Base.Galil_Sniper = Base.Galil_Sniper,
+            Base.Galil_Sniper_Fold = Base.Galil_Sniper_Fold,
+            Base.Vz58 = Base.Vz58,
+            Base.Vz58_Stock = Base.Vz58_Stock,
+            Base.Vz58_Fold = Base.Vz58_Fold,
+            Base.Vz58_Mini_Stock = Base.Vz58_Mini_Stock,
+            Base.Vz58_Mini_Fold = Base.Vz58_Mini_Fold,
+        }
+    }
+
+    craftRecipe FWP_Install_AK_Trigger_Group
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPInstallTriggerGroup,
+        inputs
+        {
+            item 1 [Base.Origin;Base.Saiga12;Base.Saiga12_Long;Base.Saiga12_Tromix;Base.AK12_New;Base.RPK16;Base.AK308;Base.AKM_Gold;Base.AKM_Custom;Base.AK74_Custom;Base.AK47;Base.AKM;Base.AK103;Base.M85_Stock;Base.M85_Fold;Base.MD65_Stock;Base.MD65_Fold;Base.AKMS_Stock;Base.AKMS_Fold;Base.AK74;Base.AKS74;Base.AKS74_Fold;Base.AKS74U;Base.AKS74U_Fold;Base.AK12;Base.AK12_Fold;Base.AK74_Alpha;Base.AK74_Alpha_Fold;Base.RPK74;Base.Galil;Base.Galil_Fold;Base.Galil_Sniper;Base.Galil_Sniper_Fold;Base.Vz58;Base.Vz58_Stock;Base.Vz58_Fold;Base.Vz58_Mini_Stock;Base.Vz58_Mini_Fold] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mappers[FWP_Install_AK_Trigger_Group_Weapon] mode:destroy,
+            item 1 [Base.TriggerGroup_AK] flags[Prop1],
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 mapper:FWP_Install_AK_Trigger_Group_Weapon,
+        }
+        itemMapper FWP_Install_AK_Trigger_Group_Weapon
+        {
+            Base.Origin = Base.Origin,
+            Base.Saiga12 = Base.Saiga12,
+            Base.Saiga12_Long = Base.Saiga12_Long,
+            Base.Saiga12_Tromix = Base.Saiga12_Tromix,
+            Base.AK12_New = Base.AK12_New,
+            Base.RPK16 = Base.RPK16,
+            Base.AK308 = Base.AK308,
+            Base.AKM_Gold = Base.AKM_Gold,
+            Base.AKM_Custom = Base.AKM_Custom,
+            Base.AK74_Custom = Base.AK74_Custom,
+            Base.AK47 = Base.AK47,
+            Base.AKM = Base.AKM,
+            Base.AK103 = Base.AK103,
+            Base.M85_Stock = Base.M85_Stock,
+            Base.M85_Fold = Base.M85_Fold,
+            Base.MD65_Stock = Base.MD65_Stock,
+            Base.MD65_Fold = Base.MD65_Fold,
+            Base.AKMS_Stock = Base.AKMS_Stock,
+            Base.AKMS_Fold = Base.AKMS_Fold,
+            Base.AK74 = Base.AK74,
+            Base.AKS74 = Base.AKS74,
+            Base.AKS74_Fold = Base.AKS74_Fold,
+            Base.AKS74U = Base.AKS74U,
+            Base.AKS74U_Fold = Base.AKS74U_Fold,
+            Base.AK12 = Base.AK12,
+            Base.AK12_Fold = Base.AK12_Fold,
+            Base.AK74_Alpha = Base.AK74_Alpha,
+            Base.AK74_Alpha_Fold = Base.AK74_Alpha_Fold,
+            Base.RPK74 = Base.RPK74,
+            Base.Galil = Base.Galil,
+            Base.Galil_Fold = Base.Galil_Fold,
+            Base.Galil_Sniper = Base.Galil_Sniper,
+            Base.Galil_Sniper_Fold = Base.Galil_Sniper_Fold,
+            Base.Vz58 = Base.Vz58,
+            Base.Vz58_Stock = Base.Vz58_Stock,
+            Base.Vz58_Fold = Base.Vz58_Fold,
+            Base.Vz58_Mini_Stock = Base.Vz58_Mini_Stock,
+            Base.Vz58_Mini_Fold = Base.Vz58_Mini_Fold,
+        }
+    }
+
+    craftRecipe FWP_Remove_HK_Trigger_Group
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPRemoveTriggerGroup,
+        inputs
+        {
+            item 1 [Base.MP7;Base.MP7_Stock;Base.G3;Base.G28;Base.G33;Base.G36;Base.G36_Fold;Base.G36C;Base.G36C_Fold;Base.G36KV;Base.G36KV_Fold;Base.MP5_Fixed;Base.MP5_Stock;Base.MP5_Fold;Base.MP5SD6_Fixed;Base.MP5SD6_Stock;Base.MP5SD6_Fold;Base.UMP9_Stock;Base.UMP9_Fold;Base.UMP45_Stock;Base.UMP45_Fold;Base.XM8Compact_Pistol;Base.XM8;Base.XM8LMG] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mappers[FWP_Remove_HK_Trigger_Group_Weapon] mode:destroy,
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 mapper:FWP_Remove_HK_Trigger_Group_Weapon,
+        }
+        itemMapper FWP_Remove_HK_Trigger_Group_Weapon
+        {
+            Base.MP7 = Base.MP7,
+            Base.MP7_Stock = Base.MP7_Stock,
+            Base.G3 = Base.G3,
+            Base.G28 = Base.G28,
+            Base.G33 = Base.G33,
+            Base.G36 = Base.G36,
+            Base.G36_Fold = Base.G36_Fold,
+            Base.G36C = Base.G36C,
+            Base.G36C_Fold = Base.G36C_Fold,
+            Base.G36KV = Base.G36KV,
+            Base.G36KV_Fold = Base.G36KV_Fold,
+            Base.MP5_Fixed = Base.MP5_Fixed,
+            Base.MP5_Stock = Base.MP5_Stock,
+            Base.MP5_Fold = Base.MP5_Fold,
+            Base.MP5SD6_Fixed = Base.MP5SD6_Fixed,
+            Base.MP5SD6_Stock = Base.MP5SD6_Stock,
+            Base.MP5SD6_Fold = Base.MP5SD6_Fold,
+            Base.UMP9_Stock = Base.UMP9_Stock,
+            Base.UMP9_Fold = Base.UMP9_Fold,
+            Base.UMP45_Stock = Base.UMP45_Stock,
+            Base.UMP45_Fold = Base.UMP45_Fold,
+            Base.XM8Compact_Pistol = Base.XM8Compact_Pistol,
+            Base.XM8 = Base.XM8,
+            Base.XM8LMG = Base.XM8LMG,
+        }
+    }
+
+    craftRecipe FWP_Install_HK_Trigger_Group
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPInstallTriggerGroup,
+        inputs
+        {
+            item 1 [Base.MP7;Base.MP7_Stock;Base.G3;Base.G28;Base.G33;Base.G36;Base.G36_Fold;Base.G36C;Base.G36C_Fold;Base.G36KV;Base.G36KV_Fold;Base.MP5_Fixed;Base.MP5_Stock;Base.MP5_Fold;Base.MP5SD6_Fixed;Base.MP5SD6_Stock;Base.MP5SD6_Fold;Base.UMP9_Stock;Base.UMP9_Fold;Base.UMP45_Stock;Base.UMP45_Fold;Base.XM8Compact_Pistol;Base.XM8;Base.XM8LMG] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mappers[FWP_Install_HK_Trigger_Group_Weapon] mode:destroy,
+            item 1 [Base.TriggerGroup_HK] flags[Prop1],
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 mapper:FWP_Install_HK_Trigger_Group_Weapon,
+        }
+        itemMapper FWP_Install_HK_Trigger_Group_Weapon
+        {
+            Base.MP7 = Base.MP7,
+            Base.MP7_Stock = Base.MP7_Stock,
+            Base.G3 = Base.G3,
+            Base.G28 = Base.G28,
+            Base.G33 = Base.G33,
+            Base.G36 = Base.G36,
+            Base.G36_Fold = Base.G36_Fold,
+            Base.G36C = Base.G36C,
+            Base.G36C_Fold = Base.G36C_Fold,
+            Base.G36KV = Base.G36KV,
+            Base.G36KV_Fold = Base.G36KV_Fold,
+            Base.MP5_Fixed = Base.MP5_Fixed,
+            Base.MP5_Stock = Base.MP5_Stock,
+            Base.MP5_Fold = Base.MP5_Fold,
+            Base.MP5SD6_Fixed = Base.MP5SD6_Fixed,
+            Base.MP5SD6_Stock = Base.MP5SD6_Stock,
+            Base.MP5SD6_Fold = Base.MP5SD6_Fold,
+            Base.UMP9_Stock = Base.UMP9_Stock,
+            Base.UMP9_Fold = Base.UMP9_Fold,
+            Base.UMP45_Stock = Base.UMP45_Stock,
+            Base.UMP45_Fold = Base.UMP45_Fold,
+            Base.XM8Compact_Pistol = Base.XM8Compact_Pistol,
+            Base.XM8 = Base.XM8,
+            Base.XM8LMG = Base.XM8LMG,
+        }
+    }
+
+    craftRecipe FWP_Remove_FN_Trigger_Group
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPRemoveTriggerGroup,
+        inputs
+        {
+            item 1 [Base.FAL;Base.FAL_PARA_Stock;Base.FAL_PARA_Fold;Base.FN_FNC;Base.FN_FNC_Fold] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mappers[FWP_Remove_FN_Trigger_Group_Weapon] mode:destroy,
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 mapper:FWP_Remove_FN_Trigger_Group_Weapon,
+        }
+        itemMapper FWP_Remove_FN_Trigger_Group_Weapon
+        {
+            Base.FAL = Base.FAL,
+            Base.FAL_PARA_Stock = Base.FAL_PARA_Stock,
+            Base.FAL_PARA_Fold = Base.FAL_PARA_Fold,
+            Base.FN_FNC = Base.FN_FNC,
+            Base.FN_FNC_Fold = Base.FN_FNC_Fold,
+        }
+    }
+
+    craftRecipe FWP_Install_FN_Trigger_Group
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPInstallTriggerGroup,
+        inputs
+        {
+            item 1 [Base.FAL;Base.FAL_PARA_Stock;Base.FAL_PARA_Fold;Base.FN_FNC;Base.FN_FNC_Fold] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mappers[FWP_Install_FN_Trigger_Group_Weapon] mode:destroy,
+            item 1 [Base.TriggerGroup_FN] flags[Prop1],
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 mapper:FWP_Install_FN_Trigger_Group_Weapon,
+        }
+        itemMapper FWP_Install_FN_Trigger_Group_Weapon
+        {
+            Base.FAL = Base.FAL,
+            Base.FAL_PARA_Stock = Base.FAL_PARA_Stock,
+            Base.FAL_PARA_Fold = Base.FAL_PARA_Fold,
+            Base.FN_FNC = Base.FN_FNC,
+            Base.FN_FNC_Fold = Base.FN_FNC_Fold,
+        }
+    }
+    */
+
+    /*
+        Disabled for B42 server stability: these legacy recipes hard-reference
+        paintball fulltypes that existing world dictionaries can mark missing or
+        removed, which aborts PostWorldDictionaryInit before the server can boot.
+    */
+
+    craftRecipe FWP_Prepare_Paintball_Canister
+    {
+        timedAction = Making,
+        time = 40,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPAirguns,
+        inputs
+        {
+            item 1 [Base.Standard_PB_Can] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 Base.M2A1_Can,
+        }
+    }
+
+    /*
+        Disabled for B42 server stability: CO2 cartridge weapon work now runs
+        through FWP_WeaponWorkRuntime instead of craftRecipe itemMapper swaps.
+
+    craftRecipe FWP_Install_CO2_Cartridge
+    {
+        timedAction = Making,
+        time = 40,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPAirguns,
+        OnCreate = RecipeCodeOnCreate.FWPInstallPaintballCanister,
+        inputs
+        {
+            item 1 [Base.UmarexSS;Base.Sheridan_PGP] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mappers[FWP_Install_CO2_Cartridge_Weapon] mode:destroy,
+            item 1 [Base.CO2_Cartridge] flags[Prop1],
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 mapper:FWP_Install_CO2_Cartridge_Weapon,
+        }
+        itemMapper FWP_Install_CO2_Cartridge_Weapon
+        {
+            Base.UmarexSS = Base.UmarexSS,
+            Base.Sheridan_PGP = Base.Sheridan_PGP,
+        }
+    }
+
+    craftRecipe FWP_Remove_CO2_Cartridge
+    {
+        timedAction = Making,
+        time = 40,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPAirguns,
+        OnCreate = RecipeCodeOnCreate.FWPRemovePaintballCanister,
+        inputs
+        {
+            item 1 [Base.UmarexSS;Base.Sheridan_PGP] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mappers[FWP_Remove_CO2_Cartridge_Weapon] mode:destroy,
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 mapper:FWP_Remove_CO2_Cartridge_Weapon,
+        }
+        itemMapper FWP_Remove_CO2_Cartridge_Weapon
+        {
+            Base.UmarexSS = Base.UmarexSS,
+            Base.Sheridan_PGP = Base.Sheridan_PGP,
+        }
+    }
+    */
+
+    craftRecipe FWP_Charge_Laser_DVAL
+    {
+        timedAction = Making,
+        time = 30,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPAttachments,
+        OnCreate = RecipeCodeOnCreate.FWPChargeWeaponLight,
+        inputs
+        {
+            item 1 [Base.Laser_DVAL;Base.Laser_DVAL_ON] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+            item 1 [Base.Battery] flags[Prop1] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Laser_DVAL,
+        }
+    }
+
+    craftRecipe FWP_Charge_Laser_PEQ15
+    {
+        timedAction = Making,
+        time = 30,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPAttachments,
+        OnCreate = RecipeCodeOnCreate.FWPChargeWeaponLight,
+        inputs
+        {
+            item 1 [Base.Laser_PEQ15;Base.Laser_PEQ15_ON] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+            item 1 [Base.Battery] flags[Prop1] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Laser_PEQ15,
+        }
+    }
+
+    craftRecipe FWP_Charge_Light_Small_Socom
+    {
+        timedAction = Making,
+        time = 30,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPAttachments,
+        OnCreate = RecipeCodeOnCreate.FWPChargeWeaponLight,
+        inputs
+        {
+            item 1 [Base.Light_Small_Socom;Base.Light_Small_Socom_ON] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+            item 1 [Base.Battery] flags[Prop1] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Light_Small_Socom,
+        }
+    }
+
+    craftRecipe FWP_Charge_Light_Small
+    {
+        timedAction = Making,
+        time = 30,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPAttachments,
+        OnCreate = RecipeCodeOnCreate.FWPChargeWeaponLight,
+        inputs
+        {
+            item 1 [Base.Light_Small] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+            item 1 [Base.Battery] flags[Prop1] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Light_Small,
+        }
+    }
+
+    craftRecipe FWP_Charge_Light_Large
+    {
+        timedAction = Making,
+        time = 30,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPAttachments,
+        OnCreate = RecipeCodeOnCreate.FWPChargeWeaponLight,
+        inputs
+        {
+            item 1 [Base.Light_Large] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+            item 1 [Base.Battery] flags[Prop1] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Light_Large,
+        }
+    }
+
+    craftRecipe FWP_Charge_Light_Medium_M900
+    {
+        timedAction = Making,
+        time = 30,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPAttachments,
+        OnCreate = RecipeCodeOnCreate.FWPChargeWeaponLight,
+        inputs
+        {
+            item 1 [Base.Light_Medium_M900] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+            item 1 [Base.Battery] flags[Prop1] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Light_Medium_M900,
+        }
+    }
+
+    craftRecipe FWP_Charge_Light_Small_TLR_7AH
+    {
+        timedAction = Making,
+        time = 30,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPAttachments,
+        OnCreate = RecipeCodeOnCreate.FWPChargeWeaponLight,
+        inputs
+        {
+            item 1 [Base.Light_Small_TLR_7AH] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+            item 1 [Base.Battery] flags[Prop1] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Light_Small_TLR_7AH,
+        }
+    }
+
+    craftRecipe FWP_Charge_Light_Medium_M952V
+    {
+        timedAction = Making,
+        time = 30,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPAttachments,
+        OnCreate = RecipeCodeOnCreate.FWPChargeWeaponLight,
+        inputs
+        {
+            item 1 [Base.Light_Medium_M952V] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+            item 1 [Base.Battery] flags[Prop1] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Light_Medium_M952V,
+        }
+    }
+
+    craftRecipe FWP_Charge_Laser_Red
+    {
+        timedAction = Making,
+        time = 30,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPAttachments,
+        OnCreate = RecipeCodeOnCreate.FWPChargeWeaponLight,
+        inputs
+        {
+            item 1 [Base.Laser_Red;Base.Laser_Red_ON] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+            item 1 [Base.Battery] flags[Prop1] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Laser_Red,
+        }
+    }
+
+    craftRecipe FWP_Charge_Laser_Green
+    {
+        timedAction = Making,
+        time = 30,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPAttachments,
+        OnCreate = RecipeCodeOnCreate.FWPChargeWeaponLight,
+        inputs
+        {
+            item 1 [Base.Laser_Green;Base.Laser_Green_ON] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+            item 1 [Base.Battery] flags[Prop1] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Laser_Green,
+        }
+    }
+
+    craftRecipe FWP_Use_Extinguisher_As_Weapon
+    {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPFuelTools,
+        OnCreate = RecipeCodeOnCreate.FWPEquipFireExtinguisher,
+        inputs
+        {
+            item 1 [Base.Extinguisher] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.FireExtinguisher,
+        }
+    }
+
+    craftRecipe FWP_Use_Extinguisher_As_Tool
+    {
+        timedAction = Making,
+        time = 5,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPFuelTools,
+        OnCreate = RecipeCodeOnCreate.FWPUnEquipFireExtinguisher,
+        inputs
+        {
+            item 1 [Base.FireExtinguisher] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.Extinguisher,
+        }
+    }
+
+    craftRecipe FWP_Create_Improvised_Flame_Thrower
+    {
+        timedAction = Making,
+        time = 80,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPFuelTools,
+        OnCreate = RecipeCodeOnCreate.FWPImprovisedFlameThrower,
+        inputs
+        {
+            item 1 [Base.WD] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+            item 1 [Base.Lighter] flags[InheritUses;Prop2] mode:destroy,
+            item 1 [Base.RubberBand],
+            item 1 [Base.DuctTape],
+        }
+        outputs
+        {
+            item 1 Base.WD_Flame,
+        }
+    }
+
+    craftRecipe FWP_Scrap_Improvised_Flame_Thrower
+    {
+        timedAction = Making,
+        time = 50,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPFuelTools,
+        OnCreate = RecipeCodeOnCreate.FWPScrapImprovisedFlameThrower,
+        inputs
+        {
+            item 1 [Base.WD_Flame] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.WD,
+        }
+    }
+
+    craftRecipe FWP_Refill_M2A1_Canister
+    {
+        timedAction = Making,
+        time = 40,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPFuelTools,
+        OnCreate = RecipeCodeOnCreate.FWPRefillM2A1Canister,
+        inputs
+        {
+            item 1 [Base.M2A1_Can] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+            item 1 [Base.PropaneTank] mode:keep flags[NotEmpty;ItemCount;Prop1],
+        }
+        outputs
+        {
+            item 1 Base.M2A1_Can,
+        }
+    }
+
+    craftRecipe FWP_Refill_M2A1_Tank
+    {
+        timedAction = Making,
+        time = 40,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPFuelTools,
+        OnCreate = RecipeCodeOnCreate.FWPRefillM2A1Tank,
+        inputs
+        {
+            item 1 [Base.M2A1_Tank] flags[AllowFavorite;InheritFavorite;InheritCondition;InheritUses;ItemCount] mode:destroy,
+            item 1 [*],
+            -fluid 0.1 [Petrol],
+        }
+        outputs
+        {
+            item 1 Base.M2A1_Tank,
+        }
+    }
+
+    craftRecipe FWP_Refill_SS2000
+    {
+        timedAction = Making,
+        time = 40,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPFuelTools,
+        OnCreate = RecipeCodeOnCreate.FWPRefillSS2000,
+        inputs
+        {
+            item 1 [Base.SS2000] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [*],
+            -fluid 0.2 categories[Water] mode:mixture,
+        }
+        outputs
+        {
+            item 1 Base.SS2000,
+        }
+    }
+
+    craftRecipe FWP_Refill_H460_Chainsaw
+    {
+        timedAction = Making,
+        time = 40,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPFuelTools,
+        OnCreate = RecipeCodeOnCreate.FWPRefillPetrolTool,
+        inputs
+        {
+            item 1 [Base.H460_Chainsaw] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [*],
+            -fluid 0.1 [Petrol],
+        }
+        outputs
+        {
+            item 1 Base.H460_Chainsaw,
+        }
+    }
+
+    craftRecipe FWP_Refill_P21_Chainsaw
+    {
+        timedAction = Making,
+        time = 40,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPFuelTools,
+        OnCreate = RecipeCodeOnCreate.FWPRefillPetrolTool,
+        inputs
+        {
+            item 1 [Base.P21_Chainsaw] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [*],
+            -fluid 0.1 [Petrol],
+        }
+        outputs
+        {
+            item 1 Base.P21_Chainsaw,
+        }
+    }
+
+    craftRecipe FWP_Refill_Makita_Chainsaw
+    {
+        timedAction = Making,
+        time = 40,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPFuelTools,
+        OnCreate = RecipeCodeOnCreate.FWPRefillPetrolTool,
+        inputs
+        {
+            item 1 [Base.Makita_Chainsaw] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [*],
+            -fluid 0.1 [Petrol],
+        }
+        outputs
+        {
+            item 1 Base.Makita_Chainsaw,
+        }
+    }
+
+    /*
+        Disabled for B42 server stability: barrel swaps, saw-offs, and SKS
+        fixed/detachable magazine work now run through FWP_WeaponWorkRuntime.
+        Keeping these as craftRecipe weapon-ID swaps can brick old worlds when
+        the save dictionary has any listed item marked missing or removed.
+
+    craftRecipe FWP_Install_308_Barrel
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPSwapBarrel,
+        inputs
+        {
+            item 1 [Base.Thompson_Center_3006;Base.Thompson_Center_4570] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.Barrel_308] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.Thompson_Center_308,
+        }
+    }
+
+    craftRecipe FWP_Install_3006_Barrel
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPSwapBarrel,
+        inputs
+        {
+            item 1 [Base.Thompson_Center_308;Base.Thompson_Center_4570] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.Barrel_3006] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.Thompson_Center_3006,
+        }
+    }
+
+    craftRecipe FWP_Install_4570_Barrel
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPSwapBarrel,
+        inputs
+        {
+            item 1 [Base.Thompson_Center_3006;Base.Thompson_Center_308] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.Barrel_4570] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.Thompson_Center_4570,
+        }
+    }
+
+    craftRecipe FWP_Install_45LC_Barrel
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPSwapBarrel,
+        inputs
+        {
+            item 1 [Base.NEF_Handi_38;Base.NEF_Handi_357;Base.NEF_Handi_38_Sawed;Base.NEF_Handi_357_Sawed] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.Barrel_45LC] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.NEF_Handi_45LC,
+        }
+    }
+
+    craftRecipe FWP_Install_357_Barrel
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPSwapBarrel,
+        inputs
+        {
+            item 1 [Base.NEF_Handi_45LC;Base.NEF_Handi_410;Base.NEF_Handi_45LC_Sawed;Base.NEF_Handi_410_Sawed] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.Barrel_357] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.NEF_Handi_357,
+        }
+    }
+
+    craftRecipe FWP_Install_45LC_Short_Barrel
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPSwapBarrel,
+        inputs
+        {
+            item 1 [Base.NEF_Handi_38;Base.NEF_Handi_357;Base.NEF_Handi_38_Sawed;Base.NEF_Handi_357_Sawed] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.Barrel_45LC_Short] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.NEF_Handi_45LC_Sawed,
+        }
+    }
+
+    craftRecipe FWP_Install_357_Short_Barrel
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPSwapBarrel,
+        inputs
+        {
+            item 1 [Base.NEF_Handi_45LC;Base.NEF_Handi_410;Base.NEF_Handi_45LC_Sawed;Base.NEF_Handi_410_Sawed] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.Barrel_357_Short] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.NEF_Handi_357_Sawed,
+        }
+    }
+
+    craftRecipe FWP_Saw_Off_KS23
+    {
+        timedAction = SawOffShotgun,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPUniversalSawoff,
+        inputs
+        {
+            item 1 [Base.KS23] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 tags[base:metalsaw;base:smallsaw;base:saw] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 Base.KS23_S_Pistol,
+        }
+    }
+
+    craftRecipe FWP_Saw_Off_Coachgun_Barrel
+    {
+        timedAction = SawOffShotgun,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPUniversalSawoff,
+        inputs
+        {
+            item 1 [Base.Coachgun] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 tags[base:metalsaw;base:smallsaw;base:saw] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 Base.Coachgun_Sawed,
+        }
+    }
+
+    craftRecipe FWP_Saw_Off_Coachgun_Stock
+    {
+        timedAction = SawOffShotgun,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPUniversalSawoff,
+        inputs
+        {
+            item 1 [Base.Coachgun_Sawed] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 tags[base:metalsaw;base:smallsaw;base:saw] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 Base.Coachgun_Pistol,
+        }
+    }
+
+    craftRecipe FWP_Saw_Off_DT11_Barrel
+    {
+        timedAction = SawOffShotgun,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPUniversalSawoff,
+        inputs
+        {
+            item 1 [Base.DT11] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 tags[base:metalsaw;base:smallsaw;base:saw] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 Base.DT11_Sawed,
+        }
+    }
+
+    craftRecipe FWP_Saw_Off_DT11_Stock
+    {
+        timedAction = SawOffShotgun,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPUniversalSawoff,
+        inputs
+        {
+            item 1 [Base.DT11_Sawed] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 tags[base:metalsaw;base:smallsaw;base:saw] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 Base.DT11_Pistol,
+        }
+    }
+
+    craftRecipe FWP_Saw_Off_M1887
+    {
+        timedAction = SawOffShotgun,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPUniversalSawoff,
+        inputs
+        {
+            item 1 [Base.M1887] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 tags[base:metalsaw;base:smallsaw;base:saw] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 Base.M1887_Sawed,
+        }
+    }
+
+    craftRecipe FWP_Saw_Off_NEF_38
+    {
+        timedAction = SawOffShotgun,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPUniversalSawoff,
+        inputs
+        {
+            item 1 [Base.NEF_Handi_38] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 tags[base:metalsaw;base:smallsaw;base:saw] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 Base.NEF_Handi_38_Sawed,
+        }
+    }
+
+    craftRecipe FWP_Saw_Off_NEF_357
+    {
+        timedAction = SawOffShotgun,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPUniversalSawoff,
+        inputs
+        {
+            item 1 [Base.NEF_Handi_357] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 tags[base:metalsaw;base:smallsaw;base:saw] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 Base.NEF_Handi_357_Sawed,
+        }
+    }
+
+    craftRecipe FWP_Saw_Off_NEF_410
+    {
+        timedAction = SawOffShotgun,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPUniversalSawoff,
+        inputs
+        {
+            item 1 [Base.NEF_Handi_410] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 tags[base:metalsaw;base:smallsaw;base:saw] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 Base.NEF_Handi_410_Sawed,
+        }
+    }
+
+    craftRecipe FWP_Saw_Off_NEF_45LC
+    {
+        timedAction = SawOffShotgun,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPUniversalSawoff,
+        inputs
+        {
+            item 1 [Base.NEF_Handi_45LC] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 tags[base:metalsaw;base:smallsaw;base:saw] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 Base.NEF_Handi_45LC_Sawed,
+        }
+    }
+
+    craftRecipe FWP_Saw_Off_Mosin
+    {
+        timedAction = SawOffShotgun,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPUniversalSawoff,
+        inputs
+        {
+            item 1 [Base.Mosin] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 tags[base:metalsaw;base:smallsaw;base:saw] mode:keep flags[MayDegradeLight;Prop1],
+        }
+        outputs
+        {
+            item 1 Base.MosinObrez_Pistol,
+        }
+    }
+
+    craftRecipe FWP_Install_Fixed_Mag_SKS_A26
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS_A26] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.SKSFixedBox] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS_A26,
+        }
+    }
+
+    craftRecipe FWP_Convert_SKS_A26_Detachable
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS_A26] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.AKClip] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS30_A26,
+        }
+    }
+
+    craftRecipe FWP_Convert_SKS_A26_Fixed
+    {
+        timedAction = Making,
+        time = 200,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS30_A26] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.SKSFixedBox] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS_A26,
+        }
+    }
+
+    craftRecipe FWP_Install_Fixed_Mag_SKS
+    {
+        timedAction = Making,
+        time = 300,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.SKSFixedBox] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS,
+        }
+    }
+
+    craftRecipe FWP_Install_Fixed_Mag_SKS_Bayo
+    {
+        timedAction = Making,
+        time = 300,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS_Bayo] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.SKSFixedBox] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS_Bayo,
+        }
+    }
+
+    craftRecipe FWP_Convert_SKS_Detachable
+    {
+        timedAction = Making,
+        time = 300,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.AKClip] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS30,
+        }
+    }
+
+    craftRecipe FWP_Convert_SKS_Fixed
+    {
+        timedAction = Making,
+        time = 300,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS30] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.SKSFixedBox] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS,
+        }
+    }
+
+    craftRecipe FWP_Convert_SKS_Bayo_Detachable
+    {
+        timedAction = Making,
+        time = 300,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS_Bayo] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.AKClip] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS30_Bayo,
+        }
+    }
+
+    craftRecipe FWP_Convert_SKS_Bayo_Fixed
+    {
+        timedAction = Making,
+        time = 300,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS30_Bayo] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.SKSFixedBox] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS_Bayo,
+        }
+    }
+
+    craftRecipe FWP_Install_Fixed_Mag_SKS_PARA
+    {
+        timedAction = Making,
+        time = 300,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS_PARA] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.SKSFixedBox] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS_PARA,
+        }
+    }
+
+    craftRecipe FWP_Install_Fixed_Mag_SKS_PARA_Bayo
+    {
+        timedAction = Making,
+        time = 300,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS_PARA_Bayo] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.SKSFixedBox] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS_PARA_Bayo,
+        }
+    }
+
+    craftRecipe FWP_Convert_SKS_PARA_Detachable
+    {
+        timedAction = Making,
+        time = 300,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS_PARA] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.AKClip] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS30_PARA,
+        }
+    }
+
+    craftRecipe FWP_Convert_SKS_PARA_Fixed
+    {
+        timedAction = Making,
+        time = 300,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS30_PARA] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.SKSFixedBox] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS_PARA,
+        }
+    }
+
+    craftRecipe FWP_Convert_SKS_PARA_Bayo_Detachable
+    {
+        timedAction = Making,
+        time = 300,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS_PARA_Bayo] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.AKClip] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS30_PARA_Bayo,
+        }
+    }
+
+    craftRecipe FWP_Convert_SKS_PARA_Bayo_Fixed
+    {
+        timedAction = Making,
+        time = 300,
+        Tags = InHandCraft,
+        NeedToBeLearn = False,
+        category = FWPWeaponWork,
+        OnCreate = RecipeCodeOnCreate.FWPFixedMagType,
+        inputs
+        {
+            item 1 [Base.SKS30_PARA_Bayo] flags[Prop2;AllowFavorite;InheritFavorite;InheritCondition;InheritAmmunition] mode:destroy,
+            item 1 [Base.SKSFixedBox] flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.SKS_PARA_Bayo,
+        }
+    }
+
+    */
+}

@@ -1,0 +1,19 @@
+{
+    "IGUI_FWP_INSPECT_INSPECT_WEAPON":  "�������� �����",
+    "IGUI_FWP_INSPECT_CONDITION":  "����",
+    "IGUI_FWP_INSPECT_PRISTINE":  "³������",
+    "IGUI_FWP_INSPECT_USED":  "��������",
+    "IGUI_FWP_INSPECT_DAMAGED":  "�����������",
+    "IGUI_FWP_INSPECT_BADLY_DAMAGED":  "������ �����������",
+    "IGUI_FWP_INSPECT_REPAIR_NONE":  "���� ����� �������",
+    "IGUI_FWP_INSPECT_REPAIR_SLIGHTLY":  "������ �������������",
+    "IGUI_FWP_INSPECT_REPAIR_HEAVILY":  "��������� �������������",
+    "IGUI_FWP_INSPECT_ATTACHMENTS":  "����",
+    "IGUI_FWP_INSPECT_NONE":  "����",
+    "IGUI_FWP_INSPECT_CANON":  "�����",
+    "IGUI_FWP_INSPECT_CLIP":  "�������",
+    "IGUI_FWP_INSPECT_RECOIL_PAD":  "����������",
+    "IGUI_FWP_INSPECT_SCOPE":  "������",
+    "IGUI_FWP_INSPECT_SLING":  "�����",
+    "IGUI_FWP_INSPECT_STOCK":  "�������"
+}

@@ -2009,6 +2009,24 @@ option CommonSenseReborn.EnableClaimRespawn
     translation = EnableClaimRespawn,
 }
 
+option CommonSenseReborn.EnableLoginProtection
+{
+    type = boolean,
+    default = true,
+    page = CSR_Server,
+    translation = EnableLoginProtection,
+}
+
+option CommonSenseReborn.LoginProtectionSeconds
+{
+    type = integer,
+    min = 1,
+    max = 120,
+    default = 45,
+    page = CSR_Server,
+    translation = LoginProtectionSeconds,
+}
+
 
 option CommonSenseReborn.EnableColoredToggles
 {

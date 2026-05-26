@@ -1,0 +1,7 @@
+Recipes_EN = {
+	Recipe_OpenDriedFoodCan = "Open Dried Food Can",
+    Recipe_OpenDriedFoodCanWithKnifeOrSharpStoneFlake = "Open Dried Food Can with Knife",
+    Recipe_RehydrateSteak = "Rehydrate Steak",
+    Recipe_RehydrateChicken = "Rehydrate Chicken",
+    Recipe_RehydratePorkChop = "Rehydrate Pork Chop",
+}

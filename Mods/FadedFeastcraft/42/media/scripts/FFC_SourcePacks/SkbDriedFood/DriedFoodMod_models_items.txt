@@ -1,0 +1,34 @@
+module DriedFoodMod
+{
+  imports
+  {
+    Base
+  }
+
+  model FDriedFoodCan_Ground
+  {
+    mesh = CanClosed,
+    texture = WorldItems/FDriedFoodCan_Ground,
+  }
+
+  model FDriedSteak_Ground
+  {
+    mesh = WorldItems/Steak,
+	  texture = WorldItems/SteakBurnt,
+	  scale = 0.3,
+  }
+
+  model FDriedChicken_Ground
+  {
+    mesh = WorldItems/Chicken,
+    texture = WorldItems/ChickenBurnt,
+    scale = 0.3,
+  }
+
+  model FDriedPorkChop_Ground
+  {
+    mesh = WorldItems/PorkChop,
+	  texture = WorldItems/PorkChopBurnt,
+	  scale = 0.3,
+  }
+}

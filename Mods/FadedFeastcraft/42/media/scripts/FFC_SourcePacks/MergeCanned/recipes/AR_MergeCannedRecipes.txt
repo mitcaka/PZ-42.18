@@ -1,0 +1,52 @@
+module Base
+{
+    craftRecipe AR.MergeOpenedCan
+    {
+        timedAction = MixingBowl,
+        time = 50,
+        OnCreate = Recipe.OnCreate.AR_MergeResource,
+        Tags = InHandCraft;Cooking,
+        category = Cooking,
+        inputs
+        {
+            item 2 [Base.OpenBeans;Base.CannedBologneseOpen;Base.CannedCarrotsOpen;Base.CannedChiliOpen;Base.CannedCornedBeefOpen;Base.CannedCornOpen;Base.CannedFruitBeverageOpen;Base.CannedFruitCocktailOpen;Base.CannedMilkOpen;Base.CannedMushroomSoupOpen;Base.CannedPeachesOpen;Base.CannedPeasOpen;Base.CannedPineappleOpen;Base.CannedPotatoOpen;Base.CannedSardinesOpen;Base.CannedTomatoOpen;Base.DogfoodOpen;Base.TinnedSoupOpen;Base.TunaTinOpen;Base.CannedBellPepper_Open;Base.CannedBroccoli_Open;Base.CannedCabbage_Open;Base.CannedCarrots_Open;Base.CannedEggplant_Open;Base.CannedLeek_Open;Base.CannedPotato_Open;Base.CannedRedRadish_Open;Base.CannedTomato_Open] mappers[canMapper] flags[Prop2;NotFull;AllowFrozenItem;InheritFoodAge;InheritFreezingTime;IsExclusive;ItemCount],
+        }
+        outputs
+        {
+            item 1 mapper:canMapper,
+            item 1 Base.TinCanEmpty,
+        }
+        itemMapper canMapper
+        {
+            Base.OpenBeans = Base.OpenBeans,
+            Base.CannedBologneseOpen = Base.CannedBologneseOpen,
+            Base.CannedCarrotsOpen = Base.CannedCarrotsOpen,
+            Base.CannedChiliOpen = Base.CannedChiliOpen,
+            Base.CannedCornedBeefOpen = Base.CannedCornedBeefOpen,
+            Base.CannedCornOpen = Base.CannedCornOpen,
+            Base.CannedFruitBeverageOpen = Base.CannedFruitBeverageOpen,
+            Base.CannedFruitCocktailOpen = Base.CannedFruitCocktailOpen,
+            Base.CannedMilkOpen = Base.CannedMilkOpen,
+            Base.CannedMushroomSoupOpen = Base.CannedMushroomSoupOpen,
+            Base.CannedPeachesOpen = Base.CannedPeachesOpen,
+            Base.CannedPeasOpen = Base.CannedPeasOpen,
+            Base.CannedPineappleOpen = Base.CannedPineappleOpen,
+            Base.CannedPotatoOpen = Base.CannedPotatoOpen,
+            Base.CannedSardinesOpen = Base.CannedSardinesOpen,
+            Base.CannedTomatoOpen = Base.CannedTomatoOpen,
+            Base.DogfoodOpen = Base.DogfoodOpen,
+            Base.TinnedSoupOpen = Base.TinnedSoupOpen,
+            Base.TunaTinOpen = Base.TunaTinOpen,
+            
+            Base.CannedBellPepper_Open = Base.CannedBellPepper_Open,
+            Base.CannedBroccoli_Open = Base.CannedBroccoli_Open,
+            Base.CannedCabbage_Open = Base.CannedCabbage_Open,
+            Base.CannedCarrots_Open = Base.CannedCarrots_Open,
+            Base.CannedEggplant_Open = Base.CannedEggplant_Open,
+            Base.CannedLeek_Open = Base.CannedLeek_Open,
+            Base.CannedPotato_Open = Base.CannedPotato_Open,
+            Base.CannedRedRadish_Open = Base.CannedRedRadish_Open,
+            Base.CannedTomato_Open = Base.CannedTomato_Open,
+        }
+    }
+}

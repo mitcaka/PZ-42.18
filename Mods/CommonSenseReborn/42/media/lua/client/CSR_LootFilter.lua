@@ -644,6 +644,259 @@ local function layoutInventoryFilterControls(page)
     if page.csrFilterBtn.bringToTop then page.csrFilterBtn:bringToTop() end
 end
 
+local function wipeArray(t)
+    if not t then return end
+    if table.wipe then
+        table.wipe(t)
+        return
+    end
+    for k, _ in pairs(t) do
+        t[k] = nil
+    end
+end
+
+local function getTextFallback(key, fallback)
+    if getTextOrNull then
+        local text = getTextOrNull(key)
+        if text then return text end
+    end
+    if getText then
+        local text = getText(key)
+        if text then return text end
+    end
+    return fallback or key
+end
+
+local function isUsableContainer(container)
+    return container
+        and container.getType
+        and container.getItems
+        and container.getEffectiveCapacity
+end
+
+local function addContainedBags(page, container)
+    if not page or not isUsableContainer(container) then return end
+    local items = container:getItems()
+    if not items or not items.size or not items.get then return end
+
+    for i = 0, items:size() - 1 do
+        local item = items:get(i)
+        if item and item.getCategory and item:getCategory() == "Container"
+            and item.getInventory and item:getInventory() then
+            local itemContainer = item:getInventory()
+            if isUsableContainer(itemContainer) and itemContainer:getType() ~= nil then
+                local button = page:addContainerButton(
+                    itemContainer,
+                    item.getTex and item:getTex() or nil,
+                    item.getName and item:getName() or "",
+                    item.getName and item:getName() or ""
+                )
+                if button and item.getVisual and item.getClothingItem
+                    and item:getVisual() and item:getClothingItem() then
+                    local tint = item:getVisual():getTint(item:getClothingItem())
+                    if tint then
+                        button:setTextureRGBA(tint:getRedFloat(), tint:getGreenFloat(), tint:getBlueFloat(), 1.0)
+                    end
+                end
+            end
+        end
+    end
+end
+
+local function addVehiclePartContainer(page, vehicle, playerObj, partIndex, truckBedPass)
+    if not page or not vehicle or not vehicle.getPartByIndex then return end
+    local part = vehicle:getPartByIndex(partIndex)
+    if not part or not part.getItemContainer then return end
+
+    local container = part:getItemContainer()
+    if not isUsableContainer(container) then return end
+
+    local partId = part.getId and part:getId() or nil
+    local isTruckBed = partId == "TruckBed"
+    if isTruckBed ~= truckBedPass then return end
+
+    local containerType = container:getType()
+    if containerType == nil then return end
+    local titleKey = "IGUI_VehiclePart" .. tostring(containerType or partId or "Container")
+    local title = getTextFallback(titleKey, tostring(containerType or partId or "Container"))
+    local button = page:addContainerButton(container, nil, title, title)
+    if button and page.checkExplored then
+        page:checkExplored(button.inventory, playerObj)
+    end
+
+    if partId ~= "GloveBox" then
+        addContainedBags(page, container)
+    end
+end
+
+local function finishSafeRefresh(page, playerObj, oldNumBackpacks)
+    if triggerEvent then
+        triggerEvent("OnRefreshInventoryWindowContainers", page, "buttonsAdded")
+    end
+
+    local found = false
+    local foundIndex = -1
+    for index, containerButton in ipairs(page.backpacks) do
+        if page.inventoryPane and containerButton.inventory == page.inventoryPane.inventory then
+            foundIndex = index
+            found = true
+            break
+        end
+    end
+
+    if page.buttonPool then
+        for _, button in ipairs(page.buttonPool) do
+            if page.mouseOverColoredContainer and page.getContainerParent
+                and page:getContainerParent(button.inventory) == page.mouseOverColoredContainer then
+                if page.stopHighlightContainer then
+                    page:stopHighlightContainer(page.mouseOverColoredContainer)
+                end
+                page.mouseOverColoredContainer = nil
+                break
+            end
+        end
+    end
+
+    if page.inventoryPane then
+        page.inventoryPane.inventory = page.inventoryPane.lastinventory
+        page.inventory = page.inventoryPane.inventory
+    end
+
+    if page.backpackChoice ~= nil and playerObj and playerObj.getJoypadBind
+        and playerObj:getJoypadBind() ~= -1 then
+        if not page.onCharacter and oldNumBackpacks == 1 and #page.backpacks > 1 then
+            page.backpackChoice = 1
+        end
+        if page.backpackChoice > #page.backpacks then
+            page.backpackChoice = 1
+        end
+        if page.backpacks[page.backpackChoice] ~= nil and page.inventoryPane then
+            page.inventoryPane.inventory = page.backpacks[page.backpackChoice].inventory
+            page.capacity = page.backpacks[page.backpackChoice].capacity
+        end
+    elseif page.inventoryPane then
+        if not page.onCharacter and oldNumBackpacks == 1 and #page.backpacks > 1 then
+            page.inventoryPane.inventory = page.backpacks[1].inventory
+            page.capacity = page.backpacks[1].capacity
+        elseif found then
+            page.inventoryPane.inventory = page.backpacks[foundIndex].inventory
+            page.capacity = page.backpacks[foundIndex].capacity
+        elseif not found and #page.backpacks > 0 then
+            page.inventoryPane.inventory = page.backpacks[1].inventory
+            page.capacity = page.backpacks[1].capacity
+        elseif page.inventoryPane.lastinventory ~= nil then
+            page.inventoryPane.inventory = page.inventoryPane.lastinventory
+        end
+    end
+
+    if page.forceSelectedContainer then
+        if page.forceSelectedContainerTime and page.forceSelectedContainerTime > getTimestampMs() then
+            for _, containerButton in ipairs(page.backpacks) do
+                if containerButton.inventory == page.forceSelectedContainer and page.inventoryPane then
+                    page.inventoryPane.inventory = containerButton.inventory
+                    page.capacity = containerButton.capacity
+                    break
+                end
+            end
+        else
+            page.forceSelectedContainer = nil
+        end
+    end
+
+    if page.inventoryPane and page.inventoryPane.bringToTop then page.inventoryPane:bringToTop() end
+    if page.resizeWidget2 and page.resizeWidget2.bringToTop then page.resizeWidget2:bringToTop() end
+    if page.resizeWidget and page.resizeWidget.bringToTop then page.resizeWidget:bringToTop() end
+
+    page.inventory = page.inventoryPane and page.inventoryPane.inventory or page.inventory
+    page.title = nil
+    page.selectedButton = nil
+    for _, containerButton in ipairs(page.backpacks) do
+        if containerButton.inventory == page.inventory then
+            page.selectedButton = containerButton
+            containerButton:setBackgroundRGBA(0.7, 0.7, 0.7, 1.0)
+            page.title = containerButton.name
+        else
+            containerButton:setBackgroundRGBA(0.0, 0.0, 0.0, 0.0)
+        end
+    end
+
+    if page.inventoryPane and page.inventoryPane.refreshContainer then
+        page.inventoryPane:refreshContainer()
+    end
+    if page.refreshWeight then page:refreshWeight() end
+    if page.updateItemCount then page:updateItemCount() end
+
+    if page.controlsUI and page.controlsUI.arrange then
+        page.controlsUI:arrange()
+    end
+    if page.inventoryPane and page.resizeWidget and page.controlsUI then
+        page.inventoryPane:setHeight(page.height - page.inventoryPane.y - page.resizeWidget.height - page.controlsUI.height)
+    end
+    if page.containerButtonPanel and page.inventoryPane then
+        page.containerButtonPanel:setHeight(page.inventoryPane.height)
+        page.containerButtonPanel:setY(page.inventoryPane.y)
+        if #page.backpacks > 0 and page.containerButtonPanel.setScrollHeight
+            and page.backpacks[#page.backpacks].getBottom then
+            page.containerButtonPanel:setScrollHeight(page.backpacks[#page.backpacks]:getBottom())
+        end
+    end
+
+    if triggerEvent then
+        triggerEvent("OnRefreshInventoryWindowContainers", page, "end")
+    end
+end
+
+local function safeRefreshVehicleBackpacks(page, playerObj, vehicle)
+    if not page or not playerObj or not vehicle or not vehicle.getPartCount then return false end
+    if not page.inventoryPane or not page.containerButtonPanel or not page.addContainerButton then return false end
+
+    if ISHandCraftPanel then ISHandCraftPanel.drawDirty = true end
+    if ISBuildPanel then ISBuildPanel.drawDirty = true end
+
+    page.buttonPool = page.buttonPool or {}
+    for i, button in ipairs(page.backpacks) do
+        page.containerButtonPanel:removeChild(button)
+        table.insert(page.buttonPool, i, button)
+    end
+
+    page.inventoryPane.lastinventory = page.inventoryPane.inventory
+    if page.inventoryPane.hideButtons then page.inventoryPane:hideButtons() end
+
+    local oldNumBackpacks = #page.backpacks
+    wipeArray(page.backpacks)
+
+    if triggerEvent then
+        triggerEvent("OnRefreshInventoryWindowContainers", page, "begin")
+    end
+
+    local partCount = vehicle:getPartCount()
+    if type(partCount) ~= "number" or partCount <= 0 then
+        finishSafeRefresh(page, playerObj, oldNumBackpacks)
+        return true
+    end
+
+    -- B42 can throw inside vehicle access checks while a vehicle layout is
+    -- settling. When the player is inside the vehicle, keep the loot page alive
+    -- by showing valid item containers and skipping only invalid part records.
+    for partIndex = 0, partCount - 1 do
+        addVehiclePartContainer(page, vehicle, playerObj, partIndex, false)
+    end
+    for partIndex = 0, partCount - 1 do
+        addVehiclePartContainer(page, vehicle, playerObj, partIndex, true)
+    end
+
+    finishSafeRefresh(page, playerObj, oldNumBackpacks)
+    return true
+end
+
+local function trySafeRefreshBackpacks(page)
+    if not page or page.onCharacter then return false end
+    local playerObj = getSpecificPlayer and getSpecificPlayer(page.player) or nil
+    local vehicle = playerObj and playerObj.getVehicle and playerObj:getVehicle() or nil
+    if not vehicle then return false end
+    return safeRefreshVehicleBackpacks(page, playerObj, vehicle)
+end
+
 local function installInventoryOverrides()
     if _overridesInstalled then return end
     if not ISInventoryPage then return end
@@ -743,7 +996,9 @@ local function installInventoryOverrides()
 
     local _origRefreshBackpacks = ISInventoryPage.refreshBackpacks
     function ISInventoryPage:refreshBackpacks(...)
-        _origRefreshBackpacks(self, ...)
+        if not trySafeRefreshBackpacks(self) then
+            _origRefreshBackpacks(self, ...)
+        end
         applyInventoryFilterLayout(self)
     end
 

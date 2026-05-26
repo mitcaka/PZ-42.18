@@ -18,6 +18,9 @@ local MOD_DATA = {
         HandTorchSmall = "WebbingTorchRightVerySmall",
         HandTorchBig = "WebbingTorchRightSmall",
         TorchAngled = "WebbingTorchRightAngled"
+    },
+    HolsterAnkle = {
+        Holster = "Holster Ankle"
     }
 }
 

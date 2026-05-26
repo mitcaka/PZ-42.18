@@ -1,0 +1,19 @@
+{
+    "IGUI_FWP_INSPECT_INSPECT_WEAPON":  "Inspeccionar arma",
+    "IGUI_FWP_INSPECT_CONDITION":  "Condici�n",
+    "IGUI_FWP_INSPECT_PRISTINE":  "Intacta",
+    "IGUI_FWP_INSPECT_USED":  "Usada",
+    "IGUI_FWP_INSPECT_DAMAGED":  "Da�ada",
+    "IGUI_FWP_INSPECT_BADLY_DAMAGED":  "Muy da�ada",
+    "IGUI_FWP_INSPECT_REPAIR_NONE":  "Sin se�al de reparaci�n",
+    "IGUI_FWP_INSPECT_REPAIR_SLIGHTLY":  "Ligeramente reparada",
+    "IGUI_FWP_INSPECT_REPAIR_HEAVILY":  "Fuertemente reparada",
+    "IGUI_FWP_INSPECT_ATTACHMENTS":  "Accesorios",
+    "IGUI_FWP_INSPECT_NONE":  "Ninguno",
+    "IGUI_FWP_INSPECT_CANON":  "Ca��n",
+    "IGUI_FWP_INSPECT_CLIP":  "Peine",
+    "IGUI_FWP_INSPECT_RECOIL_PAD":  "Almohadilla",
+    "IGUI_FWP_INSPECT_SCOPE":  "Mira",
+    "IGUI_FWP_INSPECT_SLING":  "Cabestrillo",
+    "IGUI_FWP_INSPECT_STOCK":  "Culata"
+}

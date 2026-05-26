@@ -1,0 +1,19 @@
+module Base
+{
+
+    item M82Clip
+    {
+	CanStack		=	FALSE,
+	Weight		=	0.2,
+	Type			=	Normal,
+	ItemType = base:normal,
+	DisplayName		=	50-BMG Magazine,
+	DisplayCategory	= 	GunMag,
+	Icon			=	M82Mag,
+	MaxAmmo		=	10,
+	AmmoType		=	fwp:50_bmgbullets,
+	StaticModel		=	GunMagazine,
+	WorldStaticModel	=	W_Standard_Mag_M82,
+	GunType		=	Multi_Gun,
+    }
+}

@@ -1,0 +1,1130 @@
+module Base
+{
+
+-------------------------------------------------  香烟 -------------------------------------------------
+
+    craftRecipe Open Boxed bayi cigarettes		/* 打开一盒八一香烟 */
+	{
+        timedAction = Making,
+        time = 25,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.81cigarette_Pack] mode:destroy flags[IsFull;AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 20 MR.81cigarette,
+		}
+	}
+
+	craftRecipe Take bayiCigarette	/* 拿一根八一香烟 */
+	{
+        timedAction = Making,
+        Time = 10,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.81cigarette_Pack] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 MR.81cigarette,
+		}
+	}
+
+	craftRecipe Add bayiCigarette	/* 将八一香烟放入盒中 */
+	{
+        timedAction = Making,
+        Time = 20,
+        OnCreate = RecipeCodeOnCreate.addToPack,
+        OnTest = RecipeCodeOnTest.canAddToPack,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.81cigarette] flags[AllowFavorite;InheritFavorite],
+			item 1 [MR.81cigarette_Pack] mode:keep flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe UnpackbayiCigaretteCarton	/* 打开条装八一香烟 */
+	{
+        timedAction = UnPackBox_Small,
+        Time = 10,
+		Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.81cigarette_Carton] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 10 MR.81cigarette_Pack,
+		}
+	}
+
+	craftRecipe Pack bayi cigarettes into boxes	/* 将八一香烟打包为盒装 */
+	{
+        timedAction = PackingBox_Small,
+        time = 25,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 20 [MR.81cigarette] flags[IsFull;AllowFavorite;InheritFavorite;ItemCount],
+		}
+		outputs
+		{
+			item 1 MR.81cigarette_Pack,
+		}
+	}
+
+	craftRecipe Pack bayiCigarette Carton	/* 将八一香烟盒装打包为条装 */
+	{
+        timedAction = Making,
+        time = 5,
+        OnTest = RecipeCodeOnTest.genericPacking,
+        Tags = InHandCraft;Packing,
+        category = Armyprovisions,
+		inputs
+		{
+			item 10 [MR.81cigarette_Pack] flags[IsFull;AllowFavorite;InheritFavorite;ItemCount],
+		}
+		outputs
+		{
+			item 1 MR.81cigarette_Carton,
+		}
+	}
+
+    craftRecipe Open Boxed lucky strike		/* 打开一盒鸿运当头香烟 */
+	{
+        timedAction = Making,
+        time = 25,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.lucky_strike_Pack] mode:destroy flags[IsFull;AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 20 MR.lucky_strike,
+		}
+	}
+
+	craftRecipe Take lucky strike	/* 拿一根鸿运当头香烟 */
+	{
+        timedAction = Making,
+		Time = 10,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.lucky_strike_Pack] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 MR.lucky_strike,
+		}
+	}
+
+	craftRecipe Add lucky strike	/* 将鸿运当头香烟放入盒中 */
+	{
+        timedAction = Making,
+		Time = 20,
+        OnCreate = RecipeCodeOnCreate.addToPack,
+        OnTest = RecipeCodeOnTest.canAddToPack,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.lucky_strike] flags[AllowFavorite;InheritFavorite],
+			item 1 [MR.lucky_strike_Pack] mode:keep flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe Pack lucky strike into boxes	/* 将鸿运当头香烟打包为盒装 */
+	{
+        timedAction = PackingBox_Small,
+        time = 25,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 20 [MR.lucky_strike] flags[IsFull;AllowFavorite;InheritFavorite;ItemCount],
+		}
+		outputs
+		{
+			item 1 MR.lucky_strike_Pack,
+		}
+	}
+
+    craftRecipe Open Boxed Camel cigarettes		/* 打开一盒骆驼香烟 */
+	{
+        timedAction = Making,
+        time = 25,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Camel_cigarettes_Pack] mode:destroy flags[IsFull;AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 20 MR.Camel_cigarettes,
+		}
+	}
+
+	craftRecipe Take Camel cigarettes	/* 拿一根骆驼香烟 */
+	{
+        timedAction = Making,
+		Time = 10,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Camel_cigarettes_Pack] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 MR.Camel_cigarettes,
+		}
+	}
+
+	craftRecipe Add Camel cigarettes	/* 将骆驼香烟放入盒中 */
+	{
+        timedAction = Making,
+		Time = 20,
+        OnCreate = RecipeCodeOnCreate.addToPack,
+        OnTest = RecipeCodeOnTest.canAddToPack,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Camel_cigarettes] flags[AllowFavorite;InheritFavorite],
+			item 1 [MR.Camel_cigarettes_Pack] mode:keep flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe Pack Camel cigarettes into boxes	/* 将骆驼香烟打包为盒装 */
+	{
+        timedAction = PackingBox_Small,
+        time = 25,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 20 [MR.Camel_cigarettes] flags[IsFull;AllowFavorite;InheritFavorite;ItemCount],
+		}
+		outputs
+		{
+			item 1 MR.Camel_cigarettes_Pack,
+		}
+	}
+
+    craftRecipe Open Boxed double happiness		/* 打开一盒红双喜香烟 */
+	{
+        timedAction = Making,
+        time = 25,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.double_happiness_Pack] mode:destroy flags[IsFull;AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 20 MR.double_happiness,
+		}
+	}
+
+	craftRecipe Take double happiness	/* 拿一根红双喜香烟 */
+	{
+        timedAction = Making,
+		Time = 10,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.double_happiness_Pack] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 MR.double_happiness,
+		}
+	}
+
+	craftRecipe Add double happiness	/* 将红双喜香烟放入盒中 */
+	{
+        timedAction = Making,
+		Time = 20,
+        OnCreate = RecipeCodeOnCreate.addToPack,
+        OnTest = RecipeCodeOnTest.canAddToPack,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.double_happiness] flags[AllowFavorite;InheritFavorite],
+			item 1 [MR.double_happiness_Pack] mode:keep flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe Pack double happiness into boxes	/* 将红双喜香烟打包为盒装 */
+	{
+        timedAction = PackingBox_Small,
+        time = 25,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 20 [MR.double_happiness] flags[IsFull;AllowFavorite;InheritFavorite;ItemCount],
+		}
+		outputs
+		{
+			item 1 MR.double_happiness_Pack,
+		}
+	}
+
+	craftRecipe UnpackdoublehappinessCarton	/* 打开罐装红双喜香烟 */
+	{
+        timedAction = UnPackBox_Small,
+		Time = 10,
+		Tags = InHandCraft;Packing;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.double_happiness_Carton] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 10 MR.double_happiness_Pack,
+		}
+	}
+
+	craftRecipe Pack double happiness Carton	/* 将红双喜香烟盒装打包为罐装 */
+	{
+        timedAction = PackingBox_Small,
+        time = 5,
+        OnTest = RecipeCodeOnTest.genericPacking,
+        Tags = InHandCraft;Packing,
+        category = Armyprovisions,
+		inputs
+		{
+			item 10 [MR.double_happiness_Pack] flags[IsFull;AllowFavorite;InheritFavorite;ItemCount],
+		}
+		outputs
+		{
+			item 1 MR.double_happiness_Carton,
+		}
+	}
+
+    craftRecipe Open Boxed Gaoxiba cigarettes		/* 打开一盒高希欛雪茄 */
+	{
+        timedAction = Making,
+        time = 25,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Gaoxiba_cigarettes_Pack] mode:destroy flags[IsFull;AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 10 MR.Gaoxiba_cigarettes,
+		}
+	}
+
+	craftRecipe Take Gaoxiba cigarettes	/* 拿一根高希欛雪茄 */
+	{
+        timedAction = Making,
+		Time = 10,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Gaoxiba_cigarettes_Pack] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 MR.Gaoxiba_cigarettes,
+		}
+	}
+
+	craftRecipe Add Gaoxiba cigarettes	/* 将高希欛雪茄放入盒中 */
+	{
+        timedAction = Making,
+		Time = 20,
+        OnCreate = RecipeCodeOnCreate.addToPack,
+        OnTest = RecipeCodeOnTest.canAddToPack,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Gaoxiba_cigarettes] flags[AllowFavorite;InheritFavorite],
+			item 1 [MR.Gaoxiba_cigarettes_Pack] mode:keep flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe Pack Gaoxiba cigarettes into boxes	/* 将高希欛雪茄打包为盒装 */
+	{
+        timedAction = PackingBox_Small,
+        time = 25,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 10 [MR.Gaoxiba_cigarettes] flags[IsFull;AllowFavorite;InheritFavorite;ItemCount],
+		}
+		outputs
+		{
+			item 1 MR.Gaoxiba_cigarettes_Pack,
+		}
+	}
+
+    craftRecipe Open Boxed yulan cigarettes		/* 打开一盒玉兰花烟 */
+	{
+        timedAction = Making,
+        time = 25,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.yulan_cigarettes_Pack] mode:destroy flags[IsFull;AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 20 MR.yulan_cigarettes,
+		}
+	}
+
+	craftRecipe Take yulan cigarettes	/* 拿一根玉兰花烟 */
+	{
+        timedAction = Making,
+		Time = 10,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.yulan_cigarettes_Pack] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 MR.yulan_cigarettes,
+		}
+	}
+
+	craftRecipe Add yulan cigarettes	/* 将玉兰花烟放入盒中 */
+	{
+        timedAction = Making,
+		Time = 20,
+        OnCreate = RecipeCodeOnCreate.addToPack,
+        OnTest = RecipeCodeOnTest.canAddToPack,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.yulan_cigarettes] flags[AllowFavorite;InheritFavorite],
+			item 1 [MR.yulan_cigarettes_Pack] mode:keep flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe Pack yulan cigarettes into boxes	/* 将玉兰花烟打包为盒装 */
+	{
+        timedAction = PackingBox_Small,
+        time = 25,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+			item 20 [MR.yulan_cigarettes] flags[IsFull;AllowFavorite;InheritFavorite;ItemCount],
+		}
+		outputs
+		{
+			item 1 MR.yulan_cigarettes_Pack,
+		}
+	}
+
+	craftRecipe openemergencydrinkingwater	/* 打开一箱应急饮用水 */
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.emergency_drinking_water1],
+		}
+		outputs
+		{
+			item 20 MR.emergency_drinking_water,
+		}
+	}
+
+	craftRecipe open AirForce Chocolate	/* 打开一盒18式空军巧克力 */
+	{
+        timedAction = Making,
+		Time = 20,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.AirForce_Chocolate_pack],
+		}
+		outputs
+		{
+			item 10 MR.AirForce_Chocolate,
+		}
+	}
+
+	craftRecipe open Military energy pack	/* 打开一箱军用执勤能量包 */
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Military_energy_pack],
+		}
+		outputs
+		{
+			item 1 MR.energy_bar,
+			item 1 MR.Energy_adhesive,
+			item 1 MR.AirForce_Chocolate,
+			item 1 MR.81cigarette_Pack,
+		}
+	}
+
+	craftRecipe open Old squadleader pack	/* 打开一箱老班长特供包 */
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Old_squadleader_pack],
+		}
+		outputs
+		{
+			item 2 MR.energy_bar,
+			item 2 MR.AirForce_Chocolate,
+			item 2 MR.Durable_Cake,
+			item 2 MR.81cigarette_Pack,
+		}
+	}
+
+	craftRecipe open Military reconnaissance pack	/* 打开一箱军用侦察物品包 */
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Military_reconnaissance_pack],
+		}
+		outputs
+		{
+			item 2 Base.AlcoholBandage,
+			item 2 Base.AlcoholWipes,
+			item 1 Base.PillsVitamins,
+			item 1 MR.Energy_adhesive,
+		}
+	}
+
+	craftRecipe open Setmenu1	/* 打开21式单兵口粮1号餐 */
+	{
+        timedAction = Making,
+		Time = 40,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Setmenu1],
+		}
+		outputs
+		{
+			item 1 MR.PeaBeef_Rice,
+			item 1 MR.Canned_peaches,
+			item 1 MR.Durable_Cake,
+			item 1 MR.emergency_drinking_water,
+			item 1 Base.AlcoholWipes,
+		}
+	}
+
+	craftRecipe open Setmenu2	/* 打开21式单兵口粮2号餐 */
+	{
+        timedAction = Making,
+		Time = 40,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Setmenu2],
+		}
+		outputs
+		{
+			item 1 MR.Chicken_curry_Rice,
+			item 1 MR.Braised_cannedbeef,
+			item 1 MR.Canned_peaches,
+			item 1 MR.Compressed_Biscuit1,
+			item 1 MR.emergency_drinking_water,
+			item 1 Base.AlcoholWipes,
+		}
+	}
+
+	craftRecipe open Setmenu3	/* 打开21式单兵口粮3号餐 */
+	{
+        timedAction = Making,
+		Time = 40,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Setmenu3],
+		}
+		outputs
+		{
+			item 1 MR.xuecai_Rice,
+			item 1 MR.Durable_Cake,
+			item 1 MR.Compressed_Biscuit1,
+			item 1 MR.emergency_drinking_water,
+			item 1 Base.AlcoholWipes,
+		}
+	}
+
+	craftRecipe open Setmenu4	/* 打开21式单兵口粮4号餐 */
+	{
+        timedAction = Making,
+		Time = 40,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Setmenu4],
+		}
+		outputs
+		{
+			item 1 MR.Spicy_lambmeat_Rice,
+			item 1 MR.Canned_peaches,
+			item 1 MR.Energy_adhesive,
+			item 1 MR.emergency_drinking_water,
+			item 1 Base.AlcoholWipes,
+		}
+	}
+
+	craftRecipe open Setmenu5	/* 打开21式单兵口粮5号餐 */
+	{
+        timedAction = Making,
+		Time = 40,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Setmenu5],
+		}
+		outputs
+		{
+			item 1 MR.pickledcabbage_beef,
+			item 1 MR.Braised_cannedbeef,
+			item 1 MR.Energy_adhesive,
+			item 1 MR.emergency_drinking_water,
+			item 1 Base.AlcoholWipes,
+		}
+	}
+
+	craftRecipe open armyprovisionsA	/* 打开20式A类战斗口粮 */
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.armyprovisionsA],
+		}
+		outputs
+		{
+			item 1 MR.Braised_cannedbeef,
+			item 2 MR.Compressed_Biscuit1,
+			item 1 MR.Canned_peaches,
+			item 1 Base.AlcoholWipes,
+		}
+	}
+
+	craftRecipe open armyprovisionsB	/* 打开20式B类战斗口粮 */
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.armyprovisionsB],
+		}
+		outputs
+		{
+			item 1 MR.Braised_cannedbeef,
+			item 2 MR.Compressed_Biscuit1,
+			item 1 MR.Anti_hypoxia_capsules,
+			item 1 Base.AlcoholWipes,
+		}
+	}
+
+	craftRecipe open Glucose oralsolution	/* 拆开一盒牛磺酸葡萄糖口服液 */
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Glucose_oralsolution_pack],
+		}
+		outputs
+		{
+			item 10 MR.Glucose_oralsolution,
+		}
+	}
+
+	craftRecipe open Military grain	/* 打开一箱军粮 */
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Military_grain],
+		}
+		outputs
+		{
+			item 2 MR.Setmenu1,
+			item 2 MR.Setmenu2,
+			item 2 MR.Setmenu3,
+			item 2 MR.Setmenu4,
+			item 2 MR.Setmenu5,
+		}
+	}
+
+	craftRecipe open box Energy drinks	/* 打开一箱末日工坊牌能量饮料 */
+	{
+        timedAction = Making,
+		Time = 40,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.box_Energy_drinks],
+		}
+		outputs
+		{
+			item 15 MR.Energy_drinks,
+		}
+	}
+
+	craftRecipe open box Braised cannedbeef	/* 打开一盒红烧牛肉罐头 */
+	{
+        timedAction = Making,
+		Time = 20,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.box_Braised_cannedbeef],
+		}
+		outputs
+		{
+			item 2 MR.Braised_cannedbeef,
+		}
+	}
+
+	craftRecipe open Portable first aidkit	/* 打开一箱便携急救包 */
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Portable_first_aidkit],
+		}
+		outputs
+		{
+			item 2 Base.AlcoholBandage,
+			item 2 Base.Bandaid,
+			item 2 Base.AlcoholedCottonBalls,
+			item 2 Base.Antibiotics,
+			item 1 Base.AlcoholWipes,
+			item 1 Base.Tweezers,
+		}
+	}
+
+	craftRecipe open Military first aidkit	/* 打开一箱军用急救包 */
+	{
+        timedAction = Making,
+		Time = 30,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Military_first_aidkit],
+		}
+		outputs
+		{
+			item 4 Base.AlcoholBandage,
+			item 2 Base.Pills,
+			item 1 Base.AlcoholWipes,
+			item 1 Base.PlantainCataplasm,
+			item 1 Base.Antibiotics,
+			item 1 Base.SutureNeedle,
+			item 1 Base.Tweezers,
+		}
+	}
+
+    craftRecipe OpenMRCannedFood	/* 打开罐头食物并食用 */
+    {
+        timedAction = OpenTinCan,
+        time = 100,
+        tags = InHandCraft;CanBeDoneInDark,
+        OnCreate = RecipeCodeOnCreate.openAndEat,
+		category = Armyprovisions,
+        inputs
+        {
+            item 1 tags[base:CanOpener] mode:keep flags[MayDegradeLight],
+            item 1 [MR.Canned_LifeBread;MR.Canned_sesame_ricedumpling;MR.Canned_porkbelly_chickensoup;MR.Canned_spareribsoup;MR.Canned_Cream_BaconSoup;MR.Canned_tomato_stew;MR.Canned_seaweed_peanuts;MR.LaoGanMa_chicken_dicedchili_canned;MR.Smoked_canned_oysters;MR.Sichuan_beefhotpot_canned;MR.douchi_mudcarp;MR.Braised_cannedbeef;MR.Braised_cannedpock] mappers[canned] flags[Prop2],
+        }
+        outputs
+        {
+            item 1 mapper:canned,
+        }
+        itemMapper canned
+        {
+            MR.Canned_LifeBread_open = MR.Canned_LifeBread,
+            MR.Canned_sesame_ricedumpling_open = MR.Canned_sesame_ricedumpling,
+            MR.Canned_porkbelly_chickensoup_open = MR.Canned_porkbelly_chickensoup,
+            MR.Canned_spareribsoup_open = MR.Canned_spareribsoup,
+            MR.Canned_Cream_BaconSoup_open = MR.Canned_Cream_BaconSoup,
+            MR.Canned_tomato_stew_open = MR.Canned_tomato_stew,
+            MR.Canned_seaweed_peanuts_open = MR.Canned_seaweed_peanuts,
+            MR.LaoGanMa_chicken_dicedchili_canned_open = MR.LaoGanMa_chicken_dicedchili_canned,
+            MR.Smoked_canned_oysters_open = MR.Smoked_canned_oysters,
+			MR.Sichuan_beefhotpot_canned_open = MR.Sichuan_beefhotpot_canned,
+			MR.douchi_mudcarp_open = MR.douchi_mudcarp,
+			MR.Braised_cannedbeef_open = MR.Braised_cannedbeef,
+			MR.Braised_cannedpock_open = MR.Braised_cannedpock,
+        }
+    }
+
+	craftRecipe OpenCannedFood use knife	/* 使用刀具开启罐头食物 */
+	{
+		Time = 80,
+        timedAction = OpenTinCanWithKnife,
+        OnCreate = RecipeCodeOnCreate.openCan,
+        Tooltip = Tooltip_Recipe_OpenCanWithKnife,
+        Tags = AnySurfaceCraft;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 tags[base:sharpknife] mode:keep flags[MayDegrade;IsNotDull],
+			item 1 [MR.Canned_LifeBread;MR.Canned_sesame_ricedumpling;MR.Canned_porkbelly_chickensoup;MR.Canned_spareribsoup;MR.Canned_Cream_BaconSoup;MR.Canned_tomato_stew;MR.Canned_seaweed_peanuts;MR.LaoGanMa_chicken_dicedchili_canned;MR.Smoked_canned_oysters;MR.Sichuan_beefhotpot_canned;MR.douchi_mudcarp;MR.Braised_cannedbeef;MR.Braised_cannedpock] mappers[cannedType] flags[Prop2;DontPutBack],
+		}
+		outputs
+		{
+			item 1 mapper:cannedType,
+		}
+		itemMapper cannedType
+		{
+            MR.Canned_LifeBread_open = MR.Canned_LifeBread,
+            MR.Canned_sesame_ricedumpling_open = MR.Canned_sesame_ricedumpling,
+            MR.Canned_porkbelly_chickensoup_open = MR.Canned_porkbelly_chickensoup,
+            MR.Canned_spareribsoup_open = MR.Canned_spareribsoup,
+            MR.Canned_Cream_BaconSoup_open = MR.Canned_Cream_BaconSoup,
+            MR.Canned_tomato_stew_open = MR.Canned_tomato_stew,
+            MR.Canned_seaweed_peanuts_open = MR.Canned_seaweed_peanuts,
+            MR.LaoGanMa_chicken_dicedchili_canned_open = MR.LaoGanMa_chicken_dicedchili_canned,
+            MR.Smoked_canned_oysters_open = MR.Smoked_canned_oysters,
+			MR.Sichuan_beefhotpot_canned_open = MR.Sichuan_beefhotpot_canned,
+			MR.douchi_mudcarp_open = MR.douchi_mudcarp,
+			MR.Braised_cannedbeef_open = MR.Braised_cannedbeef,
+			MR.Braised_cannedpock_open = MR.Braised_cannedpock,
+		}
+	}
+
+    craftRecipe Open Box Of CannedFood	/* 打开箱装罐头食物 */
+    {
+        timedAction = UnPackBox,
+        time = 100,
+        tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Armyprovisions,
+        inputs
+        {
+            item 1 [MR.Canned_LifeBread_box] mappers[canboxs] flags[AllowFavorite;InheritFavorite],
+        }
+        outputs
+        {
+            item 25 mapper:canboxs,
+        }
+        itemMapper canboxs
+        {
+            MR.Canned_LifeBread = MR.Canned_LifeBread_box,
+        }
+    }
+
+	craftRecipe open Lemonjam softpie	/* 打开盒装柠檬果酱软派 */
+	{
+        timedAction = Making,
+		Time = 20,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Lemonjam_softpie_box],
+		}
+		outputs
+		{
+			item 15 MR.Lemonjam_softpie,
+		}
+	}
+
+	craftRecipe open LBlueberry Cake CaramelPie	/* 打开盒装蓝莓蛋糕焦糖派 */
+	{
+        timedAction = Making,
+		Time = 20,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Blueberry_Cake_CaramelPie_box],
+		}
+		outputs
+		{
+			item 15 MR.Blueberry_Cake_CaramelPie,
+		}
+	}
+
+	craftRecipe OpenMRBottleBeer	/* 打开一瓶瓶装啤酒 */
+	{
+        timedAction = OpenBeerBottle,
+		Time = 15,
+        AllowBatchCraft = false,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+            item 1 tags[base:bottleopener] mode:keep,
+			item 1 [MR.Qingdao_CraftBeer;MR.Chocolate_Banana_ShitaoBeer;MR.Chocolate_Banana_ShitaoBeer;MR.Beifeng_Coconut_ShitaoBeer;MR.Jasmine_LongjingBeer] mode:keep flags[DontPutBack;IsSealed;Prop2;Unseal;ItemCount],
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe Open1982RedWine	/* 打开一瓶拉菲酒庄1982红酒 */
+	{
+        timedAction = OpenBeerBottle,
+		Time = 15,
+        AllowBatchCraft = false,
+        Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Armyprovisions,
+		inputs
+		{
+            item 1 tags[base:bottleopener;base:corkscrew] mode:keep,
+			item 1 [MR.Lafite_Rothschild_1982] mode:keep flags[DontPutBack;IsSealed;Prop2;Unseal;ItemCount],
+		}
+		outputs
+		{
+            item 1 Base.Cork,
+		}
+	}
+
+	craftRecipe open Honeyoat proteinstick	/* 打开一盒蜂蜜燕麦蛋白棒 */
+	{
+        timedAction = Making,
+		Time = 50,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Honeyoat_proteinstick_pack],
+		}
+		outputs
+		{
+			item 10 MR.Honeyoat_proteinstick,
+		}
+	}
+
+	craftRecipe Stewed meat vegetables	/* 制作一份炖肉烩蔬菜 */
+	{
+        timedAction = Making,
+		Time = 90,
+		Tags = AnySurfaceCraft;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 2 [MR.Braised_cannedbeef;MR.Braised_cannedpock],
+			item 36 [Base.Cabbage;Base.Potato],
+		}
+		outputs
+		{
+			item 1 MR.Stewed_meat_vegetables,
+		}
+	}
+
+	craftRecipe make Braised beefstew	/* 制作一份红烧牛肉煲 */
+	{
+        timedAction = Making,
+		Time = 90,
+		Tags = AnySurfaceCraft;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.LaoGanMa_chicken_dicedchili_canned],
+			item 2 [MR.Braised_cannedbeef],
+			item 36 [Base.Potato],
+		}
+		outputs
+		{
+			item 1 MR.Braised_beefstew,
+		}
+	}
+
+	craftRecipe open BoxedShrimpDumplings	/* 拆开盒装广州酒家虾饺皇 */
+	{
+        timedAction = Making,
+		Time = 40,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Boxed_ShrimpDumplings],
+		}
+		outputs
+		{
+			item 5 MR.ShrimpDumplings,
+		}
+	}
+
+	craftRecipe open BoxedXiaoLongBao	/* 拆开盒装灌汤鸡汁小笼包 */
+	{
+        timedAction = Making,
+		Time = 40,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Boxed_XiaoLongBao],
+		}
+		outputs
+		{
+			item 4 MR.XiaoLongBao,
+		}
+	}
+
+	craftRecipe open BoxedCrabWonton	/* 拆开盒装蟹籽鲜肉烧麦 */
+	{
+        timedAction = Making,
+		Time = 40,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Boxed_CrabWonton],
+		}
+		outputs
+		{
+			item 6 MR.CrabWonton,
+		}
+	}
+
+	craftRecipe open CompressedBiscuit	/* 拆开多维压缩饼干 */
+	{
+        timedAction = Making,
+		Time = 10,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Compressed_Biscuit1],
+		}
+		outputs
+		{
+			item 2 MR.Compressed_Biscuit2,
+		}
+	}
+
+	craftRecipe open CompressedBiscuit bucket	/* 拆开一桶多维压缩饼干 */
+	{
+        timedAction = Making,
+		Time = 60,
+		Tags = InHandCraft;CanBeDoneInDark;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+			item 1 [MR.Compressed_Biscuit_bucket],
+		}
+		outputs
+		{
+			item 10 MR.Compressed_Biscuit1,
+		}
+	}
+
+	craftRecipe make Juicy Steamed Meatballs	/* 制作清蒸狮子头 */
+	{
+        timedAction = Making,
+		Time = 60,
+		Tags = AnySurfaceCraft;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+            item 40 [Base.MincedMeat] flags[InheritFoodAge;InheritCooked],
+			item 1 [Base.Salt;Base.SeasoningSalt;Base.Pepper],
+			item 1 [Base.Gravy] flags[InheritFoodAge],
+		}
+		outputs
+		{
+			item 1 MR.Juicy_SteamedMeatballs,
+		}
+	}
+
+	craftRecipe make ChineseSteamed PorkRibs	/* 制作广式金蒜蒸排骨 */
+	{
+        timedAction = Making,
+		Time = 60,
+		Tags = AnySurfaceCraft;Cooking,
+		category = Armyprovisions,
+		inputs
+		{
+            item 60 [Base.Pork] flags[InheritFoodAge;InheritCooked],
+			item 1 [Base.Salt;Base.SeasoningSalt;Base.Pepper],
+			item 1 [Base.Gravy] flags[InheritFoodAge],
+		}
+		outputs
+		{
+			item 1 MR.ChineseSteamed_PorkRibs,
+		}
+	}
+
+}

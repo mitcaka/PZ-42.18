@@ -1,0 +1,524 @@
+module Base	{
+					
+	item	XM214	{	
+				
+	DisplayName                 	=	XM-214 Minigun,
+	Icon                        	=	XM214,	
+	WeaponSprite                	=	XM214,	
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,	
+	IsAimedFirearm              	=	TRUE,	
+	WeaponReloadType            	=	boltaction,	
+	FireMode                    	=	[6]Rotary,
+	AttachmentType              	=	Rifle,	
+	UseEndurance                	=	TRUE,
+	EnduranceMod			=	0.04,
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,
+	Tags				=	Fixed_Fold,
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	25	,
+	AimingPerkRangeModifier     	=	4.5	,
+	MinDamage                   	=	1.9	,
+	MaxDamage                   	=	2.5	,
+	CriticalChance              	=	25	,
+	CritDmgMultiplier            	=	4,	
+	AimingPerkCritModifier      	=	10,	
+	HitChance                   	=	15	,
+	ToHitModifier               	=	1.5,	
+	AimingPerkHitChanceModifier 	=	13	,
+	MinAngle                     	=	0.950	,
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	50,	
+	ConditionLowerChanceOneIn   	=	160,	
+	MultipleHitConditionAffected	=	FALSE,	
+	JamGunChance                	=	0.01,	
+	AimingTime                  	=	10,
+	ReloadTime                  	=	25,	
+	SwingTime                   	=	0,
+	MinimumSwingTime            	=	0,
+	SwingAmountBeforeImpact     	=	1.0,	/* SIMULATE BURST DELAY */
+	RecoilDelay                 	=	0,
+	Weight                      	=	9.2,	/* 9.2 = 28 lbs */
+	OAL				=	1.9	,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	base:bullets_556,	
+	AmmoBox                     	=	556Box,	
+	MaxAmmo                     	=	520,	
+	MagazineType                	=	Base.556MiniCan,	
+	MuzzleFlashModelKey = muzzle_flash_hunting_rifle,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	2,	
+	PiercingBullets             	=	TRUE,
+	ShareDamage                 	=	FALSE,	
+	SplatSize                   	=	3,	
+	SplatNumber                 	=	3,	
+	SplatBloodOnNoDeath         	=	TRUE,	
+	PushBackMod                 	=	0.4,	
+	KnockBackOnNoDeath          	=	TRUE,	
+	KnockdownMod                	=	4,	
+	DoorDamage                  	=	12,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Run_Weapon2,	
+	IdleAnim                    	=	Idle_Weapon2,	
+	SwingAnim                   	=	Rifle,	
+	MetalValue                  	=	65,	
+	SoundVolume                 	=	100,	
+	SoundRadius                 	=	90,	
+	SoundGain                   	=	1,	
+	NPCSoundBoost               	=	1.5,	
+	SwingSound                  	=	[6]Minigun_308,
+	BringToBearSound		=	M14BringToBear,
+	HitSound            		=	BulletHitBody,
+	ClickSound         		=	M14Jam,
+	BreakSound       		=	M14Break,
+	EquipSound       		=	M14Equip,
+	UnequipSound     		=	M14UnEquip,
+	InsertAmmoSound  		=	M14InsertAmmo,
+	EjectAmmoSound  		=	M14EjectAmmo,
+	InsertAmmoStartSound		=	M14InsertAmmoStart,
+	InsertAmmoStopSound		=	M14InsertAmmoStop,
+	EjectAmmoStartSound		=	M14EjectAmmoStart,
+	EjectAmmoStopSound		=	M14EjectAmmoStop,
+	ShellFallSound    		=	M14CartridgeFall,
+	RackSound        		=	M14Rack,
+	ImpactSound            		=	null,
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpriteOPEN			=	XM214_OPEN,
+	SpriteCLOSED			=	XM214,
+	/* =========== ATTACHMENT DATA ============ */
+	ModelWeaponPart = Light_Small			Light_Small		side  side	,
+	ModelWeaponPart = Light_Small_Socom		Light_Small_Socom	side  side	,
+	ModelWeaponPart = Light_Small_TLR_7AH		Light_Small_TLR_7AH	side  side	,
+	ModelWeaponPart = Light_Medium_M952V		Light_Medium_M952V	side  side	,
+	ModelWeaponPart = Light_Large			Light_Large		side  side	,
+	ModelWeaponPart = Laser_Green			Laser_Green		side  side	,
+	ModelWeaponPart = Laser_Red			Laser_Red		side  side	,
+	ModelWeaponPart = Laser_DVAL			Laser_DVAL		side  side	,
+	ModelWeaponPart = Laser_PEQ15			Laser_PEQ15		side  side	,
+	ModelWeaponPart = Light_Small_Socom_ON		Light_Small_Socom_ON	side  side	,
+	ModelWeaponPart = Laser_Green_ON		Laser_Green_ON		side  side	,
+	ModelWeaponPart = Laser_Red_ON			Laser_Red_ON		side  side	,
+	ModelWeaponPart = Laser_DVAL_ON			Laser_DVAL_ON		side  side	,
+	ModelWeaponPart = Laser_PEQ15_ON		Laser_PEQ15_ON		side  side	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Green	FWP_LaserBeam_Green	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Red	FWP_LaserBeam_Red	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_DVAL	FWP_LaserBeam_DVAL	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_PEQ15	FWP_LaserBeam_PEQ15	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Standard_Mag			AmmoCan50		mag	mag	,
+	}			
+
+	model XM214			
+	{			
+		mesh = weapons/firearm/XM214,		
+		texture = weapons/firearm/M134,
+
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.5138 -0.0802,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.0220 0.0515 -0.1440,
+			rotate = 0.0000 0.0000 90.000,
+		}
+	}
+
+	model XM214_OPEN
+	{			
+		mesh = weapons/firearm/XM214_OPEN,
+		texture = weapons/firearm/m134,
+
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.5138 -0.0802,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.0220 0.0515 -0.1440,
+			rotate = 0.0000 0.0000 90.000,
+		}
+	}			
+				
+	fixing Fix XM214			
+	{			
+		Require = Base.XM214,
+		Fixer = Base.Cleaning=1,
+		Fixer = Base.WD=1,
+	}
+
+
+	item	GAU17	{	
+				
+	DisplayName                 	=	General Electric GAU-17 Minigun,
+	Icon                        	=	GAU17,	
+	WeaponSprite                	=	GAU17,	
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,	
+	IsAimedFirearm              	=	TRUE,	
+	WeaponReloadType            	=	boltaction,	
+	FireMode                    	=	[6]Rotary,
+	AttachmentType              	=	Rifle,	
+	UseEndurance                	=	TRUE,
+	EnduranceMod			=	0.042,
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,
+	Tags				=	Fixed_Fold,
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	34	,
+	AimingPerkRangeModifier     	=	4.5	,
+	MinDamage                   	=	3	,
+	MaxDamage                   	=	4	,
+	CriticalChance              	=	40	,
+	CritDmgMultiplier            	=	4,	
+	AimingPerkCritModifier      	=	10,	
+	HitChance                   	=	15	,
+	ToHitModifier               	=	1.5,	
+	AimingPerkHitChanceModifier 	=	13	,
+	MinAngle                     	=	0.950	,
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	50,	
+	ConditionLowerChanceOneIn   	=	150,	
+	MultipleHitConditionAffected	=	FALSE,	
+	JamGunChance                	=	0.01,	
+	AimingTime                  	=	10,
+	ReloadTime                  	=	25,	
+	SwingTime                   	=	0,
+	MinimumSwingTime            	=	0,
+	SwingAmountBeforeImpact     	=	1.0,	/* SIMULATE BURST DELAY */
+	RecoilDelay                 	=	0,
+	Weight                      	=	12.2,	/* 12.2 =  35 lb */
+	OAL				=	2.1	,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	base:bullets_308,	
+	AmmoBox                     	=	308Box,	
+	MaxAmmo                     	=	320,	/* 8 divided by 0.025 */
+	MagazineType                	=	Base.308MiniCan,	
+	MuzzleFlashModelKey = muzzle_flash_hunting_rifle,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	3,	
+	PiercingBullets             	=	TRUE,
+	ShareDamage                 	=	FALSE,	
+	SplatSize                   	=	4,	
+	SplatNumber                 	=	4,	
+	SplatBloodOnNoDeath         	=	TRUE,	
+	PushBackMod                 	=	0.6,	
+	KnockBackOnNoDeath          	=	TRUE,	
+	KnockdownMod                	=	6,	
+	DoorDamage                  	=	16,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Run_Weapon2,	
+	IdleAnim                    	=	Idle_Weapon2,	
+	SwingAnim                   	=	Rifle,	
+	MetalValue                  	=	65,	
+	SoundVolume                 	=	120,	
+	SoundRadius                 	=	120,	
+	SoundGain                   	=	1,	
+	NPCSoundBoost               	=	1.5,	
+	SwingSound                  	=	[6]Minigun_308,
+	BringToBearSound		=	M14BringToBear,
+	HitSound            		=	BulletHitBody,
+	ClickSound         		=	M14Jam,
+	BreakSound       		=	M14Break,
+	EquipSound       		=	M14Equip,
+	UnequipSound     		=	M14UnEquip,
+	InsertAmmoSound  		=	M14InsertAmmo,
+	EjectAmmoSound  		=	M14EjectAmmo,
+	InsertAmmoStartSound		=	M14InsertAmmoStart,
+	InsertAmmoStopSound		=	M14InsertAmmoStop,
+	EjectAmmoStartSound		=	M14EjectAmmoStart,
+	EjectAmmoStopSound		=	M14EjectAmmoStop,
+	ShellFallSound    		=	M14CartridgeFall,
+	RackSound        		=	M14Rack,
+	ImpactSound            		=	null,
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpriteOPEN			=	GAU17_OPEN,
+	SpriteCLOSED			=	GAU17,
+	/* =========== ATTACHMENT DATA ============ */
+	ModelWeaponPart = Light_Small			Light_Small		side  side	,
+	ModelWeaponPart = Light_Small_Socom		Light_Small_Socom	side  side	,
+	ModelWeaponPart = Light_Small_TLR_7AH		Light_Small_TLR_7AH	side  side	,
+	ModelWeaponPart = Light_Medium_M952V		Light_Medium_M952V	side  side	,
+	ModelWeaponPart = Light_Large			Light_Large		side  side	,
+	ModelWeaponPart = Laser_Green			Laser_Green		side  side	,
+	ModelWeaponPart = Laser_Red			Laser_Red		side  side	,
+	ModelWeaponPart = Laser_DVAL			Laser_DVAL		side  side	,
+	ModelWeaponPart = Laser_PEQ15			Laser_PEQ15		side  side	,
+	ModelWeaponPart = Light_Small_Socom_ON		Light_Small_Socom_ON	side  side	,
+	ModelWeaponPart = Laser_Green_ON		Laser_Green_ON		side  side	,
+	ModelWeaponPart = Laser_Red_ON			Laser_Red_ON		side  side	,
+	ModelWeaponPart = Laser_DVAL_ON			Laser_DVAL_ON		side  side	,
+	ModelWeaponPart = Laser_PEQ15_ON		Laser_PEQ15_ON		side  side	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Green	FWP_LaserBeam_Green	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Red	FWP_LaserBeam_Red	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_DVAL	FWP_LaserBeam_DVAL	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_PEQ15	FWP_LaserBeam_PEQ15	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Standard_Mag			AmmoCan50		mag	mag	,
+	}			
+
+	model GAU17	
+	{			
+		mesh = weapons/firearm/M134,
+		texture = weapons/firearm/M134,
+
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.5431 -0.0802,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.0220 0.0515 -0.1440,
+			rotate = 0.0000 0.0000 90.000,
+		}		
+	}
+
+	model GAU17_OPEN
+	{			
+		mesh = weapons/firearm/M134_OPEN,
+		texture = weapons/firearm/M134,
+
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.5431 -0.0802,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.0220 0.0515 -0.1440,
+			rotate = 0.0000 0.0000 90.000,
+		}		
+	}			
+				
+	fixing Fix GAU17
+	{			
+		Require = Base.GAU17,
+		Fixer = Base.Cleaning=1,
+		Fixer = Base.WD=1,
+	}
+
+
+	item	GAU19	{	
+				
+	DisplayName                 	=	General Electric GAU-19 Minigun,
+	Icon                        	=	GAU19,	
+	WeaponSprite                	=	GAU19,	
+	Type                        	=	Weapon,	
+
+	ItemType = base:weapon,
+	SubCategory                 	=	Firearm,	
+	Ranged                      	=	TRUE,	
+	IsAimedFirearm              	=	TRUE,	
+	WeaponReloadType            	=	boltaction,	
+	FireMode                    	=	[6]Rotary,
+	AttachmentType              	=	Rifle,	
+	UseEndurance                	=	TRUE,
+	EnduranceMod			=	0.045,
+	TwoHandWeapon               	=	TRUE,	
+	RequiresEquippedBothHands   	=	TRUE,
+	Tags				=	Fixed_Fold,
+	/* ============ PERFORMANCE DATA ============= */			
+	MinRange                    	=	0.61	,
+	MaxRange                    	=	42	,
+	AimingPerkRangeModifier     	=	4.5	,
+	MinDamage                   	=	4.5	,
+	MaxDamage                   	=	7	,
+	CriticalChance              	=	50	,
+	CritDmgMultiplier            	=	2,	
+	AimingPerkCritModifier      	=	10,	
+	HitChance                   	=	15	,
+	ToHitModifier               	=	1.5,	
+	AimingPerkHitChanceModifier 	=	13	,
+	MinAngle                     	=	0.950	,
+	AimingPerkMinAngleModifier  	=	0.005	,
+	ConditionMax                	=	50,	
+	ConditionLowerChanceOneIn   	=	140,	
+	MultipleHitConditionAffected	=	FALSE,	
+	JamGunChance                	=	0.01,	
+	AimingTime                  	=	10,
+	ReloadTime                  	=	25,	
+	SwingTime                   	=	0,
+	MinimumSwingTime            	=	0,
+	SwingAmountBeforeImpact     	=	1.0,	/* SIMULATE BURST DELAY */
+	RecoilDelay                 	=	0,
+	Weight                      	=	15.9,	/* 35 lb*/
+	OAL				=	2.4	,
+	/* ============= AMMUNITION DATA ============= */			
+	AmmoType                    	=	fwp:50_bmgbullets,	
+	AmmoBox                     	=	50BMGBox,	
+	MaxAmmo                     	=	160,	/* 8 divided by 0.05 */
+	MagazineType                	=	Base.50MiniCan,	
+	MuzzleFlashModelKey = muzzle_flash_hunting_rifle,
+	ProjectileCount             	=	1,	
+	MaxHitCount                 	=	4,	
+	PiercingBullets             	=	TRUE,
+	ShareDamage                 	=	FALSE,	
+	SplatSize                   	=	5,	
+	SplatNumber                 	=	5,	
+	SplatBloodOnNoDeath         	=	TRUE,	
+	PushBackMod                 	=	0.8,	
+	KnockBackOnNoDeath          	=	TRUE,	
+	KnockdownMod                	=	8,	
+	DoorDamage                  	=	20,	
+	/* ============ ANIMATION & SOUND ============ */			
+	RunAnim                     	=	Run_Weapon2,	
+	IdleAnim                    	=	Idle_Weapon2,	
+	SwingAnim                   	=	Rifle,	
+	MetalValue                  	=	65,	
+	SoundVolume                 	=	200,	
+	SoundRadius                 	=	200,	
+	SoundGain                   	=	1,	
+	NPCSoundBoost               	=	1.5,	
+	SwingSound                  	=	[6]Minigun_308,
+	BringToBearSound		=	M14BringToBear,
+	HitSound            		=	BulletHitBody,
+	ClickSound         		=	M14Jam,
+	BreakSound       		=	M14Break,
+	EquipSound       		=	M14Equip,
+	UnequipSound     		=	M14UnEquip,
+	InsertAmmoSound  		=	M14InsertAmmo,
+	EjectAmmoSound  		=	M14EjectAmmo,
+	InsertAmmoStartSound		=	M14InsertAmmoStart,
+	InsertAmmoStopSound		=	M14InsertAmmoStop,
+	EjectAmmoStartSound		=	M14EjectAmmoStart,
+	EjectAmmoStopSound		=	M14EjectAmmoStop,
+	ShellFallSound    		=	M14CartridgeFall,
+	RackSound        		=	M14Rack,
+	ImpactSound            		=	null,
+	/* =========== TRANSFORM VARIABLES =========== */
+	SpriteOPEN			=	GAU19_OPEN,
+	SpriteCLOSED			=	GAU19,
+	/* =========== ATTACHMENT DATA ============ */
+	ModelWeaponPart = Light_Small			Light_Small		side  side	,
+	ModelWeaponPart = Light_Small_Socom		Light_Small_Socom	side  side	,
+	ModelWeaponPart = Light_Small_TLR_7AH		Light_Small_TLR_7AH	side  side	,
+	ModelWeaponPart = Light_Medium_M952V		Light_Medium_M952V	side  side	,
+	ModelWeaponPart = Light_Large			Light_Large		side  side	,
+	ModelWeaponPart = Laser_Green			Laser_Green		side  side	,
+	ModelWeaponPart = Laser_Red			Laser_Red		side  side	,
+	ModelWeaponPart = Laser_DVAL			Laser_DVAL		side  side	,
+	ModelWeaponPart = Laser_PEQ15			Laser_PEQ15		side  side	,
+	ModelWeaponPart = Light_Small_Socom_ON		Light_Small_Socom_ON	side  side	,
+	ModelWeaponPart = Laser_Green_ON		Laser_Green_ON		side  side	,
+	ModelWeaponPart = Laser_Red_ON			Laser_Red_ON		side  side	,
+	ModelWeaponPart = Laser_DVAL_ON			Laser_DVAL_ON		side  side	,
+	ModelWeaponPart = Laser_PEQ15_ON		Laser_PEQ15_ON		side  side	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Green	FWP_LaserBeam_Green	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_Red	FWP_LaserBeam_Red	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_DVAL	FWP_LaserBeam_DVAL	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Base.FWP_LaserBeam_PEQ15	FWP_LaserBeam_PEQ15	Hide_Beam Hide_Beam	,
+	ModelWeaponPart = Standard_Mag			AmmoCan50		mag	mag	,
+	}			
+
+	model GAU19
+	{			
+		mesh = weapons/firearm/GAU19,
+		texture = weapons/firearm/M134,
+
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.5858 -0.0802,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.0220 0.0515 -0.1440,
+			rotate = 0.0000 0.0000 90.000,
+		}		
+	}
+
+	model GAU19_OPEN
+	{			
+		mesh = weapons/firearm/GAU19_OPEN,
+		texture = weapons/firearm/M134,
+
+		attachment side
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment Hide_Beam
+		{
+			offset = 0.0000 0.0085 0.0180,
+			rotate = 0.0000 180.0000 0.0000,
+		}
+		attachment muzzle
+		{
+			offset = 0.0000 0.5858 -0.0802,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+		attachment mag
+		{
+			offset = 0.0220 0.0515 -0.1440,
+			rotate = 0.0000 0.0000 90.000,
+		}		
+	}
+				
+	fixing Fix GAU19
+	{			
+		Require = Base.GAU19,
+		Fixer = Base.Cleaning=1,
+		Fixer = Base.WD=1,
+	}
+
+}

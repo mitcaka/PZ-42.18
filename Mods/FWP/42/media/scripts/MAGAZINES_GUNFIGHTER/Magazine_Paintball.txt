@@ -1,0 +1,37 @@
+/*	These have been replaced to fix... DisplayCategory = GunMag,	ARSENAL[26] */
+
+
+module Base
+{
+	item Standard_PB_Hopper
+	{
+		CanStack		=	FALSE,
+		Weight			=	0.5,
+		Type			=	Normal,
+		ItemType = base:normal,
+		DisplayName		=	Standard Paintball Hopper,
+		DisplayCategory		=	GunMag,
+		Icon			=	Standard_PB_Hopper,
+		MaxAmmo 		=	50,
+		AmmoType 		=	fwp:pb68,
+		StaticModel 		=	GunMagazine,
+		WorldStaticModel 	=	Standard_PB_Hopper,
+		GunType			=	Multi_Gun,
+	}
+
+	item Large_PB_Hopper
+	{
+		CanStack		=	FALSE,
+		Weight			=	0.7,
+		Type			=	Normal,
+		ItemType = base:normal,
+		DisplayName		=	Large Paintball Hopper,
+		DisplayCategory		=	GunMag,
+		Icon			=	Large_PB_Hopper,
+		MaxAmmo 		=	100,
+		AmmoType 		=	fwp:pb68,
+		StaticModel 		=	GunMagazine,
+		WorldStaticModel	=	Large_PB_Hopper,
+		GunType			=	Multi_Gun,
+	}
+}

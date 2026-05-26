@@ -51,12 +51,12 @@
     "Recipe_CSR_BundleMixedConstruction":  "Paket Karışık İnşaat Malzemeleri",
     "Recipe_CSR_UnbundleMixedConstruction":  "Karma İnşaat Malzemelerini Ayırın",
     "Recipe_CSR_CraftBinksScooper":  "Bink'in Kokusu Yok: Kaka Scooper",
-    "Recipe_CSR_CraftGlowstickRed":  "Craft Signal Glow Stick (Red)",
-    "Recipe_CSR_CraftGlowstickGreen":  "Craft Signal Glow Stick (Green)",
-    "Recipe_CSR_CraftGlowstickBlue":  "Craft Signal Glow Stick (Blue)",
-    "Recipe_CSR_CraftGlowstickWhite":  "Craft Signal Glow Stick (White)",
-    "Recipe_CSR_CraftGlowstickYellow":  "Craft Signal Glow Stick (Yellow)",
-    "Recipe_CSR_CraftGlowstickPurple":  "Craft Signal Glow Stick (Purple)",
-    "Recipe_CSR_OpenSignalFlareRoundBox":  "Open Box of Signal Flare Rounds",
-    "Recipe_CSR_PackSignalFlareRoundBox":  "Pack Signal Flare Rounds"
+    "Recipe_CSR_CraftGlowstickRed":  "Sinyal Işıklı Çubuk Üret (Kırmızı)",
+    "Recipe_CSR_CraftGlowstickGreen":  "Sinyal Işıklı Çubuk Üret (Yeşil)",
+    "Recipe_CSR_CraftGlowstickBlue":  "Sinyal Işıklı Çubuk Üret (Mavi)",
+    "Recipe_CSR_CraftGlowstickWhite":  "Sinyal Işıklı Çubuk Üret (Beyaz)",
+    "Recipe_CSR_CraftGlowstickYellow":  "Sinyal Işıklı Çubuk Üret (Sarı)",
+    "Recipe_CSR_CraftGlowstickPurple":  "Sinyal Işıklı Çubuk Üret (Mor)",
+    "Recipe_CSR_OpenSignalFlareRoundBox":  "Sinyal Fişeği Kutusu Aç",
+    "Recipe_CSR_PackSignalFlareRoundBox":  "Sinyal Fişeklerini Paketle"
 }

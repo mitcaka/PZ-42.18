@@ -1,0 +1,2427 @@
+module MR
+{
+    	item WaterBoiled_Beef	/* 水煮牛肉特需会餐 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:food,
+		EatType = Food,
+		Weight = 0.65,
+		HungerChange   = -100,
+		UnhappyChange  = -15,
+		stressChange   = -15,
+		foodSicknessReduction   = -10,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		Calories = 2500,
+		Carbohydrates = 150,
+		Lipids = 50,
+		Proteins = 70,
+		Icon = sznr,
+		CustomEatSound = EatingCrispy,
+		StaticModel = sznr,
+		WorldStaticModel = sznr,
+	}
+
+    	item Spicy_grilledfish		/* 香辣烤鱼特需会餐 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:food,
+		EatType = Food,
+		Weight = 0.65,
+		HungerChange   = -100,
+		UnhappyChange  = -15,
+		stressChange   = -15,
+		foodSicknessReduction   = -10,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		Calories = 2500,
+		Carbohydrates = 150,
+		Lipids = 50,
+		Proteins = 70,
+		Icon = xlky,
+		CustomEatSound = EatingCrispy,
+		StaticModel = sznr,
+		WorldStaticModel = sznr,
+	}
+
+    	item Energy_adhesive	/* 军用能量胶 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -15,
+		fatigueChange   = -5,
+		enduranceChange   = +10,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		Calories = 240,
+		Carbohydrates = 20,
+		Lipids = 0,
+		Proteins = 0,
+		Icon = nengliangjiao,
+		CustomEatSound = EatingCrispy,
+		StaticModel = nengliangjiao,
+		WorldStaticModel = nengliangjiao,
+	}
+
+    	item Canned_peaches	/* 黄桃罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:food,
+		EatType = Food,
+		Weight = 0.15,
+		HungerChange   = -10,
+		stressChange   = -5,
+		UnhappyChange  = -10,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		Calories = 150,
+		Carbohydrates = 15,
+		Lipids = 10,
+		Proteins = 35,
+		Icon = htgt,
+		CustomEatSound = EatingCrispy,
+		StaticModel = htgt,
+		WorldStaticModel = htgt,
+	}
+
+    	item energy_bar	/* 末日工坊牌能量棒 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -10,
+		fatigueChange   = -5,
+		Packaged = TRUE,
+		Calories = 250,
+		Carbohydrates = 15,
+		Lipids = 6,
+		Proteins = 10,
+		Icon = nengliangbang,
+		CustomEatSound = EatingCrispy,
+		StaticModel = nengliangbang,
+		WorldStaticModel = nengliangbang,
+	}
+
+    	item AirForce_Chocolate	/* 18式空军巧克力 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -15,
+		UnhappyChange  = -10,
+		stressChange   = -5,
+		Packaged = TRUE,
+		Calories = 300,
+		Carbohydrates = 15,
+		Lipids = 35,
+		Proteins = 12,
+		Icon = 18kjqkl,
+		CustomEatSound = EatingCrispy,
+		StaticModel = kjqkl,
+		WorldStaticModel = kjqkl,
+		Tooltip = Tooltip_Antidepressant anti radiation high energy top notch doomsday,
+	}
+
+    	item AirForce_Chocolate_pack	/* 18式空军巧克力(盒装) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:food,
+		Weight = 1.6,
+		Icon = 18kjqklhz,
+		CustomEatSound = EatingCrispy,
+		StaticModel = 18kjqklhz,
+		WorldStaticModel = 18kjqklhz,
+	}
+
+    	item emergency_drinking_water1	/* 一箱应急饮用水H2O */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 3.0,
+		Icon = yjH2Oxz,
+		CustomEatSound = EatingCrispy,
+		StaticModel = yjH2Oxz,
+		WorldStaticModel = yjH2Oxz,
+	}
+
+    	item box_Energy_drinks	/* 一箱末日工坊能量饮料 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:food,
+		EatType = Food,
+		Weight = 2.5,
+		Packaged = TRUE,
+		Icon = dptyyx,
+		CustomEatSound = EatingCrispy,
+		StaticModel = dptyyx,
+		WorldStaticModel = dptyyx,
+	}
+
+
+
+
+
+    item 81cigarette	/* 81香烟 */
+    {
+        DisplayCategory = Junk,
+        ItemType = base:food,
+        Weight = 0.01,
+        Icon = 81xiangyan,
+        CantBeFrozen = true,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        HungerChange = 0.0,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        RequireInHandOrInventory = Base.CandleLit/Base.Matches/Base.Matchbox/Base.LighterDisposable/Base.Lighter/Base.LighterBBQ/Base.Lighter_Battery,
+        StressChange = -20,
+		UnhappyChange  = -10,
+        StaticModel = Cigarette_Lit,
+        WorldStaticModel = Cigarette2,
+        CustomEatSound = ,
+        Tags = base:useall;base:smokable,
+        Eattime = 460,
+		Tooltip = Tooltip_After dinner a cigarette can rival living immortal,
+        FoodSicknessChange = 18,
+        InverseCoughProbability = 8,
+        InverseCoughProbabilitySmoker = 2,
+    }
+
+	item 81cigarette_Pack	/* 81香烟(盒装) */
+	{
+        DisplayCategory = Junk,
+        Weight = 0.18,
+        UseDelta = 0.05,
+        ItemType = base:drainable,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = hz81xy,
+        WorldStaticModel = hz81xy,
+        Tags = base:packed;base:lessfull;base:consumable;base:smokable,
+        EatType = Cigarettes,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+		UnhappyChange  = -2,
+        CustomEatSound = ,
+        Eattime = 460,
+        RequireInHandOrInventory = Base.CandleLit/Base.Matches/Base.Matchbox/Base.LighterDisposable/Base.Lighter/Base.LighterBBQ/Base.Lighter_Battery,
+        CustomContextMenu = Smoke,
+        FoodSicknessChange = 5,
+        InverseCoughProbability = 2,
+        InverseCoughProbabilitySmoker = 2,
+	}
+
+    item 81cigarette_Carton	/* 81香烟(条装) */
+    {
+        DisplayCategory = Junk,
+        Weight = 2.0,
+        ItemType = base:normal,
+        Icon = tz81xy,
+        WorldStaticModel = tiaozhuangxiangyan,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackbayiCigaretteCarton,
+    }
+
+    item Camel_cigarettes	/* Camel骆驼香烟 */
+    {
+        DisplayCategory = Junk,
+        ItemType = base:food,
+        Weight = 0.01,
+        Icon = 81xiangyan,
+        CantBeFrozen = true,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        HungerChange = 0.0,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        RequireInHandOrInventory = Base.CandleLit/Base.Matches/Base.Matchbox/Base.LighterDisposable/Base.Lighter/Base.LighterBBQ/Base.Lighter_Battery,
+        StressChange = -20,
+		UnhappyChange  = -10,
+        StaticModel = Cigarette_Lit,
+        WorldStaticModel = Cigarette2,
+        CustomEatSound = ,
+        Tags = base:useall;base:smokable,
+        Eattime = 460,
+		Tooltip = Tooltip_After dinner a cigarette can rival living immortal,
+        FoodSicknessChange = 16,
+        InverseCoughProbability = 10,
+        InverseCoughProbabilitySmoker = 2,
+    }
+
+	item Camel_cigarettes_Pack	/* Camel骆驼香烟(盒装) */
+	{
+        DisplayCategory = Junk,
+        Weight = 0.18,
+        UseDelta = 0.05,
+        ItemType = base:drainable,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = luotuo,
+        WorldStaticModel = luotuo,
+        Tags = base:packed;base:lessfull;base:consumable;base:smokable,
+        EatType = Cigarettes,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+		UnhappyChange  = -2,
+        CustomEatSound = ,
+        Eattime = 460,
+        RequireInHandOrInventory = Base.CandleLit/Base.Matches/Base.Matchbox/Base.LighterDisposable/Base.Lighter/Base.LighterBBQ/Base.Lighter_Battery,
+        CustomContextMenu = Smoke,
+		Tooltip = Tooltip_Camel_cigarettes,
+        FoodSicknessChange = 16,
+        InverseCoughProbability = 10,
+        InverseCoughProbabilitySmoker = 2,
+	}
+
+    item lucky_strike	/* 鸿运当头香烟 */
+    {
+        DisplayCategory = Junk,
+        ItemType = base:food,
+        Weight = 0.01,
+        Icon = 81xiangyan,
+        CantBeFrozen = true,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        HungerChange = 0.0,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        RequireInHandOrInventory = Base.CandleLit/Base.Matches/Base.Matchbox/Base.LighterDisposable/Base.Lighter/Base.LighterBBQ/Base.Lighter_Battery,
+        StressChange = -10,
+		UnhappyChange  = -5,
+        StaticModel = Cigarette_Lit,
+        WorldStaticModel = Cigarette2,
+        CustomEatSound = ,
+        Tags = base:useall;base:smokable,
+        Eattime = 460,
+		Tooltip = Tooltip_Camel_cigarettes,
+        FoodSicknessChange = 14,
+        InverseCoughProbability = 10,
+        InverseCoughProbabilitySmoker = 2,
+    }
+
+	item lucky_strike_Pack	/* 鸿运当头香烟（盒装） */
+	{
+        DisplayCategory = Junk,
+        Weight = 0.18,
+        UseDelta = 0.05,
+        ItemType = base:drainable,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = lucky,
+        WorldStaticModel = lucky,
+        Tags = base:packed;base:lessfull;base:consumable;base:smokable,
+        EatType = Cigarettes,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -3,
+        CustomEatSound = ,
+        Eattime = 460,
+        RequireInHandOrInventory = Base.CandleLit/Base.Matches/Base.Matchbox/Base.LighterDisposable/Base.Lighter/Base.LighterBBQ/Base.Lighter_Battery,
+        CustomContextMenu = Smoke,
+		Tooltip = Tooltip_lucky_strike,
+        FoodSicknessChange = 14,
+        InverseCoughProbability = 10,
+        InverseCoughProbabilitySmoker = 2,
+	}
+
+    item double_happiness	/* 红双喜香烟 */
+    {
+        DisplayCategory = Junk,
+        ItemType = base:food,
+        Weight = 0.01,
+        Icon = 81xiangyan,
+        CantBeFrozen = true,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        HungerChange = 0.0,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        RequireInHandOrInventory = Base.CandleLit/Base.Matches/Base.Matchbox/Base.LighterDisposable/Base.Lighter/Base.LighterBBQ/Base.Lighter_Battery,
+        StressChange = -10,
+		UnhappyChange  = -5,
+        StaticModel = Cigarette_Lit,
+        WorldStaticModel = Cigarette2,
+        CustomEatSound = ,
+        Tags = base:useall;base:smokable,
+        Eattime = 460,
+		Tooltip = Tooltip_After dinner a cigarette can rival living immortal,
+        FoodSicknessChange = 12,
+        InverseCoughProbability = 10,
+        InverseCoughProbabilitySmoker = 4,
+    }
+
+	item double_happiness_Pack	/* 红双喜香烟（盒装） */
+	{
+        DisplayCategory = Junk,
+        Weight = 0.18,
+        UseDelta = 0.1,
+        ItemType = base:drainable,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = hsxxy,
+        WorldStaticModel = hsxxy,
+        Tags = base:packed;base:lessfull;base:consumable;base:smokable,
+        EatType = Cigarettes,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+        CustomEatSound = ,
+        Eattime = 460,
+        RequireInHandOrInventory = Base.CandleLit/Base.Matches/Base.Matchbox/Base.LighterDisposable/Base.Lighter/Base.LighterBBQ/Base.Lighter_Battery,
+        CustomContextMenu = Smoke,
+		Tooltip = Tooltip_After dinner a cigarette can rival living immortal,
+        FoodSicknessChange = 12,
+        InverseCoughProbability = 10,
+        InverseCoughProbabilitySmoker = 4,
+	}
+
+    item double_happiness_Carton	/* 红双喜香烟(罐装) */
+    {
+        DisplayCategory = Junk,
+        Weight = 2.0,
+        ItemType = base:normal,
+        Icon = hsxxygz,
+        WorldStaticModel = hsxxygz,
+        Tags = base:ignorezombiedensity,
+        DoubleClickRecipe = UnpackdoublehappinessCarton,
+    }
+
+    item Gaoxiba_cigarettes	/* 高希欛香烟 */
+    {
+        DisplayCategory = Junk,
+        ItemType = base:food,
+        Weight = 0.01,
+        Icon = gxbxy,
+        CantBeFrozen = true,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        HungerChange = 0.0,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        RequireInHandOrInventory = Base.CandleLit/Base.Matches/Base.Matchbox/Base.LighterDisposable/Base.Lighter/Base.LighterBBQ/Base.Lighter_Battery,
+        StressChange = -40,
+		UnhappyChange  = -20,
+        BoredomChange = -20,
+        StaticModel = gxbxy,
+        WorldStaticModel = gxbxy,
+        CustomEatSound = ,
+        Tags = base:useall;base:smokable,
+        Eattime = 600,
+		Tooltip = Tooltip_Gaoxiba_cigarettesl,
+        FoodSicknessChange = 10,
+        InverseCoughProbability = 5,
+        InverseCoughProbabilitySmoker = 1,
+    }
+
+	item Gaoxiba_cigarettes_Pack	/* 高希霸香烟(盒装) */
+	{
+        DisplayCategory = Junk,
+        Weight = 0.18,
+        UseDelta = 0.1,
+        ItemType = base:drainable,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = gxbxyhz,
+        WorldStaticModel = gxbxyhz,
+        Tags = base:packed;base:lessfull;base:consumable;base:smokable,
+        EatType = Cigarettes,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -20,
+		UnhappyChange  = -10,
+        BoredomChange = -10,
+        CustomEatSound = ,
+        Eattime = 460,
+        RequireInHandOrInventory = Base.CandleLit/Base.Matches/Base.Matchbox/Base.LighterDisposable/Base.Lighter/Base.LighterBBQ/Base.Lighter_Battery,
+        CustomContextMenu = Smoke,
+		Tooltip = Tooltip_Gaoxiba_cigarettesl,
+        FoodSicknessChange = 12,
+        InverseCoughProbability = 10,
+        InverseCoughProbabilitySmoker = 4,
+	}
+
+    item yulan_cigarettes	/* 玉兰花烟 */
+    {
+        DisplayCategory = Junk,
+        ItemType = base:food,
+        Weight = 0.01,
+        Icon = 81xiangyan,
+        CantBeFrozen = true,
+        CustomContextMenu = Smoke,
+        EatType = Cigarettes,
+        HungerChange = 0.0,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        RequireInHandOrInventory = Base.CandleLit/Base.Matches/Base.Matchbox/Base.LighterDisposable/Base.Lighter/Base.LighterBBQ/Base.Lighter_Battery,
+        StressChange = -20,
+		UnhappyChange  = -20,
+        StaticModel = Cigarette2,
+        WorldStaticModel = gxbxy,
+        CustomEatSound = ,
+        Tags = base:useall;base:smokable,
+        Eattime = 480,
+		Tooltip = Tooltip_After dinner a cigarette can rival living immortal,
+        FoodSicknessChange = 10,
+        InverseCoughProbability = 8,
+        InverseCoughProbabilitySmoker = 2,
+    }
+
+	item yulan_cigarettes_Pack	/* 玉兰花烟(盒装) */
+	{
+        DisplayCategory = Junk,
+        Weight = 0.18,
+        UseDelta = 0.05,
+        ItemType = base:drainable,
+        UseWhileEquipped = false,
+        KeepOnDeplete = false,
+        Icon = yulanxyhz,
+        WorldStaticModel = yulanxyhz,
+        Tags = base:packed;base:lessfull;base:consumable;base:smokable,
+        EatType = Cigarettes,
+        OnEat = RecipeCodeOnEat.consumeNicotine,
+        StressChange = -5,
+		UnhappyChange  = -2,
+        CustomEatSound = ,
+        Eattime = 460,
+        RequireInHandOrInventory = Base.CandleLit/Base.Matches/Base.Matchbox/Base.LighterDisposable/Base.Lighter/Base.LighterBBQ/Base.Lighter_Battery,
+        CustomContextMenu = Smoke,
+		Tooltip = Tooltip_Gaoxiba_cigarettesl,
+        FoodSicknessChange = 12,
+        InverseCoughProbability = 10,
+        InverseCoughProbabilitySmoker = 4,
+	}
+
+    	item Compressed_biscuit	/* 末日工坊牌压缩饼干 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -22,
+		fatigueChange   = -5,
+		Packaged = TRUE,
+		Calories = 350,
+		Carbohydrates = 20,
+		Lipids = 8,
+		Proteins = 10,
+		Icon = ysbg,
+		CustomEatSound = EatingCrispy,
+		StaticModel = ysbg,
+		WorldStaticModel = ysbg,
+		Tooltip = Tooltip_Ashes level survival maniacs go to outdoor stores for their favorite snacks,
+	}
+
+    	item Durable_Cake	/* 耐贮蛋糕 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -10,
+		UnhappyChange  = -20,
+		stressChange   = -5,
+		Packaged = TRUE,
+		Calories = 225,
+		Carbohydrates = 15,
+		Lipids = 0,
+		Proteins = 0,
+		Icon = zrdg,
+		CustomEatSound = EatingCrispy,
+		StaticModel = zrdg,
+		WorldStaticModel = zrdg,
+	}
+
+    	item Military_grain	/* 一箱军粮 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 2.0,
+		Packaged = TRUE,
+		Icon = junliang,
+		CustomEatSound = EatingCrispy,
+		StaticModel = junliang,
+		WorldStaticModel = junliang,
+	}
+
+    	item Military_energy_pack	/* 军用执勤能量包 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 2.0,
+		Packaged = TRUE,
+		Icon = jyzqnlb,
+		CustomEatSound = EatingCrispy,
+		StaticModel = jyzqnlb,
+		WorldStaticModel = jyzqnlb,
+	}
+
+    	item Military_reconnaissance_pack	/* 军用侦察物品包 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 2.0,
+		Packaged = TRUE,
+		Icon = jyzcwpb,
+		CustomEatSound = EatingCrispy,
+		StaticModel = jyzcwpb,
+		WorldStaticModel = jyzcwpb,
+	}
+
+    	item Old_squadleader_pack	/* 老班长特供包 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 2.0,
+		Packaged = TRUE,
+		Icon = lbztgb,
+		CustomEatSound = EatingCrispy,
+		StaticModel = lbztgb,
+		WorldStaticModel = lbztgb,
+	}
+
+    	item PeaBeef_Rice	/* 豌豆牛肉饭 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.2,
+		HungerChange   = -80,
+		enduranceChange   = +5,
+		Packaged = TRUE,
+		Calories = 800,
+		Carbohydrates = 50,
+		Lipids = 20,
+		Proteins = 25,
+		Icon = wdnrf,
+		CustomEatSound = EatingCrispy,
+		StaticModel = sznr,
+		WorldStaticModel = sznr,
+	}
+
+    	item Chicken_curry_Rice	/* 咖喱鸡丁饭 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -80,
+		enduranceChange   = +5,
+		Packaged = TRUE,
+		Calories = 800,
+		Carbohydrates = 50,
+		Lipids = 20,
+		Proteins = 25,
+		Icon = gljdf,
+		CustomEatSound = EatingCrispy,
+		StaticModel = sznr,
+		WorldStaticModel = sznr,
+	}
+
+    	item Spicy_lambmeat_Rice	/* 香辣羊肉饭 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -80,
+		enduranceChange   = +5,
+		Packaged = TRUE,
+		Calories = 800,
+		Carbohydrates = 50,
+		Lipids = 20,
+		Proteins = 25,
+		Icon = xlyrf,
+		CustomEatSound = EatingCrispy,
+		StaticModel = sznr,
+		WorldStaticModel = sznr,
+	}
+
+    	item xuecai_Rice	/* 雪菜肉丝 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -80,
+		enduranceChange   = +5,
+		Packaged = TRUE,
+		Calories = 800,
+		Carbohydrates = 50,
+		Lipids = 20,
+		Proteins = 25,
+		Icon = xcrsf,
+		CustomEatSound = EatingCrispy,
+		StaticModel = sznr,
+		WorldStaticModel = sznr,
+	}
+
+    	item pickledcabbage_beef	/* 酸菜牛肉 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -80,
+		enduranceChange   = +5,
+		Packaged = TRUE,
+		Calories = 800,
+		Carbohydrates = 50,
+		Lipids = 20,
+		Proteins = 25,
+		Icon = scnrm,
+		CustomEatSound = EatingCrispy,
+		StaticModel = sznr,
+		WorldStaticModel = sznr,
+	}
+
+
+
+    	item Glucose_oralsolution_pack		/* 一盒牛磺酸葡萄糖口服液 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 0.8,
+		Icon = pttkfy,
+		CustomEatSound = EatingCrispy,
+		StaticModel = hzkfy,
+		WorldStaticModel = hzkfy,
+	}
+
+    	item BoneDragon_BeefCurry	/* 骨龙牌牛肉咖喱 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.2,
+		HungerChange   = -25,
+		UnhappyChange  = -5,
+		stressChange   = -10,
+		Packaged = TRUE,
+		Calories = 200,
+		Carbohydrates = 50,
+		Lipids = 20,
+		Proteins = 15,
+		Icon = galiniurou,
+		CustomEatSound = EatingCrispy,
+		StaticModel = galiniurou,
+		WorldStaticModel = galiniurou,
+	}
+
+	item Ganmaoling	/* 抗流感感冒灵 */
+	{
+        DisplayCategory = FirstAid,
+        ItemType = base:normal,
+		Weight = 0.2,
+		Icon = ganmaoling,
+		Medical = TRUE,
+		Tooltip = Tooltip_ColdaFluPills,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		FluReduction = 50,
+		foodSicknessReduction = -30,
+		thirstChange   = -30,
+		StaticModel = ganmaoling,
+		WorldStaticModel = ganmaoling,
+		Tags = base:Pills,
+	}
+	
+	item Anti_hypoxia_capsules	/* 抗缺氧食物 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.2,
+		Icon = kqysw,
+		Tooltip = Tooltip_Anti hypoxia fermentation broth,
+		Packaged = TRUE,
+		Calories = 180,
+		Carbohydrates = 10,
+		Lipids = 8,
+		Proteins = 15,
+		HungerChange   = -20,
+		foodSicknessReduction = -10,
+		StaticModel = kqysw,
+		WorldStaticModel = kqysw,
+		Tags = base:Pills,
+	}
+
+    	item Setmenu1	/* 21式单兵口粮1号餐 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 1.2,
+		Packaged = TRUE,
+		Icon = 1haocang,
+		CustomEatSound = EatingCrispy,
+		StaticModel = taocan,
+		WorldStaticModel = taocan,
+	}
+
+    	item Setmenu2	/* 21式单兵口粮2号餐 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 1.2,
+		Packaged = TRUE,
+		Icon = haocang2,
+		CustomEatSound = EatingCrispy,
+		StaticModel = taocan,
+		WorldStaticModel = taocan,
+	}
+
+    	item Setmenu3	/* 21式单兵口粮3号餐 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 1.2,
+		Packaged = TRUE,
+		Icon = haocang3,
+		CustomEatSound = EatingCrispy,
+		StaticModel = taocan,
+		WorldStaticModel = taocan,
+	}
+
+    	item Setmenu4	/* 21式单兵口粮4号餐 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 1.2,
+		Packaged = TRUE,
+		Icon = haocang4,
+		CustomEatSound = EatingCrispy,
+		StaticModel = taocan,
+		WorldStaticModel = taocan,
+	}
+
+    	item Setmenu5	/* 21式单兵口粮5号餐 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 1.2,
+		Packaged = TRUE,
+		Icon = haocang5,
+		CustomEatSound = EatingCrispy,
+		StaticModel = taocan,
+		WorldStaticModel = taocan,
+	}
+
+    	item armyprovisionsA	/* 20式A类战斗口粮 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 1.2,
+		Packaged = TRUE,
+		Icon = 20Ajl,
+		CustomEatSound = EatingCrispy,
+		StaticModel = azdkl,
+		WorldStaticModel = azdkl,
+	}
+
+    	item armyprovisionsB	/* 20式B类战斗口粮 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 1.2,
+		Packaged = TRUE,
+		Icon = 20Bjl,
+		CustomEatSound = EatingCrispy,
+		StaticModel = bzdkl,
+		WorldStaticModel = bzdkl,
+	}
+
+    	item Portable_first_aidkit	/* 便携急救包 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 1.2,
+		Packaged = TRUE,
+		Icon = myjjb,
+		StaticModel = myjjb,
+		WorldStaticModel = myjjb,
+	}
+
+    	item Military_first_aidkit	/* 军用急救包 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 1.2,
+		Packaged = TRUE,
+		Icon = jyjjb,
+		StaticModel = jyjjb,
+		WorldStaticModel = jyjjb,
+	}
+
+	item Canned_LifeBread	/* 生命面包罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.5,
+		Icon = smmbgt,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+		Calories = 575,
+		Carbohydrates = 50,
+		Lipids = 20,
+		Proteins = 29,
+		StaticModel = smmbgt,
+		WorldStaticModel = smmbgt,
+		Tags = base:HasMetal,
+		OpeningRecipe = OpenMRCannedFood,
+		Tooltip = Tooltip_Canned_LifeBread,
+	}
+
+	item Canned_LifeBread_open	/* 生命面包罐头(已打开) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.5,
+		Icon = smmbgtopen,
+		HungerChange   = -80,
+		CannedFood = TRUE,
+		Packaged = TRUE,
+		Calories = 575,
+		Carbohydrates = 50,
+		Lipids = 20,
+		Proteins = 29,
+		StaticModel = smmbgt,
+		WorldStaticModel = smmbgt,
+		Tags = base:HasMetal,
+		Tooltip = Tooltip_Canned_LifeBread,
+	}
+
+	item Canned_LifeBread_box	/* 生命面包罐头(箱装) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 12,
+		Icon = smmbgtxz,
+		Packaged = TRUE,
+		StaticModel = smmbgtxz,
+		WorldStaticModel = smmbgtxz,
+		Tags = base:HasMetal,
+	}
+
+	item Lemonjam_softpie	/* 柠檬果酱软派 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.25,
+		Icon = nmgjrp,
+		HungerChange   = -25,
+		Packaged = TRUE,
+		Calories = 195,
+		Carbohydrates = 20,
+		Lipids = 15,
+		Proteins = 5,
+		StaticModel = nmgjrp,
+		WorldStaticModel = nmgjrp,
+	}
+
+	item Lemonjam_softpie_box	/* 柠檬果酱软派（盒装） */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 2.5,
+		Icon = nmgjrphz,
+		Packaged = TRUE,
+		StaticModel = nmgjrphz,
+		WorldStaticModel = nmgjrphz,
+	}
+
+	item Blueberry_Cake_CaramelPie	/* 蓝莓蛋糕焦糖派 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.25,
+		Icon = lmdgjtp,
+		HungerChange   = -25,
+		Packaged = TRUE,
+		Calories = 195,
+		Carbohydrates = 20,
+		Lipids = 15,
+		Proteins = 5,
+		StaticModel = lanmeipai,
+		WorldStaticModel = lanmeipai,
+	}
+
+	item Blueberry_Cake_CaramelPie_box	/* 蓝莓蛋糕焦糖派（盒装） */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 2.5,
+		Icon = lmdgjtphz,
+		Packaged = TRUE,
+		StaticModel = lmdgjtphz,
+		WorldStaticModel = lmdgjtphz,
+	}
+
+	item Canned_sesame_ricedumpling	/* 芝麻汤圆罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.5,
+		Icon = zmtygt,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+		Calories = 575,
+		Carbohydrates = 50,
+		Lipids = 20,
+		Proteins = 29,
+		StaticModel = zhimatanyuan,
+		WorldStaticModel = zhimatanyuan,
+		OpeningRecipe = OpenMRCannedFood,
+		Tags = base:HasMetal,
+	}
+
+	item Canned_sesame_ricedumpling_open	/* 芝麻汤圆罐头(已打开) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.5,
+		Icon = zmtygtopen,
+		HungerChange   = -99,
+		CannedFood = TRUE,
+		Packaged = TRUE,
+		Calories = 575,
+		Carbohydrates = 50,
+		Lipids = 20,
+		Proteins = 29,
+		StaticModel = zhimatanyuan,
+		WorldStaticModel = zhimatanyuan,
+		Tags = base:HasMetal,
+	}
+
+	item Canned_porkbelly_chickensoup	/* 胡椒猪肚鸡汤罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.5,
+		Icon = hlzdjtgt,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+		Calories = 589,
+		Carbohydrates = 20,
+		Lipids = 30,
+		Proteins = 40,
+		StaticModel = hlzdjtgt,
+		WorldStaticModel = hlzdjtgt,
+		Tags = base:HasMetal,
+		OpeningRecipe = OpenMRCannedFood,
+		Tooltip = Tooltip_Canned_porkbelly_chickensoup,
+	}
+
+	item Canned_porkbelly_chickensoup_open	/* 胡椒猪肚鸡汤罐头(已打开) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.5,
+		Icon = hlzdjtgtopen,
+		HungerChange   = -60,
+		thirstChange   = -50,
+		CannedFood = TRUE,
+		Packaged = TRUE,
+		Calories = 589,
+		Carbohydrates = 20,
+		Lipids = 30,
+		Proteins = 40,
+		StaticModel = hlzdjtgt,
+		WorldStaticModel = hlzdjtgt,
+		Tags = base:HasMetal,
+		Tooltip = Tooltip_Canned_porkbelly_chickensoup,
+	}
+
+	item Canned_spareribsoup	/* 玉米排骨汤罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.5,
+		Icon = yumipaigutang,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+		Calories = 589,
+		Carbohydrates = 20,
+		Lipids = 30,
+		Proteins = 40,
+		StaticModel = hlzdjtgt,
+		WorldStaticModel = hlzdjtgt,
+		Tags = base:HasMetal,
+		OpeningRecipe = OpenMRCannedFood,
+		Tooltip = Tooltip_Canned_spareribsoup,
+	}
+
+	item Canned_spareribsoup_open	/* 玉米排骨汤罐头(已打开) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.5,
+		Icon = yumipaigutangopen,
+		HungerChange   = -60,
+		thirstChange   = -50,
+		CannedFood = TRUE,
+		Packaged = TRUE,
+		Calories = 589,
+		Carbohydrates = 20,
+		Lipids = 30,
+		Proteins = 40,
+		StaticModel = hlzdjtgt,
+		WorldStaticModel = hlzdjtgt,
+		Tags = base:HasMetal,
+		Tooltip = Tooltip_Canned_spareribsoup,
+	}
+
+	item Canned_Cream_BaconSoup	/* 奶油培根汤罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.65,
+		Icon = naiyoupeigeng,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+		Calories = 690,
+		Carbohydrates = 30,
+		Lipids = 40,
+		Proteins = 30,
+		StaticModel = naiyoupeigeng,
+		WorldStaticModel = naiyoupeigeng,
+		Tags = base:HasMetal,
+		OpeningRecipe = OpenMRCannedFood,
+		Tooltip = Tooltip_Canned_Cream_BaconSoup,
+	}
+
+	item Canned_Cream_BaconSoup_open	/* 奶油培根汤罐头(已打开) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.65,
+		Icon = naiyoupeigengopen,
+		HungerChange   = -60,
+		thirstChange   = -20,
+		CannedFood = TRUE,
+		Packaged = TRUE,
+		Calories = 690,
+		Carbohydrates = 30,
+		Lipids = 40,
+		Proteins = 30,
+		StaticModel = naiyoupeigeng,
+		WorldStaticModel = naiyoupeigeng,
+		Tags = base:HasMetal,
+		Tooltip = Tooltip_Canned_Cream_BaconSoup,
+	}
+
+	item Canned_tomato_stew	/* 番茄炖杂菜罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.5,
+		Icon = fqdzcgt,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+		Calories = 420,
+		Carbohydrates = 29,
+		Lipids = 15,
+		Proteins = 19,
+		StaticModel = fqdzcgt,
+		WorldStaticModel = fqdzcgt,
+		Tags = base:HasMetal,
+		OpeningRecipe = OpenMRCannedFood,
+		Tooltip = Tooltip_Canned_tomato_stew,
+	}
+
+	item Canned_tomato_stew_open	/* 番茄炖杂菜罐头(已打开) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.5,
+		Icon = fqdzcgtopen,
+		HungerChange   = -55,
+		thirstChange   = -35,
+		CannedFood = TRUE,
+		Packaged = TRUE,
+		Calories = 420,
+		Carbohydrates = 29,
+		Lipids = 15,
+		Proteins = 19,
+		StaticModel = fqdzcgt,
+		WorldStaticModel = fqdzcgt,
+		Tags = base:HasMetal,
+		Tooltip = Tooltip_Canned_tomato_stew,
+	}
+
+	item Canned_seaweed_peanuts	/* 海苔椒盐花生罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 1.0,
+		Icon = htjyhsgt,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+		Calories = 589,
+		Carbohydrates = 20,
+		Lipids = 30,
+		Proteins = 40,
+		StaticModel = htjyhsgt,
+		WorldStaticModel = htjyhsgt,
+		Tags = base:HasMetal,
+		OpeningRecipe = OpenMRCannedFood,
+		Tooltip = Tooltip_Canned_seaweed_peanuts,
+	}
+
+	item Canned_seaweed_peanuts_open	/* 海苔椒盐花生罐头(已打开) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 1.0,
+		Icon = htjyhsgtopen,
+		HungerChange   = -60,
+		CannedFood = TRUE,
+		Packaged = TRUE,
+		Calories = 1200,
+		Carbohydrates = 120,
+		Lipids = 240,
+		Proteins = 40,
+		StaticModel = htjyhsgt,
+		WorldStaticModel = htjyhsgt,
+		Tags = base:HasMetal,
+		Tooltip = Tooltip_Canned_seaweed_peanuts,
+	}
+
+	item LaoGanMa_chicken_dicedchili_canned	/* 老干妈鸡丁辣椒罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 1.0,
+		Icon = lgmjdljgt,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+		Calories = 1030,
+		Carbohydrates = 40,
+		Lipids = 140,
+		Proteins = 40,
+		StaticModel = lgmjdljgt,
+		WorldStaticModel = lgmjdljgt,
+		OpeningRecipe = OpenMRCannedFood,
+		Tags = base:HasMetal,
+	}
+
+	item LaoGanMa_chicken_dicedchili_canned_open	/* 老干妈鸡丁辣椒罐头(已打开) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 1.0,
+		Icon = lgmjdljgtopen,
+		HungerChange   = -100,
+		thirstChange   = -30,
+		CannedFood = TRUE,
+		Packaged = TRUE,
+		Calories = 1030,
+		Carbohydrates = 40,
+		Lipids = 140,
+		Proteins = 40,
+		StaticModel = lgmjdljgt,
+		WorldStaticModel = lgmjdljgt,
+		Tags = base:HasMetal,
+	}
+
+	item Smoked_canned_oysters	/* 烟熏牡蛎罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.6,
+		Icon = yxdlgt,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+		Calories = 491,
+		Carbohydrates = 60,
+		Lipids = 70,
+		Proteins = 38,
+		StaticModel = yxdlgt,
+		WorldStaticModel = yxdlgt,
+		Tags = base:HasMetal,
+		OpeningRecipe = OpenMRCannedFood,
+		Tooltip = Tooltip_Smoked_canned_oysters,
+	}
+
+	item Smoked_canned_oysters_open	/* 烟熏牡蛎罐头(已打开) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.6,
+		Icon = yxdlgtopen,
+		HungerChange   = -46,
+		CannedFood = TRUE,
+		Packaged = TRUE,
+		Calories = 491,
+		Carbohydrates = 60,
+		Lipids = 70,
+		Proteins = 38,
+		StaticModel = yxdlgt,
+		WorldStaticModel = yxdlgt,
+		Tags = base:HasMetal,
+		Tooltip = Tooltip_Smoked_canned_oysters,
+	}
+
+	item Sichuan_beefhotpot_canned	/* 川味牛肉火锅罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 1.5,
+		Icon = cwnrhggt,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+		Calories = 1377,
+		Carbohydrates = 249,
+		Lipids = 130,
+		Proteins = 149,
+		StaticModel = cwnrhggt,
+		WorldStaticModel = cwnrhggt,
+		Tags = base:HasMetal,
+	}
+
+	item Sichuan_beefhotpot_canned_open	/* 川味牛肉火锅罐头(已打开) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 1.5,
+		Icon = cwnrhggtopen,
+		HungerChange   = -150,
+		Packaged = TRUE,
+		Calories = 1377,
+		Carbohydrates = 249,
+		Lipids = 130,
+		Proteins = 149,
+		StaticModel = cwnrhggt,
+		WorldStaticModel = cwnrhggt,
+		Tags = base:HasMetal,
+	}
+
+    	item douchi_mudcarp	/* 甘竹牌豆豉鲮鱼罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.2,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+		Calories = 420,
+		Carbohydrates = 20,
+		Lipids = 30,
+		Proteins = 20,
+		Icon = dclygt,
+		CustomEatSound = EatingCrispy,
+		Tooltip = Tooltip_Okay Some food,
+		StaticModel = dclygt,
+		OpeningRecipe = OpenMRCannedFood,
+		WorldStaticModel = dclygt,
+	}
+
+    	item douchi_mudcarp_open	/* 甘竹牌豆豉鲮鱼罐头(已打开) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -28,
+		UnhappyChange  = -5,
+		stressChange   = -10,
+		Packaged = TRUE,
+		Calories = 420,
+		Carbohydrates = 20,
+		Lipids = 30,
+		Proteins = 20,
+		Icon = dclygtopen,
+		CustomEatSound = EatingCrispy,
+		Tooltip = Tooltip_Okay Some food,
+		StaticModel = dclygt,
+		WorldStaticModel = dclygt,
+	}
+
+    	item Braised_cannedbeef	/* 红烧牛肉罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.2,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+		Calories = 380,
+		Carbohydrates = 60,
+		Lipids = 20,
+		Proteins = 30,
+		Icon = hsnrgt,
+		CustomEatSound = EatingCrispy,
+		StaticModel = hsnrgt,
+		OpeningRecipe = OpenMRCannedFood，
+		WorldStaticModel = hsnrgt,
+	}
+
+    	item Braised_cannedbeef_open	/* 红烧牛肉罐头（已打开） */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -37,
+		UnhappyChange  = -10,
+		stressChange   = -5,
+		fatigueChange   = -5,
+		Packaged = TRUE,
+		Calories = 380,
+		Carbohydrates = 60,
+		Lipids = 20,
+		Proteins = 30,
+		Icon = hsnrgtopen,
+		CustomEatSound = EatingCrispy,
+		StaticModel = hsnrgt,
+		WorldStaticModel = hsnrgt,
+	}
+
+    	item box_Braised_cannedbeef	/* 一盒红烧牛肉罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 0.5,
+		Icon = hsnrgtyh,
+		CustomEatSound = EatingCrispy,
+		StaticModel = junliang,
+		WorldStaticModel = junliang,
+	}
+
+    	item Braised_cannedpock	/* 红烧肉罐头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.2,
+        CannedFood = true,
+        CantEat = true,
+        Packaged = true,
+		Calories = 400,
+		Carbohydrates = 30,
+		Lipids = 30,
+		Proteins = 30,
+		Icon = hsrgt,
+		CustomEatSound = EatingCrispy,
+		StaticModel = hsrgt,
+		OpeningRecipe = OpenMRCannedFood，
+		WorldStaticModel = hsrgt,
+	}	
+
+    	item Braised_cannedpock_open	/* 红烧肉罐头(已打开) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -37,
+		UnhappyChange  = -10,
+		stressChange   = -5,
+		fatigueChange   = -5,
+		Packaged = TRUE,
+		Calories = 200,
+		Carbohydrates = 30,
+		Lipids = 30,
+		Proteins = 30,
+		Icon = hsrgtopen,
+		CustomEatSound = EatingCrispy,
+		StaticModel = hsrgt,
+		WorldStaticModel = hsrgt,
+	}	
+
+	item Stewed_meat_vegetables	/* 炖肉烩蔬菜 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 1.5,
+		Icon = dunrou,
+		HungerChange   = -150,
+		thirstChange   = -30,
+		UnhappyChange  = -10,
+		Packaged = TRUE,
+		Calories = 972,
+		Carbohydrates = 60,
+		Lipids = 50,
+		Proteins = 50,
+		StaticModel = dunrou,
+		WorldStaticModel = dunrou,
+		Tags = base:HasMetal,
+		Tooltip = Tooltip_Stewed_meat_vegetables,
+	}
+
+	item Braised_beefstew	/* 红烧牛肉煲 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 1.5,
+		Icon = hsnrb,
+		HungerChange   = -150,
+		thirstChange   = -30,
+		Packaged = TRUE,
+		Calories = 1200,
+		Carbohydrates = 120,
+		Lipids = 100,
+		Proteins = 90,
+		StaticModel = hsnrb,
+		WorldStaticModel = hsnrb,
+		Tags = base:HasMetal,
+	}
+
+	item Honeyoat_proteinstick	/* 蜂蜜燕麦蛋白棒 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.35,
+		Icon = fmymdbb,
+		HungerChange   = -40,
+		thirstChange   = -5,
+		Packaged = TRUE,
+		Calories = 360,
+		Carbohydrates = 19,
+		Lipids = 13,
+		Proteins = 24,
+		StaticModel = fmymdbb,
+		WorldStaticModel = fmymdbb,
+		Tags = base:HasMetal,
+	}
+
+	item Honeyoat_proteinstick_pack	/* 蜂蜜燕麦蛋白棒(盒装) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 3.5,
+		Icon = fmymdbbhz,
+		Packaged = TRUE,
+		Calories = 360,
+		Carbohydrates = 19,
+		Lipids = 13,
+		Proteins = 24,
+		StaticModel = fmymdbbhz,
+		WorldStaticModel = fmymdbbhz,
+		Tags = base:HasMetal,
+	}
+
+
+
+
+    	item Fivespice_porkballs	/* 五香猪肉粒 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = EatSmall,
+		Weight = 0.15,
+		HungerChange   = -12,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		Calories = 98,
+		Carbohydrates = 0,
+		Lipids = 122,
+		Proteins = 0,
+        Icon = dzzrp,
+		CustomEatSound = EatingCrispy,
+		WorldStaticModel = dzzrp,
+	}
+
+
+    	item TaiwanSausage_MeatSauceRice	/* 高雄香肠卤排骨便当 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.5,
+		HungerChange   = -60,
+		UnhappyChange  = -16,
+		stressChange   = -8,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		Calories = 1200,
+		Carbohydrates = 120,
+		Lipids = 50,
+		Proteins = 99,
+		Icon = gxxclpg,
+		DaysFresh = 35,
+		DaysTotallyRotten = 40,
+		CustomEatSound = EatingCrispy,
+		StaticModel = gxxclpg,
+		WorldStaticModel = gxxclpg,
+		Tooltip = Tooltip_TaiwanSausage MeatSauceRice,
+	}
+
+    	item General_Tsos_ChickenRice	/* 台式三杯鸡拼虾卷盖饭 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.5,
+		HungerChange   = -60,
+		UnhappyChange  = -12,
+		stressChange   = -12,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		Calories = 1200,
+		Carbohydrates = 120,
+		Lipids = 50,
+		Proteins = 99,
+		Icon = tssbjgf,
+		DaysFresh = 35,
+		DaysTotallyRotten = 40,
+		CustomEatSound = EatingCrispy,
+		StaticModel = tssbjgf,
+		WorldStaticModel = tssbjgf,
+		Tooltip = Tooltip_Ancient flavor Chinese flavor,
+	}
+
+    	item BeefCurry_OmeletteRice	/* 厚芝汉堡肉蛋包饭 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.5,
+		HungerChange   = -60,
+		UnhappyChange  = -15,
+		stressChange   = -10,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		Calories = 1200,
+		Carbohydrates = 120,
+		Lipids = 50,
+		Proteins = 99,
+		Icon = hzhbrdbf,
+		DaysFresh = 35,
+		DaysTotallyRotten = 40,
+		CustomEatSound = EatingCrispy,
+		StaticModel = hzhbrdbf,
+		WorldStaticModel = hzhbrdbf,
+		Tooltip = Tooltip_BeefCurry OmeletteRice,
+	}
+
+    	item MapoTofu_FriedChickenRice	/* 麻婆豆腐酥炸鸡块饭 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.5,
+		HungerChange   = -60,
+		UnhappyChange  = -12,
+		stressChange   = -10,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		Calories = 1200,
+		Carbohydrates = 120,
+		Lipids = 50,
+		Proteins = 99,
+		Icon = mpdfszjkf,
+		DaysFresh = 35,
+		DaysTotallyRotten = 40,
+		CustomEatSound = EatingCrispy,
+		StaticModel = mpdfszjkf,
+		WorldStaticModel = mpdfszjkf,
+		Tooltip = Tooltip_MapoTofu FriedChickenRice,
+	}
+
+    	item CrabFish_Fillet_CurryRice	/* 蟹粉蛋葱烤大排饭 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.5,
+		HungerChange   = -60,
+		UnhappyChange  = -12,
+		stressChange   = -10,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		Calories = 1200,
+		Carbohydrates = 120,
+		Lipids = 50,
+		Proteins = 99,
+		Icon = xfdckdpf1,
+		DaysFresh = 35,
+		DaysTotallyRotten = 40,
+		CustomEatSound = EatingCrispy,
+		StaticModel = xfdckdpf1,
+		WorldStaticModel = xfdckdpf1,
+		Tooltip = Tooltip_CrabFish Fillet CurryRice,
+	}
+
+    	item Cantonese_BBQPorkRice	/* 黯然销魂叉烧蛋饭 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.5,
+		HungerChange   = -60,
+		UnhappyChange  = -12,
+		stressChange   = -10,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		Calories = 1200,
+		Carbohydrates = 120,
+		Lipids = 50,
+		Proteins = 99,
+		Icon = mzxhcsdf,
+		DaysFresh = 35,
+		DaysTotallyRotten = 40,
+		CustomEatSound = EatingCrispy,
+		StaticModel = mzxhcsdf,
+		WorldStaticModel = mzxhcsdf,
+		Tooltip = Tooltip_Cantonese BBQPorkRice,
+	}
+
+    	item Guangzhou_BeefChowMein	/* 有锅气广式干炒牛河 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.5,
+		HungerChange   = -60,
+		UnhappyChange  = -12,
+		stressChange   = -10,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		Calories = 1200,
+		Carbohydrates = 120,
+		Lipids = 50,
+		Proteins = 99,
+		Icon = ygqgsgcnh,
+		DaysFresh = 35,
+		DaysTotallyRotten = 40,
+		CustomEatSound = EatingCrispy,
+		StaticModel = ygqgsgcnh,
+		WorldStaticModel = ygqgsgcnh,
+		Tooltip = Tooltip_Guangzhou BeefChowMein,
+	}
+
+    	item HoneyTeriyaki_ChickenChowFan	/* 照烧鸡肉蜜汁炒饭 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.5,
+		HungerChange   = -60,
+		UnhappyChange  = -12,
+		stressChange   = -10,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		Calories = 1200,
+		Carbohydrates = 120,
+		Lipids = 50,
+		Proteins = 99,
+		Icon = zsjrmzcf,
+		DaysFresh = 35,
+		DaysTotallyRotten = 40,
+		CustomEatSound = EatingCrispy,
+		StaticModel = zsjrmzcf,
+		WorldStaticModel = zsjrmzcf,
+		Tooltip = Tooltip_HoneyTeriyaki ChickenChowFan,
+	}
+
+    	item Lianrong_mooncake	/* 四黄莲蓉月饼 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.15,
+		HungerChange   = -26,
+		UnhappyChange  = -10,
+		Packaged = TRUE,
+		Calories = 1300,
+		Carbohydrates = 30,
+		Lipids = 32.5,
+		Proteins = 18.8,
+		Icon = shlryb,
+		CustomEatSound = EatingCrispy,
+		StaticModel = shlryb,
+		WorldStaticModel = shlryb,
+		Tooltip = Tooltip_TheKing of Mooncakes Imported to Kentucky,
+	}
+
+    	item Yunnan_HamPie	/* 昆明蛋黄火腿月饼 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.15,
+		HungerChange   = -28,
+		UnhappyChange  = -12,
+		Packaged = TRUE,
+		Calories = 1300,
+		Carbohydrates = 33,
+		Lipids = 35.5,
+		Proteins = 21.95,
+		Icon = kmdhhtyb,
+		CustomEatSound = EatingCrispy,
+		StaticModel = shlryb,
+		WorldStaticModel = shlryb,
+		Tooltip = Tooltip_Yunnan Ham Pie,
+	}
+
+    	item Coconut_CreamCake	/* 椰子黄奶油蛋糕 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -32,
+		UnhappyChange  = -40,
+		Packaged = TRUE,
+		Calories = 1200,
+		Carbohydrates = 36,
+		Lipids = 37.5,
+		Proteins = 26.95,
+		Icon = yzhnydg,
+		DaysFresh = 60,
+		DaysTotallyRotten = 80,
+		CustomEatSound = EatingCrispy,
+		StaticModel = StrawberryShortcake_Ground,
+		WorldStaticModel = StrawberryShortcake_Ground,
+	}
+
+    	item Blueberry_MonkeyCake	/* 香芋糯米糍 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -36,
+		UnhappyChange  = -32,
+		Packaged = TRUE,
+		Calories = 500,
+		Carbohydrates = 42,
+		Lipids = 42.5,
+		Proteins = 28.95,
+		Icon = xynmc,
+		DaysFresh = 60,
+		DaysTotallyRotten = 80,
+		CustomEatSound = EatingCrispy,
+		StaticModel = xynmc,
+		WorldStaticModel = xynmc,
+	}
+
+    	item DingShengGao	/* 定胜糕 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -32,
+		UnhappyChange  = -35,
+		Packaged = TRUE,
+		Calories = 600,
+		Carbohydrates = 42,
+		Lipids = 42.5,
+		Proteins = 28.95,
+		Icon = dsg,
+		DaysFresh = 60,
+		DaysTotallyRotten = 80,
+		CustomEatSound = EatingCrispy,
+		StaticModel = dsg,
+		WorldStaticModel = dsg,
+	}
+
+    	item ShrimpDumplings	/* 广州酒家虾饺皇 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.15,
+		HungerChange   = -20,
+		UnhappyChange  = -5,
+		Packaged = TRUE,
+		Calories = 300,
+		Carbohydrates = 30,
+		Lipids = 20,
+		Proteins = 35,
+		Icon = gzjjxjh,
+		DaysFresh = 12,
+		DaysTotallyRotten = 20,
+		CustomEatSound = EatingCrispy,
+		StaticModel = ShrimpDumpling_Ground,
+		WorldStaticModel = ShrimpDumpling_Ground,
+	}
+
+    	item Boxed_ShrimpDumplings	/* 盒装广州酒家虾饺皇 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 1.0,
+		Packaged = TRUE,
+		Icon = gzjjxjhhz1,
+		DaysFresh = 45,
+		DaysTotallyRotten = 60,
+		CustomEatSound = EatingCrispy,
+		StaticModel = gzjjxjhhz1,
+		WorldStaticModel = gzjjxjhhz1,
+	}
+
+    	item XiaoLongBao	/* 灌汤鸡汁小笼包 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.2,
+		HungerChange   = -20,
+		Packaged = TRUE,
+		Calories = 300,
+		Carbohydrates = 30,
+		Lipids = 20,
+		Proteins = 35,
+		Icon = gtjzxlb,
+		DaysFresh = 20,
+		DaysTotallyRotten = 25,
+		CustomEatSound = EatingCrispy,
+		StaticModel = gtjzxlb,
+		WorldStaticModel = gtjzxlb,
+	}
+
+    	item Boxed_XiaoLongBao	/* 盒装灌汤鸡汁小笼包 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 1.0,
+		Icon = gtjzxlbhz,
+		DaysFresh = 45,
+		DaysTotallyRotten = 60,
+		CustomEatSound = EatingCrispy,
+		StaticModel = gtjzxlbhz,
+		WorldStaticModel = gtjzxlbhz,
+	}
+
+    	item CrabWonton	/* 蟹籽鲜肉烧麦 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 0.15,
+		HungerChange   = -10,
+		Packaged = TRUE,
+		Calories = 300,
+		Carbohydrates = 25,
+		Lipids = 10,
+		Proteins = 20,
+		Icon = xzxrsm,
+		DaysFresh = 15,
+		DaysTotallyRotten = 25,
+		CustomEatSound = EatingCrispy,
+		StaticModel = MeatDumplings_Ground,
+		WorldStaticModel = MeatDumplings_Ground,
+	}
+
+    	item Boxed_CrabWonton	/* 盒装蟹籽鲜肉烧麦 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 1.2,
+		Icon = xzxrsmhz,
+		DaysFresh = 40,
+		DaysTotallyRotten = 60,
+		CustomEatSound = EatingCrispy,
+		StaticModel = xzxrsmhz,
+		WorldStaticModel = xzxrsmhz,
+	}
+
+    	item ChineseSteamed_PorkRibs	/* 广式金蒜蒸排骨 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 1.5,
+		HungerChange   = -100,
+		Packaged = TRUE,
+		Calories = 1000,
+		Carbohydrates = 45,
+		Lipids = 30,
+		Proteins = 180,
+		Icon = gsjszpg,
+		DaysFresh = 12,
+		DaysTotallyRotten = 20,
+		CustomEatSound = EatingCrispy,
+		StaticModel = gsjszpg,
+		WorldStaticModel = gsjszpg,
+		Tooltip = Tooltip_Chinese Steamed Pork Ribs,
+	}
+
+    	item Juicy_SteamedMeatballs	/* 清蒸狮子头 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		EatType = Food,
+		Weight = 1.2,
+		HungerChange   = -70,
+		Packaged = TRUE,
+		Calories = 1000,
+		Carbohydrates = 45,
+		Lipids = 30,
+		Proteins = 120,
+		Icon = hsszt,
+		DaysFresh = 12,
+		DaysTotallyRotten = 20,
+		CustomEatSound = EatingCrispy,
+		StaticModel = hsszt,
+		WorldStaticModel = hsszt,
+		Tooltip = Tooltip_Chinese Steamed Pork Ribs,
+	}
+
+    item KYEmergency_NewsWeekly	/* 驻美应急兵团新闻月刊 */
+    {
+        DisplayCategory = Literature,
+        ItemType = base:Literature,
+        Weight = 0.5,
+        StressChange = -10,
+		UnhappyChange  = -20,
+        Icon = Emergency,
+        BoredomChange = -45,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateKYEmergency,
+        Tags = base:ConsumeOnRead;base:Magazine,
+    }
+
+    	item Compressed_Biscuit_bucket	/* 一桶多维压缩饼干 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 2.5,
+		Packaged = TRUE,
+		Icon = dwysbgtz,
+		StaticModel = dwysbgtz,
+		WorldStaticModel = dwysbgtz,
+		Tooltip = Tooltip_CompressedBiscuit,
+	}
+
+    	item Compressed_Biscuit1	/* 多维压缩饼干 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.3,
+		Packaged = TRUE,
+		Icon = dwysbg,
+		StaticModel = dwysbg,
+		WorldStaticModel = dwysbg,
+		Tooltip = Tooltip_CompressedBiscuit,
+	}
+
+    	item Compressed_Biscuit2	/* 半块多维压缩饼干 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Food,
+		Weight = 0.15,
+		HungerChange   = -25,
+		Packaged = TRUE,
+		Calories = 180,
+		Carbohydrates = 45,
+		Lipids = 20,
+		Proteins = 25,
+		Icon = dwysbgbk,
+		CustomEatSound = EatingCrispy,
+		StaticModel = dwysbgbk,
+		WorldStaticModel = dwysbgbk,
+		Tooltip = Tooltip_CompressedBiscuit,
+	}
+
+		/****************************** 液体容器物品. ******************************/
+
+	item Energy_drinks	/* 末日工坊能量饮料 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		EatType = popcan,
+		Weight = 0.2,
+		Icon     = dpty,
+		Packaged = TRUE,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticBig,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = dpty,
+		WorldStaticModel = dpty,
+		Tooltip = Tooltip_nengliangyingliao-p15-y10-k70,
+		Tags = base:Cookable;base:SealedBeverageCan,
+
+        	component FluidContainer
+        	{
+			ContainerName   = BottlePlastic,
+			PickRandomFluid	= true,
+			capacity        = 0.35,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            		Fluids
+            		{
+                		fluid           = nengliangyingliao:1.0,
+            		}
+       		}
+	}
+
+	item Antwhip_liquor	/* 蚁鞭劲酒 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		EatType = popcan,
+		Weight = 0.2,
+		Icon     =hxegtdp,
+		Packaged = TRUE,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticBig,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = hxegt,
+		WorldStaticModel = hxegt,
+		Tooltip = Tooltip_yibianjingjiu-jb20,
+		Tags = base:Cookable;base:SealedBeverageCan,
+
+        	component FluidContainer
+        	{
+			ContainerName   = Glassbottles,
+			PickRandomFluid	= true,
+			capacity        = 0.5,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            		Fluids
+            		{
+                		fluid           = yibianjingjiu:1.0,
+            		}
+       		}
+	}
+
+	item emergency_drinking_water	/* 应急饮用水H2O */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		EatType = popcan,
+		Weight = 0.2,
+		Icon     = yjH2O,
+		Packaged = TRUE,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticBig,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = yjs,
+		WorldStaticModel = yjs,
+		Tooltip = Tooltip_yjH2O-k100,
+		Tags = base:Cookable;base:SealedBeverageCan,
+
+        	component FluidContainer
+        	{
+			ContainerName   = BottlePlastic,
+			PickRandomFluid	= true,
+			capacity        = 0.5,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            		Fluids
+            		{
+                		fluid           = yingjiH2O:1.0,
+            		}
+       		}
+	}
+
+	item coconut_milk	/* 椰树牌椰汁 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		EatType = popcan,
+		Weight = 0.2,
+		Icon     = ydpyz,
+		Packaged = TRUE,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticBig,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = yspyz,
+		WorldStaticModel = yspyz,
+		Tooltip = Tooltip_yjH2O-k100,
+		Tags = base:Cookable;base:SealedBeverageCan,
+
+        	component FluidContainer
+        	{
+			ContainerName   = can,
+			PickRandomFluid	= true,
+			capacity        = 0.3,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            		Fluids
+            		{
+                		fluid           = yedaoyezhi:1.0,
+            		}
+       		}
+	}
+
+	item Glucose_oralsolution	/* 牛磺酸葡萄糖口服液 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		EatType = popcan,
+		Weight = 0.05,
+		Icon     = pttkfypz,
+		Packaged = TRUE,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticBig,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = kfy,
+		WorldStaticModel = kfy,
+		Tooltip = Tooltip_kfy-p5+5n,
+		Tags = base:Cookable;base:SealedBeverageCan,
+
+        	component FluidContainer
+        	{
+			ContainerName   = Glassbottles,
+			PickRandomFluid	= true,
+			capacity        = 0.1,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            		Fluids
+            		{
+                		fluid           = koufuye:1.0,
+            		}
+       		}
+	}
+
+	item colaBottle	/* 毛毛裤牌提神可乐 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 0.15,
+        Icon     = maomaokuBottle,
+		Packaged = TRUE,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticBig,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = fendaczw,
+		WorldStaticModel = fendaczw,
+		Tags = CookableMicrowave,
+		Tooltip = Tooltip_colaBottle,
+
+        	component FluidContainer
+        	{
+			ContainerName   = BottlePlastic,
+			PickRandomFluid	= true,
+			capacity        = 1.0,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            		Fluids
+            		{
+                		fluid           = maomaoku:1.0,
+            		}
+       		}
+	}
+
+	item laoda_IcedTea	/* 劳大冰红茶(原味) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 0.15,
+        Icon     = laodabhc,
+		Packaged = TRUE,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticBig,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = binghongcha,
+		WorldStaticModel = binghongcha,
+		Tags = CookableMicrowave,
+
+        	component FluidContainer
+        	{
+			ContainerName   = BottlePlastic,
+			PickRandomFluid	= true,
+			capacity        = 1.0,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            		Fluids
+            		{
+                		fluid           = laodaIcedTea:1.0,
+            		}
+       		}
+	}
+
+	item laoda_greentea	/* 劳大冰红茶(薄荷味) */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 0.15,
+        Icon     = laodalvcha,
+		Packaged = TRUE,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticBig,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = lvcha,
+		WorldStaticModel = lvcha,
+		Tags = CookableMicrowave,
+
+        	component FluidContainer
+        	{
+			ContainerName   = BottlePlastic,
+			PickRandomFluid	= true,
+			capacity        = 1.0,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            		Fluids
+            		{
+                		fluid           = laodagreentea:1.0,
+            		}
+       		}
+	}
+
+	item Qingdao_CraftBeer	/* 青岛精酿 瓶装 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 0.3,
+		Icon = qdpjpz,
+		EatType = Bourbon,
+		Packaged = TRUE,
+		StaticModel = qdpjpz,
+		WorldStaticModel = qdpjpz,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+        OpeningRecipe = OpenMRBottleBeer,
+		Tags = base:Glass;base:GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleBeer,
+		        Opened	= false,
+            	capacity   = 0.6,
+	         	CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = QingdaoCraftBeer:1.0,
+            		}
+        	}
+	}
+
+	item Chocolate_Banana_ShitaoBeer	/* 巧克力香蕉世涛啤酒 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 0.2,
+		Icon = hsxjst,
+		EatType = Bourbon,
+		Packaged = TRUE,
+		StaticModel = hsxjst,
+		WorldStaticModel = hsxjst,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+        OpeningRecipe = OpenMRBottleBeer,
+		Tags = base:Glass;base:GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleBeer,
+		        Opened	= false,
+            	capacity   = 1.0,
+	         	CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = ShitaoBeer:1.0,
+            		}
+        	}
+	}
+
+	item Beifeng_Coconut_ShitaoBeer	/* 北峰椰子奶油世涛啤酒 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 0.2,
+		Icon = bfyznystpj,
+		EatType = Bourbon,
+		Packaged = TRUE,
+		StaticModel = bfyznystpj,
+		WorldStaticModel = bfyznystpj,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+        OpeningRecipe = OpenMRBottleBeer,
+		Tags = base:Glass;base:GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleBeer,
+		        Opened	= false,
+            	capacity   = 1.0,
+	         	CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = CoconutShitaoBeer:1.0,
+            		}
+        	}
+	}
+
+	item Jasmine_LongjingBeer	/* 茉莉龙井啤酒 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 0.2,
+		Icon = ljpj,
+		EatType = Bourbon,
+		Packaged = TRUE,
+		StaticModel = ljpj,
+		WorldStaticModel = ljpj,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+        OpeningRecipe = OpenMRBottleBeer,
+		Tags = base:Glass;base:GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleBeer,
+		        Opened	= false,
+            	capacity   = 1.0,
+	         	CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = LongjingBeer:1.0,
+            		}
+        	}
+	}
+
+	item Lafite_Rothschild_1982	/* 拉菲酒庄1982年干红 */
+	{
+        DisplayCategory = Food,
+        ItemType = base:Normal,
+		Weight = 0.2,
+		Icon = lfhj,
+		EatType = Bourbon,
+		Packaged = TRUE,
+		StaticModel = lfhj,
+		WorldStaticModel = lfhj,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+        OpeningRecipe = Open1982RedWine,
+		Tags = base:Glass;base:GlassBottle,
+		Tooltip = Tooltip_Lafite_Rothschild_1982,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = Glassbottles,
+		        Opened	= false,
+            	capacity   = 1.0,
+	         	CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Lafite:1.0,
+            		}
+        	}
+	}
+
+}
