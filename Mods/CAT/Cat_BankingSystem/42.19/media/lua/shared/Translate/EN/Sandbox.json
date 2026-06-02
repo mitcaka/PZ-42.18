@@ -1,0 +1,11 @@
+{
+    "Sandbox_Cat_BankingSystem": "Cat Banking System",
+    "Sandbox_Cat_BankingSystem_WalletDropChance": "Wallet Drop Chance",
+    "Sandbox_Cat_BankingSystem_WalletDropChance_tooltip": "Percent chance for a zombie to drop a wallet (0-100).",
+    "Sandbox_Cat_BankingSystem_WalletMinMoney": "Minimum Wallet Money",
+    "Sandbox_Cat_BankingSystem_WalletMinMoney_tooltip": "Minimum amount of money (in dollars) found in a zombie wallet.",
+    "Sandbox_Cat_BankingSystem_WalletMaxMoney": "Maximum Wallet Money",
+    "Sandbox_Cat_BankingSystem_WalletMaxMoney_tooltip": "Maximum amount of money (in dollars) found in a zombie wallet.",
+    "Sandbox_Cat_BankingSystem_WalletCreditCardChance": "Credit Card Drop Chance",
+    "Sandbox_Cat_BankingSystem_WalletCreditCardChance_tooltip": "Percent chance for a zombie wallet to also contain a credit card (0-100)."
+}

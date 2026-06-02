@@ -1,0 +1,29 @@
+module Cat_SafehouseUtilities
+{
+    item PrepaidCard_24h
+    {
+        DisplayName = Pre-Paid Utility Card (24 Hours),
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = CreditCard,
+        WorldStaticModel = CreditCard,
+    }
+
+    item PrepaidCard_7d
+    {
+        DisplayName = Pre-Paid Utility Card (1 Week),
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = CreditCard,
+        WorldStaticModel = CreditCard,
+    }
+
+    item PrepaidCard_30d
+    {
+        DisplayName = Pre-Paid Utility Card (1 Month),
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = CreditCard,
+        WorldStaticModel = CreditCard,
+    }
+}

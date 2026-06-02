@@ -1,0 +1,73 @@
+VERSION = 1,
+
+option Cat_SafehouseUtilities.Enabled
+{
+    type = boolean,
+    default = true,
+    page = Cat_SafehouseUtilities,
+    translation = Cat_SafehouseUtilities_Enabled,
+}
+
+option Cat_SafehouseUtilities.EnableDailyCharge
+{
+    type = boolean,
+    default = false,
+    page = Cat_SafehouseUtilities,
+    translation = Cat_SafehouseUtilities_EnableDailyCharge,
+}
+
+option Cat_SafehouseUtilities.DailyChargeAmount
+{
+    type = integer,
+    default = 5,
+    min = 0,
+    max = 10000,
+    page = Cat_SafehouseUtilities,
+    translation = Cat_SafehouseUtilities_DailyChargeAmount,
+}
+
+option Cat_SafehouseUtilities.EnableWeeklyCharge
+{
+    type = boolean,
+    default = true,
+    page = Cat_SafehouseUtilities,
+    translation = Cat_SafehouseUtilities_EnableWeeklyCharge,
+}
+
+option Cat_SafehouseUtilities.WeeklyChargeAmount
+{
+    type = integer,
+    default = 25,
+    min = 0,
+    max = 10000,
+    page = Cat_SafehouseUtilities,
+    translation = Cat_SafehouseUtilities_WeeklyChargeAmount,
+}
+
+option Cat_SafehouseUtilities.EnableMonthlyCharge
+{
+    type = boolean,
+    default = false,
+    page = Cat_SafehouseUtilities,
+    translation = Cat_SafehouseUtilities_EnableMonthlyCharge,
+}
+
+option Cat_SafehouseUtilities.MonthlyChargeAmount
+{
+    type = integer,
+    default = 100,
+    min = 0,
+    max = 10000,
+    page = Cat_SafehouseUtilities,
+    translation = Cat_SafehouseUtilities_MonthlyChargeAmount,
+}
+
+option Cat_SafehouseUtilities.GracePeriodHours
+{
+    type = integer,
+    default = 24,
+    min = 0,
+    max = 168,
+    page = Cat_SafehouseUtilities,
+    translation = Cat_SafehouseUtilities_GracePeriodHours,
+}

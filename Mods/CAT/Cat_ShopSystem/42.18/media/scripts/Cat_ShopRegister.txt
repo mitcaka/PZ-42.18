@@ -1,0 +1,12 @@
+module Base
+{
+    item Cat_ShopRegister
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        DisplayName = Shop Register,
+        Icon = default,
+        Weight = 0.5,
+        WorldObjectSprite = location_shop_accessories_01_1,
+    }
+}

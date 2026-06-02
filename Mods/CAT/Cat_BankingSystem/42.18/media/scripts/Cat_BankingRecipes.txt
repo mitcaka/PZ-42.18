@@ -1,0 +1,23 @@
+module Base
+{
+    craftRecipe MakeCardDecoder
+    {
+        timedAction = MakingElectrical,
+        time = 300,
+        Tags = AnySurfaceCraft,
+        category = Electrical,
+        SkillRequired = Electricity:6,
+        xpAward = Electricity:15,
+        inputs
+        {
+            item 8 [Base.ElectricWire] mode:destroy,
+            item 12 [Base.ElectronicsScrap] mode:destroy,
+            item 4 [Base.Screws] mode:destroy,
+            item 1 tags[base:screwdriver] mode:keep flags[NoBrokenItems],
+        }
+        outputs
+        {
+            item 1 Base.Cat_CardDecoder,
+        }
+    }
+}

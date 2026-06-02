@@ -1,0 +1,9 @@
+name=Cat Banking System
+id=Cat_BankingSystem
+modversion=1.0
+author=Cat
+description=Use ATM machines to deposit and withdraw cash.
+description=Requires Cat Economy Core.
+poster=poster.png
+versionMin=42.19.0
+require=Cat_EconomyCore

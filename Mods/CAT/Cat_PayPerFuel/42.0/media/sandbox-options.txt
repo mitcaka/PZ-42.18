@@ -1,0 +1,11 @@
+VERSION = 1,
+
+option Cat_PayPerFuel.PricePerLitre
+{
+    type = integer,
+    min = 0,
+    max = 100,
+    default = 2,
+    page = Cat_PayPerFuel,
+    translation = Cat_PayPerFuel_PricePerLitre,
+}

@@ -1,0 +1,11 @@
+module Base
+{
+    item Cat_BuyerRegister
+    {
+        Weight = 0.5,
+        ItemType = base:moveable,
+        DisplayCategory = Furniture,
+        Icon = default,
+        WorldObjectSprite = location_shop_accessories_01_20,
+    }
+}

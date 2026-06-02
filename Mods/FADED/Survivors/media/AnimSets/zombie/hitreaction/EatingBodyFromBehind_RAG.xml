@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animNode>
+  <m_Name>EatingBodyFromBehind_RAG</m_Name>
+  <m_AnimName>Zombie_EatingToIdle_FloorFront</m_AnimName>
+  <m_Looped>false</m_Looped>
+  <m_BlendTime>0.10</m_BlendTime>
+  <m_SpeedScale>0.96</m_SpeedScale>
+  <m_Conditions x_name="49c8f33a-a8c1-4d3c-972e-ab54803306db">
+    <m_Name>canRagdoll</m_Name>
+    <m_Type>BOOL</m_Type>
+    <m_Value>true</m_Value>
+  </m_Conditions>
+  <m_Events x_name="798e7f93-f590-4406-ac66-30ef3ab26861">
+    <m_EventName>FallOnFront</m_EventName>
+    <m_Time>Start</m_Time>
+    <m_ParameterValue>true</m_ParameterValue>
+  </m_Events>
+  <m_Events x_name="56075d24-161e-47e7-8c02-2045c23ee69d">
+    <m_EventName>KnockDown</m_EventName>
+    <m_TimePc>0.1</m_TimePc>
+    <m_ParameterValue>true</m_ParameterValue>
+  </m_Events>
+  <m_Events x_name="2f401c7e-050c-484a-be3b-8b18adcbedf8">
+    <m_EventName>SetState</m_EventName>
+    <m_Time>Start</m_Time>
+    <m_ParameterValue />
+  </m_Events>
+  <m_Events x_name="1c4a86b6-2835-45f1-ab63-cea2f97343ce">
+    <m_EventName>PlaySound</m_EventName>
+    <m_TimePc>0.05</m_TimePc>
+    <m_ParameterValue>BodyHitGround</m_ParameterValue>
+  </m_Events>
+  <m_Priority>4</m_Priority>
+  <m_isRagdoll>true</m_isRagdoll>
+  <m_ragdollStartTimeMin>0.23</m_ragdollStartTimeMin>
+  <m_ragdollStartTimeMax>0.33</m_ragdollStartTimeMax>
+  <m_deferredBoneAxis>Z</m_deferredBoneAxis>
+</animNode>

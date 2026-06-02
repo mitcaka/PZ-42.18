@@ -1,0 +1,5 @@
+{
+    "Sandbox_Cat_PayPerFuel": "Cat Pay Per Fuel",
+    "Sandbox_Cat_PayPerFuel_PricePerLitre": "Price Per Litre",
+    "Sandbox_Cat_PayPerFuel_PricePerLitre_tooltip": "How much Base.Money to charge for each litre of fuel. Set to 0 for free fuel."
+}

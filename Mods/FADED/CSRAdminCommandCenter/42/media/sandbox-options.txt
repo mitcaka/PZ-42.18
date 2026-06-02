@@ -1,0 +1,113 @@
+VERSION = 1,
+
+option CSRAdminCommandCenter.EnableCommandCenter
+{
+    type = boolean,
+    default = true,
+    page = CSRACC_Main,
+    translation = EnableCommandCenter,
+}
+
+option CSRAdminCommandCenter.MinimumAccessLevel
+{
+    type = enum,
+    numValues = 5,
+    default = 4,
+    page = CSRACC_Main,
+    translation = MinimumAccessLevel,
+    valueTranslation = MinimumAccessLevel,
+}
+
+option CSRAdminCommandCenter.AllowObserverReadOnly
+{
+    type = boolean,
+    default = false,
+    page = CSRACC_Main,
+    translation = AllowObserverReadOnly,
+}
+
+option CSRAdminCommandCenter.MaxRowsPerPage
+{
+    type = integer,
+    min = 10,
+    max = 200,
+    default = 50,
+    page = CSRACC_Main,
+    translation = MaxRowsPerPage,
+}
+
+option CSRAdminCommandCenter.EnableVehicleMovementTracking
+{
+    type = boolean,
+    default = false,
+    page = CSRACC_Tracking,
+    translation = EnableVehicleMovementTracking,
+}
+
+option CSRAdminCommandCenter.VehicleTrackingIntervalMinutes
+{
+    type = integer,
+    min = 1,
+    max = 60,
+    default = 5,
+    page = CSRACC_Tracking,
+    translation = VehicleTrackingIntervalMinutes,
+}
+
+option CSRAdminCommandCenter.VehicleMovementThresholdTiles
+{
+    type = integer,
+    min = 1,
+    max = 1000,
+    default = 25,
+    page = CSRACC_Tracking,
+    translation = VehicleMovementThresholdTiles,
+}
+
+option CSRAdminCommandCenter.EnableVehicleClaimAuthoritySnapshot
+{
+    type = boolean,
+    default = true,
+    page = CSRACC_Authority,
+    translation = EnableVehicleClaimAuthoritySnapshot,
+}
+
+option CSRAdminCommandCenter.PadlockScanTileCap
+{
+    type = integer,
+    min = 100,
+    max = 20000,
+    default = 2500,
+    page = CSRACC_Tracking,
+    translation = PadlockScanTileCap,
+}
+
+option CSRAdminCommandCenter.PadlockScanMaxZ
+{
+    type = integer,
+    min = 0,
+    max = 7,
+    default = 3,
+    page = CSRACC_Tracking,
+    translation = PadlockScanMaxZ,
+}
+
+option CSRAdminCommandCenter.DebugLogMaxEntries
+{
+    type = integer,
+    min = 50,
+    max = 5000,
+    default = 500,
+    page = CSRACC_Debug,
+    translation = DebugLogMaxEntries,
+}
+
+option CSRAdminCommandCenter.MaxMapMarkers
+{
+    type = integer,
+    min = 5,
+    max = 250,
+    default = 50,
+    page = CSRACC_Map,
+    translation = MaxMapMarkers,
+}

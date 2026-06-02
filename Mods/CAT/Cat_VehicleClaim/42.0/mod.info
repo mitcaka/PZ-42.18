@@ -1,0 +1,8 @@
+name=Cat Vehicle Claim
+id=Cat_VehicleClaim
+modversion=1.0
+author=Cat
+description=Claim vehicles in multiplayer to prevent unauthorized access.
+description=Owners can manage guest permissions via a right-click UI.
+description=Includes trunk, mechanics, and passenger access controls.
+versionMin=42.0

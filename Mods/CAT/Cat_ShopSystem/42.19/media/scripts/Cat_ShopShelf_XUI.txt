@@ -1,0 +1,7 @@
+module Base
+{
+    xuiSkin default
+    {
+        -- Entity skins removed; system now uses vanilla cash registers.
+    }
+}

@@ -1,0 +1,11 @@
+VERSION = 1,
+
+option Cat_VehicleClaim.MaxClaimsPerPlayer
+{
+    type = integer,
+    min = 0,
+    max = 20,
+    default = 3,
+    page = Cat_VehicleClaim,
+    translation = Cat_VehicleClaim_MaxClaimsPerPlayer,
+}

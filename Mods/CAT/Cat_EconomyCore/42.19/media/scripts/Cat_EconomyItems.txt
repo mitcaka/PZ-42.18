@@ -1,0 +1,55 @@
+module Base
+{
+    item MoneyFive
+    {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.01,
+        DisplayName = $5,
+        Icon = Money,
+        WorldStaticModel = Money,
+        Tags = base:isfirefuel;base:isfiretinder;base:fitswallet,
+        FireFuelRatio = 0.25,
+    }
+
+    item MoneyTen
+    {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.01,
+        DisplayName = $10,
+        Icon = Money,
+        WorldStaticModel = Money,
+        Tags = base:isfirefuel;base:isfiretinder;base:fitswallet,
+        FireFuelRatio = 0.25,
+    }
+
+    item MoneyTwenty
+    {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.01,
+        DisplayName = $20,
+        Icon = Money,
+        WorldStaticModel = Money,
+        Tags = base:isfirefuel;base:isfiretinder;base:fitswallet,
+        FireFuelRatio = 0.25,
+    }
+
+    item MoneyFifty
+    {
+        DisplayCategory = Junk,
+        ItemType = base:normal,
+        Weight = 0.01,
+        DisplayName = $50,
+        Icon = Money,
+        WorldStaticModel = Money,
+        Tags = base:isfirefuel;base:isfiretinder;base:fitswallet,
+        FireFuelRatio = 0.25,
+    }
+
+    item Money
+    {
+        DisplayName = $1,
+    }
+}

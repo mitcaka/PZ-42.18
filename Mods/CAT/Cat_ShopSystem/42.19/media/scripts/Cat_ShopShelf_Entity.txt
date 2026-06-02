@@ -1,0 +1,4 @@
+module Base
+{
+    -- Shop entities removed; system now uses vanilla cash registers.
+}

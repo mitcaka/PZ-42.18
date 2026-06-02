@@ -1,0 +1,7 @@
+{
+    "Sandbox_Cat_ShopSystem": "Cat Shop System",
+    "Sandbox_Cat_ShopSystem_ShopRange": "Shop Browse Range",
+    "Sandbox_Cat_ShopSystem_ShopRange_tooltip": "Maximum distance (in tiles) a player can be from a shop register to browse or manage it.",
+    "Sandbox_Cat_ShopSystem_RegisterWeight": "Register Weight",
+    "Sandbox_Cat_ShopSystem_RegisterWeight_tooltip": "How much the shop and buyer registers weigh."
+}

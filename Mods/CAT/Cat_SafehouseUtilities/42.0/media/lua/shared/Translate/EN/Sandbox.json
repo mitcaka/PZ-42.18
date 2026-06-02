@@ -1,0 +1,19 @@
+{
+    "Sandbox_Cat_SafehouseUtilities": "Cat Safehouse Utilities",
+    "Sandbox_Cat_SafehouseUtilities_Enabled": "Enabled",
+    "Sandbox_Cat_SafehouseUtilities_Enabled_tooltip": "Enable safehouse utility billing and cutoffs.",
+    "Sandbox_Cat_SafehouseUtilities_EnableDailyCharge": "Daily Charge",
+    "Sandbox_Cat_SafehouseUtilities_EnableDailyCharge_tooltip": "Enable daily utility billing.",
+    "Sandbox_Cat_SafehouseUtilities_DailyChargeAmount": "Daily Charge Amount",
+    "Sandbox_Cat_SafehouseUtilities_DailyChargeAmount_tooltip": "Price per in-game day of utilities.",
+    "Sandbox_Cat_SafehouseUtilities_EnableWeeklyCharge": "Weekly Charge",
+    "Sandbox_Cat_SafehouseUtilities_EnableWeeklyCharge_tooltip": "Enable weekly utility billing.",
+    "Sandbox_Cat_SafehouseUtilities_WeeklyChargeAmount": "Weekly Charge Amount",
+    "Sandbox_Cat_SafehouseUtilities_WeeklyChargeAmount_tooltip": "Price per in-game week of utilities.",
+    "Sandbox_Cat_SafehouseUtilities_EnableMonthlyCharge": "Monthly Charge",
+    "Sandbox_Cat_SafehouseUtilities_EnableMonthlyCharge_tooltip": "Enable monthly utility billing.",
+    "Sandbox_Cat_SafehouseUtilities_MonthlyChargeAmount": "Monthly Charge Amount",
+    "Sandbox_Cat_SafehouseUtilities_MonthlyChargeAmount_tooltip": "Price per in-game month (30 days) of utilities.",
+    "Sandbox_Cat_SafehouseUtilities_GracePeriodHours": "Grace Period (Hours)",
+    "Sandbox_Cat_SafehouseUtilities_GracePeriodHours_tooltip": "Free utility hours given when a safehouse is first claimed."
+}

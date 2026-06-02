@@ -1,0 +1,24 @@
+module Base
+{
+    sound Cat_ATMButtonBeep
+    {
+        category = UI,
+        loop = false,
+        clip
+        {
+            file = media/sound/atm_button_beep.ogg,
+            volume = 1,
+        }
+    }
+
+    sound Cat_ATMErrorBeep
+    {
+        category = UI,
+        loop = false,
+        clip
+        {
+            file = media/sound/atm_error_triple_beep.ogg,
+            volume = 1,
+        }
+    }
+}

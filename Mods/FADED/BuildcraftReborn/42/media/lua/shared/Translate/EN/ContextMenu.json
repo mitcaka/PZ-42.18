@@ -1,0 +1,10 @@
+{
+    "ContextMenu_BCR_OpenHub": "Craft / Build",
+    "ContextMenu_BCR_OpenForItem": "Craft / Build with item",
+    "ContextMenu_BCR_OpenForItemNamed": "Craft / Build: %1",
+    "ContextMenu_BCR_Favorites": "Buildcraft Favorites",
+    "ContextMenu_BCR_FavoriteMake": "Make: %1",
+    "ContextMenu_BCR_FavoritePlace": "Place: %1",
+    "ContextMenu_BCR_FavoritesMore": "More favorites...",
+    "ContextMenu_BCR_OpenDisplaySettings": "Buildcraft Display Settings"
+}

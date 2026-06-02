@@ -1,0 +1,7 @@
+name=Buildcraft Reborn
+id=BuildcraftReborn
+description=Build 42.18 unified Make / Build UI overhaul. Preserves vanilla crafting and building logic while presenting a faster compact interface.
+poster=poster.png
+version=0.1.0
+versionMin=42.18.0
+category=ui

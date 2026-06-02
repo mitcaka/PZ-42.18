@@ -1,0 +1,10 @@
+name=Cat Pay Per Fuel
+id=Cat_PayPerFuel
+modversion=1.0
+author=Cat
+description=Charges Base.Money to use fuel pumps at gas stations.
+description=Price per litre is configurable via sandbox options.
+description=Requires Cat_EconomyCore.
+poster=poster.png
+versionMin=42.0
+require=Cat_EconomyCore

@@ -1,0 +1,10 @@
+name=Cat Safehouse Utilities
+id=Cat_SafehouseUtilities
+modversion=1.0
+author=Cat
+description=Charges safehouses for water and electricity usage.
+description=Add pre-paid cards to the vanilla safehouse UI.
+description=Requires Cat_EconomyCore.
+poster=poster.png
+versionMin=42.0
+require=Cat_EconomyCore

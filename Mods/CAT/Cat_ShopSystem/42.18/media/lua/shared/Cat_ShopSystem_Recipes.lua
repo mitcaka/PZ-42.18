@@ -1,0 +1,1 @@
+-- Recipe auto-teach removed; shop system now uses vanilla cash registers.

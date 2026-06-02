@@ -1,0 +1,9 @@
+name=Cat Economy Core
+id=Cat_EconomyCore
+modversion=1.0
+author=Cat
+description=Shared utilities and items for the Cat economy mods.
+description=Required by Cat Shop System and Cat Banking System.
+poster=poster.png
+versionMin=42.18.0
+versionMax=42.18.0

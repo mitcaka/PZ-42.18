@@ -1,0 +1,12 @@
+name=Cat Shop System
+id=Cat_ShopSystem
+modversion=1.0
+author=Cat
+description=Player-stocked shop shelves with virtual inventory and checkout UI.
+description=Requires Cat Economy Core.
+description=Click the floating Browse Shop button when near a register to interact.
+description=First-time users: the button may spawn behind the chatbox — drag it to move and its position is saved.
+poster=poster.png
+versionMin=42.18.0
+versionMax=42.18.0
+require=Cat_EconomyCore

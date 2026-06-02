@@ -1,0 +1,13 @@
+module Base
+{
+    item Cat_CardDecoder
+    {
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        DisplayName = Card Decoder,
+        Icon = Pager,
+        Weight = 0.3,
+        WorldStaticModel = Pager,
+        Tags = base:hasmetal;base:miscelectronic,
+    }
+}

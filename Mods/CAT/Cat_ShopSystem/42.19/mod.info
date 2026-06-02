@@ -1,0 +1,11 @@
+name=Cat Shop System
+id=Cat_ShopSystem
+modversion=1.0
+author=Cat
+description=Player-stocked shops using cash registers with virtual inventory and checkout UI.
+description=Requires Cat Economy Core.
+description=Left-click a register to open the shop UI.
+description=Admins can right-click unclaimed registers to initialize them.
+poster=poster.png
+versionMin=42.19.0
+require=Cat_EconomyCore

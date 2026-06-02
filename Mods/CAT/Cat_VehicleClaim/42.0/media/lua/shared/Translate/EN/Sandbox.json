@@ -1,0 +1,5 @@
+{
+    "Sandbox_Cat_VehicleClaim": "Cat Vehicle Claim",
+    "Sandbox_Cat_VehicleClaim_MaxClaimsPerPlayer": "Max Claims Per Player",
+    "Sandbox_Cat_VehicleClaim_MaxClaimsPerPlayer_tooltip": "Maximum number of vehicles a single player can claim. Set to 0 for unlimited."
+}

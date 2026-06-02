@@ -1,0 +1,8 @@
+name=CSR Admin Command Center
+id=CSRAdminCommandCenter
+description=Standalone admin command center companion for Common Sense Reborn. Runs in limited mode when CSR is not present. Copyright (c) 2026 CSR Admin Tools. All rights reserved. Common Sense Reborn remains property of its respective author(s); this mod does not include or modify CSR.
+author=CSR Admin Tools
+version=0.1.7
+versionMin=42.0
+category=ui
+poster=poster.png

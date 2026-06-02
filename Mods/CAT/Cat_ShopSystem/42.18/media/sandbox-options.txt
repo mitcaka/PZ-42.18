@@ -1,0 +1,21 @@
+VERSION = 1,
+
+option Cat_ShopSystem.ShopRange
+{
+    type = integer,
+    min = 1,
+    max = 20,
+    default = 2,
+    page = Cat_ShopSystem,
+    translation = Cat_ShopSystem_ShopRange,
+}
+
+option Cat_ShopSystem.RegisterWeight
+{
+    type = double,
+    min = 0.1,
+    max = 10.0,
+    default = 0.5,
+    page = Cat_ShopSystem,
+    translation = Cat_ShopSystem_RegisterWeight,
+}

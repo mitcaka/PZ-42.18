@@ -1,0 +1,41 @@
+VERSION = 1,
+
+option Cat_BankingSystem.WalletDropChance
+{
+    type = double,
+    min = 0,
+    max = 100,
+    default = 15.0,
+    page = Cat_BankingSystem,
+    translation = Cat_BankingSystem_WalletDropChance,
+}
+
+option Cat_BankingSystem.WalletMinMoney
+{
+    type = integer,
+    min = 0,
+    max = 1000,
+    default = 5,
+    page = Cat_BankingSystem,
+    translation = Cat_BankingSystem_WalletMinMoney,
+}
+
+option Cat_BankingSystem.WalletMaxMoney
+{
+    type = integer,
+    min = 0,
+    max = 1000,
+    default = 50,
+    page = Cat_BankingSystem,
+    translation = Cat_BankingSystem_WalletMaxMoney,
+}
+
+option Cat_BankingSystem.WalletCreditCardChance
+{
+    type = double,
+    min = 0,
+    max = 100,
+    default = 5.0,
+    page = Cat_BankingSystem,
+    translation = Cat_BankingSystem_WalletCreditCardChance,
+}

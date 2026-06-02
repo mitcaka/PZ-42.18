@@ -1,0 +1,618 @@
+module Base
+{
+    sound Cat_RPChat_Voice_AI
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/AI.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_AIR
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/AIR.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_A
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/A.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_AR
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/AR.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_B
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/B.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_CH
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/CH.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_C
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/C.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_D
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/D.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_EE
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/EE.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_E
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/E.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_ERE
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/ERE.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_ER
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/ER.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_F
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/F.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_G
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/G.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_H
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/H.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_I
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/I.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_IR
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/IR.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_IS
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/IS.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_J
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/J.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_L
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/L.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_M
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/M.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_NG
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/NG.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_N
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/N.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_O
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/O.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_OO
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/OO.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_OOR
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/OOR.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_OW
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/OW.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_OY
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/OY.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_P
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/P.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_R
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/R.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_SH
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/SH.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_S
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/S.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_TH
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/TH.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_T
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/T.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_U
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/U.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_UR
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/UR.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_V
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/V.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_W
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/W.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_Y
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/Y.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_YStart
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/YStart.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+    sound Cat_RPChat_Voice_Z
+    {
+        category = EHE: Main,
+        loop = false,
+        is3D = true,
+        clip
+        {
+            file = media/sound/cat_rpchat/phonemes/player/Z.ogg,
+            distanceMax = 650,
+            reverbFactor = 0.1,
+            volume = 0.7,
+            pitch = 1,
+        }
+    }
+
+}
