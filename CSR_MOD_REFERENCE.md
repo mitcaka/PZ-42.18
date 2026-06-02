@@ -14,6 +14,8 @@
 5. [Giao diện & HUD (CSR_Interface)](#5-giao-diện--hud)
 6. [Server & Multiplayer (CSR_Server)](#6-server--multiplayer)
 
+> **Cập nhật lần cuối:** 2 tháng 6, 2026 — phản ánh changelog May 24–Jun 2 (v1.8.38)
+
 ---
 
 ## 1. Công cụ & Đột nhập
@@ -270,16 +272,22 @@ Vanilla không cho leo cửa sổ/hàng rào khi mang ba lô nặng hoặc máy 
 
 ---
 
-### 1.18 Saw All Logs & Dismantle All Watches
+### 1.18 Saw All Logs & Dismantle Small Electronics
 
 **Cách hoạt động:**  
 **Saw All Logs:** Cưa tất cả gỗ tròn (logs) gần đó thành planks cùng lúc. Option `EnableSawAllDropToGround` cho rơi planks xuống đất thay vì vào túi.  
-**Dismantle All Watches:** Tháo tất cả đồng hồ để lấy linh kiện trong một thao tác.
+**Dismantle Small Electronics:** Tháo hàng loạt đồ điện tử nhỏ bằng tua vít để lấy scrap metal + XP Electrical. Danh sách đồ hỗ trợ được mở rộng đáng kể so với phiên bản cũ (chỉ đồng hồ):
+
+- Đồng hồ (tất cả variant WristWatch, AlarmClock, PocketWatch)
+- CDplayer, CordlessPhone, Earbuds, HairDryer, HairIron, Headphones
+- HomeAlarm, Pager, Remote, Speaker, VideoGame, Amplifier
+
+Chuột phải bất kỳ item nào trong danh sách → "Dismantle All [type]" để xử lý hàng loạt.
 
 | Sandbox Variable | Type | Default | Mô tả |
 |---|---|---|---|
 | `EnableSawAllDropToGround` | boolean | false | Planks rơi xuống đất |
-| `EnableDismantleAllWatches` | boolean | true | Tháo hàng loạt đồng hồ |
+| `EnableDismantleAllWatches` | boolean | true | Tháo hàng loạt đồ điện tử nhỏ |
 
 ---
 
@@ -416,29 +424,49 @@ Hiển thị thông tin vũ khí đang cầm (ammo count, condition) trực ti�
 
 ---
 
-### 2.9 Speed Reload & Reload All Mags
+### 2.9 Speed Reload, Reload All Mags & Seated Bonus
 
 **Cách hoạt động:**  
-**Speed Reload:** Nạp đạn nhanh hơn khi ngồi (giảm thời gian reload).  
+**Speed Reload (tính năng mới):** Bắn xong — hất magazine đang dùng ra đất và lắp ngay magazine nạp sẵn tốt nhất trong túi. Kích hoạt qua:
+- Radial menu của súng
+- Double-tap phím Reload (cửa sổ 550ms)
+- Keybind tùy chỉnh qua PZAPI Mod Options
+
+Magazine bị hất ra xuất hiện dưới đất (ở SP và MP đều có — MP dùng server command để đồ tồn tại). Không tương thích súng của SWMG/MarzGuns mods.
+
 **Reload All Mags:** Nạp đạn tất cả magazine trống cùng lúc từ context menu.  
-**Seated Reload Bonus:** Ngồi giảm thêm thời gian reload.
+**Seated Reload Bonus:** Ngồi giảm thêm thời gian reload animation.
+
+**Cách test:**
+1. Trang bị súng có magazine, có thêm magazine đã nạp trong túi
+2. Vào radial menu súng → "Speed Reload" để kích hoạt
+3. Quan sát magazine cũ rơi xuống đất, magazine mới được lắp tự động
+4. Test double-tap Reload key trong vòng 550ms
 
 | Sandbox Variable | Type | Default | Mô tả |
 |---|---|---|---|
-| `EnableSpeedReload` | boolean | true | Bật reload nhanh |
+| `EnableSpeedReload` | boolean | true | Bật speed reload (dump + swap magazine) |
 | `EnableReloadAllMags` | boolean | true | Nạp hàng loạt magazine |
 | `EnableSeatedReloadBonus` | boolean | true | Bonus reload khi ngồi |
 
 ---
 
-### 2.10 Gear Sling (Đeo súng trên vai)
+### 2.10 Gear Sling (Đeo túi kiểu sling)
 
 **Cách hoạt động:**  
-Cho phép đeo súng dài trên vai (sling) thay vì cầm tay — giải phóng tay mà vũ khí vẫn accessible nhanh.
+Thêm body slot thứ hai (`csr:gearsling`) cho phép đeo túi kiểu đeo chéo/một vai **song song với backpack chính** thay vì phải chọn một trong hai. Danh sách túi hỗ trợ (59 loại) bao gồm:
+
+- Duffel bags, satchels, chest rigs, tool bags, military bags
+- Medical bags, fishing satchels, mail bags, money bags
+- Đồng thời tách fanny pack thành 2 slot riêng: front và back
+
+Bags trong danh sách được tự động reroute sang slot `csr:gearsling` khi equip. Legacy saves remapped an toàn.
+
+**Lưu ý:** Gear Sling là slot cho TÚI, không phải cho vũ khí.
 
 | Sandbox Variable | Type | Default | Mô tả |
 |---|---|---|---|
-| `EnableGearSling` | boolean | true | Bật đeo súng sling |
+| `EnableGearSling` | boolean | true | Bật slot đeo túi sling |
 
 ---
 
@@ -470,6 +498,43 @@ Mini-game chơi Russian Roulette với người chơi khác. Hai người đứn
 | `EnableRouletteSession` | boolean | true | Bật mini-game roulette |
 | `RouletteRerollEachLap` | boolean | false | Xáo lại đạn sau mỗi vòng |
 | `RouletteRealDeath` | boolean | **false** | Thua là chết thật |
+
+---
+
+### 2.13 Weaponized Brick & Signal Tools
+
+**Weaponized Brick (gạch ngẫu hứng):**  
+Vũ khí cận chiến loại small-blunt mới (`Base.CSR_WeaponizedBrick`) — gạch được chuẩn bị làm vũ khí. Xuất hiện trong loot tự nhiên:
+
+| Loot Pool | Weight |
+|---|---|
+| CrateTools | 0.8 |
+| CrateConcrete | 1.0 |
+| CrateGravelBags | 1.0 |
+| GarageTools | 0.4 |
+
+Craft từ: Clay Brick + Cloth Strips.
+
+**Signal Tools (pháo hiệu và đèn):**  
+Bộ công cụ tín hiệu mới được thêm vào loot pool và có thể dùng trong game:
+
+- **Glow Sticks** (6 màu: Red/Green/Blue/White/Yellow/Purple) — ném xuống đất tạo vùng sáng màu có thời hạn
+- **Hand Flares** (4 màu: Red/Green/Blue/White) — kích hoạt từ inventory, phát sáng mạnh
+- **Signal Flare Gun** — súng bắn flare để phát tín hiệu tầm xa  
+- **Signal Flare Rounds** — đạn cho Signal Flare Gun
+
+| Loại | Loot Pool |
+|---|---|
+| Glow Sticks | CampingStoreLighting, ElectronicStoreLights, CrateElectronics, ToolStoreMisc |
+| Hand Flares | CampingStoreGear, CrateSurvivalGear, SurvivalGear |
+| Signal Flare Gun + Rounds | GunStoreGuns, GunStorePistols, ArmyStorageGuns |
+
+**Cách test:**
+1. Admin spawn `Base.CSR_WeaponizedBrick` → trang bị → test combat
+2. Spawn glow stick → ném → quan sát vùng sáng màu
+3. Spawn Signal Flare Gun + Rounds → bắn ngoài trời → quan sát pháo hiệu
+
+*Không có sandbox toggle riêng — luôn active khi mod bật.*
 
 ---
 
@@ -857,8 +922,21 @@ Cải tiến nhiều điểm nhỏ khi sửa xe: hiển thị rõ part nào hỏ
 ### 4.2 Improvised Hotwire & Un-Hotwire
 
 **Cách hoạt động:**  
-**Hotwire:** Khởi động xe không cần chìa khóa bằng dây điện. Mất thời gian, phụ thuộc Electrical skill.  
-**Un-Hotwire:** Tháo dây hotwire để xe cần chìa trở lại.
+**Hotwire:** Khởi động xe không cần chìa khóa bằng dây điện. Mất thời gian, phụ thuộc Electrical skill.
+
+**Un-Hotwire (tính năng mới):** Tháo dây hotwire để xe cần chìa trở lại. Chi tiết:
+- **Điều kiện:** Phải là tài xế trong xe đang hotwired, động cơ phải TẮT
+- **Công cụ:** Tua vít (screwdriver) — bị tiêu hao 1 điểm condition khi thành công
+- **Thời gian:** `maxTime = max(40, 200 - (Electrical×8 + Mechanics×4))` ticks
+  - Electrical 10 + Mechanics 10 = khoảng 40 ticks (nhanh nhất)
+  - Electrical 0 + Mechanics 0 = 200 ticks (chậm nhất)
+- **Kết quả:** `vehicle:setHotwired(false)` — xe trở về trạng thái cần chìa
+
+**Cách test:**
+1. Hotwire một xe (đảm bảo trạng thái hotwired)
+2. Tắt động cơ, có tua vít trong túi
+3. Chuột phải xe → "Un-Hotwire"
+4. Kiểm tra xe không khởi động được nếu không có chìa
 
 | Sandbox Variable | Type | Default | Mô tả |
 |---|---|---|---|
@@ -973,14 +1051,28 @@ Dùng mui xe (hood) và cốp (trunk) làm bàn craft — đặt nguyên liệu 
 
 ---
 
-### 4.10 Rope Tow (Kéo xe)
+### 4.10 Rope Tow (Kéo xe bằng dây)
 
 **Cách hoạt động:**  
-Dùng dây thừng kéo xe hỏng bằng xe khác. Gắn dây từ cốp xe kéo vào xe bị kéo, lái chậm để kéo đến nơi sửa.
+Kéo xe hỏng bằng xe khác — nhưng yêu cầu phải có dây/xích thực tế trong túi khi gắn kéo. Hệ thống hoạt động lớp trên hệ thống hitch của vanilla:
+
+- **Khi nào cần dây:** Xe bị kéo phải có engine power = 0 AND battery = 0 (trạng thái "cần cứu")
+- **Vật liệu hỗ trợ:** `Base.Rope`, `Base.Chain`, `Base.HeavyChain`, `Base.HeavyChain_Hook`
+- **Tiêu hao:** Dây/xích bị tiêu thụ khi gắn, được TRẢ LẠI vào túi khi tháo
+- **Dữ liệu lưu trữ:** Loại vật liệu được lưu vào modData của xe kéo (`csrTowMaterial`) — MP-safe
+- **Chặn:** Nếu không có dây/xích trong túi → halo note cảnh báo, không gắn được
+
+Nếu xe bị kéo vẫn còn năng lượng (engine hoặc battery), không cần dây (gắn bình thường theo vanilla).
+
+**Cách test:**
+1. Xe A còn nhiên liệu, Xe B hết xăng + pin
+2. Thử gắn tow Xe B mà không có Rope → bị chặn
+3. Có Rope trong túi → gắn thành công, Rope biến mất
+4. Tháo tow → Rope trả lại vào túi
 
 | Sandbox Variable | Type | Default | Mô tả |
 |---|---|---|---|
-| `EnableRopeTow` | boolean | true | Bật kéo xe bằng dây |
+| `EnableRopeTow` | boolean | true | Bật cơ chế cần dây khi kéo xe hỏng |
 
 ---
 
@@ -1025,14 +1117,26 @@ Khi xe va chạm mạnh (`TrunkSpillageMinSpeed` km/h), một số đồ trong c
 
 ---
 
-### 4.14 Corpse Trunk (Bỏ xác vào cốp)
+### 4.14 Corpse Trunk (Bỏ xác vào cốp xe)
 
 **Cách hoạt động:**  
-Cho phép bỏ xác zombie (hoặc người) vào cốp xe để vận chuyển.
+Bỏ xác zombie hoặc người chơi vào các khoang chứa của xe lân cận để vận chuyển. Chi tiết:
+
+- **Bán kính tìm kiếm:** Quét 2 tile xung quanh người chơi và xác
+- **Khoang hỗ trợ:** Trunk, Truck Bed, Trailer Trunk, Cargo Part (bao gồm modded vehicle cargo dùng keyword matching)
+- **Kiểm tra quyền:** Qua `vehicleClaimAllows()` — cần có quyền truy cập theo claim system
+- **Quy trình:** `ISGrabCorpseAction` → `ISDropCorpseIntoContainer` (timed action queue)
+- Xác được chuyển thành corpse item (giữ nguyên quần áo và đồ trong người)
+
+**Cách test:**
+1. Đậu xe gần xác zombie (trong 2 tile)
+2. Chuột phải xác → tìm option "Place in Trunk"
+3. Kiểm tra cốp xe có xác
+4. Test với xe có claim — chỉ owner/member mới thấy option
 
 | Sandbox Variable | Type | Default | Mô tả |
 |---|---|---|---|
-| `EnableCorpseTrunk` | boolean | true | Bật bỏ xác vào cốp |
+| `EnableCorpseTrunk` | boolean | true | Bật bỏ xác vào cốp xe |
 
 ---
 
@@ -1247,13 +1351,25 @@ Thêm vật phẩm "Notice Board" — bảng treo tường dùng để viết v�
 ### 5.15 Stair Sense & Stair Vault Guard
 
 **Cách hoạt động:**  
-**Stair Sense:** Highlight cầu thang khi di chuyển gần để dễ nhận biết.  
-**Stair Vault Guard:** Ngăn nhân vật vô tình nhảy qua cầu thang (lỗi vanilla hay xảy ra).
+**Stair Sense:** Highlight cầu thang khi di chuyển gần để dễ nhận biết.
+
+**Stair Vault Guard:** Chặn **auto-vault tự động** khi đứng gần cầu thang và lan can có thể nhảy qua (`HoppableN/W` flag). Cơ chế:
+- Quét lưới 3×3 quanh player tìm cầu thang (`HasStairs()`)
+- Quét lưới 3×3 tìm hoppable railings
+- Chỉ block auto-vault khi CẢ HAI điều kiện đều đúng — tránh block ở những nơi không nguy hiểm
+- Gọi `player:setIgnoreAutoVault(true/false)` mỗi frame
+- **Vault thủ công** (nhấn phím) vẫn hoạt động bình thường — chỉ chặn tự động
+
+**Cách test:**
+1. Đứng đầu cầu thang có lan can
+2. Di chuyển về phía lan can — không bị auto-vault
+3. Nhấn phím vault thủ công → vẫn vault được
+4. Đứng ở lan can không gần cầu thang → auto-vault hoạt động bình thường
 
 | Sandbox Variable | Type | Default | Mô tả |
 |---|---|---|---|
 | `EnableStairSense` | boolean | true | Highlight cầu thang |
-| `EnableStairVaultGuard` | boolean | true | Chặn vault qua cầu thang |
+| `EnableStairVaultGuard` | boolean | true | Chặn auto-vault tự động gần cầu thang |
 
 ---
 
