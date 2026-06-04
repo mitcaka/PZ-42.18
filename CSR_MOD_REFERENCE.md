@@ -1881,42 +1881,82 @@ Thay thế UI safehouse mặc định của PZ bằng UI nâng cao của CSR v�
 
 ## 6. Server & Multiplayer
 
-### 6.1 Claim System (Hệ thống Claim đất)
+> **Lưu ý:** Tất cả tính năng section 6 chỉ hoạt động đầy đủ trong Multiplayer. Trong Single Player một số tính năng bị skip hoặc chạy ở local-only mode.  
+> **Access level admin** được định nghĩa là: `admin`, `moderator`, `gm`, hoặc `overseer`.
 
-**Kích hoạt:** Chuột phải bên trong nhà → **"Claim This Building"**. Quản lý claim: **V** (Radial) → **"Claims"**. Xem/chỉnh thành viên: mở Claims Manager → chọn claim.  
+---
+
+### 6.1 Claim System (Hệ thống Claim đất & xe)
+
+**Kích hoạt:** Chuột phải trong nhà → **"Claim Safehouse (X/Y)"** (X = đã dùng, Y = quota). Quản lý: **V** → **"Claims"**.  
 **Phím tắt:** **V** (Radial Menu) → Claims.
 
-**Cách hoạt động:**  
-Hệ thống claim đất/nhà/faction thay thế safehouse vanilla. Dữ liệu lưu trong 32 shard (`CSR_Claims_C0..C31`) trong modData. Hỗ trợ 3 loại claim: cá nhân, faction, xe.
+---
+
+#### Thao tác người chơi
+
+**Claim & quản lý nhà:**
+
+| Thao tác | Cách làm | Điều kiện |
+|---|---|---|
+| Claim nhà | Chuột phải trong phòng → "Claim Safehouse (X/Y)" | Chưa bị claim, chưa đủ quota |
+| Xem claim | Chuột phải trong nhà mình → "View Safehouse" | Là owner/member |
+| Từ bỏ claim | Chuột phải → "Release Safehouse" | Là owner hoặc coowner |
+| Mở rộng vùng claim | Claims Manager → Resize → chọn tile mở rộng | Phải đứng bên trong, đủ điều kiện nguyên liệu/tiền |
+| Mời thành viên | Claims Manager → Members → Invite → nhập tên | Là officer trở lên |
+| Kick thành viên | Claims Manager → Members → chọn tên → Kick | Là officer trở lên |
+| Đổi role thành viên | Claims Manager → Members → chọn tên → Set Role | Là owner/coowner |
+| Đặt padlock container | Chuột phải container trong claim → "Lock Container" | Là member trở lên |
 
 **Phân cấp quyền trong claim:**
-| Role | Quyền |
-|---|---|
-| `owner` | Toàn quyền bao gồm transfer |
-| `coowner` | Quản lý trừ transfer |
-| `officer` | Mời/kick, build, dismantle, highlight |
-| `member` | Build, drive, loot, unlock, vào |
-| `ally` | Vào, unlock cửa |
-| `outsider` | Không có quyền (trừ raid window) |
 
-**Cách test:**
-1. Đứng trong nhà → chuột phải → "Claim This Building"
-2. Mời người khác → kiểm tra quyền từng role
-3. Bật `ClaimRaidEnabled` → test giờ raid người outsider vào được
+| Role | Vào | Unlock cửa | Loot | Build/Dismantle | Mời/Kick | Transfer |
+|---|---|---|---|---|---|---|
+| `owner` | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| `coowner` | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
+| `officer` | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ |
+| `member` | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
+| `ally` | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ |
+| `outsider` | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ |
+
+**Raid Window** (nếu `ClaimRaidEnabled = true`): Trong giờ `ClaimRaidStart`–`ClaimRaidEnd` (game time), outsider có thể vào claim. Các option `ClaimRaidAllowBuild`/`ClaimRaidAllowLoot` kiểm soát độ sâu của raid.
+
+**Claim xe:**
+- Chuột phải xe → **"Claim Vehicle"** (tối đa `MaxVehicleClaims` xe/người)
+- Khi claim thành công: nhận key vật lý, xe bị khóa với người lạ
+- Thêm người được phép lái: Claims Manager → xe → Add Allowed Driver
+- Bỏ claim xe: Claims Manager → xe → Unclaim
+
+---
+
+#### Quyền Admin
+
+| Hành động | Cách làm | Ghi chú |
+|---|---|---|
+| Force-release claim bất kỳ | Chuột phải trong nhà bất kỳ → **"Admin: Force-Release Safehouse"** | Xóa claim ngay lập tức, không cần là owner |
+| Teleport đến claim | Server command `CSR_AdminTeleportClaim` (theo claim ID) | Xem ID trong admin log |
+| Xem toàn bộ claim | Claims Manager Panel (mở từ Radial → Claims) hiện tất cả claim trên server | |
+| Force-claim xe | Chuột phải xe → Claim Vehicle → admin bypass quota và tự release owner cũ | |
+| Purge legacy vehicle claims | Server command `CSR_AdminPurgeLegacyVehicles` | Xóa claim xe orphan (xe không còn tồn tại) |
+| Bypass quota | Admin không bị giới hạn `MaxSafehouseClaims` và `MaxVehicleClaims` | |
+| Bypass expansion cooldown | Admin có thể resize không cần chờ `ClaimExpansionCooldownMinutes` | |
+
+**Cấu hình server quan trọng:**
 
 | Sandbox Variable | Type | Default | Min | Max | Mô tả |
 |---|---|---|---|---|---|
 | `EnableCSRClaimsOverride` | boolean | true | — | — | Dùng hệ thống claim CSR thay vanilla |
-| `MaxSafehouseClaims` | integer | 3 | 1 | 10 | Số claim tối đa mỗi người |
+| `MaxSafehouseClaims` | integer | 3 | 1 | 10 | Số claim nhà tối đa mỗi người |
+| `MaxVehicleClaims` | integer | 3 | 1 | 20 | Số xe tối đa mỗi người |
 | `EnableMultipleSafehouse` | boolean | true | — | — | Cho phép nhiều safehouse |
-| `EnableClaimInvites` | boolean | true | — | — | Bật hệ thống mời vào claim |
-| `ClaimInviteCooldownMin` | integer | 1 | 0 | 60 | Phút cooldown giữa các lần mời |
+| `EnableClaimInvites` | boolean | true | — | — | Bật hệ thống mời |
+| `ClaimInviteCooldownMin` | integer | 1 | 0 | 60 | Cooldown giữa các lần mời (phút) |
 | `ClaimAuditLog` | boolean | true | — | — | Ghi log mọi thay đổi claim |
 | `ClaimAdminsInvisible` | boolean | false | — | — | Admin không hiển thị trong claim roster |
-| `ClaimDissolveAction` | enum | 1 | 1 | 2 | 1=transfer, 2=release khi chủ offline |
+| `ClaimDissolveAction` | enum | 1 | 1 | 2 | 1=transfer, 2=release khi chủ offline quá lâu |
 | `ClaimContainerProtect` | boolean | true | — | — | Bảo vệ container trong claim |
 | `ClaimPadlockEnabled` | boolean | true | — | — | Bật hệ thống khóa ổ |
-| `ClaimPadlockBreakSeconds` | integer | 180 | 30 | 600 | Giây cần phá khóa ổ |
+| `ClaimPadlockBreakSeconds` | integer | 180 | 30 | 600 | Giây phá khóa ổ |
 
 **Mở rộng Claim:**
 
@@ -1929,10 +1969,8 @@ Hệ thống claim đất/nhà/faction thay thế safehouse vanilla. Dữ liệu
 | `ClaimExpansionCooldownMinutes` | integer | 10 | 0 | 1440 | Cooldown giữa các lần mở rộng |
 | `ClaimExpansionMoneyPer10Tiles` | integer | 1 | 0 | 10000 | Chi phí tiền mỗi 10 tiles |
 | `ClaimExpansionMaterialsPer10Tiles` | integer | 2 | 0 | 10000 | Vật liệu cần mỗi 10 tiles |
-| `ClaimExpansionRequireArchitect` | boolean | false | — | — | Cần kiến trúc sư để mở rộng |
-| `ClaimExpansionArchitectCarpentryLevel` | integer | 4 | 0 | 10 | Level Carpentry tối thiểu của kiến trúc sư |
+| `ClaimExpansionRequireArchitect` | boolean | false | — | — | Cần kiến trúc sư (Carpentry ≥ level) |
 | `ClaimExpansionRequirePlayerInside` | boolean | true | — | — | Phải đứng trong claim khi mở rộng |
-| `ClaimExpansionBlockNonMembersInside` | boolean | true | — | — | Chặn non-member vào khi đang mở rộng |
 
 **Raid Window:**
 
@@ -1952,18 +1990,30 @@ Hệ thống claim đất/nhà/faction thay thế safehouse vanilla. Dữ liệu
 | `MaxFactionSafehouses` | integer | 2 | 1 | 5 | Số safehouse tối đa mỗi faction |
 | `FactionClaimPadding` | integer | 0 | 0 | 200 | Khoảng cách tối thiểu giữa 2 claim (tiles) |
 | `FactionClaimSpawnRadius` | integer | 50 | 0 | 500 | Bán kính cấm claim quanh spawn point |
-| `FactionClaimRespectSpawn` | boolean | true | — | — | Áp dụng bảo vệ spawn point |
-| `FactionClaimResidentialOnly` | boolean | false | — | — | Chỉ claim được nhà ở (không phải kho) |
+| `FactionClaimResidentialOnly` | boolean | false | — | — | Chỉ claim được nhà ở |
 
 ---
 
 ### 6.2 Claim Respawn (Hồi sinh tại claim)
 
-**Kích hoạt:** Passive — khi chết, respawn screen tự hiện thêm option **"Respawn at Claim"**. Chọn claim từ dropdown rồi xác nhận.  
+**Kích hoạt:** Passive — khi chết, màn hình respawn tự thêm dropdown chọn claim.  
 **Phím tắt:** Không có.
 
-**Cách hoạt động:**  
-Khi chết, có thể chọn hồi sinh tại claim của mình thay vì spawn point mặc định.
+---
+
+#### Thao tác người chơi
+
+1. Chết → màn hình respawn xuất hiện
+2. Dropdown **"Respawn Location"** → chọn tên claim muốn hồi sinh
+3. Nhấn **Respawn** → spawn tại cửa vào của claim đó
+4. Nếu claim bị xóa/không còn tồn tại → tự động fallback về spawn mặc định
+
+---
+
+#### Quyền Admin
+
+- Không có command riêng. Admin kiểm soát gián tiếp qua `EnableClaimRespawn`.
+- Force-release một claim của player → player mất option respawn tại đó.
 
 | Sandbox Variable | Type | Default | Mô tả |
 |---|---|---|---|
@@ -1973,29 +2023,61 @@ Khi chết, có thể chọn hồi sinh tại claim của mình thay vì spawn p
 
 ### 6.3 Knowledge Sharing (Chia sẻ kiến thức)
 
-**Kích hoạt:** Chuột phải người chơi gần đó → **"Knowledge Sharing"** → submenu: **"Teach Recipe"** (1 học sinh) / **"Give Lecture"** (nhiều học sinh, bán kính 6 tiles).  
+**Kích hoạt:** Chuột phải người chơi gần đó → **"Knowledge Sharing"**.  
 **Phím tắt:** Không có.
 
-**Cách hoạt động:**  
-Người chơi có kỹ năng cao có thể dạy công thức (recipe) hoặc giảng bài (lecture) cho người chơi gần đó. Dạy recipe: 1 học sinh, 1 thầy — timed action. Lecture: nhiều học sinh cùng lúc trong bán kính 6 tiles.
+---
 
-**Công thức có thể dạy:**
-- `generator` — Sử dụng máy phát (cần Electricity ≥ 3)
-- `basic_mechanics` — Cơ bản (cần Mechanics ≥ 2)
-- `intermediate_mechanics` — Trung cấp (cần Mechanics ≥ 4)
-- `advanced_mechanics` — Nâng cao (cần Mechanics ≥ 6)
+#### Thao tác người chơi
 
-**Lecture có thể giảng:**
-- `mechanics` — Cơ khí (Mechanics ≥ 5, cần tua vít)
-- `doctor` — Sơ cứu (First Aid ≥ 5, cần băng/cồn)
-- `electricity` — Điện (Electricity ≥ 5, cần tua vít)
-- `tailoring` — May vá (Tailoring ≥ 5, cần kim + chỉ)
+**Dạy Recipe (1 thầy → 1 học sinh):**
 
-**Cách test:**
-1. Nâng Mechanics lên 5+
-2. Có tua vít trong túi
-3. Đứng gần người chơi khác (6 tiles)
-4. Chuột phải → "Knowledge Sharing" → "Give Lecture" → "Mechanics"
+| Bước | Thao tác |
+|---|---|
+| 1 | Chuột phải người chơi trong tầm → Knowledge Sharing → **"Teach Recipe"** |
+| 2 | Chọn recipe từ danh sách đã học của mình |
+| 3 | Học sinh nhận dialog xác nhận → chấp nhận |
+| 4 | Timed action bắt đầu — thầy và trò đứng yên (`KnowledgeRecipeLessonTime` ticks) |
+| 5 | Hoàn thành → học sinh học được recipe |
+| 6 | Hủy giữa chừng: di chuyển xa → action cancel |
+
+**Yêu cầu để dạy:**
+
+| Recipe | Skill yêu cầu |
+|---|---|
+| Generator Usage | Electricity ≥ 3 |
+| Basic Mechanics | Mechanics ≥ 2 |
+| Intermediate Mechanics | Mechanics ≥ 4 |
+| Advanced Mechanics | Mechanics ≥ 6 |
+
+**Giảng bài (1 thầy → nhiều học sinh, bán kính 6 tiles):**
+
+| Bước | Thao tác |
+|---|---|
+| 1 | Chuột phải → Knowledge Sharing → **"Give Lecture"** → chọn loại bài |
+| 2 | Thầy bắt đầu timed action lecture |
+| 3 | Tất cả player trong bán kính 6 tiles tự động nhận kiến thức (không cần xác nhận) |
+| 4 | Chỉ player có skill ≤ `KnowledgeLectureMaxStudentLevel` mới nhận được |
+
+**Yêu cầu và tool cần cho lecture:**
+
+| Loại bài | Skill thầy | Tool cần |
+|---|---|---|
+| Cơ khí (Mechanics) | Mechanics ≥ 5 | Screwdriver |
+| Sơ cứu (Doctor) | First Aid ≥ 5 | Bandage + Alcohol |
+| Điện (Electricity) | Electricity ≥ 5 | Screwdriver |
+| May vá (Tailoring) | Tailoring ≥ 5 | Needle + Thread |
+
+---
+
+#### Quyền Admin
+
+| Hành động | Cách làm | Ghi chú |
+|---|---|---|
+| Unlock perk cho tất cả | Server command `SkillJournalAdmin` op `"bl_perk_remove"` | Gỡ perk khỏi blacklist — ai cũng có thể recover |
+| Lock perk (chặn dạy) | Server command `SkillJournalAdmin` op `"bl_perk_add"` | Thêm perk vào blacklist — không ai được restore |
+| Xem danh sách perk đang khóa | Server command `SkillJournalAdmin` op `"bl_get"` | |
+| Tắt hoàn toàn tính năng | `EnableKnowledgeSharing = false` trong sandbox | |
 
 | Sandbox Variable | Type | Default | Min | Max | Mô tả |
 |---|---|---|---|---|---|
@@ -2009,56 +2091,106 @@ Người chơi có kỹ năng cao có thể dạy công thức (recipe) hoặc g
 
 ### 6.4 Player Trading (Giao dịch người chơi)
 
-**Kích hoạt:** Chuột phải người chơi gần đó → **"Trade with [tên]"**. Cả 2 phải xác nhận trước khi trao đổi thực hiện.  
+**Kích hoạt:** Chuột phải người chơi gần → **"Trade with [tên]"**.  
 **Phím tắt:** Không có.
 
-**Cách hoạt động:**  
-Hệ thống trade an toàn giữa 2 người chơi — mở window trade, đặt đồ vào, cả 2 xác nhận mới thực hiện trao đổi. Chống lừa đảo.
+---
 
-**Cách test (MP):**
-1. Đứng gần player khác
-2. Chuột phải → "Trade with [tên]"
-3. Cả 2 đặt đồ vào → cả 2 nhấn Confirm
+#### Thao tác người chơi
+
+| Bước | Thao tác |
+|---|---|
+| 1 | Chuột phải người chơi muốn giao dịch → **"Trade with [tên]"** |
+| 2 | Người kia nhận dialog xác nhận — cả 2 phải đồng ý mới mở trade window |
+| 3 | Mỗi người kéo item từ inventory vào ô **"Your Offer"** |
+| 4 | Khi hài lòng → nhấn **"Seal Offer"** — đề nghị bị lock, không chỉnh được nữa |
+| 5 | Khi **cả 2** đã seal → nút **"Confirm Trade"** sáng lên |
+| 6 | Cả 2 nhấn Confirm → item hoán đổi an toàn |
+| 7 | Một người hủy → trade cancel, item trả lại cho chủ |
+
+**Lưu ý:**
+- Trade **MP-only** — không hoạt động trong SP
+- Không thể trade khi đang combat
+- Item bị seal hiển thị icon khóa — không thể thêm/bớt
+
+---
+
+#### Quyền Admin
+
+- Không có command admin riêng để xem/cancel trade đang diễn ra
+- Kiểm soát gián tiếp: `EnablePlayerTrading = false` → tắt toàn bộ tính năng
 
 | Sandbox Variable | Type | Default | Mô tả |
 |---|---|---|---|
-| `EnablePlayerTrading` | boolean | true | Bật giao dịch |
+| `EnablePlayerTrading` | boolean | true | Bật giao dịch người chơi |
 
 ---
 
 ### 6.5 Faction Extensions (Mở rộng faction)
 
-**Kích hoạt:** Tích hợp vào faction panel vanilla — mở faction panel như bình thường. Giới hạn thành viên tự áp dụng theo sandbox.  
+**Kích hoạt:** Tích hợp vào faction panel vanilla — mở như bình thường.  
 **Phím tắt:** Không có.
 
-**Cách hoạt động:**  
-Thêm giới hạn thành viên faction, hiển thị panel faction nâng cao. Tích hợp với hệ thống claim faction.
+---
+
+#### Thao tác người chơi
+
+**Trong faction panel vanilla (F hay từ HUD):**
+- Tạo/giải tán faction (như vanilla)
+- Mời thành viên — bị chặn khi đạt `MaxFactionMembers`
+- Khi đủ thành viên: nút Invite bị greyed out, tooltip thông báo giới hạn
+
+**Claim safehouse cho faction:**
+1. Đứng trong nhà → chuột phải → **"Claim for Faction"** (chỉ faction leader/officer)
+2. Tối đa `MaxFactionSafehouses` nhà mỗi faction
+
+---
+
+#### Quyền Admin
+
+| Hành động | Cách làm | Ghi chú |
+|---|---|---|
+| Xem toàn bộ faction | Chuột phải người chơi → **"[CSR Admin] Faction Monitor"** | Liệt kê tất cả faction, số thành viên, có nút kick |
+| Kick thành viên bất kỳ | Faction Monitor Panel → chọn member → Kick | Admin bypass xác nhận |
+| Force-release faction safehouse | Server command `ReleaseFactionSafehouse` | Cần faction ID |
+| Transfer safehouse | Server command `TransferFactionSafehouse` | Chuyển giữa 2 faction |
+| Set member role | Server command `SetFactionMemberRole` | Gán guest/member/officer |
+| Bypass member limit | Admin không bị giới hạn `MaxFactionMembers` | |
 
 | Sandbox Variable | Type | Default | Min | Max | Mô tả |
 |---|---|---|---|---|---|
 | `EnableFactionMemberLimit` | boolean | true | — | — | Bật giới hạn thành viên |
-| `MaxFactionMembers` | integer | 8 | 2 | 32 | Số thành viên tối đa |
+| `MaxFactionMembers` | integer | 8 | 2 | 32 | Số thành viên tối đa mỗi faction |
 
 ---
 
 ### 6.6 Survivor Bond (Gắn kết người sống sót)
 
-**Kích hoạt:** Passive — tự động khi 2 player đứng trong bán kính `SurvivorBondRadius` tiles đủ `SurvivorBondThreshold` giây. Không cần thao tác.  
+**Kích hoạt:** Passive — tự động khi 2 player đứng đủ gần đủ lâu.  
 **Phím tắt:** Không có.
 
-**Cách hoạt động:**  
-Khi 2 player đứng gần nhau đủ lâu (`SurvivorBondThreshold` giây), tạo "bond" — giảm stress, boredom, fatigue cho cả 2. Tạo cảm giác cộng đồng, khuyến khích ở gần nhau.
+---
 
-**Cách test:**
-1. Hai player đứng trong bán kính `SurvivorBondRadius`
-2. Chờ `SurvivorBondThreshold` giây
-3. Quan sát các stat giảm dần
+#### Thao tác người chơi
+
+Không cần thao tác gì. Hệ thống chạy ngầm:
+1. Đứng trong bán kính `SurvivorBondRadius` tiles so với player khác
+2. Sau `SurvivorBondThreshold` giây liên tục — **bond** hình thành
+3. Tất cả người trong radius nhận buff: giảm stress / boredom / fatigue / unhappiness
+4. Rời xa → buff dừng nhưng không bị trừ
+
+---
+
+#### Quyền Admin
+
+- Không có command riêng
+- Kiểm soát qua sandbox: tắt từng stat buff riêng hoặc tắt hoàn toàn
 
 | Sandbox Variable | Type | Default | Min | Max | Mô tả |
 |---|---|---|---|---|---|
 | `EnableSurvivorBond` | boolean | true | — | — | Bật gắn kết |
 | `SurvivorBondRadius` | integer | 10 | 3 | 30 | Bán kính kích hoạt (tiles) |
-| `SurvivorBondThreshold` | integer | 120 | 30 | 600 | Giây phải ở gần nhau để kích hoạt |
+| `SurvivorBondThreshold` | integer | 120 | 30 | 600 | Giây phải ở gần để kích hoạt |
 | `SurvivorBondReduceStress` | boolean | true | — | — | Giảm stress |
 | `SurvivorBondReduceBoredom` | boolean | true | — | — | Giảm boredom |
 | `SurvivorBondReduceFatigue` | boolean | true | — | — | Giảm mệt mỏi |
@@ -2066,18 +2198,40 @@ Khi 2 player đứng gần nhau đủ lâu (`SurvivorBondThreshold` giây), tạ
 
 ---
 
-### 6.7 Rankings (Bảng xếp hạng)
+### 6.7 Rankings (Bảng xếp hạng server)
 
-**Kích hoạt (full screen):** **V** (Radial) → **"Server Rankings"**.  
-**Kích hoạt (sidebar):** **]** (*hardcoded, không rebindable*) — toggle sidebar xếp hạng gọn.  
-**Phím tắt:** **V** → Rankings | **]** (sidebar, hardcoded).
+**Kích hoạt (full screen):** **V** → **"Server Rankings"**.  
+**Kích hoạt (sidebar):** **]** (hardcoded, không rebindable).
 
-**Cách hoạt động:**  
-Bảng xếp hạng server theo: số ngày sống sót, số zombie đã giết, kỹ năng cao nhất. Tùy chọn theo dõi thêm PvP kills. Hiển thị trên sidebar có thể toggle. Lưu lịch sử trong `RankingsRetentionDays` ngày.
+---
 
-**Cách test:**
-1. Mở bảng xếp hạng từ menu hoặc shortcut
-2. Kiểm tra `RankingsAllowAnonymousView = false` → phải login mới xem được
+#### Thao tác người chơi
+
+**Xem bảng xếp hạng:**
+- **V** → Server Rankings → mở bảng full screen
+- **]** → toggle sidebar gọn bên phải màn hình
+- Các tab: Zombie Kills / Days Survived / Skills / PvP Kills (nếu bật)
+- Đồ thị lịch sử với `RankingsHistoryGraphBuckets` điểm dữ liệu
+- Nếu `RankingsAllowAnonymousView = false` → chỉ player đã đăng nhập server mới xem
+
+**Chỉ số được theo dõi tự động (không cần thao tác):**
+- Số zombie đã giết
+- Số ngày sống sót
+- Số lần chết
+- Khoảng cách đã đi
+- Giờ chơi tích lũy
+- PvP kills (nếu `RankingsTrackPvP = true`)
+
+---
+
+#### Quyền Admin
+
+| Hành động | Cách làm | Ghi chú |
+|---|---|---|
+| Xóa entry của 1 player | Server command `SkillJournalAdmin` op `"wipe"` với username | Xóa tất cả row của người đó trong rankings DB |
+| Xem entry của 1 player | Server command `SkillJournalAdmin` op `"view"` | Liệt kê: last write hour, birth hour, death count, pending penalty |
+| Giới hạn ai được xem | `RankingsAllowAnonymousView = false` | Ẩn với player không authenticate |
+| Tự động xóa cũ | `RankingsRetentionDays` | Data quá cũ bị auto-prune khi server restart |
 
 | Sandbox Variable | Type | Default | Min | Max | Mô tả |
 |---|---|---|---|---|---|
@@ -2091,37 +2245,87 @@ Bảng xếp hạng server theo: số ngày sống sót, số zombie đã giết
 
 ### 6.8 Skill Journal (Nhật ký kỹ năng)
 
-**Kích hoạt:** **V** (Radial) → **"Skill Journal"** để mở, xem, save hoặc recover kỹ năng.  
+**Kích hoạt:** **V** → **"Skill Journal"**.  
 **Phím tắt:** **V** → Skill Journal.
 
-**Cách hoạt động:**  
-Lưu snapshot kỹ năng của nhân vật định kỳ. Khi chết, có thể phục hồi một phần kỹ năng từ journal thay vì mất hoàn toàn. Có thể bị phạt (`SkillJournalDeathPenalty`) khi chết. Cooldown giữa các lần save.
+---
 
-**Cách test:**
-1. Level up một số kỹ năng
-2. Chờ `SkillJournalRealHoursCooldown` giờ thực
-3. Save journal
-4. Chết → recover từ journal
+#### Thao tác người chơi
+
+**Save snapshot:**
+
+| Điều kiện bắt buộc | Giá trị mặc định |
+|---|---|
+| Đã chơi ≥ `SkillJournalMinPlayHours` giờ | 24 giờ chơi |
+| Chờ đủ cooldown in-game | 24 giờ game |
+| Chờ đủ cooldown real-time | 24 giờ thực |
+
+**Quy trình save:**
+1. **V** → Skill Journal → mở panel
+2. Xem snapshot hiện tại (kỹ năng, recipe, magazines)
+3. Nhấn **"Save Journal"** → snapshot được ghi vào server DB
+4. Cooldown bắt đầu đếm
+
+**Recover kỹ năng sau khi chết:**
+1. Sau khi respawn → **V** → Skill Journal
+2. Panel hiển thị snapshot cuối và `SkillJournalDeathPenalty` (số level bị trừ)
+3. Nhấn **"Recover"** → kỹ năng được phục hồi trừ penalty
+4. Nếu `SkillJournalAdminOnlyRecover = true` → nút Recover bị ẩn, cần liên hệ admin
+
+**Profession Lock** (nếu `SkillJournalProfessionLock = true`):
+- Journal chỉ restore kỹ năng phù hợp với nghề ban đầu của nhân vật
+- Đổi nghề khi tạo nhân vật mới → mất snapshot cũ
+
+---
+
+#### Quyền Admin
+
+| Hành động | Cách làm | Ghi chú |
+|---|---|---|
+| Xem snapshot của player | Server command `SkillJournalAdmin` op `"view"` + username | Hiện: last save hour, death count, pending penalty |
+| Xóa snapshot của player | Server command `SkillJournalAdmin` op `"wipe"` + username | Xóa tất cả row — player không recover được nữa |
+| Kích hoạt recover cho player | Khi `SkillJournalAdminOnlyRecover = true` → admin chạy `SkillJournalAdmin` op `"recover"` + username | Player không tự recover được |
+| Blacklist user | Server command `SkillJournalAdmin` op `"bl_user_add"` + username | User không save/recover được |
+| Gỡ blacklist user | Server command `SkillJournalAdmin` op `"bl_user_remove"` + username | |
+| Blacklist perk | Server command `SkillJournalAdmin` op `"bl_perk_add"` + perk name | Perk đó không bao giờ được restore |
+| Gỡ blacklist perk | Server command `SkillJournalAdmin` op `"bl_perk_remove"` + perk name | |
+| Xem blacklist hiện tại | Server command `SkillJournalAdmin` op `"bl_get"` | Liệt kê user và perk đang bị khóa |
 
 | Sandbox Variable | Type | Default | Min | Max | Mô tả |
 |---|---|---|---|---|---|
 | `EnableSkillJournal` | boolean | true | — | — | Bật nhật ký kỹ năng |
-| `SkillJournalMinPlayHours` | integer | 24 | 0 | 200 | Giờ chơi tối thiểu trước khi dùng |
+| `SkillJournalMinPlayHours` | integer | 24 | 0 | 200 | Giờ chơi tối thiểu trước khi save lần đầu |
 | `SkillJournalSaveCooldownHours` | integer | 24 | 0 | 168 | Cooldown giữa các lần save (giờ game) |
-| `SkillJournalDeathPenalty` | integer | 1 | -5 | 5 | Level bị trừ mỗi kỹ năng khi chết |
-| `SkillJournalAdminOnlyRecover` | boolean | false | — | — | Chỉ admin mới kích hoạt recover |
 | `SkillJournalRealHoursCooldown` | integer | 24 | 0 | 168 | Cooldown giữa các lần save (giờ thực) |
+| `SkillJournalDeathPenalty` | integer | 1 | -5 | 5 | Level bị trừ mỗi kỹ năng khi chết (âm = tặng thêm) |
+| `SkillJournalAdminOnlyRecover` | boolean | false | — | — | Chỉ admin mới kích hoạt recover |
 | `SkillJournalProfessionLock` | boolean | true | — | — | Chỉ recover kỹ năng phù hợp nghề |
 
 ---
 
 ### 6.9 Rally Points (Điểm tập hợp)
 
-**Kích hoạt:** Chuột phải bản đồ (map item) → **"Set Rally Point"** / **"Share Rally Point"**. Cần pencil nếu `RallyRequirePencil = true`.  
+**Kích hoạt:** Chuột phải bản đồ (map item) → **"Set Rally Point"** / **"Share Rally Point"**.  
 **Phím tắt:** Không có.
 
-**Cách hoạt động:**  
-Đánh dấu điểm tập hợp (rally point) trên bản đồ cho faction. Có thể xem trên minimap. Cần bút chì để tạo rally point.
+---
+
+#### Thao tác người chơi
+
+| Thao tác | Cách làm | Điều kiện |
+|---|---|---|
+| Đặt rally point | Chuột phải map item → "Set Rally Point" → click vị trí | Cần pencil nếu `RallyRequirePencil = true` |
+| Chia sẻ với faction | Chuột phải → "Share Rally Point" | Phải trong faction |
+| Xem rally point | Mở map → marker hiện trên bản đồ | |
+| Xóa rally point | Chuột phải marker → "Remove Rally Point" | Là người đặt hoặc faction leader |
+
+---
+
+#### Quyền Admin
+
+- Không có command riêng
+- Admin có thể đặt/xóa như player bình thường
+- Kiểm soát qua: `RallyRequirePencil = false` → không cần bút chì
 
 | Sandbox Variable | Type | Default | Mô tả |
 |---|---|---|---|
@@ -2132,37 +2336,111 @@ Lưu snapshot kỹ năng của nhân vật định kỳ. Khi chết, có thể p
 
 ### 6.10 City Standpipes (Vòi cứu hỏa thành phố)
 
-**Kích hoạt:** Chuột phải vòi cứu hỏa ngoài phố → **"Toggle Standpipe"** (cần pipe wrench + Strength tối thiểu). Kết nối vòi: cần hose.  
+**Kích hoạt:** Chuột phải vòi cứu hỏa → **"Toggle Standpipe"**.  
 **Phím tắt:** Không có.
 
-**Cách hoạt động:**  
-Vòi cứu hỏa ngoài phố có thể bơm nước — nguồn nước thay thế khi mất điện. Cần Strength tối thiểu. Tốn muscle strain khi dùng. Thời gian hoạt động giới hạn theo `CityStandpipeBaseDuration`.
+---
 
-**Cách test:**
-1. Tìm vòi cứu hỏa ngoài phố (màu đỏ)
-2. Chuột phải → "Connect Hose" / "Use Standpipe"
-3. Quan sát muscle strain tăng
+#### Thao tác người chơi
+
+| Bước | Thao tác | Ghi chú |
+|---|---|---|
+| 1 | Tiếp cận vòi cứu hỏa màu đỏ ngoài phố | |
+| 2 | Chuột phải → **"Toggle Standpipe"** | Cần pipe wrench + Strength ≥ `CityStandpipeMinimumStrength` |
+| 3 | Kết nối vòi vào bucket/container | Nước chảy ra trong `CityStandpipeBaseDuration` phút |
+| 4 | Muscle strain tăng `CityStandpipeBaseMuscleStrain` mỗi lần kích hoạt | Có thể nghỉ để giảm strain |
+| 5 | Vòi tắt tự động sau hết thời gian | Kích hoạt lại bằng cách toggle lần nữa |
+
+---
+
+#### Quyền Admin
+
+- Không có command riêng
+- Kiểm soát qua sandbox: tắt tính năng, điều chỉnh Strength yêu cầu, thời gian hoạt động
 
 | Sandbox Variable | Type | Default | Min | Max | Mô tả |
 |---|---|---|---|---|---|
 | `EnableCityStandpipes` | boolean | true | — | — | Bật vòi cứu hỏa thành phố |
 | `CityStandpipeMinimumStrength` | integer | 5 | 0 | 10 | Strength tối thiểu để dùng |
 | `CityStandpipeBaseDuration` | integer | 20 | 1 | 120 | Phút hoạt động tối đa |
-| `CityStandpipeBaseMuscleStrain` | double | 8.0 | 0.0 | 40.0 | Muscle strain mỗi lần dùng |
+| `CityStandpipeBaseMuscleStrain` | double | 8.0 | 0.0 | 40.0 | Muscle strain mỗi lần kích hoạt |
 
 ---
 
-### 6.11 Admin Authoritative Control
+### 6.11 Admin Authoritative Control & Ground Cleanup
 
-**Kích hoạt:** Server-side only — bật `AdminAuthoritativeControl = true` trong sandbox. Không có client UI. Admin quản lý qua admin panel.  
+#### 6.11a Admin Authoritative Control
+
+**Kích hoạt:** Server-side — bật `AdminAuthoritativeControl = true` trong sandbox.  
 **Phím tắt:** Không có.
 
-**Cách hoạt động:**  
-Khi bật, admin kiểm soát toàn bộ tính năng — player không thể tự toggle các option cá nhân (dual wield, proximity loot, v.v.).
+**Tác dụng khi bật:**
+- Player **không thể tự toggle** các option cá nhân (dual wield, proximity loot, loot filter, v.v.)
+- Tất cả toggle phải thông qua admin panel
+- Admin vào Admin Panel → chọn player → chỉnh từng option cho người đó
+
+**Tắt thì:** Mỗi player tự điều chỉnh tùy thích trong giới hạn sandbox.
 
 | Sandbox Variable | Type | Default | Mô tả |
 |---|---|---|---|
-| `AdminAuthoritativeControl` | boolean | false | Admin kiểm soát toàn bộ |
+| `AdminAuthoritativeControl` | boolean | false | Admin kiểm soát toàn bộ toggle của player |
+
+---
+
+#### 6.11b Ground Cleanup & Item Wipe Scheduler
+
+**Kích hoạt:** Tự động server-side. Xem thời gian wipe tiếp theo trong Utility HUD (**Numpad /**).  
+**Phím tắt:** Không có.
+
+---
+
+**Thao tác người chơi:**
+- Không có thao tác — hệ thống chạy ngầm
+- Nhận **cảnh báo broadcast** `ItemWipeWarnMinutes` phút trước khi wipe
+- HUD hiển thị countdown đến lần wipe tiếp theo
+
+---
+
+**Quyền Admin (cấu hình):**
+
+| Hành động | Cách làm |
+|---|---|
+| Bật age-based cleanup | `EnableGroundCleanup = true` + cấu hình `GroundCleanupMinutes` |
+| Điều chỉnh tuổi item trước khi xóa | `GroundCleanupMinutes` (mặc định 1440 = 24 giờ) |
+| Giới hạn số item xóa mỗi lần scan | `GroundCleanupMaxPerScan` (mặc định 250) |
+| Bật wipe theo lịch | `EnableItemWipeScheduler = true` + cấu hình interval |
+| Đặt cảnh báo trước khi wipe | `ItemWipeWarnMinutes` (gửi broadcast đến tất cả player) |
+| Xem log item đã xóa | `LogGroundCleanup = true` → ghi vào server log |
+
+**Lưu ý:** Không có command để trigger wipe ngay lập tức — chỉ có thể cấu hình schedule.
+
+| Sandbox Variable | Type | Default | Min | Max | Mô tả |
+|---|---|---|---|---|---|
+| `EnableGroundCleanup` | boolean | **false** | — | — | Bật dọn item tự động (mặc định tắt) |
+| `GroundCleanupMinutes` | integer | 1440 | 5 | 43200 | Phút tồn tại tối đa của item trên đất |
+| `GroundCleanupScanRadius` | integer | 40 | 10 | 200 | Bán kính scan quanh mỗi player (tiles) |
+| `GroundCleanupMaxZ` | integer | 3 | 0 | 7 | Tầng cao tối đa scan |
+| `GroundCleanupMaxPerScan` | integer | 250 | 10 | 2000 | Số item xóa tối đa mỗi lần scan |
+| `LogGroundCleanup` | boolean | true | — | — | Ghi log khi xóa item |
+| `EnableItemWipeScheduler` | boolean | **false** | — | — | Xóa toàn bộ theo lịch định kỳ |
+| `ItemWipeIntervalMinutes` | integer | 360 | 15 | 10080 | Khoảng thời gian giữa các lần wipe (phút) |
+| `ItemWipeWarnMinutes` | integer | 60 | 0 | 240 | Phút cảnh báo trước khi wipe |
+
+---
+
+### Tổng hợp: Quyền Admin theo tính năng
+
+| Tính năng | Force Remove | Xem tất cả | Reset/Wipe | Bypass Giới Hạn | Blacklist |
+|---|---|---|---|---|---|
+| **Claim nhà** | ✓ (Force-Release) | ✓ (Claims Manager) | — | ✓ (quota) | — |
+| **Claim xe** | ✓ (Force-Claim) | ✓ | ✓ (Purge Legacy) | ✓ (quota) | — |
+| **Faction** | — | ✓ (Monitor Panel) | — | ✓ (member cap) | — |
+| **Knowledge** | — | — | — | — | ✓ (perk blacklist) |
+| **Rankings** | ✓ (Wipe player) | ✓ (view all) | Partial (prune old) | — | — |
+| **Skill Journal** | ✓ (Wipe row) | ✓ (view player) | — | — | ✓ (user + perk) |
+| **Ground Cleanup** | — (scheduled only) | ✓ (log) | — | — | — |
+
+
 
 ---
 
